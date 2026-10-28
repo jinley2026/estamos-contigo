@@ -18,7 +18,7 @@ const nif = datoReservado('nif'), dom = datoReservado('domicilio');
     <li>Correo electrónico de contacto: <a href={`mailto:${r.correoContacto}`}>{dato('correoContacto', 'correo de contacto')}</a></li>
     {nif && <li>NIF: {nif}</li>}
     {dom && <li>Domicilio: {dom}</li>}
-    <li>Dirección de la web: {SITE.dominio || '[PENDIENTE: dominio pendiente de asignación]'}</li>
+    <li>Dirección de la web: {SITE.dominio || 'la dirección en la que estás viendo esta página (provisional)'}</li>
   </ul>
   <p>
     {LSSI === 'pendiente' && <>Está pendiente de confirmar por un profesional si a esta web, personal, gratuita y sin actividad económica,
