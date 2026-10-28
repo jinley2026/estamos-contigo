@@ -1,23 +1,16 @@
 ---
-// Contador fijo en la parte superior (petición de Lin, 28/10 12:00 y 12:32). Solo cifras agregadas reales del proveedor.
-// Sin cookies, sin identificadores, sin píxeles. No se incrementa al recargar: es un dato del servidor
-// que se vuelca en cada compilación. Si no hay dato verificado: «Datos no disponibles».
-import { SITE, ES_PREVIA, fechaHora } from '../lib/datos';
-import v from '../data/visitas.json';
+// Contador fijo arriba (Lin, 28/10 12:00, 12:32 y 14:08). Proveedor: GoatCounter, sin cookies ni datos personales.
+// 1) Cuenta la visita con una imagen de 1 px (sin script externo).
+// 2) Muestra el total que publica GoatCounter (puede ir con hasta 4 h de retraso por su caché).
+// Si GoatCounter no responde, se muestra «Datos no disponibles»: nunca se inventa una cifra.
+import { SITE, ES_PREVIA } from '../lib/datos';
 const cfg = (SITE as any).visitas;
-// Un dato de prueba nunca llega a la versión pública (check-dist.mjs también lo bloquea).
-const hayDato = cfg?.activo === true && typeof v.visitas === 'number' && (!v.esPrueba || ES_PREVIA);
-const n = (x: number) => x.toLocaleString('es-ES');
-const dia = (iso: string) => fechaHora(iso).split(',')[0];
+const gc = cfg?.activo && cfg?.proveedor === 'goatcounter' && cfg?.codigo ? `https://${cfg.codigo}.goatcounter.com` : '';
+const ruta = Astro.url.pathname.replace(/\.html$/, '') || '/';
 ---
-<p class="barra-visitas" lang="es" data-contador-visitas>
-  {hayDato ? (
-    <>
-      {v.esPrueba && <span class="prueba">DATOS DE PRUEBA</span>} Visitas desde el {dia(v.desde)}: <strong>{n(v.visitas as number)}</strong>
-      {' '}· Únicos: {typeof v.visitantesUnicos === 'number' ? n(v.visitantesUnicos) : 'no disponible para el periodo completo'}
-    </>
-  ) : (
-    <>Visitas: Datos no disponibles</>
-  )}
-  {' '}<a href="privacidad.html#estadisticas">Cómo se cuentan</a>
+<p class="barra-visitas" lang="es" data-contador-visitas data-gc={gc || undefined}>
+  <span class="visitas-icono" aria-hidden="true">&#9679;</span>
+  <span>Visitas: <strong class="visitas-total" data-visitas-total>{gc ? '…' : 'Datos no disponibles'}</strong></span>
+  <a href="privacidad.html#estadisticas">Cómo se cuentan</a>
+  {gc && !ES_PREVIA && <img class="visitas-pixel" src={`${gc}/count?p=${encodeURIComponent(ruta)}`} alt="" width="1" height="1" referrerpolicy="no-referrer-when-downgrade" />}
 </p>

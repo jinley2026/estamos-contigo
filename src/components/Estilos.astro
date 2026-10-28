@@ -91,7 +91,10 @@
   @media (min-width: 620px) { .que-hacer { grid-template-columns: repeat(3, 1fr); } }
   .aviso-independencia { border: 2px solid #14365c; border-radius: 10px; padding: .9rem 1rem; margin: 1.2rem 0; background: #f3f6fa; }
   .aviso-independencia p { margin: .35rem 0; }
-  .barra-visitas { position: sticky; top: 0; z-index: 20; margin: 0; padding: .3rem 16px; background: var(--senal); color: #fff; font-size: .8rem; text-align: center; max-width: none; }
+  .barra-visitas { position: sticky; top: 0; z-index: 20; margin: 0; padding: .45rem 16px; background: var(--senal); color: #fff; font-size: .95rem; text-align: center; max-width: none; display: flex; justify-content: center; align-items: center; gap: .6rem; flex-wrap: wrap; }
+  .barra-visitas .visitas-total { font-size: 1.15rem; color: #ffd54a; font-variant-numeric: tabular-nums; }
+  .barra-visitas .visitas-icono { color: #e3342f; font-size: .7rem; }
+  .barra-visitas .visitas-pixel { position: absolute; width: 1px; height: 1px; opacity: 0; }
   .barra-visitas a { color: #fff; margin-left: .4rem; }
   .barra-visitas .prueba { background: var(--aviso); color: #000; font-weight: 700; padding: 0 .35rem; border-radius: 4px; }
   .lista-control { list-style: none; padding: 0; }

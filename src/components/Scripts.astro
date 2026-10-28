@@ -71,6 +71,16 @@
   var alertasN = document.querySelectorAll('.alerta-nueva[data-hasta]');
   for (var an = 0; an < alertasN.length; an++) if (Date.now() < Date.parse(alertasN[an].getAttribute('data-hasta'))) alertasN[an].hidden = false;
 
+  /* Contador de visitas: lee el total de GoatCounter. Si falla, «Datos no disponibles». */
+  var bv = document.querySelector('[data-gc]');
+  if (bv && window.fetch) {
+    var tv = bv.querySelector('[data-visitas-total]');
+    fetch(bv.getAttribute('data-gc') + '/counter/TOTAL.json', { credentials: 'omit' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { tv.textContent = j && j.count ? String(j.count).replace(/[\s\u202f,]/g, '.') : 'Datos no disponibles'; })
+      .catch(function () { tv.textContent = 'Datos no disponibles'; });
+  }
+
   /* Directo: «hace X min» y marca «Nuevo» en avisos de menos de 30 minutos. */
   var pintarHace = function () {
     var hs = document.querySelectorAll('.hace[data-desde]');
