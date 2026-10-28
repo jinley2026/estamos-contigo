@@ -1,6 +1,6 @@
 {
   "_comentario": "Bloques operativos de portada: centros de traslado, avisos de las autoridades y estado de la línea. Las cifras están en afirmaciones.json y los trenes en trenes.json.",
-  "actualizadoEn": "2026-10-28T14:05:00+01:00",
+  "actualizadoEn": "2026-10-28T14:55:00+01:00",
   "hospitales": {
     "revisarCadaMinutos": 30,
     "comprobadoEn": "2026-10-28T14:05:00+01:00",
@@ -122,7 +122,7 @@
   },
   "linea": {
     "revisarCadaMinutos": 60,
-    "comprobadoEn": "2026-10-28T14:05:00+01:00",
+    "comprobadoEn": "2026-10-28T14:55:00+01:00",
     "estado": "Interrumpida la alta velocidad Madrid – Andalucía",
     "detalle": "Sin previsión oficial de restablecimiento.",
     "nivelFuente": 2,

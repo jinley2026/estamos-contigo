@@ -132,6 +132,25 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "yebenes-pabellon",
+      "nombre": "Los Yébenes: pabellón municipal",
+      "direccion": "Los Yébenes (Toledo). Ubicación exacta: canales oficiales del Ayuntamiento",
+      "funcion": "Atención a los afectados. Dispone de víveres y material de ayuda.",
+      "organismo": "Ayuntamiento de Los Yébenes",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Libertad Digital: aviso del Ayuntamiento de Los Yébenes (14:10)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "comprobadoEn": "2026-10-28T14:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

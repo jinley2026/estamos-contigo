@@ -465,6 +465,102 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "2026-10-28-yebenes-pabellon",
+      "titulo": "Los Yébenes habilita su pabellón municipal para atender a los afectados",
+      "resumen": "El Ayuntamiento de Los Yébenes ha abierto su pabellón municipal para la atención a los afectados. Dispone de víveres y material de ayuda y comunicará cualquier necesidad por sus canales oficiales: no lleves donaciones sin que se pidan.",
+      "organismo": "Ayuntamiento de Los Yébenes",
+      "categoria": "ayuntamientos",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital: recoge los avisos del Ayuntamiento de Los Yébenes (14:10 y 14:47)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:10:00+01:00",
+      "publicadoEn": "2026-10-28T14:55:00+01:00",
+      "comprobadoEn": "2026-10-28T14:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-iryo-comunicado",
+      "titulo": "Iryo cancela todos sus servicios entre Madrid y el Corredor Sur",
+      "resumen": "En su comunicado, Iryo indica que su tren 6076 recibió el golpe en la parte trasera de un tren de Renfe en el punto kilométrico 118, por causas que desconoce. Quedan cancelados todos sus servicios desde Madrid hacia Andalucía.",
+      "organismo": "Iryo",
+      "categoria": "iryo",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital: recoge el comunicado de Iryo (14:27)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:27:00+01:00",
+      "publicadoEn": "2026-10-28T14:55:00+01:00",
+      "comprobadoEn": "2026-10-28T14:55:00+01:00",
+      "revisarCadaMinutos": 120,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-ume-refuerzo",
+      "titulo": "La UME refuerza su despliegue en Urda",
+      "resumen": "Según fuentes de la Unidad Militar de Emergencias, más de 200 efectivos trabajan ya en la zona del accidente.",
+      "organismo": "UME (Ministerio de Defensa)",
+      "categoria": "gobierno",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital: fuentes de la UME (14:44)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:44:00+01:00",
+      "publicadoEn": "2026-10-28T14:55:00+01:00",
+      "comprobadoEn": "2026-10-28T14:55:00+01:00",
+      "revisarCadaMinutos": 120,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-andalucia-luto",
+      "titulo": "Andalucía declara tres días de luto oficial",
+      "resumen": "El presidente de la Junta de Andalucía, Juanma Moreno, ha anunciado tres días de luto oficial, desde las 14:00 de hoy hasta las 14:00 del sábado 31 de octubre.",
+      "organismo": "Junta de Andalucía",
+      "categoria": "otros",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital: recoge el anuncio de Juanma Moreno en X (14:44)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:44:00+01:00",
+      "publicadoEn": "2026-10-28T14:55:00+01:00",
+      "comprobadoEn": "2026-10-28T14:55:00+01:00",
+      "revisarCadaMinutos": 240,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

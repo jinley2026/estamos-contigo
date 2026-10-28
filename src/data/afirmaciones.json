@@ -192,6 +192,29 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "pasajeros-iryo-1427",
+      "tipo": "pasajeros",
+      "valor": 147,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "tren:iryo-6076",
+      "organismo": "Iryo",
+      "fuente": {
+        "titulo": "Libertad Digital: comunicado de Iryo, 147 pasajeros a bordo del 6076",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T14:29:00+01:00",
+      "fechaVerificacion": "2026-10-28T14:55:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "Iryo añade 3 tripulantes, 1 barista y 1 maquinista. Coincide con los 147 que dio la Junta a las 11:00. Hay un balance de heridos de las 14:24 sin organismo identificado: no se publica.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
