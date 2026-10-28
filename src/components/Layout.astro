@@ -10,8 +10,9 @@ interface Props {
   descripcion?: string;
   lang?: string;
   ligera?: boolean;
+  autorecarga?: boolean;
 }
-const { titulo, descripcion = SITE.subtitulo, lang = 'es', ligera = false } = Astro.props;
+const { titulo, descripcion = SITE.subtitulo, lang = 'es', ligera = false, autorecarga = false } = Astro.props;
 const eo = SITE.estadoOperativo;
 const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suceso.titulo}` : `${titulo} · ${SITE.nombre}`;
 ---
@@ -36,6 +37,7 @@ const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suces
     data-ultima-revision={eo.ultimaRevisionEditorial}
     data-max-horas={eo.horasMaximasSinRevision}
     class={`modo-${MODO}`}
+    data-autorecarga={autorecarga ? '600' : undefined}
   >
     <a class="saltar" href="#contenido">Saltar al contenido</a>
     {ES_PREVIA && (

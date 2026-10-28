@@ -43,6 +43,30 @@
     if (banda) banda.hidden = false;
   }
 
+  /* «Actualizado hace X min» y recarga automática cada 10 minutos en las páginas informativas.
+     No recarga si la persona está escribiendo, ni si la pestaña está en segundo plano. */
+  var marcas = document.querySelectorAll('[data-actualizado]');
+  function pintarHace() {
+    for (var m = 0; m < marcas.length; m++) {
+      var tA = Date.parse(marcas[m].getAttribute('data-actualizado'));
+      var hueco = marcas[m].querySelector('.uh-hace');
+      if (!isNaN(tA) && hueco) {
+        var min = Math.max(0, Math.round((Date.now() - tA) / 60000));
+        hueco.textContent = min < 1 ? '(hace menos de un minuto)' : min < 120 ? '(hace ' + min + ' min)' : '(hace más de 2 horas)';
+      }
+    }
+  }
+  pintarHace();
+  setInterval(pintarHace, 60000);
+  var seg = parseInt(b.getAttribute('data-autorecarga'), 10);
+  if (!isNaN(seg)) {
+    var inicio = Date.now();
+    setInterval(function () {
+      var escribiendo = document.activeElement && /TEXTAREA|INPUT/.test(document.activeElement.tagName);
+      if (document.visibilityState === 'visible' && !escribiendo && Date.now() - inicio >= seg * 1000) location.reload();
+    }, 30000);
+  }
+
   /* Ajustes de lectura */
   document.addEventListener('click', function (ev) {
     var btn = ev.target.closest ? ev.target.closest('[data-accion]') : null;

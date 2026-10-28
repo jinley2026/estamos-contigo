@@ -2,6 +2,16 @@
 
 Todos los cambios se hacen editando los archivos JSON de `src/data/` o `src/config/site.json`, se revisan por una segunda persona antes de fusionarse en la rama principal y se publican recompilando. Cada cambio queda en el historial de Git (quién, cuándo y qué).
 
+## 0. Ciclo de 10 minutos
+
+1. El vigilante (`scripts/vigilar-fuentes.mjs`, programado en `.github/workflows/vigilar.yml`) revisa las webs oficiales cada 10 minutos. Si cambian y mencionan el suceso, abre un aviso «verificar» en el repositorio. No publica nada.
+2. La persona de turno abre el aviso, localiza el dato en la fuente original y comprueba su atribución (nivel 1 o 2).
+3. Actualiza `src/data/ultimahora.json` (balance, hospitales, trenes, avisos, línea), pone `actualizadoEn` y el `comprobadoEn` del bloque con la hora actual, y una segunda persona lo revisa.
+4. Al fusionar, el alojamiento recompila en 1-2 minutos. Las páginas abiertas se recargan solas cada 10 minutos.
+5. Las cuentas oficiales en X (InfoRenfe, Adif, 112 CLM) se revisan a mano: no se pueden vigilar sin la API de pago de X.
+
+**Nunca** se publican en «Última hora»: nombres o datos de personas, listas de pasajeros, cifras sin organismo que las respalde, ni hospitales donde está una persona concreta.
+
 ## 1. Añadir una información
 
 1. Localiza la fuente original. Solo valen nivel 1 (organismo directo) o nivel 2 (agencia o medio que cita expresamente al organismo).

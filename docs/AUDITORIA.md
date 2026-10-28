@@ -78,6 +78,9 @@ Ningún `<form>`; sin campos de entrada salvo casillas; sin scripts ni estilos e
 ### Rediseño visual (28/10/2026, ~11:40)
 Tras la revisión de Lin («muy básica, muchas letras, no se resalta lo importante») se rediseñó con estilo de señalética de orientación: panel azul con el teléfono en grande, filas con pictogramas, pasos numerados, avisos en rojo y detalles plegados. Tipografía Atkinson Hyperlegible servida desde el propio sitio (licencia OFL, `public/fuentes/`). Las pruebas detectaron y se corrigieron tres fallos del rediseño: la CSP bloqueaba la tipografía (faltaba `font-src 'self'`), la etiqueta accesible del botón 112 no coincidía con su texto y el botón 112 desbordaba la pantalla a 320 px con texto grande. Resultado tras corregir: 14/14 pruebas estáticas y 15/15 de navegador.
 
+### Ampliación «Última hora» (28/10/2026, ~11:50)
+Añadido el recuadro «Última hora» en portada con balance oficial, centros a los que se traslada a los heridos, trenes y viajeros, avisos de las autoridades y estado de la línea; cada dato con fuente y nivel. Añadidos el teléfono de Iryo (655 28 69 75) y el de información del 112 Castilla-La Mancha (900 122 112), ambos de nivel 2 y pendientes de verificar, y tres puntos de atención anunciados por Adif (Atocha, Sevilla-Santa Justa, Córdoba). Recarga automática cada 10 minutos en las páginas informativas y aviso «hace X min». Vigilante de fuentes oficiales: probado una vez desde este entorno; revisó 4 de 6 webs (Iryo y Ministerio de Transportes respondieron HTTP 403 desde aquí; hay que comprobarlo desde GitHub Actions). No se publican listas de pasajeros ni datos personales. Las pruebas detectaron un desbordamiento a 320 px en el balance, ya corregido. Resultado: 14/14 y 15/15.
+
 ## 5. Elementos pendientes de verificación (bloquean la publicación)
 
 1. Titular: nombre, naturaleza, NIF, domicilio, correos y responsable editorial (`src/config/site.json`).

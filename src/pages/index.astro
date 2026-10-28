@@ -1,16 +1,29 @@
 ---
 import Layout from '../components/Layout.astro';
 import TarjetaTelefono from '../components/TarjetaTelefono.astro';
-import { SITE, actualizaciones, fechaHora, MODO } from '../lib/datos';
-const ultima = actualizaciones[0];
+import UltimaHora from '../components/UltimaHora.astro';
+import { SITE, MODO, otrosCanales, visible, verificado } from '../lib/datos';
 const flecha = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 ---
-<Layout titulo={SITE.nombre}>
+<Layout titulo={SITE.nombre} autorecarga>
   <section class="panel" aria-labelledby="titulo-suceso">
     <h1 id="titulo-suceso">{SITE.suceso.titulo}</h1>
     <p class="pregunta">¿Buscas a un familiar que viajaba en los trenes?</p>
     <TarjetaTelefono />
+    {otrosCanales.filter((c) => visible(c)).length > 0 && (
+      <ul class="otros-tel">
+        {otrosCanales.filter((c) => visible(c)).map((c) => (
+          <li class="temporal" data-comprobado={c.comprobadoEn} data-revisar={c.revisarCadaMinutos} data-sensible="">
+            <span>{c.organismoCorto ?? c.organismo}{!verificado(c) && <span class="sello-pendiente">pendiente</span>}</span>
+            <a class="accion-llamar" href={`tel:${c.telefono}`}>{c.telefonoVisible}</a>
+            <span class="aviso-caducado">Pendiente de revisión</span>
+          </li>
+        ))}
+      </ul>
+    )}
   </section>
+
+  {MODO !== 'reducido' && <UltimaHora />}
 
   <h2 id="rutas-titulo">¿Qué necesitas?</h2>
   <ul class="rutas" aria-labelledby="rutas-titulo">
@@ -51,13 +64,6 @@ const flecha = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="tru
     <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>No compartas fotos ni nombres de víctimas</li>
   </ul>
 
-  {MODO !== 'reducido' && ultima && (
-    <section class="solo-normal" aria-labelledby="ultima-titulo">
-      <h2 id="ultima-titulo">Último aviso oficial</h2>
-      <p><strong>{ultima.titulo}.</strong> <span class="meta">{fechaHora(ultima.fechaComunicado)}</span></p>
-      <p><a href="actualizaciones.html">Todos los avisos y correcciones</a></p>
-    </section>
-  )}
 
   <h2>También aquí</h2>
   <ul class="bloques">

@@ -68,6 +68,22 @@ for (const cat of leer('data/preguntas.json').categorias)
     for (const p of PATRONES_PELIGROSOS) if (p.test(q.r)) err(`FAQ ${cat.id}: posible dato personal o cifra — revisar`);
   }
 
+const uh = leer('data/ultimahora.json');
+if (!esISO(uh.actualizadoEn)) err('última hora: actualizadoEn no ISO');
+for (const k of ['balance', 'trenes', 'hospitales', 'avisos', 'linea']) {
+  const b = uh[k];
+  if (!esISO(b.comprobadoEn) || !(b.revisarCadaMinutos > 0)) err(`última hora ${k}: falta comprobadoEn o revisarCadaMinutos`);
+  if (!verif(b)) avi(`última hora ${k}: sin verificar por dos personas`);
+  const items = [...(b.datos ?? []), ...(b.lista ?? []), ...(b.fuente ? [b] : [])];
+  for (const it of items) {
+    if (it.valor === '' || it.nivelFuente === 0) continue;
+    if (![1, 2].includes(it.nivelFuente)) err(`última hora ${k}: dato con nivel ${it.nivelFuente} no publicable`);
+    if (!esURL(it.fuente?.url)) err(`última hora ${k}: dato sin fuente válida`);
+  }
+  const txt = JSON.stringify(b);
+  if (/\b\d{8}[A-HJ-NP-TV-Z]\b/i.test(txt)) err(`última hora ${k}: posible DNI`);
+}
+
 const m = leer('data/mensajes.json');
 for (const lang of ['es', 'en', 'fr', 'pt', 'it', 'de']) {
   if (m.plantillas[lang]?.length !== 4) err(`mensajes: faltan plantillas en ${lang}`);

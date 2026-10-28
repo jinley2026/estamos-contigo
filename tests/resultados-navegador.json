@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-28T11:30:20",
+  "fecha": "2026-10-28T11:42:18",
   "resultados": [
     {
       "prueba": "Accesibilidad automática axe (WCAG 2.2 A/AA) sin violaciones en 26 páginas",
@@ -47,7 +47,7 @@
       "detalle": "tarjeta-tel temporal pendiente caducado / Pendiente de revisión: última comprobación 28/10, 10:50. Consulta la fuente oficial antes de actuar."
     },
     {
-      "prueba": "Modo seguro automático tras 4 h sin revisión: aviso visible y se oculta «última actualización»",
+      "prueba": "Modo seguro automático tras 4 h sin revisión: aviso visible y se oculta «Última hora»",
       "ok": true,
       "detalle": ""
     },

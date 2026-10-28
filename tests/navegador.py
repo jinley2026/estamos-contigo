@@ -109,9 +109,9 @@ with sync_playwright() as p:
     pg.clock.install(time=(t0 + datetime.timedelta(hours=5)))
     pg.goto(BASE + "index.html")
     banda = pg.locator(".banda-modo-seguro").is_visible()
-    ultima_oculta = not pg.locator("#ultima-titulo").is_visible()
+    ultima_oculta = not pg.locator(".ultima-hora").is_visible()
     pg.screenshot(path=str(CAPT / "06-modo-seguro.png"), full_page=False)
-    prueba("Modo seguro automático tras 4 h sin revisión: aviso visible y se oculta «última actualización»", banda and ultima_oculta)
+    prueba("Modo seguro automático tras 4 h sin revisión: aviso visible y se oculta «Última hora»", banda and ultima_oculta)
     ctx.close()
 
     # 7. Sin JavaScript

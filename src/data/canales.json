@@ -32,19 +32,58 @@
     {
       "id": "iryo-familiares",
       "organismo": "Iryo",
-      "telefono": "",
-      "telefonoVisible": "",
-      "finalidad": "Canal específico de Iryo para este accidente: NO CONFIRMADO. No se publica ningún número hasta que Iryo lo comunique.",
+      "telefono": "655286975",
+      "telefonoVisible": "655 28 69 75",
+      "finalidad": "Información de Iryo sobre su tren.",
       "destacado": false,
       "temporal": true,
       "sensible": true,
-      "nivelFuente": 0,
-      "fuentes": [],
-      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "nivelFuente": 2,
+      "fuentes": [
+        {
+          "titulo": "CMM: teléfonos de información ciudadana habilitados",
+          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/llamamiento-acudir-hospitales-accidente.html",
+          "fechaPublicacion": "2026-10-28T11:15:00+01:00"
+        },
+        {
+          "titulo": "CLM24: teléfonos y puntos de atención a familias",
+          "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html",
+          "fechaPublicacion": "2026-10-28T11:21:00+01:00"
+        }
+      ],
+      "comprobadoEn": "2026-10-28T11:45:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [],
-      "notaInterna": "En el accidente de Adamuz (enero de 2026) Iryo habilitó el 900 001 402. NO publicarlo como vigente para este suceso sin comunicado de Iryo.",
+      "notaInterna": "Es un número móvil, poco habitual para una compañía: confirmar OBLIGATORIAMENTE en la web o cuenta oficial de Iryo antes de publicar. En Adamuz Iryo usó el 900 001 402; no confundir.",
       "organismoCorto": "Iryo"
+    },
+    {
+      "id": "112clm-informacion",
+      "organismo": "Servicio de Emergencias 112 de Castilla-La Mancha",
+      "organismoCorto": "112 Castilla-La Mancha, información ciudadana",
+      "telefono": "900122112",
+      "telefonoVisible": "900 122 112",
+      "finalidad": "Información ciudadana sobre el accidente. Para emergencias, el 112.",
+      "destacado": false,
+      "temporal": true,
+      "sensible": true,
+      "nivelFuente": 2,
+      "fuentes": [
+        {
+          "titulo": "CMM: teléfonos de información ciudadana habilitados",
+          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/llamamiento-acudir-hospitales-accidente.html",
+          "fechaPublicacion": "2026-10-28T11:15:00+01:00"
+        },
+        {
+          "titulo": "CLM24: teléfonos y puntos de atención a familias",
+          "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html",
+          "fechaPublicacion": "2026-10-28T11:21:00+01:00"
+        }
+      ],
+      "comprobadoEn": "2026-10-28T11:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [],
+      "notaInterna": "Confirmar en la web o cuenta oficial del 112 Castilla-La Mancha."
     }
   ]
 }

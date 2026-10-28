@@ -24,6 +24,7 @@ Plataforma solidaria independiente de información y apoyo para personas afectad
 | `npm run build:preview` | Valida contenidos, compila la vista previa privada (banda «VISTA PREVIA», `noindex`), inserta CSP y ejecuta las pruebas estáticas. |
 | `python3 tests/navegador.py` | Pruebas en navegador real: accesibilidad axe, red, consola/CSP, «Avisar a mi familia», caducidad, modo seguro, sin JavaScript, reflujo y foco. Genera capturas. |
 | `npm run build:public` | Compila la versión pública **solo si** se cumplen todos los requisitos (responsable, dominio, revisión jurídica y profesional, datos verificados por dos personas, checklist). |
+| `node scripts/vigilar-fuentes.mjs` | Revisa las webs oficiales y avisa de cambios relevantes (no publica). Programado cada 10 min en GitHub Actions. |
 | `npm run serve` | Sirve `dist/` en `127.0.0.1` para revisarla. |
 
 La vista previa también se puede abrir sin servidor: doble clic en `dist/index.html`.
@@ -35,7 +36,9 @@ Para desactivar la telemetría anónima de Astro: `npx astro telemetry disable` 
 | Contenido | Archivo |
 |---|---|
 | Responsable legal, dominio, modo operativo, módulos, revisiones | `src/config/site.json` |
+| Recuadro «Última hora» (balance, hospitales, trenes, avisos, línea) | `src/data/ultimahora.json` |
 | Teléfonos oficiales | `src/data/canales.json` |
+| Fuentes que vigila el vigilante | `src/config/fuentes-vigiladas.json` |
 | Registro cronológico y fe de erratas | `src/data/actualizaciones.json` |
 | Puntos de atención | `src/data/puntos.json` |
 | Operadores y recursos de apoyo | `src/data/recursos.json` |

@@ -1,0 +1,77 @@
+---
+// Recuadro «Última hora»: balance oficial, trenes, hospitales, avisos de las autoridades y estado de la línea.
+// Cada dato con su fuente y nivel. Lo que no tiene dato oficial se dice expresamente.
+import { ultimahora as u, nivelTexto, ES_PREVIA, visible } from '../lib/datos';
+const pub = (n: number) => n >= 1 && n <= 2;
+const hora = (iso: string) => (iso ? new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', hour: '2-digit', minute: '2-digit' }).format(new Date(iso)) : '');
+---
+<section class="ultima-hora solo-normal temporal" aria-labelledby="uh-titulo" data-actualizado={u.actualizadoEn}>
+  <div class="uh-cabecera">
+    <h2 id="uh-titulo">Última hora</h2>
+    <p class="uh-hora">Actualizado a las {hora(u.actualizadoEn)} <span class="uh-hace" aria-live="polite"></span></p>
+  </div>
+  {ES_PREVIA && <p class="uh-previa">Datos de nivel 2 pendientes de verificación por el equipo.</p>}
+
+  {visible(u.balance) && <div class="uh-bloque" data-comprobado={u.balance.comprobadoEn} data-revisar={u.balance.revisarCadaMinutos}>
+    <h3>Balance oficial</h3>
+    <dl class="uh-cifras">
+      {u.balance.datos.map((d) => (
+        <div>
+          <dt>{d.etiqueta}</dt>
+          {pub(d.nivelFuente) && d.valor
+            ? <dd><span class="uh-valor">{d.valor}</span><span class="uh-fuente">{hora(d.hora)} · <a href={d.fuente!.url} rel="noopener noreferrer">{d.fuente!.titulo}</a></span></dd>
+            : <dd><span class="uh-sin-dato">Sin cifra oficial todavía</span></dd>}
+        </div>
+      ))}
+    </dl>
+    <p class="uh-nota">{u.balance.nota}</p>
+    <p class="aviso-caducado" role="status"></p>
+  </div>}
+
+  {visible(u.hospitales) && <div class="uh-bloque" data-comprobado={u.hospitales.comprobadoEn} data-revisar={u.hospitales.revisarCadaMinutos}>
+    <h3>A dónde se traslada a los heridos</h3>
+    <ul class="uh-lista">
+      {u.hospitales.lista.filter((h) => pub(h.nivelFuente)).map((h) => (
+        <li><strong>{h.centro}</strong> <span class="uh-papel">{h.papel}</span><span class="uh-fuente"><a href={h.fuente.url} rel="noopener noreferrer">{h.fuente.titulo}</a></span></li>
+      ))}
+    </ul>
+    {u.hospitales.nota && <p class="uh-nota">{u.hospitales.nota.texto} <a href={u.hospitales.nota.fuente.url} rel="noopener noreferrer">{u.hospitales.nota.fuente.titulo}</a></p>}
+    <p class="uh-alerta">{u.hospitales.aviso}</p>
+    <p class="aviso-caducado" role="status"></p>
+  </div>}
+
+  {visible(u.trenes) && <div class="uh-bloque" data-comprobado={u.trenes.comprobadoEn} data-revisar={u.trenes.revisarCadaMinutos}>
+    <h3>Los trenes</h3>
+    <ul class="uh-trenes">
+      {u.trenes.lista.filter((t) => pub(t.nivelFuente)).map((t) => (
+        <li>
+          <span class="uh-tren">{t.tren}</span>
+          <span>{t.recorrido}</span>
+          <span><strong>{t.viajeros}</strong> viajeros</span>
+          {t.salida && <span>Salida {t.salida}</span>}
+          <span class="uh-fuente"><a href={t.fuente.url} rel="noopener noreferrer">{t.fuente.titulo}</a></span>
+        </li>
+      ))}
+    </ul>
+    <p class="uh-nota">{u.trenes.totalViajeros} personas a bordo en total, según el <a href={u.trenes.fuenteTotal.url} rel="noopener noreferrer">Gobierno de Castilla-La Mancha</a>. {u.trenes.nota}</p>
+    <p class="aviso-caducado" role="status"></p>
+  </div>}
+
+  {visible(u.avisos) && <div class="uh-bloque" data-comprobado={u.avisos.comprobadoEn} data-revisar={u.avisos.revisarCadaMinutos}>
+    <h3>Piden las autoridades</h3>
+    <ul class="uh-lista">
+      {u.avisos.lista.filter((a) => pub(a.nivelFuente)).map((a) => (
+        <li>{a.texto}<span class="uh-fuente"><a href={a.fuente.url} rel="noopener noreferrer">{a.fuente.titulo}</a></span></li>
+      ))}
+    </ul>
+    <p class="aviso-caducado" role="status"></p>
+  </div>}
+
+  {visible(u.linea) && <div class="uh-bloque" data-comprobado={u.linea.comprobadoEn} data-revisar={u.linea.revisarCadaMinutos}>
+    <h3>La línea</h3>
+    <p><strong>{u.linea.estado}.</strong> {u.linea.detalle} <span class="uh-fuente"><a href={u.linea.fuente.url} rel="noopener noreferrer">{u.linea.fuente.titulo}</a></span></p>
+    <p class="aviso-caducado" role="status"></p>
+  </div>}
+
+  <p class="uh-pie">Cada dato indica de dónde sale. «{nivelTexto(2)}»: lo publica un medio citando al organismo. <a href="actualizaciones.html">Todos los avisos y correcciones</a></p>
+</section>

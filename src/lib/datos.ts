@@ -9,6 +9,7 @@ import preguntasData from '../data/preguntas.json';
 import estafasData from '../data/estafas.json';
 import mensajesData from '../data/mensajes.json';
 import esenciales from '../i18n/esenciales.json';
+import ultimahoraData from '../data/ultimahora.json';
 
 export type Fuente = { titulo: string; url: string; fechaPublicacion?: string };
 
@@ -43,6 +44,8 @@ export const categoriasFAQ = preguntasData.categorias;
 export const estafas = estafasData;
 export const mensajes = mensajesData;
 export const i18n = esenciales;
+export const ultimahora = ultimahoraData;
+export const otrosCanales = canalesData.canales.filter((c) => !c.destacado && c.telefono);
 
 const fmt = new Intl.DateTimeFormat('es-ES', {
   timeZone: 'Europe/Madrid',

@@ -81,6 +81,41 @@
   .caducado[data-sensible] .accion-llamar { display: none; }
   .caducado .estado-fresco { display: none; }
 
+  /* Otros teléfonos dentro del panel */
+  .otros-tel { list-style: none; padding: 0; margin: .8rem 0 0; display: grid; gap: .4rem; }
+  .otros-tel li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .3rem .8rem; background: rgba(255,255,255,.1); border-radius: 10px; padding: .55rem .8rem; max-width: none; }
+  .otros-tel a { color: #fff; font-weight: 700; font-size: 1.15rem; font-variant-numeric: tabular-nums; }
+  .otros-tel .sello-pendiente { margin: 0 0 0 .5rem; }
+  .otros-tel .aviso-caducado { width: 100%; padding: .3rem .6rem; }
+
+  /* Última hora: tablón de avisos, borde superior amarillo como un cartel informativo */
+  .ultima-hora { margin: 1.6rem 0 0; border: 2px solid var(--senal); border-top: 8px solid var(--aviso); border-radius: var(--radio); padding: 0 1rem 1rem; }
+  .uh-cabecera { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .2rem 1rem; padding-top: .9rem; }
+  .uh-cabecera h2 { margin: 0; font-size: 1.45rem; }
+  .uh-hora { margin: 0; font-size: .88rem; color: var(--tinta-suave); font-weight: 700; }
+  .uh-previa { font-size: .8rem; background: var(--aviso-fondo); color: var(--aviso-tinta); padding: .3rem .6rem; border-radius: 6px; margin: .6rem 0 0; }
+  .uh-bloque { border-top: 1px solid var(--linea); margin-top: .9rem; padding-top: .3rem; }
+  .uh-bloque h3 { font-size: 1rem; color: var(--senal); margin: .6rem 0 .4rem; }
+  .uh-cifras { display: grid; gap: .5rem; margin: 0; }
+  .uh-cifras > div { background: var(--niebla); border-radius: 10px; padding: .6rem .8rem; display: grid; grid-template-columns: minmax(0, 6rem) minmax(0, 1fr); gap: .1rem .8rem; align-items: baseline; }
+  .uh-cifras dt { grid-row: 1; }
+  .uh-cifras dt { font-size: .85rem; color: var(--tinta-suave); }
+  .uh-cifras dd { margin: 0; }
+  .uh-valor { display: block; font-size: 1.5rem; font-weight: 700; line-height: 1.15; }
+  .uh-sin-dato { display: block; font-size: .95rem; font-weight: 700; color: var(--tinta-suave); padding-top: .25rem; }
+  .uh-fuente { display: block; font-size: .78rem; color: var(--tinta-suave); margin-top: .15rem; font-weight: 400; }
+  .uh-fuente a { color: var(--tinta-suave); }
+  .uh-nota { font-size: .85rem; color: var(--tinta-suave); margin: .6rem 0 0; }
+  .uh-lista { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+  .uh-lista li { max-width: none; }
+  .uh-papel { display: inline-block; font-size: .8rem; background: var(--senal-claro); color: var(--senal-hondo); border-radius: 6px; padding: .05rem .45rem; margin-left: .3rem; }
+  .uh-alerta { background: var(--emergencia-fondo); border-left: 5px solid var(--emergencia); padding: .6rem .8rem; border-radius: 8px; font-weight: 700; margin: .7rem 0 0; }
+  .uh-trenes { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+  .uh-trenes li { display: grid; gap: .1rem; background: var(--niebla); border-radius: 10px; padding: .6rem .8rem; max-width: none; }
+  .uh-tren { font-weight: 700; font-size: 1.1rem; }
+  .uh-pie { font-size: .82rem; color: var(--tinta-suave); margin: 1rem 0 0; }
+  @media (min-width: 620px) { .uh-trenes { grid-template-columns: 1fr 1fr; } }
+
   /* Rutas: filas de señalética con pictograma en recuadro */
   .rutas { list-style: none; padding: 0; margin: 1.4rem 0 0; display: grid; gap: .6rem; }
   .rutas a { display: grid; grid-template-columns: 56px 1fr 20px; align-items: center; gap: .9rem; min-height: 76px; padding: .7rem .9rem .7rem .7rem; border-radius: var(--radio); text-decoration: none; color: var(--tinta); background: var(--niebla); border: 2px solid transparent; }
