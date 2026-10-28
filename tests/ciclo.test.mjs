@@ -9,6 +9,8 @@ import { join } from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 
 const REAL = new URL('..', import.meta.url).pathname;
+// La cronología está paginada (actualizaciones.html, actualizaciones-2.html…): se leen todas las páginas.
+const cronologia = (T) => readdirSync(join(T, 'dist')).filter((f) => /^actualizaciones(-\d+)?\.html$/.test(f)).map((f) => readFileSync(join(T, 'dist', f), 'utf8')).join('\n');
 let T, FIX;
 const leer = (p) => JSON.parse(readFileSync(join(T, p), 'utf8'));
 const escribir = (p, d) => writeFileSync(join(T, p), JSON.stringify(d, null, 2));
@@ -113,7 +115,7 @@ test('8. Revisión y aprobación manual (exige dos personas y texto propio)', ()
 test('9 y 10. Actualización de la web y horas en zona peninsular', () => {
   writeFileSync(join(T, 'src/config/build-mode.json'), JSON.stringify({ mode: 'preview' }));
   execFileSync('npx', ['astro', 'build'], { cwd: T, env: { ...process.env, ASTRO_TELEMETRY_DISABLED: '1' }, stdio: 'pipe' });
-  const html = readFileSync(join(T, 'dist/actualizaciones.html'), 'utf8');
+  const html = cronologia(T);
   assert.ok(html.includes('PRUEBA FICTICIA: punto de atención aprobado'), 'la noticia aprobada aparece en la web');
   assert.ok(html.includes('28/10/2026, 12:00'), '11:00 UTC se muestra como 12:00 peninsular');
   const idx = readFileSync(join(T, 'dist/index.html'), 'utf8');
@@ -224,7 +226,7 @@ test('V3-3. Prensa con atribución: se puede verificar; sin fuente enlazada, no 
 
 test('V3-4. En público sale la prensa verificada con su medio, nunca lo no verificado; cuatro fechas', () => {
   construir('public');
-  const act = readFileSync(join(T, 'dist/actualizaciones.html'), 'utf8');
+  const act = cronologia(T);
   assert.ok(act.includes('Periódico FICTICIO: la Junta informa'), 'el dato de prensa verificado aparece con su medio');
   assert.ok(!act.includes('Hospitales'), 'lo no verificado no aparece');
   assert.ok(act.includes('Publicado aquí'), 'cada información muestra las cuatro fechas');
