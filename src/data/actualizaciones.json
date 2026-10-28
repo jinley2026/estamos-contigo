@@ -2200,6 +2200,54 @@
         "url": "https://www.diariodepontevedra.es/articulo/pontevedra/colas-donar-sangre-pontevedra-respuesta-llamada-solidaridad-urda/202610282111201474408.html"
       },
       "fechaComunicado": "2026-10-28T21:11:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T22:45:00+01:00",
+      "comprobadoEn": "2026-10-28T22:45:00+01:00",
+      "operativa": false,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-gc-busqueda-noche-jueves",
+      "titulo": "Guardia Civil: la búsqueda sigue esta noche y el jueves entrarán perros, drones y un helicóptero",
+      "resumen": "Según la Comandancia de la Guardia Civil de Toledo, los trabajos para localizar a posibles víctimas dentro de los vagones continúan durante la noche del miércoles, con maquinaria pesada retirando parte de los restos y drones con sensores térmicos. El jueves está previsto que intervenga la unidad cinológica (perros) cuando la zona esté asegurada, con apoyo de drones, un helicóptero, Seguridad Ciudadana y Tráfico, que regula los accesos. Publicado por EFE (vía Infobae; hora según los metadatos de la página, 20:47).",
+      "organismo": "Guardia Civil",
+      "categoria": "guardiacivil",
+      "fuente": {
+        "titulo": "EFE vía Infobae: «Continúan durante la noche los trabajos de localización de víctimas del accidente de Urda» (20:47 según metadatos)",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/continuan-durante-la-noche-los-trabajos-de-localizacion-de-victimas-del-accidente-de-urda/"
+      },
+      "fechaComunicado": "2026-10-28T20:47:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T22:45:00+01:00",
+      "comprobadoEn": "2026-10-28T22:45:00+01:00",
+      "operativa": false,
+      "nivelFuente": 1,
+      "tipoFuente": "comunicado-oficial",
+      "id": "2026-10-28-uah-minuto-silencio",
+      "titulo": "La Universidad de Alcalá convoca un minuto de silencio el jueves a las 12:00",
+      "resumen": "La Universidad de Alcalá convoca a su comunidad universitaria a un minuto de silencio por las víctimas el jueves 29 a las 12:00, a la entrada de los edificios de todos sus campus, incluido el Rectorado. La página oficial no indica la hora de publicación (comprobada a las 22:45).",
+      "organismo": "Universidad de Alcalá",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Portal de Comunicación de la Universidad de Alcalá: «Minuto de silencio por las víctimas del accidente ferroviario de Urda»",
+        "url": "https://portalcomunicacion.uah.es/diario-digital/actualidad/Minuto-de-silencio-por-las-victimas-del-accidente-ferroviario-de-Urda"
+      },
+      "fechaComunicado": "2026-10-28T22:45:00+01:00"
     }
   ]
 }

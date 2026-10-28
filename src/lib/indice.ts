@@ -85,7 +85,7 @@ e.push({
 
 // Límite de peso (check-dist: 30 KB gzip por página): el buscador indexa solo los avisos más recientes.
 // La cronología completa sigue en actualizaciones.html.
-export const MAX_AVISOS_INDICE = 38;
+export const MAX_AVISOS_INDICE = 34;
 const avisosIndice = [...actualizaciones].sort((x, y) => (y.fechaComunicado ?? '').localeCompare(x.fechaComunicado ?? '')).slice(0, MAX_AVISOS_INDICE);
 for (const a of avisosIndice) {
   e.push({
