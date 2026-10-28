@@ -83,7 +83,11 @@ e.push({
   enlace: 'index.html#asistencia'
 });
 
-for (const a of actualizaciones) {
+// Límite de peso (check-dist: 30 KB gzip por página): el buscador indexa solo los avisos más recientes.
+// La cronología completa sigue en actualizaciones.html.
+export const MAX_AVISOS_INDICE = 45;
+const avisosIndice = [...actualizaciones].sort((x, y) => (y.fechaComunicado ?? '').localeCompare(x.fechaComunicado ?? '')).slice(0, MAX_AVISOS_INDICE);
+for (const a of avisosIndice) {
   e.push({
     titulo: a.titulo,
     respuesta: a.resumen,
@@ -120,5 +124,6 @@ for (const cat of categoriasFAQ)
   for (const q of cat.preguntas)
     e.push({ titulo: q.p, respuesta: q.r, claves: cat.titulo, fuente: q.fuente, fecha: '', enlace: `preguntas-frecuentes.html#${cat.id}` });
 
-export const indice = e.map((x) => ({ ...x, hora: x.fecha ? horaCorta(x.fecha) : '' }));
+// `fecha` (ISO) no lo usa el buscador del navegador: solo se publica la hora corta, para que la página pese menos de 30 KB comprimida.
+export const indice = e.map(({ fecha, ...x }) => ({ ...x, hora: fecha ? horaCorta(fecha) : '' }));
 export const MENSAJE_SIN_DATO = SIN_DATO;

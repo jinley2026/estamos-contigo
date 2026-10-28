@@ -1,6 +1,6 @@
 ---
 import Layout from '../components/Layout.astro';
-import { indice, MENSAJE_SIN_DATO } from '../lib/indice';
+import { indice, MENSAJE_SIN_DATO, MAX_AVISOS_INDICE } from '../lib/indice';
 const ejemplos = ['¿Cuántos pasajeros iban en el Iryo?', '¿Qué tren salió de Madrid?', '¿Cuántos heridos confirmó la Junta?', '¿Qué dijo Renfe sobre los billetes?', '¿A qué hora se interrumpió la circulación?', '¿Qué servicios oficiales hay para familiares?'];
 ---
 <Layout titulo="Buscar información" descripcion="Busca en la información verificada sobre el accidente: cifras, trenes, comunicados, teléfonos y puntos de atención.">
@@ -21,5 +21,6 @@ const ejemplos = ['¿Cuántos pasajeros iban en el Iryo?', '¿Qué tren salió d
   </noscript>
 
   <script is:inline type="application/json" id="indice-busqueda" set:html={JSON.stringify(indice).replace(/</g, '\\u003c')} />
+  <p class="meta">El buscador incluye los {MAX_AVISOS_INDICE} avisos más recientes; todos los anteriores siguen en la <a href="actualizaciones.html">cronología</a>.</p>
   <p class="meta">Lo que escribes aquí no sale de tu dispositivo: la búsqueda se hace en tu propio navegador.</p>
 </Layout>
