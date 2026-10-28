@@ -1167,6 +1167,102 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "2026-10-28-iml-toledo",
+      "titulo": "Los fallecidos se trasladan al Instituto de Medicina Legal de Toledo",
+      "resumen": "Según EFE, allí se harán las identificaciones y los trabajos forenses; la UME montará una morgue auxiliar junto al instituto. Policía Nacional y Policía Local controlan los accesos y la calle Dinamarca está cortada al tráfico de vecinos. Para identificar a un familiar, el cauce son las oficinas de la Guardia Civil (muestras de ADN) que figuran en esta web.",
+      "organismo": "Instituto de Medicina Legal de Toledo y UME",
+      "categoria": "justicia",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "EFE vía Infobae: «Comienzan a llegar los cuerpos de fallecidos al Instituto de Medicina Legal de Toledo» (17:18)",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/comienzan-a-llegar-los-cuerpos-de-fallecidos-al-instituto-de-medicina-legal-de-toledo/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T17:18:00+01:00",
+      "comprobadoEn": "2026-10-28T17:48:00+01:00",
+      "publicadoEn": "2026-10-28T17:48:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-sevilla-emergencias-santa-justa",
+      "titulo": "Emergencias Sevilla despliega un dispositivo para afectados y familias en Santa Justa",
+      "resumen": "El Ayuntamiento de Sevilla ha desplegado en la estación de Santa Justa Policía Local, Protección Civil, serenos, profesionales de las Unidades Municipales de Intervención en Emergencias Sociales (UMIES) y psicólogos especializados. Hay autobuses habilitados como transporte alternativo y la Policía Local regula el tráfico alrededor de la estación.",
+      "organismo": "Ayuntamiento de Sevilla (Emergencias Sevilla)",
+      "categoria": "ayuntamientos",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "El Pespunte: «Emergencias Sevilla activa un operativo para los afectados y familias…» (15:19)",
+        "url": "https://www.elpespunte.es/sevilla/emergencias-sevilla-activa-operativo-atencion-afectados-accidente-ferroviario-urda-santa-justa/20261028151913159048.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T15:19:00+01:00",
+      "comprobadoEn": "2026-10-28T17:48:00+01:00",
+      "publicadoEn": "2026-10-28T17:48:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-hospital-toledo-sangre",
+      "titulo": "El Hospital Universitario de Toledo deja de admitir donaciones de sangre por la afluencia",
+      "resumen": "Según Forbes España, a las 14:14 el hospital dejó de admitir donaciones por la gran respuesta. Antes de ir a donar, consulta los canales oficiales del Centro de Transfusión de tu comunidad.",
+      "organismo": "Hospital Universitario de Toledo (Sescam)",
+      "categoria": "sanidad",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Forbes España, última hora (14:14)",
+        "url": "https://forbes.es/ultima-hora/1057775/accidente-tren-urda-toledo-ave-iryo/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:14:00+01:00",
+      "comprobadoEn": "2026-10-28T17:48:00+01:00",
+      "publicadoEn": "2026-10-28T17:48:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-sanchez-declaracion-contenido",
+      "titulo": "Sánchez promete investigar hasta el final y reforzar la seguridad ferroviaria",
+      "resumen": "En su declaración en Urda, el presidente del Gobierno dijo que el país está de luto, que se llegará «hasta el final» para conocer las causas y que, si se demuestran negligencias o fallos, se responderá con contundencia. Anunció medidas para reforzar la seguridad de los viajeros. No hay todavía causa oficial ni responsabilidades establecidas.",
+      "organismo": "Gobierno de España",
+      "categoria": "gobierno",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Forbes España, última hora, y EFE vía Unitel",
+        "url": "https://forbes.es/ultima-hora/1057775/accidente-tren-urda-toledo-ave-iryo/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T15:00:00+01:00",
+      "comprobadoEn": "2026-10-28T17:48:00+01:00",
+      "publicadoEn": "2026-10-28T17:48:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

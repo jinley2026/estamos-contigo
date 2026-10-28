@@ -339,6 +339,29 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "fallecidos-iryo-page-1542",
+      "tipo": "fallecidos",
+      "valor": 44,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "tren:iryo-6076",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Europa Press vía Infobae: García-Page, 24 fallecidos en el AVE y 44 en el Iryo",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/suben-a-68-los-fallecidos-por-el-accidente-de-tren-de-urda-toledo-confirma-garcia-page/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T15:42:00+01:00",
+      "fechaVerificacion": "2026-10-28T17:48:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-iryo-page-1352",
+      "observaciones": "Según García-Page en la misma comparecencia: 15 heridos graves y 53 leves hospitalizados, y 5 personas con heridas leves atendidas en Urda. A las 13:52 había dado 34 en el Iryo.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
