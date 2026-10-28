@@ -141,11 +141,37 @@ with sync_playwright() as p:
     prueba("Primer elemento con Tab: «Saltar al contenido»", primero == "Saltar al contenido", primero)
     ctx.close()
 
+    # 13. Buscador de información aprobada (índice local; nada sale del dispositivo)
+    ctx = nav.new_context(**movil)
+    pg = ctx.new_page()
+    salientes = []
+    pg.on("request", lambda r: salientes.append(r.url) if not r.url.startswith(BASE) else None)
+    pg.goto(BASE + "buscar.html")
+    pg.locator("#consulta").fill("¿Cuántos pasajeros iban en el Iryo?")
+    pg.wait_for_timeout(400)
+    primero_txt = pg.locator(".resultado").first.inner_text()
+    pg.locator("#consulta").fill("¿Cuál es el color del tren?")
+    pg.wait_for_timeout(400)
+    sin = pg.locator(".resultados").inner_text()
+    pg.get_by_role("button", name="¿Qué tren salió de Madrid?").click()
+    madrid = pg.locator(".resultado").first.inner_text()
+    pg.screenshot(path=str(CAPT / "13-buscador.png"), full_page=False)
+    prueba("Buscador: «¿Cuántos pasajeros iban en el Iryo?» responde con la cifra y su fuente", "147" in primero_txt and "Fuente" in primero_txt, primero_txt[:160])
+    prueba("Buscador: pregunta sin respuesta comprobada muestra el aviso", "No disponemos de información oficial confirmada" in sin, sin[:120])
+    prueba("Buscador: «¿Qué tren salió de Madrid?» encuentra el AVE 2080", "2080" in madrid, madrid[:120])
+    prueba("Buscador: ninguna petición de red al buscar", not salientes, ", ".join(salientes))
+    pg.goto(BASE + "comunicados.html")
+    pg.get_by_role("button", name="Adif", exact=True).click()
+    visibles = pg.locator(".comunicado:visible").count()
+    adif = pg.locator(".comunicado[data-categoria='adif']:visible").count()
+    prueba("Comunicados: el filtro por organismo muestra solo los de Adif", visibles == adif and adif > 0, f"{visibles}/{adif}")
+    ctx.close()
+
     # 9. Capturas adicionales
     ctx = nav.new_context(**movil)
     pg = ctx.new_page()
     pg.clock.install(time=(t0 + datetime.timedelta(minutes=30)))
-    for n, f in [("02-busco-familiar", "busco-a-un-familiar.html"), ("03-iba-en-el-tren", "iba-en-el-tren.html"), ("08-version-ligera", "ligera.html"), ("09-ingles", "en.html"), ("10-actualizaciones", "actualizaciones.html")]:
+    for n, f in [("02-busco-familiar", "busco-a-un-familiar.html"), ("03-iba-en-el-tren", "iba-en-el-tren.html"), ("08-version-ligera", "ligera.html"), ("09-ingles", "en.html"), ("10-actualizaciones", "actualizaciones.html"), ("14-comunicados", "comunicados.html"), ("15-admin", "admin.html")]:
         pg.goto(BASE + f)
         pg.screenshot(path=str(CAPT / f"{n}.png"), full_page=True)
     ctx.close()

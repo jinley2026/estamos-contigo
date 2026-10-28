@@ -1,8 +1,8 @@
 {
-  "fecha": "2026-10-28T11:42:18",
+  "fecha": "2026-10-28T12:00:53",
   "resultados": [
     {
-      "prueba": "Accesibilidad automática axe (WCAG 2.2 A/AA) sin violaciones en 26 páginas",
+      "prueba": "Accesibilidad automática axe (WCAG 2.2 A/AA) sin violaciones en 30 páginas",
       "ok": true,
       "detalle": "{}"
     },
@@ -44,7 +44,7 @@
     {
       "prueba": "Dato caducado (2 h > 60 min): se marca pendiente y se oculta el botón de llamada",
       "ok": true,
-      "detalle": "tarjeta-tel temporal pendiente caducado / Pendiente de revisión: última comprobación 28/10, 10:50. Consulta la fuente oficial antes de actuar."
+      "detalle": "tarjeta-tel temporal pendiente caducado / Pendiente de revisión: última comprobación 28/10, 12:00. Consulta la fuente oficial antes de actuar."
     },
     {
       "prueba": "Modo seguro automático tras 4 h sin revisión: aviso visible y se oculta «Última hora»",
@@ -75,6 +75,31 @@
       "prueba": "Primer elemento con Tab: «Saltar al contenido»",
       "ok": true,
       "detalle": "Saltar al contenido"
+    },
+    {
+      "prueba": "Buscador: «¿Cuántos pasajeros iban en el Iryo?» responde con la cifra y su fuente",
+      "ok": true,
+      "detalle": "Iryo 6076 (Iryo)\n\nOrigen y destino: sin dato oficial. Hora de salida: sin dato oficial. Pasajeros a bordo: 147, según Junta de Castilla-La Mancha.\n\nFuente: Info"
+    },
+    {
+      "prueba": "Buscador: pregunta sin respuesta comprobada muestra el aviso",
+      "ok": true,
+      "detalle": "No disponemos de información oficial confirmada sobre esta cuestión."
+    },
+    {
+      "prueba": "Buscador: «¿Qué tren salió de Madrid?» encuentra el AVE 2080",
+      "ok": true,
+      "detalle": "AVE 2080 (Renfe)\n\nCirculaba de Madrid a Sevilla. Hora de salida: sin dato oficial. Pasajeros a bordo: 397, según Junta d"
+    },
+    {
+      "prueba": "Buscador: ninguna petición de red al buscar",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "Comunicados: el filtro por organismo muestra solo los de Adif",
+      "ok": true,
+      "detalle": "2/2"
     }
   ]
 }

@@ -1,0 +1,47 @@
+# Ciclo de información cada 30 minutos (GitHub Actions, programado).
+# Consulta las fuentes oficiales y deja propuestas en cola/propuestas.json. NO publica cifras ni noticias:
+# abre o actualiza una solicitud de cambio («pull request») para que el equipo revise y apruebe con scripts/aprobar.mjs.
+# Solo actualiza directamente src/data/estado-sistema.json (la hora real de la última consulta y el estado de cada fuente),
+# que la web muestra para no aparentar estar al día si el ciclo falla.
+# GitHub no garantiza la puntualidad de las ejecuciones programadas: pueden retrasarse en momentos de carga.
+name: Ciclo de informacion
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: ciclo
+  cancel-in-progress: false
+jobs:
+  ciclo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Consultar fuentes
+        run: node scripts/ciclo.mjs
+      - name: Publicar el estado del sistema (hora de consulta y fuentes)
+        run: |
+          git config user.name "ciclo-estamos-contigo"
+          git config user.email "ciclo@users.noreply.github.com"
+          git add src/data/estado-sistema.json
+          git diff --cached --quiet || (git commit -m "Estado del ciclo $(date -u +%H:%M) UTC" && git push)
+      - name: Enviar propuestas a revisión
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: cola-revision
+          add-paths: |
+            cola/**
+          title: 'Propuestas pendientes de revisión'
+          body: |
+            El ciclo automático ha detectado cambios en fuentes oficiales.
+            Revisa con `node scripts/aprobar.mjs --lista`, verifica cada propuesta en su fuente original y apruébala o recházala.
+            Nada de esta solicitud se publica por sí solo.
+          commit-message: 'Cola de revisión actualizada'
+          labels: verificar

@@ -20,52 +20,87 @@
     },
     {
       "id": "adif-0",
-      "nombre": "Punto de atención a afectados de Adif — Estación de Madrid-Puerta de Atocha",
-      "direccion": "Estación de Madrid-Puerta de Atocha, Madrid",
-      "funcion": "Atención a los afectados. Anunciado por Adif; según la fuente, en instalación.",
+      "nombre": "Punto de atención a afectados de Adif — Estación de Madrid-Puerta de Atocha Almudena Grandes",
+      "direccion": "Estación de Madrid-Puerta de Atocha Almudena Grandes, Madrid",
+      "funcion": "Atención a los afectados.",
       "organismo": "Adif",
       "horario": "No comunicado",
       "telefono": "",
-      "nivelFuente": 2,
+      "nivelFuente": 1,
       "fuente": {
-        "titulo": "CLM24: teléfonos y puntos de atención a familias",
-        "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html"
+        "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
+        "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T11:45:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": []
+      "verificadoPor": [],
+      "fuentesAdicionales": [
+        {
+          "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
+          "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
+        }
+      ]
     },
     {
       "id": "adif-1",
       "nombre": "Punto de atención a afectados de Adif — Estación de Sevilla-Santa Justa",
       "direccion": "Estación de Sevilla-Santa Justa, Sevilla",
-      "funcion": "Atención a los afectados. Anunciado por Adif; según la fuente, en instalación.",
+      "funcion": "Atención a los afectados.",
       "organismo": "Adif",
       "horario": "No comunicado",
       "telefono": "",
-      "nivelFuente": 2,
+      "nivelFuente": 1,
       "fuente": {
-        "titulo": "CLM24: teléfonos y puntos de atención a familias",
-        "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html"
+        "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
+        "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T11:45:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": []
+      "verificadoPor": [],
+      "fuentesAdicionales": [
+        {
+          "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
+          "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
+        }
+      ]
     },
     {
       "id": "adif-2",
-      "nombre": "Punto de atención a afectados de Adif — Estación de Córdoba Julio Anguita",
-      "direccion": "Estación de Córdoba Julio Anguita, Córdoba",
-      "funcion": "Atención a los afectados. Anunciado por Adif; según la fuente, en instalación.",
+      "nombre": "Punto de atención a afectados de Adif — Estación de Córdoba-Julio Anguita",
+      "direccion": "Estación de Córdoba-Julio Anguita, Córdoba",
+      "funcion": "Atención a los afectados.",
       "organismo": "Adif",
       "horario": "No comunicado",
       "telefono": "",
-      "nivelFuente": 2,
+      "nivelFuente": 1,
       "fuente": {
-        "titulo": "CLM24: teléfonos y puntos de atención a familias",
-        "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html"
+        "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
+        "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T11:45:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [],
+      "fuentesAdicionales": [
+        {
+          "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
+          "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
+        }
+      ]
+    },
+    {
+      "id": "urda-santo-cristo",
+      "nombre": "Atención a familias — pabellón del colegio Santo Cristo, Urda",
+      "direccion": "Pabellón del colegio Santo Cristo, Urda (Toledo)",
+      "funcion": "Dispositivo de atención a familias.",
+      "organismo": "Junta de Castilla-La Mancha (PLATECAM)",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 1,
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
+      },
+      "comprobadoEn": "2026-10-28T12:10:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": []
     }

@@ -1,0 +1,34 @@
+---
+// Una ficha por tren. Campo sin dato oficial = «Sin dato oficial». La ocupación viene de afirmaciones; la capacidad es otro dato.
+import { trenes, visible, verificado, horaCorta } from '../lib/datos';
+import { cifra, texto } from '../lib/afirmaciones';
+const SIN = 'Sin dato oficial';
+const lista = trenes.filter((t) => visible(t));
+---
+<section class="trenes" aria-labelledby="trenes-titulo" id="trenes">
+  <h2 id="trenes-titulo">Trenes implicados</h2>
+  <div class="fichas">
+    {lista.map((t) => {
+      const p = cifra('pasajeros', `tren:${t.id}`).vigente;
+      return (
+        <article class={`ficha ${verificado(t) ? '' : 'pendiente'}`} aria-label={`${t.servicio} ${t.numero}`}>
+          <h3><span class="ficha-servicio">{t.servicio}</span> {t.numero}</h3>
+          <dl>
+            <div><dt>Operador</dt><dd>{t.operador}</dd></div>
+            <div><dt>Origen</dt><dd class={t.origen ? '' : 'sin'}>{t.origen || SIN}</dd></div>
+            <div><dt>Destino</dt><dd class={t.destino ? '' : 'sin'}>{t.destino || SIN}</dd></div>
+            <div><dt>Salida</dt><dd class={t.salida ? '' : 'sin'}>{t.salida || SIN}</dd></div>
+            <div><dt>Llegada prevista</dt><dd class={t.llegadaPrevista ? '' : 'sin'}>{t.llegadaPrevista || SIN}</dd></div>
+            <div><dt>Pasajeros a bordo</dt><dd class={p ? 'destacado' : 'sin'}>{p ? texto(p) : SIN}</dd></div>
+            <div><dt>Capacidad del tren</dt><dd class={t.capacidad ? '' : 'sin'}>{t.capacidad || SIN}</dd></div>
+            <div><dt>Estado comunicado</dt><dd class={t.estado ? '' : 'sin'}>{t.estado || SIN}</dd></div>
+          </dl>
+          <p class="cifra-fuente">
+            Ficha: <a href={t.fuente.url} rel="noopener noreferrer">{t.fuente.titulo}</a>.
+            {p && <> Pasajeros: {p.organismo}, {horaCorta(p.fechaComunicado)}.</>}
+          </p>
+        </article>
+      );
+    })}
+  </div>
+</section>

@@ -1,70 +1,194 @@
 {
-  "_comentario": "Registro cronológico. Solo niveles 1 y 2. Nunca cifras de víctimas ni identidades. estado: vigente | pendiente | corregido | retirado. Las correcciones nunca borran: se añade 'correccion' y se cambia el estado.",
+  "_comentario": "Cronología y centro de comunicados. Solo niveles 1 y 2. Nunca identidades. categoria: gobierno | ministerio | junta | adif | renfe | iryo | emergencias | sanidad | ayuntamientos | otros. tipoFuente: comunicado-oficial (publicado por el propio organismo) | medio-citando (un medio o agencia recoge lo que dijo el organismo). estado: vigente | pendiente | corregido | retirado. alerta: true para mostrarlo como aviso destacado durante 60 minutos.",
   "entradas": [
     {
-      "id": "2026-10-28-renfe-cambios",
-      "titulo": "Renfe habilita cambios y anulaciones gratuitos en los trenes afectados",
-      "resumen": "Renfe informa de que los viajeros de los trenes afectados por el corte de la línea Madrid–Andalucía pueden cambiar o anular su billete sin coste. Consulta las condiciones en los canales de Renfe.",
-      "fuente": { "titulo": "El Progreso, recoge el aviso de Renfe", "url": "https://www.elprogreso.es/articulo/espana/grave-accidente-tren-toledo-dos-trenes-chocan-urda-ordaz/202610280931312009828.html" },
-      "nivelFuente": 2,
-      "fechaComunicado": "2026-10-28T09:45:00+01:00",
-      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "id": "2026-10-28-platecam-so2",
+      "titulo": "La Junta eleva el PLATECAM a Situación Operativa 2 y solicita la UME",
+      "resumen": "A las 10:30 la Junta eleva el plan de emergencia a Situación Operativa 2 y pide la intervención de la Unidad Militar de Emergencias. Habilita atención a familias en las estaciones de Atocha, Santa Justa y Córdoba y en el pabellón del colegio Santo Cristo de Urda, y un albergue en el pabellón polideportivo de Urda. Teléfono gratuito del 112: 900 122 112.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T10:30:00+01:00",
+      "comprobadoEn": "2026-10-28T12:10:00+01:00",
       "revisarCadaMinutos": 120,
       "estado": "vigente",
       "operativa": true,
-      "correccion": null
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": []
+    },
+    {
+      "id": "2026-10-28-adif-nota",
+      "titulo": "Adif publica los teléfonos para familiares y tres puntos de atención",
+      "resumen": "Adif da como teléfonos para familiares el 900 10 10 20 (Renfe) y el 900 001 403 (Iryo), y habilita puntos de atención a los afectados en las estaciones de Madrid-Puerta de Atocha Almudena Grandes, Sevilla-Santa Justa y Córdoba-Julio Anguita.",
+      "organismo": "Adif",
+      "categoria": "adif",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "Adif: nota «Accidente en Urda (Toledo)»",
+        "url": "https://www.adif.es/comunicacion/notas-prensa"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T11:30:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": []
+    },
+    {
+      "id": "2026-10-28-hospitales-llamamiento",
+      "titulo": "Emergencias pide no acudir a urgencias de Toledo, Ciudad Real y Mancha Centro y donar sangre",
+      "resumen": "Los heridos se trasladan a los hospitales de Toledo, Ciudad Real y Mancha Centro. Se pide no acudir a sus urgencias salvo extrema urgencia y donar sangre de todos los grupos.",
+      "organismo": "Emergencias de Castilla-La Mancha",
+      "categoria": "emergencias",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "CMM: llamamiento de los servicios de Emergencia de Castilla-La Mancha",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/llamamiento-acudir-hospitales-accidente.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T10:43:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": []
+    },
+    {
+      "id": "2026-10-28-pasajeros",
+      "titulo": "La Junta informa de 544 personas a bordo: 397 en el AVE y 147 en el Iryo",
+      "resumen": "La portavoz del Gobierno de Castilla-La Mancha cifra en 397 los pasajeros del AVE 2080 y en 147 los del Iryo 6076, entre ellos un bebé.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Infobae/EFE: declaraciones de la portavoz del Gobierno regional",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/el-tren-iryo-accidentado-viajaba-con-147-pasajeros-y-el-ave-con-397/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T11:00:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "revisarCadaMinutos": 240,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": []
+    },
+    {
+      "id": "2026-10-28-atocha-psicosocial",
+      "titulo": "Punto de atención psicosocial en la estación de Atocha",
+      "resumen": "La Agencia de Seguridad y Emergencias Madrid 112 ha dispuesto en la estación de Atocha un punto de atención psicosocial para víctimas y familiares. No se ha comunicado horario.",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "emergencias",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Madrid Actual: información de Emergencias 112 Comunidad de Madrid",
+        "url": "https://www.madridactual.es/noticias-regionales/sucesos/accidente-comunidad-envia-8-dotaciones-bomberos-recursos-20261028-8125923.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T10:20:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": []
     },
     {
       "id": "2026-10-28-renfe-pavaff",
       "titulo": "Renfe activa su plan de asistencia a víctimas y familiares",
-      "resumen": "Renfe ha activado el Plan de Asistencia a Víctimas de Accidentes Ferroviarios y a sus Familiares (PAVAFF) y ha habilitado un teléfono de información exclusivo para familiares.",
-      "fuente": { "titulo": "Castilla-La Mancha Media, cita InfoRenfe", "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/victimas-accidente-ferroviario-urda-toledo.html" },
+      "resumen": "Renfe ha activado el Plan de Asistencia a Víctimas de Accidentes Ferroviarios y a sus Familiares (PAVAFF) y ha habilitado el teléfono 900 10 10 20, exclusivo para familiares.",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Castilla-La Mancha Media: cita la publicación de InfoRenfe",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/victimas-accidente-ferroviario-urda-toledo.html"
+      },
       "nivelFuente": 2,
       "fechaComunicado": "2026-10-28T10:00:00+01:00",
-      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
       "estado": "vigente",
       "operativa": true,
-      "correccion": null
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": []
     },
     {
-      "id": "2026-10-28-atocha-psicosocial",
-      "titulo": "Punto de atención psicosocial en la estación de Atocha (Madrid)",
-      "resumen": "La Agencia de Seguridad y Emergencias Madrid 112 ha dispuesto en la estación de Atocha un punto de atención psicosocial para víctimas y familiares. No se ha comunicado horario.",
-      "fuente": { "titulo": "Madrid Actual, recoge la información de Emergencias 112 Comunidad de Madrid", "url": "https://www.madridactual.es/noticias-regionales/sucesos/accidente-comunidad-envia-8-dotaciones-bomberos-recursos-20261028-8125923.html" },
+      "id": "2026-10-28-renfe-cambios",
+      "titulo": "Renfe habilita cambios y anulaciones gratuitos en los trenes afectados",
+      "resumen": "Los viajeros de los trenes afectados por el corte de la línea Madrid–Andalucía pueden cambiar o anular su billete sin coste. Consulta las condiciones en los canales de Renfe.",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "El Progreso: recoge el aviso de Renfe",
+        "url": "https://www.elprogreso.es/articulo/espana/grave-accidente-tren-toledo-dos-trenes-chocan-urda-ordaz/202610280931312009828.html"
+      },
       "nivelFuente": 2,
-      "fechaComunicado": "2026-10-28T10:20:00+01:00",
-      "comprobadoEn": "2026-10-28T10:50:00+01:00",
-      "revisarCadaMinutos": 60,
+      "fechaComunicado": "2026-10-28T09:45:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "revisarCadaMinutos": 120,
       "estado": "vigente",
       "operativa": true,
-      "correccion": null
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": []
     },
     {
       "id": "2026-10-28-platecam",
-      "titulo": "La Junta de Castilla-La Mancha activa su Plan Territorial de Emergencia",
-      "resumen": "El Gobierno regional ha activado el Plan Territorial de Emergencia de Castilla-La Mancha (Platecam) a raíz del accidente.",
-      "fuente": { "titulo": "CLM24, recoge fuentes del Gobierno regional", "url": "https://www.clm24.es/provincias/toledo/colisionan-dos-trenes-pasajeros-urda-accidente-trenes/20261028093701484833.html" },
-      "nivelFuente": 2,
-      "fechaComunicado": "2026-10-28T09:37:00+01:00",
-      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "titulo": "La Junta activa el PLATECAM en fase de emergencia para la provincia de Toledo",
+      "resumen": "Activado a las 9:15 en Situación Operativa 1. Despliegue de Guardia Civil, bomberos, Protección Civil y SESCAM con un puesto médico avanzado; preaviso a los equipos psicosociales de Cruz Roja. El pabellón polideportivo de Urda se habilita para la primera atención a los afectados.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: nota de prensa",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-activa-el-platecam-en-fase-de-emergencia-situacion-operativa-1-para-la"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T09:15:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 240,
       "estado": "vigente",
       "operativa": false,
-      "correccion": null
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": []
     },
     {
       "id": "2026-10-28-adif-corte",
       "titulo": "Adif interrumpe la circulación en la línea de alta velocidad Madrid–Andalucía",
       "resumen": "Adif comunica que la circulación está interrumpida por un alcance entre dos trenes entre Mora/Orgaz y Urda (punto kilométrico 118). No hay previsión pública de restablecimiento.",
-      "fuente": { "titulo": "Lecturas, recoge el comunicado de Adif", "url": "https://www.lecturas.com/diario/adif-confirma-choque-dos-trenes-a-altura-yebenes-toledo-y-suspende-circulacion_200489" },
+      "organismo": "Adif",
+      "categoria": "adif",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Lecturas: recoge el comunicado de Adif",
+        "url": "https://www.lecturas.com/diario/adif-confirma-choque-dos-trenes-a-altura-yebenes-toledo-y-suspende-circulacion_200489"
+      },
       "nivelFuente": 2,
       "fechaComunicado": "2026-10-28T09:15:00+01:00",
-      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 120,
       "estado": "vigente",
       "operativa": true,
-      "correccion": null
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": []
     }
   ]
 }

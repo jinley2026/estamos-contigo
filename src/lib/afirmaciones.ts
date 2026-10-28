@@ -1,0 +1,39 @@
+// Lógica de cifras: selección de la cifra vigente, detección de discrepancias e historial.
+// Reglas: no se suman cifras de distintos organismos; no se calcula nada por diferencia;
+// si varios organismos dan cifras distintas, se muestran todas con su hora, sin cifra intermedia.
+import data from '../data/afirmaciones.json';
+import { ES_PREVIA } from './datos';
+
+export type Afirmacion = (typeof data.afirmaciones)[number];
+export const TIPOS = data.tipos as Record<string, string>;
+
+/** En publicación solo cuenta lo aprobado; en la vista previa también lo pendiente. */
+const publicable = (a: Afirmacion) =>
+  a.estadoEditorial === 'aprobado' || (ES_PREVIA && a.estadoEditorial === 'pendiente');
+
+export type Cifra = {
+  tipo: string;
+  ambito: string;
+  vigente: Afirmacion | null;
+  discrepancias: Afirmacion[];
+  historial: Afirmacion[];
+};
+
+export function cifra(tipo: string, ambito = 'global'): Cifra {
+  const todas = data.afirmaciones.filter((a) => a.tipo === tipo && a.ambito === ambito && publicable(a));
+  const orden = [...todas].sort((x, y) => y.fechaComunicado.localeCompare(x.fechaComunicado));
+  const vigente = orden[0] ?? null;
+  // Última cifra de cada organismo
+  const porOrganismo = new Map<string, Afirmacion>();
+  for (const a of orden) if (!porOrganismo.has(a.organismo)) porOrganismo.set(a.organismo, a);
+  const ultimas = [...porOrganismo.values()];
+  const discrepancias = vigente ? ultimas.filter((a) => a !== vigente && (a.valor !== vigente.valor || a.calificador !== vigente.calificador)) : [];
+  // Historial: versiones anteriores encadenadas
+  const historial = orden.slice(1);
+  return { tipo, ambito, vigente, discrepancias, historial };
+}
+
+export const texto = (a: Afirmacion) =>
+  `${a.calificador === 'al menos' ? 'Al menos ' : a.calificador === 'aproximadamente' ? 'Unos ' : ''}${a.valor.toLocaleString('es-ES')}`;
+
+export const todas = data.afirmaciones;

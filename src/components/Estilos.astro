@@ -116,6 +116,72 @@
   .uh-pie { font-size: .82rem; color: var(--tinta-suave); margin: 1rem 0 0; }
   @media (min-width: 620px) { .uh-trenes { grid-template-columns: 1fr 1fr; } }
 
+  /* V2: vigencia, alertas, situación, balance, trenes, cronología, buscador, comunicados */
+  .estado-sistema { margin: 1rem 0 0; padding: .7rem .9rem; border-radius: 12px; background: var(--niebla); font-size: .85rem; }
+  .estado-sistema dl { margin: 0; display: grid; gap: .3rem 1rem; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+  .estado-sistema dt { color: var(--tinta-suave); }
+  .estado-sistema dd { margin: 0; font-weight: 700; }
+  .es-alerta { margin: .6rem 0 0; background: var(--aviso-fondo); border-left: 5px solid var(--aviso); padding: .5rem .7rem; color: var(--aviso-tinta); font-weight: 700; }
+  .es-nota { margin: .5rem 0 0; color: var(--tinta-suave); }
+  .alertas { display: grid; gap: .5rem; margin: 1rem 0 0; }
+  .alerta { margin: 0; padding: .7rem .9rem; border-radius: 10px; max-width: none; }
+  .alerta-tel { background: var(--aviso-fondo); border-left: 6px solid var(--aviso); color: var(--aviso-tinta); }
+  .alerta-nueva { background: var(--senal-claro); border-left: 6px solid var(--senal); }
+  .situacion, .balance, .trenes, .novedades, .buscador-acceso { margin-top: 1.8rem; }
+  .sit-resumen { font-size: 1.15rem; font-weight: 700; margin: 0 0 .6rem; }
+  .sit-datos { display: grid; gap: .4rem; margin: 0; }
+  .sit-datos > div { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: .8rem; }
+  .sit-datos dt { color: var(--tinta-suave); }
+  .sit-datos dd { margin: 0; }
+  .cifras { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .cifra { border: 2px solid var(--senal); border-radius: var(--radio); padding: .8rem .9rem; display: grid; gap: .15rem; max-width: none; }
+  .cifra.pendiente { border-color: var(--aviso); }
+  .cifra-etiqueta { color: var(--tinta-suave); font-size: .9rem; }
+  .cifra-valor { font-size: 2rem; font-weight: 700; line-height: 1.1; color: var(--senal-hondo); font-variant-numeric: tabular-nums; }
+  .cifra-estado { font-size: .85rem; font-weight: 700; display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
+  .cifra-estado .sello-pendiente { margin: 0; }
+  .cifra-fuente { font-size: .78rem; color: var(--tinta-suave); margin: .3rem 0 0; }
+  .cifra-fuente a { color: var(--tinta-suave); }
+  .cifra-discrepancia { font-size: .85rem; background: var(--aviso-fondo); color: var(--aviso-tinta); padding: .4rem .6rem; border-radius: 8px; margin-top: .3rem; }
+  .sin-cifra { font-weight: 700; color: var(--tinta-suave); }
+  .fichas { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .ficha { border: 2px solid var(--senal); border-radius: var(--radio); padding: .9rem 1rem; }
+  .ficha.pendiente { border-color: var(--aviso); }
+  .ficha h3 { margin: 0 0 .5rem; font-size: 1.4rem; color: var(--senal-hondo); }
+  .ficha-servicio { background: var(--senal); color: #fff; border-radius: 6px; padding: .05rem .5rem; font-size: 1rem; vertical-align: .15em; }
+  .ficha dl { margin: 0; display: grid; gap: .25rem; }
+  .ficha dl > div { display: grid; grid-template-columns: minmax(0, 8.5rem) minmax(0, 1fr); gap: .6rem; border-bottom: 1px solid var(--linea); padding: .25rem 0; }
+  .ficha dt { color: var(--tinta-suave); font-size: .9rem; }
+  .ficha dd { margin: 0; font-weight: 700; }
+  .ficha dd.sin { font-weight: 400; color: var(--tinta-suave); font-style: italic; }
+  .ficha dd.destacado { font-size: 1.2rem; }
+  .cronologia { list-style: none; padding: 0; margin: 0; }
+  .hito { display: grid; grid-template-columns: 3.4rem minmax(0, 1fr); gap: .8rem; padding: .7rem 0; border-top: 1px solid var(--linea); max-width: none; }
+  .hito time { font-weight: 700; color: var(--senal); font-variant-numeric: tabular-nums; }
+  .hito-titulo { margin: 0; font-weight: 700; }
+  .hito-meta { margin: .2rem 0 0; font-size: .8rem; color: var(--tinta-suave); display: flex; flex-wrap: wrap; gap: .3rem .7rem; align-items: center; }
+  .hito-meta a { color: var(--tinta-suave); }
+  .hito-meta .sello-pendiente { margin: 0; }
+  .org { font-weight: 700; color: var(--tinta); }
+  .boton-buscar { display: flex; align-items: center; gap: .7rem; padding: .9rem 1rem; border: 2px solid var(--senal); border-radius: 12px; text-decoration: none; font-weight: 700; color: var(--senal-hondo); min-height: 56px; }
+  .buscador label { font-weight: 700; display: block; margin: 1rem 0 .3rem; }
+  .buscador input { width: 100%; font: inherit; font-size: 1.15rem; padding: .8rem; border: 2px solid var(--senal); border-radius: 10px; }
+  .ejemplos { display: flex; flex-wrap: wrap; gap: .4rem; margin: .7rem 0; }
+  .ejemplos button { font: inherit; font-size: .85rem; padding: .45rem .7rem; border-radius: 999px; border: 1px solid var(--linea); background: var(--niebla); cursor: pointer; min-height: 40px; }
+  .resultado { border-top: 1px solid var(--linea); padding: .8rem 0; }
+  .resultado h2 { font-size: 1.05rem; margin: 0 0 .3rem; }
+  .resultado p { margin: .2rem 0; }
+  .filtros { margin: 1rem 0; }
+  .lista-comunicados { list-style: none; padding: 0; margin: 0; }
+  .comunicado { border-top: 1px solid var(--linea); padding: .9rem 0; max-width: none; }
+  .comunicado h2 { font-size: 1.1rem; margin: .2rem 0; }
+  .com-org { margin: 0; font-weight: 700; font-size: .9rem; display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
+  .com-tipo { font-size: .75rem; padding: .1rem .45rem; border-radius: 6px; background: var(--niebla); font-weight: 700; }
+  .com-tipo.comunicado-oficial { background: var(--senal); color: #fff; }
+  .com-org .sello-pendiente { margin: 0; }
+  code { font-size: .85em; background: var(--niebla); padding: .05rem .3rem; border-radius: 4px; overflow-wrap: anywhere; }
+  table { display: block; overflow-x: auto; }
+
   /* Rutas: filas de señalética con pictograma en recuadro */
   .rutas { list-style: none; padding: 0; margin: 1.4rem 0 0; display: grid; gap: .6rem; }
   .rutas a { display: grid; grid-template-columns: 56px 1fr 20px; align-items: center; gap: .9rem; min-height: 76px; padding: .7rem .9rem .7rem .7rem; border-radius: var(--radio); text-decoration: none; color: var(--tinta); background: var(--niebla); border: 2px solid transparent; }

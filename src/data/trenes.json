@@ -1,0 +1,83 @@
+{
+  "_comentario": "Fichas de los trenes. Campo vacío = sin dato oficial (se muestra así, nunca se rellena por suposición). La ocupación real sale de afirmaciones.json (tipo pasajeros, ámbito tren:<id>); la capacidad es otro dato distinto.",
+  "trenes": [
+    {
+      "id": "ave-2080",
+      "operador": "Renfe",
+      "servicio": "AVE",
+      "numero": "2080",
+      "origen": "Madrid",
+      "destino": "Sevilla",
+      "salida": "",
+      "llegadaPrevista": "",
+      "capacidad": "",
+      "estado": "",
+      "fuente": {
+        "titulo": "CLM24: datos del Gobierno de Castilla-La Mancha (trenes y trayecto Madrid–Sevilla)",
+        "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html",
+        "tipoFuente": "medio-citando"
+      },
+      "nivelFuente": 2,
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "revisarCadaMinutos": 120,
+      "verificadoPor": [],
+      "observaciones": "Varios medios dicen que salió de Madrid-Puerta de Atocha a las 8:00; no hay confirmación oficial, no se publica."
+    },
+    {
+      "id": "iryo-6076",
+      "operador": "Iryo",
+      "servicio": "Iryo",
+      "numero": "6076",
+      "origen": "",
+      "destino": "",
+      "salida": "",
+      "llegadaPrevista": "",
+      "capacidad": "",
+      "estado": "",
+      "fuente": {
+        "titulo": "CLM24: datos del Gobierno de Castilla-La Mancha",
+        "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html",
+        "tipoFuente": "medio-citando"
+      },
+      "nivelFuente": 2,
+      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "revisarCadaMinutos": 120,
+      "verificadoPor": [],
+      "observaciones": "La fuente habla del trayecto Madrid–Sevilla para ambos trenes, pero hay versiones contradictorias en prensa sobre el sentido del Iryo. Origen y destino del Iryo se dejan sin dato hasta confirmación oficial."
+    }
+  ],
+  "hecho": {
+    "descripcion": "Alcance entre dos trenes de alta velocidad en la línea Madrid–Andalucía.",
+    "lugar": "Estación de Urda (Toledo), entre Mora/Orgaz y Urda, punto kilométrico 118.",
+    "hora": "2026-10-28T08:54:00+01:00",
+    "fuentes": [
+      {
+        "titulo": "Junta de Castilla-La Mancha: activación del PLATECAM («alcance» en la estación de Urda)",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-activa-el-platecam-en-fase-de-emergencia-situacion-operativa-1-para-la",
+        "tipoFuente": "comunicado-oficial"
+      },
+      {
+        "titulo": "elEconomista: el 112 sitúa el choque a las 8:54 (Europa Press)",
+        "url": "https://www.eleconomista.es/transportes-turismo/noticias/d8429/10/26/Ultima-hora-del-accidente-de-tren-AVE-con-IRYO-hoy-en-directo-Urda-Toledo-heridos-y-comunicados.html",
+        "tipoFuente": "medio-citando"
+      }
+    ],
+    "organismos": [
+      "112 Castilla-La Mancha (coordinación)",
+      "Guardia Civil",
+      "Bomberos de los consorcios de Toledo, Ciudad Real, Albacete y Madrid",
+      "SESCAM (puesto médico avanzado)",
+      "INFOCAM",
+      "Protección Civil",
+      "Cruz Roja (atención psicosocial, preavisada)",
+      "Unidad Militar de Emergencias (solicitada a las 10:30)",
+      "Adif",
+      "Renfe",
+      "Iryo"
+    ],
+    "fuenteOrganismos": {
+      "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
+      "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
+    }
+  }
+}

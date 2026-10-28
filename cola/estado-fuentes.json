@@ -1,0 +1,34 @@
+{
+  "adif": {
+    "vistos": [],
+    "hash": 9783
+  },
+  "renfe": {
+    "vistos": [],
+    "hash": 237
+  },
+  "jccm": {
+    "vistos": [
+      "el gobierno regional eleva el platecam a fase de emergencia situacion operativa 2 para la provincia de toledo por la colision de dos trenes y solicita la activacion de la ume",
+      "el gobierno regional activa el platecam en fase de emergencia situacion operativa 1 para la provincia de toledo por la colision de dos trenes de alta velocidad en la estacion de urda"
+    ],
+    "hash": 4438
+  },
+  "jccm-rss": {
+    "vistos": [],
+    "hash": 3232
+  },
+  "112clm": {
+    "vistos": [
+      "gobierno regional activa el platecam en fase de emergencia situacion operativa 2 para la provincia de toledo por la colision de dos trenes y solicita la activacion de la ume",
+      "gobierno regional activa el platecam en fase de emergencia situacion operativa 2 para la provincia de toledo por la colision de dos trenes y solicita la activacion de la ume el gobierno de castilla la mancha a traves de la consejeria de hacienda administraciones publicas y transformacion digital ha activado a las 10 30 28 10 2026",
+      "gobierno regional activa el platecam en fase de emergencia situacion operativa 1 para la provincia de toledo por la colision de dos trenes de alta velocidad en la estacion de urda",
+      "gobierno regional activa el platecam en fase de emergencia situacion operativa 1 para la provincia de toledo por la colision de dos trenes de alta velocidad en la estacion de urda el gobierno de castilla la mancha a traves de la consejeria de hacienda administraciones publicas y transformacion digital ha activado a las 9 15 28 10 2026"
+    ],
+    "hash": 10894
+  },
+  "moncloa-transportes": {
+    "vistos": [],
+    "hash": 1977
+  }
+}

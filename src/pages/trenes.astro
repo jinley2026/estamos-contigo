@@ -1,0 +1,21 @@
+---
+import Layout from '../components/Layout.astro';
+import FichasTrenes from '../components/FichasTrenes.astro';
+import { hecho, horaCorta } from '../lib/datos';
+---
+<Layout titulo="Trenes y detalles del accidente" descripcion="Qué ha pasado, trenes implicados y organismos que trabajan en la emergencia.">
+  <h1>Qué ha pasado</h1>
+  <p class="sit-resumen">{hecho.descripcion}</p>
+  <dl class="sit-datos">
+    <div><dt>Cuándo</dt><dd>28 de octubre de 2026, {horaCorta(hecho.hora)}</dd></div>
+    <div><dt>Dónde</dt><dd>{hecho.lugar}</dd></div>
+  </dl>
+  <p class="cifra-fuente">Fuentes: {hecho.fuentes.map((f, i) => <>{i > 0 && ' · '}<a href={f.url} rel="noopener noreferrer">{f.titulo}</a></>)}</p>
+
+  <FichasTrenes />
+
+  <h2 id="organismos">Organismos que trabajan en la emergencia</h2>
+  <ul class="resumen-lista">{hecho.organismos.map((o) => <li>{o}</li>)}</ul>
+  <p class="cifra-fuente">Fuente: <a href={hecho.fuenteOrganismos.url} rel="noopener noreferrer">{hecho.fuenteOrganismos.titulo}</a></p>
+  <p class="caja">Las causas del accidente las determinan las autoridades competentes. No publicamos hipótesis.</p>
+</Layout>

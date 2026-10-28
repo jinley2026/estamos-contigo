@@ -70,7 +70,7 @@ for (const cat of leer('data/preguntas.json').categorias)
 
 const uh = leer('data/ultimahora.json');
 if (!esISO(uh.actualizadoEn)) err('última hora: actualizadoEn no ISO');
-for (const k of ['balance', 'trenes', 'hospitales', 'avisos', 'linea']) {
+for (const k of ['hospitales', 'avisos', 'linea']) {
   const b = uh[k];
   if (!esISO(b.comprobadoEn) || !(b.revisarCadaMinutos > 0)) err(`última hora ${k}: falta comprobadoEn o revisarCadaMinutos`);
   if (!verif(b)) avi(`última hora ${k}: sin verificar por dos personas`);
@@ -82,6 +82,32 @@ for (const k of ['balance', 'trenes', 'hospitales', 'avisos', 'linea']) {
   }
   const txt = JSON.stringify(b);
   if (/\b\d{8}[A-HJ-NP-TV-Z]\b/i.test(txt)) err(`última hora ${k}: posible DNI`);
+}
+
+const af = leer('data/afirmaciones.json');
+const idsAf = new Set();
+for (const a of af.afirmaciones) {
+  const id = `afirmación ${a.id}`;
+  if (idsAf.has(a.id)) err(`${id}: id duplicado`);
+  idsAf.add(a.id);
+  if (!af.tipos[a.tipo]) err(`${id}: tipo desconocido ${a.tipo}`);
+  if (!Number.isFinite(a.valor) || a.valor < 0) err(`${id}: valor no numérico`);
+  if (!['exacto', 'al menos', 'aproximadamente'].includes(a.calificador)) err(`${id}: calificador no válido`);
+  if (!esURL(a.fuente?.url) || !['comunicado-oficial', 'medio-citando'].includes(a.fuente?.tipoFuente)) err(`${id}: fuente no válida`);
+  if (!esISO(a.fechaComunicado) || !esISO(a.fechaVerificacion)) err(`${id}: fechas no ISO`);
+  if (!['aprobado', 'pendiente', 'rechazado'].includes(a.estadoEditorial)) err(`${id}: estado editorial no válido`);
+  if (a.estadoEditorial === 'aprobado' && !verif(a)) err(`${id}: aprobada sin dos verificadores`);
+  if (a.estadoEditorial !== 'aprobado') avi(`${id}: pendiente de aprobación`);
+  if (a.versionAnterior && !af.afirmaciones.some((b) => b.id === a.versionAnterior)) err(`${id}: versionAnterior inexistente`);
+}
+const tr = leer('data/trenes.json');
+for (const t of tr.trenes) {
+  if (!esURL(t.fuente?.url)) err(`tren ${t.id}: sin fuente`);
+  if (!verif(t)) avi(`tren ${t.id}: sin verificar`);
+}
+for (const e of act) {
+  if (!e.categoria || !e.tipoFuente) err(`actualización ${e.id}: falta categoria o tipoFuente`);
+  if (!verif(e)) avi(`actualización ${e.id}: sin verificar por dos personas`);
 }
 
 const m = leer('data/mensajes.json');

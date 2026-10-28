@@ -1,0 +1,25 @@
+---
+import Layout from '../components/Layout.astro';
+import { indice, MENSAJE_SIN_DATO } from '../lib/indice';
+const ejemplos = ['¿Cuántos pasajeros iban en el Iryo?', '¿Qué tren salió de Madrid?', '¿Cuántos heridos confirmó la Junta?', '¿Qué dijo Renfe sobre los billetes?', '¿A qué hora se interrumpió la circulación?', '¿Qué servicios oficiales hay para familiares?'];
+---
+<Layout titulo="Buscar información" descripcion="Busca en la información verificada sobre el accidente: cifras, trenes, comunicados, teléfonos y puntos de atención.">
+  <h1>Buscar información</h1>
+  <p class="subtitulo">Solo busca en información pública ya verificada. No busca personas ni datos de pasajeros.</p>
+
+  <div class="buscador" data-buscador data-sin-dato={MENSAJE_SIN_DATO}>
+    <label for="consulta">Escribe tu pregunta</label>
+    <input id="consulta" type="search" data-busqueda-local autocomplete="off" enterkeyhint="search" />
+    <div class="ejemplos" role="group" aria-label="Ejemplos de preguntas">
+      {ejemplos.map((q) => <button type="button" data-ejemplo={q}>{q}</button>)}
+    </div>
+    <div class="resultados" role="region" aria-live="polite" aria-label="Resultados"></div>
+  </div>
+
+  <noscript>
+    <p class="caja">El buscador necesita JavaScript. Toda la información está también en la <a href="index.html">portada</a>, la <a href="actualizaciones.html">cronología</a> y los <a href="comunicados.html">comunicados</a>.</p>
+  </noscript>
+
+  <script is:inline type="application/json" id="indice-busqueda" set:html={JSON.stringify(indice).replace(/</g, '\\u003c')} />
+  <p class="meta">Lo que escribes aquí no sale de tu dispositivo: la búsqueda se hace en tu propio navegador.</p>
+</Layout>

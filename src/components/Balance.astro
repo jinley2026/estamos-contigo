@@ -1,0 +1,33 @@
+---
+// Balance humano: cada cifra con organismo, fuente, fecha del comunicado, hora de verificación y estado.
+// Si dos organismos dan cifras distintas se muestran las dos; nunca se calcula una intermedia ni ilesos por diferencia.
+import { cifra, texto, TIPOS } from '../lib/afirmaciones';
+import { horaCorta, tipoFuenteTexto } from '../lib/datos';
+const orden = ['fallecidos', 'heridos', 'hospitalizados', 'altas', 'pasajeros', 'atendidos'];
+const cifras = orden.map((t) => cifra(t, 'global'));
+const conDato = cifras.filter((c) => c.vigente);
+const sinDato = cifras.filter((c) => !c.vigente);
+---
+<section class="balance" aria-labelledby="balance-titulo" id="balance">
+  <h2 id="balance-titulo">Balance oficial</h2>
+  <ul class="cifras">
+    {conDato.map((c) => {
+      const a = c.vigente!;
+      return (
+        <li class={`cifra ${a.estadoEditorial === 'pendiente' ? 'pendiente' : ''}`}>
+          <span class="cifra-etiqueta">{TIPOS[c.tipo]}</span>
+          <span class="cifra-valor">{texto(a)}</span>
+          <span class="cifra-estado">{a.estadoDato === 'definitivo' ? 'Definitiva' : 'Provisional'}{a.estadoEditorial === 'pendiente' && <span class="sello-pendiente">pendiente de verificar</span>}</span>
+          <span class="cifra-fuente">{a.organismo}, {horaCorta(a.fechaComunicado)} · <a href={a.fuente.url} rel="noopener noreferrer">{tipoFuenteTexto(a.fuente.tipoFuente)}</a> · verificado {horaCorta(a.fechaVerificacion)}</span>
+          {c.discrepancias.length > 0 && (
+            <span class="cifra-discrepancia">
+              Otras cifras oficiales: {c.discrepancias.map((d) => `${d.organismo}: ${texto(d)} (${horaCorta(d.fechaComunicado)})`).join(' · ')}
+            </span>
+          )}
+        </li>
+      );
+    })}
+  </ul>
+  {sinDato.length > 0 && <p class="sin-cifra">Sin cifra oficial todavía: {sinDato.map((c) => TIPOS[c.tipo].toLowerCase()).join(', ')}.</p>}
+  <p class="uh-nota">Algunos medios publican cifras más altas sin atribuirlas a un organismo. No las recogemos hasta que una fuente oficial las confirme. No calculamos personas ilesas restando cifras.</p>
+</section>

@@ -10,6 +10,9 @@ import estafasData from '../data/estafas.json';
 import mensajesData from '../data/mensajes.json';
 import esenciales from '../i18n/esenciales.json';
 import ultimahoraData from '../data/ultimahora.json';
+import trenesData from '../data/trenes.json';
+import estadoData from '../data/estado-sistema.json';
+import fuentesData from '../config/fuentes.json';
 
 export type Fuente = { titulo: string; url: string; fechaPublicacion?: string };
 
@@ -34,7 +37,7 @@ export function visible(x: { verificadoPor?: string[]; validadoPor?: string[]; n
 export const canales = canalesData.canales;
 export const canalDestacado = canales.find((c) => c.destacado && c.telefono);
 export const actualizaciones = [...actualizacionesData.entradas]
-  .filter((e) => e.nivelFuente >= 1 && e.nivelFuente <= 2)
+  .filter((e) => e.nivelFuente >= 1 && e.nivelFuente <= 2 && (ES_PREVIA || verificado(e)))
   .sort((a, b) => b.fechaComunicado.localeCompare(a.fechaComunicado));
 export const correcciones = actualizacionesData.entradas.filter((e) => e.correccion);
 export const puntos = puntosData.puntos;
@@ -45,6 +48,13 @@ export const estafas = estafasData;
 export const mensajes = mensajesData;
 export const i18n = esenciales;
 export const ultimahora = ultimahoraData;
+export const trenes = trenesData.trenes;
+export const hecho = trenesData.hecho;
+export const estadoSistema = estadoData as any;
+export const fuentesConfig = fuentesData;
+export const CATEGORIAS: Record<string, string> = { gobierno: 'Gobierno de España', ministerio: 'Ministerio de Transportes', junta: 'Junta de Castilla-La Mancha', adif: 'Adif', renfe: 'Renfe', iryo: 'Iryo', emergencias: 'Emergencias', sanidad: 'Sanidad', ayuntamientos: 'Ayuntamientos', otros: 'Otros organismos' };
+export const tipoFuenteTexto = (t: string) => (t === 'comunicado-oficial' ? 'Comunicado oficial' : 'Noticia que cita al organismo');
+export const horaCorta = (iso: string) => (iso ? new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', hour: '2-digit', minute: '2-digit' }).format(new Date(iso)) : '');
 export const otrosCanales = canalesData.canales.filter((c) => !c.destacado && c.telefono);
 
 const fmt = new Intl.DateTimeFormat('es-ES', {

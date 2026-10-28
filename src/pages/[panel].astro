@@ -1,0 +1,112 @@
+---
+// PANEL DE ADMINISTRACIÓN (solo lectura). Se genera ÚNICAMENTE en la vista previa privada: en la compilación
+// pública esta página no existe. Las acciones se hacen con scripts/aprobar.mjs y editando src/config/*.json,
+// con revisión en GitHub: así queda registro de quién hizo qué y no hay credenciales en la web.
+import { existsSync, readFileSync } from 'node:fs';
+import Layout from '../components/Layout.astro';
+import { ES_PREVIA, estadoSistema as es, fuentesConfig, canales, puntos, actualizaciones, SITE, fechaHora, horaCorta } from '../lib/datos';
+import { todas, cifra, TIPOS, texto } from '../lib/afirmaciones';
+import uh from '../data/ultimahora.json';
+import trenesData from '../data/trenes.json';
+import buildMode from '../config/build-mode.json';
+import { join } from 'node:path';
+
+export function getStaticPaths() {
+  return buildMode.mode === 'preview' ? [{ params: { panel: 'admin' } }] : [];
+}
+const rutaCola = join(process.cwd(), 'cola', 'propuestas.json');
+const cola = existsSync(rutaCola) ? JSON.parse(readFileSync(rutaCola, 'utf8')).propuestas : [];
+const pendientes = cola.filter((p: any) => p.estado === 'pendiente');
+const rechazadas = cola.filter((p: any) => p.estado === 'rechazada');
+const ahora = Date.now();
+const vencido = (x: any) => x.comprobadoEn && x.revisarCadaMinutos && ahora > Date.parse(x.comprobadoEn) + x.revisarCadaMinutos * 60000;
+const caducados = [
+  ...canales.filter(vencido).map((c) => `Teléfono: ${c.organismoCorto ?? c.organismo}`),
+  ...puntos.filter(vencido).map((p) => `Punto: ${p.nombre}`),
+  ...actualizaciones.filter(vencido).map((a) => `Aviso: ${a.titulo}`),
+  ...trenesData.trenes.filter(vencido).map((t) => `Tren: ${t.servicio} ${t.numero}`),
+  ...(['hospitales', 'avisos', 'linea'] as const).filter((k) => vencido((uh as any)[k])).map((k) => `Bloque: ${k}`)
+];
+const sinVerificar = [
+  ...canales.filter((c) => c.telefono && (c.verificadoPor ?? []).length < 2).map((c) => `canales:${c.id}`),
+  ...puntos.filter((p) => (p.verificadoPor ?? []).length < 2).map((p) => `puntos:${p.id}`),
+  ...actualizaciones.filter((a: any) => (a.verificadoPor ?? []).length < 2).map((a) => `actualizaciones:${a.id}`),
+  ...todas.filter((a) => a.estadoEditorial !== 'aprobado').map((a) => `afirmaciones:${a.id}`),
+  ...trenesData.trenes.filter((t) => (t.verificadoPor ?? []).length < 2).map((t) => `trenes:${t.id}`),
+  ...(['hospitales', 'avisos', 'linea'] as const).filter((k) => ((uh as any)[k].verificadoPor ?? []).length < 2).map((k) => `ultimahora:${k}`)
+];
+const discrepanciasCifras = Object.keys(TIPOS).map((t) => cifra(t)).filter((c) => c.discrepancias.length);
+const discrepanciasTel = [...new Set(canales.filter((c: any) => c.discrepancia).map((c: any) => c.discrepancia))];
+const conHistorial = todas.filter((a) => a.versionAnterior);
+const correcciones = actualizaciones.filter((a) => a.correccion);
+---
+{ES_PREVIA && (
+<Layout titulo="Panel de administración" descripcion="Panel interno de la vista previa.">
+  <h1>Panel de administración</h1>
+  <p class="borrador-legal">Solo existe en la vista previa privada. Es de solo lectura: las acciones se hacen con los scripts y la revisión en GitHub (ver docs/operacion/procedimientos.md).</p>
+
+  <h2>Estado general</h2>
+  <ul class="resumen-lista">
+    <li>Modo operativo: <strong>{SITE.estadoOperativo.modo}</strong></li>
+    <li>Última consulta automática: {es.ultimaConsulta ? fechaHora(es.ultimaConsulta) : 'nunca'} ({es.ultimoCicloOk ? 'con respuesta' : 'sin respuesta'})</li>
+    <li>Última información aprobada: {fechaHora(SITE.estadoOperativo.ultimaRevisionEditorial)}</li>
+    <li>Propuestas pendientes: <strong>{pendientes.length}</strong> · Rechazadas: {rechazadas.length}</li>
+    <li>Publicación automática (categoría A): <strong>{fuentesConfig.publicacionAutomatica.activa ? 'ACTIVADA' : 'desactivada'}</strong></li>
+  </ul>
+
+  <h2>Últimos ciclos</h2>
+  <table tabindex="0">
+    <thead><tr><th scope="col">Inicio</th><th scope="col">Fuentes ok / error</th><th scope="col">Nuevas</th><th scope="col">Duplicadas</th><th scope="col">Cifras</th><th scope="col">Contradicciones</th><th scope="col">Rechazadas</th></tr></thead>
+    <tbody>{(es.ciclos ?? []).map((c: any) => <tr><td>{fechaHora(c.inicio)}</td><td>{c.fuentesOk} / {c.fuentesError}</td><td>{c.nuevas}</td><td>{c.duplicadas}</td><td>{c.cifras}</td><td>{c.contradicciones}</td><td>{c.rechazadas}</td></tr>)}</tbody>
+  </table>
+
+  <h2>Fuentes</h2>
+  <table tabindex="0">
+    <thead><tr><th scope="col">Fuente</th><th scope="col">Acceso</th><th scope="col">Último resultado</th></tr></thead>
+    <tbody>{fuentesConfig.fuentes.map((f) => { const s = (es.fuentes ?? {})[f.id]; return <tr><td>{f.url ? <a href={f.url} rel="noopener noreferrer">{f.nombre}</a> : f.nombre}</td><td>{f.accesoAutomatico}</td><td>{s ? (s.ok === true ? `Respondió ${horaCorta(s.hora)}` : s.ok === false ? `ERROR: ${s.motivo}` : s.motivo) : 'sin consultar'}</td></tr>; })}</tbody>
+  </table>
+
+  <h2>Propuestas pendientes de revisión</h2>
+  {pendientes.length === 0 ? <p>Ninguna.</p> : (
+    <ol class="resumen-lista">{pendientes.map((p: any) => <li><code>{p.id}</code> · {p.fuente.nombre} · {p.tipo === 'cifra' ? `${p.cifra.tipo} = ${p.cifra.valor} (${p.cifra.calificador})` : p.titulo} {p.contradiccion && <strong> CONTRADICCIÓN: {p.contradiccion.detalle}</strong>} — <a href={p.enlace ?? p.fuente.url} rel="noopener noreferrer">fuente</a></li>)}</ol>
+  )}
+
+  <h2>Alertas por contradicción</h2>
+  <ul class="resumen-lista">
+    {discrepanciasTel.map((d) => <li>{d}</li>)}
+    {discrepanciasCifras.map((c) => <li>{TIPOS[c.tipo]}: {texto(c.vigente!)} ({c.vigente!.organismo}) frente a {c.discrepancias.map((d) => `${texto(d)} (${d.organismo})`).join(', ')}</li>)}
+    {pendientes.filter((p: any) => p.contradiccion).map((p: any) => <li>Propuesta {p.id}: {p.contradiccion.detalle}</li>)}
+    {!discrepanciasTel.length && !discrepanciasCifras.length && <li>Sin contradicciones registradas.</li>}
+  </ul>
+
+  <h2>Datos pendientes de verificación humana ({sinVerificar.length})</h2>
+  <p class="meta">Verificar con: <code>node scripts/aprobar.mjs --verificar archivo:id --por AB,CD</code></p>
+  <ul class="resumen-lista">{sinVerificar.map((s) => <li><code>{s}</code></li>)}</ul>
+
+  <h2>Información caducada en el momento de compilar ({caducados.length})</h2>
+  <ul class="resumen-lista">{caducados.length ? caducados.map((c) => <li>{c}</li>) : <li>Ninguna.</li>}</ul>
+
+  <h2>Historial de cifras y correcciones</h2>
+  <ul class="resumen-lista">
+    {conHistorial.map((a) => <li>{a.id} sustituye a {a.versionAnterior}</li>)}
+    {correcciones.map((a) => <li>Corrección: {a.titulo} — {a.correccion}</li>)}
+    {!conHistorial.length && !correcciones.length && <li>Sin cambios de versión todavía. El historial completo está en Git.</li>}
+  </ul>
+
+  <h2>Rechazadas (sin guardar el texto rechazado)</h2>
+  <ul class="resumen-lista">{rechazadas.length ? rechazadas.map((p: any) => <li>{p.fuente.nombre}: {p.motivoRechazo}</li>) : <li>Ninguna.</li>}</ul>
+
+  <h2>Controles</h2>
+  <table tabindex="0">
+    <thead><tr><th scope="col">Acción</th><th scope="col">Cómo</th></tr></thead>
+    <tbody>
+      <tr><td>Suspender publicaciones (modo solo enlaces oficiales)</td><td><code>src/config/site.json</code> → <code>estadoOperativo.modo = "reducido"</code> y recompilar</td></tr>
+      <tr><td>Cerrar el servicio</td><td><code>estadoOperativo.modo = "cerrado"</code>, <code>fechaCierre</code>, <code>mensajeCierre</code></td></tr>
+      <tr><td>Desactivar un módulo</td><td><code>site.json → modulos</code></td></tr>
+      <tr><td>Activar o desactivar publicación automática A</td><td><code>src/config/fuentes.json → publicacionAutomatica.activa</code></td></tr>
+      <tr><td>Parar el ciclo automático</td><td>GitHub → Actions → «Ciclo de informacion» → Disable workflow</td></tr>
+      <tr><td>Aprobar o rechazar propuestas</td><td><code>node scripts/aprobar.mjs --lista</code></td></tr>
+    </tbody>
+  </table>
+</Layout>
+)}

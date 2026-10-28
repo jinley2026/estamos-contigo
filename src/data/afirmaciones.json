@@ -1,0 +1,81 @@
+{
+  "_comentario": "Cada cifra es una afirmación atribuida, nunca un dato «de la web». Esquema: id, tipo, valor (número), calificador (exacto | al menos | aproximadamente), unidad, ambito (global | tren:<id>), organismo, fuente {titulo, url, tipoFuente: comunicado-oficial | medio-citando}, fechaComunicado, fechaVerificacion, estadoEditorial (aprobado | pendiente | rechazado), estadoDato (provisional | definitivo), versionAnterior (id o null), observaciones (internas, no se publican), verificadoPor. No se suman cifras de distintos organismos ni se calculan ilesos por diferencia.",
+  "tipos": {
+    "fallecidos": "Fallecidos",
+    "heridos": "Heridos",
+    "hospitalizados": "Hospitalizados",
+    "altas": "Altas hospitalarias",
+    "pasajeros": "Pasajeros a bordo",
+    "atendidos": "Personas atendidas"
+  },
+  "afirmaciones": [
+    {
+      "id": "fallecidos-jccm-1037",
+      "tipo": "fallecidos",
+      "valor": 10,
+      "calificador": "al menos",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": { "titulo": "CMM: declaraciones de la portavoz del Gobierno regional, Esther Padilla", "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/victimas-accidente-ferroviario-urda-toledo.html", "tipoFuente": "medio-citando" },
+      "fechaComunicado": "2026-10-28T10:37:00+01:00",
+      "fechaVerificacion": "2026-10-28T12:00:00+01:00",
+      "estadoEditorial": "pendiente",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "Hay medios con cifras de 30, 40 y 46 sin atribución verificable (ENCLM, La Portada de Extremadura, Semana, Libertad Digital). Un titular de Libertad Digital atribuye 46 a Protección Civil, pero no se pudo abrir para comprobarlo. Prioridad del equipo: confirmar el balance oficial actualizado.",
+      "verificadoPor": []
+    },
+    {
+      "id": "pasajeros-total-jccm",
+      "tipo": "pasajeros",
+      "valor": 544,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": { "titulo": "CLM24: datos del Gobierno de Castilla-La Mancha", "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html", "tipoFuente": "medio-citando" },
+      "fechaComunicado": "2026-10-28T11:21:00+01:00",
+      "fechaVerificacion": "2026-10-28T12:00:00+01:00",
+      "estadoEditorial": "pendiente",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "Coincide con la suma 397 + 147 de la misma fuente oficial.",
+      "verificadoPor": []
+    },
+    {
+      "id": "pasajeros-ave2080-jccm",
+      "tipo": "pasajeros",
+      "valor": 397,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "tren:ave-2080",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": { "titulo": "Infobae/EFE: la portavoz del Gobierno de Castilla-La Mancha", "url": "https://www.infobae.com/espana/agencias/2026/10/28/el-tren-iryo-accidentado-viajaba-con-147-pasajeros-y-el-ave-con-397/", "tipoFuente": "medio-citando" },
+      "fechaComunicado": "2026-10-28T11:00:00+01:00",
+      "fechaVerificacion": "2026-10-28T12:00:00+01:00",
+      "estadoEditorial": "pendiente",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "La fuente no da hora exacta de la declaración («a lo largo de la mañana»); se usa la hora aproximada de la nota de EFE.",
+      "verificadoPor": []
+    },
+    {
+      "id": "pasajeros-iryo6076-jccm",
+      "tipo": "pasajeros",
+      "valor": 147,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "tren:iryo-6076",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": { "titulo": "Infobae/EFE: la portavoz del Gobierno de Castilla-La Mancha", "url": "https://www.infobae.com/espana/agencias/2026/10/28/el-tren-iryo-accidentado-viajaba-con-147-pasajeros-y-el-ave-con-397/", "tipoFuente": "medio-citando" },
+      "fechaComunicado": "2026-10-28T11:00:00+01:00",
+      "fechaVerificacion": "2026-10-28T12:00:00+01:00",
+      "estadoEditorial": "pendiente",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "Incluye un bebé, según la misma fuente.",
+      "verificadoPor": []
+    }
+  ]
+}

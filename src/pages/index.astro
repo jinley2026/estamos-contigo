@@ -1,18 +1,24 @@
 ---
 import Layout from '../components/Layout.astro';
 import TarjetaTelefono from '../components/TarjetaTelefono.astro';
+import EstadoSistema from '../components/EstadoSistema.astro';
+import Alertas from '../components/Alertas.astro';
+import Balance from '../components/Balance.astro';
+import FichasTrenes from '../components/FichasTrenes.astro';
+import Novedades from '../components/Novedades.astro';
 import UltimaHora from '../components/UltimaHora.astro';
-import { SITE, MODO, otrosCanales, visible, verificado } from '../lib/datos';
+import { SITE, MODO, otrosCanales, visible, verificado, hecho, horaCorta, ultimahora } from '../lib/datos';
 const flecha = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const otros = otrosCanales.filter((c) => visible(c));
 ---
 <Layout titulo={SITE.nombre} autorecarga>
   <section class="panel" aria-labelledby="titulo-suceso">
     <h1 id="titulo-suceso">{SITE.suceso.titulo}</h1>
     <p class="pregunta">¿Buscas a un familiar que viajaba en los trenes?</p>
     <TarjetaTelefono />
-    {otrosCanales.filter((c) => visible(c)).length > 0 && (
+    {otros.length > 0 && (
       <ul class="otros-tel">
-        {otrosCanales.filter((c) => visible(c)).map((c) => (
+        {otros.map((c) => (
           <li class="temporal" data-comprobado={c.comprobadoEn} data-revisar={c.revisarCadaMinutos} data-sensible="">
             <span>{c.organismoCorto ?? c.organismo}{!verificado(c) && <span class="sello-pendiente">pendiente</span>}</span>
             <a class="accion-llamar" href={`tel:${c.telefono}`}>{c.telefonoVisible}</a>
@@ -23,55 +29,61 @@ const flecha = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="tru
     )}
   </section>
 
-  {MODO !== 'reducido' && <UltimaHora />}
+  <Alertas />
+  <EstadoSistema />
+
+  {MODO === 'reducido' ? (
+    <p class="caja caja-pendiente">La web funciona en modo reducido: solo mostramos enlaces a los canales oficiales.</p>
+  ) : (
+    <div class="solo-normal">
+      <section class="situacion" aria-labelledby="sit-titulo">
+        <h2 id="sit-titulo">Qué ha pasado</h2>
+        <p class="sit-resumen">{hecho.descripcion}</p>
+        <dl class="sit-datos">
+          <div><dt>Cuándo</dt><dd>28 de octubre, {horaCorta(hecho.hora)}</dd></div>
+          <div><dt>Dónde</dt><dd>{hecho.lugar}</dd></div>
+          <div><dt>Línea</dt><dd>{ultimahora.linea.estado}</dd></div>
+        </dl>
+        <p class="cifra-fuente">Fuentes: {hecho.fuentes.map((f, i) => <>{i > 0 && ' · '}<a href={f.url} rel="noopener noreferrer">{f.titulo}</a></>)}</p>
+        <p><a href="trenes.html">Trenes, organismos que intervienen y más detalles</a></p>
+      </section>
+
+      <Balance />
+      <FichasTrenes />
+      <Novedades />
+      <UltimaHora />
+    </div>
+  )}
+
+  <section class="buscador-acceso" aria-labelledby="buscar-titulo">
+    <h2 id="buscar-titulo">¿Buscas un dato concreto?</h2>
+    <a class="boton-buscar" href="buscar.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15.5 15.5l5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      Buscar en la información verificada
+    </a>
+  </section>
 
   <h2 id="rutas-titulo">¿Qué necesitas?</h2>
   <ul class="rutas" aria-labelledby="rutas-titulo">
-    <li>
-      <a href="busco-a-un-familiar.html">
-        <span class="pictograma"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15.5 15.5l5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
-        <span><span class="ruta-titulo">Busco a un familiar</span><span class="ruta-desc">Qué preparar y qué hacer si no contestan</span></span>
-        <span class="flecha" set:html={flecha} />
-      </a>
-    </li>
-    <li>
-      <a href="iba-en-el-tren.html">
-        <span class="pictograma"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <span><span class="ruta-titulo">Iba en uno de los trenes</span><span class="ruta-desc">Avisa a tu familia en un minuto</span></span>
-        <span class="flecha" set:html={flecha} />
-      </a>
-    </li>
-    <li>
-      <a href="viaje-afectado.html">
-        <span class="pictograma"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M9 6v12" stroke="currentColor" stroke-width="2.2" stroke-dasharray="2.5 2.5"/></svg></span>
-        <span><span class="ruta-titulo">Tenía un billete</span><span class="ruta-desc">Cambios, anulaciones y estado de la línea</span></span>
-        <span class="flecha" set:html={flecha} />
-      </a>
-    </li>
-    <li>
-      <a href="quiero-ayudar.html">
-        <span class="pictograma"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg></span>
-        <span><span class="ruta-titulo">Quiero ayudar</span><span class="ruta-desc">Cómo ayudar sin estorbar</span></span>
-        <span class="flecha" set:html={flecha} />
-      </a>
-    </li>
+    <li><a href="busco-a-un-familiar.html"><span class="pictograma"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15.5 15.5l5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span><span><span class="ruta-titulo">Busco a un familiar</span><span class="ruta-desc">Qué preparar y qué hacer si no contestan</span></span><span class="flecha" set:html={flecha} /></a></li>
+    <li><a href="iba-en-el-tren.html"><span class="pictograma"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><span class="ruta-titulo">Iba en uno de los trenes</span><span class="ruta-desc">Avisa a tu familia en un minuto</span></span><span class="flecha" set:html={flecha} /></a></li>
+    <li><a href="viaje-afectado.html"><span class="pictograma"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M9 6v12" stroke="currentColor" stroke-width="2.2" stroke-dasharray="2.5 2.5"/></svg></span><span><span class="ruta-titulo">Tenía un billete</span><span class="ruta-desc">Cambios, anulaciones y estado de la línea</span></span><span class="flecha" set:html={flecha} /></a></li>
+    <li><a href="quiero-ayudar.html"><span class="pictograma"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg></span><span><span class="ruta-titulo">Quiero ayudar</span><span class="ruta-desc">Donar sangre y ayudar sin estorbar</span></span><span class="flecha" set:html={flecha} /></a></li>
   </ul>
 
-  <h2 class="visualmente-oculto" id="evita-titulo">Evita</h2>
-  <ul class="avisos-rapidos" aria-labelledby="evita-titulo">
+  <ul class="avisos-rapidos" aria-label="Evita">
     <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>No vayas a la zona del accidente</li>
     <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>No pagues a nadie que prometa información</li>
     <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>No compartas fotos ni nombres de víctimas</li>
   </ul>
 
-
   <h2>También aquí</h2>
   <ul class="bloques">
+    <li><a href="comunicados.html">Comunicados oficiales</a></li>
     <li><a href="puntos-de-atencion.html">Puntos de atención</a></li>
     <li><a href="apoyo-emocional.html">Ayuda emocional</a></li>
     <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
     <li><a href="alertas-estafas.html">Estafas: cómo protegerte</a></li>
     <li><a href="idiomas.html">Other languages</a></li>
-    <li><a href="aviso-legal.html">Quiénes somos</a></li>
   </ul>
 </Layout>

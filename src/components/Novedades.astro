@@ -1,0 +1,25 @@
+---
+import { actualizaciones, horaCorta, tipoFuenteTexto, CATEGORIAS, verificado } from '../lib/datos';
+interface Props { limite?: number }
+const { limite = 4 } = Astro.props;
+const lista = actualizaciones.filter((e) => e.estado !== 'retirado').slice(0, limite);
+---
+<section class="novedades" aria-labelledby="nov-titulo" id="novedades">
+  <h2 id="nov-titulo">Últimas novedades</h2>
+  <ol class="cronologia">
+    {lista.map((e) => (
+      <li class={`hito ${e.estado}`} data-comprobado={e.comprobadoEn} data-revisar={e.revisarCadaMinutos}>
+        <time datetime={e.fechaComunicado}>{horaCorta(e.fechaComunicado)}</time>
+        <div>
+          <p class="hito-titulo">{e.titulo}</p>
+          <p class="hito-meta">
+            <span class="org">{CATEGORIAS[e.categoria] ?? e.organismo}</span>
+            <a href={e.fuente.url} rel="noopener noreferrer">{tipoFuenteTexto(e.tipoFuente)}</a>
+            {!verificado(e) && <span class="sello-pendiente">pendiente de verificar</span>}
+          </p>
+        </div>
+      </li>
+    ))}
+  </ol>
+  <p><a href="actualizaciones.html">Cronología completa</a> · <a href="comunicados.html">Comunicados por organismo</a></p>
+</section>

@@ -1,0 +1,171 @@
+{
+  "_comentario": "Fuentes que consulta el ciclo automático. 'accesoAutomatico': permitido (se intenta en cada ciclo; el resultado real queda en src/data/estado-sistema.json), bloqueado (rechaza el acceso automatizado: no se elude, entrada manual), sin-url-verificada (no se ha localizado una dirección oficial concreta: entrada manual). No hay RSS confirmado para ninguna, salvo el general de la Junta. No inventar direcciones.",
+  "fuentes": [
+    {
+      "id": "adif",
+      "nombre": "Adif — notas de prensa",
+      "organismo": "Adif",
+      "categoria": "adif",
+      "tipo": "oficial",
+      "url": "https://www.adif.es/comunicacion/notas-prensa",
+      "accesoAutomatico": "permitido"
+    },
+    {
+      "id": "adif-av",
+      "nombre": "Adif Alta Velocidad — notas de prensa",
+      "organismo": "Adif",
+      "categoria": "adif",
+      "tipo": "oficial",
+      "url": "https://www.adifaltavelocidad.es/comunicacion/notas-prensa",
+      "accesoAutomatico": "permitido"
+    },
+    {
+      "id": "renfe",
+      "nombre": "Grupo Renfe — sala de prensa",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "tipo": "oficial",
+      "url": "https://grupo.renfe.com/es/es/sala-de-prensa",
+      "accesoAutomatico": "permitido"
+    },
+    {
+      "id": "jccm",
+      "nombre": "Junta de Castilla-La Mancha — notas de prensa",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipo": "oficial",
+      "url": "https://www.castillalamancha.es/actualidad/notasdeprensa",
+      "accesoAutomatico": "permitido"
+    },
+    {
+      "id": "jccm-rss",
+      "nombre": "Junta de Castilla-La Mancha — RSS de noticias",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipo": "oficial",
+      "url": "https://castillalamancha.es/actualidad/noticias-rss",
+      "accesoAutomatico": "permitido"
+    },
+    {
+      "id": "112clm",
+      "nombre": "112 Castilla-La Mancha — comunicación",
+      "organismo": "112 Castilla-La Mancha",
+      "categoria": "emergencias",
+      "tipo": "oficial",
+      "url": "https://112.castillalamancha.es/112/comunicacion",
+      "accesoAutomatico": "permitido"
+    },
+    {
+      "id": "moncloa-transportes",
+      "nombre": "La Moncloa — notas de prensa de Transportes",
+      "organismo": "Gobierno de España",
+      "categoria": "gobierno",
+      "tipo": "oficial",
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/",
+      "accesoAutomatico": "permitido"
+    },
+    {
+      "id": "iryo",
+      "nombre": "Iryo",
+      "organismo": "Iryo",
+      "categoria": "iryo",
+      "tipo": "oficial",
+      "url": "https://iryo.eu",
+      "accesoAutomatico": "bloqueado",
+      "nota": "Respondió HTTP 403 al acceso automatizado. Entrada manual."
+    },
+    {
+      "id": "transportes",
+      "nombre": "Ministerio de Transportes",
+      "organismo": "Ministerio de Transportes",
+      "categoria": "ministerio",
+      "tipo": "oficial",
+      "url": "https://www.transportes.gob.es",
+      "accesoAutomatico": "bloqueado",
+      "nota": "Respondió HTTP 403. Sus notas se publican también en La Moncloa."
+    },
+    {
+      "id": "sescam",
+      "nombre": "SESCAM",
+      "organismo": "SESCAM",
+      "categoria": "sanidad",
+      "tipo": "oficial",
+      "url": "",
+      "accesoAutomatico": "sin-url-verificada",
+      "nota": "No se ha localizado su página de notas de prensa. Entrada manual."
+    },
+    {
+      "id": "delegacion",
+      "nombre": "Delegación del Gobierno en Castilla-La Mancha",
+      "organismo": "Delegación del Gobierno",
+      "categoria": "gobierno",
+      "tipo": "oficial",
+      "url": "",
+      "accesoAutomatico": "sin-url-verificada",
+      "nota": "Entrada manual."
+    },
+    {
+      "id": "ayuntamientos",
+      "nombre": "Ayuntamientos de Urda, Los Yébenes, Mora y Orgaz",
+      "organismo": "Ayuntamientos",
+      "categoria": "ayuntamientos",
+      "tipo": "oficial",
+      "url": "",
+      "accesoAutomatico": "sin-url-verificada",
+      "nota": "Entrada manual."
+    },
+    {
+      "id": "x-oficiales",
+      "nombre": "Cuentas oficiales en X (InfoRenfe, Adif, 112 CLM, Iryo)",
+      "organismo": "Varios",
+      "categoria": "otros",
+      "tipo": "oficial",
+      "url": "",
+      "accesoAutomatico": "sin-url-verificada",
+      "nota": "La lectura automática requiere la API de pago de X. Revisión manual."
+    }
+  ],
+  "palabrasClave": [
+    "urda",
+    "yébenes",
+    "yebenes",
+    "mora",
+    "orgaz",
+    "accidente",
+    "alcance",
+    "colisión",
+    "2080",
+    "6076",
+    "familiares",
+    "víctimas",
+    "fallecid",
+    "herid",
+    "hospital",
+    "pasajeros",
+    "viajeros",
+    "platecam"
+  ],
+  "publicacionAutomatica": {
+    "_comentario": "Categoría A: publicación sin revisión humana solo para estos tipos de dato de bajo riesgo y fuentes oficiales listadas. Desactivada por defecto.",
+    "activa": false,
+    "tipos": [
+      "estado_linea"
+    ],
+    "fuentes": [
+      "adif",
+      "adif-av"
+    ]
+  },
+  "palabrasSuceso": [
+    "urda",
+    "yebenes",
+    "2080",
+    "6076",
+    "platecam",
+    "colision de dos trenes",
+    "accidente ferroviario",
+    "choque de trenes",
+    "alcance entre dos trenes"
+  ],
+  "_comentarioPalabras": "palabrasSuceso: obligatorias para considerar que un titular o una página trata del accidente. palabrasClave: complementarias."
+}

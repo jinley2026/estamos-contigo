@@ -1,0 +1,19 @@
+---
+// Las cuatro marcas de tiempo que exige la V2, que son distintas entre sí:
+// 1) última consulta automática, 2) última fuente que respondió, 3) última actualización aprobada,
+// 4) fecha de cada comunicado (se muestra en cada dato). Si el ciclo falla o se retrasa, se avisa.
+import { estadoSistema as e, SITE, horaCorta, fechaHora } from '../lib/datos';
+const aprobada = (SITE.estadoOperativo as any).ultimaAprobacion as string;
+const errores = Object.values(e.fuentes ?? {}).filter((f: any) => f.ok === false) as any[];
+---
+<section class="estado-sistema" aria-label="Vigencia de la información" data-ultima-consulta={e.ultimaConsulta || undefined}>
+  <dl>
+    <div><dt>Última consulta automática</dt><dd>{e.ultimaConsulta ? <>{horaCorta(e.ultimaConsulta)} <span class="es-hace" data-desde={e.ultimaConsulta}></span></> : 'Todavía no se ha ejecutado'}</dd></div>
+    <div><dt>Última fuente que respondió</dt><dd>{e.ultimaFuenteOk ? `${horaCorta(e.ultimaFuenteOk.hora)} · ${e.ultimaFuenteOk.nombre.split(' — ')[0]}` : 'Ninguna'}</dd></div>
+    <div><dt>Última información aprobada</dt><dd>{aprobada ? fechaHora(aprobada).replace(' (hora peninsular)', '') : 'Ninguna todavía: todo está pendiente de verificar'}</dd></div>
+  </dl>
+  {(!e.ultimoCicloOk && e.ultimaConsulta) && <p class="es-alerta" role="alert">La última consulta automática no obtuvo respuesta de ninguna fuente oficial. Consulta directamente los canales oficiales.</p>}
+  {errores.length > 0 && e.ultimoCicloOk && <p class="es-nota">{errores.length} fuente{errores.length > 1 ? 's' : ''} no respondi{errores.length > 1 ? 'eron' : 'ó'} en la última consulta: {errores.map((f) => f.nombre.split(' — ')[0]).join(', ')}.</p>}
+  <p class="es-alerta es-retraso" role="alert" hidden>La consulta automática lleva más de una hora sin ejecutarse. La información puede no estar al día.</p>
+  <p class="es-nota">Las horas son peninsulares. Cada dato indica además la fecha de su comunicado original.</p>
+</section>

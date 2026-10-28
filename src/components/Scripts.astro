@@ -67,6 +67,80 @@
     }, 30000);
   }
 
+  /* Alertas: los comunicados nuevos se muestran durante 60 minutos desde su publicación. */
+  var alertasN = document.querySelectorAll('.alerta-nueva[data-hasta]');
+  for (var an = 0; an < alertasN.length; an++) if (Date.now() < Date.parse(alertasN[an].getAttribute('data-hasta'))) alertasN[an].hidden = false;
+
+  /* Vigencia del ciclo automático: «hace X min» y aviso si lleva más de una hora sin ejecutarse. */
+  var es = document.querySelector('[data-ultima-consulta]');
+  if (es) {
+    var tc = Date.parse(es.getAttribute('data-ultima-consulta'));
+    var pintarCiclo = function () {
+      var mins = Math.round((Date.now() - tc) / 60000);
+      var h = es.querySelector('.es-hace');
+      if (h) h.textContent = mins < 1 ? '(hace menos de un minuto)' : '(hace ' + (mins < 120 ? mins + ' min' : Math.round(mins / 60) + ' h') + ')';
+      var r = es.querySelector('.es-retraso');
+      if (r) r.hidden = !(mins > 65);
+    };
+    if (!isNaN(tc)) { pintarCiclo(); setInterval(pintarCiclo, 60000); }
+  }
+
+  /* Buscador local: busca en el índice verificado incluido en la página. Nada sale del dispositivo. */
+  var bus = document.querySelector('[data-buscador]');
+  if (bus) {
+    var datosIdx = [];
+    try { datosIdx = JSON.parse(document.getElementById('indice-busqueda').textContent); } catch (e) {}
+    var norm = function (s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim(); };
+    var VAC = ' que cual cuales cuanto cuantos cuantas como donde el la los las de del un una unos en a por con se sobre hay ha han es son fue al lo y o para su sus me mi esta este ese esa iban iba han dijo ';
+    var GEN = ' tren trenes accidente urda toledo informacion oficial oficiales datos sobre ';
+    var SIN = { muertos: 'fallecidos', muertes: 'fallecidos', murieron: 'fallecidos', fallecidas: 'fallecidos', viajeros: 'pasajeros', personas: 'pasajeros', billete: 'billetes', heridas: 'heridos', hospitales: 'hospital', telefonos: 'telefono' };
+    var entrada = bus.querySelector('input');
+    var caja = bus.querySelector('.resultados');
+    var sinDato = bus.getAttribute('data-sin-dato');
+    var buscar = function (q) {
+      var toks = norm(q).split(' ').filter(function (t) { return t.length > 1 && VAC.indexOf(' ' + t + ' ') < 0; }).map(function (t) { return SIN[t] || t; });
+      caja.textContent = '';
+      if (!toks.length) return;
+      var res = datosIdx.map(function (d) {
+        var hay = ' ' + norm(d.titulo + ' ' + d.respuesta + ' ' + d.claves) + ' ';
+        var tit = ' ' + norm(d.titulo) + ' ';
+        var p = 0, total = 0;
+        toks.forEach(function (t) {
+          var peso = GEN.indexOf(' ' + t + ' ') > -1 ? 0.3 : 1;
+          total += peso;
+          var raiz = t.length > 5 ? t.slice(0, 5) : t;
+          if (hay.indexOf(' ' + raiz) > -1) p += peso * (tit.indexOf(' ' + raiz) > -1 ? 1.5 : 1);
+        });
+        return { d: d, p: total ? p / total : 0 };
+      }).filter(function (r) { return r.p >= 0.5; }).sort(function (a, b) { return b.p - a.p; }).slice(0, 5);
+      if (!res.length) { var n = document.createElement('p'); n.className = 'caja'; n.textContent = sinDato; caja.appendChild(n); return; }
+      res.forEach(function (r) {
+        var art = document.createElement('article'); art.className = 'resultado';
+        var h = document.createElement('h2'); h.textContent = r.d.titulo; art.appendChild(h);
+        var p = document.createElement('p'); p.textContent = r.d.respuesta; art.appendChild(p);
+        var m = document.createElement('p'); m.className = 'cifra-fuente';
+        if (r.d.fuente) { var a = document.createElement('a'); a.href = r.d.fuente.url; a.rel = 'noopener noreferrer'; a.textContent = r.d.fuente.titulo; m.appendChild(document.createTextNode('Fuente: ')); m.appendChild(a); }
+        if (r.d.hora) m.appendChild(document.createTextNode(' · ' + r.d.hora));
+        art.appendChild(m);
+        var v = document.createElement('a'); v.href = r.d.enlace; v.textContent = 'Ver en la web'; art.appendChild(v);
+        caja.appendChild(art);
+      });
+    };
+    var temporizador;
+    entrada.addEventListener('input', function () { clearTimeout(temporizador); temporizador = setTimeout(function () { buscar(entrada.value); }, 200); });
+    var ejs = bus.querySelectorAll('[data-ejemplo]');
+    for (var ej = 0; ej < ejs.length; ej++) ejs[ej].addEventListener('click', function () { entrada.value = this.getAttribute('data-ejemplo'); buscar(entrada.value); });
+  }
+
+  /* Filtros de comunicados por organismo */
+  var filtros = document.querySelectorAll('[data-filtro]');
+  for (var fi = 0; fi < filtros.length; fi++) filtros[fi].addEventListener('click', function () {
+    var cat = this.getAttribute('data-filtro');
+    for (var fj = 0; fj < filtros.length; fj++) filtros[fj].setAttribute('aria-pressed', filtros[fj] === this ? 'true' : 'false');
+    var items = document.querySelectorAll('[data-categoria]');
+    for (var k2 = 0; k2 < items.length; k2++) items[k2].hidden = !(cat === 'todos' || items[k2].getAttribute('data-categoria') === cat);
+  });
+
   /* Ajustes de lectura */
   document.addEventListener('click', function (ev) {
     var btn = ev.target.closest ? ev.target.closest('[data-accion]') : null;

@@ -1,71 +1,9 @@
 {
-  "_comentario": "Recuadro «Última hora». Solo datos de nivel 1 o 2 (organismo directo, o medio/agencia que lo atribuye expresamente). Nunca nombres ni datos de personas. Cifras de víctimas: solo la última cifra OFICIAL; las no atribuidas no se recogen. Cada bloque tiene su propio plazo de revisión.",
-  "actualizadoEn": "2026-10-28T11:45:00+01:00",
-  "balance": {
-    "revisarCadaMinutos": 30,
-    "comprobadoEn": "2026-10-28T11:45:00+01:00",
-    "datos": [
-      {
-        "etiqueta": "Fallecidos",
-        "valor": "Al menos 10",
-        "nivelFuente": 2,
-        "fuente": {
-          "titulo": "Junta de Castilla-La Mancha (portavoz), vía CMM",
-          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/victimas-accidente-ferroviario-urda-toledo.html"
-        },
-        "hora": "2026-10-28T10:37:00+01:00"
-      },
-      {
-        "etiqueta": "Heridos",
-        "valor": "",
-        "nivelFuente": 0,
-        "fuente": null,
-        "hora": ""
-      }
-    ],
-    "nota": "Algunos medios publican cifras más altas sin atribuirlas a ningún organismo. No las recogemos hasta que una fuente oficial las confirme.",
-    "verificadoPor": []
-  },
-  "trenes": {
-    "revisarCadaMinutos": 120,
-    "comprobadoEn": "2026-10-28T11:45:00+01:00",
-    "totalViajeros": "544",
-    "fuenteTotal": {
-      "titulo": "CLM24: Gobierno de Castilla-La Mancha",
-      "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html"
-    },
-    "lista": [
-      {
-        "tren": "AVE 2080",
-        "compania": "Renfe",
-        "recorrido": "Madrid – Sevilla",
-        "salida": "",
-        "viajeros": "397",
-        "nivelFuente": 2,
-        "fuente": {
-          "titulo": "Infobae/EFE: la portavoz del Gobierno de Castilla-La Mancha",
-          "url": "https://www.infobae.com/espana/agencias/2026/10/28/el-tren-iryo-accidentado-viajaba-con-147-pasajeros-y-el-ave-con-397/"
-        }
-      },
-      {
-        "tren": "Iryo 6076",
-        "compania": "Iryo",
-        "recorrido": "Madrid – Sevilla",
-        "salida": "",
-        "viajeros": "147, incluido un bebé",
-        "nivelFuente": 2,
-        "fuente": {
-          "titulo": "Infobae/EFE: la portavoz del Gobierno de Castilla-La Mancha",
-          "url": "https://www.infobae.com/espana/agencias/2026/10/28/el-tren-iryo-accidentado-viajaba-con-147-pasajeros-y-el-ave-con-397/"
-        }
-      }
-    ],
-    "nota": "Hora de salida y sentido de cada tren: sin confirmación oficial todavía.",
-    "verificadoPor": []
-  },
+  "_comentario": "Bloques operativos de portada: centros de traslado, avisos de las autoridades y estado de la línea. Las cifras están en afirmaciones.json y los trenes en trenes.json.",
+  "actualizadoEn": "2026-10-28T12:00:00+01:00",
   "hospitales": {
     "revisarCadaMinutos": 30,
-    "comprobadoEn": "2026-10-28T11:45:00+01:00",
+    "comprobadoEn": "2026-10-28T12:00:00+01:00",
     "lista": [
       {
         "centro": "Hospitales de Toledo",
@@ -116,7 +54,7 @@
   },
   "avisos": {
     "revisarCadaMinutos": 60,
-    "comprobadoEn": "2026-10-28T11:45:00+01:00",
+    "comprobadoEn": "2026-10-28T12:00:00+01:00",
     "lista": [
       {
         "texto": "No acudas a urgencias de los hospitales de Toledo, Ciudad Real y Mancha Centro salvo extrema urgencia.",
@@ -155,7 +93,7 @@
   },
   "linea": {
     "revisarCadaMinutos": 60,
-    "comprobadoEn": "2026-10-28T11:45:00+01:00",
+    "comprobadoEn": "2026-10-28T12:00:00+01:00",
     "estado": "Interrumpida la alta velocidad Madrid – Andalucía",
     "detalle": "Sin previsión oficial de restablecimiento.",
     "nivelFuente": 2,

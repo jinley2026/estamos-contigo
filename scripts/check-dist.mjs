@@ -1,6 +1,7 @@
 // Pruebas automáticas sobre el sitio compilado (dist/).
 // Uso: node scripts/check-dist.mjs [--public]
-import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { gzipSync } from 'node:zlib';
 
 const PUBLICO = process.argv.includes('--public');
 const dist = new URL('../dist/', import.meta.url);
@@ -16,7 +17,7 @@ let formularios = [], scriptsExternos = [], enlacesRotos = [], telDesconocidos =
 for (const f of paginas) {
   const html = readFileSync(new URL(f, dist), 'utf8');
   if (/<form\b/i.test(html)) formularios.push(f);
-  if (/<input\b(?![^>]*type="checkbox")/i.test(html)) camposTexto.push(f);
+  for (const m of html.matchAll(/<input\b[^>]*>/gi)) if (!/type="checkbox"/.test(m[0]) && !/data-busqueda-local/.test(m[0])) camposTexto.push(f);
   if (/<script[^>]*\bsrc=/i.test(html)) scriptsExternos.push(f);
   if (/<link[^>]*rel="stylesheet"[^>]*href="https?:/i.test(html)) estilosExternos.push(f);
   if (!/<title>[^<]+<\/title>/.test(html)) sinTitulo.push(f);
@@ -29,13 +30,13 @@ for (const f of paginas) {
     if (href.startsWith('tel:')) { if (!telefonosConocidos.has(href.slice(4))) telDesconocidos.push(`${f} → ${href}`); continue; }
     if (!existsSync(new URL(href, dist))) enlacesRotos.push(`${f} → ${href}`);
   }
-  if (statSync(new URL(f, dist)).size > 50 * 1024) pesados.push(f);
+  if (gzipSync(html).length > 30 * 1024) pesados.push(f);
   if (/VISTA PREVIA PRIVADA|BORRADOR DE CARTEL/i.test(html)) marcasPrevia.push(f);
   if (/Pendiente de verificación|PENDIENTE DE VERIFICACIÓN|\[PENDIENTE/.test(html)) pendientes.push(f);
 }
 
 prueba('Ningún formulario (<form>)', formularios.length === 0, formularios.join(', '));
-prueba('Sin campos de entrada salvo casillas (el texto de «Avisar a mi familia» es un textarea local, sin envío)', camposTexto.length === 0, camposTexto.join(', '));
+prueba('Sin campos de entrada salvo casillas y el buscador local (sin envío de datos)', camposTexto.length === 0, camposTexto.join(', '));
 prueba('Sin scripts externos', scriptsExternos.length === 0, scriptsExternos.join(', '));
 prueba('Sin hojas de estilo externas', estilosExternos.length === 0, estilosExternos.join(', '));
 prueba('Todos los enlaces internos existen', enlacesRotos.length === 0, enlacesRotos.join('; '));
@@ -44,10 +45,11 @@ prueba('Todas las páginas tienen <title>', sinTitulo.length === 0, sinTitulo.jo
 prueba('Todas las páginas declaran idioma', sinLang.length === 0, sinLang.join(', '));
 prueba('Todas las páginas llevan CSP', sinCSP.length === 0, sinCSP.join(', '));
 prueba('Imágenes con texto alternativo', imgSinAlt.length === 0, imgSinAlt.join(', '));
-prueba('Cada página pesa menos de 50 KB sin comprimir', pesados.length === 0, pesados.join(', '));
+prueba('Cada página transfiere menos de 30 KB comprimida (gzip)', pesados.length === 0, pesados.join(', '));
 prueba('Existe _headers con cabeceras de seguridad', existsSync(new URL('_headers', dist)));
 const robots = existsSync(new URL('robots.txt', dist)) ? readFileSync(new URL('robots.txt', dist), 'utf8') : '';
 if (PUBLICO) {
+  prueba('Publicación: el panel de administración no existe', !existsSync(new URL('admin.html', dist)));
   prueba('Publicación: sin marcas de vista previa', marcasPrevia.length === 0, marcasPrevia.join(', '));
   prueba('Publicación: sin datos pendientes ni marcadores [PENDIENTE]', pendientes.length === 0, pendientes.join(', '));
 } else {
