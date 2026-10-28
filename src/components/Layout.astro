@@ -83,6 +83,7 @@ const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suces
         </nav>
       </div>
     </header>
+    <slot name="teletipo" />
     <main id="contenido" class="contenedor">
       <NotaGeneral />
       <slot />

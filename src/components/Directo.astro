@@ -1,0 +1,35 @@
+---
+// «En directo»: cronología de avisos como un informativo. Hora grande, organismo, titular, resumen y fuente.
+// El tiempo transcurrido («hace 12 min») y la marca «Nuevo» (menos de 30 min) los calcula el navegador.
+// Sin JavaScript se ve igual, con la hora exacta.
+import { actualizaciones, horaCorta, CATEGORIAS } from '../lib/datos';
+import Sello from './Sello.astro';
+interface Props { limite?: number; completo?: boolean }
+const { limite = 6, completo = false } = Astro.props;
+const lista = actualizaciones.filter((e) => e.estado !== 'retirado').slice(0, limite);
+const ultima = lista[0];
+const medio = (t: string) => t.split(/[:,(]/)[0].trim();
+---
+<section class="directo" aria-labelledby="directo-titulo" id="novedades">
+  <div class="directo-cabecera">
+    <h2 id="directo-titulo"><span class="punto-vivo" aria-hidden="true"></span>En directo</h2>
+    {ultima && <p class="directo-hora">Último aviso: <time datetime={ultima.fechaComunicado}>{horaCorta(ultima.fechaComunicado)}</time> <span class="hace" data-desde={ultima.fechaComunicado}></span></p>}
+  </div>
+  <ol class="linea-tiempo">
+    {lista.map((e, i) => (
+      <li class={`aviso ${i === 0 ? 'aviso-primero' : ''} cat-${e.categoria}`} data-fecha={e.fechaComunicado} data-comprobado={e.comprobadoEn} data-revisar={e.revisarCadaMinutos}>
+        <div class="aviso-hora">
+          <time datetime={e.fechaComunicado}>{horaCorta(e.fechaComunicado)}</time>
+          <span class="hace" data-desde={e.fechaComunicado}></span>
+        </div>
+        <div class="aviso-cuerpo">
+          <p class="aviso-org"><span class="etiqueta-org">{CATEGORIAS[e.categoria] ?? e.organismo}</span><span class="nuevo" hidden>Nuevo</span><Sello e={e} /></p>
+          <h3>{e.titulo}</h3>
+          <p class="aviso-resumen">{e.resumen}</p>
+          <p class="aviso-fuente">{e.tipoFuente === 'comunicado-oficial' ? 'Comunicado oficial' : `Según ${e.organismo}`} · <a href={e.fuente.url} rel="noopener noreferrer">{e.tipoFuente === 'comunicado-oficial' ? 'Ver comunicado' : medio(e.fuente.titulo)}</a></p>
+        </div>
+      </li>
+    ))}
+  </ol>
+  {!completo && <p class="directo-mas"><a class="boton-sec" href="actualizaciones.html">Ver toda la cronología</a> <a class="boton-sec" href="comunicados.html">Por organismo</a></p>}
+</section>

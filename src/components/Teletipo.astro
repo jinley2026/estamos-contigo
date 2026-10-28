@@ -1,0 +1,17 @@
+---
+// Teletipo de última hora (cinta que se desplaza). Con «reducir movimiento» queda fija y se puede desplazar a mano.
+// La copia duplicada es solo visual (aria-hidden) para que la cinta sea continua.
+import { actualizaciones, horaCorta } from '../lib/datos';
+const lista = actualizaciones.filter((e) => e.estado !== 'retirado').slice(0, 6);
+---
+{lista.length > 0 && (
+  <div class="teletipo" role="region" aria-label="Última hora">
+    <span class="teletipo-etiqueta"><span class="punto-vivo" aria-hidden="true"></span>Última hora</span>
+    <div class="teletipo-ventana">
+      <ul class="teletipo-cinta">
+        {lista.map((e) => <li><time datetime={e.fechaComunicado}>{horaCorta(e.fechaComunicado)}</time> <a href="#novedades">{e.titulo}</a></li>)}
+        {lista.map((e) => <li aria-hidden="true"><time>{horaCorta(e.fechaComunicado)}</time> <a href="#novedades" tabindex="-1">{e.titulo}</a></li>)}
+      </ul>
+    </div>
+  </div>
+)}

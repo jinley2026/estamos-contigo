@@ -5,7 +5,8 @@ import EstadoSistema from '../components/EstadoSistema.astro';
 import Alertas from '../components/Alertas.astro';
 import Balance from '../components/Balance.astro';
 import FichasTrenes from '../components/FichasTrenes.astro';
-import Novedades from '../components/Novedades.astro';
+import Directo from '../components/Directo.astro';
+import Teletipo from '../components/Teletipo.astro';
 import UltimaHora from '../components/UltimaHora.astro';
 import Sello from '../components/Sello.astro';
 import AvisoIndependencia from '../components/AvisoIndependencia.astro';
@@ -17,6 +18,7 @@ const flecha = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="tru
 const otros = otrosCanales.filter((c) => visible(c));
 ---
 <Layout titulo={SITE.nombre} autorecarga>
+  <Teletipo slot="teletipo" />
   <section class="panel" aria-labelledby="titulo-suceso">
     <h1 id="titulo-suceso">{SITE.suceso.titulo}</h1>
     <p class="pregunta">¿Buscas a un familiar que viajaba en los trenes?</p>
@@ -73,9 +75,9 @@ const otros = otrosCanales.filter((c) => visible(c));
       </section>
 
       <Balance />
-      <FichasTrenes />
-      <Novedades />
+      <Directo />
       <UltimaHora />
+      <FichasTrenes />
     </div>
   )}
 

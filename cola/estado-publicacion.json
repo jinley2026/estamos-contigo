@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-28T11:52:43.417Z",
+  "generado": "2026-10-28T12:04:20.168Z",
   "apto": false,
   "estado": "NO apto para publicación",
   "cumplidos": 0,
@@ -126,6 +126,7 @@
       "nombre": "Pruebas de seguridad satisfactorias",
       "cumplido": false,
       "motivos": [
+        "pruebas de navegador ausentes o con fallos",
         "confirmación humana sin marcar en la checklist"
       ]
     },

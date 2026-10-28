@@ -28,7 +28,7 @@
     if (!isNaN(t) && !isNaN(min) && ahora > t + min * 60000) {
       el.classList.add('caducado');
       var aviso = el.querySelector('.aviso-caducado');
-      if (aviso) aviso.textContent = 'Pendiente de revisión: última comprobación ' + hora(t) + '. Consulta la fuente oficial antes de actuar.';
+      if (aviso) aviso.textContent = 'Revisado por última vez: ' + hora(t) + '. Puede haber cambios: confirma en la fuente.';
     }
   }
 
@@ -70,6 +70,22 @@
   /* Alertas: los comunicados nuevos se muestran durante 60 minutos desde su publicación. */
   var alertasN = document.querySelectorAll('.alerta-nueva[data-hasta]');
   for (var an = 0; an < alertasN.length; an++) if (Date.now() < Date.parse(alertasN[an].getAttribute('data-hasta'))) alertasN[an].hidden = false;
+
+  /* Directo: «hace X min» y marca «Nuevo» en avisos de menos de 30 minutos. */
+  var pintarHace = function () {
+    var hs = document.querySelectorAll('.hace[data-desde]');
+    for (var i = 0; i < hs.length; i++) {
+      var m = Math.round((Date.now() - Date.parse(hs[i].getAttribute('data-desde'))) / 60000);
+      if (isNaN(m) || m < 0) continue;
+      hs[i].textContent = m < 1 ? 'ahora' : m < 60 ? 'hace ' + m + ' min' : m < 1440 ? 'hace ' + Math.floor(m / 60) + ' h' + (m % 60 ? ' ' + (m % 60) + ' min' : '') : '';
+    }
+    var av = document.querySelectorAll('.aviso[data-fecha]');
+    for (var j = 0; j < av.length; j++) {
+      var n = av[j].querySelector('.nuevo');
+      if (n) n.hidden = !(Date.now() - Date.parse(av[j].getAttribute('data-fecha')) < 1800000);
+    }
+  };
+  pintarHace(); setInterval(pintarHace, 60000);
 
   /* Vigencia del ciclo automático: «hace X min» y aviso si lleva más de una hora sin ejecutarse. */
   var es = document.querySelector('[data-ultima-consulta]');

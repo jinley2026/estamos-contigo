@@ -101,17 +101,16 @@
   .apto { font-weight: 700; padding: .6rem .8rem; border-radius: 8px; }
   .apto.no { background: #fbe9e9; color: #7a1414; border: 2px solid #b42318; }
   .apto.si { background: #e3f1e6; color: #14532d; border: 2px solid #2f7a45; }
-  .aviso-caducado { display: none; background: var(--aviso-fondo); border-left: 4px solid var(--aviso); padding: .6rem .8rem; color: var(--aviso-tinta); font-weight: 700; }
+  .aviso-caducado { display: none; color: var(--tinta-suave); font-size: .8rem; font-weight: 400; margin: .4rem 0 0; }
   .caducado .aviso-caducado { display: block; }
-  .caducado[data-sensible] .accion-llamar { display: none; }
-  .caducado .estado-fresco { display: none; }
+  .caducado[data-sensible] .accion-llamar, .caducado .estado-fresco { display: none; }
 
   /* Otros teléfonos dentro del panel */
   .otros-tel { list-style: none; padding: 0; margin: .8rem 0 0; display: grid; gap: .4rem; }
   .otros-tel li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .3rem .8rem; background: rgba(255,255,255,.1); border-radius: 10px; padding: .55rem .8rem; max-width: none; }
   .otros-tel a { color: #fff; font-weight: 700; font-size: 1.15rem; font-variant-numeric: tabular-nums; }
   .otros-tel .sello-pendiente { margin: 0 0 0 .5rem; }
-  .otros-tel .aviso-caducado { width: 100%; padding: .3rem .6rem; }
+  .otros-tel .aviso-caducado { width: 100%; padding: 0; color: #c9d6e6; }
 
   /* Última hora: tablón de avisos, borde superior amarillo como un cartel informativo */
   .ultima-hora { margin: 1.6rem 0 0; border: 2px solid var(--senal); border-top: 8px solid var(--aviso); border-radius: var(--radio); padding: 0 1rem 1rem; }
@@ -284,5 +283,73 @@
   th, td { border-bottom: 1px solid var(--linea); padding: .5rem; text-align: left; vertical-align: top; }
 
   @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
-  @media print { .banda-aviso, .cabecera nav, .ajustes, .saltar { display: none; } }
+
+  /* ===== Directo informativo (v0.6) ===== */
+  @keyframes latido { 0% { box-shadow: 0 0 0 0 rgba(227,52,47,.7); } 70% { box-shadow: 0 0 0 8px rgba(227,52,47,0); } 100% { box-shadow: 0 0 0 0 rgba(227,52,47,0); } }
+  @keyframes cinta { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .punto-vivo { display: inline-block; width: .6rem; height: .6rem; border-radius: 50%; background: #e3342f; margin-right: .45rem; vertical-align: .08em; animation: latido 1.6s infinite; }
+
+  .teletipo { display: flex; align-items: stretch; margin: 0; background: #0b1f38; color: #fff; font-size: .88rem; overflow: hidden; }
+  .teletipo-etiqueta { flex: none; display: flex; align-items: center; padding: .5rem .8rem; background: #c4221c; font-weight: 700; text-transform: none; white-space: nowrap; }
+  .teletipo-etiqueta .punto-vivo { background: #fff; }
+  .teletipo-ventana { overflow: hidden; flex: 1; mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+  .teletipo-cinta { display: flex; gap: 2.2rem; margin: 0; padding: .5rem 0 .5rem 1rem; list-style: none; width: max-content; animation: cinta 60s linear infinite; }
+  .teletipo:hover .teletipo-cinta, .teletipo:focus-within .teletipo-cinta { animation-play-state: paused; }
+  .teletipo-cinta li { white-space: nowrap; max-width: none; }
+  .teletipo-cinta time { color: #ffd54a; font-weight: 700; font-variant-numeric: tabular-nums; margin-right: .3rem; }
+  .teletipo-cinta a { color: #fff; text-decoration: none; }
+  .teletipo-cinta a:hover { text-decoration: underline; }
+
+  .directo { margin-top: 2rem; }
+  .directo-cabecera { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .3rem 1rem; border-bottom: 3px solid var(--senal-hondo); padding-bottom: .4rem; }
+  .directo-cabecera h2 { margin: 0; font-size: 1.5rem; display: flex; align-items: center; }
+  .directo-hora { margin: 0; font-size: .85rem; color: var(--tinta-suave); }
+  .hace { color: var(--tinta-suave); font-size: .78rem; }
+  .linea-tiempo { list-style: none; margin: 0; padding: 0; position: relative; }
+  .linea-tiempo::before { content: ""; position: absolute; left: 4.15rem; top: .4rem; bottom: .4rem; width: 2px; background: var(--linea); }
+  .aviso { display: grid; grid-template-columns: 3.6rem minmax(0, 1fr); gap: 1.2rem; padding: 1rem 0; border-bottom: 1px solid var(--linea); max-width: none; position: relative; }
+  .aviso::before { content: ""; position: absolute; left: 3.88rem; top: 1.35rem; width: .65rem; height: .65rem; border-radius: 50%; background: var(--papel); border: 2px solid var(--senal); }
+  .aviso-primero::before { background: #e3342f; border-color: #e3342f; }
+  .aviso-hora { display: grid; align-content: start; text-align: right; }
+  .aviso-hora time { font-size: 1.15rem; font-weight: 700; color: var(--senal-hondo); font-variant-numeric: tabular-nums; }
+  .aviso-cuerpo h3 { margin: .25rem 0 .2rem; font-size: 1.08rem; line-height: 1.25; }
+  .aviso-primero .aviso-cuerpo h3 { font-size: 1.35rem; }
+  .aviso-resumen { margin: 0; color: var(--tinta); }
+  .aviso-fuente { margin: .35rem 0 0; font-size: .8rem; color: var(--tinta-suave); }
+  .aviso-fuente a { color: var(--tinta-suave); }
+  .aviso-org { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; margin: 0; }
+  .etiqueta-org { font-size: .72rem; font-weight: 700; letter-spacing: .02em; padding: .12rem .5rem; border-radius: 999px; background: var(--senal-claro); color: var(--senal-hondo); }
+  .cat-junta .etiqueta-org { background: #f3e6ea; color: #6d1f33; }
+  .cat-adif .etiqueta-org, .cat-renfe .etiqueta-org, .cat-iryo .etiqueta-org { background: #e7eef0; color: #1f4b57; }
+  .cat-emergencias .etiqueta-org { background: #fdeceb; color: #9b1c17; }
+  .cat-sanidad .etiqueta-org { background: #e6f2ea; color: #1c5a33; }
+  .cat-ministerio .etiqueta-org, .cat-gobierno .etiqueta-org { background: #ece9f5; color: #3e3474; }
+  .nuevo { font-size: .72rem; font-weight: 700; padding: .12rem .5rem; border-radius: 999px; background: #e3342f; color: #fff; }
+  .directo-mas { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+  .boton-sec { display: inline-flex; align-items: center; min-height: 44px; padding: .55rem .95rem; border: 2px solid var(--senal); border-radius: 10px; font-weight: 700; text-decoration: none; color: var(--senal-hondo); }
+
+  /* Balance en banda oscura, cifras grandes */
+  .balance { margin: 2rem -16px 0; padding: 1.3rem 16px 1.4rem; background: var(--senal-hondo); color: #fff; }
+  .balance h2 { color: #fff; margin-top: 0; }
+  .balance .cifra { border: 0; border-top: 3px solid rgba(255,255,255,.25); border-radius: 0; padding: .7rem 0 0; background: transparent; }
+  .balance .cifra-etiqueta { color: #c9d6e6; font-size: .95rem; }
+  .balance .cifra-valor { color: #fff; font-size: clamp(2.4rem, 12vw, 3.2rem); line-height: 1; }
+  .balance .cifra-estado { color: #ffd54a; }
+  .balance .cifra-fuente, .balance .cifra-fuente a, .balance .cifra-nota, .balance .uh-nota, .balance .sin-cifra { color: #c9d6e6; }
+  .balance .cifra-discrepancia { background: rgba(255,255,255,.1); color: #fff; }
+
+  /* Tarjetas «Qué hacer»: acento superior */
+  .que-hacer li { border-width: 0; border-top: 5px solid var(--senal); background: var(--niebla); }
+  .que-hacer li:first-child { border-top-color: #e3342f; }
+
+  /* Página de cronología completa: misma línea de tiempo */
+  .entrada { border-top: 0; border-left: 3px solid var(--senal); padding: .3rem 0 .3rem 1rem; margin: 1.2rem 0; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .punto-vivo { animation: none; }
+    .teletipo-cinta { animation: none; }
+    .teletipo-ventana { overflow-x: auto; mask-image: none; }
+    .teletipo-cinta li[aria-hidden="true"] { display: none; }
+  }
+  @media print { .teletipo, .banda-aviso, .cabecera nav, .ajustes, .saltar { display: none; } }
 </style>
