@@ -9,7 +9,7 @@ const conDato = cifras.filter((c) => c.vigente);
 const sinDato = cifras.filter((c) => !c.vigente);
 ---
 <section class="balance" aria-labelledby="balance-titulo" id="balance">
-  <h2 id="balance-titulo">Balance oficial</h2>
+  <h2 id="balance-titulo">Balance</h2>
   <ul class="cifras">
     {conDato.map((c) => {
       const a = c.vigente!;
@@ -18,16 +18,17 @@ const sinDato = cifras.filter((c) => !c.vigente);
           <span class="cifra-etiqueta">{TIPOS[c.tipo]}</span>
           <span class="cifra-valor">{texto(a)}</span>
           <span class="cifra-estado">{a.estadoDato === 'definitivo' ? 'Definitiva' : 'Provisional'}</span>
-          <span class="cifra-fuente">{a.organismo}, {horaCorta(a.fechaComunicado)} · <a href={a.fuente.url} rel="noopener noreferrer">{tipoFuenteTexto(a.fuente.tipoFuente)}</a> · verificado {horaCorta(a.fechaVerificacion)}</span>
+          <span class="cifra-fuente">Según {a.organismo}, {horaCorta(a.fechaComunicado)}. {a.fuente.tipoFuente === 'medio-citando' ? <>Publicado por <a href={a.fuente.url} rel="noopener noreferrer">{a.fuente.titulo.split(':')[0]}</a></> : <a href={a.fuente.url} rel="noopener noreferrer">Comunicado oficial</a>}</span>
+          {a.observaciones && c.tipo === 'fallecidos' && <span class="cifra-nota">{a.observaciones}</span>}
           {c.discrepancias.length > 0 && (
             <span class="cifra-discrepancia">
-              Otras cifras oficiales: {c.discrepancias.map((d) => `${d.organismo}: ${texto(d)} (${horaCorta(d.fechaComunicado)})`).join(' · ')}
+              Otras cifras atribuidas: {c.discrepancias.map((d) => `${d.organismo}: ${texto(d)} (${horaCorta(d.fechaComunicado)})`).join(' · ')}
             </span>
           )}
         </li>
       );
     })}
   </ul>
-  {sinDato.length > 0 && <p class="sin-cifra">{NO_CONFIRMADO}: {sinDato.map((c) => TIPOS[c.tipo].toLowerCase()).join(', ')}.</p>}
-  <p class="uh-nota">Solo publicamos cifras que podemos comprobar en la web del organismo que las da. Las que publica la prensa, aunque las atribuya a una autoridad, no se muestran hasta localizar el comunicado original. No hacemos estimaciones propias ni calculamos cifras restando o sumando.</p>
+  {sinDato.length > 0 && <p class="sin-cifra">Sin cifra comunicada todavía: {sinDato.map((c) => TIPOS[c.tipo].toLowerCase()).join(', ')}.</p>}
+  <p class="uh-nota">Cada cifra indica qué organismo la da y dónde se ha publicado. Mostramos la más reciente atribuida a un organismo; no recogemos cifras sin autor ni hacemos estimaciones propias.</p>
 </section>

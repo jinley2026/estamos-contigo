@@ -205,32 +205,28 @@ test('V3-2. No se puede aprobar una propuesta cuyo enlace no es oficial', () => 
   assert.match(r.stderr, /dominio oficial/);
 });
 
-test('V3-3. No se puede verificar un dato de nivel 2 (un medio que cita a la autoridad)', () => {
+test('V3-3. Prensa con atribución: se puede verificar; sin fuente enlazada, no (decisión de Lin 28/10 12:47)', () => {
   const act = leer('src/data/actualizaciones.json');
-  act.entradas.push({ id: 'ficticia-medio', titulo: 'FICTICIA', resumen: 'FICTICIA', organismo: 'Junta', categoria: 'junta', tipoFuente: 'medio-citando', fuente: { titulo: 'Periódico FICTICIO', url: 'https://periodico-ficticio.test/x' }, nivelFuente: 2, fechaComunicado: '2026-10-28T10:00:00+01:00', comprobadoEn: '2026-10-28T10:00:00+01:00', revisarCadaMinutos: 60, estado: 'vigente', correccion: null, verificadoPor: [] });
+  const base = { titulo: 'FICTICIA', resumen: 'FICTICIA', organismo: 'Junta', categoria: 'junta', tipoFuente: 'medio-citando', nivelFuente: 2, fechaComunicado: '2026-10-28T10:00:00+01:00', comprobadoEn: '2026-10-28T10:00:00+01:00', revisarCadaMinutos: 60, estado: 'vigente', correccion: null, verificadoPor: [] };
+  act.entradas.push({ ...base, id: 'ficticia-medio', fuente: { titulo: 'Periódico FICTICIO: la Junta informa', url: 'https://periodico-ficticio.test/x' } });
+  act.entradas.push({ ...base, id: 'ficticia-sin-fuente', fuente: { titulo: 'Sin enlace', url: '' } });
   escribir('src/data/actualizaciones.json', act);
-  const r = aprobar(['--verificar', 'actualizaciones:ficticia-medio', '--por', 'AA,BB']);
-  assert.notEqual(r.status, 0);
-  // Si alguien lo marca a mano como verificado, la comprobación de contenidos lo rechaza
+  assert.equal(aprobar(['--verificar', 'actualizaciones:ficticia-medio', '--por', 'AA,BB']).status, 0, 'prensa atribuida: se verifica');
+  assert.notEqual(aprobar(['--verificar', 'actualizaciones:ficticia-sin-fuente', '--por', 'AA,BB']).status, 0, 'sin fuente: se rechaza');
   const act2 = leer('src/data/actualizaciones.json');
-  act2.entradas.find((e) => e.id === 'ficticia-medio').verificadoPor = ['AA', 'BB'];
-  escribir('src/data/actualizaciones.json', act2);
-  const cc = spawnSync('node', [join(T, 'scripts/check-content.mjs')], { encoding: 'utf8' });
-  assert.notEqual(cc.status, 0);
-  assert.match(cc.stdout, /ficticia-medio: verificado pero sin enlace a un dominio oficial/);
-  act2.entradas = act2.entradas.filter((e) => e.id !== 'ficticia-medio');
+  act2.entradas = act2.entradas.filter((e) => e.id !== 'ficticia-sin-fuente');
   escribir('src/data/actualizaciones.json', act2);
 });
 
-test('V3-4. Lo «No confirmado oficialmente» no aparece en la versión pública; en la vista previa sí, marcado', () => {
-  construir('preview');
-  assert.ok(readFileSync(join(T, 'dist/index.html'), 'utf8').includes('No confirmado oficialmente'));
+test('V3-4. En público sale la prensa verificada con su medio, nunca lo no verificado; cuatro fechas', () => {
   construir('public');
-  const idx = readFileSync(join(T, 'dist/index.html'), 'utf8');
-  assert.ok(!/sello-pendiente">No confirmado/.test(idx), 'ningún dato no oficial con sello en público');
-  assert.ok(!idx.includes('clm24.es') && !idx.includes('infobae.com') && !idx.includes('cmmedia.es'), 'sin enlaces de prensa como fuente');
-  const fd = readFileSync(join(T, 'dist/actualizaciones.html'), 'utf8');
-  assert.ok(fd.includes('Publicado aquí'), 'cada información muestra las cuatro fechas');
+  const act = readFileSync(join(T, 'dist/actualizaciones.html'), 'utf8');
+  assert.ok(act.includes('Periódico FICTICIO: la Junta informa'), 'el dato de prensa verificado aparece con su medio');
+  assert.ok(!act.includes('Hospitales'), 'lo no verificado no aparece');
+  assert.ok(act.includes('Publicado aquí'), 'cada información muestra las cuatro fechas');
+  const act2 = leer('src/data/actualizaciones.json');
+  act2.entradas = act2.entradas.filter((e) => e.id !== 'ficticia-medio');
+  escribir('src/data/actualizaciones.json', act2);
 });
 
 test('V3-5. Suspensión automática tras 3 consultas seguidas sin respuesta y reanudación por dos personas', () => {

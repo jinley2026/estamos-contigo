@@ -17,13 +17,17 @@
       "unidad": "personas",
       "ambito": "global",
       "organismo": "Junta de Castilla-La Mancha",
-      "fuente": { "titulo": "CMM: declaraciones de la portavoz del Gobierno regional, Esther Padilla", "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/victimas-accidente-ferroviario-urda-toledo.html", "tipoFuente": "medio-citando" },
+      "fuente": {
+        "titulo": "CMM: declaraciones de la portavoz del Gobierno regional, Esther Padilla",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/victimas-accidente-ferroviario-urda-toledo.html",
+        "tipoFuente": "medio-citando"
+      },
       "fechaComunicado": "2026-10-28T10:37:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
       "estadoEditorial": "pendiente",
       "estadoDato": "provisional",
       "versionAnterior": null,
-      "observaciones": "Hay medios con cifras de 30, 40 y 46 sin atribución verificable (ENCLM, La Portada de Extremadura, Semana, Libertad Digital). Un titular de Libertad Digital atribuye 46 a Protección Civil, pero no se pudo abrir para comprobarlo. Prioridad del equipo: confirmar el balance oficial actualizado.",
+      "observaciones": "Primera cifra comunicada. Sustituida por la de las 12:43.",
       "verificadoPor": []
     },
     {
@@ -34,7 +38,11 @@
       "unidad": "personas",
       "ambito": "global",
       "organismo": "Junta de Castilla-La Mancha",
-      "fuente": { "titulo": "CLM24: datos del Gobierno de Castilla-La Mancha", "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html", "tipoFuente": "medio-citando" },
+      "fuente": {
+        "titulo": "CLM24: datos del Gobierno de Castilla-La Mancha",
+        "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html",
+        "tipoFuente": "medio-citando"
+      },
       "fechaComunicado": "2026-10-28T11:21:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
       "estadoEditorial": "pendiente",
@@ -51,7 +59,11 @@
       "unidad": "personas",
       "ambito": "tren:ave-2080",
       "organismo": "Junta de Castilla-La Mancha",
-      "fuente": { "titulo": "Infobae/EFE: la portavoz del Gobierno de Castilla-La Mancha", "url": "https://www.infobae.com/espana/agencias/2026/10/28/el-tren-iryo-accidentado-viajaba-con-147-pasajeros-y-el-ave-con-397/", "tipoFuente": "medio-citando" },
+      "fuente": {
+        "titulo": "Infobae/EFE: la portavoz del Gobierno de Castilla-La Mancha",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/el-tren-iryo-accidentado-viajaba-con-147-pasajeros-y-el-ave-con-397/",
+        "tipoFuente": "medio-citando"
+      },
       "fechaComunicado": "2026-10-28T11:00:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
       "estadoEditorial": "pendiente",
@@ -68,13 +80,59 @@
       "unidad": "personas",
       "ambito": "tren:iryo-6076",
       "organismo": "Junta de Castilla-La Mancha",
-      "fuente": { "titulo": "Infobae/EFE: la portavoz del Gobierno de Castilla-La Mancha", "url": "https://www.infobae.com/espana/agencias/2026/10/28/el-tren-iryo-accidentado-viajaba-con-147-pasajeros-y-el-ave-con-397/", "tipoFuente": "medio-citando" },
+      "fuente": {
+        "titulo": "Infobae/EFE: la portavoz del Gobierno de Castilla-La Mancha",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/el-tren-iryo-accidentado-viajaba-con-147-pasajeros-y-el-ave-con-397/",
+        "tipoFuente": "medio-citando"
+      },
       "fechaComunicado": "2026-10-28T11:00:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
       "estadoEditorial": "pendiente",
       "estadoDato": "provisional",
       "versionAnterior": null,
       "observaciones": "Incluye un bebé, según la misma fuente.",
+      "verificadoPor": []
+    },
+    {
+      "id": "fallecidos-112clm-1243",
+      "tipo": "fallecidos",
+      "valor": 30,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Libertad Digital: Emergencias de Castilla-La Mancha (112) confirma 30 fallecidos",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T12:43:00+01:00",
+      "fechaVerificacion": "2026-10-28T12:50:00+01:00",
+      "estadoEditorial": "pendiente",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-jccm-1037",
+      "observaciones": "El presidente García-Page advirtió a las 12:40 de que la cifra puede aumentar. Hay medios con cifras más altas no confirmadas por la Junta ni el 112.",
+      "verificadoPor": []
+    },
+    {
+      "id": "heridos-112clm-1243",
+      "tipo": "heridos",
+      "valor": 100,
+      "calificador": "aproximadamente",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Libertad Digital: el 112 de Castilla-La Mancha cifra los heridos en cerca de un centenar",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T12:43:00+01:00",
+      "fechaVerificacion": "2026-10-28T12:50:00+01:00",
+      "estadoEditorial": "pendiente",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "García-Page (12:38): unos cincuenta heridos de nivel amarillo, algunos muy graves.",
       "verificadoPor": []
     }
   ]

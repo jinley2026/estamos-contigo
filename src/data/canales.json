@@ -49,14 +49,19 @@
           "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
           "url": "https://www.adif.es/comunicacion/notas-prensa",
           "fechaPublicacion": "2026-10-28T11:30:00+01:00"
+        },
+        {
+          "titulo": "Telecinco: Iryo activa el 900 00 14 03 para afectados",
+          "url": "https://www.telecinco.es/noticias/sociedad/20261028/renfe-activa-telefono-atencion-familiares-accidente-ferroviario-tren-urda_18_020557528.html",
+          "fechaPublicacion": "2026-10-28T11:17:00+01:00"
         }
       ],
-      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "comprobadoEn": "2026-10-28T12:50:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [],
       "notaInterna": "Fuente: nota oficial de Adif. RECTIFICACIONES 28/10: (1) 12:00 se retiró el 655 28 69 75 por discrepar de Adif; (2) 12:10 se restituye porque la nota oficial de la Junta (nivel 1) también lo publica. Ambos se muestran con su fuente hasta que Iryo confirme. En Adamuz Iryo usó el 900 001 402: no confundir.",
       "organismoCorto": "Iryo, atención a familiares",
-      "discrepancia": "Dos fuentes oficiales dan teléfonos distintos para Iryo: Adif publica el 900 001 403 y la Junta de Castilla-La Mancha el 655 28 69 75. No sabemos si los dos son válidos. Pendiente de confirmar con Iryo."
+      "discrepancia": "Para Iryo hay dos números: el 900 00 14 03, que publican Iryo y Adif, y el 655 28 69 75, que ha dado la Junta de Castilla-La Mancha. Si uno no responde, prueba el otro."
     },
     {
       "id": "iryo-junta",
@@ -84,7 +89,7 @@
       "comprobadoEn": "2026-10-28T12:10:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [],
-      "discrepancia": "Dos fuentes oficiales dan teléfonos distintos para Iryo: Adif publica el 900 001 403 y la Junta de Castilla-La Mancha el 655 28 69 75. No sabemos si los dos son válidos. Pendiente de confirmar con Iryo.",
+      "discrepancia": "Para Iryo hay dos números: el 900 00 14 03, que publican Iryo y Adif, y el 655 28 69 75, que ha dado la Junta de Castilla-La Mancha. Si uno no responde, prueba el otro.",
       "notaInterna": "La nota oficial de la Junta escribe «IRIO». Número móvil. Confirmar con Iryo."
     },
     {

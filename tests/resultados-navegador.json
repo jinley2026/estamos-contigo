@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-28T12:35:03",
+  "fecha": "2026-10-28T12:52:14",
   "resultados": [
     {
       "prueba": "Accesibilidad automática axe (WCAG 2.2 A/AA) sin violaciones en 31 páginas",
@@ -94,7 +94,7 @@
     {
       "prueba": "Aviso legal: promotor persona física, sin NIF ni domicilio inventados, sin XORVIUM",
       "ok": true,
-      "detalle": "Información en evolución. Por la incertidumbre propia de estas horas, toda la información de esta web debe considerarse pendiente de confirmación definitiva y puede cambiar.\n\nRecopilamos y unificamos "
+      "detalle": "Información en evolución: puede cambiar. Reunimos lo que comunican los organismos oficiales, directamente o a través de los medios que los citan, siempre con su fuente. Cómo lo hacemos\n\nBORRADOR PRELI"
     },
     {
       "prueba": "Buscador: «¿Cuántos pasajeros iban en el Iryo?» responde con la cifra y su fuente",

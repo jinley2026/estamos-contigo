@@ -103,6 +103,23 @@
       "comprobadoEn": "2026-10-28T12:10:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": []
+    },
+    {
+      "id": "urda-pabellones",
+      "nombre": "Urda: pabellón para familias",
+      "direccion": "Urda (Toledo). Ubicación exacta: preguntar en el 900 10 10 20 o el 900 00 14 03",
+      "funcion": "El Ayuntamiento ha habilitado dos pabellones: uno para víctimas y otro para familias.",
+      "organismo": "Ayuntamiento de Urda (alcalde, Manuel Galán)",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Libertad Digital: el alcalde de Urda (10:55)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "comprobadoEn": "2026-10-28T12:50:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": []
     }
   ]
 }

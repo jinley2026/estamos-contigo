@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-28T11:41:21.412Z",
+  "generado": "2026-10-28T11:51:16.059Z",
   "apto": false,
   "estado": "NO apto para publicación",
   "cumplidos": 0,
@@ -88,7 +88,7 @@
     },
     {
       "id": "C09",
-      "nombre": "Ninguna noticia sin origen oficial",
+      "nombre": "Ninguna información sin fuente atribuida y enlazada (decisión de Lin, 28/10 12:47)",
       "cumplido": false,
       "motivos": [
         "check-content --public con errores",

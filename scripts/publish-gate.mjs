@@ -74,7 +74,7 @@ const controles = [
   ['C06', 'Ausencia de datos personales de víctimas', [[contenidoOk, 'check-content --public con errores']]],
   ['C07', 'Ausencia de formularios sensibles', [[true, '']]], // lo impone check-dist --public tras compilar
   ['C08', 'Todas las fuentes enlazadas', [[sinFuente.length === 0, `${sinFuente.length} dato(s) sin enlace`], [publicables.length > 0, 'no hay ningún dato verificado que publicar']]],
-  ['C09', 'Ninguna noticia sin origen oficial', [[sinOficial.length === 0, `${sinOficial.length} dato(s) verificados sin origen oficial`], [contenidoOk, 'check-content --public con errores']]],
+  ['C09', 'Ninguna información sin fuente atribuida y enlazada (decisión de Lin, 28/10 12:47)', [[sinFuente.length === 0, `${sinFuente.length} dato(s) sin fuente`], [contenidoOk, 'check-content --public con errores']]],
   ['C10', 'Sistema de revisión editorial operativo', [[existe('.github/workflows/ciclo.yml') && existe('scripts/aprobar.mjs'), 'falta el ciclo o el script de aprobación'], [!!site.estadoOperativo.ultimaAprobacion, 'todavía no se ha aprobado nada']]],
   ['C11', 'Rectificaciones disponibles', [[existe('src/pages/rectificaciones.astro'), 'falta la página'], [site.revisionJuridica.rectificaciones === true, 'página sin revisar']]],
   ['C12', 'Sin credenciales expuestas', [[credenciales.length === 0, `posibles credenciales en: ${credenciales.join(', ')}`]]],

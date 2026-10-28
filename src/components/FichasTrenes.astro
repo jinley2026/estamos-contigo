@@ -2,7 +2,7 @@
 // Una ficha por tren. Campo sin dato oficial = «Sin dato oficial». La ocupación viene de afirmaciones; la capacidad es otro dato.
 import { trenes, visible, verificado, horaCorta, NO_CONFIRMADO, confirmadoOficial } from '../lib/datos';
 import { cifra, texto } from '../lib/afirmaciones';
-const SIN = NO_CONFIRMADO;
+const SIN = 'Sin dato comunicado';
 const lista = trenes.filter((t) => visible(t));
 ---
 <section class="trenes" aria-labelledby="trenes-titulo" id="trenes">

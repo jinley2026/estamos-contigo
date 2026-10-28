@@ -33,7 +33,7 @@ Estado a 28/10/2026, 12:40 (hora peninsular). Versión de la web: **v0.4.1, vist
 
 ## 3. Normas fijas del proyecto
 
-1. **Solo fuentes oficiales** (orden V3.0):
+1. **Fuentes** (orden V3.0, **modificada por Lin a las 12:47**, ver el final del documento: ahora se admite prensa con organismo y medio citados):
    - Dominios oficiales admitidos: gob.es, castillalamancha.es, adif.es, adifaltavelocidad.es, renfe.com, iryo.eu y ouigo.com.
    - La prensa, los buscadores y las redes sociales sirven solo para descubrir novedades. Un dato que un periódico atribuye a una autoridad no se publica hasta encontrar el comunicado original.
 2. **Ningún dato personal de afectados.** Nada de nombres, DNI, teléfonos personales, direcciones, datos de salud, fotografías, hospital de una persona concreta, listados, menores, testimonios ni datos de familiares.
@@ -121,3 +121,13 @@ node scripts/aprobar.mjs --lista          # propuestas pendientes
 ## 9. Mensaje para empezar la conversación nueva
 
 > Continuamos el proyecto ESTAMOS CONTIGO. Lee el documento TRASPASO-ESTAMOS-CONTIGO.md y el código de estamos-contigo-v0.4.1.zip de este proyecto. Es una web independiente sin ninguna relación con PRELUXINT ni con XORVIUM. Mantén todas las normas del apartado 3. Siguiente tarea: [escribe aquí lo que quieras hacer].
+
+
+## Cambio de norma — 28/10/2026, 12:47 (decisión de Lin)
+
+Lin vio la web y comprobó que, con la regla estricta de la V3 (solo webs oficiales), no aportaba casi nada: las cifras y los datos útiles que ya circulaban no aparecían. Eligió la opción «Útil y prudente»:
+- **Se publican también datos de prensa**, siempre con el **organismo** que los da y el **medio** que los publica, enlazado («Según la Junta de Castilla-La Mancha, 12:43. Publicado por Libertad Digital»).
+- Se mantiene: verificación por dos personas antes de publicar, ningún dato personal de afectados, ninguna cifra sin autor, ninguna estimación propia, prioridad del comunicado oficial cuando exista.
+- El ciclo automático sigue leyendo solo webs oficiales.
+- Control C09 de la puerta pasa a «Ninguna información sin fuente atribuida y enlazada».
+- **Riesgo que aumenta (para la revisión jurídica):** responsabilidad por reproducir cifras de prensa que luego resulten erróneas. Mitigación: atribución expresa, hora, enlace, historial de cifras y rectificación inmediata.

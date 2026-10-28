@@ -8,7 +8,7 @@ const discrepancias = [...new Set(canales.filter((c: any) => c.discrepancia).map
 ---
 {(alertas.length > 0 || discrepancias.length > 0) && (
   <section class="alertas" aria-label="Alertas">
-    {discrepancias.map((d) => <p class="alerta alerta-tel" role="alert"><strong>Atención a los teléfonos:</strong> {d}</p>)}
+    {discrepancias.map((d) => <p class="alerta alerta-tel" role="alert"><strong>Teléfonos de Iryo:</strong> {d}</p>)}
     {alertas.map((a) => (
       <p class="alerta alerta-nueva" hidden data-hasta={new Date(Date.parse(a.fechaComunicado) + 3600000).toISOString()}>
         <strong>Nuevo, {horaCorta(a.fechaComunicado)}:</strong> {a.titulo}. <a href={a.fuente.url} rel="noopener noreferrer">Ver fuente</a>

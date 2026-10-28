@@ -192,3 +192,13 @@ Por eso sigue desactivado. Para activarlo:
 - GitHub no garantiza la puntualidad de las ejecuciones programadas y puede desactivarlas tras 60 días sin actividad [MEMORIA].
 - Iryo y transportes.gob.es bloquean el acceso automatizado: entrada manual.
 - Las redes sociales no se vigilan, porque necesitarían una API de pago.
+
+
+## Cambio de norma — 28/10/2026, 12:47 (decisión de Lin)
+
+Lin vio la web y comprobó que, con la regla estricta de la V3 (solo webs oficiales), no aportaba casi nada: las cifras y los datos útiles que ya circulaban no aparecían. Eligió la opción «Útil y prudente»:
+- **Se publican también datos de prensa**, siempre con el **organismo** que los da y el **medio** que los publica, enlazado («Según la Junta de Castilla-La Mancha, 12:43. Publicado por Libertad Digital»).
+- Se mantiene: verificación por dos personas antes de publicar, ningún dato personal de afectados, ninguna cifra sin autor, ninguna estimación propia, prioridad del comunicado oficial cuando exista.
+- El ciclo automático sigue leyendo solo webs oficiales.
+- Control C09 de la puerta pasa a «Ninguna información sin fuente atribuida y enlazada».
+- **Riesgo que aumenta (para la revisión jurídica):** responsabilidad por reproducir cifras de prensa que luego resulten erróneas. Mitigación: atribución expresa, hora, enlace, historial de cifras y rectificación inmediata.

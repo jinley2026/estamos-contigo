@@ -49,16 +49,18 @@ export const NO_CONFIRMADO = 'No confirmado oficialmente';
 export function visible(x: ConFuentes & { verificadoPor?: string[]; validadoPor?: string[]; nivelFuente?: number }) {
   const nivelOk = x.nivelFuente === undefined || (x.nivelFuente >= 1 && x.nivelFuente <= 2);
   if (ES_PREVIA) return nivelOk;
-  return nivelOk && verificado(x) && (x.nivelFuente === undefined && !x.fuente && !x.fuentes ? true : confirmadoOficial(x));
+  // Decisión de Lin (28/10, 12:47): se publican también datos de prensa (nivel 2) SIEMPRE con el organismo y el medio citados.
+  // Sigue haciendo falta la verificación de dos personas y una fuente enlazada.
+  return nivelOk && verificado(x) && (x.nivelFuente === undefined && !x.fuente && !x.fuentes ? true : fuentesDe(x).length > 0);
 }
 /** Para elementos sueltos de una lista (hospitales, avisos): en publicación, solo los de origen oficial. */
-export const itemPublicable = (x: ConFuentes & { nivelFuente?: number }) => (ES_PREVIA ? (x.nivelFuente ?? 1) <= 2 : confirmadoOficial(x));
+export const itemPublicable = (x: ConFuentes & { nivelFuente?: number }) => (x.nivelFuente ?? 1) <= 2 && fuentesDe(x).length > 0;
 
 export const canales = canalesData.canales;
 export const canalDestacado = canales.find((c) => c.destacado && c.telefono);
 export const actualizaciones = [...actualizacionesData.entradas]
   .filter((e) => e.estado !== 'retirado' || ES_PREVIA)
-  .filter((e) => e.nivelFuente >= 1 && e.nivelFuente <= 2 && (ES_PREVIA || (verificado(e) && confirmadoOficial(e))))
+  .filter((e) => e.nivelFuente >= 1 && e.nivelFuente <= 2 && (ES_PREVIA || verificado(e)))
   .sort((a, b) => b.fechaComunicado.localeCompare(a.fechaComunicado));
 export const correcciones = actualizacionesData.entradas.filter((e) => e.correccion);
 export const puntos = puntosData.puntos;
@@ -91,4 +93,4 @@ export const fechaHora = (iso: string) => (iso ? fmt.format(new Date(iso)) + ' (
 
 /** La etiqueta describe NUESTRA revisión del enlace, no una certificación de la administración (V3 §9). */
 export const nivelTexto = (n: number) =>
-  n === 1 ? 'Fuente oficial comprobada' : n === 2 ? `${NO_CONFIRMADO} (lo publica un medio)` : 'No publicable';
+  n === 1 ? 'Fuente oficial comprobada' : n === 2 ? 'Según un medio que cita al organismo' : 'No publicable';

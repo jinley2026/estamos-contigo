@@ -11,7 +11,7 @@ export const TIPOS = data.tipos as Record<string, string>;
 export const cifraOficial = (a: Afirmacion) => esUrlOficial(a.fuente?.url);
 /** En publicación solo cuenta lo aprobado Y de origen oficial; en la vista previa también lo pendiente, marcado. */
 const publicable = (a: Afirmacion) =>
-  (a.estadoEditorial === 'aprobado' && cifraOficial(a)) || (ES_PREVIA && a.estadoEditorial === 'pendiente');
+  a.estadoEditorial === 'aprobado' || (ES_PREVIA && a.estadoEditorial === 'pendiente');
 
 export type Cifra = {
   tipo: string;

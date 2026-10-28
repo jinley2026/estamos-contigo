@@ -56,8 +56,8 @@ if (flag('--verificar')) {
     const d = leer('src/data/ultimahora.json');
     if (!d[id]) fallar(`No existe el bloque ${id}`);
     const items = [d[id], ...(d[id].lista ?? [])].filter((x) => x.fuente);
-    const malos = items.filter((x) => !origenOficial(x, DOMINIOS) || x.nivelFuente === 2);
-    if (malos.length) fallar(`El bloque ${id} tiene ${malos.length} elemento(s) sin comunicado oficial directo. Sustitúyelos o elimínalos antes de verificar.`);
+    const malos = items.filter((x) => !x.fuente?.url || (x.nivelFuente ?? 1) > 2);
+    if (malos.length) fallar(`El bloque ${id} tiene ${malos.length} elemento(s) sin fuente enlazada o de nivel no publicable.`);
     d[id].verificadoPor = por; d[id].comprobadoEn = ahora;
     escribir('src/data/ultimahora.json', d);
   } else {
@@ -67,8 +67,9 @@ if (flag('--verificar')) {
     const x = d[clave].find((e) => e.id === id);
     if (!x) fallar(`No existe ${id} en ${archivo}`);
     // V3 §1: no se puede verificar (y por tanto publicar) un dato sin enlace directo a un dominio oficial.
-    if (!origenOficial(x, DOMINIOS)) fallar(`${archivo}:${id} no tiene ningún enlace a un dominio oficial. Localiza el comunicado original y añádelo a sus fuentes antes de verificarlo.`);
-    if (x.nivelFuente === 2) fallar(`${archivo}:${id} es de nivel 2 (un medio que cita). Sustituye la fuente por el comunicado oficial y pon nivelFuente 1.`);
+    // Decisión de Lin (28/10, 12:47): se admite prensa que cite al organismo; debe haber al menos una fuente enlazada.
+    if (![x.fuente, ...(x.fuentes ?? []), ...(x.fuentesAdicionales ?? [])].some((f) => f?.url)) fallar(`${archivo}:${id} no tiene ninguna fuente enlazada.`);
+
     x.verificadoPor = por;
     if ('comprobadoEn' in x) x.comprobadoEn = ahora;
     if ('fechaVerificacion' in x) x.fechaVerificacion = ahora;

@@ -9,7 +9,9 @@ import Novedades from '../components/Novedades.astro';
 import UltimaHora from '../components/UltimaHora.astro';
 import Sello from '../components/Sello.astro';
 import AvisoIndependencia from '../components/AvisoIndependencia.astro';
-import { SITE, ES_PREVIA, MODO, otrosCanales, visible, hecho, horaCorta, ultimahora, itemPublicable, confirmadoOficial } from '../lib/datos';
+import { canales, SITE, ES_PREVIA, MODO, otrosCanales, visible, hecho, horaCorta, ultimahora, itemPublicable, confirmadoOficial } from '../lib/datos';
+// Los teléfonos salen de los datos y respetan la verificación: nunca escritos a mano en la página.
+const telFamilias = canales.filter((c: any) => ['renfe-familiares', 'iryo-familiares'].includes(c.id) && c.telefono && visible(c));
 const fuentesHecho = hecho.fuentes.filter((f: any) => itemPublicable({ fuente: f, nivelFuente: f.tipoFuente === 'comunicado-oficial' ? 1 : 2 }));
 const flecha = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const otros = otrosCanales.filter((c) => visible(c));
@@ -33,7 +35,26 @@ const otros = otrosCanales.filter((c) => visible(c));
   </section>
 
   <Alertas />
-  <EstadoSistema />
+
+  <ul class="que-hacer" aria-label="Qué hacer ahora">
+    <li>
+      <h2>Si buscas a un familiar</h2>
+      {telFamilias.map((c: any) => <p class="tel-linea">{c.id.startsWith('renfe') ? 'AVE de Renfe' : 'Iryo'}: <a href={`tel:${c.telefono}`}>{c.telefonoVisible}</a></p>)}
+      {telFamilias.length === 0 && <p>Consulta los teléfonos en renfe.com e iryo.eu.</p>}
+      <p>Ten a mano su nombre completo, DNI y el tren. No vayas a la zona ni a urgencias: allí no informan.</p>
+      <p><a href="busco-a-un-familiar.html">Qué más puedes hacer</a></p>
+    </li>
+    <li>
+      <h2>Si tenías billete hoy</h2>
+      <p>No vayas a la estación: la alta velocidad Madrid–Andalucía está cortada. Renfe cambia o anula el billete gratis.</p>
+      <p><a href="viaje-afectado.html">Cambios y anulaciones</a></p>
+    </li>
+    <li>
+      <h2>Si quieres ayudar</h2>
+      <p>Dona sangre en los hospitales de Toledo o Ciudad Real, o en el Centro de Transfusión de Madrid. No compartas fotos ni nombres de víctimas.</p>
+      <p><a href="quiero-ayudar.html">Cómo ayudar sin estorbar</a></p>
+    </li>
+  </ul>
 
   {MODO === 'reducido' ? (
     <p class="caja caja-pendiente">La web funciona en modo reducido: solo mostramos enlaces a los canales oficiales.</p>
@@ -45,7 +66,7 @@ const otros = otrosCanales.filter((c) => visible(c));
         <dl class="sit-datos">
           <div><dt>Cuándo</dt><dd>28 de octubre, {horaCorta(hecho.hora)}</dd></div>
           <div><dt>Dónde</dt><dd>{hecho.lugar}</dd></div>
-          <div><dt>Línea</dt><dd>{(confirmadoOficial(ultimahora.linea) || ES_PREVIA) ? ultimahora.linea.estado : 'No confirmado oficialmente'}</dd></div>
+          <div><dt>Línea</dt><dd>{ultimahora.linea.estado}</dd></div>
         </dl>
         <p class="cifra-fuente">Fuentes oficiales: {fuentesHecho.map((f, i) => <>{i > 0 && ' · '}<a href={f.url} rel="noopener noreferrer">{f.titulo}</a></>)}</p>
         <p><a href="trenes.html">Trenes, organismos que intervienen y más detalles</a></p>
@@ -80,6 +101,7 @@ const otros = otrosCanales.filter((c) => visible(c));
     <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>No compartas fotos ni nombres de víctimas</li>
   </ul>
 
+  <EstadoSistema />
   <AvisoIndependencia />
 
   <h2>También aquí</h2>

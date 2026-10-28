@@ -129,19 +129,20 @@ const revisa = (grupo, x) => {
   if (!oficial) {
     sinOrigen.push(`${grupo} ${x.id ?? ''}`.trim());
     // Un dato verificado por dos personas se publicaría: sin origen oficial es SIEMPRE un error.
-    if (verif(x)) err(`${grupo} ${x.id ?? ''}: verificado pero sin enlace a un dominio oficial — se rechaza`);
+    // Decisión de Lin (28/10, 12:47): la prensa se admite con atribución; sin ninguna fuente enlazada, se rechaza.
+    if (verif(x) && !(x.fuente?.url || x.fuentes?.length)) err(`${grupo} ${x.id ?? ''}: verificado sin fuente enlazada — se rechaza`);
   }
 };
 for (const c of canales.filter((c) => c.telefono)) revisa('canal', c);
 for (const e of act.filter((e) => e.estado !== 'retirado')) revisa('actualización', e);
 for (const p of leer('data/puntos.json').puntos) revisa('punto', p);
 for (const t of tr.trenes) revisa('tren', t);
-for (const a of af.afirmaciones) if (a.estadoEditorial === 'aprobado' && !esUrlOficial(a.fuente?.url, DOMINIOS)) err(`afirmación ${a.id}: aprobada sin fuente oficial — se rechaza`);
+for (const a of af.afirmaciones) if (a.estadoEditorial === 'aprobado' && (!a.organismo || !esURL(a.fuente?.url))) err(`afirmación ${a.id}: aprobada sin organismo atribuido o sin enlace — se rechaza`);
 for (const k of ['hospitales', 'avisos', 'linea']) {
   const b = uh[k];
-  for (const it of [...(b.lista ?? []), ...(b.fuente ? [b] : [])]) if (!esUrlOficial(it.fuente?.url, DOMINIOS) || it.nivelFuente === 2) { if (verif(b)) err(`última hora ${k}: verificado con elementos sin origen oficial`); sinOrigen.push(`última hora ${k}`); break; }
+  for (const it of [...(b.lista ?? []), ...(b.fuente ? [b] : [])]) if (!esUrlOficial(it.fuente?.url, DOMINIOS) || it.nivelFuente === 2) { sinOrigen.push(`última hora ${k}`); break; }
 }
-if (sinOrigen.length) avisos.push(`No confirmado oficialmente (no se publicará): ${[...new Set(sinOrigen)].join(', ')}`);
+if (sinOrigen.length) avisos.push(`Procedente de medios, con atribución (se publica citando organismo y medio): ${[...new Set(sinOrigen)].join(', ')}`);
 
 // Contador de visitas: nunca datos de prueba en la publicación
 const vis = leer('data/visitas.json');

@@ -1,9 +1,9 @@
 {
   "_comentario": "Bloques operativos de portada: centros de traslado, avisos de las autoridades y estado de la línea. Las cifras están en afirmaciones.json y los trenes en trenes.json.",
-  "actualizadoEn": "2026-10-28T12:00:00+01:00",
+  "actualizadoEn": "2026-10-28T12:50:00+01:00",
   "hospitales": {
     "revisarCadaMinutos": 30,
-    "comprobadoEn": "2026-10-28T12:00:00+01:00",
+    "comprobadoEn": "2026-10-28T12:50:00+01:00",
     "lista": [
       {
         "centro": "Hospitales de Toledo",
@@ -40,6 +40,15 @@
           "titulo": "Sanidad de Castilla-La Mancha, vía OKDiario",
           "url": "https://okdiario.com/salud/heridos-del-accidente-trenes-urda-mas-graves-toledo-alcazar-leves-entro-salud-consuegra-20647828"
         }
+      },
+      {
+        "centro": "Hospitales madrileños La Paz, Getafe y 12 de Octubre",
+        "papel": "Activados (922 camas)",
+        "nivelFuente": 2,
+        "fuente": {
+          "titulo": "Comunidad de Madrid, vía Libertad Digital (12:29)",
+          "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+        }
       }
     ],
     "aviso": "No sabemos quién está en cada centro. No te desplaces sin llamar antes al teléfono para familiares: allí te dirán dónde está tu familiar.",
@@ -54,8 +63,16 @@
   },
   "avisos": {
     "revisarCadaMinutos": 60,
-    "comprobadoEn": "2026-10-28T12:00:00+01:00",
+    "comprobadoEn": "2026-10-28T12:50:00+01:00",
     "lista": [
+      {
+        "texto": "Si tenías billete para el corredor Madrid–Andalucía hoy, no vayas a la estación: Renfe permite cambiar o anular gratis.",
+        "nivelFuente": 2,
+        "fuente": {
+          "titulo": "Ministerio de Transportes y Renfe, vía elDiario.es",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-toledo-suspendida-alta-velocidad-madrid-andalucia_133_13620647.html"
+        }
+      },
       {
         "texto": "No acudas a urgencias de los hospitales de Toledo, Ciudad Real y Mancha Centro salvo extrema urgencia.",
         "nivelFuente": 2,
@@ -65,11 +82,11 @@
         }
       },
       {
-        "texto": "Se pide donar sangre de todos los grupos.",
+        "texto": "Se pide donar sangre de todos los grupos en los hospitales de Toledo y Ciudad Real, y en el Centro de Transfusión de Madrid.",
         "nivelFuente": 2,
         "fuente": {
-          "titulo": "CMM: servicios de Emergencia de Castilla-La Mancha",
-          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/llamamiento-acudir-hospitales-accidente.html"
+          "titulo": "Junta de Castilla-La Mancha y Comunidad de Madrid, vía Libertad Digital (12:20)",
+          "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
         }
       },
       {
@@ -93,7 +110,7 @@
   },
   "linea": {
     "revisarCadaMinutos": 60,
-    "comprobadoEn": "2026-10-28T12:00:00+01:00",
+    "comprobadoEn": "2026-10-28T12:50:00+01:00",
     "estado": "Interrumpida la alta velocidad Madrid – Andalucía",
     "detalle": "Sin previsión oficial de restablecimiento.",
     "nivelFuente": 2,
