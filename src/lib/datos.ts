@@ -24,20 +24,41 @@ export const MODO = site.estadoOperativo.modo as 'normal' | 'reducido' | 'cerrad
 export const verificado = (x: { verificadoPor?: string[]; validadoPor?: string[] }) =>
   ((x.verificadoPor ?? x.validadoPor) ?? []).length >= 2;
 
+/** V3 §1: un enlace es de origen oficial si es https y su dominio está en fuentes.json → dominiosOficiales. */
+const DOMINIOS = fuentesData.dominiosOficiales.lista as string[];
+export function esUrlOficial(url?: string) {
+  if (!url) return false;
+  try {
+    const u = new URL(url);
+    const h = u.hostname.toLowerCase();
+    return u.protocol === 'https:' && DOMINIOS.some((d) => h === d || h.endsWith('.' + d));
+  } catch { return false; }
+}
+type ConFuentes = { fuente?: { url?: string }; fuentes?: { url?: string }[]; fuentesAdicionales?: { url?: string }[] };
+export const fuentesDe = (x: ConFuentes) => [x.fuente, ...(x.fuentes ?? []), ...(x.fuentesAdicionales ?? [])].filter((f): f is { url: string } => !!f?.url);
+/** Fuente de origen oficial del dato, o null. */
+export const origenOficial = (x: ConFuentes) => fuentesDe(x).find((f) => esUrlOficial(f.url)) ?? null;
+/** Confirmado oficialmente = tiene enlace directo a un dominio oficial y no es de nivel 2 (medio que cita). */
+export const confirmadoOficial = (x: ConFuentes & { nivelFuente?: number }) => x.nivelFuente !== 2 && !!origenOficial(x);
+export const NO_CONFIRMADO = 'No confirmado oficialmente';
+
 /**
- * Regla de visibilidad: en la publicación solo se muestra lo verificado y de nivel 1-2.
- * En la vista previa privada se muestra también lo pendiente, marcado en ámbar.
+ * Regla de visibilidad (V3): en la publicación solo se muestra lo confirmado oficialmente Y verificado por dos personas.
+ * En la vista previa privada se muestra también lo pendiente y lo no confirmado, marcado como tal, para poder revisarlo.
  */
-export function visible(x: { verificadoPor?: string[]; validadoPor?: string[]; nivelFuente?: number }) {
+export function visible(x: ConFuentes & { verificadoPor?: string[]; validadoPor?: string[]; nivelFuente?: number }) {
   const nivelOk = x.nivelFuente === undefined || (x.nivelFuente >= 1 && x.nivelFuente <= 2);
   if (ES_PREVIA) return nivelOk;
-  return nivelOk && verificado(x);
+  return nivelOk && verificado(x) && (x.nivelFuente === undefined && !x.fuente && !x.fuentes ? true : confirmadoOficial(x));
 }
+/** Para elementos sueltos de una lista (hospitales, avisos): en publicación, solo los de origen oficial. */
+export const itemPublicable = (x: ConFuentes & { nivelFuente?: number }) => (ES_PREVIA ? (x.nivelFuente ?? 1) <= 2 : confirmadoOficial(x));
 
 export const canales = canalesData.canales;
 export const canalDestacado = canales.find((c) => c.destacado && c.telefono);
 export const actualizaciones = [...actualizacionesData.entradas]
-  .filter((e) => e.nivelFuente >= 1 && e.nivelFuente <= 2 && (ES_PREVIA || verificado(e)))
+  .filter((e) => e.estado !== 'retirado' || ES_PREVIA)
+  .filter((e) => e.nivelFuente >= 1 && e.nivelFuente <= 2 && (ES_PREVIA || (verificado(e) && confirmadoOficial(e))))
   .sort((a, b) => b.fechaComunicado.localeCompare(a.fechaComunicado));
 export const correcciones = actualizacionesData.entradas.filter((e) => e.correccion);
 export const puntos = puntosData.puntos;
@@ -53,7 +74,7 @@ export const hecho = trenesData.hecho;
 export const estadoSistema = estadoData as any;
 export const fuentesConfig = fuentesData;
 export const CATEGORIAS: Record<string, string> = { gobierno: 'Gobierno de España', ministerio: 'Ministerio de Transportes', junta: 'Junta de Castilla-La Mancha', adif: 'Adif', renfe: 'Renfe', iryo: 'Iryo', emergencias: 'Emergencias', sanidad: 'Sanidad', ayuntamientos: 'Ayuntamientos', otros: 'Otros organismos' };
-export const tipoFuenteTexto = (t: string) => (t === 'comunicado-oficial' ? 'Comunicado oficial' : 'Noticia que cita al organismo');
+export const tipoFuenteTexto = (t: string) => (t === 'comunicado-oficial' ? 'Comunicado oficial' : `Medio de comunicación · ${NO_CONFIRMADO}`);
 export const horaCorta = (iso: string) => (iso ? new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', hour: '2-digit', minute: '2-digit' }).format(new Date(iso)) : '');
 export const otrosCanales = canalesData.canales.filter((c) => !c.destacado && c.telefono);
 
@@ -68,5 +89,6 @@ const fmt = new Intl.DateTimeFormat('es-ES', {
 /** Fecha y hora en hora peninsular española. */
 export const fechaHora = (iso: string) => (iso ? fmt.format(new Date(iso)) + ' (hora peninsular)' : 'sin fecha');
 
+/** La etiqueta describe NUESTRA revisión del enlace, no una certificación de la administración (V3 §9). */
 export const nivelTexto = (n: number) =>
-  n === 1 ? 'Oficial directa' : n === 2 ? 'Oficial citada por medio o agencia' : 'No publicable';
+  n === 1 ? 'Fuente oficial comprobada' : n === 2 ? `${NO_CONFIRMADO} (lo publica un medio)` : 'No publicable';

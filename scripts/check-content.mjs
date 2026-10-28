@@ -2,6 +2,7 @@
 // Uso: node scripts/check-content.mjs [--public]
 // En modo --public, cualquier dato visible no verificado es un error que bloquea la publicación.
 import { readFileSync } from 'node:fs';
+import { cargarDominios, esUrlOficial, origenOficial } from './lib/oficial.mjs';
 
 const leer = (p) => JSON.parse(readFileSync(new URL(`../src/${p}`, import.meta.url), 'utf8'));
 const PUBLICO = process.argv.includes('--public');
@@ -120,7 +121,36 @@ const claves = Object.keys(t.textos.en);
 for (const lang of ['fr', 'pt', 'it', 'de']) for (const k of claves) if (!t.textos[lang][k]) err(`i18n ${lang}: falta ${k}`);
 for (const [lang, v] of Object.entries(t.idiomas)) if (!v.revisado) avi(`traducción ${lang}: pendiente de revisión humana`);
 
+// ---------- V3 §1: rechazo automático de lo que no tiene origen oficial comprobable ----------
+const DOMINIOS = cargarDominios(new URL('../', import.meta.url));
+const sinOrigen = [];
+const revisa = (grupo, x) => {
+  const oficial = origenOficial(x, DOMINIOS) && x.nivelFuente !== 2;
+  if (!oficial) {
+    sinOrigen.push(`${grupo} ${x.id ?? ''}`.trim());
+    // Un dato verificado por dos personas se publicaría: sin origen oficial es SIEMPRE un error.
+    if (verif(x)) err(`${grupo} ${x.id ?? ''}: verificado pero sin enlace a un dominio oficial — se rechaza`);
+  }
+};
+for (const c of canales.filter((c) => c.telefono)) revisa('canal', c);
+for (const e of act.filter((e) => e.estado !== 'retirado')) revisa('actualización', e);
+for (const p of leer('data/puntos.json').puntos) revisa('punto', p);
+for (const t of tr.trenes) revisa('tren', t);
+for (const a of af.afirmaciones) if (a.estadoEditorial === 'aprobado' && !esUrlOficial(a.fuente?.url, DOMINIOS)) err(`afirmación ${a.id}: aprobada sin fuente oficial — se rechaza`);
+for (const k of ['hospitales', 'avisos', 'linea']) {
+  const b = uh[k];
+  for (const it of [...(b.lista ?? []), ...(b.fuente ? [b] : [])]) if (!esUrlOficial(it.fuente?.url, DOMINIOS) || it.nivelFuente === 2) { if (verif(b)) err(`última hora ${k}: verificado con elementos sin origen oficial`); sinOrigen.push(`última hora ${k}`); break; }
+}
+if (sinOrigen.length) avisos.push(`No confirmado oficialmente (no se publicará): ${[...new Set(sinOrigen)].join(', ')}`);
+
+// Contador de visitas: nunca datos de prueba en la publicación
+const vis = leer('data/visitas.json');
+if (PUBLICO && vis.esPrueba) err('visitas.json contiene DATOS DE PRUEBA');
+if (vis.visitas !== null && (!Number.isInteger(vis.visitas) || vis.visitas < 0)) err('visitas.json: valor no válido');
+
 const site = leer('config/site.json');
+if (/\d{8}[A-HJ-NP-TV-Z]/i.test(site.responsable.nif + site.responsable.domicilio) || site.responsable.nif || site.responsable.domicilio) err('site.json: el NIF y el domicilio NO se guardan en el repositorio (usar EC_NIF / EC_DOMICILIO en el despliegue privado)');
+if (/xorvium/i.test(JSON.stringify(site))) err('site.json: no se vincula la plataforma a XORVIUM');
 if (!esISO(site.estadoOperativo.ultimaRevisionEditorial)) err('site: ultimaRevisionEditorial no ISO');
 if (!['normal', 'reducido', 'cerrado'].includes(site.estadoOperativo.modo)) err('site: modo no válido');
 

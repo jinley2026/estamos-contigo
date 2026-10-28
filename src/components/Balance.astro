@@ -1,8 +1,8 @@
 ---
 // Balance humano: cada cifra con organismo, fuente, fecha del comunicado, hora de verificación y estado.
 // Si dos organismos dan cifras distintas se muestran las dos; nunca se calcula una intermedia ni ilesos por diferencia.
-import { cifra, texto, TIPOS } from '../lib/afirmaciones';
-import { horaCorta, tipoFuenteTexto } from '../lib/datos';
+import { cifra, texto, TIPOS, cifraOficial } from '../lib/afirmaciones';
+import { horaCorta, tipoFuenteTexto, NO_CONFIRMADO } from '../lib/datos';
 const orden = ['fallecidos', 'heridos', 'hospitalizados', 'altas', 'pasajeros', 'atendidos'];
 const cifras = orden.map((t) => cifra(t, 'global'));
 const conDato = cifras.filter((c) => c.vigente);
@@ -17,7 +17,7 @@ const sinDato = cifras.filter((c) => !c.vigente);
         <li class={`cifra ${a.estadoEditorial === 'pendiente' ? 'pendiente' : ''}`}>
           <span class="cifra-etiqueta">{TIPOS[c.tipo]}</span>
           <span class="cifra-valor">{texto(a)}</span>
-          <span class="cifra-estado">{a.estadoDato === 'definitivo' ? 'Definitiva' : 'Provisional'}{a.estadoEditorial === 'pendiente' && <span class="sello-pendiente">pendiente de verificar</span>}</span>
+          <span class="cifra-estado">{a.estadoDato === 'definitivo' ? 'Definitiva' : 'Provisional'}{!cifraOficial(a) ? <span class="sello-pendiente">{NO_CONFIRMADO}: no se publicará</span> : a.estadoEditorial === 'pendiente' && <span class="sello-pendiente">pendiente de verificar</span>}</span>
           <span class="cifra-fuente">{a.organismo}, {horaCorta(a.fechaComunicado)} · <a href={a.fuente.url} rel="noopener noreferrer">{tipoFuenteTexto(a.fuente.tipoFuente)}</a> · verificado {horaCorta(a.fechaVerificacion)}</span>
           {c.discrepancias.length > 0 && (
             <span class="cifra-discrepancia">
@@ -28,6 +28,6 @@ const sinDato = cifras.filter((c) => !c.vigente);
       );
     })}
   </ul>
-  {sinDato.length > 0 && <p class="sin-cifra">Sin cifra oficial todavía: {sinDato.map((c) => TIPOS[c.tipo].toLowerCase()).join(', ')}.</p>}
-  <p class="uh-nota">Algunos medios publican cifras más altas sin atribuirlas a un organismo. No las recogemos hasta que una fuente oficial las confirme. No calculamos personas ilesas restando cifras.</p>
+  {sinDato.length > 0 && <p class="sin-cifra">{NO_CONFIRMADO}: {sinDato.map((c) => TIPOS[c.tipo].toLowerCase()).join(', ')}.</p>}
+  <p class="uh-nota">Solo publicamos cifras que podemos comprobar en la web del organismo que las da. Las que publica la prensa, aunque las atribuya a una autoridad, no se muestran hasta localizar el comunicado original. No hacemos estimaciones propias ni calculamos cifras restando o sumando.</p>
 </section>

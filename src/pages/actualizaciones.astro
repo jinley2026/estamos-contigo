@@ -6,8 +6,8 @@ import { actualizaciones, correcciones, MODO } from '../lib/datos';
 <Layout titulo="Actualizaciones contrastadas" descripcion="Avisos oficiales sobre el accidente, con fuente, hora y nivel de verificación.">
   <h1>Actualizaciones contrastadas</h1>
   <p class="subtitulo">
-    Solo publicamos información útil para actuar, comunicada por un organismo u operador (nivel 1) o atribuida
-    expresamente a uno por una agencia o medio (nivel 2). No publicamos cifras de víctimas ni identidades.
+    Solo publicamos información que hemos comprobado en la web del organismo u operador que la emite, con enlace
+    directo. No publicamos identidades ni datos de personas, y las cifras solo cuando las da un organismo oficial.
   </p>
   {MODO === 'reducido' ? (
     <p class="caja caja-pendiente">La web funciona en modo reducido: no estamos ofreciendo actualizaciones. Consulta directamente los canales oficiales.</p>
@@ -23,5 +23,5 @@ import { actualizaciones, correcciones, MODO } from '../lib/datos';
   ) : (
     <ul>{correcciones.map((c) => <li><strong>{c.titulo}</strong>: {c.correccion}</li>)}</ul>
   )}
-  <p><a href="politica-editorial.html">Cómo verificamos la información</a></p>
+  <p><a href="fuentes-y-verificacion.html">Cómo verificamos la información</a> · <a href="rectificaciones.html">Pedir una rectificación</a></p>
 </Layout>

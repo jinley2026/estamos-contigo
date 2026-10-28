@@ -1,0 +1,18 @@
+---
+import Layout from '../components/Layout.astro';
+import Borrador from '../components/Borrador.astro';
+import { SITE } from '../lib/datos';
+---
+<Layout titulo="Condiciones de uso">
+  <Borrador clave="condicionesUso" />
+  <h1>Condiciones de uso</h1>
+  <ol>
+    <li><strong>Finalidad exclusivamente informativa.</strong> {SITE.nombre} reúne información pública de organismos oficiales. Es gratuita y no requiere registro.</li>
+    <li><strong>Límites.</strong> No identifica ni localiza personas, no informa de estados de salud individuales y no sustituye a los servicios oficiales. Antes de actuar, comprueba la fuente oficial enlazada. En una emergencia, llama al 112.</li>
+    <li><strong>Independencia.</strong> No pertenece ni representa a ningún organismo ni operador. Ver <a href="quienes-somos.html">quiénes somos</a>.</li>
+    <li><strong>Avisar a mi familia.</strong> El texto se compone en tu dispositivo y lo envías tú con tus aplicaciones. No pasa por nuestros sistemas y no es una verificación oficial del estado de nadie.</li>
+    <li><strong>Prohibido</strong> usar los contenidos para suplantar a organismos, pedir dinero, difundir información falsa o alterada, o difundir datos de víctimas y familiares.</li>
+    <li><strong>Si compartes</strong> contenidos de esta web, no los alteres, cita la fuente y la fecha.</li>
+    <li><strong>Retirada y suspensión.</strong> El responsable puede corregir o retirar contenidos y suspender el servicio en cualquier momento si no puede garantizar su exactitud.</li>
+  </ol>
+</Layout>

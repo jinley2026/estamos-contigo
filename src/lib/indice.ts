@@ -1,7 +1,10 @@
 // Índice de búsqueda construido en la compilación con información publicable (verificada en la versión pública).
 // No contiene datos de personas: solo cifras agregadas, trenes, comunicados, teléfonos, puntos y preguntas frecuentes.
 import { actualizaciones, canales, puntos, trenes, hecho, ultimahora, categoriasFAQ, visible, horaCorta, CATEGORIAS, tipoFuenteTexto } from './datos';
-import { cifra, texto, TIPOS } from './afirmaciones';
+import { cifra, texto, TIPOS, cifraOficial } from './afirmaciones';
+import { NO_CONFIRMADO, confirmadoOficial } from './datos';
+// En la vista previa, lo que solo publica la prensa aparece en el buscador marcado «No confirmado oficialmente».
+const marca = (oficial: boolean) => (oficial ? '' : `[${NO_CONFIRMADO}] `);
 
 export type Entrada = { titulo: string; respuesta: string; claves: string; fuente: { titulo: string; url: string } | null; fecha: string; enlace: string };
 const e: Entrada[] = [];
@@ -21,7 +24,7 @@ for (const tipo of Object.keys(TIPOS)) {
   const a = c.vigente;
   e.push({
     titulo: `${TIPOS[tipo]} (cifra oficial)`,
-    respuesta: a ? `${texto(a)}, según ${a.organismo}${c.discrepancias.length ? `. Otras cifras oficiales: ${c.discrepancias.map((d) => `${d.organismo}: ${texto(d)}`).join('; ')}` : ''}.` : SIN_DATO,
+    respuesta: a ? `${marca(cifraOficial(a))}${texto(a)}, según ${a.organismo}${c.discrepancias.length ? `. Otras cifras oficiales: ${c.discrepancias.map((d) => `${d.organismo}: ${texto(d)}`).join('; ')}` : ''}.` : SIN_DATO,
     claves: `${sinonimos[tipo]} total junta gobierno oficial ${a?.organismo ?? ''}`,
     fuente: a ? { titulo: a.fuente.titulo, url: a.fuente.url } : null,
     fecha: a ? a.fechaComunicado : '',
@@ -34,10 +37,10 @@ for (const t of trenes.filter((x) => visible(x))) {
   const nombre = `${t.servicio} ${t.numero}`;
   e.push({
     titulo: `${nombre} (${t.operador})`,
-    respuesta: [
-      t.origen && t.destino ? `Circulaba de ${t.origen} a ${t.destino}.` : 'Origen y destino: sin dato oficial.',
-      t.salida ? `Salida: ${t.salida}.` : 'Hora de salida: sin dato oficial.',
-      p ? `Pasajeros a bordo: ${texto(p)}, según ${p.organismo}.` : 'Pasajeros a bordo: sin dato oficial.'
+    respuesta: (p && !cifraOficial(p) || !confirmadoOficial(t) ? `[${NO_CONFIRMADO}] ` : '') + [
+      t.origen && t.destino ? `Circulaba de ${t.origen} a ${t.destino}.` : `Origen y destino: ${NO_CONFIRMADO.toLowerCase()}.`,
+      t.salida ? `Salida: ${t.salida}.` : `Hora de salida: ${NO_CONFIRMADO.toLowerCase()}.`,
+      p ? `Pasajeros a bordo: ${texto(p)}, según ${p.organismo}.` : `Pasajeros a bordo: ${NO_CONFIRMADO.toLowerCase()}.`
     ].join(' '),
     claves: `tren ${t.servicio} ${t.numero} ${t.operador} ${t.origen} ${t.destino} salio sale salida origen destino desde hacia iba pasajeros viajeros bordo cuantos`,
     fuente: p ? { titulo: p.fuente.titulo, url: p.fuente.url } : { titulo: t.fuente.titulo, url: t.fuente.url },
@@ -50,7 +53,7 @@ e.push({
   titulo: 'Qué ha pasado, cuándo y dónde',
   respuesta: `${hecho.descripcion} ${hecho.lugar} Hora: ${horaCorta(hecho.hora)} del 28 de octubre.`,
   claves: 'que ha pasado ocurrido sucedido accidente cuando donde hora lugar urda toledo alcance choque colision',
-  fuente: { titulo: hecho.fuentes[0].titulo, url: hecho.fuentes[0].url },
+  fuente: { titulo: (hecho.fuentes.find((f: any) => f.tipoFuente === 'comunicado-oficial') ?? hecho.fuentes[0]).titulo, url: (hecho.fuentes.find((f: any) => f.tipoFuente === 'comunicado-oficial') ?? hecho.fuentes[0]).url },
   fecha: hecho.hora,
   enlace: 'trenes.html'
 });

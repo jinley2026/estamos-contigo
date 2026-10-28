@@ -1,5 +1,5 @@
 {
-  "_comentario": "Configuración central. Los campos del responsable son OBLIGATORIOS para publicar: el script publish-gate.mjs bloquea la publicación si alguno está vacío. No inventar datos.",
+  "_comentario": "Configuración central. No inventar datos. NIF y domicilio NO se guardan en este repositorio: si la revisión jurídica concluye que son obligatorios, se añaden en el despliegue privado (variables EC_NIF / EC_DOMICILIO), nunca aquí.",
   "nombre": "Estamos Contigo",
   "subtitulo": "Información y apoyo para personas afectadas y familiares.",
   "suceso": {
@@ -8,14 +8,18 @@
     "fecha": "2026-10-28"
   },
   "responsable": {
-    "tipo": "",
-    "nombreORazonSocial": "",
+    "_comentario": "Titular PROVISIONAL según instrucción de Lin (28/10/2026 12:00). Identidad pendiente de comprobación.",
+    "tipo": "Persona física promotora de una iniciativa ciudadana independiente, gratuita y sin finalidad comercial",
+    "nombreORazonSocial": "José Antonio Marín García",
+    "localidad": "Dos Hermanas (Sevilla), España",
+    "correoContacto": "jinleyreal@gmail.com",
+    "correoPrivacidad": "jinleyreal@gmail.com",
+    "personaResponsableEditorial": "José Antonio Marín García",
+    "responsableMantenimiento": "José Antonio Marín García",
+    "identidadVerificada": false,
     "nif": "",
     "domicilio": "",
-    "correoContacto": "",
-    "correoPrivacidad": "",
-    "registroPublico": "",
-    "personaResponsableEditorial": ""
+    "registroPublico": ""
   },
   "dominio": "",
   "estadoOperativo": {
@@ -25,7 +29,8 @@
     "horasMaximasSinRevision": 4,
     "fechaCierre": "",
     "mensajeCierre": "",
-    "ultimaAprobacion": ""
+    "ultimaAprobacion": "",
+    "fechaPublicacion": ""
   },
   "modulos": {
     "actualizaciones": true,
@@ -48,7 +53,27 @@
     "privacidad": false,
     "cookies": false,
     "condicionesUso": false,
-    "politicaEditorial": false,
+    "fuentesVerificacion": false,
+    "rectificaciones": false,
+    "quienesSomos": false,
     "independencia": false
+  },
+  "regimenLegal": {
+    "_comentario": "lssiAplicable: 'pendiente' | 'si' | 'no'. Solo lo decide un profesional. Si 'si', el NIF y el domicilio son obligatorios (art. 10 LSSI) y se inyectan en el despliegue privado.",
+    "lssiAplicable": "pendiente",
+    "decididoPor": "",
+    "fechaDecision": ""
+  },
+  "visitas": {
+    "_comentario": "Contador agregado. 'activo' solo a true cuando el proveedor esté configurado y verificado. Mientras false, el pie muestra «Datos no disponibles».",
+    "activo": false,
+    "proveedor": "",
+    "verificadoPor": []
+  },
+  "automatizacion": {
+    "_comentario": "suspendida=true detiene el ciclo y oculta las novedades automáticas (sección 7 V3). Se activa sola si el ciclo detecta errores relevantes.",
+    "suspendida": false,
+    "motivo": "",
+    "desde": ""
   }
 }

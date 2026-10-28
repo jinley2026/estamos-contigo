@@ -1,0 +1,194 @@
+{
+  "generado": "2026-10-28T11:20:47.909Z",
+  "apto": false,
+  "estado": "NO apto para publicación",
+  "cumplidos": 0,
+  "total": 20,
+  "controles": [
+    {
+      "id": "C01",
+      "nombre": "Titular real identificado",
+      "cumplido": false,
+      "motivos": [
+        "identidad del promotor pendiente de verificación",
+        "régimen LSSI pendiente de decisión profesional",
+        "dominio pendiente de asignación",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C02",
+      "nombre": "Documentación legal revisada",
+      "cumplido": false,
+      "motivos": [
+        "sin revisión profesional: avisoLegal",
+        "sin revisión profesional: privacidad",
+        "sin revisión profesional: cookies",
+        "sin revisión profesional: condicionesUso",
+        "sin revisión profesional: fuentesVerificacion",
+        "sin revisión profesional: rectificaciones",
+        "sin revisión profesional: quienesSomos",
+        "sin revisión profesional: independencia",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C03",
+      "nombre": "Privacidad comprobada",
+      "cumplido": false,
+      "motivos": [
+        "política de privacidad sin revisar",
+        "sin proveedor/dominio real que comprobar",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C04",
+      "nombre": "Cookies auditadas",
+      "cumplido": false,
+      "motivos": [
+        "política de cookies sin revisar",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C05",
+      "nombre": "Proveedores revisados",
+      "cumplido": false,
+      "motivos": [
+        "proveedor de alojamiento no elegido",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C06",
+      "nombre": "Ausencia de datos personales de víctimas",
+      "cumplido": false,
+      "motivos": [
+        "check-content --public con errores",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C07",
+      "nombre": "Ausencia de formularios sensibles",
+      "cumplido": false,
+      "motivos": [
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C08",
+      "nombre": "Todas las fuentes enlazadas",
+      "cumplido": false,
+      "motivos": [
+        "no hay ningún dato verificado que publicar",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C09",
+      "nombre": "Ninguna noticia sin origen oficial",
+      "cumplido": false,
+      "motivos": [
+        "check-content --public con errores",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C10",
+      "nombre": "Sistema de revisión editorial operativo",
+      "cumplido": false,
+      "motivos": [
+        "todavía no se ha aprobado nada",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C11",
+      "nombre": "Rectificaciones disponibles",
+      "cumplido": false,
+      "motivos": [
+        "página sin revisar",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C12",
+      "nombre": "Sin credenciales expuestas",
+      "cumplido": false,
+      "motivos": [
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C13",
+      "nombre": "Pruebas de seguridad satisfactorias",
+      "cumplido": false,
+      "motivos": [
+        "pruebas de navegador ausentes o con fallos",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C14",
+      "nombre": "Información caducada correctamente marcada",
+      "cumplido": false,
+      "motivos": [
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C15",
+      "nombre": "Responsable de mantenimiento designado",
+      "cumplido": false,
+      "motivos": [
+        "identidad pendiente",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C16",
+      "nombre": "Protocolo de retirada y suspensión",
+      "cumplido": false,
+      "motivos": [
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "C17",
+      "nombre": "Revisión profesional de obligaciones pendientes",
+      "cumplido": false,
+      "motivos": [
+        "sin profesional que firme la revisión",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "A01",
+      "nombre": "Apoyo emocional validado",
+      "cumplido": false,
+      "motivos": [
+        "sin validar",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "A02",
+      "nombre": "Traducciones revisadas",
+      "cumplido": false,
+      "motivos": [
+        "sin revisar",
+        "confirmación humana sin marcar en la checklist"
+      ]
+    },
+    {
+      "id": "A03",
+      "nombre": "Autorización del titular",
+      "cumplido": false,
+      "motivos": [
+        "confirmación humana sin marcar en la checklist"
+      ]
+    }
+  ]
+}

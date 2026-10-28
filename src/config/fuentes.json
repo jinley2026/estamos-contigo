@@ -167,5 +167,17 @@
     "choque de trenes",
     "alcance entre dos trenes"
   ],
-  "_comentarioPalabras": "palabrasSuceso: obligatorias para considerar que un titular o una página trata del accidente. palabrasClave: complementarias."
+  "_comentarioPalabras": "palabrasSuceso: obligatorias para considerar que un titular o una página trata del accidente. palabrasClave: complementarias.",
+  "dominiosOficiales": {
+    "_comentario": "Única lista de dominios que cuentan como ORIGEN OFICIAL (V3 §1). Un dato solo es publicable si al menos una de sus fuentes enlaza a uno de estos dominios o a un subdominio suyo. Medios, buscadores y redes sociales NO están: sirven solo para descubrir. Añadir un dominio exige comprobar que pertenece al organismo.",
+    "lista": [
+      "gob.es",
+      "castillalamancha.es",
+      "adif.es",
+      "adifaltavelocidad.es",
+      "renfe.com",
+      "iryo.eu",
+      "ouigo.com"
+    ]
+  }
 }

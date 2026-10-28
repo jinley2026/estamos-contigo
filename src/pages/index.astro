@@ -7,7 +7,10 @@ import Balance from '../components/Balance.astro';
 import FichasTrenes from '../components/FichasTrenes.astro';
 import Novedades from '../components/Novedades.astro';
 import UltimaHora from '../components/UltimaHora.astro';
-import { SITE, MODO, otrosCanales, visible, verificado, hecho, horaCorta, ultimahora } from '../lib/datos';
+import Sello from '../components/Sello.astro';
+import AvisoIndependencia from '../components/AvisoIndependencia.astro';
+import { SITE, ES_PREVIA, MODO, otrosCanales, visible, hecho, horaCorta, ultimahora, itemPublicable, confirmadoOficial } from '../lib/datos';
+const fuentesHecho = hecho.fuentes.filter((f: any) => itemPublicable({ fuente: f, nivelFuente: f.tipoFuente === 'comunicado-oficial' ? 1 : 2 }));
 const flecha = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const otros = otrosCanales.filter((c) => visible(c));
 ---
@@ -20,7 +23,7 @@ const otros = otrosCanales.filter((c) => visible(c));
       <ul class="otros-tel">
         {otros.map((c) => (
           <li class="temporal" data-comprobado={c.comprobadoEn} data-revisar={c.revisarCadaMinutos} data-sensible="">
-            <span>{c.organismoCorto ?? c.organismo}{!verificado(c) && <span class="sello-pendiente">pendiente</span>}</span>
+            <span>{c.organismoCorto ?? c.organismo}<Sello e={c} /></span>
             <a class="accion-llamar" href={`tel:${c.telefono}`}>{c.telefonoVisible}</a>
             <span class="aviso-caducado">Pendiente de revisión</span>
           </li>
@@ -42,9 +45,9 @@ const otros = otrosCanales.filter((c) => visible(c));
         <dl class="sit-datos">
           <div><dt>Cuándo</dt><dd>28 de octubre, {horaCorta(hecho.hora)}</dd></div>
           <div><dt>Dónde</dt><dd>{hecho.lugar}</dd></div>
-          <div><dt>Línea</dt><dd>{ultimahora.linea.estado}</dd></div>
+          <div><dt>Línea</dt><dd>{(confirmadoOficial(ultimahora.linea) || ES_PREVIA) ? ultimahora.linea.estado : 'No confirmado oficialmente'}</dd></div>
         </dl>
-        <p class="cifra-fuente">Fuentes: {hecho.fuentes.map((f, i) => <>{i > 0 && ' · '}<a href={f.url} rel="noopener noreferrer">{f.titulo}</a></>)}</p>
+        <p class="cifra-fuente">Fuentes oficiales: {fuentesHecho.map((f, i) => <>{i > 0 && ' · '}<a href={f.url} rel="noopener noreferrer">{f.titulo}</a></>)}</p>
         <p><a href="trenes.html">Trenes, organismos que intervienen y más detalles</a></p>
       </section>
 
@@ -76,6 +79,8 @@ const otros = otrosCanales.filter((c) => visible(c));
     <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>No pagues a nadie que prometa información</li>
     <li><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>No compartas fotos ni nombres de víctimas</li>
   </ul>
+
+  <AvisoIndependencia />
 
   <h2>También aquí</h2>
   <ul class="bloques">

@@ -2,28 +2,29 @@
 
 Todos los cambios se hacen editando los archivos JSON de `src/data/` o `src/config/site.json`, se revisan por una segunda persona antes de fusionarse en la rama principal y se publican recompilando. Cada cambio queda en el historial de Git (quién, cuándo y qué).
 
-## 0. Ciclo de 10 minutos
+## 0. Ciclo de 30 minutos (regla V3: solo fuentes oficiales)
 
-1. El vigilante (`scripts/vigilar-fuentes.mjs`, programado en `.github/workflows/vigilar.yml`) revisa las webs oficiales cada 10 minutos. Si cambian y mencionan el suceso, abre un aviso «verificar» en el repositorio. No publica nada.
-2. La persona de turno abre el aviso, localiza el dato en la fuente original y comprueba su atribución (nivel 1 o 2).
-3. Actualiza `src/data/ultimahora.json` (balance, hospitales, trenes, avisos, línea), pone `actualizadoEn` y el `comprobadoEn` del bloque con la hora actual, y una segunda persona lo revisa.
-4. Al fusionar, el alojamiento recompila en 1-2 minutos. Las páginas abiertas se recargan solas cada 10 minutos.
-5. Las cuentas oficiales en X (InfoRenfe, Adif, 112 CLM) se revisan a mano: no se pueden vigilar sin la API de pago de X.
+1. `scripts/ciclo.mjs` se ejecuta cada 30 minutos (`.github/workflows/ciclo.yml`, minutos 7 y 37). Consulta las webs oficiales que lo permiten, detecta comunicados y cifras nuevas, descarta duplicados, rechaza enlaces fuera de los dominios oficiales y textos con posibles datos personales, marca contradicciones y abre una propuesta de cambios (PR). **No publica nada.**
+2. La persona de turno revisa: `node scripts/aprobar.mjs --lista`.
+3. Abre el enlace oficial, escribe un título y resumen propios y fieles, y aprueba con dos iniciales: `node scripts/aprobar.mjs <id> --por AB,CD --titulo "…" --resumen "…"`. El script se niega si el enlace no es de un dominio oficial.
+4. Las cifras de víctimas y la información sanitaria se aprueban siempre a mano, nunca automáticamente.
+5. Al fusionar la PR, el alojamiento recompila. Las páginas abiertas se recargan solas cada 10 minutos.
+6. Las cuentas oficiales en redes sociales se revisan a mano y **solo para descubrir**: lo publicado en una red se busca después en la web del organismo; si no está, no se publica.
 
-**Nunca** se publican en «Última hora»: nombres o datos de personas, listas de pasajeros, cifras sin organismo que las respalde, ni hospitales donde está una persona concreta.
+**Nunca** se publican: nombres o datos de personas, listas de pasajeros, cifras que solo publique la prensa (aunque la atribuya a una autoridad), ni hospitales donde está una persona concreta.
 
 ## 1. Añadir una información
 
-1. Localiza la fuente original. Solo valen nivel 1 (organismo directo) o nivel 2 (agencia o medio que cita expresamente al organismo).
+1. Localiza el comunicado en la web del organismo. Solo vale el origen oficial directo (dominios de `src/config/fuentes.json → dominiosOficiales`). Una noticia de prensa sirve para saber qué buscar, no como fuente.
 2. Pregúntate si sirve para que alguien actúe. Si no sirve (causas, polémica, cifras), no se publica.
-3. Añade la entrada en `actualizaciones.json` con `fechaComunicado`, `comprobadoEn` (hora actual con `+01:00`), `revisarCadaMinutos`, `nivelFuente` y `fuente`.
+3. Añade la entrada en `actualizaciones.json` con `fechaComunicado`, `comprobadoEn` (hora actual con `+01:00`), `revisarCadaMinutos`, `nivelFuente: 1` y `fuente` (enlace oficial). `publicadoEn` lo pone el script al verificar.
 4. Ejecuta `npm run build:preview` y revisa el resultado.
 5. Una segunda persona revisa el cambio antes de publicarlo.
 
 ## 2. Verificar un teléfono o punto de atención
 
 1. Encuentra el número o el punto en la web o en la cuenta oficial del organismo.
-2. Dos personas distintas llaman al número y confirman que corresponde al servicio descrito.
+2. Dos personas distintas comprueban, **sin llamar** (para no saturar líneas de emergencia), que el número figura en la web oficial del organismo para ese servicio.
 3. Ambas añaden sus iniciales en `verificadoPor` y se actualiza `comprobadoEn`.
 4. Sin dos iniciales, el dato no aparece en la versión pública.
 
@@ -52,9 +53,13 @@ En `site.json → modulos`, pon `false` en el módulo y recompila.
 
 En `site.json → estadoOperativo.modo`, pon `"reducido"`. La web deja de mostrar actualizaciones y queda como directorio de fuentes oficiales.
 
-## 8. Suspender el servicio
+## 8. Suspensión del sistema automático y del servicio
 
-Si no se puede garantizar la exactitud: modo `reducido` o, en último extremo, sustituir la web por una página con solo el 112 y los enlaces a los operadores, o retirarla del alojamiento.
+- **Suspensión automática:** si ninguna fuente oficial responde en 3 consultas seguidas, el ciclo se suspende solo (`site.json → automatizacion.suspendida`) y la portada lo avisa.
+- **Suspensión manual** (error relevante detectado, dato erróneo publicado, duda grave): `node scripts/aprobar.mjs --suspender "motivo" --por AB,CD`.
+- **Reanudar:** `node scripts/aprobar.mjs --reanudar --por AB,CD`, tras revisar la causa.
+- **Suspender el servicio:** modo `reducido` (solo enlaces oficiales) o, en último extremo, sustituir la web por una página con solo el 112 y los enlaces a los operadores, o retirarla del alojamiento.
+- **Retirada urgente de un dato:** ver apartado 5; se puede hacer desde el móvil editando el JSON en GitHub.
 
 ## 9. Cierre (fin de actualizaciones)
 

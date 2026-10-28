@@ -1,5 +1,7 @@
 ---
-import { fechaHora, nivelTexto } from '../lib/datos';
+import { nivelTexto } from '../lib/datos';
+import Fechas from './Fechas.astro';
+import Sello from './Sello.astro';
 interface Props { e: any }
 const { e } = Astro.props;
 const estados: Record<string, string> = { vigente: 'Vigente', pendiente: 'Pendiente de revisión', corregido: 'Corregido', retirado: 'Retirado' };
@@ -9,9 +11,8 @@ const estados: Record<string, string> = { vigente: 'Vigente', pendiente: 'Pendie
   <p>{e.resumen}</p>
   {e.correccion && <p class="caja-pendiente caja"><strong>Corrección:</strong> {e.correccion}</p>}
   <p class="aviso-caducado" role="status"></p>
-  <p class="meta">
-    <span class="nivel">{nivelTexto(e.nivelFuente)}</span> · Estado: {estados[e.estado] ?? e.estado}<br />
-    Comunicado: {fechaHora(e.fechaComunicado)} · Comprobado: {fechaHora(e.comprobadoEn)}<br />
-    Fuente: <a href={e.fuente.url} rel="noopener noreferrer">{e.fuente.titulo}</a>
-  </p>
+  <p class="meta"><Sello e={e} /> · Estado: {estados[e.estado] ?? e.estado} · Organismo: {e.organismo}</p>
+  <Fechas e={e} />
+  <p class="meta">Fuente: <a href={e.fuente.url} rel="noopener noreferrer">{e.fuente.titulo}</a></p>
+  {e.historial?.length > 0 && <details><summary>Historial de rectificaciones</summary><ul>{e.historial.map((h: any) => <li>{h.fecha}: {h.cambio}</li>)}</ul></details>}
 </article>

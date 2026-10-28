@@ -2,7 +2,8 @@
 import Layout from '../components/Layout.astro';
 import Borrador from '../components/Borrador.astro';
 import { SITE } from '../lib/datos';
-import { dato } from '../lib/legal';
+import { dato, datoReservado } from '../lib/legal';
+const dom = datoReservado('domicilio');
 ---
 <Layout titulo="Política de privacidad">
   <Borrador clave="privacidad" />
@@ -11,9 +12,9 @@ import { dato } from '../lib/legal';
 
   <h2>1. Responsable del tratamiento</h2>
   <ul>
-    <li>Responsable: {dato('nombreORazonSocial', 'nombre o razón social')}</li>
-    <li>NIF: {dato('nif', 'NIF')}</li>
-    <li>Domicilio: {dato('domicilio', 'domicilio')}</li>
+    <li>Responsable: {dato('nombreORazonSocial', 'nombre del responsable')}, persona física promotora de la iniciativa{!(SITE.responsable as any).identidadVerificada && ' [identidad pendiente de verificación]'}</li>
+    <li>Localidad: {dato('localidad', 'localidad')}</li>
+    {dom && <li>Domicilio: {dom}</li>}
     <li>Contacto para privacidad: {dato('correoPrivacidad', 'correo para ejercer derechos')}</li>
   </ul>
 
@@ -21,7 +22,7 @@ import { dato } from '../lib/legal';
   <ul>
     <li>No hay formularios, cuentas de usuario, comentarios ni chat.</li>
     <li>No pedimos ni guardamos nombres, teléfonos, documentos, datos de salud ni datos de víctimas.</li>
-    <li>No usamos cookies de publicidad, píxeles de seguimiento ni analítica que identifique a los visitantes.</li>
+    <li>No usamos cookies, píxeles publicitarios, perfiles de usuario ni analítica comercial, ni scripts o tipografías de terceros.</li>
     <li>Los mensajes de «Avisar a mi familia» se componen en tu dispositivo y no se envían a nuestros sistemas.</li>
   </ul>
 
@@ -33,29 +34,43 @@ import { dato } from '../lib/legal';
   <ul>
     <li><strong>Finalidad:</strong> servir la web y protegerla frente a ataques y abusos.</li>
     <li><strong>Base jurídica:</strong> interés legítimo en la seguridad y el funcionamiento del servicio (art. 6.1.f del RGPD). [Pendiente de confirmar en la revisión jurídica.]</li>
-    <li><strong>Encargado:</strong> [PENDIENTE: proveedor de alojamiento elegido, su país y las garantías de transferencia, si las hay].</li>
+    <li><strong>Encargado:</strong> [PENDIENTE: proveedor de alojamiento elegido (candidato: Cloudflare Pages, plan gratuito), su país y las garantías de transferencia internacional, si las hay].</li>
     <li><strong>Conservación:</strong> el plazo fijado por el proveedor en su configuración [PENDIENTE: confirmar y, si es posible, reducir al mínimo].</li>
   </ul>
 
-  <h2>4. Almacenamiento en tu navegador</h2>
+  <h2 id="estadisticas">4. Estadísticas de audiencia (contador de visitas)</h2>
+  <p>
+    El pie de página muestra un contador de visitas. <strong>Ahora mismo está desactivado y muestra «Datos no disponibles».</strong>
+    Si se activa, usará solo totales agregados que calcula el propio proveedor de alojamiento a partir de sus registros técnicos
+    (número de páginas servidas por día), sin cookies, sin scripts añadidos a la web, sin guardar direcciones IP ni identificadores y sin
+    crear perfiles. Nosotros solo recibimos y publicamos números totales.
+  </p>
+  <ul>
+    <li><strong>Visitas</strong> son páginas servidas; <strong>visitantes únicos</strong> es una estimación del proveedor por día que no se puede sumar, por lo que no publicamos un total de únicos si el proveedor no lo da para todo el periodo.</li>
+    <li>Puede incluir accesos automáticos (robots) que el proveedor no logre filtrar. [Pendiente de verificar el filtrado del proveedor antes de activarlo.]</li>
+    <li>Una visita no equivale a una persona ayudada.</li>
+    <li>Base jurídica prevista: interés legítimo en conocer el uso agregado del servicio (art. 6.1.f RGPD). [Pendiente de revisión jurídica.]</li>
+  </ul>
+
+  <h2>5. Almacenamiento en tu navegador</h2>
   <p>Si usas los botones «Texto más grande» o «Alto contraste», tu navegador guarda esa preferencia. Ver la <a href="cookies.html">política de cookies</a>.</p>
 
-  <h2>5. Enlaces y aplicaciones de terceros</h2>
+  <h2>6. Enlaces y aplicaciones de terceros</h2>
   <p>
     Si pulsas «Enviar por WhatsApp», tu teléfono abre WhatsApp con el texto ya escrito; desde ese momento se aplican las condiciones
     de WhatsApp. Si pulsas un enlace a una web oficial o a un medio, se aplican sus políticas. Para reducir lo que esas webs saben de
     tu visita, nuestros enlaces no envían la dirección de procedencia.
   </p>
 
-  <h2>6. Tus derechos</h2>
+  <h2>7. Tus derechos</h2>
   <p>
     Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a
-    {dato('correoPrivacidad', 'correo para ejercer derechos')}. Como no guardamos datos que te identifiquen, es posible que no podamos
+    {dato('correoPrivacidad', 'correo para ejercer derechos')}. Como nosotros no guardamos datos que te identifiquen, es posible que no podamos
     vincular ningún dato a tu persona; te lo explicaremos en la respuesta. También puedes reclamar ante la Agencia Española de
     Protección de Datos (aepd.es).
   </p>
 
-  <h2>7. Cambios</h2>
+  <h2>8. Cambios</h2>
   <p>Si cambian los servicios que usamos, actualizaremos esta política e indicaremos la fecha.</p>
   <p class="meta">Versión de {SITE.suceso.fecha}.</p>
 </Layout>

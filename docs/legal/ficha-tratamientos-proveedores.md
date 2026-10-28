@@ -10,7 +10,11 @@
 | 2 | Correo de contacto y reclamaciones | Lo que la persona escriba en su correo | Remitente | Atender correcciones, reclamaciones y derechos | Interés legítimo / cumplimiento de obligación legal en el caso de derechos | Hasta resolver + plazo de prescripción a definir | Proveedor de correo [PENDIENTE] |
 | 3 | Preferencias de lectura | `ec-texto`, `ec-contraste` | Navegador, solo si el usuario lo pide | Recordar la preferencia | Almacenamiento técnico solicitado por el usuario (art. 22.2 LSSI) — confirmar | Hasta que el usuario lo borre | Ninguno (no sale del dispositivo) |
 
-**No existen** otros tratamientos: sin formularios, cuentas, analítica, cookies, chatbot, SMS ni base de datos. Los mensajes de «Avisar a mi familia» no llegan a nuestros sistemas (comprobado por prueba automática, ver `docs/AUDITORIA.md`).
+| 4 | Estadística agregada de visitas (DESACTIVADA) | Totales diarios de páginas servidas calculados por el proveedor a partir de sus registros; nosotros solo recibimos números | Proveedor de alojamiento (API) | Mostrar el contador del pie | Interés legítimo — confirmar | Solo totales agregados, sin plazo especial | Proveedor de alojamiento [PENDIENTE] |
+
+Responsable (provisional): José Antonio Marín García, persona física promotora, Dos Hermanas (Sevilla), jinleyreal@gmail.com. Identidad pendiente de verificación.
+
+**No existen** otros tratamientos: sin formularios, cuentas, analítica comercial, cookies, píxeles, chatbot, SMS ni base de datos. Los mensajes de «Avisar a mi familia» no llegan a nuestros sistemas (comprobado por prueba automática, ver `docs/AUDITORIA.md`).
 
 ## Flujos hacia terceros iniciados por el usuario
 
@@ -27,6 +31,8 @@
 | Cloudflare (Pages) | Alojamiento y CDN | Registros técnicos | Red global; empresa con sede en EE. UU. → analizar mecanismo de transferencia | Sus condiciones incluyen un acuerdo de tratamiento de datos [MEMORIA: verificar] | Pendiente de elegir y revisar |
 | Proveedor de correo | Buzón de contacto | Correos recibidos | [PENDIENTE] | [PENDIENTE] | Pendiente |
 | Registrador de dominio | Dominio | Datos del titular del dominio | [PENDIENTE] | — | Pendiente |
+| GitHub | Repositorio y ciclo automático de 30 min | Código y datos públicos del suceso; no recibe datos de visitantes | EE. UU. | Condiciones de GitHub | En uso solo en la vista previa local; repositorio por crear |
+| Cloudflare (API de analítica) | Contador de visitas | Solo totales agregados | EE. UU. | — | DESACTIVADO; definición de «visitas» y filtrado de robots sin verificar |
 
 ## Evaluación de impacto
 

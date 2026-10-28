@@ -12,8 +12,9 @@ const errores = Object.values(e.fuentes ?? {}).filter((f: any) => f.ok === false
     <div><dt>Última fuente que respondió</dt><dd>{e.ultimaFuenteOk ? `${horaCorta(e.ultimaFuenteOk.hora)} · ${e.ultimaFuenteOk.nombre.split(' — ')[0]}` : 'Ninguna'}</dd></div>
     <div><dt>Última información aprobada</dt><dd>{aprobada ? fechaHora(aprobada).replace(' (hora peninsular)', '') : 'Ninguna todavía: todo está pendiente de verificar'}</dd></div>
   </dl>
+  {((SITE as any).automatizacion?.suspendida || e.suspendido) && <p class="es-alerta" role="alert">La consulta automática está suspendida ({(SITE as any).automatizacion?.motivo || e.suspendido?.motivo}). Mostramos la última información aprobada; consulta directamente los canales oficiales.</p>}
   {(!e.ultimoCicloOk && e.ultimaConsulta) && <p class="es-alerta" role="alert">La última consulta automática no obtuvo respuesta de ninguna fuente oficial. Consulta directamente los canales oficiales.</p>}
   {errores.length > 0 && e.ultimoCicloOk && <p class="es-nota">{errores.length} fuente{errores.length > 1 ? 's' : ''} no respondi{errores.length > 1 ? 'eron' : 'ó'} en la última consulta: {errores.map((f) => f.nombre.split(' — ')[0]).join(', ')}.</p>}
   <p class="es-alerta es-retraso" role="alert" hidden>La consulta automática lleva más de una hora sin ejecutarse. La información puede no estar al día.</p>
-  <p class="es-nota">Las horas son peninsulares. Cada dato indica además la fecha de su comunicado original.</p>
+  <p class="es-nota">Una consulta sin novedades no significa que la información se haya actualizado: lo que cuenta es la última información aprobada. Horas peninsulares.</p>
 </section>

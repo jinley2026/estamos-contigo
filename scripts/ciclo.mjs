@@ -11,6 +11,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
+import { cargarDominios, esUrlOficial } from './lib/oficial.mjs';
 
 const RAIZ = process.env.EC_RAIZ ? pathToFileURL(process.env.EC_RAIZ.replace(/\/?$/, '/')) : new URL('../', import.meta.url);
 const arg = (n) => { const i = process.argv.indexOf(n); return i > -1 ? process.argv[i + 1] : null; };
@@ -22,11 +23,22 @@ const leer = (p, def) => (existsSync(ruta(p)) ? JSON.parse(readFileSync(ruta(p),
 const escribir = (p, d) => { mkdirSync(new URL('.', ruta(p)), { recursive: true }); writeFileSync(ruta(p), JSON.stringify(d, null, 2) + '\n'); };
 
 const cfg = leer('src/config/fuentes.json');
+const DOMINIOS = cargarDominios(RAIZ);
+const site = leer('src/config/site.json');
+const CICLOS_FALLIDOS_PARA_SUSPENDER = 3;
 const estadoSistema = leer('src/data/estado-sistema.json', { fuentes: {}, ciclos: [] });
 const estadoFuentes = leer('cola/estado-fuentes.json', {});
 const cola = leer('cola/propuestas.json', { propuestas: [] });
 const afirmaciones = leer('src/data/afirmaciones.json').afirmaciones;
 const actualizaciones = leer('src/data/actualizaciones.json').entradas;
+
+// V3 §7: si el sistema automático está suspendido, no consulta ni propone nada. Lo reanuda una persona.
+if (site.automatizacion?.suspendida) {
+  estadoSistema.suspendido = { motivo: site.automatizacion.motivo, desde: site.automatizacion.desde };
+  escribir('src/data/estado-sistema.json', estadoSistema);
+  console.log(`Ciclo SUSPENDIDO desde ${site.automatizacion.desde}: ${site.automatizacion.motivo}. Reanudar: node scripts/aprobar.mjs --reanudar --por AB,CD`);
+  process.exit(0);
+}
 
 // ---------- utilidades de texto ----------
 export const normalizar = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ ]+/g, ' ').replace(/\s+/g, ' ').trim();
@@ -134,6 +146,12 @@ for (const f of cfg.fuentes) {
       nuevasProp.push({ id: idProp(e.href), creada: AHORA, fuente: { id: f.id, nombre: f.nombre, organismo: f.organismo, categoria: f.categoria, url: f.url }, tipo: 'noticia', categoria: 'C', estado: 'rechazada', enlace: e.href, motivoRechazo: motivo });
       continue;
     }
+    // V3 §1: rechazo automático de todo enlace que no sea de un dominio oficial (p. ej. una red social enlazada desde la nota).
+    if (!esUrlOficial(e.href, DOMINIOS)) {
+      resumen.rechazadas++;
+      nuevasProp.push({ id: idProp(e.href), creada: AHORA, fuente: { id: f.id, nombre: f.nombre, organismo: f.organismo, categoria: f.categoria, url: f.url }, tipo: 'noticia', categoria: 'C', estado: 'rechazada', enlace: e.href, motivoRechazo: 'enlace fuera de los dominios oficiales' });
+      continue;
+    }
     const urlConocida = actualizaciones.some((a) => a.fuente?.url === e.href) || cola.propuestas.some((p) => p.enlace === e.href) || nuevasProp.some((p) => p.enlace === e.href);
     if (urlConocida) { resumen.duplicadas++; continue; }
     const dup = [...actualizaciones.map((a) => a.titulo), ...cola.propuestas.filter((p) => p.titulo).map((p) => p.titulo), ...nuevasProp.filter((p) => p.titulo).map((p) => p.titulo)]
@@ -185,6 +203,14 @@ cola.propuestas = [...nuevasProp, ...cola.propuestas].slice(0, 500);
 resumen.fin = new Date().toISOString();
 estadoSistema.ultimaConsulta = AHORA;
 estadoSistema.ultimoCicloOk = resumen.fuentesOk > 0;
+estadoSistema.ciclosFallidosSeguidos = resumen.fuentesOk > 0 ? 0 : (estadoSistema.ciclosFallidosSeguidos ?? 0) + 1;
+// V3 §7: suspensión automática ante un error relevante (ninguna fuente responde varios ciclos seguidos).
+if (estadoSistema.ciclosFallidosSeguidos >= CICLOS_FALLIDOS_PARA_SUSPENDER) {
+  site.automatizacion = { ...(site.automatizacion ?? {}), suspendida: true, motivo: `ninguna fuente oficial respondió en ${estadoSistema.ciclosFallidosSeguidos} consultas seguidas`, desde: AHORA };
+  escribir('src/config/site.json', site);
+  estadoSistema.suspendido = { motivo: site.automatizacion.motivo, desde: AHORA };
+  resumen.suspendido = true;
+}
 estadoSistema.ciclos = [resumen, ...(estadoSistema.ciclos ?? [])].slice(0, 20);
 estadoSistema.pendientes = cola.propuestas.filter((p) => p.estado === 'pendiente').length;
 estadoSistema.contradicciones = cola.propuestas.filter((p) => p.estado === 'pendiente' && p.contradiccion).length;

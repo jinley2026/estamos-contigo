@@ -1,8 +1,8 @@
 ---
 // Una ficha por tren. Campo sin dato oficial = «Sin dato oficial». La ocupación viene de afirmaciones; la capacidad es otro dato.
-import { trenes, visible, verificado, horaCorta } from '../lib/datos';
+import { trenes, visible, verificado, horaCorta, NO_CONFIRMADO, confirmadoOficial } from '../lib/datos';
 import { cifra, texto } from '../lib/afirmaciones';
-const SIN = 'Sin dato oficial';
+const SIN = NO_CONFIRMADO;
 const lista = trenes.filter((t) => visible(t));
 ---
 <section class="trenes" aria-labelledby="trenes-titulo" id="trenes">
@@ -12,6 +12,7 @@ const lista = trenes.filter((t) => visible(t));
       const p = cifra('pasajeros', `tren:${t.id}`).vigente;
       return (
         <article class={`ficha ${verificado(t) ? '' : 'pendiente'}`} aria-label={`${t.servicio} ${t.numero}`}>
+          {!confirmadoOficial(t) && <p><span class="sello-pendiente">{NO_CONFIRMADO}: ficha no publicable</span></p>}
           <h3><span class="ficha-servicio">{t.servicio}</span> {t.numero}</h3>
           <dl>
             <div><dt>Operador</dt><dd>{t.operador}</dd></div>

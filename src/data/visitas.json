@@ -1,0 +1,11 @@
+{
+  "_comentario": "Lo escribe scripts/visitas.mjs con datos AGREGADOS del proveedor de alojamiento. Nunca a mano con cifras inventadas. Mientras site.json → visitas.activo sea false, la web muestra «Datos no disponibles».",
+  "proveedor": "",
+  "desde": "",
+  "hasta": "",
+  "visitas": null,
+  "visitantesUnicos": null,
+  "notaUnicos": "",
+  "actualizadoEn": "",
+  "esPrueba": false
+}

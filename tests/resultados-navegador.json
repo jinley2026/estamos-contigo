@@ -1,8 +1,8 @@
 {
-  "fecha": "2026-10-28T12:00:53",
+  "fecha": "2026-10-28T12:21:20",
   "resultados": [
     {
-      "prueba": "Accesibilidad automática axe (WCAG 2.2 A/AA) sin violaciones en 30 páginas",
+      "prueba": "Accesibilidad automática axe (WCAG 2.2 A/AA) sin violaciones en 31 páginas",
       "ok": true,
       "detalle": "{}"
     },
@@ -77,9 +77,29 @@
       "detalle": "Saltar al contenido"
     },
     {
+      "prueba": "Contador del pie visible en móvil con «Datos no disponibles» (9 páginas)",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "Páginas legales V3 sin desbordamiento a 320 px",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "Portada: aviso de independencia con el texto de la V3 §6",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "Aviso legal: promotor persona física, sin NIF ni domicilio inventados, sin XORVIUM",
+      "ok": true,
+      "detalle": "BORRADOR PRELIMINAR redactado con ayuda de IA. No es asesoramiento jurídico validado: requiere revisión de un profesional competente antes del lanzamiento.\n\nAviso legal\n1. Responsable de la web\nPromot"
+    },
+    {
       "prueba": "Buscador: «¿Cuántos pasajeros iban en el Iryo?» responde con la cifra y su fuente",
       "ok": true,
-      "detalle": "Iryo 6076 (Iryo)\n\nOrigen y destino: sin dato oficial. Hora de salida: sin dato oficial. Pasajeros a bordo: 147, según Junta de Castilla-La Mancha.\n\nFuente: Info"
+      "detalle": "Iryo 6076 (Iryo)\n\n[No confirmado oficialmente] Origen y destino: no confirmado oficialmente. Hora de salida: no confirmado oficialmente. Pasajeros a bordo: 147,"
     },
     {
       "prueba": "Buscador: pregunta sin respuesta comprobada muestra el aviso",
@@ -89,7 +109,7 @@
     {
       "prueba": "Buscador: «¿Qué tren salió de Madrid?» encuentra el AVE 2080",
       "ok": true,
-      "detalle": "AVE 2080 (Renfe)\n\nCirculaba de Madrid a Sevilla. Hora de salida: sin dato oficial. Pasajeros a bordo: 397, según Junta d"
+      "detalle": "AVE 2080 (Renfe)\n\n[No confirmado oficialmente] Circulaba de Madrid a Sevilla. Hora de salida: no confirmado oficialmente"
     },
     {
       "prueba": "Buscador: ninguna petición de red al buscar",

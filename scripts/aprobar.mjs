@@ -10,6 +10,7 @@
 //                             archivo = canales | puntos | actualizaciones | afirmaciones | trenes | ultimahora
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
+import { cargarDominios, esUrlOficial, origenOficial } from './lib/oficial.mjs';
 
 const RAIZ = process.env.EC_RAIZ ? pathToFileURL(process.env.EC_RAIZ.replace(/\/?$/, '/')) : new URL('../', import.meta.url);
 const ruta = (p) => new URL(p, RAIZ);
@@ -22,7 +23,23 @@ const ahora = opt('--ahora') || new Date().toISOString();
 const fallar = (m) => { console.error(`ERROR: ${m}`); process.exit(1); };
 const por = (opt('--por') || '').split(',').map((s) => s.trim()).filter(Boolean);
 
+const DOMINIOS = cargarDominios(RAIZ);
 const cola = existsSync(ruta('cola/propuestas.json')) ? leer('cola/propuestas.json') : { propuestas: [] };
+
+// Reanudar el ciclo automático tras una suspensión (dos personas).
+if (flag('--reanudar') || flag('--suspender')) {
+  if (por.length < 2 || new Set(por).size < 2) fallar('Requiere las iniciales de dos personas distintas (--por AB,CD).');
+  const site = leer('src/config/site.json');
+  site.automatizacion = flag('--suspender')
+    ? { ...(site.automatizacion ?? {}), suspendida: true, motivo: opt('--suspender') || 'suspensión manual', desde: ahora }
+    : { ...(site.automatizacion ?? {}), suspendida: false, motivo: '', desde: '', reanudadaPor: por, reanudadaEn: ahora };
+  escribir('src/config/site.json', site);
+  const est = leer('src/data/estado-sistema.json');
+  if (flag('--reanudar')) { delete est.suspendido; est.ciclosFallidosSeguidos = 0; } else est.suspendido = { motivo: site.automatizacion.motivo, desde: ahora };
+  escribir('src/data/estado-sistema.json', est);
+  console.log(flag('--reanudar') ? `Ciclo reanudado por ${por.join(' y ')}.` : `Ciclo suspendido: ${site.automatizacion.motivo}.`);
+  process.exit(0);
+}
 
 if (flag('--lista')) {
   const p = cola.propuestas.filter((x) => x.estado === 'pendiente');
@@ -38,6 +55,9 @@ if (flag('--verificar')) {
   if (archivo === 'ultimahora') {
     const d = leer('src/data/ultimahora.json');
     if (!d[id]) fallar(`No existe el bloque ${id}`);
+    const items = [d[id], ...(d[id].lista ?? [])].filter((x) => x.fuente);
+    const malos = items.filter((x) => !origenOficial(x, DOMINIOS) || x.nivelFuente === 2);
+    if (malos.length) fallar(`El bloque ${id} tiene ${malos.length} elemento(s) sin comunicado oficial directo. Sustitúyelos o elimínalos antes de verificar.`);
     d[id].verificadoPor = por; d[id].comprobadoEn = ahora;
     escribir('src/data/ultimahora.json', d);
   } else {
@@ -46,9 +66,13 @@ if (flag('--verificar')) {
     const d = leer(p);
     const x = d[clave].find((e) => e.id === id);
     if (!x) fallar(`No existe ${id} en ${archivo}`);
+    // V3 §1: no se puede verificar (y por tanto publicar) un dato sin enlace directo a un dominio oficial.
+    if (!origenOficial(x, DOMINIOS)) fallar(`${archivo}:${id} no tiene ningún enlace a un dominio oficial. Localiza el comunicado original y añádelo a sus fuentes antes de verificarlo.`);
+    if (x.nivelFuente === 2) fallar(`${archivo}:${id} es de nivel 2 (un medio que cita). Sustituye la fuente por el comunicado oficial y pon nivelFuente 1.`);
     x.verificadoPor = por;
     if ('comprobadoEn' in x) x.comprobadoEn = ahora;
     if ('fechaVerificacion' in x) x.fechaVerificacion = ahora;
+    if (archivo === 'actualizaciones' && !x.publicadoEn) x.publicadoEn = ahora;
     if (archivo === 'afirmaciones') x.estadoEditorial = 'aprobado';
     escribir(p, d);
   }
@@ -70,6 +94,8 @@ if (flag('--rechazar')) {
 }
 
 if (por.length < 2 || new Set(por).size < 2) fallar('Aprobar requiere las iniciales de dos personas distintas (--por AB,CD).');
+const enlaceProp = prop.enlace ?? prop.fuente?.url;
+if (!esUrlOficial(enlaceProp, DOMINIOS)) fallar(`La propuesta ${id} no enlaza a un dominio oficial (${enlaceProp}). Rechazada por la regla de solo fuentes oficiales.`);
 
 if (prop.tipo === 'noticia') {
   const titulo = opt('--titulo'), resumen = opt('--resumen');
@@ -80,7 +106,7 @@ if (prop.tipo === 'noticia') {
     organismo: prop.fuente.organismo, categoria: prop.fuente.categoria,
     tipoFuente: 'comunicado-oficial', fuente: { titulo: prop.fuente.nombre, url: prop.enlace },
     nivelFuente: 1, fechaComunicado: opt('--fecha-comunicado') || prop.creada, comprobadoEn: ahora,
-    revisarCadaMinutos: 120, estado: 'vigente', operativa: flag('--operativa'), alerta: flag('--alerta'), correccion: null, verificadoPor: por
+    revisarCadaMinutos: 120, estado: 'vigente', operativa: flag('--operativa'), alerta: flag('--alerta'), correccion: null, verificadoPor: por, publicadoEn: ahora, historial: []
   });
   escribir('src/data/actualizaciones.json', act);
 } else if (prop.tipo === 'cifra') {

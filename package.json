@@ -1,13 +1,13 @@
 {
   "name": "estamos-contigo",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "private": true,
   "description": "Plataforma solidaria independiente de información y apoyo — accidente ferroviario de Urda (Toledo), 28/10/2026. Sitio estático sin recogida de datos.",
   "type": "module",
   "scripts": {
     "dev": "node scripts/set-mode.mjs preview && astro dev",
     "check:content": "node scripts/check-content.mjs",
-    "build:preview": "node scripts/check-content.mjs && node scripts/set-mode.mjs preview && astro build && node scripts/postbuild.mjs && node scripts/check-dist.mjs",
+    "build:preview": "node scripts/check-content.mjs && node scripts/publish-gate.mjs --informe && node scripts/set-mode.mjs preview && astro build && node scripts/postbuild.mjs && node scripts/check-dist.mjs",
     "build:public": "node scripts/publish-gate.mjs && node scripts/check-content.mjs --public && node scripts/set-mode.mjs public && astro build && node scripts/postbuild.mjs && node scripts/check-dist.mjs --public",
     "serve": "astro preview --host 127.0.0.1",
     "test": "npm run build:preview"

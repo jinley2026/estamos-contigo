@@ -56,4 +56,10 @@ Procedimientos paso a paso: `docs/operacion/procedimientos.md`.
 - `docs/legal/` — ficha de tratamientos y proveedores, procedimientos (derechos, reclamaciones, incidentes, conservación), riesgos y asuntos pendientes de revisión profesional.
 - `docs/funciones-futuras.md` — ampliaciones que NO se implementan ahora.
 - `docs/difusion/` — mensajes para redes y medios (pendientes de dominio y teléfono verificado).
-- `docs/AUDITORIA.md` — estado del proyecto y resultados reales de las pruebas.
+- `docs/AUDITORIA-V3.md` — **informe vigente**: blindaje jurídico V3, titular provisional, contador de visitas, pruebas, costes y qué falta.
+- `docs/AUDITORIA.md` — auditoría de la v0.1–0.3 (histórica).
+
+## Regla de oro (V3)
+
+Solo fuentes oficiales, sin datos personales de afectados, sin publicaciones no verificadas y sin fingir vinculación institucional.
+`node scripts/publish-gate.mjs --informe` muestra los 17 controles y si el proyecto está «Apto para publicación».

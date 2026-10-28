@@ -1,0 +1,13 @@
+---
+// V3 §7: cuatro fechas distintas por información. Nunca se rellenan unas con otras.
+import { fechaHora, hecho } from '../lib/datos';
+interface Props { e: any }
+const { e } = Astro.props;
+const f = (iso?: string, vacio = 'No consta') => (iso ? fechaHora(iso).replace(' (hora peninsular)', '') : vacio);
+---
+<dl class="fechas">
+  <div><dt>Hecho</dt><dd>{f(e.fechaHecho ?? hecho.hora)}</dd></div>
+  <div><dt>Comunicado</dt><dd>{f(e.fechaComunicado)}</dd></div>
+  <div><dt>Comprobado por nosotros</dt><dd>{f(e.comprobadoEn)}</dd></div>
+  <div><dt>Publicado aquí</dt><dd>{f(e.publicadoEn, 'Aún no publicado')}</dd></div>
+</dl>

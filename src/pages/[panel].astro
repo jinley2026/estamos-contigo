@@ -39,15 +39,28 @@ const discrepanciasCifras = Object.keys(TIPOS).map((t) => cifra(t)).filter((c) =
 const discrepanciasTel = [...new Set(canales.filter((c: any) => c.discrepancia).map((c: any) => c.discrepancia))];
 const conHistorial = todas.filter((a) => a.versionAnterior);
 const correcciones = actualizaciones.filter((a) => a.correccion);
+const rutaPub = join(process.cwd(), 'cola', 'estado-publicacion.json');
+const pub = existsSync(rutaPub) ? JSON.parse(readFileSync(rutaPub, 'utf8')) : null;
 ---
 {ES_PREVIA && (
 <Layout titulo="Panel de administración" descripcion="Panel interno de la vista previa.">
   <h1>Panel de administración</h1>
   <p class="borrador-legal">Solo existe en la vista previa privada. Es de solo lectura: las acciones se hacen con los scripts y la revisión en GitHub (ver docs/operacion/procedimientos.md).</p>
 
+  <h2>Estado de publicación</h2>
+  {pub ? (
+    <>
+      <p class={`apto ${pub.apto ? 'si' : 'no'}`}>{pub.estado}: {pub.cumplidos} de {pub.total} controles cumplidos (calculado {fechaHora(pub.generado)})</p>
+      <ul class="lista-control">{pub.controles.map((c: any) => <li class={c.cumplido ? 'ok' : 'no'}><strong>{c.id} {c.nombre}</strong>{!c.cumplido && <>: {c.motivos.join('; ')}</>}</li>)}</ul>
+    </>
+  ) : <p class="apto no">NO apto para publicación: no se ha ejecutado la comprobación (node scripts/publish-gate.mjs --informe).</p>}
+
   <h2>Estado general</h2>
   <ul class="resumen-lista">
     <li>Modo operativo: <strong>{SITE.estadoOperativo.modo}</strong></li>
+    <li>Ciclo automático: <strong>{(SITE as any).automatizacion?.suspendida ? `SUSPENDIDO (${(SITE as any).automatizacion.motivo})` : 'activo'}</strong></li>
+    <li>Contador de visitas: <strong>{(SITE as any).visitas?.activo ? 'activo' : 'desactivado («Datos no disponibles»)'}</strong></li>
+    <li>Régimen LSSI: <strong>{(SITE as any).regimenLegal?.lssiAplicable}</strong> · Identidad del promotor verificada: <strong>{(SITE.responsable as any).identidadVerificada ? 'sí' : 'no'}</strong></li>
     <li>Última consulta automática: {es.ultimaConsulta ? fechaHora(es.ultimaConsulta) : 'nunca'} ({es.ultimoCicloOk ? 'con respuesta' : 'sin respuesta'})</li>
     <li>Última información aprobada: {fechaHora(SITE.estadoOperativo.ultimaRevisionEditorial)}</li>
     <li>Propuestas pendientes: <strong>{pendientes.length}</strong> · Rechazadas: {rechazadas.length}</li>
@@ -104,7 +117,7 @@ const correcciones = actualizaciones.filter((a) => a.correccion);
       <tr><td>Cerrar el servicio</td><td><code>estadoOperativo.modo = "cerrado"</code>, <code>fechaCierre</code>, <code>mensajeCierre</code></td></tr>
       <tr><td>Desactivar un módulo</td><td><code>site.json → modulos</code></td></tr>
       <tr><td>Activar o desactivar publicación automática A</td><td><code>src/config/fuentes.json → publicacionAutomatica.activa</code></td></tr>
-      <tr><td>Parar el ciclo automático</td><td>GitHub → Actions → «Ciclo de informacion» → Disable workflow</td></tr>
+      <tr><td>Suspender / reanudar el ciclo automático</td><td><code>node scripts/aprobar.mjs --suspender "motivo" --por AB,CD</code> / <code>--reanudar --por AB,CD</code></td></tr>
       <tr><td>Aprobar o rechazar propuestas</td><td><code>node scripts/aprobar.mjs --lista</code></td></tr>
     </tbody>
   </table>

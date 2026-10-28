@@ -26,11 +26,16 @@ jobs:
           node-version: 22
       - name: Consultar fuentes
         run: node scripts/ciclo.mjs
-      - name: Publicar el estado del sistema (hora de consulta y fuentes)
+      - name: Estadística agregada de visitas (no hace nada mientras esté desactivada)
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ZONE_TAG: ${{ secrets.CF_ZONE_TAG }}
+        run: node scripts/visitas.mjs
+      - name: Publicar el estado del sistema (hora de consulta, fuentes, suspensión y visitas)
         run: |
           git config user.name "ciclo-estamos-contigo"
           git config user.email "ciclo@users.noreply.github.com"
-          git add src/data/estado-sistema.json
+          git add src/data/estado-sistema.json src/data/visitas.json src/config/site.json
           git diff --cached --quiet || (git commit -m "Estado del ciclo $(date -u +%H:%M) UTC" && git push)
       - name: Enviar propuestas a revisión
         uses: peter-evans/create-pull-request@v7

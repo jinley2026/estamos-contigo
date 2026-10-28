@@ -1,5 +1,6 @@
 ---
-import { actualizaciones, horaCorta, tipoFuenteTexto, CATEGORIAS, verificado } from '../lib/datos';
+import { actualizaciones, horaCorta, tipoFuenteTexto, CATEGORIAS } from '../lib/datos';
+import Sello from './Sello.astro';
 interface Props { limite?: number }
 const { limite = 4 } = Astro.props;
 const lista = actualizaciones.filter((e) => e.estado !== 'retirado').slice(0, limite);
@@ -15,7 +16,7 @@ const lista = actualizaciones.filter((e) => e.estado !== 'retirado').slice(0, li
           <p class="hito-meta">
             <span class="org">{CATEGORIAS[e.categoria] ?? e.organismo}</span>
             <a href={e.fuente.url} rel="noopener noreferrer">{tipoFuenteTexto(e.tipoFuente)}</a>
-            {!verificado(e) && <span class="sello-pendiente">pendiente de verificar</span>}
+            <Sello e={e} />
           </p>
         </div>
       </li>

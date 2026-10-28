@@ -1,0 +1,23 @@
+---
+import Layout from '../components/Layout.astro';
+import Borrador from '../components/Borrador.astro';
+import AvisoIndependencia from '../components/AvisoIndependencia.astro';
+import { SITE } from '../lib/datos';
+const r: any = SITE.responsable;
+---
+<Layout titulo="Quiénes somos">
+  <Borrador clave="quienesSomos" />
+  <h1>Quiénes somos</h1>
+  <p>
+    {SITE.nombre} es una iniciativa ciudadana promovida por una persona física, {r.nombreORazonSocial}{!r.identidadVerificada && ' (identidad pendiente de verificación)'},
+    de {r.localidad}. Es gratuita, independiente y sin finalidad comercial: no tiene publicidad, patrocinios, donaciones ni enlaces a servicios
+    comerciales, y no pertenece a ninguna empresa.
+  </p>
+  <p>
+    No tenemos relación, acuerdo, autorización ni colaboración con Renfe, Iryo, Adif, el Gobierno, la Junta de Castilla-La Mancha, el 112, el SESCAM
+    ni ningún otro organismo. Si algún día existiera un acuerdo, figurará aquí con su alcance y fecha. Si no figura aquí, no existe.
+  </p>
+  <p>No usamos logotipos ni diseños oficiales. La etiqueta «Fuente oficial comprobada» indica que nosotros hemos comprobado el comunicado en la web del organismo; no es un sello ni una certificación de la administración.</p>
+  <AvisoIndependencia />
+  <p>Contacto: <a href={`mailto:${r.correoContacto}`}>{r.correoContacto}</a>. Responsable de mantenimiento: {r.responsableMantenimiento}.</p>
+</Layout>

@@ -1,4 +1,4 @@
-// PRUEBAS OBLIGATORIAS V2 (sección 15 del prompt). Ejecutar: node --test tests/ciclo.test.mjs
+// PRUEBAS OBLIGATORIAS V2 (sección 15 del prompt) + V3 (solo fuentes oficiales, suspensión) + contador de visitas. Ejecutar: node --test tests/ciclo.test.mjs
 // TODOS LOS DATOS DE ESTAS PRUEBAS SON FICTICIOS y se usan sobre una COPIA temporal del proyecto.
 // Nada de lo que se genera aquí llega al proyecto real ni se publica.
 import { test, before } from 'node:test';
@@ -28,13 +28,16 @@ before(() => {
   escribir('src/data/afirmaciones.json', af);
   const fu = leer('src/config/fuentes.json');
   fu.fuentes = fu.fuentes.filter((f) => ['adif', 'jccm', 'renfe'].includes(f.id));
+  // SOLO EN ESTA COPIA DE PRUEBA: el dominio reservado «ejemplo.invalid» hace de web oficial ficticia.
+  fu.dominiosOficiales.lista.push('ejemplo.invalid');
   escribir('src/config/fuentes.json', fu);
   FIX = join(T, 'fixtures');
   mkdirSync(FIX);
   writeFileSync(join(FIX, 'adif.html'), pagina([
     ['Simulacro FICTICIO: Adif informa sobre el accidente de Urda y la línea', 'https://ejemplo.invalid/adif-1'],
     ['Simulacro FICTICIO: Adif informa sobre el accidente de Urda y la línea', 'https://ejemplo.invalid/adif-1'],
-    ['Identificada la víctima Juan Pérez Gómez en el accidente de Urda (FICTICIO)', 'https://ejemplo.invalid/adif-2']
+    ['Identificada la víctima Juan Pérez Gómez en el accidente de Urda (FICTICIO)', 'https://ejemplo.invalid/adif-2'],
+    ['Simulacro FICTICIO: vídeo del accidente de Urda en una red social', 'https://red-social-ficticia.test/urda']
   ], 'Texto FICTICIO de prueba sobre Urda: al menos 11 fallecidos.'));
   writeFileSync(join(FIX, 'jccm.html'), pagina([
     ['Simulacro FICTICIO: Adif informa sobre el accidente de Urda y la línea férrea', 'https://ejemplo.invalid/jccm-1'],
@@ -112,7 +115,7 @@ test('9 y 10. Actualización de la web y horas en zona peninsular', () => {
   execFileSync('npx', ['astro', 'build'], { cwd: T, env: { ...process.env, ASTRO_TELEMETRY_DISABLED: '1' }, stdio: 'pipe' });
   const html = readFileSync(join(T, 'dist/actualizaciones.html'), 'utf8');
   assert.ok(html.includes('PRUEBA FICTICIA: punto de atención aprobado'), 'la noticia aprobada aparece en la web');
-  assert.ok(html.includes('28/10/2026, 12:00 (hora peninsular)'), '11:00 UTC se muestra como 12:00 peninsular');
+  assert.ok(html.includes('28/10/2026, 12:00'), '11:00 UTC se muestra como 12:00 peninsular');
   const idx = readFileSync(join(T, 'dist/index.html'), 'utf8');
   assert.ok(idx.includes('Al menos 10'), 'la cifra aprobada vigente se muestra');
 });
@@ -174,6 +177,123 @@ test('16. Seguridad del repositorio y de las credenciales', () => {
   assert.ok(!existsSync(join(REAL, '.env')), 'no hay archivo .env');
   const wf = readFileSync(join(REAL, '.github/workflows/ciclo.yml'), 'utf8');
   assert.match(wf, /permissions:\s*\n\s*contents: write\s*\n\s*pull-requests: write\s*\n/, 'permisos mínimos y explícitos');
-  assert.ok(!/secrets\./.test(wf), 'el ciclo no necesita secretos propios');
+  const secretos = [...wf.matchAll(/secrets\.([A-Z_]+)/g)].map((m) => m[1]);
+  assert.deepEqual([...new Set(secretos)].sort(), ['CF_API_TOKEN', 'CF_ZONE_TAG'], 'solo los secretos opcionales del contador, guardados en GitHub');
+  assert.ok(!/echo .*CF_API_TOKEN/.test(wf), 'el token nunca se imprime');
   assert.match(readFileSync(join(REAL, '.gitignore'), 'utf8'), /node_modules/);
+});
+
+// ---------------- V3.0: solo fuentes oficiales y suspensión ----------------
+const construir = (modo) => {
+  writeFileSync(join(T, 'src/config/build-mode.json'), JSON.stringify({ mode: modo }));
+  execFileSync('npx', ['astro', 'build'], { cwd: T, env: { ...process.env, ASTRO_TELEMETRY_DISABLED: '1' }, stdio: 'pipe' });
+};
+
+test('V3-1. El ciclo rechaza automáticamente un enlace fuera de los dominios oficiales', () => {
+  const p = leer('cola/propuestas.json').propuestas.find((x) => x.enlace === 'https://red-social-ficticia.test/urda');
+  assert.ok(p, 'la propuesta queda registrada');
+  assert.equal(p.estado, 'rechazada');
+  assert.match(p.motivoRechazo, /dominios oficiales/);
+});
+
+test('V3-2. No se puede aprobar una propuesta cuyo enlace no es oficial', () => {
+  const cola = leer('cola/propuestas.json');
+  cola.propuestas.unshift({ id: 'ficticia-prensa', creada: '2026-10-28T11:00:00Z', fuente: { id: 'adif', nombre: 'FICTICIA', organismo: 'Adif', categoria: 'adif', url: 'https://periodico-ficticio.test/' }, tipo: 'noticia', categoria: 'B', estado: 'pendiente', titulo: 'FICTICIA: un periódico dice que Adif…', enlace: 'https://periodico-ficticio.test/nota' });
+  escribir('cola/propuestas.json', cola);
+  const r = aprobar(['ficticia-prensa', '--por', 'AA,BB', '--titulo', 'X', '--resumen', 'Y']);
+  assert.notEqual(r.status, 0);
+  assert.match(r.stderr, /dominio oficial/);
+});
+
+test('V3-3. No se puede verificar un dato de nivel 2 (un medio que cita a la autoridad)', () => {
+  const act = leer('src/data/actualizaciones.json');
+  act.entradas.push({ id: 'ficticia-medio', titulo: 'FICTICIA', resumen: 'FICTICIA', organismo: 'Junta', categoria: 'junta', tipoFuente: 'medio-citando', fuente: { titulo: 'Periódico FICTICIO', url: 'https://periodico-ficticio.test/x' }, nivelFuente: 2, fechaComunicado: '2026-10-28T10:00:00+01:00', comprobadoEn: '2026-10-28T10:00:00+01:00', revisarCadaMinutos: 60, estado: 'vigente', correccion: null, verificadoPor: [] });
+  escribir('src/data/actualizaciones.json', act);
+  const r = aprobar(['--verificar', 'actualizaciones:ficticia-medio', '--por', 'AA,BB']);
+  assert.notEqual(r.status, 0);
+  // Si alguien lo marca a mano como verificado, la comprobación de contenidos lo rechaza
+  const act2 = leer('src/data/actualizaciones.json');
+  act2.entradas.find((e) => e.id === 'ficticia-medio').verificadoPor = ['AA', 'BB'];
+  escribir('src/data/actualizaciones.json', act2);
+  const cc = spawnSync('node', [join(T, 'scripts/check-content.mjs')], { encoding: 'utf8' });
+  assert.notEqual(cc.status, 0);
+  assert.match(cc.stdout, /ficticia-medio: verificado pero sin enlace a un dominio oficial/);
+  act2.entradas = act2.entradas.filter((e) => e.id !== 'ficticia-medio');
+  escribir('src/data/actualizaciones.json', act2);
+});
+
+test('V3-4. Lo «No confirmado oficialmente» no aparece en la versión pública; en la vista previa sí, marcado', () => {
+  construir('preview');
+  assert.ok(readFileSync(join(T, 'dist/index.html'), 'utf8').includes('No confirmado oficialmente'));
+  construir('public');
+  const idx = readFileSync(join(T, 'dist/index.html'), 'utf8');
+  assert.ok(!/sello-pendiente">No confirmado/.test(idx), 'ningún dato no oficial con sello en público');
+  assert.ok(!idx.includes('clm24.es') && !idx.includes('infobae.com') && !idx.includes('cmmedia.es'), 'sin enlaces de prensa como fuente');
+  const fd = readFileSync(join(T, 'dist/actualizaciones.html'), 'utf8');
+  assert.ok(fd.includes('Publicado aquí'), 'cada información muestra las cuatro fechas');
+});
+
+test('V3-5. Suspensión automática tras 3 consultas seguidas sin respuesta y reanudación por dos personas', () => {
+  const vacia = join(T, 'sin-respuesta');
+  ciclo(['--fixtures', vacia, '--ahora', '2026-10-28T12:00:00.000Z']);
+  ciclo(['--fixtures', vacia, '--ahora', '2026-10-28T12:30:00.000Z']);
+  const site = leer('src/config/site.json');
+  assert.equal(site.automatizacion.suspendida, true);
+  const salida = ciclo(['--fixtures', FIX, '--ahora', '2026-10-28T13:00:00.000Z']);
+  assert.match(salida, /SUSPENDIDO/);
+  assert.equal(leer('src/data/estado-sistema.json').ultimaConsulta, '2026-10-28T12:30:00.000Z', 'suspendido: no consulta');
+  construir('preview');
+  assert.ok(readFileSync(join(T, 'dist/index.html'), 'utf8').includes('La consulta automática está suspendida'));
+  assert.notEqual(aprobar(['--reanudar', '--por', 'AA']).status, 0, 'una persona no basta');
+  assert.equal(aprobar(['--reanudar', '--por', 'AA,BB']).status, 0);
+  assert.equal(leer('src/config/site.json').automatizacion.suspendida, false);
+});
+
+test('V3-6. La puerta de publicación no declara «Apto» con controles pendientes', () => {
+  mkdirSync(join(T, 'cola'), { recursive: true });
+  for (const d of ['docs']) cpSync(join(REAL, d), join(T, d), { recursive: true });
+  cpSync(join(REAL, 'tests'), join(T, 'tests'), { recursive: true });
+  const r = spawnSync('node', [join(T, 'scripts/publish-gate.mjs')], { encoding: 'utf8' });
+  assert.notEqual(r.status, 0);
+  const inf = leer('cola/estado-publicacion.json');
+  assert.equal(inf.apto, false);
+  assert.equal(inf.estado, 'NO apto para publicación');
+  assert.ok(inf.controles.filter((c) => c.id.startsWith('C')).length === 17, 'los 17 controles de la V3');
+});
+
+// ---------------- Contador de visitas (DATOS DE PRUEBA, claramente marcados) ----------------
+const visitas = (args) => spawnSync('node', [join(T, 'scripts/visitas.mjs'), ...args], { env: { ...process.env, EC_RAIZ: T, CF_API_TOKEN: '', CF_ZONE_TAG: '' }, encoding: 'utf8' });
+
+test('VIS-1. Sin configuración verificada muestra «Datos no disponibles» y no consulta nada', () => {
+  const r = visitas([]);
+  assert.match(r.stdout, /desactivado/);
+  construir('preview');
+  const idx = readFileSync(join(T, 'dist/index.html'), 'utf8');
+  assert.match(idx, /Visitas: Datos no disponibles/);
+  assert.match(idx, /Una visita no equivale a una persona ayudada/);
+});
+
+test('VIS-2. Con DATOS DE PRUEBA se ven marcados en la vista previa, no se suman al recargar y nunca salen en público', () => {
+  const f = join(T, 'visitas-prueba.json');
+  writeFileSync(f, JSON.stringify({ desde: '2026-10-28T09:00:00+01:00', hasta: '2026-10-28', visitas: 12345, visitantesUnicos: null, actualizadoEn: '2026-10-28T12:00:00+01:00' }));
+  assert.equal(visitas(['--prueba', f]).status, 0);
+  const site = leer('src/config/site.json');
+  site.visitas.activo = true;
+  escribir('src/config/site.json', site);
+  construir('preview');
+  const a = readFileSync(join(T, 'dist/index.html'), 'utf8').match(/<p class="pie-visitas"[\s\S]*?<\/p>/)[0];
+  assert.match(a, /DATOS DE PRUEBA/);
+  assert.match(a, /12\.345/);
+  assert.match(a, /no disponible para el periodo completo/, 'no se inventan visitantes únicos');
+  // «Recargar» = volver a servir la misma página: el número es fijo, no lo incrementa el navegador
+  construir('preview');
+  const b = readFileSync(join(T, 'dist/index.html'), 'utf8').match(/<p class="pie-visitas"[\s\S]*?<\/p>/)[0];
+  assert.equal(a, b);
+  assert.ok(!/localStorage|document\.cookie|<script/.test(readFileSync(join(T, 'src/components/ContadorVisitas.astro'), 'utf8')), 'sin cookies ni almacenamiento');
+  construir('public');
+  const pub = readFileSync(join(T, 'dist/index.html'), 'utf8');
+  assert.ok(!pub.includes('DATOS DE PRUEBA') && !pub.includes('12.345'), 'los datos de prueba no se publican');
+  assert.match(pub, /Visitas: Datos no disponibles/);
+  const cc = spawnSync('node', [join(T, 'scripts/check-content.mjs'), '--public'], { encoding: 'utf8' });
+  assert.match(cc.stdout, /DATOS DE PRUEBA/, 'check-content --public lo bloquea');
 });

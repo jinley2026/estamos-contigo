@@ -1,0 +1,55 @@
+---
+import Layout from '../components/Layout.astro';
+import Borrador from '../components/Borrador.astro';
+import { SITE, fuentesConfig } from '../lib/datos';
+const dominios = fuentesConfig.dominiosOficiales.lista;
+---
+<Layout titulo="Fuentes y verificación">
+  <Borrador clave="fuentesVerificacion" />
+  <h1>Fuentes y verificación</h1>
+
+  <h2>Solo fuentes oficiales</h2>
+  <p>Publicamos únicamente información que procede directamente de organismos u operadores con competencia: Gobierno de España, Ministerio de Transportes, Junta de Castilla-La Mancha y sus servicios de emergencias y sanitarios, Renfe, Iryo, Adif, ayuntamientos, delegaciones del Gobierno y fuerzas de seguridad, mediante sus comunicados públicos.</p>
+  <p>La prensa, los buscadores y las redes sociales solo nos sirven para enterarnos de que puede haber algo nuevo. <strong>Lo que dice un periódico, aunque lo atribuya a una autoridad, no se publica hasta localizar el comunicado original en la web del organismo.</strong> Mientras tanto aparece como «No confirmado oficialmente» o no aparece.</p>
+  <p>La web rechaza automáticamente, al compilarse, cualquier dato sin enlace directo a una de estas webs oficiales: {dominios.join(', ')} (y sus subdominios).</p>
+
+  <h2>Qué lleva cada información</h2>
+  <ol>
+    <li>Organismo emisor.</li>
+    <li>Enlace directo al comunicado.</li>
+    <li>Fecha y hora del comunicado, si constan.</li>
+    <li>Fecha y hora de nuestra comprobación.</li>
+    <li>Fecha y hora de publicación en esta web.</li>
+    <li>Resumen propio y fiel. En caso de diferencia, vale el comunicado.</li>
+    <li>Estado: vigente, corregido o retirado, con su historial de rectificaciones.</li>
+  </ol>
+
+  <h2>Comprobación cada 30 minutos</h2>
+  <p>Un proceso automático consulta las webs oficiales que lo permiten cada 30 minutos, detecta comunicados y cifras nuevas, los compara con lo publicado, señala contradicciones y prepara una propuesta. <strong>No publica nada por sí mismo:</strong> dos personas revisan cada propuesta antes de publicarla. Las cifras de víctimas y la información sanitaria nunca se publican de forma automática.</p>
+  <p>Que el proceso se haya ejecutado no significa que haya novedades: la portada distingue la hora de la última consulta automática de la hora de la última información aprobada.</p>
+  <p>Si el proceso falla de forma repetida o detecta un error relevante, se suspende solo y la web lo indica.</p>
+
+  <h2>Cómo verificamos</h2>
+  <ol>
+    <li>Abrimos el comunicado en la web del organismo y comprobamos fecha y contenido.</li>
+    <li>Los teléfonos se comprueban en la web oficial, <strong>sin llamar</strong>, para no saturar líneas de emergencia.</li>
+    <li>Una segunda persona revisa antes de publicar.</li>
+    <li>Cada dato tiene un plazo de revisión. Si vence, se marca como pendiente y los teléfonos dejan de mostrar el botón de llamada.</li>
+  </ol>
+
+  <h2>Contradicciones</h2>
+  <p>Si dos organismos dan cifras distintas, mostramos las dos con su hora y su fuente. No calculamos cifras intermedias, no sumamos datos de distintos momentos o definiciones y no hacemos estimaciones propias.</p>
+
+  <h2>Qué no publicamos nunca</h2>
+  <ul>
+    <li>Nombres, documentos, teléfonos, direcciones, fotografías ni datos de salud de pasajeros, víctimas o familiares.</li>
+    <li>Listados de personas desaparecidas, hospitalizadas o fallecidas, ni el hospital de una persona concreta.</li>
+    <li>Testimonios privados ni información sobre menores.</li>
+    <li>Causas o responsabilidades antes de que las determinen las autoridades.</li>
+    <li>Titulares sensacionalistas ni declaraciones que no podamos atribuir a su autor con su comunicado.</li>
+  </ul>
+
+  <h2>Modo seguro</h2>
+  <p>Si nadie revisa la web en {SITE.estadoOperativo.horasMaximasSinRevision} horas, la web lo indica y deja de presentarse como información al día.</p>
+  <p>Errores: <a href="rectificaciones.html">rectificaciones</a>.</p>
+</Layout>

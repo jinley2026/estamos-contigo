@@ -1,12 +1,14 @@
 ---
 import Layout from '../components/Layout.astro';
-import { actualizaciones, CATEGORIAS, fechaHora, tipoFuenteTexto, verificado, nivelTexto } from '../lib/datos';
+import { actualizaciones, CATEGORIAS, tipoFuenteTexto } from '../lib/datos';
+import Fechas from '../components/Fechas.astro';
+import Sello from '../components/Sello.astro';
 const presentes = [...new Set(actualizaciones.map((e) => e.categoria))];
 const orden = Object.keys(CATEGORIAS).filter((c) => presentes.includes(c));
 ---
 <Layout titulo="Comunicados oficiales" descripcion="Comunicados de los organismos sobre el accidente, con filtro por organismo y enlace a la fuente.">
   <h1>Comunicados oficiales</h1>
-  <p class="subtitulo">Distinguimos lo que publica el propio organismo («Comunicado oficial») de lo que un medio recoge citándolo («Noticia que cita al organismo»).</p>
+  <p class="subtitulo">Solo comunicados que hemos comprobado en la web del propio organismo, con enlace directo. Lo que solo publica la prensa no se muestra.</p>
 
   <div class="acciones chips filtros" role="group" aria-label="Filtrar por organismo">
     <button type="button" data-filtro="todos" aria-pressed="true">Todos</button>
@@ -16,12 +18,13 @@ const orden = Object.keys(CATEGORIAS).filter((c) => presentes.includes(c));
   <ol class="lista-comunicados">
     {actualizaciones.map((e) => (
       <li class={`comunicado ${e.estado}`} data-categoria={e.categoria} data-comprobado={e.comprobadoEn} data-revisar={e.revisarCadaMinutos}>
-        <p class="com-org">{CATEGORIAS[e.categoria] ?? e.organismo} <span class={`com-tipo ${e.tipoFuente}`}>{tipoFuenteTexto(e.tipoFuente)}</span>{!verificado(e) && <span class="sello-pendiente">pendiente de verificar</span>}</p>
+        <p class="com-org">{CATEGORIAS[e.categoria] ?? e.organismo} <span class={`com-tipo ${e.tipoFuente}`}>{tipoFuenteTexto(e.tipoFuente)}</span><Sello e={e} /></p>
         <h2>{e.titulo}</h2>
         <p>{e.resumen}</p>
         {e.correccion && <p class="caja caja-pendiente"><strong>Corrección:</strong> {e.correccion}</p>}
         <p class="aviso-caducado" role="status"></p>
-        <p class="meta">{fechaHora(e.fechaComunicado)} · {nivelTexto(e.nivelFuente)} · <a href={e.fuente.url} rel="noopener noreferrer">{e.fuente.titulo}</a></p>
+        <Fechas e={e} />
+        <p class="meta">Fuente: <a href={e.fuente.url} rel="noopener noreferrer">{e.fuente.titulo}</a></p>
       </li>
     ))}
   </ol>

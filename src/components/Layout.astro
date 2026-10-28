@@ -4,6 +4,7 @@
 import { SITE, ES_PREVIA, MODO, fechaHora } from '../lib/datos';
 import Estilos from './Estilos.astro';
 import Scripts from './Scripts.astro';
+import ContadorVisitas from './ContadorVisitas.astro';
 
 interface Props {
   titulo: string;
@@ -47,7 +48,7 @@ const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suces
     )}
     <div class="banda-aviso" role="note">
       <p>
-        <span>Iniciativa solidaria independiente. No somos un servicio oficial de emergencias.</span>
+        <span>Iniciativa privada e independiente. No somos un organismo oficial ni un servicio de emergencias.</span>
         <a class="enlace-112" href="tel:112">Emergencias 112</a>
       </p>
     </div>
@@ -91,16 +92,19 @@ const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suces
             <li><a href="aviso-legal.html">Aviso legal</a></li>
             <li><a href="privacidad.html">Privacidad</a></li>
             <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="condiciones.html">Condiciones de uso</a></li>
-            <li><a href="politica-editorial.html">Política editorial</a></li>
-            <li><a href="independencia.html">Independencia</a></li>
-            <li><a href="contacto.html">Contacto y reclamaciones</a></li>
+            <li><a href="condiciones-de-uso.html">Condiciones de uso</a></li>
+            <li><a href="fuentes-y-verificacion.html">Fuentes y verificación</a></li>
+            <li><a href="rectificaciones.html">Rectificaciones</a></li>
+            <li><a href="quienes-somos.html">Quiénes somos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
         <p class="pie-nota">
-          {SITE.nombre} es una iniciativa ciudadana sin ánimo de lucro, sin relación con Renfe, Iryo, Adif ni con
-          ningún organismo público. No pedimos dinero ni datos personales.
+          {SITE.nombre} es una iniciativa privada, independiente y gratuita, sin relación con Renfe, Iryo, Adif ni con
+          ningún organismo público. No pedimos datos personales de afectados ni donaciones.
+          Promotor: {SITE.responsable.nombreORazonSocial || '[PENDIENTE]'}{(SITE.responsable as any).identidadVerificada ? '' : ' (identidad pendiente de verificación)'}.
         </p>
+        <ContadorVisitas />
         {!ligera && (
           <div class="ajustes" aria-label="Ajustes de lectura">
             <button type="button" data-accion="texto-grande">Texto más grande</button>

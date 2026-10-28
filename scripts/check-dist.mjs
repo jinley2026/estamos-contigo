@@ -12,11 +12,17 @@ const resultados = [];
 const prueba = (nombre, ok, detalle = '') => resultados.push({ nombre, ok, detalle });
 
 let formularios = [], scriptsExternos = [], enlacesRotos = [], telDesconocidos = [], sinTitulo = [], sinLang = [],
-  imgSinAlt = [], estilosExternos = [], pesados = [], marcasPrevia = [], pendientes = [], sinCSP = [], camposTexto = [];
+  imgSinAlt = [], estilosExternos = [], pesados = [], marcasPrevia = [], pendientes = [], sinCSP = [], camposTexto = [],
+  sinContador = [], comercial = [], datosReservados = [], datosPrueba = [], noConfirmado = [], sinIndependencia = [];
 
 for (const f of paginas) {
   const html = readFileSync(new URL(f, dist), 'utf8');
   if (/<form\b/i.test(html)) formularios.push(f);
+  if (!/data-contador-visitas/.test(html) && !['ligera.html', 'cartel.html'].includes(f)) sinContador.push(f);
+  if (/xorvium|bizum|paypal|patreon|ko-fi|patrocinad[oa] por|haz (un|tu) donativo|dona aqu[ií]|colabora con \d|adsbygoogle|googletag/i.test(html) || /\bIBAN\b|\bES\d{22}\b/.test(html)) comercial.push(f);
+  if (/\b\d{8}[A-HJ-NP-TV-Z]\b|\bNIF: [0-9]/.test(html)) datosReservados.push(f);
+  if (/DATOS DE PRUEBA/.test(html)) datosPrueba.push(f);
+  if (/No confirmado oficialmente:? (no se publicará|ficha no publicable)|sello-pendiente">No confirmado/.test(html)) noConfirmado.push(f);
   for (const m of html.matchAll(/<input\b[^>]*>/gi)) if (!/type="checkbox"/.test(m[0]) && !/data-busqueda-local/.test(m[0])) camposTexto.push(f);
   if (/<script[^>]*\bsrc=/i.test(html)) scriptsExternos.push(f);
   if (/<link[^>]*rel="stylesheet"[^>]*href="https?:/i.test(html)) estilosExternos.push(f);
@@ -47,11 +53,17 @@ prueba('Todas las páginas llevan CSP', sinCSP.length === 0, sinCSP.join(', '));
 prueba('Imágenes con texto alternativo', imgSinAlt.length === 0, imgSinAlt.join(', '));
 prueba('Cada página transfiere menos de 30 KB comprimida (gzip)', pesados.length === 0, pesados.join(', '));
 prueba('Existe _headers con cabeceras de seguridad', existsSync(new URL('_headers', dist)));
+prueba('Contador de visitas en el pie de todas las páginas', sinContador.length === 0, sinContador.join(', '));
+prueba('Sin XORVIUM, publicidad, patrocinios ni donaciones económicas', comercial.length === 0, comercial.join(', '));
+prueba('Sin NIF ni DNI en el HTML', datosReservados.length === 0, datosReservados.join(', '));
+prueba('Portada con el aviso de independencia (texto V3 §6)', readFileSync(new URL('index.html', dist), 'utf8').includes('Estamos Contigo es una iniciativa privada, independiente y gratuita cuya finalidad consiste exclusivamente'));
 const robots = existsSync(new URL('robots.txt', dist)) ? readFileSync(new URL('robots.txt', dist), 'utf8') : '';
 if (PUBLICO) {
   prueba('Publicación: el panel de administración no existe', !existsSync(new URL('admin.html', dist)));
   prueba('Publicación: sin marcas de vista previa', marcasPrevia.length === 0, marcasPrevia.join(', '));
   prueba('Publicación: sin datos pendientes ni marcadores [PENDIENTE]', pendientes.length === 0, pendientes.join(', '));
+  prueba('Publicación: ningún dato «No confirmado oficialmente» publicado', noConfirmado.length === 0, noConfirmado.join(', '));
+  prueba('Publicación: sin datos de prueba del contador', datosPrueba.length === 0, datosPrueba.join(', '));
 } else {
   prueba('Vista previa: robots.txt bloquea indexación', /Disallow: \//.test(robots));
   prueba('Vista previa: banda «VISTA PREVIA PRIVADA» presente', marcasPrevia.length >= paginas.length - 1);

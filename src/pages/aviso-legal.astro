@@ -2,54 +2,68 @@
 import Layout from '../components/Layout.astro';
 import Borrador from '../components/Borrador.astro';
 import { SITE } from '../lib/datos';
-import { dato } from '../lib/legal';
+import { dato, datoReservado, LSSI } from '../lib/legal';
+const r: any = SITE.responsable;
+const nif = datoReservado('nif'), dom = datoReservado('domicilio');
 ---
 <Layout titulo="Aviso legal">
   <Borrador clave="avisoLegal" />
   <h1>Aviso legal</h1>
-  <h2>1. Titular del sitio web</h2>
-  <p>En cumplimiento del artículo 10 de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI), se informa:</p>
+
+  <h2>1. Responsable de la web</h2>
   <ul>
-    <li>Titular: {dato('nombreORazonSocial', 'nombre o razón social del responsable')}</li>
-    <li>Naturaleza: {dato('tipo', 'persona física, asociación u otra entidad')}</li>
-    <li>NIF: {dato('nif', 'NIF')}</li>
-    <li>Domicilio: {dato('domicilio', 'domicilio')}</li>
-    <li>Correo electrónico de contacto: {dato('correoContacto', 'correo de contacto')}</li>
-    <li>Datos registrales: {dato('registroPublico', 'registro público, si procede')}</li>
-    <li>Dirección del sitio: {SITE.dominio || '[PENDIENTE: dominio definitivo]'}</li>
+    <li>Promotor y responsable: {dato('nombreORazonSocial', 'nombre del responsable')}{!r.identidadVerificada && ' [identidad pendiente de verificación]'}</li>
+    <li>Naturaleza: {dato('tipo', 'naturaleza del responsable')}.</li>
+    <li>Localidad: {dato('localidad', 'localidad')}</li>
+    <li>Correo electrónico de contacto: <a href={`mailto:${r.correoContacto}`}>{dato('correoContacto', 'correo de contacto')}</a></li>
+    {nif && <li>NIF: {nif}</li>}
+    {dom && <li>Domicilio: {dom}</li>}
+    <li>Dirección de la web: {SITE.dominio || '[PENDIENTE: dominio pendiente de asignación]'}</li>
   </ul>
-  <h2>2. Naturaleza y finalidad</h2>
   <p>
-    {SITE.nombre} es una iniciativa solidaria, independiente y sin ánimo de lucro, de acceso gratuito, cuya única finalidad es
-    facilitar orientación e información pública contrastada sobre el accidente ferroviario del 28 de octubre de 2026 en la provincia de Toledo.
+    {LSSI === 'pendiente' && <>Está pendiente de confirmar por un profesional si a esta web, personal, gratuita y sin actividad económica,
+    le es aplicable la Ley 34/2002 de servicios de la sociedad de la información (LSSI). Si lo fuera, se completarán aquí los datos que exige su
+    artículo 10. Esto no afecta a las obligaciones de protección de datos, que se aplican en todo caso.</>}
+    {LSSI === 'si' && <>Información facilitada en cumplimiento del artículo 10 de la Ley 34/2002 (LSSI).</>}
+    {LSSI === 'no' && <>Según la revisión jurídica realizada, esta web no constituye un servicio de la sociedad de la información en el sentido de la LSSI por carecer de actividad económica. Se facilita igualmente la identificación del responsable y un medio de contacto.</>}
+  </p>
+
+  <h2>2. Qué es y qué no es esta web</h2>
+  <p>
+    {SITE.nombre} es una iniciativa privada, independiente y gratuita, sin finalidad comercial, sin publicidad, patrocinios ni donaciones.
+    Su única finalidad es recopilar, organizar y facilitar el acceso a información pública emitida por organismos y operadores oficiales sobre
+    el accidente ferroviario del 28 de octubre de 2026 en la provincia de Toledo.
   </p>
   <p>
-    No es un servicio oficial de emergencias. No realiza labores de rescate, identificación ni localización de víctimas, atención
-    médica ni comunicación hospitalaria individual, y no actúa en nombre de Renfe, Iryo, Adif, Protección Civil, el 112, los servicios
-    sanitarios, las fuerzas y cuerpos de seguridad ni ningún otro organismo.
+    No es un servicio oficial ni de emergencias. No identifica ni localiza personas, no informa sobre estados de salud individuales, no ofrece
+    atención sanitaria y no actúa en nombre de Renfe, Iryo, Adif, Protección Civil, el 112, los servicios sanitarios, las fuerzas y cuerpos de
+    seguridad ni ningún otro organismo. No existe ningún acuerdo ni colaboración con ellos.
   </p>
-  <h2>3. Información publicada</h2>
+
+  <h2>3. Información publicada y responsabilidad</h2>
   <p>
-    Solo se publica información procedente de organismos u operadores, directamente o atribuida expresamente a ellos por agencias o
-    medios, indicando su fuente, la fecha del comunicado y la hora de nuestra comprobación. La información puede cambiar o quedar
-    desactualizada. Prevalecen siempre las indicaciones oficiales. No se ofrecen diagnósticos médicos ni se confirman identidades,
-    hospitalizaciones o fallecimientos.
+    Solo se publica información que se ha comprobado en la web del organismo u operador que la emite, con enlace directo, fecha del comunicado,
+    fecha de nuestra comprobación y fecha de publicación aquí. Los resúmenes son nuestros y procuran ser fieles al comunicado; en caso de
+    diferencia, prevalece siempre el comunicado original. La información puede ser provisional o quedar desactualizada.
   </p>
   <p>
-    El titular actúa con la diligencia debida para verificar y actualizar la información y para corregir los errores en cuanto los
-    detecta, según su <a href="politica-editorial.html">política editorial</a>. Este aviso no excluye las responsabilidades que la
-    ley no permita excluir.
+    El responsable actúa con diligencia para verificar, actualizar y rectificar la información según la política de
+    <a href="fuentes-y-verificacion.html">fuentes y verificación</a> y el procedimiento de <a href="rectificaciones.html">rectificaciones</a>.
+    Este aviso no pretende excluir ni limitar las responsabilidades que la ley no permite excluir, en particular por los contenidos propios.
   </p>
-  <h2>4. Enlaces a terceros</h2>
-  <p>El sitio enlaza a webs oficiales y a medios de comunicación como fuentes. El titular no controla esos sitios ni sus políticas.</p>
+
+  <h2>4. Enlaces</h2>
+  <p>
+    Los enlaces llevan a webs oficiales que no controlamos. Si tenemos conocimiento de que un enlace dirige a un contenido ilícito o incorrecto,
+    lo retiramos con diligencia. Comunícalo a la dirección de contacto.
+  </p>
+
   <h2>5. Propiedad intelectual</h2>
   <p>
-    Los textos, el diseño y el logotipo propios de {SITE.nombre} pueden reproducirse sin ánimo de lucro con fines informativos,
-    citando la fuente y sin alterar su contenido. No se reproducen fotografías ni contenidos protegidos de terceros. Los nombres de
-    organismos y compañías se citan solo para identificarlos, sin implicar relación alguna.
+    Los textos propios pueden reproducirse sin ánimo de lucro, citando la fuente y sin alterarlos. No se reproducen fotografías ni contenidos
+    protegidos de terceros, ni logotipos oficiales. Los nombres de organismos y compañías se citan solo para identificar la fuente.
   </p>
-  <h2>6. Uso responsable</h2>
-  <p>Consulta las <a href="condiciones.html">condiciones de uso</a>.</p>
-  <h2>7. Legislación aplicable</h2>
-  <p>Este sitio se rige por la legislación española.</p>
+
+  <h2>6. Legislación aplicable</h2>
+  <p>Legislación española. Consulta también las <a href="condiciones-de-uso.html">condiciones de uso</a> y la <a href="privacidad.html">política de privacidad</a>.</p>
 </Layout>

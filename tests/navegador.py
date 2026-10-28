@@ -6,7 +6,7 @@ peticiones de red a terceros, la herramienta «Avisar a mi familia», el control
 el modo seguro, el funcionamiento sin JavaScript, el reflujo a 320 px y el orden de foco.
 Genera capturas en tests/capturas/ y un informe en tests/resultados-navegador.json.
 """
-import json, threading, http.server, functools, socketserver, pathlib, datetime, sys, urllib.parse
+import json, re, threading, http.server, functools, socketserver, pathlib, datetime, sys, urllib.parse
 from playwright.sync_api import sync_playwright
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
@@ -139,6 +139,31 @@ with sync_playwright() as p:
     pg.keyboard.press("Tab")
     primero = pg.evaluate("document.activeElement.textContent.trim()")
     prueba("Primer elemento con Tab: «Saltar al contenido»", primero == "Saltar al contenido", primero)
+    ctx.close()
+
+    # V3 y contador: aviso de independencia, contador del pie y páginas legales en móvil (320 px)
+    ctx = nav.new_context(viewport={"width": 320, "height": 640}, locale="es-ES", timezone_id="Europe/Madrid")
+    pg = ctx.new_page()
+    sin_contador, desbordes = [], []
+    for f in ["index.html", "aviso-legal.html", "privacidad.html", "cookies.html", "condiciones-de-uso.html", "fuentes-y-verificacion.html", "rectificaciones.html", "quienes-somos.html", "comunicados.html"]:
+        pg.goto(BASE + f)
+        c = pg.locator("[data-contador-visitas]")
+        if c.count() != 1 or not c.is_visible() or "Datos no disponibles" not in c.inner_text():
+            sin_contador.append(f)
+        w = pg.evaluate("[document.documentElement.scrollWidth, window.innerWidth]")
+        if w[0] > w[1] + 1:
+            desbordes.append(f"{f} {w}")
+    pg.goto(BASE + "index.html")
+    pg.locator("[data-contador-visitas]").scroll_into_view_if_needed()
+    pg.screenshot(path=str(CAPT / "16-pie-contador-movil.png"), full_page=False)
+    indep = pg.locator("#independencia").inner_text()
+    pg.goto(BASE + "aviso-legal.html")
+    aviso = pg.locator("main").inner_text()
+    prueba("Contador del pie visible en móvil con «Datos no disponibles» (9 páginas)", not sin_contador, ", ".join(sin_contador))
+    prueba("Páginas legales V3 sin desbordamiento a 320 px", not desbordes, "; ".join(desbordes))
+    prueba("Portada: aviso de independencia con el texto de la V3 §6", "no pertenece a ninguna administración pública" in indep and "112" in indep)
+    prueba("Aviso legal: promotor persona física, sin NIF ni domicilio inventados, sin XORVIUM",
+           "José Antonio Marín García" in aviso and "Dos Hermanas" in aviso and "XORVIUM" not in aviso.upper() and not re.search(r"\b\d{8}[A-Z]\b", aviso), aviso[:200])
     ctx.close()
 
     # 13. Buscador de información aprobada (índice local; nada sale del dispositivo)

@@ -1,0 +1,10 @@
+---
+// Sello de estado. «Fuente oficial comprobada» describe nuestra revisión del enlace, no una certificación oficial (V3 §9).
+import { confirmadoOficial, verificado, NO_CONFIRMADO } from '../lib/datos';
+interface Props { e: any }
+const { e } = Astro.props;
+const oficial = confirmadoOficial(e);
+---
+{!oficial ? <span class="sello-pendiente">{NO_CONFIRMADO}</span>
+  : !verificado(e) ? <span class="sello-pendiente">pendiente de verificar</span>
+  : <span class="sello-ok" title="Hemos comprobado el comunicado en la web del organismo. No es una certificación oficial.">Fuente oficial comprobada</span>}

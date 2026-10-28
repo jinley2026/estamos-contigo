@@ -1,0 +1,24 @@
+---
+import Layout from '../components/Layout.astro';
+import Borrador from '../components/Borrador.astro';
+import { SITE, correcciones } from '../lib/datos';
+const r: any = SITE.responsable;
+---
+<Layout titulo="Rectificaciones">
+  <Borrador clave="rectificaciones" />
+  <h1>Rectificaciones</h1>
+  <h2>Cómo avisarnos de un error</h2>
+  <p>Escribe a <a href={`mailto:${r.correoContacto}?subject=Rectificación`}>{r.correoContacto}</a> con el asunto «Rectificación», indicando la página, el dato y, si puedes, el enlace al comunicado oficial correcto. <strong>No incluyas datos personales ni de salud de nadie.</strong></p>
+  <h2>Qué hacemos</h2>
+  <ol>
+    <li>Si el error puede causar daño (un teléfono, un punto de atención, una cifra), retiramos el dato de inmediato mientras lo revisamos.</li>
+    <li>Lo comprobamos contra el comunicado oficial.</li>
+    <li>Corregimos y lo dejamos anotado: el texto anterior no se borra, se marca como corregido o retirado, con la fecha y el motivo.</li>
+    <li>Respondemos a quien nos avisó en el menor plazo posible.</li>
+  </ol>
+  <p>Si un organismo o una persona afectada ejerce un derecho de rectificación previsto en la ley, se atenderá conforme a ella. [Pendiente de revisión jurídica: aplicabilidad de la Ley Orgánica 2/1984 a esta web.]</p>
+  <h2>Correcciones realizadas</h2>
+  {correcciones.length === 0 ? <p>Ninguna hasta ahora.</p> : <ul>{correcciones.map((c) => <li><strong>{c.titulo}</strong>: {c.correccion}</li>)}</ul>}
+  <h2>Retirada y suspensión</h2>
+  <p>El responsable puede retirar cualquier contenido o poner la web en modo reducido (solo enlaces oficiales) o cerrado. El procedimiento está documentado para el equipo.</p>
+</Layout>
