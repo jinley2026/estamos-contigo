@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-28T12:04:20.168Z",
+  "generado": "2026-10-28T12:10:35.530Z",
   "apto": false,
   "estado": "NO apto para publicación",
   "cumplidos": 0,
@@ -82,7 +82,6 @@
       "nombre": "Todas las fuentes enlazadas",
       "cumplido": false,
       "motivos": [
-        "no hay ningún dato verificado que publicar",
         "confirmación humana sin marcar en la checklist"
       ]
     },
@@ -100,7 +99,6 @@
       "nombre": "Sistema de revisión editorial operativo",
       "cumplido": false,
       "motivos": [
-        "todavía no se ha aprobado nada",
         "confirmación humana sin marcar en la checklist"
       ]
     },
@@ -126,7 +124,6 @@
       "nombre": "Pruebas de seguridad satisfactorias",
       "cumplido": false,
       "motivos": [
-        "pruebas de navegador ausentes o con fallos",
         "confirmación humana sin marcar en la checklist"
       ]
     },

@@ -20,7 +20,9 @@
       "operativa": true,
       "alerta": true,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-page-aviso",
@@ -41,7 +43,9 @@
       "operativa": false,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-ume",
@@ -62,7 +66,9 @@
       "operativa": false,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-madrid-hospitales",
@@ -83,7 +89,9 @@
       "operativa": true,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-donacion-sangre",
@@ -104,7 +112,9 @@
       "operativa": true,
       "alerta": true,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-no-estaciones",
@@ -125,7 +135,9 @@
       "operativa": true,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-platecam-so2",
@@ -146,7 +158,9 @@
       "operativa": true,
       "alerta": true,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-adif-nota",
@@ -167,7 +181,9 @@
       "operativa": true,
       "alerta": true,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-hospitales-llamamiento",
@@ -188,7 +204,9 @@
       "operativa": true,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-pasajeros",
@@ -209,7 +227,9 @@
       "operativa": false,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-atocha-psicosocial",
@@ -230,7 +250,9 @@
       "operativa": true,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-renfe-pavaff",
@@ -251,7 +273,9 @@
       "operativa": true,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-renfe-cambios",
@@ -272,7 +296,9 @@
       "operativa": true,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-platecam",
@@ -293,7 +319,9 @@
       "operativa": false,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "2026-10-28-adif-corte",
@@ -314,7 +342,9 @@
       "operativa": true,
       "alerta": false,
       "correccion": null,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

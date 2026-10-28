@@ -21,8 +21,12 @@ export const ES_PREVIA = buildMode.mode !== 'public';
 export const MODO = site.estadoOperativo.modo as 'normal' | 'reducido' | 'cerrado';
 
 /** Un dato está verificado para publicar cuando dos personas del equipo lo han comprobado. */
-export const verificado = (x: { verificadoPor?: string[]; validadoPor?: string[] }) =>
-  ((x.verificadoPor ?? x.validadoPor) ?? []).length >= 2;
+export const verificado = (x: { verificadoPor?: string[]; validadoPor?: string[] }) => {
+  const v = (x.verificadoPor ?? x.validadoPor) ?? [];
+  // Publicación automática (decisión de Lin, 28/10 13:08): lo marcado por la tarea programada cuenta como publicable mientras esté activa.
+  const auto = (site as any).publicacionAutomatica;
+  return v.length >= 2 || (!!auto?.activa && v.includes(auto.marca));
+};
 
 /** V3 §1: un enlace es de origen oficial si es https y su dominio está en fuentes.json → dominiosOficiales. */
 const DOMINIOS = fuentesData.dominiosOficiales.lista as string[];

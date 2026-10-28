@@ -150,12 +150,16 @@ test('12. Activación del modo seguro (modo reducido: solo enlaces oficiales)', 
 test('12b. En la versión pública no existe el panel de administración ni se muestran datos sin verificar', () => {
   const site = leer('src/config/site.json');
   site.estadoOperativo.modo = 'normal';
+  site.publicacionAutomatica.activa = false; // se comprueba la regla de dos personas
   escribir('src/config/site.json', site);
   writeFileSync(join(T, 'src/config/build-mode.json'), JSON.stringify({ mode: 'public' }));
   execFileSync('npx', ['astro', 'build'], { cwd: T, env: { ...process.env, ASTRO_TELEMETRY_DISABLED: '1' }, stdio: 'pipe' });
   assert.ok(!existsSync(join(T, 'dist/admin.html')));
   const idx = readFileSync(join(T, 'dist/index.html'), 'utf8');
-  assert.ok(!idx.includes('900 10 10 20'), 'el teléfono sin verificar no aparece en público');
+  assert.ok(!idx.includes('900 10 10 20'), 'sin publicación automática, el teléfono sin dos verificadores no aparece en público');
+  const s2 = leer('src/config/site.json'); s2.publicacionAutomatica.activa = true; escribir('src/config/site.json', s2);
+  execFileSync('npx', ['astro', 'build'], { cwd: T, env: { ...process.env, ASTRO_TELEMETRY_DISABLED: '1' }, stdio: 'pipe' });
+  assert.ok(readFileSync(join(T, 'dist/index.html'), 'utf8').includes('900 10 10 20'), 'con publicación automática activa (decisión de Lin 13:08), lo marcado AUTO-CLAUDE sí aparece');
 });
 
 test('16. Seguridad del repositorio y de las credenciales', () => {

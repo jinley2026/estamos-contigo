@@ -30,7 +30,9 @@
       ],
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": [],
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
       "notaInterna": "Confirmado en la nota oficial de Adif (nivel 1). Verificación humana pendiente: localizarlo en adif.es o grupo.renfe.com, dos personas, SIN llamar a la línea (se satura).",
       "organismoCorto": "Renfe, plan de asistencia a víctimas y familiares"
     },
@@ -58,7 +60,9 @@
       ],
       "comprobadoEn": "2026-10-28T12:50:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": [],
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
       "notaInterna": "Fuente: nota oficial de Adif. RECTIFICACIONES 28/10: (1) 12:00 se retiró el 655 28 69 75 por discrepar de Adif; (2) 12:10 se restituye porque la nota oficial de la Junta (nivel 1) también lo publica. Ambos se muestran con su fuente hasta que Iryo confirme. En Adamuz Iryo usó el 900 001 402: no confundir.",
       "organismoCorto": "Iryo, atención a familiares",
       "discrepancia": "Para Iryo hay dos números: el 900 00 14 03, que publican Iryo y Adif, y el 655 28 69 75, que ha dado la Junta de Castilla-La Mancha. Si uno no responde, prueba el otro."
@@ -88,7 +92,9 @@
       ],
       "comprobadoEn": "2026-10-28T12:10:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": [],
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
       "discrepancia": "Para Iryo hay dos números: el 900 00 14 03, que publican Iryo y Adif, y el 655 28 69 75, que ha dado la Junta de Castilla-La Mancha. Si uno no responde, prueba el otro.",
       "notaInterna": "La nota oficial de la Junta escribe «IRIO». Número móvil. Confirmar con Iryo."
     },
@@ -122,7 +128,9 @@
       ],
       "comprobadoEn": "2026-10-28T12:10:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": [],
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
       "notaInterna": "Confirmar en la web o cuenta oficial del 112 Castilla-La Mancha."
     }
   ]

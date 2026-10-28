@@ -52,7 +52,9 @@
       }
     ],
     "aviso": "No sabemos quién está en cada centro. No te desplaces sin llamar antes al teléfono para familiares: allí te dirán dónde está tu familiar.",
-    "verificadoPor": [],
+    "verificadoPor": [
+      "AUTO-CLAUDE"
+    ],
     "nota": {
       "texto": "Según fuentes del Sescam, los heridos más graves van a hospitales de Toledo y de Alcázar de San Juan.",
       "fuente": {
@@ -106,7 +108,9 @@
         }
       }
     ],
-    "verificadoPor": []
+    "verificadoPor": [
+      "AUTO-CLAUDE"
+    ]
   },
   "linea": {
     "revisarCadaMinutos": 60,
@@ -118,6 +122,8 @@
       "titulo": "Lecturas: comunicado de Adif",
       "url": "https://www.lecturas.com/diario/adif-confirma-choque-dos-trenes-a-altura-yebenes-toledo-y-suspende-circulacion_200489"
     },
-    "verificadoPor": []
+    "verificadoPor": [
+      "AUTO-CLAUDE"
+    ]
   }
 }

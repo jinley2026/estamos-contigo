@@ -24,11 +24,13 @@
       },
       "fechaComunicado": "2026-10-28T10:37:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
-      "estadoEditorial": "pendiente",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
       "observaciones": "Primera cifra comunicada. Sustituida por la de las 12:43.",
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "pasajeros-total-jccm",
@@ -45,11 +47,13 @@
       },
       "fechaComunicado": "2026-10-28T11:21:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
-      "estadoEditorial": "pendiente",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
       "observaciones": "Coincide con la suma 397 + 147 de la misma fuente oficial.",
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "pasajeros-ave2080-jccm",
@@ -66,11 +70,13 @@
       },
       "fechaComunicado": "2026-10-28T11:00:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
-      "estadoEditorial": "pendiente",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
       "observaciones": "La fuente no da hora exacta de la declaración («a lo largo de la mañana»); se usa la hora aproximada de la nota de EFE.",
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "pasajeros-iryo6076-jccm",
@@ -87,11 +93,13 @@
       },
       "fechaComunicado": "2026-10-28T11:00:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
-      "estadoEditorial": "pendiente",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
       "observaciones": "Incluye un bebé, según la misma fuente.",
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "fallecidos-112clm-1243",
@@ -108,11 +116,13 @@
       },
       "fechaComunicado": "2026-10-28T12:43:00+01:00",
       "fechaVerificacion": "2026-10-28T12:50:00+01:00",
-      "estadoEditorial": "pendiente",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": "fallecidos-jccm-1037",
       "observaciones": "El presidente García-Page advirtió a las 12:40 de que la cifra puede aumentar. Hay medios con cifras más altas no confirmadas por la Junta ni el 112.",
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "heridos-112clm-1243",
@@ -129,11 +139,13 @@
       },
       "fechaComunicado": "2026-10-28T12:43:00+01:00",
       "fechaVerificacion": "2026-10-28T12:50:00+01:00",
-      "estadoEditorial": "pendiente",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
       "observaciones": "García-Page (12:38): unos cincuenta heridos de nivel amarillo, algunos muy graves.",
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

@@ -17,7 +17,8 @@ const INFORME = process.argv.includes('--informe');
 const site = leer('src/config/site.json');
 const r = site.responsable;
 const DOM = cargarDominios(RAIZ);
-const verif = (x) => ((x.verificadoPor ?? x.validadoPor) ?? []).length >= 2;
+const _auto = JSON.parse(readFileSync(new URL('../src/config/site.json', import.meta.url), 'utf8')).publicacionAutomatica;
+const verif = (x) => { const v = (x.verificadoPor ?? x.validadoPor) ?? []; return v.length >= 2 || (!!_auto?.activa && v.includes(_auto.marca)); };
 
 const chkTxt = existe('docs/operacion/checklist-publicacion.md') ? readFileSync(new URL('docs/operacion/checklist-publicacion.md', RAIZ), 'utf8') : '';
 const marcado = (id) => new RegExp(`^- \\[x\\] ${id}\\b`, 'mi').test(chkTxt);

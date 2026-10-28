@@ -13,7 +13,8 @@ const avi = (m) => (PUBLICO ? errores : avisos).push(m);
 
 const esISO = (s) => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?([+-]\d{2}:\d{2}|Z)$/.test(s) && !isNaN(Date.parse(s));
 const esURL = (s) => { try { return new URL(s).protocol === 'https:'; } catch { return false; } };
-const verif = (x) => ((x.verificadoPor ?? x.validadoPor) ?? []).length >= 2;
+const _auto = JSON.parse(readFileSync(new URL('../src/config/site.json', import.meta.url), 'utf8')).publicacionAutomatica;
+const verif = (x) => { const v = (x.verificadoPor ?? x.validadoPor) ?? []; return v.length >= 2 || (!!_auto?.activa && v.includes(_auto.marca)); };
 
 // Palabras que delatan datos de personas o cifras de víctimas: deben revisarse a mano si aparecen.
 const PATRONES_PELIGROSOS = [

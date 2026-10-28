@@ -20,7 +20,9 @@
       "nivelFuente": 2,
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 120,
-      "verificadoPor": [],
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
       "observaciones": "Varios medios dicen que salió de Madrid-Puerta de Atocha a las 8:00; no hay confirmación oficial, no se publica."
     },
     {
@@ -42,7 +44,9 @@
       "nivelFuente": 2,
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 120,
-      "verificadoPor": [],
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
       "observaciones": "La fuente habla del trayecto Madrid–Sevilla para ambos trenes, pero hay versiones contradictorias en prensa sobre el sentido del Iryo. Origen y destino del Iryo se dejan sin dato hasta confirmación oficial."
     }
   ],

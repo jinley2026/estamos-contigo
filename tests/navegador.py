@@ -106,7 +106,8 @@ with sync_playwright() as p:
 
     # 6. Modo seguro: más de 4 h sin revisión editorial
     pg = ctx.new_page()
-    pg.clock.install(time=(t0 + datetime.timedelta(hours=5)))
+    rev = datetime.datetime.fromisoformat(json.loads((RAIZ / "src/config/site.json").read_text())["estadoOperativo"]["ultimaRevisionEditorial"])
+    pg.clock.install(time=(rev + datetime.timedelta(hours=5)))
     pg.goto(BASE + "index.html")
     banda = pg.locator(".banda-modo-seguro").is_visible()
     ultima_oculta = not pg.locator(".ultima-hora").is_visible()

@@ -25,11 +25,11 @@
   "estadoOperativo": {
     "_comentario": "modo: normal | reducido | cerrado. 'reducido' = solo directorio de fuentes oficiales. 'cerrado' = fin de actualizaciones.",
     "modo": "normal",
-    "ultimaRevisionEditorial": "2026-10-28T12:10:00+01:00",
+    "ultimaRevisionEditorial": "2026-10-28T13:10:00+01:00",
     "horasMaximasSinRevision": 4,
     "fechaCierre": "",
     "mensajeCierre": "",
-    "ultimaAprobacion": "",
+    "ultimaAprobacion": "2026-10-28T13:10:00+01:00",
     "fechaPublicacion": ""
   },
   "modulos": {
@@ -75,5 +75,24 @@
     "suspendida": false,
     "motivo": "",
     "desde": ""
+  },
+  "publicacionAutomatica": {
+    "_comentario": "Decisión de Lin (28/10/2026, 13:08): no hay segunda persona; Claude actualiza cada hora con una tarea programada y publica sin revisión previa. Las cifras de víctimas solo si un medio las atribuye a un organismo de la lista. Nunca datos personales. Lin revisa cuando puede y puede suspender con automatizacion.suspendida=true.",
+    "activa": true,
+    "marca": "AUTO-CLAUDE",
+    "organismosCifras": [
+      "Junta de Castilla-La Mancha",
+      "112",
+      "Gobierno de España",
+      "Ministerio",
+      "Delegación del Gobierno",
+      "Renfe",
+      "Iryo",
+      "Adif",
+      "Guardia Civil",
+      "Sescam",
+      "Comunidad de Madrid",
+      "Ayuntamiento"
+    ]
   }
 }

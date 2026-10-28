@@ -16,7 +16,9 @@
       },
       "comprobadoEn": "2026-10-28T10:50:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "adif-0",
@@ -33,7 +35,9 @@
       },
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": [],
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
       "fuentesAdicionales": [
         {
           "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
@@ -56,7 +60,9 @@
       },
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": [],
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
       "fuentesAdicionales": [
         {
           "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
@@ -79,7 +85,9 @@
       },
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": [],
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
       "fuentesAdicionales": [
         {
           "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
@@ -102,7 +110,9 @@
       },
       "comprobadoEn": "2026-10-28T12:10:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     },
     {
       "id": "urda-pabellones",
@@ -119,7 +129,9 @@
       },
       "comprobadoEn": "2026-10-28T12:50:00+01:00",
       "revisarCadaMinutos": 60,
-      "verificadoPor": []
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
