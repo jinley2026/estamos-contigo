@@ -1263,6 +1263,126 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "2026-10-28-jccm-nota-operativo",
+      "titulo": "La Junta detalla en una nota oficial el operativo, los hospitales y la atención a familias",
+      "resumen": "Según la nota del Gobierno de Castilla-La Mancha tras la reunión del CECOPI en el puesto de mando avanzado, las personas afectadas se atienden en los hospitales de Alcázar de San Juan (Mancha Centro), General Universitario de Ciudad Real, Universitario de Toledo y Universitario de Albacete, que han suspendido actividad programada y habilitado camas; algunos pacientes han sido trasladados a hospitales de Madrid. Hay atención psicosocial de Cruz Roja y del Colegio de Trabajadores Sociales y un albergue en el pabellón polideportivo de Urda. Teléfonos para familiares: 112 CLM 900 122 112, Renfe 900 10 10 20, Iryo 655 28 69 75. Puntos de atención: Atocha, Santa Justa, estación de Córdoba y colegio Santo Cristo de Urda. Las cifras de la nota están en el apartado de datos.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: «El Gobierno de Castilla-La Mancha despliega todos los medios y recursos a su alcance…»",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-de-castilla-la-mancha-despliega-todos-los-medios-y-recursos-su-alcance-para-hacer-frente"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T18:15:00+01:00",
+      "comprobadoEn": "2026-10-28T18:15:00+01:00",
+      "publicadoEn": "2026-10-28T18:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-ouigo-hasta-2-noviembre",
+      "titulo": "Ouigo suspende sus trenes Madrid–Andalucía hasta, al menos, el lunes 2 de noviembre",
+      "resumen": "Ouigo amplía la cancelación de sus servicios en el corredor Madrid–Andalucía «hasta, al menos, el próximo lunes 2 de noviembre». Si tienes billete de Ouigo en esas fechas, consulta su web o su atención al cliente.",
+      "organismo": "Ouigo",
+      "categoria": "ouigo",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "EFE vía Infobae: «Ouigo suspende sus circulaciones entre Madrid y Andalucía hasta al menos el 2 de noviembre» (17:47)",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/ouigo-suspende-sus-circulaciones-entre-madrid-y-andalucia-hasta-al-menos-el-2-de-noviembre/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T17:43:00+01:00",
+      "comprobadoEn": "2026-10-28T18:15:00+01:00",
+      "publicadoEn": "2026-10-28T18:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-page-busqueda-noche",
+      "titulo": "La búsqueda en los restos de los trenes seguirá durante la noche",
+      "resumen": "Según García-Page, los equipos seguirán buscando posibles víctimas entre los restos durante la tarde, la noche y los días que haga falta, con unidades caninas. Bomberos, con grúas y apoyo de la UME, inspeccionarán vagones y restos cuando la autoridad judicial lo autorice. Se mantiene la atención informativa y psicosocial a las familias con servicios autonómicos, Cruz Roja y Guardia Civil.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Cuadernos Manchegos: «García-Page… anuncia que la búsqueda continuará durante la noche» (16:50)",
+        "url": "https://www.cuadernosmanchegos.com/castilla-la-mancha/toledo/garcia-page-confirma-68-fallecidos-en-el-accidente-de-urda-y-anuncia-que-la-busqueda-continuara-durante-la-noche/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T16:50:00+01:00",
+      "comprobadoEn": "2026-10-28T18:15:00+01:00",
+      "publicadoEn": "2026-10-28T18:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-gc-sevilla-horario",
+      "titulo": "Sevilla: la oficina de la Guardia Civil para familiares abre hoy hasta las 21:00 y seguirá jueves y viernes",
+      "resumen": "El punto de la avenida de la Borbolla, 8, para que los familiares directos aporten muestras de ADN abrió hoy a las 16:00 y cierra a las 21:00. Seguirá abierto el jueves y el viernes, de mañana y de tarde (no se han dado las horas exactas). La Guardia Civil pide a los familiares directos de personas desaparecidas que acudan cuanto antes a sus comandancias.",
+      "organismo": "Guardia Civil",
+      "categoria": "guardiacivil",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Córdoba BN: «Familias de víctimas dejan Santa Justa (Sevilla) y viajan a Toledo» (17:26)",
+        "url": "https://www.cordobabn.com/andalucia/accidente-familias-victimas-abandonan-santa-justa-sevilla-rumbo-toledo-que-busquen-hermano-donde-sea/20261028172652272716.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T17:26:00+01:00",
+      "comprobadoEn": "2026-10-28T18:15:00+01:00",
+      "publicadoEn": "2026-10-28T18:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-iberia-precio-maximo",
+      "titulo": "Iberia limita el precio de sus vuelos Sevilla–Madrid hasta el 8 de noviembre",
+      "resumen": "Como alternativa al corte de la alta velocidad, Iberia ha fijado un precio máximo de 99 euros en clase turista en ese trayecto hasta el 8 de noviembre. Las empresas de autobuses de la estación Plaza de Armas de Sevilla han reforzado su flota, aunque los billetes de hoy se agotaron por la mañana.",
+      "organismo": "Iberia",
+      "categoria": "otros",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Canal Sur: «Pocas alternativas para viajar entre Sevilla y Madrid»",
+        "url": "https://www.canalsur.es/noticias/espana/alternativas-viajar-sevilla-madrid_1_1447697.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T13:32:00+01:00",
+      "comprobadoEn": "2026-10-28T18:15:00+01:00",
+      "publicadoEn": "2026-10-28T18:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

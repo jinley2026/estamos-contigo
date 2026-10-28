@@ -362,6 +362,144 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "fallecidos-jccm-nota-1815",
+      "tipo": "fallecidos",
+      "valor": 68,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: nota de prensa «El Gobierno de Castilla-La Mancha despliega todos los medios y recursos a su alcance…»",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-de-castilla-la-mancha-despliega-todos-los-medios-y-recursos-su-alcance-para-hacer-frente",
+        "tipoFuente": "comunicado-oficial"
+      },
+      "fechaComunicado": "2026-10-28T18:15:00+01:00",
+      "fechaVerificacion": "2026-10-28T18:15:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-112clm-1600",
+      "observaciones": "La nota oficial no indica la hora de las cifras («cifras provisionales»); se registra la hora de nuestra comprobación. Coincide con el 112 CLM (16:00) y con García-Page (15:42).",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "fallecidos-iryo-jccm-nota-1815",
+      "tipo": "fallecidos",
+      "valor": 44,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "tren:iryo-6076",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: nota de prensa «El Gobierno de Castilla-La Mancha despliega todos los medios y recursos a su alcance…»",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-de-castilla-la-mancha-despliega-todos-los-medios-y-recursos-su-alcance-para-hacer-frente",
+        "tipoFuente": "comunicado-oficial"
+      },
+      "fechaComunicado": "2026-10-28T18:15:00+01:00",
+      "fechaVerificacion": "2026-10-28T18:15:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-iryo-page-1542",
+      "observaciones": "La nota oficial no indica la hora de las cifras («cifras provisionales»); se registra la hora de nuestra comprobación. Primera vez que el reparto por tren (44 Iryo, 24 AVE) aparece en un comunicado oficial.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "fallecidos-ave-jccm-nota-1815",
+      "tipo": "fallecidos",
+      "valor": 24,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "tren:ave-2080",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: nota de prensa «El Gobierno de Castilla-La Mancha despliega todos los medios y recursos a su alcance…»",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-de-castilla-la-mancha-despliega-todos-los-medios-y-recursos-su-alcance-para-hacer-frente",
+        "tipoFuente": "comunicado-oficial"
+      },
+      "fechaComunicado": "2026-10-28T18:15:00+01:00",
+      "fechaVerificacion": "2026-10-28T18:15:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-ave-page-1542",
+      "observaciones": "La nota oficial no indica la hora de las cifras («cifras provisionales»); se registra la hora de nuestra comprobación. Primera vez que el reparto por tren aparece en un comunicado oficial.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "heridos-jccm-nota-1815",
+      "tipo": "heridos",
+      "valor": 100,
+      "calificador": "al menos",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: nota de prensa «El Gobierno de Castilla-La Mancha despliega todos los medios y recursos a su alcance…»",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-de-castilla-la-mancha-despliega-todos-los-medios-y-recursos-su-alcance-para-hacer-frente",
+        "tipoFuente": "comunicado-oficial"
+      },
+      "fechaComunicado": "2026-10-28T18:15:00+01:00",
+      "fechaVerificacion": "2026-10-28T18:15:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "heridos-112clm-1600",
+      "observaciones": "La nota oficial no indica la hora de las cifras («cifras provisionales»); se registra la hora de nuestra comprobación. La nota dice «más de cien heridos de distinta gravedad». La ficha del 112 CLM (16:00) da 77: cifras distintas del mismo Gobierno, se registran ambas.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "pasajeros-ave2080-jccm-nota-1815",
+      "tipo": "pasajeros",
+      "valor": 393,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "tren:ave-2080",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: nota de prensa «El Gobierno de Castilla-La Mancha despliega todos los medios y recursos a su alcance…»",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-de-castilla-la-mancha-despliega-todos-los-medios-y-recursos-su-alcance-para-hacer-frente",
+        "tipoFuente": "comunicado-oficial"
+      },
+      "fechaComunicado": "2026-10-28T18:15:00+01:00",
+      "fechaVerificacion": "2026-10-28T18:15:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "pasajeros-ave2080-jccm",
+      "observaciones": "La nota oficial no indica la hora de las cifras («cifras provisionales»); se registra la hora de nuestra comprobación. DISCREPANCIA: la portavoz del mismo Gobierno dio 397 a mediodía. Total igual (544). Se registran ambas.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "pasajeros-iryo6076-jccm-nota-1815",
+      "tipo": "pasajeros",
+      "valor": 151,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "tren:iryo-6076",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: nota de prensa «El Gobierno de Castilla-La Mancha despliega todos los medios y recursos a su alcance…»",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-de-castilla-la-mancha-despliega-todos-los-medios-y-recursos-su-alcance-para-hacer-frente",
+        "tipoFuente": "comunicado-oficial"
+      },
+      "fechaComunicado": "2026-10-28T18:15:00+01:00",
+      "fechaVerificacion": "2026-10-28T18:15:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "pasajeros-iryo6076-jccm",
+      "observaciones": "La nota oficial no indica la hora de las cifras («cifras provisionales»); se registra la hora de nuestra comprobación. DISCREPANCIA: la portavoz del mismo Gobierno dio 147 a mediodía e Iryo también comunicó 147. Se registran ambas.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
