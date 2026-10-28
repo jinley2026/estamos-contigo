@@ -79,7 +79,7 @@
     var leer = function (ruta) {
       return fetch(bv.getAttribute('data-gc') + '/counter/' + ruta + '.json' + nc, { credentials: 'omit' })
         .then(function (r) { return r.ok ? r.json() : { count: '0' }; })
-        .then(function (j) { return parseInt(String(j.count || '0').replace(/\D/g, ''), 10) || 0; })
+        .then(function (j) { return parseInt(String(j.count_unique || j.count || '0').replace(/\D/g, ''), 10) || 0; })
         .catch(function () { return null; });
     };
     // «/» = todas las visitas desde las 14:35; «/index» = las de antes (cuando cada página contaba por separado).
