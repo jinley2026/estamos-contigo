@@ -17,10 +17,10 @@
       "comprobadoEn": "2026-10-28T14:05:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
-      "alerta": true,
-      "correccion": null,
+      "alerta": false,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (13:52)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -41,10 +41,10 @@
       "comprobadoEn": "2026-10-28T14:05:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": false,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (13:23)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -65,10 +65,10 @@
       "comprobadoEn": "2026-10-28T14:05:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (13:29)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -89,10 +89,10 @@
       "comprobadoEn": "2026-10-28T14:05:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (13:14)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -113,10 +113,10 @@
       "comprobadoEn": "2026-10-28T14:05:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
-      "alerta": true,
-      "correccion": null,
+      "alerta": false,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:50)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -136,10 +136,10 @@
       "fechaComunicado": "2026-10-28T12:43:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
-      "alerta": true,
-      "correccion": null,
+      "alerta": false,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:43)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -159,10 +159,10 @@
       "fechaComunicado": "2026-10-28T12:40:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": false,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:40)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -182,10 +182,10 @@
       "fechaComunicado": "2026-10-28T12:33:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": false,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:33)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -205,10 +205,10 @@
       "fechaComunicado": "2026-10-28T12:29:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:29)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -228,10 +228,10 @@
       "fechaComunicado": "2026-10-28T12:20:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
-      "alerta": true,
-      "correccion": null,
+      "alerta": false,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:20)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -251,10 +251,10 @@
       "fechaComunicado": "2026-10-28T10:32:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (elDiario.es, directo (10:32)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -272,7 +272,7 @@
       },
       "nivelFuente": 1,
       "fechaComunicado": "2026-10-28T10:30:00+01:00",
-      "comprobadoEn": "2026-10-28T12:10:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 120,
       "estado": "vigente",
       "operativa": true,
@@ -295,7 +295,7 @@
       },
       "nivelFuente": 1,
       "fechaComunicado": "2026-10-28T11:30:00+01:00",
-      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 60,
       "estado": "vigente",
       "operativa": true,
@@ -320,10 +320,10 @@
       "fechaComunicado": "2026-10-28T10:43:00+01:00",
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (CMM: llamamiento de los servicios de Emergencia de Castilla-La Mancha) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -343,10 +343,10 @@
       "fechaComunicado": "2026-10-28T11:00:00+01:00",
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 240,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": false,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Infobae/EFE: declaraciones de la portavoz del Gobierno regional) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -366,10 +366,10 @@
       "fechaComunicado": "2026-10-28T10:20:00+01:00",
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Madrid Actual: información de Emergencias 112 Comunidad de Madrid) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -389,10 +389,10 @@
       "fechaComunicado": "2026-10-28T10:00:00+01:00",
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Castilla-La Mancha Media: cita la publicación de InfoRenfe) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -412,10 +412,10 @@
       "fechaComunicado": "2026-10-28T09:45:00+01:00",
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 120,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (El Progreso: recoge el aviso de Renfe) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -433,7 +433,7 @@
       },
       "nivelFuente": 1,
       "fechaComunicado": "2026-10-28T09:15:00+01:00",
-      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 240,
       "estado": "vigente",
       "operativa": false,
@@ -446,17 +446,17 @@
     {
       "id": "2026-10-28-adif-corte",
       "titulo": "Adif interrumpe la circulación en la línea de alta velocidad Madrid–Andalucía",
-      "resumen": "Adif comunica que la circulación está interrumpida por un alcance entre dos trenes entre Mora/Orgaz y Urda (punto kilométrico 118). No hay previsión pública de restablecimiento.",
+      "resumen": "Adif informa de que la circulación está interrumpida por un alcance entre dos trenes entre Mora/Orgaz y Urda (punto kilométrico 118). Los trenes de la línea están detenidos en estaciones del trayecto; los viajeros deben contactar con su compañía. Madrid–Toledo y Málaga–Sevilla funcionan con normalidad.",
       "organismo": "Adif",
       "categoria": "adif",
-      "tipoFuente": "medio-citando",
+      "tipoFuente": "comunicado-oficial",
       "fuente": {
-        "titulo": "Lecturas: recoge el comunicado de Adif",
-        "url": "https://www.lecturas.com/diario/adif-confirma-choque-dos-trenes-a-altura-yebenes-toledo-y-suspende-circulacion_200489"
+        "titulo": "Adif: estado de la red (aviso de las 12:50)",
+        "url": "https://www.adif.es/viajeros/estado-de-la-red"
       },
-      "nivelFuente": 2,
-      "fechaComunicado": "2026-10-28T09:15:00+01:00",
-      "comprobadoEn": "2026-10-28T12:00:00+01:00",
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T12:50:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 120,
       "estado": "vigente",
       "operativa": true,
@@ -482,10 +482,10 @@
       "publicadoEn": "2026-10-28T14:55:00+01:00",
       "comprobadoEn": "2026-10-28T14:55:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital: recoge los avisos del Ayuntamiento de Los Yébenes (14:10 y 14:47)) y no lo hemos encontrado en ningún canal oficial del organismo. Lo publicamos a las 14:55 sin haberlo comprobado en ninguna fuente oficial: fue un error nuestro. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -506,10 +506,10 @@
       "publicadoEn": "2026-10-28T14:55:00+01:00",
       "comprobadoEn": "2026-10-28T14:55:00+01:00",
       "revisarCadaMinutos": 120,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital: recoge el comunicado de Iryo (14:27)) y no lo hemos encontrado en ningún canal oficial del organismo. Lo publicamos a las 14:55 sin haberlo comprobado en ninguna fuente oficial: fue un error nuestro. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -530,10 +530,10 @@
       "publicadoEn": "2026-10-28T14:55:00+01:00",
       "comprobadoEn": "2026-10-28T14:55:00+01:00",
       "revisarCadaMinutos": 120,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": false,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital: fuentes de la UME (14:44)) y no lo hemos encontrado en ningún canal oficial del organismo. Lo publicamos a las 14:55 sin haberlo comprobado en ninguna fuente oficial: fue un error nuestro. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -554,8 +554,32 @@
       "publicadoEn": "2026-10-28T14:55:00+01:00",
       "comprobadoEn": "2026-10-28T14:55:00+01:00",
       "revisarCadaMinutos": 240,
-      "estado": "vigente",
+      "estado": "retirado",
       "operativa": false,
+      "alerta": false,
+      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital: recoge el anuncio de Juanma Moreno en X (14:44)) y no lo hemos encontrado en ningún canal oficial del organismo. Lo publicamos a las 14:55 sin haberlo comprobado en ninguna fuente oficial: fue un error nuestro. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-adif-malaga",
+      "titulo": "Adif añade un punto de atención en la estación de Málaga María Zambrano",
+      "resumen": "La nota de Adif sobre el accidente incluye ya cuatro puntos de atención a los afectados: Madrid-Puerta de Atocha, Sevilla Santa Justa, Córdoba Julio Anguita y Málaga María Zambrano. Los teléfonos para familiares son el 900 10 10 20 (Renfe) y el 900 001 403 (Iryo).",
+      "organismo": "Adif",
+      "categoria": "adif",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "Adif: nota «Accidente en Urda (Toledo)»",
+        "url": "https://www.adif.es/comunicacion/notas-prensa"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T15:05:00+01:00",
+      "publicadoEn": "2026-10-28T15:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
       "alerta": false,
       "correccion": null,
       "verificadoPor": [

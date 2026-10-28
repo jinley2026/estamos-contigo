@@ -99,7 +99,7 @@ for (const a of af.afirmaciones) {
   if (!esISO(a.fechaComunicado) || !esISO(a.fechaVerificacion)) err(`${id}: fechas no ISO`);
   if (!['aprobado', 'pendiente', 'rechazado'].includes(a.estadoEditorial)) err(`${id}: estado editorial no válido`);
   if (a.estadoEditorial === 'aprobado' && !verif(a)) err(`${id}: aprobada sin dos verificadores`);
-  if (a.estadoEditorial !== 'aprobado') avi(`${id}: pendiente de aprobación`);
+  if (a.estadoEditorial === 'pendiente') avi(`${id}: pendiente de aprobación`);
   if (a.versionAnterior && !af.afirmaciones.some((b) => b.id === a.versionAnterior)) err(`${id}: versionAnterior inexistente`);
 }
 const tr = leer('data/trenes.json');
@@ -144,7 +144,7 @@ for (const k of ['hospitales', 'avisos', 'linea']) {
   const b = uh[k];
   for (const it of [...(b.lista ?? []), ...(b.fuente ? [b] : [])]) if (!esUrlOficial(it.fuente?.url, DOMINIOS) || it.nivelFuente === 2) { sinOrigen.push(`última hora ${k}`); break; }
 }
-if (sinOrigen.length) avisos.push(`Procedente de medios, con atribución (se publica citando organismo y medio): ${[...new Set(sinOrigen)].join(', ')}`);
+if (sinOrigen.length) avisos.push(`Procedente de medios (${leer('config/site.json').reglaFuentes?.soloCanalesOficiales ? 'NO se publica: regla de solo canales oficiales' : 'se publica citando organismo y medio'}): ${[...new Set(sinOrigen)].join(', ')}`);
 
 // Contador de visitas: nunca datos de prueba en la publicación
 const vis = leer('data/visitas.json');

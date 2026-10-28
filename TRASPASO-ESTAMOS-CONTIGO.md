@@ -1,5 +1,15 @@
 # TRASPASO — Proyecto ESTAMOS CONTIGO
 
+## ⚠️ REGLA VIGENTE DESDE EL 28/10/2026, 15:05 (decisión de Lin): SOLO CANALES OFICIALES
+Toda la información publicada tiene que estar contrastada en un **canal oficial del propio organismo** (su web o su cuenta oficial; dominios en `src/config/fuentes.json → dominiosOficiales`).
+- Lo que solo publica un medio NO se publica, aunque el medio cite a un organismo. Si no encuentras el dato en el canal oficial: no se publica («no lo sé»).
+- Todo dato nuevo: `tipoFuente: "comunicado-oficial"`, `nivelFuente: 1` y enlace directo a la página oficial. Ya no se usa `medio-citando` / nivel 2 para publicar.
+- Cifras de víctimas: solo si están en un comunicado oficial (enlace a dominio oficial, `tipoFuente: "comunicado-oficial"`). Si no hay ninguno, la web muestra «sin cifra comunicada».
+- El código lo impone (`site.json → reglaFuentes.soloCanalesOficiales = true`): lo que no tenga fuente oficial no se muestra. No lo desactives.
+- Si un dato publicado deja de cumplir la regla: `estado: "retirado"` con `correccion` (no borrar). Cifras: `estadoEditorial: "rechazado"` con la nota en `observaciones`.
+- Canales oficiales útiles comprobados: castillalamancha.es/actualidad/notasdeprensa, 112.castillalamancha.es (incidentes y comunicación), adif.es/comunicacion/notas-prensa, adif.es/viajeros/estado-de-la-red, grupo.renfe.com/es/es/sala-de-prensa, iryo.eu, transportes.gob.es, lamoncloa.gob.es. Los directos de medios sirven SOLO como pista para ir a buscar el original oficial.
+
+
 Documento para continuar el trabajo en un proyecto nuevo llamado «ESTAMOS CONTIGO», separado por completo de PRELUXINT.
 Estado a 28/10/2026, 12:40 (hora peninsular). Versión de la web: **v0.4.1, vista previa privada. No hay nada publicado.**
 

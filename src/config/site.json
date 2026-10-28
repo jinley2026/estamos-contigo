@@ -25,11 +25,11 @@
   "estadoOperativo": {
     "_comentario": "modo: normal | reducido | cerrado. 'reducido' = solo directorio de fuentes oficiales. 'cerrado' = fin de actualizaciones.",
     "modo": "normal",
-    "ultimaRevisionEditorial": "2026-10-28T14:55:00+01:00",
+    "ultimaRevisionEditorial": "2026-10-28T15:05:00+01:00",
     "horasMaximasSinRevision": 4,
     "fechaCierre": "",
     "mensajeCierre": "",
-    "ultimaAprobacion": "2026-10-28T14:55:00+01:00",
+    "ultimaAprobacion": "2026-10-28T15:05:00+01:00",
     "fechaPublicacion": ""
   },
   "modulos": {
@@ -80,7 +80,7 @@
     "desde": ""
   },
   "publicacionAutomatica": {
-    "_comentario": "Decisión de Lin (28/10/2026, 13:08): no hay segunda persona; Claude actualiza cada hora con una tarea programada y publica sin revisión previa. Las cifras de víctimas solo si un medio las atribuye a un organismo de la lista. Nunca datos personales. Lin revisa cuando puede y puede suspender con automatizacion.suspendida=true.",
+    "_comentario": "Decisión de Lin (28/10/2026, 13:08): no hay segunda persona; Claude actualiza cada hora con una tarea programada y publica sin revisión previa. Las cifras de víctimas solo si un medio las atribuye a un organismo de la lista. Nunca datos personales. Lin revisa cuando puede y puede suspender con automatizacion.suspendida=true. Desde el 28/10 a las 15:05 (Lin): solo canales oficiales, ver reglaFuentes.",
     "activa": true,
     "marca": "AUTO-CLAUDE",
     "organismosCifras": [
@@ -98,5 +98,10 @@
       "Ayuntamiento"
     ]
   },
-  "alojamientoProvisional": "un servicio gratuito de alojamiento de páginas estáticas (Netlify o GitHub Pages, según la dirección en la que la estés viendo)"
+  "alojamientoProvisional": "un servicio gratuito de alojamiento de páginas estáticas (Netlify o GitHub Pages, según la dirección en la que la estés viendo)",
+  "reglaFuentes": {
+    "_comentario": "Decisión de Lin (28/10/2026, 15:05): toda la información publicada debe estar contrastada en un canal oficial del organismo (web o cuenta oficial, dominio en fuentes.json). Lo que solo publica un medio, aunque cite a un organismo, NO se publica. Las cifras de víctimas, solo desde un comunicado oficial.",
+    "soloCanalesOficiales": true,
+    "desde": "2026-10-28T15:05:00+01:00"
+  }
 }

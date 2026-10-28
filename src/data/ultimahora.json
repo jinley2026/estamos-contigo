@@ -1,9 +1,9 @@
 {
   "_comentario": "Bloques operativos de portada: centros de traslado, avisos de las autoridades y estado de la línea. Las cifras están en afirmaciones.json y los trenes en trenes.json.",
-  "actualizadoEn": "2026-10-28T14:55:00+01:00",
+  "actualizadoEn": "2026-10-28T15:05:00+01:00",
   "hospitales": {
     "revisarCadaMinutos": 30,
-    "comprobadoEn": "2026-10-28T14:05:00+01:00",
+    "comprobadoEn": "2026-10-28T15:05:00+01:00",
     "lista": [
       {
         "centro": "Hospitales de Toledo",
@@ -65,7 +65,7 @@
   },
   "avisos": {
     "revisarCadaMinutos": 60,
-    "comprobadoEn": "2026-10-28T14:05:00+01:00",
+    "comprobadoEn": "2026-10-28T15:05:00+01:00",
     "lista": [
       {
         "texto": "Si eres familiar directo de un posible afectado, la Guardia Civil pide aportar una muestra de ADN para agilizar la identificación (oficinas en Madrid, Sevilla, Córdoba y Toledo). Llama antes al teléfono para familiares.",
@@ -122,13 +122,13 @@
   },
   "linea": {
     "revisarCadaMinutos": 60,
-    "comprobadoEn": "2026-10-28T14:55:00+01:00",
+    "comprobadoEn": "2026-10-28T15:05:00+01:00",
     "estado": "Interrumpida la alta velocidad Madrid – Andalucía",
-    "detalle": "Sin previsión oficial de restablecimiento.",
-    "nivelFuente": 2,
+    "detalle": "Los trenes de la línea están detenidos en estaciones del trayecto: si tienes billete, contacta con tu compañía. Madrid–Toledo y Málaga–Sevilla funcionan con normalidad.",
+    "nivelFuente": 1,
     "fuente": {
-      "titulo": "Lecturas: comunicado de Adif",
-      "url": "https://www.lecturas.com/diario/adif-confirma-choque-dos-trenes-a-altura-yebenes-toledo-y-suspende-circulacion_200489"
+      "titulo": "Adif: estado de la red (aviso de las 12:50)",
+      "url": "https://www.adif.es/viajeros/estado-de-la-red"
     },
     "verificadoPor": [
       "AUTO-CLAUDE"

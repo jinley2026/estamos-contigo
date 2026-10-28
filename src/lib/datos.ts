@@ -19,6 +19,8 @@ export type Fuente = { titulo: string; url: string; fechaPublicacion?: string };
 export const SITE = site;
 export const ES_PREVIA = buildMode.mode !== 'public';
 export const MODO = site.estadoOperativo.modo as 'normal' | 'reducido' | 'cerrado';
+/** Decisión de Lin (28/10/2026, 15:05): en la publicación SOLO lo que está en un canal oficial del organismo (dominio de fuentes.json). Lo que solo recoge un medio no se publica. */
+export const SOLO_OFICIAL = !!(site as any).reglaFuentes?.soloCanalesOficiales;
 
 /** Un dato está verificado para publicar cuando dos personas del equipo lo han comprobado. */
 export const verificado = (x: { verificadoPor?: string[]; validadoPor?: string[] }) => {
@@ -55,16 +57,20 @@ export function visible(x: ConFuentes & { verificadoPor?: string[]; validadoPor?
   if (ES_PREVIA) return nivelOk;
   // Decisión de Lin (28/10, 12:47): se publican también datos de prensa (nivel 2) SIEMPRE con el organismo y el medio citados.
   // Sigue haciendo falta la verificación de dos personas y una fuente enlazada.
-  return nivelOk && verificado(x) && (x.nivelFuente === undefined && !x.fuente && !x.fuentes ? true : fuentesDe(x).length > 0);
+  const sinFuentePropia = x.nivelFuente === undefined && !x.fuente && !x.fuentes;
+  if (SOLO_OFICIAL && !sinFuentePropia && !confirmadoOficial(x)) return false;
+  return nivelOk && verificado(x) && (sinFuentePropia ? true : fuentesDe(x).length > 0);
 }
 /** Para elementos sueltos de una lista (hospitales, avisos): en publicación, solo los de origen oficial. */
-export const itemPublicable = (x: ConFuentes & { nivelFuente?: number }) => (x.nivelFuente ?? 1) <= 2 && fuentesDe(x).length > 0;
+export const itemPublicable = (x: ConFuentes & { nivelFuente?: number }) =>
+  (x.nivelFuente ?? 1) <= 2 && fuentesDe(x).length > 0 && (ES_PREVIA || !SOLO_OFICIAL || confirmadoOficial(x));
 
 export const canales = canalesData.canales;
 export const canalDestacado = canales.find((c) => c.destacado && c.telefono);
 export const actualizaciones = [...actualizacionesData.entradas]
   .filter((e) => e.estado !== 'retirado' || ES_PREVIA)
   .filter((e) => e.nivelFuente >= 1 && e.nivelFuente <= 2 && (ES_PREVIA || verificado(e)))
+  .filter((e) => ES_PREVIA || !SOLO_OFICIAL || e.estado === 'retirado' || confirmadoOficial(e))
   .sort((a, b) => b.fechaComunicado.localeCompare(a.fechaComunicado));
 export const correcciones = actualizacionesData.entradas.filter((e) => e.correccion);
 export const puntos = puntosData.puntos;

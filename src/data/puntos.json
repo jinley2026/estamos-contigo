@@ -2,25 +2,6 @@
   "_comentario": "Solo puntos ANUNCIADOS por un organismo. Nunca hospitales de ingreso de personas concretas ni el lugar del accidente. 'verificadoPor' con dos iniciales para publicar.",
   "puntos": [
     {
-      "id": "atocha-psicosocial",
-      "nombre": "Punto de atención psicosocial — Estación de Madrid-Puerta de Atocha",
-      "direccion": "Estación de Madrid-Puerta de Atocha, Madrid",
-      "funcion": "Atención psicosocial a víctimas y familiares.",
-      "organismo": "Agencia de Seguridad y Emergencias Madrid 112 (ASEM112), Comunidad de Madrid",
-      "horario": "No comunicado",
-      "telefono": "",
-      "nivelFuente": 2,
-      "fuente": {
-        "titulo": "Madrid Actual, recoge la información de Emergencias 112 Comunidad de Madrid",
-        "url": "https://www.madridactual.es/noticias-regionales/sucesos/accidente-comunidad-envia-8-dotaciones-bomberos-recursos-20261028-8125923.html"
-      },
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
-      "revisarCadaMinutos": 60,
-      "verificadoPor": [
-        "AUTO-CLAUDE"
-      ]
-    },
-    {
       "id": "adif-0",
       "nombre": "Punto de atención a afectados de Adif — Estación de Madrid-Puerta de Atocha Almudena Grandes",
       "direccion": "Estación de Madrid-Puerta de Atocha Almudena Grandes, Madrid",
@@ -33,7 +14,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -58,7 +39,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -83,7 +64,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -94,6 +75,26 @@
           "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
         }
       ]
+    },
+    {
+      "id": "adif-3",
+      "nombre": "Punto de atención a afectados de Adif — Estación de Málaga María Zambrano",
+      "direccion": "Estación de Málaga María Zambrano, Málaga",
+      "funcion": "Atención a los afectados.",
+      "organismo": "Adif",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 1,
+      "fuente": {
+        "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
+        "url": "https://www.adif.es/comunicacion/notas-prensa"
+      },
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": []
     },
     {
       "id": "urda-santo-cristo",
@@ -108,45 +109,27 @@
         "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
         "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
       },
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "fuentesAdicionales": []
     },
     {
       "id": "urda-pabellones",
-      "nombre": "Urda: pabellón para familias",
-      "direccion": "Urda (Toledo). Ubicación exacta: preguntar en el 900 10 10 20 o el 900 00 14 03",
-      "funcion": "El Ayuntamiento ha habilitado dos pabellones: uno para víctimas y otro para familias.",
-      "organismo": "Ayuntamiento de Urda (alcalde, Manuel Galán)",
+      "nombre": "Urda: albergue en el pabellón polideportivo",
+      "direccion": "Pabellón polideportivo de Urda (Toledo)",
+      "funcion": "Albergue para la primera atención a los afectados. No es un punto de información para familiares: llama antes al 900 122 112.",
+      "organismo": "Junta de Castilla-La Mancha (PLATECAM)",
       "horario": "No comunicado",
       "telefono": "",
-      "nivelFuente": 2,
+      "nivelFuente": 1,
       "fuente": {
-        "titulo": "Libertad Digital: el alcalde de Urda (10:55)",
-        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+        "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
       },
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
-      "revisarCadaMinutos": 60,
-      "verificadoPor": [
-        "AUTO-CLAUDE"
-      ]
-    },
-    {
-      "id": "yebenes-pabellon",
-      "nombre": "Los Yébenes: pabellón municipal",
-      "direccion": "Los Yébenes (Toledo). Ubicación exacta: canales oficiales del Ayuntamiento",
-      "funcion": "Atención a los afectados. Dispone de víveres y material de ayuda.",
-      "organismo": "Ayuntamiento de Los Yébenes",
-      "horario": "No comunicado",
-      "telefono": "",
-      "nivelFuente": 2,
-      "fuente": {
-        "titulo": "Libertad Digital: aviso del Ayuntamiento de Los Yébenes (14:10)",
-        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
-      },
-      "comprobadoEn": "2026-10-28T14:55:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"

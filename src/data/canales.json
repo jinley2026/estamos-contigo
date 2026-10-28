@@ -16,19 +16,9 @@
           "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
           "url": "https://www.adif.es/comunicacion/notas-prensa",
           "fechaPublicacion": "2026-10-28T11:30:00+01:00"
-        },
-        {
-          "titulo": "Castilla-La Mancha Media: cita la publicación de InfoRenfe sobre la activación del PAVAFF",
-          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/victimas-accidente-ferroviario-urda-toledo.html",
-          "fechaPublicacion": "2026-10-28T10:37:00+01:00"
-        },
-        {
-          "titulo": "Vozpópuli: Renfe activa el PAVAFF y habilita el 900 10 10 20",
-          "url": "https://www.vozpopuli.com/espana/accidente-de-tren-en-directo-afectados-heridos-y-ultima-hora-del-choque-entre-un-ave-e-iryo-en-toledo-hoy.html",
-          "fechaPublicacion": "2026-10-28T10:00:00+01:00"
         }
       ],
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -51,21 +41,16 @@
           "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
           "url": "https://www.adif.es/comunicacion/notas-prensa",
           "fechaPublicacion": "2026-10-28T11:30:00+01:00"
-        },
-        {
-          "titulo": "Telecinco: Iryo activa el 900 00 14 03 para afectados",
-          "url": "https://www.telecinco.es/noticias/sociedad/20261028/renfe-activa-telefono-atencion-familiares-accidente-ferroviario-tren-urda_18_020557528.html",
-          "fechaPublicacion": "2026-10-28T11:17:00+01:00"
         }
       ],
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
       "notaInterna": "Fuente: nota oficial de Adif. RECTIFICACIONES 28/10: (1) 12:00 se retiró el 655 28 69 75 por discrepar de Adif; (2) 12:10 se restituye porque la nota oficial de la Junta (nivel 1) también lo publica. Ambos se muestran con su fuente hasta que Iryo confirme. En Adamuz Iryo usó el 900 001 402: no confundir.",
       "organismoCorto": "Iryo, atención a familiares",
-      "discrepancia": "Para Iryo hay dos números: el 900 00 14 03, que publican Iryo y Adif, y el 655 28 69 75, que ha dado la Junta de Castilla-La Mancha. Si uno no responde, prueba el otro."
+      "discrepancia": "Para Iryo hay dos números: el 900 00 14 03, que publica Adif, y el 655 28 69 75, que ha dado la Junta de Castilla-La Mancha. Si uno no responde, prueba el otro."
     },
     {
       "id": "iryo-junta",
@@ -83,19 +68,14 @@
           "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
           "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de",
           "fechaPublicacion": "2026-10-28T10:30:00+01:00"
-        },
-        {
-          "titulo": "CMM: teléfonos de información ciudadana",
-          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/llamamiento-acudir-hospitales-accidente.html",
-          "fechaPublicacion": "2026-10-28T11:15:00+01:00"
         }
       ],
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
-      "discrepancia": "Para Iryo hay dos números: el 900 00 14 03, que publican Iryo y Adif, y el 655 28 69 75, que ha dado la Junta de Castilla-La Mancha. Si uno no responde, prueba el otro.",
+      "discrepancia": "Para Iryo hay dos números: el 900 00 14 03, que publica Adif, y el 655 28 69 75, que ha dado la Junta de Castilla-La Mancha. Si uno no responde, prueba el otro.",
       "notaInterna": "La nota oficial de la Junta escribe «IRIO». Número móvil. Confirmar con Iryo."
     },
     {
@@ -114,19 +94,9 @@
           "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
           "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de",
           "fechaPublicacion": "2026-10-28T10:30:00+01:00"
-        },
-        {
-          "titulo": "CMM: teléfonos de información ciudadana habilitados",
-          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/llamamiento-acudir-hospitales-accidente.html",
-          "fechaPublicacion": "2026-10-28T11:15:00+01:00"
-        },
-        {
-          "titulo": "CLM24: teléfonos y puntos de atención a familias",
-          "url": "https://www.clm24.es/provincias/toledo/accidente-tren-urda-telefonos-puntos-atencion-familias/20261028112136484837.html",
-          "fechaPublicacion": "2026-10-28T11:21:00+01:00"
         }
       ],
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:05:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"

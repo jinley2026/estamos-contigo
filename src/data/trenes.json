@@ -61,9 +61,14 @@
         "tipoFuente": "comunicado-oficial"
       },
       {
-        "titulo": "elEconomista: el 112 sitúa el choque a las 8:54 (Europa Press)",
-        "url": "https://www.eleconomista.es/transportes-turismo/noticias/d8429/10/26/Ultima-hora-del-accidente-de-tren-AVE-con-IRYO-hoy-en-directo-Urda-Toledo-heridos-y-comunicados.html",
-        "tipoFuente": "medio-citando"
+        "titulo": "112 Castilla-La Mancha: incidente «Urda. Accidente ferroviario» (08:54)",
+        "url": "https://112.castillalamancha.es/112/incidentes/urda-accidente-ferroviario",
+        "tipoFuente": "comunicado-oficial"
+      },
+      {
+        "titulo": "Adif: estado de la red (PK 118, entre Mora/Orgaz y Urda)",
+        "url": "https://www.adif.es/viajeros/estado-de-la-red",
+        "tipoFuente": "comunicado-oficial"
       }
     ],
     "organismos": [
