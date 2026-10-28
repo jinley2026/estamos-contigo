@@ -1629,6 +1629,114 @@
         }
       ],
       "fechaComunicado": "2026-10-28T18:10:00+01:00"
+    },
+    {
+      "id": "2026-10-28-boe-luto-real-decreto",
+      "titulo": "El BOE publica el real decreto de luto oficial: del jueves 29 al sábado 31",
+      "resumen": "El luto oficial rige desde las 00:00 del jueves 29 hasta las 24:00 del sábado 31 de octubre. La bandera nacional ondeará a media asta en todos los edificios públicos y en los buques de la Armada. El decreto se aprobó a propuesta del presidente del Gobierno y entró en vigor el mismo miércoles. Según EFE, publicado por Infobae (14:03).",
+      "organismo": "Gobierno de España (BOE)",
+      "categoria": "gobierno",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "EFE vía Infobae: «El BOE publica la declaración de luto oficial de tres días por el accidente de Urda» (14:03)",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/el-boe-publica-la-declaracion-de-luto-oficial-de-tres-dias-por-el-accidente-de-urda/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:03:00+01:00",
+      "publicadoEn": "2026-10-28T20:05:00+01:00",
+      "comprobadoEn": "2026-10-28T20:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "Diario de Santiago: «El BOE publica tres días de luto oficial por el accidente ferroviario de Urda»",
+          "url": "https://www.diariodesantiago.es/espana/el-boe-publica-tres-dias-de-luto-oficial-por-el-accidente-ferroviario-de-urda/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-28-rioja-luto",
+      "titulo": "La Rioja se suma a los tres días de luto oficial",
+      "resumen": "El Gobierno de La Rioja se suma al luto oficial decretado por el Gobierno de España, del jueves 29 al sábado 31: mantendrá solo la actividad institucional y de servicio público imprescindible, retirará de su agenda los actos de celebración y pondrá las banderas a media asta en los edificios públicos. Publicado por elDiario.es (18:27).",
+      "organismo": "Gobierno de La Rioja",
+      "categoria": "comunidades",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "elDiario.es: «El Gobierno de La Rioja se suma a los tres días de luto oficial por el accidente ferroviario de Urda» (18:27)",
+        "url": "https://www.eldiario.es/la-rioja/gobierno-rioja-suma-tres-dias-luto-oficial-accidente-ferroviario-urda_1_13622742.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T18:27:00+01:00",
+      "publicadoEn": "2026-10-28T20:05:00+01:00",
+      "comprobadoEn": "2026-10-28T20:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cadiz-luto-silencio",
+      "titulo": "Cádiz: Ayuntamiento y Diputación se suman al luto y suspenden su agenda",
+      "resumen": "El Ayuntamiento y la Diputación de Cádiz se suman al luto oficial de la Junta de Andalucía (de las 14:00 del miércoles 28 a las 14:00 del sábado 31), con banderas a media asta. La Diputación suspende su agenda institucional hasta el sábado. Hoy a las 20:00, minuto de silencio a las puertas del Ayuntamiento; el pleno del jueves 29 (9:30) empezará con otro minuto de silencio y solo tratará asuntos de trámite. Publicado por El Mira (17:13).",
+      "organismo": "Ayuntamiento y Diputación de Cádiz",
+      "categoria": "ayuntamientos",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "El Mira: «El Ayuntamiento y la Diputación de Cádiz suspenden su agenda: declaran 3 días de luto…» (17:13)",
+        "url": "https://www.elmira.es/articulo/cadiz/ayuntamiento-diputacion-cadiz-suspenden-agenda-declaran-3-dias-luto-accidente-ferroviario-toledo/20261028171349625214.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T17:13:00+01:00",
+      "publicadoEn": "2026-10-28T20:05:00+01:00",
+      "comprobadoEn": "2026-10-28T20:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cam-hospitales-ampliacion",
+      "titulo": "Madrid amplía la lista de hospitales públicos que atienden a heridos del accidente",
+      "resumen": "Según la Comunidad de Madrid, a los siete hospitales ya citados (La Paz, Doce de Octubre, Getafe, Puerta de Hierro, La Princesa, Fundación Jiménez Díaz y Henares) se suman el Hospital del Tajo, Fuenlabrada, Torrejón, Rey Juan Carlos, Infanta Sofía, Villalba y Clínico San Carlos. En Atocha sigue el dispositivo psicosocial del SUMMA (con psicólogos), con SAMUR-Protección Civil, Protección Civil y Cruz Roja y apoyo de Renfe y Adif. Las cifras de atendidos que da el texto no cuadran entre sí, por lo que no las publicamos. Publicado por ConSalud (ver hora en la fuente).",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "sanidad",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "ConSalud: «Madrid atiende a heridos del accidente de Toledo y mantiene un dispositivo psicosocial en Atocha» (17:06)",
+        "url": "https://www.consalud.es/autonomias/c-madrid/madrid-atiende-heridos-del-accidente-de-toledo-y-mantiene-un-dispositivo-psicosocial-en-atocha.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T17:06:00+01:00",
+      "publicadoEn": "2026-10-28T20:05:00+01:00",
+      "comprobadoEn": "2026-10-28T20:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "Demócrata: «La Comunidad de Madrid atiende a heridos en el accidente ferroviario de Urda»",
+          "url": "https://www.democrata.es/actualidad/la-comunidad-de-madrid-atiende-a-86-heridos-en-el-accidente-ferroviario-de-urda/"
+        }
+      ]
     }
   ]
 }
