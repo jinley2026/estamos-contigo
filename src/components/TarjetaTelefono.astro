@@ -22,13 +22,12 @@ const ok = c && verificado(c);
 ---
 {mostrar && c ? (
   <section
-    class={`tarjeta-tel temporal ${ok ? '' : 'pendiente'}`}
+    class="tarjeta-tel temporal"
     aria-labelledby="tel-titulo"
     data-comprobado={c.comprobadoEn}
     data-revisar={c.revisarCadaMinutos}
     data-sensible={c.sensible ? '' : undefined}
   >
-    {!ok && <span class="sello-pendiente">{textoPendiente}</span>}
     <p class="etiqueta" id="tel-titulo">{etiqueta}</p>
     <p class="numero" translate="no">{c.telefonoVisible}</p>
     <p class="organismo">{c.organismoCorto ?? c.organismo}</p>

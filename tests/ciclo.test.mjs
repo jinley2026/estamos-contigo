@@ -281,13 +281,13 @@ test('VIS-2. Con DATOS DE PRUEBA se ven marcados en la vista previa, no se suman
   site.visitas.activo = true;
   escribir('src/config/site.json', site);
   construir('preview');
-  const a = readFileSync(join(T, 'dist/index.html'), 'utf8').match(/<p class="pie-visitas"[\s\S]*?<\/p>/)[0];
+  const a = readFileSync(join(T, 'dist/index.html'), 'utf8').match(/<p class="barra-visitas"[\s\S]*?<\/p>/)[0];
   assert.match(a, /DATOS DE PRUEBA/);
   assert.match(a, /12\.345/);
   assert.match(a, /no disponible para el periodo completo/, 'no se inventan visitantes únicos');
   // «Recargar» = volver a servir la misma página: el número es fijo, no lo incrementa el navegador
   construir('preview');
-  const b = readFileSync(join(T, 'dist/index.html'), 'utf8').match(/<p class="pie-visitas"[\s\S]*?<\/p>/)[0];
+  const b = readFileSync(join(T, 'dist/index.html'), 'utf8').match(/<p class="barra-visitas"[\s\S]*?<\/p>/)[0];
   assert.equal(a, b);
   assert.ok(!/localStorage|document\.cookie|<script/.test(readFileSync(join(T, 'src/components/ContadorVisitas.astro'), 'utf8')), 'sin cookies ni almacenamiento');
   construir('public');

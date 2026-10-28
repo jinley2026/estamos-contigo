@@ -12,14 +12,14 @@ const hora = (iso: string) => (iso ? new Intl.DateTimeFormat('es-ES', { timeZone
     <h2 id="uh-titulo">Asistencia y avisos</h2>
     <p class="uh-hora">Revisado a las {hora(u.actualizadoEn)}</p>
   </div>
-  {ES_PREVIA && <p class="uh-previa">Lo marcado «{NO_CONFIRMADO}» procede de prensa y no se publicará hasta localizar el comunicado oficial.</p>}
+
 
 
   {visible(u.hospitales) && hosp.length > 0 && <div class="uh-bloque" data-comprobado={u.hospitales.comprobadoEn} data-revisar={u.hospitales.revisarCadaMinutos}>
     <h3>A dónde se traslada a los heridos</h3>
     <ul class="uh-lista">
       {hosp.map((h: any) => (
-        <li><strong>{h.centro}</strong> <span class="uh-papel">{h.papel}</span>{noOf(h) && <span class="sello-pendiente">{NO_CONFIRMADO}</span>}<span class="uh-fuente"><a href={h.fuente.url} rel="noopener noreferrer">{h.fuente.titulo}</a></span></li>
+        <li><strong>{h.centro}</strong> <span class="uh-papel">{h.papel}</span><span class="uh-fuente"><a href={h.fuente.url} rel="noopener noreferrer">{h.fuente.titulo}</a></span></li>
       ))}
     </ul>
     {u.hospitales.nota && itemPublicable(u.hospitales.nota) && <p class="uh-nota">{u.hospitales.nota.texto} <a href={u.hospitales.nota.fuente.url} rel="noopener noreferrer">{u.hospitales.nota.fuente.titulo}</a></p>}
@@ -32,7 +32,7 @@ const hora = (iso: string) => (iso ? new Intl.DateTimeFormat('es-ES', { timeZone
     <h3>Piden las autoridades</h3>
     <ul class="uh-lista">
       {avisos.map((a: any) => (
-        <li>{a.texto}{noOf(a) && <span class="sello-pendiente">{NO_CONFIRMADO}</span>}<span class="uh-fuente"><a href={a.fuente.url} rel="noopener noreferrer">{a.fuente.titulo}</a></span></li>
+        <li>{a.texto}<span class="uh-fuente"><a href={a.fuente.url} rel="noopener noreferrer">{a.fuente.titulo}</a></span></li>
       ))}
     </ul>
     <p class="aviso-caducado" role="status"></p>
@@ -40,7 +40,7 @@ const hora = (iso: string) => (iso ? new Intl.DateTimeFormat('es-ES', { timeZone
 
   {visible(u.linea) && <div class="uh-bloque" data-comprobado={u.linea.comprobadoEn} data-revisar={u.linea.revisarCadaMinutos}>
     <h3>La línea</h3>
-    <p>{noOf(u.linea) && <span class="sello-pendiente">{NO_CONFIRMADO}</span>}<strong>{u.linea.estado}.</strong> {u.linea.detalle} <span class="uh-fuente"><a href={u.linea.fuente.url} rel="noopener noreferrer">{u.linea.fuente.titulo}</a></span></p>
+    <p><strong>{u.linea.estado}.</strong> {u.linea.detalle} <span class="uh-fuente"><a href={u.linea.fuente.url} rel="noopener noreferrer">{u.linea.fuente.titulo}</a></span></p>
     <p class="aviso-caducado" role="status"></p>
   </div>}
 

@@ -64,7 +64,6 @@
   /* Tarjeta del teléfono */
   .tarjeta-tel { border-radius: var(--radio); padding: 1rem 1.1rem 1.1rem; margin: 1rem 0; background: var(--papel); color: var(--tinta); border: 2px solid var(--senal); }
   .panel .tarjeta-tel { border: 0; margin: 0; box-shadow: 0 0 0 4px rgba(255,255,255,.18); }
-  .tarjeta-tel.pendiente { box-shadow: 0 0 0 4px var(--aviso); }
   .tarjeta-tel .etiqueta { font-size: .95rem; font-weight: 700; margin: 0; color: var(--senal); }
   .tarjeta-tel .organismo { margin: .1rem 0 0; color: var(--tinta-suave); font-size: .92rem; }
   .tarjeta-tel .numero { font-size: clamp(1.7rem, 11vw, 2.6rem); font-weight: 700; letter-spacing: .01em; margin: .2rem 0 .1rem; color: var(--senal-hondo); line-height: 1.05; font-variant-numeric: tabular-nums; }
@@ -80,10 +79,13 @@
   .fechas { display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: .25rem .9rem; margin: .4rem 0; font-size: .85rem; }
   .fechas dt { font-weight: 700; color: var(--tinta-suave, #444); }
   .fechas dd { margin: 0; }
+  .nota-general { border-left: 6px solid var(--senal); background: var(--senal-claro); color: var(--tinta); border-radius: 10px; padding: .7rem .9rem; margin: 1rem 0; font-size: .92rem; }
+  .nota-general p { margin: .3rem 0; max-width: none; }
   .aviso-independencia { border: 2px solid #14365c; border-radius: 10px; padding: .9rem 1rem; margin: 1.2rem 0; background: #f3f6fa; }
   .aviso-independencia p { margin: .35rem 0; }
-  .pie-visitas { font-size: .85rem; margin: .6rem 0 0; }
-  .pie-visitas .prueba { background: var(--aviso); color: #000; font-weight: 700; padding: 0 .35rem; border-radius: 4px; }
+  .barra-visitas { position: sticky; top: 0; z-index: 20; margin: 0; padding: .3rem 16px; background: var(--senal); color: #fff; font-size: .8rem; text-align: center; max-width: none; }
+  .barra-visitas a { color: #fff; margin-left: .4rem; }
+  .barra-visitas .prueba { background: var(--aviso); color: #000; font-weight: 700; padding: 0 .35rem; border-radius: 4px; }
   .lista-control { list-style: none; padding: 0; }
   .lista-control li { padding: .35rem 0; border-bottom: 1px solid #ddd; }
   .lista-control .ok::before { content: "Cumplido · "; font-weight: 700; color: #14532d; }
@@ -150,7 +152,6 @@
   .sit-datos dd { margin: 0; }
   .cifras { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
   .cifra { border: 2px solid var(--senal); border-radius: var(--radio); padding: .8rem .9rem; display: grid; gap: .15rem; max-width: none; }
-  .cifra.pendiente { border-color: var(--aviso); }
   .cifra-etiqueta { color: var(--tinta-suave); font-size: .9rem; }
   .cifra-valor { font-size: 2rem; font-weight: 700; line-height: 1.1; color: var(--senal-hondo); font-variant-numeric: tabular-nums; }
   .cifra-estado { font-size: .85rem; font-weight: 700; display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
@@ -161,7 +162,6 @@
   .sin-cifra { font-weight: 700; color: var(--tinta-suave); }
   .fichas { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); }
   .ficha { border: 2px solid var(--senal); border-radius: var(--radio); padding: .9rem 1rem; }
-  .ficha.pendiente { border-color: var(--aviso); }
   .ficha h3 { margin: 0 0 .5rem; font-size: 1.4rem; color: var(--senal-hondo); }
   .ficha-servicio { background: var(--senal); color: #fff; border-radius: 6px; padding: .05rem .5rem; font-size: 1rem; vertical-align: .15em; }
   .ficha dl { margin: 0; display: grid; gap: .25rem; }

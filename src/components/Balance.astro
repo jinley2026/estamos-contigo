@@ -14,10 +14,10 @@ const sinDato = cifras.filter((c) => !c.vigente);
     {conDato.map((c) => {
       const a = c.vigente!;
       return (
-        <li class={`cifra ${a.estadoEditorial === 'pendiente' ? 'pendiente' : ''}`}>
+        <li class="cifra">
           <span class="cifra-etiqueta">{TIPOS[c.tipo]}</span>
           <span class="cifra-valor">{texto(a)}</span>
-          <span class="cifra-estado">{a.estadoDato === 'definitivo' ? 'Definitiva' : 'Provisional'}{!cifraOficial(a) ? <span class="sello-pendiente">{NO_CONFIRMADO}: no se publicará</span> : a.estadoEditorial === 'pendiente' && <span class="sello-pendiente">pendiente de verificar</span>}</span>
+          <span class="cifra-estado">{a.estadoDato === 'definitivo' ? 'Definitiva' : 'Provisional'}</span>
           <span class="cifra-fuente">{a.organismo}, {horaCorta(a.fechaComunicado)} · <a href={a.fuente.url} rel="noopener noreferrer">{tipoFuenteTexto(a.fuente.tipoFuente)}</a> · verificado {horaCorta(a.fechaVerificacion)}</span>
           {c.discrepancias.length > 0 && (
             <span class="cifra-discrepancia">

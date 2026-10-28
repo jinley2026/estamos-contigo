@@ -1,5 +1,5 @@
 ---
-// Contador del pie (petición de Lin, 28/10 12:00). Solo cifras agregadas reales del proveedor.
+// Contador fijo en la parte superior (petición de Lin, 28/10 12:00 y 12:32). Solo cifras agregadas reales del proveedor.
 // Sin cookies, sin identificadores, sin píxeles. No se incrementa al recargar: es un dato del servidor
 // que se vuelca en cada compilación. Si no hay dato verificado: «Datos no disponibles».
 import { SITE, ES_PREVIA, fechaHora } from '../lib/datos';
@@ -10,15 +10,14 @@ const hayDato = cfg?.activo === true && typeof v.visitas === 'number' && (!v.esP
 const n = (x: number) => x.toLocaleString('es-ES');
 const dia = (iso: string) => fechaHora(iso).split(',')[0];
 ---
-<p class="pie-visitas" data-contador-visitas>
+<p class="barra-visitas" lang="es" data-contador-visitas>
   {hayDato ? (
     <>
-      {v.esPrueba && <span class="prueba">DATOS DE PRUEBA</span>} Visitas acumuladas desde el {dia(v.desde)}: <strong>{n(v.visitas as number)}</strong>.
-      {' '}Visitantes únicos: {typeof v.visitantesUnicos === 'number' ? n(v.visitantesUnicos) : 'no disponible para el periodo completo'}.
-      {' '}Actualizado: {fechaHora(v.actualizadoEn)}.
+      {v.esPrueba && <span class="prueba">DATOS DE PRUEBA</span>} Visitas desde el {dia(v.desde)}: <strong>{n(v.visitas as number)}</strong>
+      {' '}· Únicos: {typeof v.visitantesUnicos === 'number' ? n(v.visitantesUnicos) : 'no disponible para el periodo completo'}
     </>
   ) : (
-    <>Visitas: Datos no disponibles.</>
+    <>Visitas: Datos no disponibles</>
   )}
-  {' '}Una visita no equivale a una persona ayudada. <a href="privacidad.html#estadisticas">Cómo se cuentan</a>
+  {' '}<a href="privacidad.html#estadisticas">Cómo se cuentan</a>
 </p>

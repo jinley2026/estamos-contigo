@@ -12,8 +12,7 @@ const lista = puntos.filter((p) => visible(p));
 
   {lista.length === 0 && <p>No hay puntos de atención confirmados en este momento.</p>}
   {lista.map((p) => (
-    <section class={`caja temporal ${verificado(p) ? '' : 'caja-pendiente'}`} data-comprobado={p.comprobadoEn} data-revisar={p.revisarCadaMinutos}>
-      {!verificado(p) && <p><span class="sello-pendiente">Pendiente de verificación — no difundir</span></p>}
+    <section class="caja temporal" data-comprobado={p.comprobadoEn} data-revisar={p.revisarCadaMinutos}>
       <h2>{p.nombre}</h2>
       <p><strong>Para qué:</strong> {p.funcion}</p>
       <p><strong>Organismo:</strong> {p.organismo}</p>

@@ -10,7 +10,7 @@ const errores = Object.values(e.fuentes ?? {}).filter((f: any) => f.ok === false
   <dl>
     <div><dt>Última consulta automática</dt><dd>{e.ultimaConsulta ? <>{horaCorta(e.ultimaConsulta)} <span class="es-hace" data-desde={e.ultimaConsulta}></span></> : 'Todavía no se ha ejecutado'}</dd></div>
     <div><dt>Última fuente que respondió</dt><dd>{e.ultimaFuenteOk ? `${horaCorta(e.ultimaFuenteOk.hora)} · ${e.ultimaFuenteOk.nombre.split(' — ')[0]}` : 'Ninguna'}</dd></div>
-    <div><dt>Última información aprobada</dt><dd>{aprobada ? fechaHora(aprobada).replace(' (hora peninsular)', '') : 'Ninguna todavía: todo está pendiente de verificar'}</dd></div>
+    <div><dt>Última información aprobada</dt><dd>{aprobada ? fechaHora(aprobada).replace(' (hora peninsular)', '') : 'Ninguna todavía'}</dd></div>
   </dl>
   {((SITE as any).automatizacion?.suspendida || e.suspendido) && <p class="es-alerta" role="alert">La consulta automática está suspendida ({(SITE as any).automatizacion?.motivo || e.suspendido?.motivo}). Mostramos la última información aprobada; consulta directamente los canales oficiales.</p>}
   {(!e.ultimoCicloOk && e.ultimaConsulta) && <p class="es-alerta" role="alert">La última consulta automática no obtuvo respuesta de ninguna fuente oficial. Consulta directamente los canales oficiales.</p>}

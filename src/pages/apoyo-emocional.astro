@@ -43,8 +43,7 @@ const recursos = apoyo.filter((r) => visible(r));
 
   <h2>Recursos</h2>
   {recursos.map((r) => (
-    <div class={`caja ${verificado(r) ? '' : 'caja-pendiente'}`}>
-      {!verificado(r) && <p><span class="sello-pendiente">Pendiente de comprobación — no difundir</span></p>}
+    <div class="caja">
       <p><strong>{r.nombre}</strong> — {/^\d+$/.test(r.contacto) ? <a href={`tel:${r.contacto}`}>{r.contacto}</a> : r.contacto}</p>
       <p>{r.para}</p>
     </div>

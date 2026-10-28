@@ -11,8 +11,7 @@ const lista = trenes.filter((t) => visible(t));
     {lista.map((t) => {
       const p = cifra('pasajeros', `tren:${t.id}`).vigente;
       return (
-        <article class={`ficha ${verificado(t) ? '' : 'pendiente'}`} aria-label={`${t.servicio} ${t.numero}`}>
-          {!confirmadoOficial(t) && <p><span class="sello-pendiente">{NO_CONFIRMADO}: ficha no publicable</span></p>}
+        <article class="ficha" aria-label={`${t.servicio} ${t.numero}`}>
           <h3><span class="ficha-servicio">{t.servicio}</span> {t.numero}</h3>
           <dl>
             <div><dt>Operador</dt><dd>{t.operador}</dd></div>

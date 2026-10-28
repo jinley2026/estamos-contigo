@@ -4,7 +4,8 @@ import { actualizaciones, canales, puntos, trenes, hecho, ultimahora, categorias
 import { cifra, texto, TIPOS, cifraOficial } from './afirmaciones';
 import { NO_CONFIRMADO, confirmadoOficial } from './datos';
 // En la vista previa, lo que solo publica la prensa aparece en el buscador marcado «No confirmado oficialmente».
-const marca = (oficial: boolean) => (oficial ? '' : `[${NO_CONFIRMADO}] `);
+// La incertidumbre se explica una sola vez en la nota superior (sin marcas por resultado).
+const marca = (_oficial: boolean) => '';
 
 export type Entrada = { titulo: string; respuesta: string; claves: string; fuente: { titulo: string; url: string } | null; fecha: string; enlace: string };
 const e: Entrada[] = [];
@@ -37,7 +38,7 @@ for (const t of trenes.filter((x) => visible(x))) {
   const nombre = `${t.servicio} ${t.numero}`;
   e.push({
     titulo: `${nombre} (${t.operador})`,
-    respuesta: (p && !cifraOficial(p) || !confirmadoOficial(t) ? `[${NO_CONFIRMADO}] ` : '') + [
+    respuesta: [
       t.origen && t.destino ? `Circulaba de ${t.origen} a ${t.destino}.` : `Origen y destino: ${NO_CONFIRMADO.toLowerCase()}.`,
       t.salida ? `Salida: ${t.salida}.` : `Hora de salida: ${NO_CONFIRMADO.toLowerCase()}.`,
       p ? `Pasajeros a bordo: ${texto(p)}, según ${p.organismo}.` : `Pasajeros a bordo: ${NO_CONFIRMADO.toLowerCase()}.`
