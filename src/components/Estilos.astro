@@ -421,4 +421,37 @@
   .avisos-rapidos li { color: #7a1414; }
   .boton-buscar { background: var(--senal); color: #fff; border-color: var(--senal); }
   @media print { .teletipo, .banda-aviso, .cabecera nav, .ajustes, .saltar { display: none; } }
+
+  /* Portada en dos columnas (Lin, 28/10 17:20): cabecera compacta, familias a la izquierda, tablón de noticias a la derecha. */
+  .contenedor-ancho { max-width: 1240px; }
+  .cabecera-compacta { background: var(--senal); color: #fff; margin: 0 -16px; padding: .8rem 16px .9rem; }
+  .cabecera-compacta h1 { color: #fff; margin: 0 0 .5rem; font-size: 1.25rem; line-height: 1.2; }
+  .tel-rapidos { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem .5rem; }
+  .tel-rapidos-etiqueta { font-weight: 700; margin-right: .2rem; }
+  .tel-chip { display: inline-flex; align-items: baseline; gap: .4rem; background: #fff; color: var(--rojo, #b3261e); font-weight: 700; font-size: 1.1rem; text-decoration: none; border-radius: 999px; padding: .35rem .85rem; white-space: nowrap; }
+  .tel-chip-org { color: var(--senal); font-size: .8rem; font-weight: 700; }
+  .tel-chip-sec { background: rgba(255,255,255,.14); color: #fff; font-size: .95rem; }
+  .tel-chip-sec .tel-chip-org { color: #fff; opacity: .85; }
+  .portada-grid { display: grid; gap: 1.2rem; margin-top: 1rem; }
+  .portada-grid > div { min-width: 0; }
+  .portada-der .directo { margin-top: 0; }
+  .portada-der { order: -1; }
+  @media (min-width: 900px) {
+    .portada-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: start; }
+    .portada-der { order: 0; position: sticky; top: 3rem; max-height: calc(100vh - 3.5rem); overflow-y: auto; border: 2px solid var(--linea); border-radius: var(--radio); padding: .6rem .9rem; background: #fff; }
+  }
+  .familias { border: 2px solid var(--senal); border-radius: var(--radio); padding: .8rem .95rem; }
+  .familias h2 { margin: 0 0 .3rem; font-size: 1.25rem; }
+  .familias-nota { margin: 0 0 .6rem; font-size: .92rem; color: var(--tinta-suave); }
+  .familias-ciudad h3 { margin: .7rem 0 .25rem; font-size: 1rem; color: var(--senal); border-bottom: 1px solid var(--linea); padding-bottom: .15rem; }
+  .familias-ciudad ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
+  .familias-ciudad li { display: grid; gap: .05rem; max-width: none; font-size: .93rem; line-height: 1.35; }
+  .familias-dir { font-weight: 700; }
+  .familias-fun { color: var(--tinta-suave); }
+  .que-hacer-col { grid-template-columns: 1fr !important; }
+  .tel-chip { max-width: 100%; flex-wrap: wrap; }
+  .tel-chip-sec { white-space: normal; }
+  .portada-der .aviso h3 { font-size: 1.08rem; line-height: 1.25; margin: .15rem 0 .2rem; }
+  .portada-der .aviso-resumen { font-size: .93rem; }
+  .portada-der .aviso-fuente { font-size: .82rem; }
 </style>

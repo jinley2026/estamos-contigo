@@ -13,8 +13,9 @@ interface Props {
   lang?: string;
   ligera?: boolean;
   autorecarga?: boolean;
+  ancho?: boolean;
 }
-const { titulo, descripcion = SITE.subtitulo, lang = 'es', ligera = false, autorecarga = false } = Astro.props;
+const { titulo, descripcion = SITE.subtitulo, lang = 'es', ligera = false, autorecarga = false, ancho = false } = Astro.props;
 const eo = SITE.estadoOperativo;
 const esPortada = /^\/?(index(\.html)?)?$/.test(Astro.url.pathname.replace(/^\/estamos-contigo/, '').replace(/\/$/, ''));
 const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suceso.titulo}` : `${titulo} · ${SITE.nombre}`;
@@ -97,7 +98,7 @@ const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suces
         </div>
       </nav>
     )}
-    <main id="contenido" class="contenedor">
+    <main id="contenido" class={ancho ? "contenedor contenedor-ancho" : "contenedor"}>
       <NotaGeneral />
       <slot />
       {!esPortada && <p class="volver-portada"><a class="boton-sec" href="index.html">&#8592; Volver a la portada</a></p>}

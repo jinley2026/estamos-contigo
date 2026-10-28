@@ -85,7 +85,7 @@ export const trenes = trenesData.trenes;
 export const hecho = trenesData.hecho;
 export const estadoSistema = estadoData as any;
 export const fuentesConfig = fuentesData;
-export const CATEGORIAS: Record<string, string> = { gobierno: 'Gobierno de España', ministerio: 'Ministerio de Transportes', junta: 'Junta de Castilla-La Mancha', adif: 'Adif', renfe: 'Renfe', iryo: 'Iryo', emergencias: 'Emergencias', guardiacivil: 'Guardia Civil', ouigo: 'Ouigo', sanidad: 'Sanidad', ayuntamientos: 'Ayuntamientos', cruzroja: 'Cruz Roja', policia: 'Policía Nacional', justicia: 'Administración de Justicia', comunidades: 'Otras comunidades autónomas', otros: 'Otros organismos' };
+export const CATEGORIAS: Record<string, string> = { gobierno: 'Gobierno de España', ministerio: 'Ministerios', junta: 'Junta de Castilla-La Mancha', adif: 'Adif', renfe: 'Renfe', iryo: 'Iryo', emergencias: 'Emergencias', guardiacivil: 'Guardia Civil', ouigo: 'Ouigo', sanidad: 'Sanidad', ayuntamientos: 'Ayuntamientos', cruzroja: 'Cruz Roja', policia: 'Policía Nacional', justicia: 'Administración de Justicia', comunidades: 'Otras comunidades autónomas', otros: 'Otros organismos' };
 export const tipoFuenteTexto = (t: string) => (t === 'comunicado-oficial' ? 'Comunicado oficial' : 'Medio de comunicación');
 export const horaCorta = (iso: string) => (iso ? new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', hour: '2-digit', minute: '2-digit' }).format(new Date(iso)) : '');
 export const otrosCanales = canalesData.canales.filter((c) => !c.destacado && c.telefono);

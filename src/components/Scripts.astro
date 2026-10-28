@@ -76,7 +76,9 @@
   var bv = document.querySelector('[data-cv]');
   if (bv && window.fetch) {
     var tv = bv.querySelector('[data-visitas-total]');
-    var dentro = document.referrer && document.referrer.indexOf(location.host) !== -1;
+    var nav = (performance.getEntriesByType && performance.getEntriesByType('navigation')[0]) || {};
+    var recarga = nav.type === 'reload' || nav.type === 'back_forward';
+    var dentro = recarga || (document.referrer && document.referrer.indexOf(location.host) !== -1);
     var fn = dentro ? 'total_visitas' : 'sumar_visita';
     fetch(bv.getAttribute('data-cv') + '/rest/v1/rpc/' + fn, {
       method: 'POST', credentials: 'omit', cache: 'no-store',

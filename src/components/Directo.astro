@@ -4,15 +4,15 @@
 // Sin JavaScript se ve igual, con la hora exacta.
 import { actualizaciones, horaCorta, CATEGORIAS } from '../lib/datos';
 import Sello from './Sello.astro';
-interface Props { limite?: number; completo?: boolean }
-const { limite = 6, completo = false } = Astro.props;
+interface Props { limite?: number; completo?: boolean; titulo?: string }
+const { limite = 6, completo = false, titulo = 'En directo' } = Astro.props;
 const lista = actualizaciones.filter((e) => e.estado !== 'retirado').slice(0, limite);
 const ultima = lista[0];
 const medio = (t: string) => t.split(/[:,(]/)[0].trim();
 ---
 <section class="directo" aria-labelledby="directo-titulo" id="novedades">
   <div class="directo-cabecera">
-    <h2 id="directo-titulo"><span class="punto-vivo" aria-hidden="true"></span>En directo</h2>
+    <h2 id="directo-titulo"><span class="punto-vivo" aria-hidden="true"></span>{titulo}</h2>
     {ultima && <p class="directo-hora">Último aviso: <time datetime={ultima.fechaComunicado}>{horaCorta(ultima.fechaComunicado)}</time> <span class="hace" data-desde={ultima.fechaComunicado}></span></p>}
   </div>
   <ol class="linea-tiempo">

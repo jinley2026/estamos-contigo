@@ -1,6 +1,5 @@
 ---
 import Layout from '../components/Layout.astro';
-import TarjetaTelefono from '../components/TarjetaTelefono.astro';
 import EstadoSistema from '../components/EstadoSistema.astro';
 import Alertas from '../components/Alertas.astro';
 import Balance from '../components/Balance.astro';
@@ -10,53 +9,82 @@ import Teletipo from '../components/Teletipo.astro';
 import UltimaHora from '../components/UltimaHora.astro';
 import Sello from '../components/Sello.astro';
 import AvisoIndependencia from '../components/AvisoIndependencia.astro';
-import { canales, SITE, ES_PREVIA, MODO, otrosCanales, visible, hecho, horaCorta, ultimahora, itemPublicable, confirmadoOficial } from '../lib/datos';
+import { puntos, canales, SITE, ES_PREVIA, MODO, otrosCanales, visible, hecho, horaCorta, ultimahora, itemPublicable, confirmadoOficial } from '../lib/datos';
 // Los teléfonos salen de los datos y respetan la verificación: nunca escritos a mano en la página.
 const telFamilias = canales.filter((c: any) => ['renfe-familiares', 'iryo-familiares'].includes(c.id) && c.telefono && visible(c));
 const fuentesHecho = hecho.fuentes.filter((f: any) => itemPublicable({ fuente: f, nivelFuente: f.tipoFuente === 'comunicado-oficial' ? 1 : 2 }));
 const flecha = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const otros = otrosCanales.filter((c) => visible(c));
+// Puntos para familiares agrupados por ciudad (Lin, 28/10 17:20): a la vista en la portada.
+const CIUDADES = ['Madrid', 'Sevilla', 'Córdoba', 'Toledo', 'Málaga', 'Urda', 'Los Yébenes', 'Orgaz'];
+const grupos = new Map<string, any[]>();
+for (const p of puntos.filter((p: any) => visible(p))) {
+  const t = `${p.nombre} ${p.direccion}`;
+  const c = ['Toledo', 'Urda', 'Los Yébenes', 'Orgaz'].some((x) => t.includes(x)) && !t.includes('Comandancia de la Guardia Civil de Toledo') ? 'Provincia de Toledo' : (CIUDADES.find((x) => t.includes(x)) ?? 'Otros');
+  if (!grupos.has(c)) grupos.set(c, []);
+  grupos.get(c)!.push(p);
+}
+const ORDEN = ['Madrid', 'Sevilla', 'Córdoba', 'Toledo', 'Provincia de Toledo', 'Málaga', 'Otros'];
+const ciudades = [...grupos.entries()].sort((a, b) => ORDEN.indexOf(a[0]) - ORDEN.indexOf(b[0]));
 ---
-<Layout titulo={SITE.nombre} autorecarga>
+<Layout titulo={SITE.nombre} autorecarga ancho>
   <Teletipo slot="teletipo" />
-  <section class="panel" aria-labelledby="titulo-suceso">
+  <section class="cabecera-compacta" aria-labelledby="titulo-suceso">
     <h1 id="titulo-suceso">{SITE.suceso.titulo}</h1>
-    <p class="pregunta">¿Buscas a un familiar que viajaba en los trenes?</p>
-    <TarjetaTelefono />
-    {otros.length > 0 && (
-      <ul class="otros-tel">
-        {otros.map((c) => (
-          <li class="temporal" data-comprobado={c.comprobadoEn} data-revisar={c.revisarCadaMinutos} data-sensible="">
-            <span>{c.organismoCorto ?? c.organismo}<Sello e={c} /></span>
-            <a class="accion-llamar" href={`tel:${c.telefono}`}>{c.telefonoVisible}</a>
-            <span class="aviso-caducado">Pendiente de revisión</span>
-          </li>
-        ))}
-      </ul>
-    )}
+    <div class="tel-rapidos">
+      <span class="tel-rapidos-etiqueta">Familiares, llamad a:</span>
+      {telFamilias.map((c: any) => <a class="tel-chip" href={`tel:${c.telefono}`}><span class="tel-chip-org">{c.id.startsWith('renfe') ? 'Renfe' : 'Iryo'}</span> {c.telefonoVisible}</a>)}
+      {otros.filter((c: any) => !['renfe-familiares', 'iryo-familiares'].includes(c.id)).slice(0, 2).map((c: any) => <a class="tel-chip tel-chip-sec" href={`tel:${c.telefono}`}><span class="tel-chip-org">{c.id.includes('112') ? '112 Castilla-La Mancha' : (c.organismoCorto ?? c.organismo)}</span> {c.telefonoVisible}</a>)}
+    </div>
   </section>
 
   <Alertas />
 
-  <ul class="que-hacer" aria-label="Qué hacer ahora">
-    <li>
-      <h2>Si buscas a un familiar</h2>
-      {telFamilias.map((c: any) => <p class="tel-linea"><span class="tel-etiqueta">{c.id.startsWith('renfe') ? 'AVE de Renfe' : 'Iryo'}</span><a class="tel-boton" href={`tel:${c.telefono}`}><span aria-hidden="true">&#9742;</span> {c.telefonoVisible}</a></p>)}
-      {telFamilias.length === 0 && <p>Consulta los teléfonos en renfe.com e iryo.eu.</p>}
-      <p>Ten a mano su nombre completo, DNI y el tren. No vayas a la zona ni a urgencias: allí no informan.</p>
-      <p><a href="busco-a-un-familiar.html">Qué más puedes hacer</a></p>
-    </li>
-    <li>
-      <h2>Si tenías billete hoy</h2>
-      <p>No vayas a la estación: la alta velocidad Madrid–Andalucía está cortada. Renfe cambia o anula el billete gratis.</p>
-      <p><a href="viaje-afectado.html">Cambios y anulaciones</a></p>
-    </li>
-    <li>
-      <h2>Si quieres ayudar</h2>
-      <p>Dona sangre en los hospitales de Toledo o Ciudad Real, o en el Centro de Transfusión de Madrid. No compartas fotos ni nombres de víctimas.</p>
-      <p><a href="quiero-ayudar.html">Cómo ayudar sin estorbar</a></p>
-    </li>
-  </ul>
+  <div class="portada-grid">
+    <div class="portada-izq">
+      <section class="familias" aria-labelledby="familias-titulo">
+        <h2 id="familias-titulo">Dónde acudir si eres familiar</h2>
+        <p class="familias-nota">Llama antes al teléfono de familiares. No vayas al lugar del accidente ni a urgencias.</p>
+        {ciudades.map(([ciudad, lista]) => (
+          <div class="familias-ciudad">
+            <h3>{ciudad}</h3>
+            <ul>
+              {lista.map((p: any) => (
+                <li>
+                  <strong>{p.nombre.split(' — ')[0]}</strong>
+                  <span class="familias-dir">{p.direccion}</span>
+                  <span class="familias-fun">{p.funcion.split('. ')[0].replace(/\.$/, '')}.</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+        <p><a href="puntos-de-atencion.html">Todos los puntos, con horarios y fuentes</a></p>
+      </section>
+
+      <ul class="que-hacer que-hacer-col" aria-label="Qué hacer ahora">
+        <li>
+          <h2>Si buscas a un familiar</h2>
+          <p>Ten a mano su nombre completo, DNI y el tren. Los familiares de primer grado pueden aportar ADN en las oficinas de la Guardia Civil indicadas arriba.</p>
+          <p><a href="busco-a-un-familiar.html">Qué más puedes hacer</a></p>
+        </li>
+        <li>
+          <h2>Si tenías billete hoy</h2>
+          <p>No vayas a la estación: la alta velocidad Madrid–Andalucía está cortada. Renfe cambia o anula el billete gratis.</p>
+          <p><a href="viaje-afectado.html">Cambios y anulaciones</a></p>
+        </li>
+        <li>
+          <h2>Si quieres ayudar</h2>
+          <p>Antes de ir a donar sangre, consulta los avisos del tablón: Madrid pide esperar a mañana. No compartas fotos ni nombres de víctimas.</p>
+          <p><a href="quiero-ayudar.html">Cómo ayudar sin estorbar</a></p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="portada-der">
+      <Directo limite={14} titulo="Tablón de noticias" />
+    </div>
+  </div>
 
   {MODO === 'reducido' ? (
     <p class="caja caja-pendiente">La web funciona en modo reducido: solo mostramos enlaces a los canales oficiales.</p>
@@ -75,7 +103,6 @@ const otros = otrosCanales.filter((c) => visible(c));
       </section>
 
       <Balance />
-      <Directo />
       <UltimaHora />
       <FichasTrenes />
     </div>
