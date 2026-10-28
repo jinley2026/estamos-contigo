@@ -71,22 +71,21 @@
   var alertasN = document.querySelectorAll('.alerta-nueva[data-hasta]');
   for (var an = 0; an < alertasN.length; an++) if (Date.now() < Date.parse(alertasN[an].getAttribute('data-hasta'))) alertasN[an].hidden = false;
 
-  /* Contador de visitas: lee el total de GoatCounter. Si falla, «Datos no disponibles». */
-  var bv = document.querySelector('[data-gc]');
+  /* Contador de visitas en tiempo real (Supabase). Suma 1 al entrar en la web desde fuera;
+     al moverse entre páginas de la web solo lee el total. Sin cookies ni almacenamiento en el navegador. */
+  var bv = document.querySelector('[data-cv]');
   if (bv && window.fetch) {
     var tv = bv.querySelector('[data-visitas-total]');
-    var nc = '?nc=' + Date.now();
-    var leer = function (ruta) {
-      return fetch(bv.getAttribute('data-gc') + '/counter/' + ruta + '.json' + nc, { credentials: 'omit' })
-        .then(function (r) { return r.ok ? r.json() : { count: '0' }; })
-        .then(function (j) { return parseInt(String(j.count_unique || j.count || '0').replace(/\D/g, ''), 10) || 0; })
-        .catch(function () { return null; });
-    };
-    // «/» = todas las visitas desde las 14:35; «/index» = las de antes (cuando cada página contaba por separado).
-    Promise.all([leer('/'), leer('/index')]).then(function (v) {
-      if (v[0] === null && v[1] === null) { tv.textContent = 'Datos no disponibles'; return; }
-      tv.textContent = ((v[0] || 0) + (v[1] || 0)).toLocaleString('es-ES');
-    });
+    var dentro = document.referrer && document.referrer.indexOf(location.host) !== -1;
+    var fn = dentro ? 'total_visitas' : 'sumar_visita';
+    fetch(bv.getAttribute('data-cv') + '/rest/v1/rpc/' + fn, {
+      method: 'POST', credentials: 'omit', cache: 'no-store',
+      headers: { 'apikey': bv.getAttribute('data-cv-clave'), 'Content-Type': 'application/json' },
+      body: '{}'
+    })
+      .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+      .then(function (n) { n = parseInt(n, 10); tv.textContent = isNaN(n) ? 'Datos no disponibles' : n.toLocaleString('es-ES'); })
+      .catch(function () { tv.textContent = 'Datos no disponibles'; });
   }
 
   /* Botón «Volver»: vuelve a la página anterior de esta web; si se llegó desde fuera, va a la portada. */

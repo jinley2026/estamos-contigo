@@ -1,20 +1,15 @@
 ---
-// Contador fijo arriba (Lin, 28/10 12:00, 12:32 y 14:08). Proveedor: GoatCounter, sin cookies ni datos personales.
-// 1) Cuenta la visita con una imagen de 1 px (sin script externo).
-// 2) Muestra el total que publica GoatCounter (puede ir con hasta 4 h de retraso por su caché).
-// Si GoatCounter no responde, se muestra «Datos no disponibles»: nunca se inventa una cifra.
+// Contador fijo arriba (Lin, 28/10 12:00, 12:32, 14:08 y 15:23). Cuenta en tiempo real con Supabase:
+// la base de datos guarda solo un número total; no hay cookies ni datos personales.
+// Si no responde, se muestra «Datos no disponibles»: nunca se inventa una cifra.
 import { SITE, ES_PREVIA } from '../lib/datos';
 const cfg = (SITE as any).visitas;
-const gc = cfg?.activo && cfg?.proveedor === 'goatcounter' && cfg?.codigo ? `https://${cfg.codigo}.goatcounter.com` : '';
-// Todas las páginas cuentan en la misma ruta «/» para poder leer al momento el total de la web
-// (el «TOTAL» de GoatCounter se recalcula con horas de retraso; el recuento por ruta es inmediato).
-const ruta = '/';
+const activo = cfg?.activo && cfg?.proveedor === 'supabase' && cfg?.url && cfg?.clavePublica && !ES_PREVIA;
 const { inicio = false } = Astro.props as { inicio?: boolean };
 ---
-<p class="barra-visitas" lang="es" data-contador-visitas data-gc={gc || undefined}>
+<p class="barra-visitas" lang="es" data-contador-visitas data-cv={activo ? cfg.url : undefined} data-cv-clave={activo ? cfg.clavePublica : undefined}>
   {inicio && <a class="barra-inicio" href="index.html">&#8592; Inicio</a>}
   <span class="visitas-icono" aria-hidden="true">&#9679;</span>
-  <span><strong class="visitas-total" data-visitas-total>{gc ? '…' : 'Datos no disponibles'}</strong><span class="txt-largo"> personas han consultado esta web</span><span class="txt-corto"> personas la han consultado</span></span>
+  <span><strong class="visitas-total" data-visitas-total>{activo ? '…' : 'Datos no disponibles'}</strong><span class="txt-largo"> visitas a esta web</span><span class="txt-corto"> visitas</span></span>
   <a class="barra-como" href="privacidad.html#estadisticas">Cómo se cuentan</a>
-  {gc && !ES_PREVIA && <img class="visitas-pixel" src={`${gc}/count?p=${encodeURIComponent(ruta)}`} alt="" width="1" height="1" referrerpolicy="no-referrer-when-downgrade" />}
 </p>

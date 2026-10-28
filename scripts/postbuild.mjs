@@ -17,11 +17,11 @@ const csp = (scripts, estilos) =>
     "default-src 'none'",
     `script-src ${scripts.size ? [...scripts].join(' ') : "'none'"}`,
     `style-src ${estilos.size ? [...estilos].join(' ') : "'none'"}`,
-    "img-src 'self' data: https://accidentetrentoledo.goatcounter.com",
+    "img-src 'self' data:",
     "font-src 'self'",
     "base-uri 'none'",
     "form-action 'none'",
-    "connect-src https://accidentetrentoledo.goatcounter.com",
+    "connect-src https://mxfoqlmxvfwutzwjpwkw.supabase.co",
     "object-src 'none'"
   ].join('; ');
 

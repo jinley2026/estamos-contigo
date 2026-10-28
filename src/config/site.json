@@ -65,13 +65,11 @@
     "fechaDecision": ""
   },
   "visitas": {
-    "_comentario": "Decisión de Lin (28/10 14:08): contador visible que sume cada visita. GoatCounter: sin cookies ni datos personales; cuenta con una imagen sin script externo y el total se lee de su JSON (caché de hasta 4 h según su documentación).",
     "activo": true,
-    "proveedor": "goatcounter",
-    "codigo": "accidentetrentoledo",
-    "verificadoPor": [
-      "AUTO-CLAUDE"
-    ]
+    "proveedor": "supabase",
+    "url": "https://mxfoqlmxvfwutzwjpwkw.supabase.co",
+    "clavePublica": "sb_publishable_zWTVBM8VkITbbljSahyIBQ_hTw4oV_t",
+    "nota": "Solo un número total. Suma 1 al entrar desde fuera de la web. Sin cookies ni datos personales."
   },
   "automatizacion": {
     "_comentario": "suspendida=true detiene el ciclo y oculta las novedades automáticas (sección 7 V3). Se activa sola si el ciclo detecta errores relevantes.",

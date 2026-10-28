@@ -40,14 +40,14 @@ const dom = datoReservado('domicilio');
 
   <h2 id="estadisticas">4. Estadísticas de audiencia (contador de visitas)</h2>
   <p>
-    El contador de la parte superior usa <strong>GoatCounter</strong> (goatcounter.com), un servicio de estadísticas de código abierto.
-    Al cargar cada página, tu navegador pide a GoatCounter una imagen de 1 píxel, y así se suma la visita. Según GoatCounter, cuenta
-    las visitas <strong>sin cookies y sin guardar datos personales</strong>, y no sigue a las personas con identificadores. Nosotros no
-    instalamos cookies ni recibimos datos de quién eres: solo vemos totales.
+    El contador de la parte superior usa una base de datos de <strong>Supabase</strong> (supabase.com, servidores en la Unión Europea).
+    Cuando entras en la web desde fuera (un enlace, un buscador, escribiendo la dirección), tu navegador pide a esa base de datos que
+    sume 1 al total; al moverte entre páginas de la web solo se lee el total, sin sumar. La base de datos guarda <strong>un único número</strong>:
+    no guarda quién eres, ni tu dirección IP, ni ningún identificador. No instalamos cookies ni guardamos nada en tu navegador para contar.
   </p>
   <ul>
-    <li>Al pedir esa imagen, GoatCounter recibe datos técnicos de la conexión (como la dirección IP y el navegador), igual que cualquier web que visitas. Se trata según su política de privacidad.</li>
-    <li>El número de «personas» es la estimación de visitantes únicos que hace GoatCounter sin cookies: una misma persona desde dos dispositivos cuenta dos veces. Se actualiza con unos minutos de retraso y puede incluir algunos accesos automáticos.</li>
+    <li>Al hacer esa petición, Supabase recibe datos técnicos de la conexión (como la dirección IP y el navegador), igual que cualquier web que visitas. Se tratan según su política de privacidad.</li>
+    <li>La cifra cuenta <strong>visitas, no personas</strong>: una misma persona que entra varias veces, o desde dos dispositivos, suma varias veces. Puede incluir algunos accesos automáticos.</li>
     <li>Una visita no equivale a una persona ayudada.</li>
     <li>Base jurídica: interés legítimo en conocer el uso agregado de la web (art. 6.1.f del RGPD).</li>
   </ul>
