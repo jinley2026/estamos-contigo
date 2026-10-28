@@ -1383,6 +1383,54 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "2026-10-28-renfe-venta-diciembre",
+      "titulo": "Renfe deja de vender billetes de alta velocidad Madrid–Andalucía hasta diciembre",
+      "resumen": "Fuentes oficiales de Renfe han confirmado a Europa Press que la venta de billetes de alta velocidad entre Madrid y Andalucía queda bloqueada hasta diciembre. Esto no significa que la línea vaya a estar cerrada todo ese tiempo: si Adif la reabre antes, Renfe retomaría el servicio. Adif aún no ha dicho cuánto durará el corte. Hora de la información de Renfe no concretada; noticia publicada a las 18:06.",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Diario en Positivo (con Europa Press): «Renfe suspende la venta de billetes entre Madrid y Andalucía hasta diciembre» (18:06)",
+        "url": "https://www.diarioenpositivo.com/espana/economia-accidente-renfe-bloquea-venta-billetes-entre-madrid-andalucia-diciembre/20261028180626095909.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T18:06:00+01:00",
+      "comprobadoEn": "2026-10-28T18:42:00+01:00",
+      "publicadoEn": "2026-10-28T18:42:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-interior-medios-1822",
+      "titulo": "Interior detalla los medios desplegados en Urda",
+      "resumen": "Según el Ministerio del Interior (18:22), en la zona trabajan 200 militares y 70 medios de la UME, 102 efectivos de Protección Civil y 422 efectivos y 123 medios de la Guardia Civil, con helicópteros, drones y perros, entre otros. Publicado por Libertad Digital.",
+      "organismo": "Ministerio del Interior",
+      "categoria": "ministerio",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (18:22)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T18:22:00+01:00",
+      "comprobadoEn": "2026-10-28T18:42:00+01:00",
+      "publicadoEn": "2026-10-28T18:42:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
