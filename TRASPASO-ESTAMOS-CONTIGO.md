@@ -131,3 +131,10 @@ Lin vio la web y comprobó que, con la regla estricta de la V3 (solo webs oficia
 - El ciclo automático sigue leyendo solo webs oficiales.
 - Control C09 de la puerta pasa a «Ninguna información sin fuente atribuida y enlazada».
 - **Riesgo que aumenta (para la revisión jurídica):** responsabilidad por reproducir cifras de prensa que luego resulten erróneas. Mitigación: atribución expresa, hora, enlace, historial de cifras y rectificación inmediata.
+
+## Publicación automática cada hora — 28/10/2026, 13:08 (decisión de Lin)
+
+- No hay segunda persona. Claude actualiza y publica sola cada hora, sin revisión previa. Las cifras de víctimas solo se publican si un medio las atribuye a un organismo. Nunca se publican datos personales.
+- Tarea programada «ESTAMOS CONTIGO — actualización cada hora» (id `trig_01WtYq4Xaka35Vu3CoUfbD96`): se ejecuta a las hh:13 (hora UTC), es decir, a las 14:13, 15:13… hora peninsular. Funciona con aprobación automática y envía avisos al móvil.
+- Guía que sigue la tarea: `docs/operacion/actualizacion-automatica.md`. El código viaja dentro del propio Artifact (`fuente/estamos-contigo.tgz.b64.txt`).
+- Para pararla: pedírselo a Claude o desactivar la tarea en sus ajustes.
