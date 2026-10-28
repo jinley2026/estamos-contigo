@@ -17,13 +17,14 @@
       "comprobadoEn": "2026-10-28T14:05:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
-      "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (13:52)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "alerta": true,
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-transportes-comparecencia",
@@ -41,13 +42,14 @@
       "comprobadoEn": "2026-10-28T14:05:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": false,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (13:23)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-ouigo-cancela",
@@ -65,13 +67,14 @@
       "comprobadoEn": "2026-10-28T14:05:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (13:29)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-atocha-refuerzo",
@@ -89,13 +92,14 @@
       "comprobadoEn": "2026-10-28T14:05:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (13:14)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-gc-adn",
@@ -113,13 +117,14 @@
       "comprobadoEn": "2026-10-28T14:05:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
-      "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:50)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "alerta": true,
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-112clm-balance-1243",
@@ -136,13 +141,14 @@
       "fechaComunicado": "2026-10-28T12:43:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
-      "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:43)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "alerta": true,
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-page-aviso",
@@ -159,13 +165,14 @@
       "fechaComunicado": "2026-10-28T12:40:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": false,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:40)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-ume",
@@ -182,13 +189,14 @@
       "fechaComunicado": "2026-10-28T12:33:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": false,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:33)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-madrid-hospitales",
@@ -205,13 +213,14 @@
       "fechaComunicado": "2026-10-28T12:29:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:29)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-donacion-sangre",
@@ -228,13 +237,14 @@
       "fechaComunicado": "2026-10-28T12:20:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
-      "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital, directo (12:20)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "alerta": true,
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-no-estaciones",
@@ -251,13 +261,14 @@
       "fechaComunicado": "2026-10-28T10:32:00+01:00",
       "comprobadoEn": "2026-10-28T13:05:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (elDiario.es, directo (10:32)) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-platecam-so2",
@@ -320,13 +331,14 @@
       "fechaComunicado": "2026-10-28T10:43:00+01:00",
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (CMM: llamamiento de los servicios de Emergencia de Castilla-La Mancha) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-pasajeros",
@@ -343,13 +355,14 @@
       "fechaComunicado": "2026-10-28T11:00:00+01:00",
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 240,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": false,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Infobae/EFE: declaraciones de la portavoz del Gobierno regional) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-atocha-psicosocial",
@@ -366,13 +379,14 @@
       "fechaComunicado": "2026-10-28T10:20:00+01:00",
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Madrid Actual: información de Emergencias 112 Comunidad de Madrid) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-renfe-pavaff",
@@ -389,13 +403,14 @@
       "fechaComunicado": "2026-10-28T10:00:00+01:00",
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Castilla-La Mancha Media: cita la publicación de InfoRenfe) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-renfe-cambios",
@@ -412,13 +427,14 @@
       "fechaComunicado": "2026-10-28T09:45:00+01:00",
       "comprobadoEn": "2026-10-28T12:00:00+01:00",
       "revisarCadaMinutos": 120,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (El Progreso: recoge el aviso de Renfe) y no lo hemos encontrado en ningún canal oficial del organismo. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-platecam",
@@ -482,13 +498,14 @@
       "publicadoEn": "2026-10-28T14:55:00+01:00",
       "comprobadoEn": "2026-10-28T14:55:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital: recoge los avisos del Ayuntamiento de Los Yébenes (14:10 y 14:47)) y no lo hemos encontrado en ningún canal oficial del organismo. Lo publicamos a las 14:55 sin haberlo comprobado en ninguna fuente oficial: fue un error nuestro. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-iryo-comunicado",
@@ -506,13 +523,14 @@
       "publicadoEn": "2026-10-28T14:55:00+01:00",
       "comprobadoEn": "2026-10-28T14:55:00+01:00",
       "revisarCadaMinutos": 120,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": true,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital: recoge el comunicado de Iryo (14:27)) y no lo hemos encontrado en ningún canal oficial del organismo. Lo publicamos a las 14:55 sin haberlo comprobado en ninguna fuente oficial: fue un error nuestro. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-ume-refuerzo",
@@ -530,13 +548,14 @@
       "publicadoEn": "2026-10-28T14:55:00+01:00",
       "comprobadoEn": "2026-10-28T14:55:00+01:00",
       "revisarCadaMinutos": 120,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": false,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital: fuentes de la UME (14:44)) y no lo hemos encontrado en ningún canal oficial del organismo. Lo publicamos a las 14:55 sin haberlo comprobado en ninguna fuente oficial: fue un error nuestro. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-andalucia-luto",
@@ -554,13 +573,14 @@
       "publicadoEn": "2026-10-28T14:55:00+01:00",
       "comprobadoEn": "2026-10-28T14:55:00+01:00",
       "revisarCadaMinutos": 240,
-      "estado": "retirado",
+      "estado": "vigente",
       "operativa": false,
       "alerta": false,
-      "correccion": "Retirado el 28/10 a las 15:05. Solo lo había publicado un medio (Libertad Digital: recoge el anuncio de Juanma Moreno en X (14:44)) y no lo hemos encontrado en ningún canal oficial del organismo. Lo publicamos a las 14:55 sin haberlo comprobado en ninguna fuente oficial: fue un error nuestro. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo. Volverá a publicarse si el organismo lo publica.",
+      "correccion": null,
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "2026-10-28-adif-malaga",

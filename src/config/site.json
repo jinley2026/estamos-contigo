@@ -98,8 +98,8 @@
   },
   "alojamientoProvisional": "un servicio gratuito de alojamiento de páginas estáticas (Netlify o GitHub Pages, según la dirección en la que la estés viendo)",
   "reglaFuentes": {
-    "_comentario": "Decisión de Lin (28/10/2026, 15:05): toda la información publicada debe estar contrastada en un canal oficial del organismo (web o cuenta oficial, dominio en fuentes.json). Lo que solo publica un medio, aunque cite a un organismo, NO se publica. Las cifras de víctimas, solo desde un comunicado oficial.",
-    "soloCanalesOficiales": true,
+    "_comentario": "Decisión de Lin (28/10/2026, 15:05): toda la información publicada debe estar contrastada en un canal oficial del organismo (web o cuenta oficial, dominio en fuentes.json). Lo que solo publica un medio, aunque cite a un organismo, NO se publica. Las cifras de víctimas, solo desde un comunicado oficial. | ANULADA el 28/10 a las 15:40 por Lin (opción 2): se publican organismos oficiales directamente y a través de medios que los citan, siempre con organismo y medio.",
+    "soloCanalesOficiales": false,
     "desde": "2026-10-28T15:05:00+01:00"
   }
 }

@@ -61,7 +61,10 @@
         {
           "p": "Tenía billete para hoy en la línea Madrid–Andalucía. ¿Qué hago?",
           "r": "Adif informa de que la circulación está interrumpida y pide a los viajeros que contacten con su compañía. Consulta la web o la aplicación de tu compañía para cambios y anulaciones.",
-          "fuente": { "titulo": "Adif: estado de la red", "url": "https://www.adif.es/viajeros/estado-de-la-red" }
+          "fuente": {
+            "titulo": "Adif: estado de la red",
+            "url": "https://www.adif.es/viajeros/estado-de-la-red"
+          }
         },
         {
           "p": "¿Hay autobuses alternativos?",

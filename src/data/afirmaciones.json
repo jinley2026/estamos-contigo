@@ -24,13 +24,14 @@
       },
       "fechaComunicado": "2026-10-28T10:37:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
-      "estadoEditorial": "rechazado",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
-      "observaciones": "Primera cifra comunicada. Sustituida por la de las 12:43. | Retirada el 28/10 a las 15:05: solo la recogía un medio; no aparece en ningún canal oficial. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo.",
+      "observaciones": "Primera cifra comunicada. Sustituida por la de las 12:43.",
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "pasajeros-total-jccm",
@@ -47,13 +48,14 @@
       },
       "fechaComunicado": "2026-10-28T11:21:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
-      "estadoEditorial": "rechazado",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
-      "observaciones": "Coincide con la suma 397 + 147 de la misma fuente oficial. | Retirada el 28/10 a las 15:05: solo la recogía un medio; no aparece en ningún canal oficial. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo.",
+      "observaciones": "Coincide con la suma 397 + 147 de la misma fuente oficial.",
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "pasajeros-ave2080-jccm",
@@ -70,13 +72,14 @@
       },
       "fechaComunicado": "2026-10-28T11:00:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
-      "estadoEditorial": "rechazado",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
-      "observaciones": "La fuente no da hora exacta de la declaración («a lo largo de la mañana»); se usa la hora aproximada de la nota de EFE. | Retirada el 28/10 a las 15:05: solo la recogía un medio; no aparece en ningún canal oficial. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo.",
+      "observaciones": "La fuente no da hora exacta de la declaración («a lo largo de la mañana»); se usa la hora aproximada de la nota de EFE.",
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "pasajeros-iryo6076-jccm",
@@ -93,13 +96,14 @@
       },
       "fechaComunicado": "2026-10-28T11:00:00+01:00",
       "fechaVerificacion": "2026-10-28T12:00:00+01:00",
-      "estadoEditorial": "rechazado",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
-      "observaciones": "Incluye un bebé, según la misma fuente. | Retirada el 28/10 a las 15:05: solo la recogía un medio; no aparece en ningún canal oficial. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo.",
+      "observaciones": "Incluye un bebé, según la misma fuente.",
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "fallecidos-112clm-1243",
@@ -116,13 +120,14 @@
       },
       "fechaComunicado": "2026-10-28T12:43:00+01:00",
       "fechaVerificacion": "2026-10-28T12:50:00+01:00",
-      "estadoEditorial": "rechazado",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": "fallecidos-jccm-1037",
-      "observaciones": "El presidente García-Page advirtió a las 12:40 de que la cifra puede aumentar. Hay medios con cifras más altas no confirmadas por la Junta ni el 112. | Retirada el 28/10 a las 15:05: solo la recogía un medio; no aparece en ningún canal oficial. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo.",
+      "observaciones": "El presidente García-Page advirtió a las 12:40 de que la cifra puede aumentar. Hay medios con cifras más altas no confirmadas por la Junta ni el 112.",
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "heridos-112clm-1243",
@@ -139,13 +144,14 @@
       },
       "fechaComunicado": "2026-10-28T12:43:00+01:00",
       "fechaVerificacion": "2026-10-28T12:50:00+01:00",
-      "estadoEditorial": "rechazado",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
-      "observaciones": "García-Page (12:38): unos cincuenta heridos de nivel amarillo, algunos muy graves. | Retirada el 28/10 a las 15:05: solo la recogía un medio; no aparece en ningún canal oficial. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo.",
+      "observaciones": "García-Page (12:38): unos cincuenta heridos de nivel amarillo, algunos muy graves.",
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "fallecidos-page-1352",
@@ -162,13 +168,14 @@
       },
       "fechaComunicado": "2026-10-28T13:52:00+01:00",
       "fechaVerificacion": "2026-10-28T14:05:00+01:00",
-      "estadoEditorial": "rechazado",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": "fallecidos-112clm-1243",
-      "observaciones": "Dado por el presidente de Castilla-La Mancha a las 13:52; avisa de que la cifra puede subir. | Retirada el 28/10 a las 15:05: solo la recogía un medio; no aparece en ningún canal oficial. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo.",
+      "observaciones": "Dado por el presidente de Castilla-La Mancha a las 13:52; avisa de que la cifra puede subir.",
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "fallecidos-iryo-page-1352",
@@ -185,13 +192,14 @@
       },
       "fechaComunicado": "2026-10-28T13:52:00+01:00",
       "fechaVerificacion": "2026-10-28T14:05:00+01:00",
-      "estadoEditorial": "rechazado",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
-      "observaciones": " | Retirada el 28/10 a las 15:05: solo la recogía un medio; no aparece en ningún canal oficial. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo.",
+      "observaciones": "",
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     },
     {
       "id": "pasajeros-iryo-1427",
@@ -208,13 +216,14 @@
       },
       "fechaComunicado": "2026-10-28T14:29:00+01:00",
       "fechaVerificacion": "2026-10-28T14:55:00+01:00",
-      "estadoEditorial": "rechazado",
+      "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
-      "observaciones": "Iryo añade 3 tripulantes, 1 barista y 1 maquinista. Coincide con los 147 que dio la Junta a las 11:00. Hay un balance de heridos de las 14:24 sin organismo identificado: no se publica. | Retirada el 28/10 a las 15:05: solo la recogía un medio; no aparece en ningún canal oficial. Decisión de Lin (28/10, 15:05): solo se publica lo que está en un canal oficial del organismo.",
+      "observaciones": "Iryo añade 3 tripulantes, 1 barista y 1 maquinista. Coincide con los 147 que dio la Junta a las 11:00. Hay un balance de heridos de las 14:24 sin organismo identificado: no se publica.",
       "verificadoPor": [
         "AUTO-CLAUDE"
-      ]
+      ],
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
     }
   ]
 }

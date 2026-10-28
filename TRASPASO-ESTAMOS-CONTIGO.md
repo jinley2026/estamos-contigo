@@ -152,3 +152,7 @@ Lin vio la web y comprobó que, con la regla estricta de la V3 (solo webs oficia
 ## Publicación sin revisión jurídica — 28/10/2026, 13:18 (decisión de Lin)
 
 Lin decide publicar ya, con la revisión jurídica y la decisión sobre la LSSI pendientes. Se genera la versión pública con `npm run build:publico-directo` (sin la puerta de 17 controles). Alojamiento provisional: el Artifact de claude.ai. Lin pulsa «Compartir» para hacerlo público. Lin pide un dominio independiente de su Vercel (13:19).
+
+## Vuelta a oficiales + prensa citando — 28/10/2026, 15:40 (decisión de Lin)
+
+Lin elige la opción 2: se anula la regla de «solo canales oficiales» de las 15:05 (tomada desde otra conversación). Se reponen las 20 noticias y las 9 cifras retiradas y los 2 puntos de atención quitados, con nota de reposición; se mantienen las fuentes oficiales añadidas a las 15:05. `reglaFuentes.soloCanalesOficiales = false`.
