@@ -29,12 +29,12 @@ const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suces
     {ES_PREVIA && <meta name="robots" content="noindex, nofollow, noarchive" />}
     <meta name="referrer" content="no-referrer" />
     <meta name="theme-color" content="#1f3a5f" />
-    <meta property="og:title" content={tituloCompleto} />
-    <meta property="og:description" content={descripcion} />
+    <meta property="og:title" content={titulo === SITE.nombre ? '🚆 Accidente de tren en Urda (Toledo) · Información útil cada 30 minutos' : tituloCompleto} />
+    <meta property="og:description" content={titulo === SITE.nombre ? 'Teléfonos para familiares, billetes, donación de sangre y novedades en directo, con su fuente. Compártelo: puede ayudar a alguien.' : descripcion} />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://accidentetrentoledo.netlify.app/recursos-marca/compartir.png" />
-    <meta property="og:image:width" content="1080" />
-    <meta property="og:image:height" content="1350" />
+    <meta property="og:image" content="https://accidentetrentoledo.netlify.app/recursos-marca/compartir-v2.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://accidentetrentoledo.netlify.app/" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
