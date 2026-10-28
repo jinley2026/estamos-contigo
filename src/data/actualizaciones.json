@@ -2,6 +2,126 @@
   "_comentario": "Cronología y centro de comunicados. Solo niveles 1 y 2. Nunca identidades. categoria: gobierno | ministerio | junta | adif | renfe | iryo | emergencias | sanidad | ayuntamientos | otros. tipoFuente: comunicado-oficial (publicado por el propio organismo) | medio-citando (un medio o agencia recoge lo que dijo el organismo). estado: vigente | pendiente | corregido | retirado. alerta: true para mostrarlo como aviso destacado durante 60 minutos.",
   "entradas": [
     {
+      "id": "2026-10-28-page-balance-1352",
+      "titulo": "García-Page eleva el balance de víctimas y avisa de que puede subir",
+      "resumen": "La cifra actualizada está en el apartado Balance, con su fuente y hora.",
+      "organismo": "Presidente de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (13:52)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T13:52:00+01:00",
+      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "publicadoEn": "2026-10-28T14:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-transportes-comparecencia",
+      "titulo": "El ministro Óscar Puente anuncia una comparecencia a las 14:00 en Atocha",
+      "resumen": "Primera comparecencia del Ministerio sobre el accidente.",
+      "organismo": "Ministerio de Transportes",
+      "categoria": "ministerio",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (13:23)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T13:23:00+01:00",
+      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "publicadoEn": "2026-10-28T14:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-ouigo-cancela",
+      "titulo": "Ouigo cancela sus ocho servicios Madrid–Andalucía del resto del día",
+      "resumen": "Si tenías billete de Ouigo para hoy en ese corredor, consulta su web.",
+      "organismo": "Ouigo",
+      "categoria": "ouigo",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (13:29)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T13:29:00+01:00",
+      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "publicadoEn": "2026-10-28T14:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-atocha-refuerzo",
+      "titulo": "Madrid refuerza el punto de apoyo a familias en Atocha",
+      "resumen": "Con sanitarios, psicólogos, SAMUR, Cruz Roja, policía y personal de Renfe, Iryo y Adif.",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "sanidad",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (13:14)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T13:14:00+01:00",
+      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "publicadoEn": "2026-10-28T14:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-gc-adn",
+      "titulo": "La Guardia Civil pide a los familiares directos que aporten muestras de ADN",
+      "resumen": "Sirve para agilizar la identificación. Hay oficinas en Madrid, Sevilla, Córdoba y Toledo; llama antes al teléfono para familiares para saber dónde acudir.",
+      "organismo": "Guardia Civil",
+      "categoria": "guardiacivil",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (12:50)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T12:50:00+01:00",
+      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "publicadoEn": "2026-10-28T14:05:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
       "id": "2026-10-28-112clm-balance-1243",
       "titulo": "El 112 de Castilla-La Mancha actualiza el balance de víctimas",
       "resumen": "La cifra actualizada está en el apartado Balance de la portada, con su fuente y hora.",
