@@ -2,6 +2,30 @@
   "_comentario": "Cronología y centro de comunicados. Solo niveles 1 y 2. Nunca identidades. categoria: gobierno | ministerio | junta | adif | renfe | iryo | emergencias | sanidad | ayuntamientos | otros. tipoFuente: comunicado-oficial (publicado por el propio organismo) | medio-citando (un medio o agencia recoge lo que dijo el organismo). estado: vigente | pendiente | corregido | retirado. alerta: true para mostrarlo como aviso destacado durante 60 minutos.",
   "entradas": [
     {
+      "id": "2026-10-28-madrid-sangre-manana",
+      "titulo": "Madrid pide a quien quiera donar sangre que espere a mañana",
+      "resumen": "La Comunidad de Madrid agradece la respuesta y pide que las nuevas donaciones se hagan mañana y los días siguientes. Consulta los horarios del centro de transfusión de tu comunidad antes de ir.",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "comunidades",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (16:41): la presidenta de la Comunidad de Madrid en X",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T16:41:00+01:00",
+      "comprobadoEn": "2026-10-28T17:25:00+01:00",
+      "publicadoEn": "2026-10-28T17:25:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
       "id": "2026-10-28-sevilla-carpa",
       "titulo": "Sevilla instala una carpa de atención psicológica a familiares junto a Santa Justa",
       "resumen": "En los laterales de la estación que dan al aparcamiento, con profesionales de la Unidad Municipal de Emergencias Sociales y en coordinación con la Junta de Andalucía.",
@@ -750,12 +774,12 @@
       "nivelFuente": 1,
       "fechaComunicado": "2026-10-28T13:45:00+01:00",
       "publicadoEn": "2026-10-28T15:55:00+01:00",
-      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T17:25:00+01:00",
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
+      "estado": "corregido",
       "operativa": true,
       "alerta": false,
-      "correccion": null,
+      "correccion": "Actualizado a las 16:41: la Comunidad de Madrid pide ahora esperar a mañana para donar (ver aviso de las 16:41). Se conserva el aviso anterior.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
