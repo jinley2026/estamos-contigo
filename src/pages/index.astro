@@ -68,7 +68,7 @@ const otros = otrosCanales.filter((c) => visible(c));
           <div><dt>Dónde</dt><dd>{hecho.lugar}</dd></div>
           <div><dt>Línea</dt><dd>{ultimahora.linea.estado}</dd></div>
         </dl>
-        <p class="cifra-fuente">Fuentes oficiales: {fuentesHecho.map((f, i) => <>{i > 0 && ' · '}<a href={f.url} rel="noopener noreferrer">{f.titulo}</a></>)}</p>
+        <p class="cifra-fuente">Fuentes: {fuentesHecho.map((f, i) => <>{i > 0 && ' · '}<a href={f.url} rel="noopener noreferrer">{f.titulo}</a></>)}</p>
         <p><a href="trenes.html">Trenes, organismos que intervienen y más detalles</a></p>
       </section>
 
