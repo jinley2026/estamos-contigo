@@ -2248,6 +2248,30 @@
         "url": "https://portalcomunicacion.uah.es/diario-digital/actualidad/Minuto-de-silencio-por-las-victimas-del-accidente-ferroviario-de-Urda"
       },
       "fechaComunicado": "2026-10-28T22:45:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T23:07:00+01:00",
+      "comprobadoEn": "2026-10-28T23:07:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-cid-oficinas-gc-noche",
+      "titulo": "Las oficinas de la Guardia Civil para familiares abren toda la noche; la identificación empieza el jueves",
+      "resumen": "Según el Centro Integrado de Datos (comunicado difundido por la Oficina de Comunicación del TSJ de Castilla-La Mancha), las oficinas de la Guardia Civil en las comandancias de Madrid, Toledo, Córdoba y Sevilla permanecen abiertas toda la noche del miércoles para recoger denuncias por desaparición. Las denuncias no equivalen a víctimas adicionales. La identificación de las víctimas comenzará el jueves 29, conforme al Protocolo Nacional de Actuación Médico-Forense y de Policía Científica en Sucesos con Víctimas Múltiples, y cinco comitivas judiciales siguen trabajando en la zona. Publicado por El Digital de Albacete a las 22:21.",
+      "organismo": "Centro Integrado de Datos (TSJ de Castilla-La Mancha)",
+      "categoria": "justicia",
+      "fuente": {
+        "titulo": "El Digital de Albacete: «La Guardia Civil recibe denuncias por desaparición tras la tragedia ferroviaria de Urda» (22:21; cita al Centro Integrado de Datos vía la Oficina de Comunicación del TSJ de Castilla-La Mancha)",
+        "url": "https://www.eldigitaldealbacete.com/2026/10/28/la-guardia-civil-recibe-29-denuncias-por-desaparicion-tras-la-tragedia-ferroviaria-de-urda-toledo/"
+      },
+      "fechaComunicado": "2026-10-28T22:21:00+01:00"
     }
   ]
 }

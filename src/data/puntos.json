@@ -242,14 +242,14 @@
       "direccion": "Calle Batalla del Salado, 32, Madrid",
       "funcion": "Solo para familiares de primer grado (padres, hijos, hermanos, cónyuge) de las víctimas: la Guardia Civil toma muestras de ADN para agilizar la identificación. Acude lo antes posible. Antes de ir, llama al teléfono para familiares (Renfe 900 10 10 20, Iryo 900 00 14 03).",
       "organismo": "Guardia Civil",
-      "horario": "No comunicado",
+      "horario": "Noche del miércoles 28 al jueves 29: abierta toda la noche para recoger denuncias por desaparición (Centro Integrado de Datos vía TSJ de Castilla-La Mancha, según El Digital de Albacete, 22:21).",
       "telefono": "",
       "nivelFuente": 2,
       "fuente": {
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-28T21:06:00+01:00",
+      "comprobadoEn": "2026-10-28T23:07:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -262,6 +262,10 @@
         {
           "titulo": "El Diario de Madrid (14:27): direcciones de las oficinas de la Guardia Civil",
           "url": "https://www.eldiariodemadrid.es/articulo/politica/accidente-trenes-urda-toledo-muertos-heridos-atencion-familiares/20261028142720145538.html"
+        },
+        {
+          "titulo": "El Digital de Albacete: «La Guardia Civil recibe denuncias por desaparición tras la tragedia ferroviaria de Urda» (22:21; cita al Centro Integrado de Datos vía la Oficina de Comunicación del TSJ de Castilla-La Mancha)",
+          "url": "https://www.eldigitaldealbacete.com/2026/10/28/la-guardia-civil-recibe-29-denuncias-por-desaparicion-tras-la-tragedia-ferroviaria-de-urda-toledo/"
         }
       ]
     },
@@ -271,14 +275,14 @@
       "direccion": "Avenida de la Borbolla, 8, Sevilla",
       "funcion": "Solo para familiares de primer grado (padres, hijos, hermanos, cónyuge) de las víctimas: la Guardia Civil toma muestras de ADN para agilizar la identificación. Acude lo antes posible. Antes de ir, llama al teléfono para familiares (Renfe 900 10 10 20, Iryo 900 00 14 03).",
       "organismo": "Guardia Civil",
-      "horario": "Miércoles 28: de 16:00 a 21:00. Jueves 29 y viernes 30: de 9:00 a 15:00 y de 16:00 a 21:00 (Guardia Civil, según CatalunyaPress, 17:23).",
+      "horario": "Miércoles 28: de 16:00 a 21:00. Jueves 29 y viernes 30: de 9:00 a 15:00 y de 16:00 a 21:00 (Guardia Civil, según CatalunyaPress, 17:23). Noche del miércoles 28 al jueves 29: abierta toda la noche para recoger denuncias por desaparición (Centro Integrado de Datos vía TSJ de Castilla-La Mancha, según El Digital de Albacete, 22:21).",
       "telefono": "",
       "nivelFuente": 2,
       "fuente": {
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-28T21:06:00+01:00",
+      "comprobadoEn": "2026-10-28T23:07:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -299,6 +303,10 @@
         {
           "titulo": "CatalunyaPress: horario de la oficina de la avenida de la Borbolla (17:23)",
           "url": "https://www.catalunyapress.es/articulo/sociedad/2026-10-28/6069849-angustia-familias-victimas-urda-listado-oficial-muertos-respuestas"
+        },
+        {
+          "titulo": "El Digital de Albacete: «La Guardia Civil recibe denuncias por desaparición tras la tragedia ferroviaria de Urda» (22:21; cita al Centro Integrado de Datos vía la Oficina de Comunicación del TSJ de Castilla-La Mancha)",
+          "url": "https://www.eldigitaldealbacete.com/2026/10/28/la-guardia-civil-recibe-29-denuncias-por-desaparicion-tras-la-tragedia-ferroviaria-de-urda-toledo/"
         }
       ]
     },
@@ -308,14 +316,14 @@
       "direccion": "Comandancia de la Guardia Civil de Córdoba, entrada por la avenida de los Mozárabes (frente a los Jardines de la Agricultura), Córdoba",
       "funcion": "Solo para familiares de primer grado (padres, hijos, hermanos, cónyuge) de las víctimas: la Guardia Civil toma muestras de ADN para agilizar la identificación. Acude lo antes posible. Antes de ir, llama al teléfono para familiares (Renfe 900 10 10 20, Iryo 900 00 14 03).",
       "organismo": "Guardia Civil",
-      "horario": "Miércoles 28: de 12:00 a 22:00 (Guardia Civil, según Córdoba Hoy, 18:10). Días siguientes: no comunicado.",
+      "horario": "Miércoles 28: de 12:00 a 22:00 (Guardia Civil, según Córdoba Hoy, 18:10). Días siguientes: no comunicado. Noche del miércoles 28 al jueves 29: abierta toda la noche para recoger denuncias por desaparición (Centro Integrado de Datos vía TSJ de Castilla-La Mancha, según El Digital de Albacete, 22:21).",
       "telefono": "",
       "nivelFuente": 2,
       "fuente": {
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-28T21:06:00+01:00",
+      "comprobadoEn": "2026-10-28T23:07:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -332,6 +340,10 @@
         {
           "titulo": "Córdoba Hoy: horario de hoy de la oficina de Córdoba (18:10)",
           "url": "https://www.cordobahoy.es/la-ciudad/guardia-civil-cordoba-abierta-2200-horas-recoger-muestras-identificacion/20261028181031204813.html"
+        },
+        {
+          "titulo": "El Digital de Albacete: «La Guardia Civil recibe denuncias por desaparición tras la tragedia ferroviaria de Urda» (22:21; cita al Centro Integrado de Datos vía la Oficina de Comunicación del TSJ de Castilla-La Mancha)",
+          "url": "https://www.eldigitaldealbacete.com/2026/10/28/la-guardia-civil-recibe-29-denuncias-por-desaparicion-tras-la-tragedia-ferroviaria-de-urda-toledo/"
         }
       ]
     },
@@ -341,14 +353,14 @@
       "direccion": "Comandancia de la Guardia Civil de Toledo, Avenida Barber, 42, Toledo",
       "funcion": "Solo para familiares de primer grado (padres, hijos, hermanos, cónyuge) de las víctimas: la Guardia Civil toma muestras de ADN para agilizar la identificación. Acude lo antes posible. Antes de ir, llama al teléfono para familiares (Renfe 900 10 10 20, Iryo 900 00 14 03).",
       "organismo": "Guardia Civil",
-      "horario": "No comunicado",
+      "horario": "Noche del miércoles 28 al jueves 29: abierta toda la noche para recoger denuncias por desaparición (Centro Integrado de Datos vía TSJ de Castilla-La Mancha, según El Digital de Albacete, 22:21).",
       "telefono": "",
       "nivelFuente": 2,
       "fuente": {
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-28T21:06:00+01:00",
+      "comprobadoEn": "2026-10-28T23:07:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -361,6 +373,10 @@
         {
           "titulo": "El Diario de Madrid (14:27): direcciones de las oficinas de la Guardia Civil",
           "url": "https://www.eldiariodemadrid.es/articulo/politica/accidente-trenes-urda-toledo-muertos-heridos-atencion-familiares/20261028142720145538.html"
+        },
+        {
+          "titulo": "El Digital de Albacete: «La Guardia Civil recibe denuncias por desaparición tras la tragedia ferroviaria de Urda» (22:21; cita al Centro Integrado de Datos vía la Oficina de Comunicación del TSJ de Castilla-La Mancha)",
+          "url": "https://www.eldigitaldealbacete.com/2026/10/28/la-guardia-civil-recibe-29-denuncias-por-desaparicion-tras-la-tragedia-ferroviaria-de-urda-toledo/"
         }
       ]
     },
