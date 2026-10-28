@@ -104,3 +104,9 @@ export const fechaHora = (iso: string) => (iso ? fmt.format(new Date(iso)) + ' (
 /** La etiqueta describe NUESTRA revisión del enlace, no una certificación de la administración (V3 §9). */
 export const nivelTexto = (n: number) =>
   n === 1 ? 'Fuente oficial comprobada' : n === 2 ? 'Según un medio que cita al organismo' : 'No publicable';
+
+/** Paginación de la cronología y de los comunicados: cada página debe pesar menos de 30 KB comprimida (check-dist). */
+export const POR_PAGINA = 35;
+export const totalPaginas = Math.max(1, Math.ceil(actualizaciones.length / POR_PAGINA));
+export const paginaDe = (n: number) => actualizaciones.slice((n - 1) * POR_PAGINA, n * POR_PAGINA);
+export const urlPagina = (base: string, n: number) => (n === 1 ? `${base}.html` : `${base}-${n}.html`);

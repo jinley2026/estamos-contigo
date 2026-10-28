@@ -1,0 +1,33 @@
+---
+import Layout from './Layout.astro';
+import Entrada from './Entrada.astro';
+import Paginacion from './Paginacion.astro';
+import { paginaDe, correcciones, MODO } from '../lib/datos';
+interface Props { pagina: number }
+const { pagina } = Astro.props;
+const entradas = paginaDe(pagina);
+---
+<Layout titulo={pagina === 1 ? 'Actualizaciones contrastadas' : `Actualizaciones contrastadas (página ${pagina})`} descripcion="Avisos oficiales sobre el accidente, con fuente, hora y nivel de verificación.">
+  <h1>Actualizaciones contrastadas{pagina > 1 ? ` — página ${pagina}` : ''}</h1>
+  <p class="subtitulo">
+    Publicamos lo que comunican los organismos en sus canales oficiales y lo que un medio atribuye expresamente a un
+    organismo, siempre con organismo, hora y enlace. No publicamos identidades ni datos de personas.
+  </p>
+  <Paginacion base="actualizaciones" pagina={pagina} />
+  {MODO === 'reducido' ? (
+    <p class="caja caja-pendiente">La web funciona en modo reducido: no estamos ofreciendo actualizaciones. Consulta directamente los canales oficiales.</p>
+  ) : (
+    <div class="solo-normal">
+      {entradas.map((e) => <Entrada e={e} />)}
+    </div>
+  )}
+  <Paginacion base="actualizaciones" pagina={pagina} />
+
+  <h2 id="fe-de-erratas">Fe de erratas</h2>
+  {correcciones.length === 0 ? (
+    <p>Sin correcciones hasta el momento. Si una información publicada resulta errónea, la marcaremos aquí sin borrarla, con lo que cambió y por qué.</p>
+  ) : (
+    <ul>{correcciones.map((c) => <li><strong>{c.titulo}</strong>: {c.correccion}</li>)}</ul>
+  )}
+  <p><a href="fuentes-y-verificacion.html">Cómo verificamos la información</a> · <a href="rectificaciones.html">Pedir una rectificación</a></p>
+</Layout>

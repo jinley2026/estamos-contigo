@@ -1,27 +1,4 @@
 ---
-import Layout from '../components/Layout.astro';
-import Entrada from '../components/Entrada.astro';
-import { actualizaciones, correcciones, MODO } from '../lib/datos';
+import Cronologia from '../components/Cronologia.astro';
 ---
-<Layout titulo="Actualizaciones contrastadas" descripcion="Avisos oficiales sobre el accidente, con fuente, hora y nivel de verificación.">
-  <h1>Actualizaciones contrastadas</h1>
-  <p class="subtitulo">
-    Solo publicamos información que hemos comprobado en la web del organismo u operador que la emite, con enlace
-    directo. No publicamos identidades ni datos de personas, y las cifras solo cuando las da un organismo oficial.
-  </p>
-  {MODO === 'reducido' ? (
-    <p class="caja caja-pendiente">La web funciona en modo reducido: no estamos ofreciendo actualizaciones. Consulta directamente los canales oficiales.</p>
-  ) : (
-    <div class="solo-normal">
-      {actualizaciones.map((e) => <Entrada e={e} />)}
-    </div>
-  )}
-
-  <h2 id="fe-de-erratas">Fe de erratas</h2>
-  {correcciones.length === 0 ? (
-    <p>Sin correcciones hasta el momento. Si una información publicada resulta errónea, la marcaremos aquí sin borrarla, con lo que cambió y por qué.</p>
-  ) : (
-    <ul>{correcciones.map((c) => <li><strong>{c.titulo}</strong>: {c.correccion}</li>)}</ul>
-  )}
-  <p><a href="fuentes-y-verificacion.html">Cómo verificamos la información</a> · <a href="rectificaciones.html">Pedir una rectificación</a></p>
-</Layout>
+<Cronologia pagina={1} />

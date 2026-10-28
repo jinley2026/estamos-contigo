@@ -1971,6 +1971,102 @@
           "url": "https://www.democrata.es/actualidad/la-comunidad-de-madrid-atiende-a-86-heridos-en-el-accidente-ferroviario-de-urda/"
         }
       ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T21:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:45:00+01:00",
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-orgaz-secreto-perimetro",
+      "titulo": "La jueza decreta secreto de sumario y prohíbe acceder a 2 km alrededor de la vía",
+      "resumen": "Según el Tribunal Superior de Justicia de Castilla-La Mancha (comunicado difundido por Europa Press), la jueza de Orgaz que instruye la causa ha prohibido el paso a toda persona ajena al operativo en un radio de 2 km alrededor de la línea de alta velocidad Madrid–Sevilla, en ambos sentidos; solo pueden estar allí fuerzas de seguridad, equipos de rescate y sanitarios y personal judicial autorizado. También prohíbe retirar objetos del lugar y captar o difundir imágenes de la zona. Las cajas negras de los trenes quedan bajo custodia de la Policía Judicial de Toledo, y ha pedido a Adif datos sobre los protocolos aplicados y al centro de control de Atocha información sobre la circulación en el tramo. Las diligencias son secretas mientras dure la investigación. Publicado por Demócrata a las 21:10.",
+      "organismo": "Administración de Justicia (Tribunal de Instancia de Orgaz y TSJ de Castilla-La Mancha)",
+      "categoria": "justicia",
+      "fuente": {
+        "titulo": "Demócrata: «La jueza decreta secreto de sumario y blinda el acceso al área del siniestro ferroviario de Urda» (21:10)",
+        "url": "https://www.democrata.es/tribunales/la-jueza-decreta-secreto-de-sumario-y-blinda-el-acceso-al-area-del-siniestro-ferroviario-de-urda/"
+      },
+      "fechaComunicado": "2026-10-28T21:10:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T21:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:45:00+01:00",
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-tsj-equipos-identificacion",
+      "titulo": "Justicia organiza cinco equipos judiciales y forenses para la identificación de las víctimas",
+      "resumen": "Según el TSJ de Castilla-La Mancha (EFE), se ha activado el protocolo nacional médico-forense y de policía científica para sucesos con víctimas múltiples. Hay ya cinco equipos formados por magistrado, letrado de la Administración de Justicia y forense; un magistrado de Alcázar de San Juan, de la red judicial de expertos en emergencias y catástrofes, coordina, con apoyo de magistradas de Toledo y más letrados y funcionarios en Orgaz. El Instituto de Medicina Legal de Toledo y el Instituto Nacional de Toxicología y Ciencias Forenses recogerán muestras biológicas y perfiles genéticos para identificar a las víctimas. La Fiscalía seguirá la investigación de las causas. Publicado por Infobae (EFE) hacia las 20:48.",
+      "organismo": "Tribunal Superior de Justicia de Castilla-La Mancha",
+      "categoria": "justicia",
+      "fuente": {
+        "titulo": "Infobae (EFE): «La jueza ordena las primeras diligencias de investigación sobre el accidente de Urda»",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/la-jueza-ordena-las-primeras-diligencias-de-investigacion-sobre-el-accidente-de-urda/"
+      },
+      "fechaComunicado": "2026-10-28T20:48:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T21:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:45:00+01:00",
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-renfe-jueves-sin-av",
+      "titulo": "Renfe: el jueves no habrá alta velocidad entre Madrid y Andalucía; plan alternativo desde el viernes",
+      "resumen": "Según Renfe (EFE), este jueves 29 quedan suspendidos los trenes de alta velocidad entre Madrid y Andalucía, también los que unen Barcelona y Valencia con Sevilla y Málaga. Desde el viernes 30 habrá un servicio Avant Madrid–Ciudad Real–Puertollano por vía convencional, con más tiempo de viaje. La venta de billetes en el corredor queda parada hasta el 13 de diciembre, lo que no significa que la circulación vaya a estar cortada hasta entonces. Por la huelga de maquinistas del jueves, Renfe recomienda no viajar si no es imprescindible. Publicado por Infobae (EFE) hacia las 20:47.",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "fuente": {
+        "titulo": "Infobae (EFE): «Renfe suspende alta velocidad Madrid-Andalucía jueves y da plan alternativo desde viernes»",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/renfe-suspende-alta-velocidad-madrid-andalucia-jueves-y-da-plan-alternativo-desde-viernes/"
+      },
+      "fechaComunicado": "2026-10-28T20:47:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T21:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:45:00+01:00",
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-sescam-balance-1930",
+      "titulo": "El Sescam actualiza su balance sanitario de las 19:30",
+      "resumen": "Según el Servicio de Salud de Castilla-La Mancha (Sescam), su balance de las 19:30 recoge las personas que siguen ingresadas en unidades de cuidados intensivos y las altas comunicadas por los hospitales de la región. No publicamos aquí el número de ingresos en UCI porque esta web aún no tiene un apartado para ese dato: puede consultarse en la fuente. No damos datos de personas concretas. Publicado por El Digital de Albacete a las 20:45.",
+      "organismo": "Sescam (Junta de Castilla-La Mancha)",
+      "categoria": "sanidad",
+      "fuente": {
+        "titulo": "El Digital de Albacete: balance del Sescam de las 19:30 (20:45)",
+        "url": "https://www.eldigitaldealbacete.com/2026/10/28/muere-uno-de-los-heridos-trasladados-al-hospital-tras-el-accidente-de-tren-de-toledo-21-personas-estan-en-la-uci/"
+      },
+      "fechaComunicado": "2026-10-28T19:30:00+01:00"
     }
   ]
 }

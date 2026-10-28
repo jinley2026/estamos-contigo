@@ -1,0 +1,9 @@
+---
+import Comunicados from '../components/Comunicados.astro';
+import { totalPaginas } from '../lib/datos';
+export function getStaticPaths() {
+  return Array.from({ length: Math.max(0, totalPaginas - 1) }, (_, i) => ({ params: { n: String(i + 2) } }));
+}
+const pagina = Number(Astro.params.n);
+---
+<Comunicados pagina={pagina} />

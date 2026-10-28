@@ -592,6 +592,29 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "pasajeros-ave2080-renfe-efe",
+      "tipo": "pasajeros",
+      "valor": 378,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "tren:ave-2080",
+      "organismo": "Renfe",
+      "fuente": {
+        "titulo": "Infobae (EFE): «Al menos 68 fallecidos y numerosos heridos en el accidente ferroviario en Urda (Toledo)» — pasajeros según registros de Renfe",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/al-menos-68-fallecidos-y-numerosos-heridos-en-el-accidente-ferroviario-en-urda-toledo/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T18:17:00+01:00",
+      "fechaVerificacion": "2026-10-28T21:45:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "EFE atribuye 378 pasajeros en el AVE a «registros de Renfe» (hora de la noticia; Renfe no da hora). DISCREPANCIA: la Junta de Castilla-La Mancha da 393 (nota oficial) y 397 (portavoz, mediodía). No sabemos a qué se debe la diferencia; se registran todas.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

@@ -1,0 +1,12 @@
+---
+import { totalPaginas, urlPagina } from '../lib/datos';
+interface Props { base: string; pagina: number }
+const { base, pagina } = Astro.props;
+const nums = Array.from({ length: totalPaginas }, (_, i) => i + 1);
+---
+{totalPaginas > 1 && (
+  <nav class="acciones chips paginacion" aria-label="Páginas">
+    <span>Página {pagina} de {totalPaginas} (las más recientes, primero):</span>
+    {nums.map((n) => (n === pagina ? <span aria-current="page"><strong>{n}</strong></span> : <a href={urlPagina(base, n)}>{n === 1 ? '1 (más recientes)' : n}</a>))}
+  </nav>
+)}

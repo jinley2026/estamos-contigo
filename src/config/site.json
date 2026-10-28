@@ -25,11 +25,11 @@
   "estadoOperativo": {
     "_comentario": "modo: normal | reducido | cerrado. 'reducido' = solo directorio de fuentes oficiales. 'cerrado' = fin de actualizaciones.",
     "modo": "normal",
-    "ultimaRevisionEditorial": "2026-10-28T21:06:00+01:00",
+    "ultimaRevisionEditorial": "2026-10-28T21:45:00+01:00",
     "horasMaximasSinRevision": 4,
     "fechaCierre": "",
     "mensajeCierre": "",
-    "ultimaAprobacion": "2026-10-28T21:06:00+01:00",
+    "ultimaAprobacion": "2026-10-28T21:45:00+01:00",
     "fechaPublicacion": ""
   },
   "modulos": {

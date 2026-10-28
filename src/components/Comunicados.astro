@@ -1,0 +1,38 @@
+---
+import Layout from './Layout.astro';
+import Paginacion from './Paginacion.astro';
+import { paginaDe, CATEGORIAS, tipoFuenteTexto } from '../lib/datos';
+import Fechas from './Fechas.astro';
+import Sello from './Sello.astro';
+interface Props { pagina: number }
+const { pagina } = Astro.props;
+const entradas = paginaDe(pagina);
+const presentes = [...new Set(entradas.map((e) => e.categoria))];
+const orden = Object.keys(CATEGORIAS).filter((c) => presentes.includes(c));
+---
+<Layout titulo={pagina === 1 ? 'Comunicados oficiales' : `Comunicados oficiales (página ${pagina})`} descripcion="Comunicados de los organismos sobre el accidente, con filtro por organismo y enlace a la fuente.">
+  <h1>Comunicados oficiales{pagina > 1 ? ` — página ${pagina}` : ''}</h1>
+  <p class="subtitulo">Comunicados de los organismos, enlazados a su web oficial cuando existe, o al medio que los recoge citando expresamente al organismo (se indica en cada uno).</p>
+  <Paginacion base="comunicados" pagina={pagina} />
+
+  <div class="acciones chips filtros" role="group" aria-label="Filtrar por organismo (en esta página)">
+    <button type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+    {orden.map((c) => <button type="button" data-filtro={c} aria-pressed="false">{CATEGORIAS[c]}</button>)}
+  </div>
+
+  <ol class="lista-comunicados">
+    {entradas.map((e) => (
+      <li class={`comunicado ${e.estado}`} data-categoria={e.categoria} data-comprobado={e.comprobadoEn} data-revisar={e.revisarCadaMinutos}>
+        <p class="com-org">{CATEGORIAS[e.categoria] ?? e.organismo} <span class={`com-tipo ${e.tipoFuente}`}>{tipoFuenteTexto(e.tipoFuente)}</span><Sello e={e} /></p>
+        <h2>{e.titulo}</h2>
+        <p>{e.resumen}</p>
+        {e.correccion && <p class="caja caja-pendiente"><strong>Corrección:</strong> {e.correccion}</p>}
+        <p class="aviso-caducado" role="status"></p>
+        <Fechas e={e} />
+        <p class="meta">Fuente: <a href={e.fuente.url} rel="noopener noreferrer">{e.fuente.titulo}</a></p>
+      </li>
+    ))}
+  </ol>
+  <Paginacion base="comunicados" pagina={pagina} />
+  <p class="caja">Iryo, el Ministerio de Transportes, el SESCAM, la Delegación del Gobierno y los ayuntamientos no permiten la consulta automática o no tienen una página de comunicados localizada: sus avisos se añaden a mano tras comprobarlos.</p>
+</Layout>
