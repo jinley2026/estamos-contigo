@@ -224,6 +224,121 @@
         "AUTO-CLAUDE"
       ],
       "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
+    },
+    {
+      "id": "fallecidos-112clm-1600",
+      "tipo": "fallecidos",
+      "valor": 68,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "112 Castilla-La Mancha: ficha oficial del incidente (balance sobre las 16:00)",
+        "url": "https://112.castillalamancha.es/112/incidentes/urda-accidente-ferroviario",
+        "tipoFuente": "comunicado-oficial"
+      },
+      "fechaComunicado": "2026-10-28T16:00:00+01:00",
+      "fechaVerificacion": "2026-10-28T16:45:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-page-1352",
+      "observaciones": "Ficha oficial del 112 CLM: «68 fallecidos y 77 heridos de diversa consideración» sobre las 16:00. Coincide con García-Page (15:42).",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "heridos-112clm-1600",
+      "tipo": "heridos",
+      "valor": 77,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "112 Castilla-La Mancha: ficha oficial del incidente (balance sobre las 16:00)",
+        "url": "https://112.castillalamancha.es/112/incidentes/urda-accidente-ferroviario",
+        "tipoFuente": "comunicado-oficial"
+      },
+      "fechaComunicado": "2026-10-28T16:00:00+01:00",
+      "fechaVerificacion": "2026-10-28T16:45:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "heridos-112clm-1243",
+      "observaciones": "Ficha oficial del 112 CLM, «de diversa consideración». Distinto de los casi 80 trasladados que da la ministra de Sanidad (16:34): se registran ambas.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "fallecidos-page-1542",
+      "tipo": "fallecidos",
+      "valor": 68,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Libertad Digital: García-Page eleva a 68 los fallecidos (15:42)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T15:42:00+01:00",
+      "fechaVerificacion": "2026-10-28T16:45:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-page-1352",
+      "observaciones": "Page: 24 en la «zona AVE» y el resto en el Iryo. A las 15:44: unos 53 heridos en código amarillo y 15 en código rojo. Otras fuentes anteriores daban el reparto por tren al revés (Delegación del Gobierno 13:53: 40 Iryo / 24 AVE; CMM 14:20 Page: 24 Renfe / 40 Iryo). No se calcula el del Iryo por diferencia.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "fallecidos-ave-page-1542",
+      "tipo": "fallecidos",
+      "valor": 24,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "tren:ave-2080",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Libertad Digital: García-Page, 24 fallecidos en la «zona AVE» (15:42)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T15:42:00+01:00",
+      "fechaVerificacion": "2026-10-28T16:45:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "Page dice «zona AVE». Una nota local atribuida al 112 daba 40 en el AVE y 24 en el Iryo: contradicción por tren pendiente de aclarar.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "hospitalizados-sanidad-1634",
+      "tipo": "hospitalizados",
+      "valor": 80,
+      "calificador": "aproximadamente",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Ministerio de Sanidad",
+      "fuente": {
+        "titulo": "Libertad Digital: la ministra de Sanidad, casi 80 heridos trasladados a hospitales (16:34)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T16:34:00+01:00",
+      "fechaVerificacion": "2026-10-28T16:45:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "Literal: «casi 80 heridos trasladados» a Toledo, Albacete, Ciudad Real, Alcázar de San Juan y tres a Madrid; 15 graves. Contradice a la Comunidad de Madrid, que habla de 27 atendidos en sus hospitales (16:09).",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

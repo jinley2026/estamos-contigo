@@ -797,6 +797,246 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "2026-10-28-112clm-balance-1600",
+      "titulo": "El 112 de Castilla-La Mancha actualiza el balance en su ficha oficial",
+      "resumen": "La ficha oficial del 112 de Castilla-La Mancha recoge un nuevo balance de víctimas, fechado sobre las 16:00. Las cifras están en el apartado de datos, con su organismo y hora.",
+      "organismo": "112 Castilla-La Mancha",
+      "categoria": "emergencias",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "112 Castilla-La Mancha: ficha «Urda. Accidente ferroviario»",
+        "url": "https://112.castillalamancha.es/112/incidentes/urda-accidente-ferroviario"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T16:00:00+01:00",
+      "publicadoEn": "2026-10-28T16:45:00+01:00",
+      "comprobadoEn": "2026-10-28T16:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-page-balance-1542",
+      "titulo": "García-Page eleva de nuevo el balance y detalla la gravedad de los heridos",
+      "resumen": "El presidente de Castilla-La Mancha actualizó por la tarde el balance de víctimas, con el desglose por tren, e informó de cuántos heridos están en código rojo (muy graves) y en código amarillo. Las cifras y la hora exacta están en el apartado de datos.",
+      "organismo": "Presidente de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (15:42–15:44)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T15:42:00+01:00",
+      "publicadoEn": "2026-10-28T16:45:00+01:00",
+      "comprobadoEn": "2026-10-28T16:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-gobierno-luto-nacional",
+      "titulo": "El Gobierno declara tres días de luto oficial en toda España",
+      "resumen": "Pedro Sánchez anunció desde Urda luto oficial los días 29, 30 y 31 de octubre. Dijo que se llegará «hasta el final» para conocer las causas y que, si hubo negligencias, «se sabrá».",
+      "organismo": "Gobierno de España",
+      "categoria": "gobierno",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "CMM: declaración de Pedro Sánchez en Urda (16:17)",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/sanchez-llegar-final-habido-negligencia-sabra.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T15:52:00+01:00",
+      "publicadoEn": "2026-10-28T16:45:00+01:00",
+      "comprobadoEn": "2026-10-28T16:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-sanidad-balance-1634",
+      "titulo": "La ministra de Sanidad informa de los traslados a hospitales",
+      "resumen": "Mónica García detalló a las 16:34 los traslados a hospitales de Toledo, Albacete, Ciudad Real, Alcázar de San Juan y la Comunidad de Madrid, y dijo que los hospitales han activado sus planes de contingencia. Las cifras están en el apartado de datos.",
+      "organismo": "Ministerio de Sanidad",
+      "categoria": "ministerio",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (16:34)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T16:34:00+01:00",
+      "publicadoEn": "2026-10-28T16:45:00+01:00",
+      "comprobadoEn": "2026-10-28T16:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cam-hospitales-sermas",
+      "titulo": "Madrid atiende a heridos en siete hospitales públicos",
+      "resumen": "La Comunidad de Madrid informa de que atiende a viajeros heridos en siete hospitales públicos: La Paz, Doce de Octubre, Getafe, Puerta de Hierro, La Princesa, Fundación Jiménez Díaz y Hospital del Henares. El SUMMA atendió a otros en su puesto sanitario en Urda.",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "sanidad",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (16:09), y nota de la Comunidad recogida por Vivir Ediciones",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T16:09:00+01:00",
+      "publicadoEn": "2026-10-28T16:45:00+01:00",
+      "comprobadoEn": "2026-10-28T16:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cam-emergencia-social",
+      "titulo": "El Servicio de Emergencia Social de Madrid, en prealerta para Atocha",
+      "resumen": "La Comunidad de Madrid pone en prealerta su Servicio de Emergencia Social ante la llegada de afectados a Atocha: tres unidades móviles con siete profesionales, una de ellas psicóloga, y diez más en la central.",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "otros",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (16:18)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T16:18:00+01:00",
+      "publicadoEn": "2026-10-28T16:45:00+01:00",
+      "comprobadoEn": "2026-10-28T16:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-femp-silencio",
+      "titulo": "Minuto de silencio a las 20:00 en los ayuntamientos",
+      "resumen": "La Federación Española de Municipios y Provincias convoca un minuto de silencio a las 20:00 de hoy en los ayuntamientos en memoria de las víctimas.",
+      "organismo": "Federación Española de Municipios y Provincias (FEMP)",
+      "categoria": "ayuntamientos",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (16:23)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T16:23:00+01:00",
+      "publicadoEn": "2026-10-28T16:45:00+01:00",
+      "comprobadoEn": "2026-10-28T16:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-juzgado-orgaz",
+      "titulo": "Un juzgado de Orgaz asume la investigación judicial",
+      "resumen": "La investigación judicial corresponde a la plaza n.º 2 de la Sección Civil y de Instrucción del Tribunal de Instancia de Orgaz. Se ha constituido un centro de atención a víctimas, familiares y profesionales con cinco equipos.",
+      "organismo": "Administración de Justicia (Tribunal de Instancia de Orgaz)",
+      "categoria": "otros",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "CMM, directo (14:49)",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/ultima-hora-accidente-tren-urda-toledo-fallecidos.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:49:00+01:00",
+      "publicadoEn": "2026-10-28T16:45:00+01:00",
+      "comprobadoEn": "2026-10-28T16:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-ciaf-investigadores",
+      "titulo": "Investigadores de la CIAF ya están en Toledo",
+      "resumen": "Tres investigadores de la Comisión de Investigación de Accidentes Ferroviarios se han desplazado a Toledo para recabar datos. Las causas solo las establecerán esta investigación técnica y la judicial.",
+      "organismo": "Comisión de Investigación de Accidentes Ferroviarios (CIAF)",
+      "categoria": "ministerio",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "El Español, directo (13:37)",
+        "url": "https://www.elespanol.com/invertia/observatorios/movilidad/20261028/accidente-tren-hoy-directo-ultima-hora-choque-resultado-varios-heridos-interrumpido-circulacion-madrid-andalucia/1003744437595_10.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T13:37:00+01:00",
+      "publicadoEn": "2026-10-28T16:45:00+01:00",
+      "comprobadoEn": "2026-10-28T16:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-renfe-lanzadera",
+      "titulo": "Renfe pone un tren lanzadera Madrid–Ciudad Real–Puertollano",
+      "resumen": "Sale de la vía 4 de Atocha Cercanías a las 14:00, 16:30, 18:00, 20:00 y 22:30; regresa desde Ciudad Real a las 15:00, 17:00, 19:30 y 21:00. Confirma horarios con Renfe antes de ir.",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "El Español, directo (13:52)",
+        "url": "https://www.elespanol.com/invertia/observatorios/movilidad/20261028/accidente-tren-hoy-directo-ultima-hora-choque-resultado-varios-heridos-interrumpido-circulacion-madrid-andalucia/1003744437595_10.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T13:52:00+01:00",
+      "publicadoEn": "2026-10-28T16:45:00+01:00",
+      "comprobadoEn": "2026-10-28T16:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
