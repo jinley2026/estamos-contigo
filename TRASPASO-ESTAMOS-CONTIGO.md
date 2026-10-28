@@ -138,3 +138,7 @@ Lin vio la web y comprobó que, con la regla estricta de la V3 (solo webs oficia
 - Tarea programada «ESTAMOS CONTIGO — actualización cada hora» (id `trig_01WtYq4Xaka35Vu3CoUfbD96`): se ejecuta a las hh:13 (hora UTC), es decir, a las 14:13, 15:13… hora peninsular. Funciona con aprobación automática y envía avisos al móvil.
 - Guía que sigue la tarea: `docs/operacion/actualizacion-automatica.md`. El código viaja dentro del propio Artifact (`fuente/estamos-contigo.tgz.b64.txt`).
 - Para pararla: pedírselo a Claude o desactivar la tarea en sus ajustes.
+
+## Publicación sin revisión jurídica — 28/10/2026, 13:18 (decisión de Lin)
+
+Lin decide publicar ya, con la revisión jurídica y la decisión sobre la LSSI pendientes. Se genera la versión pública con `npm run build:publico-directo` (sin la puerta de 17 controles). Alojamiento provisional: el Artifact de claude.ai. Lin pulsa «Compartir» para hacerlo público. Lin pide un dominio independiente de su Vercel (13:19).

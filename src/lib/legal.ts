@@ -14,5 +14,6 @@ export function datoReservado(k: 'nif' | 'domicilio') {
   const v = k === 'nif' ? process.env.EC_NIF : process.env.EC_DOMICILIO;
   if (LSSI === 'si') return v || `[PENDIENTE: ${k === 'nif' ? 'NIF' : 'domicilio'} — obligatorio si se aplica la LSSI; se añade en el despliegue privado]`;
   if (LSSI === 'no') return null;
-  return `[PENDIENTE de revisión jurídica: si la LSSI resulta aplicable, aquí figurará el ${k === 'nif' ? 'NIF' : 'domicilio'}]`;
+  // Régimen pendiente: no se muestra nada (el aviso legal explica que la cuestión está pendiente).
+  return null;
 }

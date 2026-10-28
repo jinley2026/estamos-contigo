@@ -23,9 +23,9 @@ Lin revisa cuando puede y puede pararlo todo poniendo `automatizacion.suspendida
    - Si algo publicado resulta erróneo: `estado: "corregido"` con `correccion` explicando qué cambió (no borrar).
 5. PROHIBIDO siempre: nombres, DNI, teléfonos personales, direcciones, datos de salud individuales, fotos, listas de víctimas o desaparecidos, menores, testimonios, familiares. Causas o culpables no oficiales.
 6. Poner `site.json → estadoOperativo.ultimaRevisionEditorial` y `ultimaAprobacion` = ahora.
-7. `npm run build:preview`. Si `check-content` o `check-dist` fallan: corregir; si no se puede, NO publicar y avisar a Lin.
+7. `npm run build:publico-directo` (versión PÚBLICA, decisión de Lin 28/10 13:18: publicar ya sin esperar la revisión jurídica). Si `check-content` o `check-dist` fallan: corregir; si no se puede, NO publicar y avisar a Lin.
 8. Empaquetar: desde la carpeta padre, `tar --exclude=estamos-contigo/node_modules --exclude=estamos-contigo/dist --exclude=estamos-contigo/.astro --exclude=estamos-contigo/tests/capturas --exclude=estamos-contigo/.git -czf ec.tgz estamos-contigo && base64 -w0 ec.tgz > ec.tgz.b64.txt`.
-9. Publicar: `Artifact publish` con `url` = la del Artifact, `file_path` = `dist/index.html` y `files` = salida de `node scripts/archivos-artifact.mjs ../ec.tgz.b64.txt`.
+9. Publicar: `Artifact publish` con `url` = la del Artifact, `file_path` = `dist/index.html` y `files` = salida de `node scripts/archivos-artifact.mjs ../ec.tgz.b64.txt`. La versión pública no genera `admin.html`; no lo vuelvas a subir.
 10. Resumen para Lin (SendUserMessage) solo si hubo novedades: qué se añadió, cifras con su organismo y hora, y cualquier duda o contradicción.
 
 Notas: la pasada no puede escribir en el ordenador de Lin. El contador de visitas sigue desactivado.

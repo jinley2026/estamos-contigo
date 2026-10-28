@@ -120,7 +120,8 @@ for (const lang of ['es', 'en', 'fr', 'pt', 'it', 'de']) {
 const t = leer('i18n/esenciales.json');
 const claves = Object.keys(t.textos.en);
 for (const lang of ['fr', 'pt', 'it', 'de']) for (const k of claves) if (!t.textos[lang][k]) err(`i18n ${lang}: falta ${k}`);
-for (const [lang, v] of Object.entries(t.idiomas)) if (!v.revisado) avi(`traducción ${lang}: pendiente de revisión humana`);
+// Las traducciones sin revisar se publican con un aviso visible en la propia página ([lang].astro): es un aviso, no un bloqueo.
+for (const [lang, v] of Object.entries(t.idiomas)) if (!v.revisado) avisos.push(`traducción ${lang}: sin revisar (se publica con aviso visible)`);
 
 // ---------- V3 §1: rechazo automático de lo que no tiene origen oficial comprobable ----------
 const DOMINIOS = cargarDominios(new URL('../', import.meta.url));

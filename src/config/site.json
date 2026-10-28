@@ -21,7 +21,7 @@
     "domicilio": "",
     "registroPublico": ""
   },
-  "dominio": "",
+  "dominio": "https://claude.ai/artifact/9wvpqU7KaVygLz4XijuJ6g (dirección provisional)",
   "estadoOperativo": {
     "_comentario": "modo: normal | reducido | cerrado. 'reducido' = solo directorio de fuentes oficiales. 'cerrado' = fin de actualizaciones.",
     "modo": "normal",
@@ -94,5 +94,6 @@
       "Comunidad de Madrid",
       "Ayuntamiento"
     ]
-  }
+  },
+  "alojamientoProvisional": "claude.ai (Anthropic), mediante la función de páginas publicadas de Claude"
 }
