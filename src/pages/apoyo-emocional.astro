@@ -1,0 +1,52 @@
+---
+import Layout from '../components/Layout.astro';
+import { apoyo, visible, verificado, SITE } from '../lib/datos';
+const recursos = apoyo.filter((r) => visible(r));
+---
+<Layout titulo="Ayuda emocional" descripcion="Orientación general para personas afectadas, familiares y testigos, y recursos profesionales.">
+  <h1>Ayuda emocional</h1>
+  {!SITE.validacionProfesional.apoyoEmocional && (
+    <p class="borrador-legal" role="note">Textos pendientes de validación por un profesional de la psicología de emergencias antes de publicarse.</p>
+  )}
+  <p class="subtitulo">Esta página da orientación general. No sustituye la atención de un profesional ni hace diagnósticos.</p>
+
+  <div class="caja caja-no">
+    <p><strong>Si tú o alguien cercano piensa en hacerse daño, o la angustia es insoportable, llama al <a href="tel:112">112</a>.</strong></p>
+  </div>
+
+  <h2>Lo que sientes es una reacción normal</h2>
+  <p>
+    Tras un suceso así es habitual sentir miedo, confusión, rabia, culpa, tristeza, nudo en el estómago, temblores o
+    dificultad para dormir. Les pasa a pasajeros, familiares, testigos y también a quienes ayudan. Suelen ir a menos en los
+    días siguientes.
+  </p>
+
+  <h2>Qué puede ayudarte ahora</h2>
+  <ul class="lista-check">
+    <li>Busca un lugar tranquilo y respira despacio: inspira contando hasta cuatro y suelta el aire contando hasta seis.</li>
+    <li>Bebe agua y come algo, aunque no tengas hambre.</li>
+    <li>Rodéate de personas de confianza. No hace falta hablar si no quieres.</li>
+    <li>Limita el tiempo que pasas viendo noticias e imágenes del accidente.</li>
+    <li>Ocúpate de una cosa cada vez: lo urgente primero.</li>
+  </ul>
+
+  <h2>Si acompañas a alguien</h2>
+  <ul class="lista-check">
+    <li>Escucha sin presionar para que cuente lo ocurrido.</li>
+    <li>Ofrece ayuda práctica: agua, un cargador, una llamada, transporte.</li>
+    <li>No le digas cómo debería sentirse ni minimices lo que siente.</li>
+    <li>No des información que no esté confirmada por los canales oficiales.</li>
+  </ul>
+
+  <h2>Cuándo pedir ayuda profesional</h2>
+  <p>Si pasadas unas semanas sigues reviviendo lo ocurrido, no duermes, evitas todo lo que te lo recuerda o no puedes hacer tu vida normal, consulta con tu centro de salud o con un profesional de la psicología.</p>
+
+  <h2>Recursos</h2>
+  {recursos.map((r) => (
+    <div class={`caja ${verificado(r) ? '' : 'caja-pendiente'}`}>
+      {!verificado(r) && <p><span class="sello-pendiente">Pendiente de comprobación — no difundir</span></p>}
+      <p><strong>{r.nombre}</strong> — {/^\d+$/.test(r.contacto) ? <a href={`tel:${r.contacto}`}>{r.contacto}</a> : r.contacto}</p>
+      <p>{r.para}</p>
+    </div>
+  ))}
+</Layout>

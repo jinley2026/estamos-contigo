@@ -1,0 +1,24 @@
+---
+import Layout from '../components/Layout.astro';
+import Borrador from '../components/Borrador.astro';
+---
+<Layout titulo="Cookies y tecnologías similares">
+  <Borrador clave="cookies" />
+  <h1>Cookies y tecnologías similares</h1>
+  <p>Esta web no instala cookies propias ni de terceros. Por eso no te mostramos ningún aviso emergente.</p>
+  <h2>Almacenamiento local del navegador</h2>
+  <p>Solo si pulsas los botones de ajustes de lectura, tu navegador guarda en su almacenamiento local:</p>
+  <table>
+    <thead><tr><th scope="col">Clave</th><th scope="col">Para qué</th><th scope="col">Duración</th></tr></thead>
+    <tbody>
+      <tr><td>ec-texto</td><td>Recordar que elegiste texto más grande</td><td>Hasta que lo desactives o borres los datos del navegador</td></tr>
+      <tr><td>ec-contraste</td><td>Recordar que elegiste alto contraste</td><td>Hasta que lo desactives o borres los datos del navegador</td></tr>
+    </tbody>
+  </table>
+  <p>
+    Se guarda únicamente porque tú lo pides, no sale de tu dispositivo y no sirve para identificarte. Consideramos que es
+    almacenamiento técnico necesario para prestar la función que solicitas. [Pendiente de confirmar en la revisión jurídica.]
+  </p>
+  <h2>Servicio de alojamiento</h2>
+  <p>[PENDIENTE: confirmar que el proveedor de alojamiento no añade cookies propias. Si las añade, describirlas aquí.]</p>
+</Layout>

@@ -1,0 +1,45 @@
+---
+// Cartel A4 imprimible. El QR solo se genera cuando exista un dominio definitivo y validado.
+import { SITE, canalDestacado, verificado, fechaHora, ES_PREVIA } from '../lib/datos';
+import Estilos from '../components/Estilos.astro';
+const c = canalDestacado;
+const telOk = c && verificado(c);
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Cartel imprimible · {SITE.nombre}</title>
+    <Estilos />
+    <style>
+      @page { size: A4; margin: 14mm; }
+      .a4 { max-width: 182mm; margin: 0 auto; padding: 8mm 0; text-align: center; }
+      .a4 h1 { font-size: 2.1rem; margin-top: 0; }
+      .a4 .tel { font-size: 3rem; font-weight: 800; color: var(--azul-oscuro); margin: .2rem 0; }
+      .qr { width: 52mm; height: 52mm; margin: 6mm auto; border: 2px dashed var(--ambar-borde); display: flex; align-items: center; justify-content: center; padding: 4mm; font-size: .8rem; color: var(--ambar-texto); }
+      .a4 .aviso { border: 2px solid var(--azul); border-radius: 10px; padding: 4mm; margin-top: 6mm; }
+    </style>
+  </head>
+  <body>
+    {ES_PREVIA && <div class="banda-previa">BORRADOR DE CARTEL — no imprimir ni difundir hasta completar los requisitos de publicación</div>}
+    <div class="a4">
+      <p><strong>{SITE.nombre}</strong></p>
+      <h1>Accidente ferroviario de Toledo</h1>
+      <p>Guía con canales oficiales verificados para familiares, pasajeros y viajeros.</p>
+      <h2>Familiares de pasajeros</h2>
+      {telOk && c ? (
+        <><p class="tel">{c.telefonoVisible}</p><p>{c.organismo}</p></>
+      ) : (
+        <p class="caja caja-pendiente">Teléfono oficial pendiente de verificación. No se imprime ningún número sin verificar.</p>
+      )}
+      <div class="qr" role="img" aria-label="Código QR pendiente">
+        {SITE.dominio ? `QR hacia ${SITE.dominio}: generar con scripts/generar-qr.mjs` : 'Código QR pendiente: se generará cuando exista un dominio definitivo y validado.'}
+      </div>
+      <p><strong>{SITE.dominio || '[dirección web pendiente]'}</strong></p>
+      <p class="aviso">Iniciativa solidaria independiente. No somos un servicio oficial de emergencias. En caso de emergencia, llama al <strong>112</strong>. No pedimos dinero ni datos personales.</p>
+      <p class="meta">Actualizado: {fechaHora(SITE.estadoOperativo.ultimaRevisionEditorial)}</p>
+    </div>
+  </body>
+</html>

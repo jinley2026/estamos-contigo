@@ -1,0 +1,107 @@
+<script is:inline>
+/* Mejora progresiva. La web funciona entera sin este script.
+   Nada de lo que hace sale del dispositivo: no hay peticiones de red, ni analítica, ni registros. */
+(function () {
+  var doc = document.documentElement;
+  doc.classList.add('js');
+
+  /* Preferencias de lectura guardadas solo en este navegador (almacenamiento técnico, documentado en Cookies). */
+  function leer(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function guardar(k, v) { try { if (v) localStorage.setItem(k, v); else localStorage.removeItem(k); } catch (e) {} }
+  if (leer('ec-texto') === '1') doc.classList.add('texto-grande');
+  if (leer('ec-contraste') === '1') doc.classList.add('contraste');
+
+  var ahora = Date.now();
+  function hora(ms) {
+    try {
+      return new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit' }).format(new Date(ms));
+    } catch (e) { return new Date(ms).toISOString(); }
+  }
+
+  /* Control de caducidad: un dato comprobado hace más de su plazo pasa a «pendiente de revisión».
+     Los datos sensibles (teléfonos) ocultan además el botón de llamada. */
+  var items = document.querySelectorAll('[data-comprobado][data-revisar]');
+  for (var i = 0; i < items.length; i++) {
+    var el = items[i];
+    var t = Date.parse(el.getAttribute('data-comprobado'));
+    var min = parseInt(el.getAttribute('data-revisar'), 10);
+    if (!isNaN(t) && !isNaN(min) && ahora > t + min * 60000) {
+      el.classList.add('caducado');
+      var aviso = el.querySelector('.aviso-caducado');
+      if (aviso) aviso.textContent = 'Pendiente de revisión: última comprobación ' + hora(t) + '. Consulta la fuente oficial antes de actuar.';
+    }
+  }
+
+  /* Modo seguro automático: si el equipo no ha revisado la web en el plazo fijado,
+     se avisa y se ocultan los bloques que se presentan como información al día. */
+  var b = document.body;
+  var ult = Date.parse(b.getAttribute('data-ultima-revision'));
+  var maxh = parseFloat(b.getAttribute('data-max-horas'));
+  if (!isNaN(ult) && !isNaN(maxh) && ahora > ult + maxh * 3600000) {
+    b.classList.add('modo-seguro');
+    var banda = document.querySelector('.banda-modo-seguro');
+    if (banda) banda.hidden = false;
+  }
+
+  /* Ajustes de lectura */
+  document.addEventListener('click', function (ev) {
+    var btn = ev.target.closest ? ev.target.closest('[data-accion]') : null;
+    if (!btn) return;
+    var a = btn.getAttribute('data-accion');
+    if (a === 'texto-grande') { var on = doc.classList.toggle('texto-grande'); guardar('ec-texto', on ? '1' : ''); }
+    if (a === 'contraste') { var on2 = doc.classList.toggle('contraste'); guardar('ec-contraste', on2 ? '1' : ''); }
+    if (a === 'escuchar') {
+      if (!('speechSynthesis' in window)) { btn.textContent = 'Tu navegador no permite la lectura en voz alta'; return; }
+      if (speechSynthesis.speaking) { speechSynthesis.cancel(); btn.textContent = 'Escuchar esta página'; return; }
+      var main = document.getElementById('contenido');
+      var u = new SpeechSynthesisUtterance(main ? main.innerText : '');
+      u.lang = doc.lang || 'es-ES';
+      u.onend = function () { btn.textContent = 'Escuchar esta página'; };
+      speechSynthesis.speak(u);
+      btn.textContent = 'Detener lectura';
+    }
+  });
+
+  /* «Avisar a mi familia»: el texto se compone en el dispositivo y se entrega a la app del propio usuario. */
+  var eds = document.querySelectorAll('[data-editor-mensaje]');
+  for (var j = 0; j < eds.length; j++) (function (ed) {
+    var area = ed.querySelector('textarea');
+    var mencion = ed.querySelector('input[type=checkbox]');
+    var textoMencion = ed.getAttribute('data-mencion') || '';
+    var estado = ed.querySelector('.estado-copia');
+    var base = area.value;
+    function texto() { return (area.value || '').trim(); }
+    function aplicarMencion() {
+      var sin = area.value.replace(' ' + textoMencion, '').replace(textoMencion, '');
+      area.value = mencion.checked ? (sin.trim() + ' ' + textoMencion) : sin.trim();
+    }
+    var opciones = ed.querySelectorAll('[data-plantilla]');
+    for (var k = 0; k < opciones.length; k++) opciones[k].addEventListener('click', function (e) {
+      e.preventDefault();
+      area.value = this.getAttribute('data-plantilla');
+      if (mencion.checked) aplicarMencion();
+      area.focus();
+    });
+    mencion.addEventListener('change', aplicarMencion);
+    ed.querySelector('[data-enviar=whatsapp]').addEventListener('click', function () {
+      window.location.href = 'https://wa.me/?text=' + encodeURIComponent(texto());
+    });
+    ed.querySelector('[data-enviar=sms]').addEventListener('click', function () {
+      window.location.href = 'sms:?&body=' + encodeURIComponent(texto());
+    });
+    var bc = ed.querySelector('[data-enviar=copiar]');
+    bc.addEventListener('click', function () {
+      var ok = function () { estado.textContent = bc.getAttribute('data-ok') || 'Copiado'; };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(texto()).then(ok, function () { area.select(); });
+      } else { area.select(); try { document.execCommand('copy'); ok(); } catch (e) {} }
+    });
+    var bs = ed.querySelector('[data-enviar=compartir]');
+    if (navigator.share) {
+      bs.hidden = false;
+      bs.addEventListener('click', function () { navigator.share({ text: texto() }).catch(function () {}); });
+    }
+    if (!base) area.value = '';
+  })(eds[j]);
+})();
+</script>

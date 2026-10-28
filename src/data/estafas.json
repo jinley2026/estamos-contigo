@@ -1,0 +1,13 @@
+{
+  "_comentario": "Avisos generales (siempre visibles) y alertas concretas (solo con fuente contrastada; nunca acusar a personas o empresas sin respaldo documental).",
+  "generales": [
+    "Esta web nunca te pedirá dinero.",
+    "Esta web nunca te pedirá documentos personales, DNI ni datos bancarios.",
+    "Esta web no localiza pacientes ni tiene listados de personas.",
+    "La información sobre personas concretas solo la dan los canales oficiales.",
+    "Desconfía de supuestos gestores, abogados o intermediarios que te pidan un pago por adelantado.",
+    "No compartas imágenes de víctimas ni información privada de otras personas.",
+    "Si recibes un enlace que dice ser de esta web por mensaje privado, no lo abras: nosotros no enviamos mensajes."
+  ],
+  "alertasConcretas": []
+}

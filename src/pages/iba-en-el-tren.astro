@@ -1,0 +1,43 @@
+---
+import Layout from '../components/Layout.astro';
+import MensajeFamilia from '../components/MensajeFamilia.astro';
+import { SITE } from '../lib/datos';
+---
+<Layout titulo="Iba en uno de los trenes" descripcion="Qué hacer si viajabas en los trenes y cómo avisar a tu familia desde tu propio teléfono.">
+  <h1>Iba en uno de los trenes</h1>
+
+  <div class="caja caja-no">
+    <p><strong>Si tienes dolor, mareo, confusión, dificultad para respirar o cualquier síntoma que te preocupe, llama al <a href="tel:112">112</a> o avisa al personal sanitario.</strong> Algunos síntomas aparecen horas después.</p>
+  </div>
+
+  <h2>Ahora mismo</h2>
+  <ul class="lista-check">
+    <li>Sigue las instrucciones del personal de emergencias y de la compañía.</li>
+    <li>No vuelvas al tren a por tus cosas.</li>
+    <li>Si estás con alguien que necesita ayuda, avisa al personal sanitario más cercano.</li>
+    <li>Ahorra batería: baja el brillo y cierra las aplicaciones que no uses.</li>
+  </ul>
+
+  {SITE.modulos.mensajeASalvo && (
+    <section aria-labelledby="avisar">
+      <h2 id="avisar">Avisar a mi familia</h2>
+      <MensajeFamilia lang="es" />
+    </section>
+  )}
+
+  <h2>Pertenencias y equipaje</h2>
+  <p>
+    Las pertenencias que quedaron en los trenes están bajo custodia de las autoridades y de la compañía. Aún no hay un
+    procedimiento oficial publicado para recuperarlas; cuando lo haya, aparecerá en <a href="actualizaciones.html">actualizaciones</a>
+    con su fuente. Mientras tanto, consulta a tu compañía ferroviaria.
+  </p>
+
+  <h2>Reorganizar tu viaje</h2>
+  <p>Consulta la sección <a href="viaje-afectado.html">Tenía un billete o viaje previsto</a>.</p>
+
+  <h2>Cuidar de ti en los próximos días</h2>
+  <p>Es habitual sentir nervios, insomnio, tristeza o revivir lo ocurrido. Tienes orientación y recursos en <a href="apoyo-emocional.html">Ayuda emocional</a>.</p>
+
+  <h2>Derechos</h2>
+  <p>Como viajero tienes derechos reconocidos por la normativa de transporte y de asistencia a víctimas. Esta web no ofrece asesoramiento jurídico personalizado; consulta a tu compañía, a una asociación de consumidores o a un profesional.</p>
+</Layout>

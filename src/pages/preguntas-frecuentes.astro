@@ -1,0 +1,25 @@
+---
+import Layout from '../components/Layout.astro';
+import { categoriasFAQ } from '../lib/datos';
+---
+<Layout titulo="Preguntas frecuentes" descripcion="Respuestas revisadas para familiares, pasajeros y viajeros.">
+  <h1>Preguntas frecuentes</h1>
+  <nav aria-label="Categorías">
+    <ul class="pie-enlaces">
+      {categoriasFAQ.map((c) => <li><a href={`#${c.id}`}>{c.titulo}</a></li>)}
+    </ul>
+  </nav>
+  {categoriasFAQ.map((c) => (
+    <section aria-labelledby={c.id}>
+      <h2 id={c.id}>{c.titulo}</h2>
+      {c.preguntas.map((q) => (
+        <details>
+          <summary>{q.p}</summary>
+          <p>{q.r}</p>
+          {q.fuente && <p class="meta">Fuente: <a href={q.fuente.url} rel="noopener noreferrer">{q.fuente.titulo}</a></p>}
+        </details>
+      ))}
+    </section>
+  ))}
+  <p class="caja">No tenemos chat ni formulario de preguntas para no recoger datos personales. Para información sobre una persona, usa el teléfono oficial para familiares.</p>
+</Layout>

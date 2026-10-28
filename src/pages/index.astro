@@ -1,0 +1,57 @@
+---
+import Layout from '../components/Layout.astro';
+import TarjetaTelefono from '../components/TarjetaTelefono.astro';
+import { SITE, actualizaciones, fechaHora, MODO } from '../lib/datos';
+const ultima = actualizaciones[0];
+---
+<Layout titulo={SITE.nombre}>
+  <h1>{SITE.suceso.titulo}</h1>
+  <p class="subtitulo">Información y recursos de ayuda para pasajeros, familiares y viajeros afectados.</p>
+
+  <TarjetaTelefono />
+
+  <h2 class="visualmente-oculto" id="rutas-titulo">¿Qué necesitas hacer ahora?</h2>
+  <ul class="rutas" aria-labelledby="rutas-titulo">
+    <li>
+      <a href="busco-a-un-familiar.html">
+        <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l5 5" stroke="currentColor" stroke-width="2"/></svg>
+        <span>Busco a un familiar<span class="ruta-desc">Canales oficiales y qué hacer</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="iba-en-el-tren.html">
+        <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 21l2-4M16 21l-2-4M5 11h14" stroke="currentColor" stroke-width="2"/></svg>
+        <span>Iba en uno de los trenes<span class="ruta-desc">Avisar a mi familia y qué hacer</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="viaje-afectado.html">
+        <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 6v12" stroke="currentColor" stroke-width="2" stroke-dasharray="2 2"/></svg>
+        <span>Tenía un billete o viaje previsto<span class="ruta-desc">Cambios, anulaciones y alternativas</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="quiero-ayudar.html">
+        <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <span>Quiero ayudar<span class="ruta-desc">Cómo ayudar sin estorbar</span></span>
+      </a>
+    </li>
+  </ul>
+
+  {MODO !== 'reducido' && ultima && (
+    <section class="solo-normal" aria-labelledby="ultima-titulo">
+      <h2 id="ultima-titulo">Última actualización contrastada</h2>
+      <p><strong>{ultima.titulo}</strong> — {fechaHora(ultima.fechaComunicado)}. <a href="actualizaciones.html">Ver todas las actualizaciones y correcciones</a></p>
+    </section>
+  )}
+
+  <h2>Más información</h2>
+  <ul class="bloques">
+    <li><a href="puntos-de-atencion.html">Puntos oficiales de atención</a></li>
+    <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+    <li><a href="apoyo-emocional.html">Ayuda emocional</a></li>
+    <li><a href="alertas-estafas.html">Alertas de estafas</a></li>
+    <li><a href="idiomas.html">Otros idiomas · Languages</a></li>
+    <li><a href="aviso-legal.html">Quiénes somos y aviso legal</a></li>
+  </ul>
+</Layout>

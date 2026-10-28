@@ -1,0 +1,70 @@
+{
+  "_comentario": "Registro cronológico. Solo niveles 1 y 2. Nunca cifras de víctimas ni identidades. estado: vigente | pendiente | corregido | retirado. Las correcciones nunca borran: se añade 'correccion' y se cambia el estado.",
+  "entradas": [
+    {
+      "id": "2026-10-28-renfe-cambios",
+      "titulo": "Renfe habilita cambios y anulaciones gratuitos en los trenes afectados",
+      "resumen": "Renfe informa de que los viajeros de los trenes afectados por el corte de la línea Madrid–Andalucía pueden cambiar o anular su billete sin coste. Consulta las condiciones en los canales de Renfe.",
+      "fuente": { "titulo": "El Progreso, recoge el aviso de Renfe", "url": "https://www.elprogreso.es/articulo/espana/grave-accidente-tren-toledo-dos-trenes-chocan-urda-ordaz/202610280931312009828.html" },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T09:45:00+01:00",
+      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "revisarCadaMinutos": 120,
+      "estado": "vigente",
+      "operativa": true,
+      "correccion": null
+    },
+    {
+      "id": "2026-10-28-renfe-pavaff",
+      "titulo": "Renfe activa su plan de asistencia a víctimas y familiares",
+      "resumen": "Renfe ha activado el Plan de Asistencia a Víctimas de Accidentes Ferroviarios y a sus Familiares (PAVAFF) y ha habilitado un teléfono de información exclusivo para familiares.",
+      "fuente": { "titulo": "Castilla-La Mancha Media, cita InfoRenfe", "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/victimas-accidente-ferroviario-urda-toledo.html" },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T10:00:00+01:00",
+      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "correccion": null
+    },
+    {
+      "id": "2026-10-28-atocha-psicosocial",
+      "titulo": "Punto de atención psicosocial en la estación de Atocha (Madrid)",
+      "resumen": "La Agencia de Seguridad y Emergencias Madrid 112 ha dispuesto en la estación de Atocha un punto de atención psicosocial para víctimas y familiares. No se ha comunicado horario.",
+      "fuente": { "titulo": "Madrid Actual, recoge la información de Emergencias 112 Comunidad de Madrid", "url": "https://www.madridactual.es/noticias-regionales/sucesos/accidente-comunidad-envia-8-dotaciones-bomberos-recursos-20261028-8125923.html" },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T10:20:00+01:00",
+      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "correccion": null
+    },
+    {
+      "id": "2026-10-28-platecam",
+      "titulo": "La Junta de Castilla-La Mancha activa su Plan Territorial de Emergencia",
+      "resumen": "El Gobierno regional ha activado el Plan Territorial de Emergencia de Castilla-La Mancha (Platecam) a raíz del accidente.",
+      "fuente": { "titulo": "CLM24, recoge fuentes del Gobierno regional", "url": "https://www.clm24.es/provincias/toledo/colisionan-dos-trenes-pasajeros-urda-accidente-trenes/20261028093701484833.html" },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T09:37:00+01:00",
+      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "revisarCadaMinutos": 240,
+      "estado": "vigente",
+      "operativa": false,
+      "correccion": null
+    },
+    {
+      "id": "2026-10-28-adif-corte",
+      "titulo": "Adif interrumpe la circulación en la línea de alta velocidad Madrid–Andalucía",
+      "resumen": "Adif comunica que la circulación está interrumpida por un alcance entre dos trenes entre Mora/Orgaz y Urda (punto kilométrico 118). No hay previsión pública de restablecimiento.",
+      "fuente": { "titulo": "Lecturas, recoge el comunicado de Adif", "url": "https://www.lecturas.com/diario/adif-confirma-choque-dos-trenes-a-altura-yebenes-toledo-y-suspende-circulacion_200489" },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T09:15:00+01:00",
+      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "revisarCadaMinutos": 120,
+      "estado": "vigente",
+      "operativa": true,
+      "correccion": null
+    }
+  ]
+}

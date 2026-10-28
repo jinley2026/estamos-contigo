@@ -1,0 +1,80 @@
+{
+  "fecha": "2026-10-28T10:56:13",
+  "resultados": [
+    {
+      "prueba": "Accesibilidad automática axe (WCAG 2.2 A/AA) sin violaciones en 26 páginas",
+      "ok": true,
+      "detalle": "{}"
+    },
+    {
+      "prueba": "Sin errores de consola ni bloqueos de CSP",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "Ninguna petición de red a terceros al cargar las páginas",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "Plantilla seleccionada se carga en el editor",
+      "ok": true,
+      "detalle": "Estoy bien, pero ahora no puedo hablar."
+    },
+    {
+      "prueba": "La mención al accidente es opcional y se añade/quita",
+      "ok": true,
+      "detalle": "Estoy bien, pero ahora no puedo hablar. (Escribo por el accidente de tren de Toledo.) / Estoy bien, pero ahora no puedo hablar."
+    },
+    {
+      "prueba": "WhatsApp recibe exactamente el texto editado por el usuario",
+      "ok": true,
+      "detalle": "Estoy bien. Te llamo luego."
+    },
+    {
+      "prueba": "El texto del mensaje nunca se envía a nuestro servidor",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "Dato fresco: botón de llamada visible",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "Dato caducado (2 h > 60 min): se marca pendiente y se oculta el botón de llamada",
+      "ok": true,
+      "detalle": "tarjeta-tel temporal pendiente caducado / Pendiente de revisión: última comprobación 28/10, 10:50. Consulta la fuente oficial antes de actuar."
+    },
+    {
+      "prueba": "Modo seguro automático tras 4 h sin revisión: aviso visible y se oculta «última actualización»",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "Sin JavaScript: 4 mensajes con enlace directo a WhatsApp",
+      "ok": true,
+      "detalle": "4"
+    },
+    {
+      "prueba": "Sin JavaScript: portada con botón de llamada",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "320 px con texto grande: sin desplazamiento horizontal",
+      "ok": true,
+      "detalle": "[320, 320]"
+    },
+    {
+      "prueba": "La preferencia de texto grande se recuerda localmente",
+      "ok": true,
+      "detalle": ""
+    },
+    {
+      "prueba": "Primer elemento con Tab: «Saltar al contenido»",
+      "ok": true,
+      "detalle": "Saltar al contenido"
+    }
+  ]
+}

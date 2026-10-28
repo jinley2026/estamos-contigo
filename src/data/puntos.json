@@ -1,0 +1,19 @@
+{
+  "_comentario": "Solo puntos ANUNCIADOS por un organismo. Nunca hospitales de ingreso de personas concretas ni el lugar del accidente. 'verificadoPor' con dos iniciales para publicar.",
+  "puntos": [
+    {
+      "id": "atocha-psicosocial",
+      "nombre": "Punto de atención psicosocial — Estación de Madrid-Puerta de Atocha",
+      "direccion": "Estación de Madrid-Puerta de Atocha, Madrid",
+      "funcion": "Atención psicosocial a víctimas y familiares.",
+      "organismo": "Agencia de Seguridad y Emergencias Madrid 112 (ASEM112), Comunidad de Madrid",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 2,
+      "fuente": { "titulo": "Madrid Actual, recoge la información de Emergencias 112 Comunidad de Madrid", "url": "https://www.madridactual.es/noticias-regionales/sucesos/accidente-comunidad-envia-8-dotaciones-bomberos-recursos-20261028-8125923.html" },
+      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": []
+    }
+  ]
+}

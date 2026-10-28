@@ -1,0 +1,130 @@
+<style is:global>
+  /* Identidad sobria: blanco, neutros y azul oscuro. Fuentes del sistema (sin descargas externas). */
+  :root {
+    --azul: #1f3a5f;
+    --azul-oscuro: #142a46;
+    --azul-claro: #e8eef6;
+    --texto: #1a1d21;
+    --texto-suave: #4a5260;
+    --fondo: #ffffff;
+    --fondo-suave: #f5f6f8;
+    --borde: #cfd5de;
+    --ambar-fondo: #fff4d6;
+    --ambar-borde: #8a5a00;
+    --ambar-texto: #5c3d00;
+    --rojo-fondo: #fdecec;
+    --rojo-borde: #a1262a;
+    --ok: #1d6b3a;
+    --foco: #ffbf47;
+    --base: 18px;
+  }
+  html { font-size: var(--base); -webkit-text-size-adjust: 100%; }
+  html.texto-grande { --base: 22px; }
+  html.contraste {
+    --azul: #000; --azul-oscuro: #000; --azul-claro: #fff; --texto: #000; --texto-suave: #000;
+    --fondo: #fff; --fondo-suave: #fff; --borde: #000;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fondo); color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.55;
+  }
+  .contenedor { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  a { color: var(--azul); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible, textarea:focus-visible, summary:focus-visible, input:focus-visible {
+    outline: 3px solid var(--foco); outline-offset: 2px; box-shadow: 0 0 0 5px var(--texto);
+  }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 1.2rem 0 .4rem; color: var(--azul-oscuro); }
+  h2 { font-size: 1.25rem; line-height: 1.3; margin: 2rem 0 .6rem; color: var(--azul-oscuro); }
+  h3 { font-size: 1.05rem; margin: 1.2rem 0 .4rem; }
+  p, li { max-width: 68ch; }
+  .saltar { position: absolute; left: -9999px; top: 0; background: var(--foco); color: #000; padding: .6rem 1rem; z-index: 10; }
+  .saltar:focus { left: 8px; top: 8px; }
+  .banda-previa { background: #5c3d00; color: #fff; text-align: center; font-weight: 700; padding: .5rem 1rem; font-size: .9rem; }
+  .banda-aviso { background: var(--azul-claro); border-bottom: 1px solid var(--borde); }
+  .banda-aviso p { margin: 0 auto; max-width: 760px; padding: .6rem 16px; font-size: .9rem; }
+  .enlace-112 { font-weight: 800; color: var(--rojo-borde); white-space: nowrap; }
+  .banda-cierre, .banda-modo-seguro { background: var(--ambar-fondo); border-bottom: 2px solid var(--ambar-borde); color: var(--ambar-texto); }
+  .banda-cierre p, .banda-modo-seguro p { margin: 0 auto; max-width: 760px; padding: .7rem 16px; }
+  .cabecera { border-bottom: 1px solid var(--borde); }
+  .cabecera-fila { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; justify-content: space-between; padding-top: .6rem; padding-bottom: .6rem; }
+  .marca { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--azul-oscuro); }
+  .marca-texto { font-weight: 800; font-size: 1.15rem; letter-spacing: .01em; }
+  .utilidades { display: flex; gap: 1rem; font-size: .9rem; }
+  .utilidades a { padding: .4rem 0; }
+  .subtitulo { color: var(--texto-suave); margin-top: 0; }
+
+  /* Tarjeta del teléfono oficial */
+  .tarjeta-tel { border: 2px solid var(--azul); border-radius: 12px; padding: 1rem; margin: 1.2rem 0; background: var(--fondo); }
+  .tarjeta-tel.pendiente { border-color: var(--ambar-borde); background: var(--ambar-fondo); }
+  .tarjeta-tel .etiqueta { font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--texto-suave); margin: 0; }
+  .tarjeta-tel .organismo { margin: .2rem 0 .4rem; font-weight: 600; }
+  .tarjeta-tel .numero { font-size: 2rem; font-weight: 800; letter-spacing: .02em; margin: .2rem 0; color: var(--azul-oscuro); }
+  .boton-llamar { display: block; text-align: center; background: var(--azul); color: #fff; text-decoration: none; font-weight: 700; padding: .9rem 1rem; border-radius: 10px; font-size: 1.1rem; margin: .6rem 0; }
+  .meta { font-size: .85rem; color: var(--texto-suave); margin: .3rem 0 0; }
+  .sello-pendiente { display: inline-block; background: var(--ambar-borde); color: #fff; font-weight: 700; font-size: .8rem; padding: .15rem .5rem; border-radius: 4px; }
+  .aviso-caducado { display: none; background: var(--ambar-fondo); border-left: 4px solid var(--ambar-borde); padding: .6rem .8rem; color: var(--ambar-texto); }
+  .caducado .aviso-caducado { display: block; }
+  .caducado[data-sensible] .accion-llamar { display: none; }
+  .caducado .estado-fresco { display: none; }
+
+  /* Cuatro rutas */
+  .rutas { list-style: none; padding: 0; margin: 1.2rem 0; display: grid; gap: .7rem; }
+  .rutas a { display: flex; align-items: center; gap: .8rem; min-height: 64px; padding: .9rem 1rem; border: 2px solid var(--azul); border-radius: 12px; text-decoration: none; color: var(--azul-oscuro); font-weight: 700; font-size: 1.1rem; background: var(--fondo); }
+  .rutas a:hover { background: var(--azul-claro); }
+  .rutas svg { flex: none; }
+  .rutas .ruta-desc { display: block; font-weight: 400; font-size: .9rem; color: var(--texto-suave); }
+
+  .bloques { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); list-style: none; padding: 0; }
+  .bloques a { display: block; padding: .8rem 1rem; background: var(--fondo-suave); border: 1px solid var(--borde); border-radius: 10px; text-decoration: none; color: var(--texto); font-weight: 600; }
+  .bloques a:hover { border-color: var(--azul); }
+  .bloque-meta { display: block; font-weight: 400; }
+  .visualmente-oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  .caja { border: 1px solid var(--borde); border-radius: 10px; padding: .9rem 1rem; margin: 1rem 0; background: var(--fondo-suave); }
+  .caja-no { border-left: 5px solid var(--rojo-borde); background: var(--rojo-fondo); }
+  .caja-pendiente { border: 1px dashed var(--ambar-borde); background: var(--ambar-fondo); color: var(--ambar-texto); }
+  .lista-check li { margin: .3rem 0; }
+
+  .entrada { border-top: 1px solid var(--borde); padding: .9rem 0; }
+  .entrada h3 { margin: 0 0 .3rem; }
+  .entrada.retirado h3, .entrada.corregido h3 { text-decoration: line-through; }
+  .nivel { display: inline-block; font-size: .78rem; font-weight: 700; padding: .1rem .45rem; border-radius: 4px; background: var(--azul-claro); color: var(--azul-oscuro); }
+
+  /* Avisar a mi familia */
+  .plantillas { list-style: none; padding: 0; display: grid; gap: .6rem; }
+  .plantilla { border: 1px solid var(--borde); border-radius: 10px; padding: .8rem; }
+  .plantilla p { margin: 0 0 .5rem; font-weight: 600; }
+  .acciones { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .acciones a, .acciones button, .ajustes button {
+    font: inherit; font-size: .95rem; padding: .6rem .9rem; border-radius: 8px; border: 2px solid var(--azul);
+    background: var(--fondo); color: var(--azul-oscuro); text-decoration: none; font-weight: 600; cursor: pointer; min-height: 44px;
+  }
+  .acciones .principal { background: var(--azul); color: #fff; }
+  .editor { display: none; }
+  .js .editor { display: block; }
+  .js .sin-js { display: none; }
+  .editor label { font-weight: 600; display: block; margin: .6rem 0 .3rem; }
+  .editor textarea { width: 100%; min-height: 6rem; font: inherit; padding: .6rem; border: 2px solid var(--borde); border-radius: 8px; }
+  .editor .opcion { display: flex; gap: .5rem; align-items: center; margin: .6rem 0; }
+  .editor .opcion input { width: 1.4rem; height: 1.4rem; }
+  .estado-copia { min-height: 1.4rem; color: var(--ok); font-weight: 600; }
+
+  details { border: 1px solid var(--borde); border-radius: 10px; padding: .2rem .9rem; margin: .5rem 0; }
+  summary { cursor: pointer; font-weight: 600; padding: .6rem 0; }
+
+  .pie { margin-top: 3rem; border-top: 1px solid var(--borde); background: var(--fondo-suave); padding: 1.2rem 0 2rem; font-size: .9rem; }
+  .pie-enlaces { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; }
+  .pie-nota, .pie-ultima { color: var(--texto-suave); }
+  .ajustes { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+  .ajustes button { display: none; }
+  .js .ajustes button { display: inline-block; }
+  .borrador-legal { border: 2px solid var(--ambar-borde); background: var(--ambar-fondo); color: var(--ambar-texto); padding: .8rem 1rem; border-radius: 8px; font-weight: 600; }
+  .modo-reducido .solo-normal { display: none; }
+  .modo-cerrado .temporal { display: none; }
+  .modo-seguro .solo-normal { display: none; }
+
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+  @media print { .banda-aviso, .cabecera nav, .ajustes, .saltar { display: none; } }
+</style>

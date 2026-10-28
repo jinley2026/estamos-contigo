@@ -1,0 +1,53 @@
+{
+  "_comentario": "Configuración central. Los campos del responsable son OBLIGATORIOS para publicar: el script publish-gate.mjs bloquea la publicación si alguno está vacío. No inventar datos.",
+  "nombre": "Estamos Contigo",
+  "subtitulo": "Información y apoyo para personas afectadas y familiares.",
+  "suceso": {
+    "titulo": "Accidente ferroviario de Toledo",
+    "descripcionCorta": "Colisión entre dos trenes de alta velocidad en la línea Madrid–Andalucía, entre Mora/Orgaz y Urda (Toledo), el 28 de octubre de 2026.",
+    "fecha": "2026-10-28"
+  },
+  "responsable": {
+    "tipo": "",
+    "nombreORazonSocial": "",
+    "nif": "",
+    "domicilio": "",
+    "correoContacto": "",
+    "correoPrivacidad": "",
+    "registroPublico": "",
+    "personaResponsableEditorial": ""
+  },
+  "dominio": "",
+  "estadoOperativo": {
+    "_comentario": "modo: normal | reducido | cerrado. 'reducido' = solo directorio de fuentes oficiales. 'cerrado' = fin de actualizaciones.",
+    "modo": "normal",
+    "ultimaRevisionEditorial": "2026-10-28T10:50:00+01:00",
+    "horasMaximasSinRevision": 4,
+    "fechaCierre": "",
+    "mensajeCierre": ""
+  },
+  "modulos": {
+    "actualizaciones": true,
+    "puntosAtencion": true,
+    "mensajeASalvo": true,
+    "preguntasFrecuentes": true,
+    "apoyoEmocional": true,
+    "alertasEstafas": true,
+    "idiomas": true,
+    "cartel": true
+  },
+  "validacionProfesional": {
+    "_comentario": "true solo cuando un psicólogo/a de emergencias haya revisado los textos de apoyo emocional, y hablantes competentes las traducciones.",
+    "apoyoEmocional": false,
+    "traducciones": false
+  },
+  "revisionJuridica": {
+    "_comentario": "Marcar true solo cuando un profesional competente haya revisado cada documento. Requisito de publicación.",
+    "avisoLegal": false,
+    "privacidad": false,
+    "cookies": false,
+    "condicionesUso": false,
+    "politicaEditorial": false,
+    "independencia": false
+  }
+}

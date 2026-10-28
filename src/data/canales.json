@@ -1,0 +1,48 @@
+{
+  "_comentario": "Teléfonos y canales oficiales. 'verificadoPor' debe contener las iniciales de DOS personas del equipo que han comprobado el número en la fuente oficial y han llamado. Sin eso, el canal se muestra en la vista previa como PENDIENTE y la publicación queda bloqueada. 'nivelFuente': 1 = organismo directo; 2 = agencia/medio que cita expresamente al organismo; 3 y 4 no se publican.",
+  "canales": [
+    {
+      "id": "renfe-familiares",
+      "organismo": "Renfe — Plan de Asistencia a Víctimas de Accidentes Ferroviarios y a sus Familiares (PAVAFF)",
+      "telefono": "900101020",
+      "telefonoVisible": "900 10 10 20",
+      "finalidad": "Información para familiares de pasajeros afectados. Es un teléfono solo para familiares.",
+      "destacado": true,
+      "temporal": true,
+      "sensible": true,
+      "nivelFuente": 2,
+      "fuentes": [
+        {
+          "titulo": "Castilla-La Mancha Media: cita la publicación de InfoRenfe sobre la activación del PAVAFF",
+          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/victimas-accidente-ferroviario-urda-toledo.html",
+          "fechaPublicacion": "2026-10-28T10:37:00+01:00"
+        },
+        {
+          "titulo": "Vozpópuli: Renfe activa el PAVAFF y habilita el 900 10 10 20",
+          "url": "https://www.vozpopuli.com/espana/accidente-de-tren-en-directo-afectados-heridos-y-ultima-hora-del-choque-entre-un-ave-e-iryo-en-toledo-hoy.html",
+          "fechaPublicacion": "2026-10-28T10:00:00+01:00"
+        }
+      ],
+      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [],
+      "notaInterna": "Aparece escrito también como 900 101 020 (mismos dígitos). Pendiente: confirmar en el canal oficial de Renfe y prueba de llamada por dos personas."
+    },
+    {
+      "id": "iryo-familiares",
+      "organismo": "Iryo",
+      "telefono": "",
+      "telefonoVisible": "",
+      "finalidad": "Canal específico de Iryo para este accidente: NO CONFIRMADO. No se publica ningún número hasta que Iryo lo comunique.",
+      "destacado": false,
+      "temporal": true,
+      "sensible": true,
+      "nivelFuente": 0,
+      "fuentes": [],
+      "comprobadoEn": "2026-10-28T10:50:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [],
+      "notaInterna": "En el accidente de Adamuz (enero de 2026) Iryo habilitó el 900 001 402. NO publicarlo como vigente para este suceso sin comunicado de Iryo."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+---
+import Layout from '../components/Layout.astro';
+import { puntos, visible, verificado, fechaHora } from '../lib/datos';
+const lista = puntos.filter((p) => visible(p));
+---
+<Layout titulo="Puntos oficiales de atención" descripcion="Puntos de atención a familiares y víctimas anunciados por los organismos.">
+  <h1>Puntos oficiales de atención</h1>
+  <p class="subtitulo">Solo incluimos puntos que un organismo ha anunciado públicamente.</p>
+  <div class="caja caja-no">
+    <p><strong>Llama antes de desplazarte</strong> al teléfono oficial para familiares. No acudas al lugar del accidente ni a hospitales sin indicación oficial.</p>
+  </div>
+
+  {lista.length === 0 && <p>No hay puntos de atención confirmados en este momento.</p>}
+  {lista.map((p) => (
+    <section class={`caja temporal ${verificado(p) ? '' : 'caja-pendiente'}`} data-comprobado={p.comprobadoEn} data-revisar={p.revisarCadaMinutos}>
+      {!verificado(p) && <p><span class="sello-pendiente">Pendiente de verificación — no difundir</span></p>}
+      <h2>{p.nombre}</h2>
+      <p><strong>Para qué:</strong> {p.funcion}</p>
+      <p><strong>Organismo:</strong> {p.organismo}</p>
+      <p><strong>Dónde:</strong> {p.direccion}</p>
+      <p><strong>Horario:</strong> {p.horario}</p>
+      {p.telefono && <p><strong>Teléfono:</strong> <a href={`tel:${p.telefono}`}>{p.telefono}</a></p>}
+      <p class="aviso-caducado" role="status"></p>
+      <p class="meta">Comprobado: {fechaHora(p.comprobadoEn)} · Fuente: <a href={p.fuente.url} rel="noopener noreferrer">{p.fuente.titulo}</a></p>
+    </section>
+  ))}
+  <p>No publicamos dónde está ingresada ninguna persona. Esa información solo la dan los canales oficiales a quien corresponda.</p>
+</Layout>

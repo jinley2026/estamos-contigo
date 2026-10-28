@@ -1,0 +1,19 @@
+---
+import Layout from '../components/Layout.astro';
+import Borrador from '../components/Borrador.astro';
+import { SITE } from '../lib/datos';
+---
+<Layout titulo="Declaración de independencia">
+  <Borrador clave="independencia" />
+  <h1>Declaración de independencia institucional</h1>
+  <p>
+    {SITE.nombre} es una iniciativa ciudadana independiente. No tiene relación, acuerdo ni autorización de Renfe, Iryo, Adif,
+    Protección Civil, el 112, ningún servicio sanitario, fuerza de seguridad, administración pública ni organización humanitaria.
+  </p>
+  <p>
+    Si en el futuro se llegara a algún acuerdo con una entidad, se indicará aquí expresamente, con su alcance y fecha. Mientras
+    no figure en esta página, no existe.
+  </p>
+  <p>No usamos logotipos oficiales. Los nombres de organismos y compañías aparecen solo para identificar la fuente de cada información.</p>
+  <p>No tenemos publicidad, no recaudamos dinero y no obtenemos ningún beneficio.</p>
+</Layout>

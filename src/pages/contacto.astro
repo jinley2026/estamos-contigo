@@ -1,0 +1,18 @@
+---
+import Layout from '../components/Layout.astro';
+import { dato } from '../lib/legal';
+---
+<Layout titulo="Contacto y reclamaciones">
+  <h1>Contacto, correcciones y reclamaciones</h1>
+  <div class="caja caja-no">
+    <p><strong>No podemos dar información sobre personas.</strong> Para eso, usa el teléfono oficial para familiares. En una emergencia, llama al <a href="tel:112">112</a>.</p>
+  </div>
+  <h2>Avisar de un error</h2>
+  <p>Si ves un dato erróneo o desactualizado, escríbenos a {dato('correoContacto', 'correo de contacto')} indicando la página y, si puedes, la fuente oficial correcta. No incluyas datos personales ni de salud de nadie.</p>
+  <h2>Reclamaciones</h2>
+  <p>Puedes presentar una reclamación en la misma dirección. Responderemos en el menor plazo posible, y como máximo en un mes.</p>
+  <h2>Protección de datos</h2>
+  <p>Para ejercer tus derechos: {dato('correoPrivacidad', 'correo para ejercer derechos')}. Más información en la <a href="privacidad.html">política de privacidad</a>.</p>
+  <h2>Medios de comunicación e instituciones</h2>
+  <p>{dato('correoContacto', 'correo de contacto')}</p>
+</Layout>

@@ -1,0 +1,49 @@
+{
+  "_comentario": "Plantillas de «Avisar a mi familia». Se generan en el dispositivo del usuario. Nunca se envían a nuestros servidores. Traducciones no españolas: PRELIMINARES, pendientes de revisión humana.",
+  "plantillas": {
+    "es": [
+      "Estoy a salvo.",
+      "Estoy bien, pero ahora no puedo hablar.",
+      "Estoy recibiendo ayuda y contactaré contigo cuando pueda.",
+      "Necesito que te pongas en contacto conmigo."
+    ],
+    "en": [
+      "I am safe.",
+      "I'm fine, but I can't talk right now.",
+      "I'm getting help and will contact you when I can.",
+      "I need you to get in touch with me."
+    ],
+    "fr": [
+      "Je suis en sécurité.",
+      "Je vais bien, mais je ne peux pas parler maintenant.",
+      "Je reçois de l'aide et je te contacterai dès que possible.",
+      "J'ai besoin que tu me contactes."
+    ],
+    "pt": [
+      "Estou em segurança.",
+      "Estou bem, mas agora não posso falar.",
+      "Estou a receber ajuda e vou contactar-te quando puder.",
+      "Preciso que entres em contacto comigo."
+    ],
+    "it": [
+      "Sono al sicuro.",
+      "Sto bene, ma ora non posso parlare.",
+      "Sto ricevendo aiuto e ti contatterò appena possibile.",
+      "Ho bisogno che tu mi contatti."
+    ],
+    "de": [
+      "Ich bin in Sicherheit.",
+      "Mir geht es gut, aber ich kann gerade nicht sprechen.",
+      "Ich bekomme Hilfe und melde mich, sobald ich kann.",
+      "Bitte melde dich bei mir."
+    ]
+  },
+  "menciones": {
+    "es": "(Escribo por el accidente de tren de Toledo.)",
+    "en": "(I'm writing about the train accident in Toledo, Spain.)",
+    "fr": "(Je t'écris au sujet de l'accident de train de Tolède, en Espagne.)",
+    "pt": "(Escrevo por causa do acidente de comboio em Toledo, Espanha.)",
+    "it": "(Ti scrivo per l'incidente ferroviario di Toledo, in Spagna.)",
+    "de": "(Ich schreibe wegen des Zugunglücks bei Toledo, Spanien.)"
+  }
+}

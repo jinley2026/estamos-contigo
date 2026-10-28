@@ -1,0 +1,145 @@
+{
+  "_comentario": "Preguntas frecuentes redactadas y revisadas. Si una respuesta contiene un dato externo, debe llevar 'fuente'. Sin chatbot ni preguntas libres.",
+  "categorias": [
+    {
+      "id": "familiares",
+      "titulo": "Familiares",
+      "preguntas": [
+        {
+          "p": "No consigo hablar con mi familiar. ¿Qué hago?",
+          "r": "Llama al teléfono oficial de atención a familiares que figura en la portada. Ten a mano su nombre completo, DNI o pasaporte si lo sabes, el número de billete o localizador y una descripción física. Sigue intentando llamar a su móvil de vez en cuando: muchas personas se quedan sin batería o sin cobertura.",
+          "fuente": null
+        },
+        {
+          "p": "¿Podéis decirme si mi familiar está bien o en qué hospital está?",
+          "r": "No. Esta web no tiene ni tendrá datos de personas. Solo los canales oficiales pueden darte información individual. Desconfía de cualquiera que te ofrezca localizar a alguien a cambio de datos o dinero.",
+          "fuente": null
+        },
+        {
+          "p": "¿Debo ir a la zona del accidente?",
+          "r": "No. Desplazarte a la zona no te dará información antes y puede dificultar el trabajo de los equipos de emergencia. Si necesitas atención presencial, acude solo a los puntos que los organismos hayan anunciado y llama antes de desplazarte.",
+          "fuente": null
+        },
+        {
+          "p": "No sé si mi familiar viajaba en uno de esos trenes.",
+          "r": "Comprueba con él o con quien compró el billete el número de tren, la hora de salida y la compañía. Si el billete se compró a través de una empresa o agencia, pídeles el localizador. Con esos datos, llama al teléfono oficial de familiares.",
+          "fuente": null
+        }
+      ]
+    },
+    {
+      "id": "pasajeros",
+      "titulo": "Pasajeros",
+      "preguntas": [
+        {
+          "p": "Iba en uno de los trenes y estoy bien. ¿Cómo aviso a los míos?",
+          "r": "Usa la herramienta «Avisar a mi familia» de esta web: eliges un mensaje y lo envías desde tu propio WhatsApp o SMS. Nosotros no recibimos ni guardamos nada.",
+          "fuente": null
+        },
+        {
+          "p": "Me encuentro bien, pero tengo dolor o mareo horas después.",
+          "r": "Tras un accidente pueden aparecer síntomas más tarde por el efecto de la adrenalina. Si tienes dolor intenso, dificultad para respirar, mareo, confusión o cualquier síntoma que te preocupe, llama al 112 o acude a urgencias.",
+          "fuente": null
+        }
+      ]
+    },
+    {
+      "id": "hospitales",
+      "titulo": "Hospitales y puntos de información",
+      "preguntas": [
+        {
+          "p": "¿Por qué no publicáis la lista de hospitales donde están los heridos?",
+          "r": "Porque esa información afecta a la salud y la intimidad de personas concretas y solo pueden darla los canales oficiales a quien corresponda. Publicamos únicamente los puntos de atención que los organismos han anunciado públicamente.",
+          "fuente": null
+        }
+      ]
+    },
+    {
+      "id": "transporte",
+      "titulo": "Transporte",
+      "preguntas": [
+        {
+          "p": "Tenía billete para hoy en la línea Madrid–Andalucía. ¿Qué hago?",
+          "r": "Consulta la web o la aplicación de tu compañía. Renfe ha informado de cambios y anulaciones gratuitos para los trenes afectados; para otras compañías, consulta sus canales oficiales.",
+          "fuente": { "titulo": "El Progreso, recoge el aviso de Renfe", "url": "https://www.elprogreso.es/articulo/espana/grave-accidente-tren-toledo-dos-trenes-chocan-urda-ordaz/202610280931312009828.html" }
+        },
+        {
+          "p": "¿Hay autobuses alternativos?",
+          "r": "Solo publicaremos alternativas que una compañía u organismo haya confirmado. Por ahora no tenemos ninguna confirmada.",
+          "fuente": null
+        }
+      ]
+    },
+    {
+      "id": "pertenencias",
+      "titulo": "Pertenencias",
+      "preguntas": [
+        {
+          "p": "Dejé mi equipaje en el tren. ¿Cómo lo recupero?",
+          "r": "Las pertenencias quedan bajo custodia de las autoridades y de la compañía. Cuando se comunique un procedimiento oficial lo publicaremos aquí con su fuente. Mientras tanto, consulta a tu compañía ferroviaria.",
+          "fuente": null
+        }
+      ]
+    },
+    {
+      "id": "psicologica",
+      "titulo": "Atención psicológica",
+      "preguntas": [
+        {
+          "p": "No puedo dejar de pensar en lo ocurrido. ¿Es normal?",
+          "r": "Sí: pensamientos repetitivos, insomnio, nervios o tristeza son reacciones frecuentes tras un suceso así, también en familiares y testigos. Si duran varias semanas o te impiden hacer vida normal, busca ayuda profesional. Si piensas en hacerte daño, llama al 112.",
+          "fuente": null
+        }
+      ]
+    },
+    {
+      "id": "ayudas",
+      "titulo": "Ayudas oficiales",
+      "preguntas": [
+        {
+          "p": "¿Habrá ayudas para víctimas y familias?",
+          "r": "Cuando los organismos publiquen ayudas o procedimientos, los enlazaremos aquí con su fuente. No publicamos ayudas que no estén confirmadas.",
+          "fuente": null
+        }
+      ]
+    },
+    {
+      "id": "derechos",
+      "titulo": "Derechos y trámites",
+      "preguntas": [
+        {
+          "p": "¿Tengo derecho a indemnización o reembolso?",
+          "r": "Los viajeros tienen derechos reconocidos por la normativa de transporte y de asistencia a víctimas. Esta web no ofrece asesoramiento jurídico personalizado: consulta a tu compañía, a una asociación de consumidores o a un profesional del derecho.",
+          "fuente": null
+        }
+      ]
+    },
+    {
+      "id": "estafas",
+      "titulo": "Seguridad y prevención de estafas",
+      "preguntas": [
+        {
+          "p": "Me han llamado para ofrecerme gestionar una indemnización a cambio de un pago.",
+          "r": "Desconfía. No pagues ni des datos bancarios o documentos. Cuelga y comprueba siempre por tu cuenta en los canales oficiales.",
+          "fuente": null
+        }
+      ]
+    },
+    {
+      "id": "plataforma",
+      "titulo": "Uso de la plataforma",
+      "preguntas": [
+        {
+          "p": "¿Quién está detrás de esta web?",
+          "r": "Es una iniciativa solidaria independiente. Los datos de su responsable figuran en el aviso legal. No somos un organismo oficial ni tenemos relación con las compañías ferroviarias.",
+          "fuente": null
+        },
+        {
+          "p": "¿Guardáis algún dato mío?",
+          "r": "La web no tiene formularios ni cuentas. Los mensajes de «Avisar a mi familia» se crean en tu teléfono y no nos llegan. El alojamiento registra datos técnicos mínimos (como la dirección IP) por seguridad; lo explicamos en la política de privacidad.",
+          "fuente": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+---
+// Plantilla común: cabecera con aviso permanente, 112, idioma y versión ligera; pie legal.
+// Sin fuentes externas, sin analítica, sin scripts de terceros.
+import { SITE, ES_PREVIA, MODO, fechaHora } from '../lib/datos';
+import Estilos from './Estilos.astro';
+import Scripts from './Scripts.astro';
+
+interface Props {
+  titulo: string;
+  descripcion?: string;
+  lang?: string;
+  ligera?: boolean;
+}
+const { titulo, descripcion = SITE.subtitulo, lang = 'es', ligera = false } = Astro.props;
+const eo = SITE.estadoOperativo;
+const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suceso.titulo}` : `${titulo} · ${SITE.nombre}`;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{tituloCompleto}</title>
+    <meta name="description" content={descripcion} />
+    {ES_PREVIA && <meta name="robots" content="noindex, nofollow, noarchive" />}
+    <meta name="referrer" content="no-referrer" />
+    <meta name="theme-color" content="#1f3a5f" />
+    <meta property="og:title" content={tituloCompleto} />
+    <meta property="og:description" content={descripcion} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="recursos-marca/compartir.png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    {!ligera && <Estilos />}
+  </head>
+  <body
+    data-ultima-revision={eo.ultimaRevisionEditorial}
+    data-max-horas={eo.horasMaximasSinRevision}
+    class={`modo-${MODO}`}
+  >
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    {ES_PREVIA && (
+      <div class="banda-previa" role="note">
+        VISTA PREVIA PRIVADA — No difundir. Contiene datos pendientes de verificación (en ámbar).
+      </div>
+    )}
+    <div class="banda-aviso" role="note">
+      <p>
+        <strong>Iniciativa solidaria independiente.</strong> No somos un servicio oficial de emergencias.
+        En caso de emergencia, llama al <a class="enlace-112" href="tel:112">112</a>.
+      </p>
+    </div>
+    {MODO === 'cerrado' && (
+      <div class="banda-cierre" role="alert">
+        <p><strong>Actualizaciones finalizadas{eo.fechaCierre ? ` el ${fechaHora(eo.fechaCierre)}` : ''}.</strong> {eo.mensajeCierre || 'Esta información es histórica y puede no estar vigente. Consulta siempre los canales oficiales.'}</p>
+      </div>
+    )}
+    <div class="banda-modo-seguro" role="alert" hidden>
+      <p>
+        <strong>Esta página no se ha revisado en las últimas {eo.horasMaximasSinRevision} horas.</strong>
+        Puede no estar al día: consulta directamente los canales oficiales de Renfe, Iryo, Adif y el 112.
+      </p>
+    </div>
+    <header class="cabecera">
+      <div class="contenedor cabecera-fila">
+        <a class="marca" href="index.html" aria-label={`${SITE.nombre}, ir a la portada`}>
+          <svg class="logo" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false">
+            <rect width="48" height="48" rx="11" fill="#1f3a5f" />
+            <circle cx="17" cy="16" r="5.5" fill="#fff" />
+            <circle cx="31" cy="16" r="5.5" fill="#fff" />
+            <path d="M5 40c0-8.5 5.4-14 12-14s12 5.5 12 14z" fill="#fff" />
+            <path d="M19 40c0-8.5 5.4-14 12-14s12 5.5 12 14z" fill="#fff" stroke="#1f3a5f" stroke-width="2" />
+          </svg>
+          <span class="marca-texto">{SITE.nombre}</span>
+        </a>
+        <nav class="utilidades" aria-label="Utilidades">
+          <a href="idiomas.html" lang="mul">Idioma · Language</a>
+          <a href="ligera.html">Versión ligera</a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <slot />
+    </main>
+    <footer class="pie">
+      <div class="contenedor">
+        <p class="pie-ultima">Última revisión editorial: {fechaHora(eo.ultimaRevisionEditorial)}</p>
+        <nav aria-label="Información legal">
+          <ul class="pie-enlaces">
+            <li><a href="aviso-legal.html">Aviso legal</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="condiciones.html">Condiciones de uso</a></li>
+            <li><a href="politica-editorial.html">Política editorial</a></li>
+            <li><a href="independencia.html">Independencia</a></li>
+            <li><a href="contacto.html">Contacto y reclamaciones</a></li>
+          </ul>
+        </nav>
+        <p class="pie-nota">
+          {SITE.nombre} es una iniciativa ciudadana sin ánimo de lucro, sin relación con Renfe, Iryo, Adif ni con
+          ningún organismo público. No pedimos dinero ni datos personales.
+        </p>
+        {!ligera && (
+          <div class="ajustes" aria-label="Ajustes de lectura">
+            <button type="button" data-accion="texto-grande">Texto más grande</button>
+            <button type="button" data-accion="contraste">Alto contraste</button>
+            <button type="button" data-accion="escuchar">Escuchar esta página</button>
+          </div>
+        )}
+      </div>
+    </footer>
+    <Scripts />
+  </body>
+</html>

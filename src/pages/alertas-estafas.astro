@@ -1,0 +1,18 @@
+---
+import Layout from '../components/Layout.astro';
+import { estafas } from '../lib/datos';
+---
+<Layout titulo="Alertas de estafas" descripcion="Cómo protegerte de estafas y bulos relacionados con el accidente.">
+  <h1>Alertas de estafas</h1>
+  <p class="subtitulo">En tragedias como esta aparecen estafadores que se aprovechan de la angustia de las familias.</p>
+  <h2>Ten siempre presente</h2>
+  <ul class="lista-check">
+    {estafas.generales.map((g) => <li>{g}</li>)}
+  </ul>
+  <h2>Alertas concretas contrastadas</h2>
+  {estafas.alertasConcretas.length === 0
+    ? <p>No tenemos alertas concretas contrastadas por el momento. Solo publicamos avisos respaldados por un organismo o un servicio de verificación reconocido.</p>
+    : <ul>{estafas.alertasConcretas.map((a: any) => <li>{a.texto} <a href={a.fuente.url} rel="noopener noreferrer">Fuente</a></li>)}</ul>}
+  <h2>Si crees que te han intentado estafar</h2>
+  <p>No sigas la conversación, no pagues y guarda los mensajes. Puedes denunciarlo ante la Policía Nacional o la Guardia Civil.</p>
+</Layout>

@@ -1,0 +1,29 @@
+---
+// Versión de bajo consumo: una sola página, sin hoja de estilos ni imágenes, con lo esencial.
+import Layout from '../components/Layout.astro';
+import { canalDestacado, visible, verificado, mensajes, operadores, fechaHora, estafas } from '../lib/datos';
+const c = canalDestacado && visible(canalDestacado) ? canalDestacado : null;
+const wa = (s: string) => `https://wa.me/?text=${encodeURIComponent(s)}`;
+---
+<Layout titulo="Versión ligera" ligera>
+  <h1>Accidente ferroviario de Toledo — versión ligera</h1>
+  <p>Emergencias: <a href="tel:112">112</a></p>
+  <h2>Teléfono oficial para familiares</h2>
+  {c ? (
+    <p>
+      {!verificado(c) && <strong>[PENDIENTE DE VERIFICACIÓN — NO DIFUNDIR] </strong>}
+      <a href={`tel:${c.telefono}`}>{c.telefonoVisible}</a> — {c.organismo}. {c.finalidad}
+      Comprobado: {fechaHora(c.comprobadoEn)}. Fuente: <a href={c.fuentes[0].url}>{c.fuentes[0].titulo}</a>
+    </p>
+  ) : <p>Pendiente de verificación. Consulta renfe.com, iryo.eu o adif.es.</p>}
+  <h2>Si buscas a un familiar</h2>
+  <p>Llama al teléfono oficial con: nombre completo, DNI o pasaporte, tren y hora o localizador, descripción física. No vayas a la zona del accidente. Esta web no tiene datos de personas.</p>
+  <h2>Si ibas en el tren</h2>
+  <p>Ante dolor, mareo o dificultad para respirar, llama al 112. Para avisar a tu familia desde tu WhatsApp:</p>
+  <ul>{mensajes.plantillas.es.map((p) => <li><a href={wa(p)}>{p}</a></li>)}</ul>
+  <h2>Si tenías billete</h2>
+  <ul>{operadores.map((o) => <li><a href={o.url}>{o.nombre}</a></li>)}</ul>
+  <h2>Estafas</h2>
+  <ul>{estafas.generales.slice(0, 4).map((g) => <li>{g}</li>)}</ul>
+  <p><a href="index.html">Versión completa</a></p>
+</Layout>

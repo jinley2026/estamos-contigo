@@ -1,0 +1,54 @@
+---
+// Tarjeta del teléfono oficial. Solo muestra el número como confirmado si está verificado;
+// en la vista previa lo muestra en ámbar con sello «pendiente»; en la publicación no aparece.
+import { canalDestacado, verificado, visible, fechaHora } from '../lib/datos';
+interface Props {
+  etiqueta?: string;
+  textoPendiente?: string;
+  textoFuente?: string;
+  textoComprobado?: string;
+}
+const {
+  etiqueta = 'Teléfono oficial para familiares',
+  textoPendiente = 'Pendiente de verificación por el equipo editorial — no difundir',
+  textoFuente = 'Fuente',
+  textoComprobado = 'Comprobado'
+} = Astro.props;
+const c = canalDestacado;
+const mostrar = c && visible(c);
+const ok = c && verificado(c);
+---
+{mostrar && c ? (
+  <section
+    class={`tarjeta-tel temporal ${ok ? '' : 'pendiente'}`}
+    aria-labelledby="tel-titulo"
+    data-comprobado={c.comprobadoEn}
+    data-revisar={c.revisarCadaMinutos}
+    data-sensible={c.sensible ? '' : undefined}
+  >
+    <p class="etiqueta" id="tel-titulo">{etiqueta}</p>
+    {!ok && <p><span class="sello-pendiente">{textoPendiente}</span></p>}
+    <p class="organismo">{c.organismo}</p>
+    <p class="numero" translate="no">{c.telefonoVisible}</p>
+    <p>{c.finalidad}</p>
+    <a class="boton-llamar accion-llamar" href={`tel:${c.telefono}`}>Llamar al {c.telefonoVisible}</a>
+    <p class="aviso-caducado" role="status"></p>
+    <p class="meta">
+      <span class="estado-fresco">{textoComprobado}: {fechaHora(c.comprobadoEn)}. </span>
+      {textoFuente}:{' '}
+      {c.fuentes.map((f, i) => (
+        <span>{i > 0 && ' · '}<a href={f.url} rel="noopener noreferrer">{f.titulo}</a></span>
+      ))}
+    </p>
+  </section>
+) : (
+  <section class="tarjeta-tel">
+    <p class="etiqueta">{etiqueta}</p>
+    <p>
+      Aún no hemos podido verificar el teléfono oficial para familiares. Consúltalo directamente en
+      <a href="https://www.renfe.com" rel="noopener noreferrer">renfe.com</a>,
+      <a href="https://iryo.eu" rel="noopener noreferrer">iryo.eu</a> o
+      <a href="https://www.adif.es" rel="noopener noreferrer">adif.es</a>. En una emergencia, llama al <a href="tel:112">112</a>.
+    </p>
+  </section>
+)}

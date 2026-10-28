@@ -1,0 +1,14 @@
+---
+import Layout from '../components/Layout.astro';
+import { i18n } from '../lib/datos';
+const idiomas = Object.entries(i18n.idiomas).filter(([k]) => k !== 'es');
+---
+<Layout titulo="Idiomas · Languages" descripcion="Información esencial en otros idiomas.">
+  <h1>Idiomas · Languages</h1>
+  <p>Información esencial en otros idiomas. Teléfonos y nombres oficiales no se traducen.</p>
+  <ul class="bloques">
+    <li><a href="index.html" lang="es">Español (versión completa)</a></li>
+    {idiomas.map(([k, v]) => <li><a href={`${k}.html`} lang={k} hreflang={k}>{v.nombre}</a></li>)}
+  </ul>
+  <p class="meta">Árabe, rumano y chino se añadirán cuando haya traducciones revisadas por personas competentes.</p>
+</Layout>

@@ -1,0 +1,17 @@
+---
+import { fechaHora, nivelTexto } from '../lib/datos';
+interface Props { e: any }
+const { e } = Astro.props;
+const estados: Record<string, string> = { vigente: 'Vigente', pendiente: 'Pendiente de revisión', corregido: 'Corregido', retirado: 'Retirado' };
+---
+<article class={`entrada ${e.estado}`} data-comprobado={e.comprobadoEn} data-revisar={e.revisarCadaMinutos}>
+  <h3>{e.titulo}</h3>
+  <p>{e.resumen}</p>
+  {e.correccion && <p class="caja-pendiente caja"><strong>Corrección:</strong> {e.correccion}</p>}
+  <p class="aviso-caducado" role="status"></p>
+  <p class="meta">
+    <span class="nivel">{nivelTexto(e.nivelFuente)}</span> · Estado: {estados[e.estado] ?? e.estado}<br />
+    Comunicado: {fechaHora(e.fechaComunicado)} · Comprobado: {fechaHora(e.comprobadoEn)}<br />
+    Fuente: <a href={e.fuente.url} rel="noopener noreferrer">{e.fuente.titulo}</a>
+  </p>
+</article>

@@ -1,0 +1,30 @@
+---
+import Layout from '../components/Layout.astro';
+import Entrada from '../components/Entrada.astro';
+import { operadores, actualizaciones } from '../lib/datos';
+const relevantes = actualizaciones.filter((e) => ['2026-10-28-adif-corte', '2026-10-28-renfe-cambios'].includes(e.id));
+---
+<Layout titulo="Tenía un billete o viaje previsto" descripcion="Estado de la línea Madrid–Andalucía, cambios, anulaciones y alternativas confirmadas.">
+  <h1>Tenía un billete o viaje previsto</h1>
+  <p class="subtitulo">Solo mostramos condiciones y alternativas que una compañía u organismo haya confirmado.</p>
+
+  <h2>Estado de la línea</h2>
+  {relevantes.map((e) => <Entrada e={e} />)}
+
+  <h2>Consulta tu compañía</h2>
+  <ul class="bloques">
+    {operadores.map((o) => (
+      <li><a href={o.url} rel="noopener noreferrer">{o.nombre}<span class="meta bloque-meta">{o.para}</span></a></li>
+    ))}
+  </ul>
+
+  <h2>Transporte alternativo</h2>
+  <p class="caja">No tenemos ninguna alternativa confirmada por una compañía u organismo. No publicamos horarios de autobuses ni previsiones de restablecimiento sin fuente oficial.</p>
+
+  <h2>Reembolsos y derechos</h2>
+  <p>
+    Las condiciones de cambio, anulación y reembolso las fija cada compañía y la normativa de transporte. Esta información
+    es orientativa y no constituye asesoramiento jurídico personalizado. Si tienes dudas, consulta a tu compañía o a una
+    asociación de consumidores.
+  </p>
+</Layout>

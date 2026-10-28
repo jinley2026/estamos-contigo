@@ -1,0 +1,65 @@
+---
+import Layout from '../components/Layout.astro';
+import TarjetaTelefono from '../components/TarjetaTelefono.astro';
+import { canales, visible, verificado, operadores } from '../lib/datos';
+const otros = canales.filter((c) => !c.destacado);
+---
+<Layout titulo="Busco a un familiar" descripcion="Cómo obtener información oficial sobre un familiar que viajaba en los trenes accidentados.">
+  <h1>Busco a un familiar</h1>
+  <p class="subtitulo">Solo los canales oficiales pueden darte información sobre una persona concreta. Esta web no tiene datos de nadie.</p>
+
+  <TarjetaTelefono />
+
+  <h2>Antes de llamar, ten preparado</h2>
+  <ul class="lista-check">
+    <li>Nombre y apellidos completos de tu familiar.</li>
+    <li>Su DNI, NIE o pasaporte, si lo sabes.</li>
+    <li>El número de tren, la compañía y la hora de salida, o el localizador del billete.</li>
+    <li>Una descripción física: edad aproximada, altura, ropa que llevaba, señas particulares.</li>
+    <li>Un teléfono tuyo donde puedan localizarte, con batería.</li>
+  </ul>
+
+  <h2>Cómo funcionan estos canales</h2>
+  <p>
+    El teléfono para familiares lo atiende personal del plan de asistencia del operador. Recoge tus datos y los de tu familiar
+    y te llamará cuando haya información que pueda darte. Es normal que esté saturado al principio: si no contesta, vuelve a
+    intentarlo pasados unos minutos.
+  </p>
+  <p>
+    La identificación y la comunicación sobre personas heridas o fallecidas siguen procedimientos oficiales. Nadie fuera de
+    esos canales puede confirmarte el estado de una persona.
+  </p>
+
+  <h2>Si no consigues contactar</h2>
+  <ul class="lista-check">
+    <li>Sigue llamando al móvil de tu familiar de vez en cuando y escríbele: puede no tener batería o cobertura.</li>
+    <li>Avisa a otros familiares para que no llaméis todos al mismo teléfono oficial: uno solo basta.</li>
+    <li>Si crees que viajaba en el tren pero no estás seguro, confirma primero el tren y la compañía con quien compró el billete (empresa, agencia o la propia persona).</li>
+    <li>Consulta en la <a href="puntos-de-atencion.html">lista de puntos oficiales de atención</a> si hay alguno cerca de ti.</li>
+  </ul>
+
+  {otros.length > 0 && (
+    <>
+      <h2>Otras compañías</h2>
+      {otros.map((c) => (
+        <div class={`caja ${verificado(c) ? '' : 'caja-pendiente'}`}>
+          <p><strong>{c.organismo}</strong></p>
+          {c.telefono && visible(c)
+            ? <p>{c.finalidad} <a href={`tel:${c.telefono}`}>{c.telefonoVisible}</a></p>
+            : <p>Canal específico no confirmado. Consulta su web oficial: <a href={operadores.find((o) => c.id.startsWith(o.id))?.url} rel="noopener noreferrer">{operadores.find((o) => c.id.startsWith(o.id))?.url}</a></p>}
+        </div>
+      ))}
+    </>
+  )}
+
+  <h2>Qué no hacer</h2>
+  <div class="caja caja-no">
+    <ul>
+      <li><strong>No te desplaces a la zona del accidente.</strong> No tendrás información antes y puedes dificultar el rescate.</li>
+      <li>No des datos de tu familiar a personas que te llamen o escriban ofreciendo ayuda: comprueba siempre en el canal oficial.</li>
+      <li>No pagues a nadie que prometa localizar a una persona o gestionar trámites.</li>
+      <li>No difundas fotos ni datos de tu familiar en redes sociales sin pensarlo: pueden usarlos para estafarte.</li>
+    </ul>
+  </div>
+  <p><a href="alertas-estafas.html">Ver alertas de estafas</a> · <a href="apoyo-emocional.html">Ayuda emocional para familiares</a></p>
+</Layout>
