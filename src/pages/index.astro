@@ -41,7 +41,7 @@ const otros = otrosCanales.filter((c) => visible(c));
   <ul class="que-hacer" aria-label="Qué hacer ahora">
     <li>
       <h2>Si buscas a un familiar</h2>
-      {telFamilias.map((c: any) => <p class="tel-linea">{c.id.startsWith('renfe') ? 'AVE de Renfe' : 'Iryo'}: <a href={`tel:${c.telefono}`}>{c.telefonoVisible}</a></p>)}
+      {telFamilias.map((c: any) => <p class="tel-linea"><span class="tel-etiqueta">{c.id.startsWith('renfe') ? 'AVE de Renfe' : 'Iryo'}</span><a class="tel-boton" href={`tel:${c.telefono}`}><span aria-hidden="true">&#9742;</span> {c.telefonoVisible}</a></p>)}
       {telFamilias.length === 0 && <p>Consulta los teléfonos en renfe.com e iryo.eu.</p>}
       <p>Ten a mano su nombre completo, DNI y el tren. No vayas a la zona ni a urgencias: allí no informan.</p>
       <p><a href="busco-a-un-familiar.html">Qué más puedes hacer</a></p>
