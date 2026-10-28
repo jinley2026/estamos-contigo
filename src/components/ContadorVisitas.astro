@@ -6,7 +6,9 @@
 import { SITE, ES_PREVIA } from '../lib/datos';
 const cfg = (SITE as any).visitas;
 const gc = cfg?.activo && cfg?.proveedor === 'goatcounter' && cfg?.codigo ? `https://${cfg.codigo}.goatcounter.com` : '';
-const ruta = Astro.url.pathname.replace(/\.html$/, '') || '/';
+// Todas las páginas cuentan en la misma ruta «/» para poder leer al momento el total de la web
+// (el «TOTAL» de GoatCounter se recalcula con horas de retraso; el recuento por ruta es inmediato).
+const ruta = '/';
 ---
 <p class="barra-visitas" lang="es" data-contador-visitas data-gc={gc || undefined}>
   <span class="visitas-icono" aria-hidden="true">&#9679;</span>

@@ -75,10 +75,18 @@
   var bv = document.querySelector('[data-gc]');
   if (bv && window.fetch) {
     var tv = bv.querySelector('[data-visitas-total]');
-    fetch(bv.getAttribute('data-gc') + '/counter/TOTAL.json', { credentials: 'omit' })
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (j) { tv.textContent = j && j.count ? String(j.count).replace(/[\s\u202f,]/g, '.') : 'Datos no disponibles'; })
-      .catch(function () { tv.textContent = 'Datos no disponibles'; });
+    var nc = '?nc=' + Date.now();
+    var leer = function (ruta) {
+      return fetch(bv.getAttribute('data-gc') + '/counter/' + ruta + '.json' + nc, { credentials: 'omit' })
+        .then(function (r) { return r.ok ? r.json() : { count: '0' }; })
+        .then(function (j) { return parseInt(String(j.count || '0').replace(/\D/g, ''), 10) || 0; })
+        .catch(function () { return null; });
+    };
+    // «/» = todas las visitas desde las 14:35; «/index» = las de antes (cuando cada página contaba por separado).
+    Promise.all([leer('/'), leer('/index')]).then(function (v) {
+      if (v[0] === null && v[1] === null) { tv.textContent = 'Datos no disponibles'; return; }
+      tv.textContent = ((v[0] || 0) + (v[1] || 0)).toLocaleString('es-ES');
+    });
   }
 
   /* Directo: «hace X min» y marca «Nuevo» en avisos de menos de 30 minutos. */
