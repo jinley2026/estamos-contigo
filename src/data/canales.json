@@ -18,7 +18,7 @@
           "fechaPublicacion": "2026-10-28T11:30:00+01:00"
         }
       ],
-      "comprobadoEn": "2026-10-28T17:48:00+01:00",
+      "comprobadoEn": "2026-10-28T20:45:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -43,7 +43,7 @@
           "fechaPublicacion": "2026-10-28T11:30:00+01:00"
         }
       ],
-      "comprobadoEn": "2026-10-28T17:48:00+01:00",
+      "comprobadoEn": "2026-10-28T20:45:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -70,7 +70,7 @@
           "fechaPublicacion": "2026-10-28T10:30:00+01:00"
         }
       ],
-      "comprobadoEn": "2026-10-28T17:48:00+01:00",
+      "comprobadoEn": "2026-10-28T20:45:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -96,12 +96,37 @@
           "fechaPublicacion": "2026-10-28T10:30:00+01:00"
         }
       ],
-      "comprobadoEn": "2026-10-28T17:48:00+01:00",
+      "comprobadoEn": "2026-10-28T20:45:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
       "notaInterna": "Confirmar en la web o cuenta oficial del 112 Castilla-La Mancha."
+    },
+    {
+      "id": "tsjcm-atencion-familiares",
+      "organismo": "Tribunal Superior de Justicia de Castilla-La Mancha — centro de atención a familiares",
+      "organismoCorto": "Justicia (TSJ Castilla-La Mancha), atención a familiares",
+      "telefono": "925317020",
+      "telefonoVisible": "925 317 020",
+      "finalidad": "Centro de atención a familiares de las víctimas, vinculado al juzgado de Orgaz que investiga el accidente.",
+      "destacado": false,
+      "temporal": true,
+      "sensible": true,
+      "nivelFuente": 2,
+      "fuentes": [
+        {
+          "titulo": "Libertad Digital: «El TSJCM activa el protocolo de víctimas múltiples por el accidente de Urda» (14:37)",
+          "url": "https://www.libertaddigital.com/espana/2026-10-28/el-tsjcm-activa-el-protocolo-de-victimas-multiples-por-el-accidente-de-urda-hay-ya-creados-cinco-equipos-7483474/",
+          "fechaPublicacion": "2026-10-28T14:37:00+01:00"
+        }
+      ],
+      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "notaInterna": "Confirmar en la nota oficial del TSJCM en poderjudicial.es."
     }
   ]
 }

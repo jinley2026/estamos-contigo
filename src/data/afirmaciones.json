@@ -523,6 +523,75 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "hospitalizados-emergencias-clm-2013",
+      "tipo": "hospitalizados",
+      "valor": 107,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "El Pespunte: cifra de los servicios de emergencia de Castilla-La Mancha (20:13)",
+        "url": "https://www.elpespunte.es/espana/ultima-hora-accidente-trenes-toledo-107-hospitalizados-menos-68-fallecidos/20261028201303159081.html",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T20:13:00+01:00",
+      "fechaVerificacion": "2026-10-28T20:45:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "Atribuida a «los últimos datos de los servicios de emergencia de Castilla-La Mancha», sin hora del dato. CMM la recoge en su titular como hospitalizados «en la región» (Castilla-La Mancha). No coincide con la del Ministerio de Sanidad (16:34, unos 80 trasladados) ni con los 76 trasladados a hospitales madrileños que da la Comunidad de Madrid (20:15); no sabemos si se solapan. No las sumamos.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "hospitalizados-cam-2015",
+      "tipo": "hospitalizados",
+      "valor": 76,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "comunidad:madrid",
+      "organismo": "Comunidad de Madrid",
+      "fuente": {
+        "titulo": "Telemadrid: la Comunidad de Madrid atiende a 76 heridos en 14 hospitales (20:15)",
+        "url": "https://telemadrid.es/programas/madrid-directo/madrid-atiende-76-heridos-accidente_1_2779978.html",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T20:15:00+01:00",
+      "fechaVerificacion": "2026-10-28T20:45:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "Viajeros trasladados a 14 hospitales públicos madrileños. Según Demócrata (18:46), otros 10 fueron atendidos en el puesto sanitario avanzado del SUMMA 112 (86 atendidos en total por la Comunidad).",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "atendidos-cam-1846",
+      "tipo": "atendidos",
+      "valor": 86,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "comunidad:madrid",
+      "organismo": "Comunidad de Madrid",
+      "fuente": {
+        "titulo": "Demócrata: balance del Gobierno regional de Madrid (18:46)",
+        "url": "https://www.democrata.es/actualidad/la-comunidad-de-madrid-atiende-a-86-heridos-en-el-accidente-ferroviario-de-urda/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T18:46:00+01:00",
+      "fechaVerificacion": "2026-10-28T20:45:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "10 en el puesto sanitario avanzado del SUMMA 112 y 76 trasladados a hospitales del Sermas.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

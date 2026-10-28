@@ -2,6 +2,144 @@
   "_comentario": "Cronología y centro de comunicados. Solo niveles 1 y 2. Nunca identidades. categoria: gobierno | ministerio | junta | adif | renfe | iryo | emergencias | sanidad | ayuntamientos | otros. tipoFuente: comunicado-oficial (publicado por el propio organismo) | medio-citando (un medio o agencia recoge lo que dijo el organismo). estado: vigente | pendiente | corregido | retirado. alerta: true para mostrarlo como aviso destacado durante 60 minutos.",
   "entradas": [
     {
+      "id": "2026-10-28-jueza-autoriza-gruas",
+      "titulo": "La jueza autoriza retomar los trabajos y las grúas levantan los vagones",
+      "resumen": "Según García-Page, tras recoger las pruebas para la investigación judicial, la jueza ha permitido volver a intervenir: bomberos y UME, con grúas, mueven los vagones para comprobar si quedan víctimas. Pide «prudencia» con el balance porque no descarta que aparezca alguna más, y remite a Renfe y Adif para las causas. Los trabajos seguirán durante la noche. Publicado por El Pespunte (19:50) y Objetivo Castilla-La Mancha (20:21).",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "El Pespunte: «Page pide \"prudencia\" en la cifra de fallecidos…» (19:50)",
+        "url": "https://www.elpespunte.es/social/page-pide-prudencia-cifra-fallecidos-sabemos-aparecera-algun-cadaver-mas-mover-vagones/20261028195042159079.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T19:50:00+01:00",
+      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "publicadoEn": "2026-10-28T20:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "Objetivo Castilla-La Mancha: «La búsqueda en Urda continuará cuando lo autorice la jueza, según García-Page» (20:21)",
+          "url": "https://objetivocastillalamancha.es/toledo/sucesos/busqueda-urda-continuara-cuando-lo-autorice-jueza-garcia-page"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-28-tsjcm-telefono-familiares",
+      "titulo": "Justicia habilita un teléfono para familiares: 925 317 020",
+      "resumen": "El Tribunal Superior de Justicia de Castilla-La Mancha activa el protocolo para sucesos con víctimas múltiples: cinco equipos (magistrado, letrado y forense), un Centro de Integración de Datos con forenses y Fuerzas de Seguridad para la identificación, y un centro de atención a familiares con el teléfono 925 317 020. Habrá también un correo electrónico, que se comunicará cuando esté operativo. La información oficial sobre identificaciones y autopsias se canaliza solo a través de la Oficina de Comunicación del TSJ. Según el comunicado del TSJCM publicado por Libertad Digital (14:37).",
+      "organismo": "Tribunal Superior de Justicia de Castilla-La Mancha",
+      "categoria": "justicia",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital: «El TSJCM activa el protocolo de víctimas múltiples por el accidente de Urda» (14:37)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/el-tsjcm-activa-el-protocolo-de-victimas-multiples-por-el-accidente-de-urda-hay-ya-creados-cinco-equipos-7483474/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:37:00+01:00",
+      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "publicadoEn": "2026-10-28T20:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cam-catorce-hospitales",
+      "titulo": "La Comunidad de Madrid confirma catorce hospitales públicos atendiendo a afectados",
+      "resumen": "Según la Comunidad de Madrid, los viajeros trasladados desde Urda se atienden en catorce hospitales del Servicio Madrileño de Salud (La Paz, 12 de Octubre, Getafe, Puerta de Hierro, La Princesa, Fundación Jiménez Díaz, Henares, Tajo, Fuenlabrada, Torrejón, Rey Juan Carlos, Infanta Sofía, Villalba y Clínico San Carlos); otras personas fueron atendidas en el puesto sanitario del SUMMA 112 junto al lugar. Sigue el apoyo psicosocial en Atocha. Las cifras, en el balance. Publicado por Telemadrid (20:15) y Demócrata (18:46).",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "sanidad",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Telemadrid: «Madrid atiende a heridos del accidente ferroviario de Urda en 14 hospitales» (20:15)",
+        "url": "https://telemadrid.es/programas/madrid-directo/madrid-atiende-76-heridos-accidente_1_2779978.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T20:15:00+01:00",
+      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "publicadoEn": "2026-10-28T20:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "Demócrata: «La Comunidad de Madrid atiende a heridos en el accidente ferroviario de Urda» (18:46)",
+          "url": "https://www.democrata.es/actualidad/la-comunidad-de-madrid-atiende-a-86-heridos-en-el-accidente-ferroviario-de-urda/"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-28-emergencias-clm-hospitalizados",
+      "titulo": "Emergencias de Castilla-La Mancha actualiza el número de hospitalizados en la región",
+      "resumen": "Los servicios de emergencia de Castilla-La Mancha dan una nueva cifra de personas hospitalizadas en la región (ver balance). No se ha comunicado la hora del dato. Publicado por El Pespunte (20:13) y en el titular del directo de CMM.",
+      "organismo": "Junta de Castilla-La Mancha (servicios de emergencia)",
+      "categoria": "emergencias",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "El Pespunte: «Última hora del accidente de trenes en Toledo…» (20:13)",
+        "url": "https://www.elpespunte.es/espana/ultima-hora-accidente-trenes-toledo-107-hospitalizados-menos-68-fallecidos/20261028201303159081.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T20:13:00+01:00",
+      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "publicadoEn": "2026-10-28T20:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "Castilla-La Mancha Media, última hora (titular)",
+          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/ultima-hora-accidente-tren-urda-toledo-fallecidos.html"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-28-autobuses-refuerzo",
+      "titulo": "Socibus e InterBus refuerzan los autobuses entre Madrid y Andalucía",
+      "resumen": "Socibus refuerza sus líneas desde Madrid (Estación Sur, calle Méndez Álvaro 83) con Andújar, Córdoba, Sevilla, Huelva y Cádiz, añadiendo vehículos según la demanda y ampliando el horario de taquillas. InterBus refuerza sus servicios entre Málaga y Madrid. Comprueba en tu reserva el punto de salida y llegada (en Sevilla, Plaza de Armas). Son empresas privadas; información publicada por Demócrata (19:54).",
+      "organismo": "Socibus e InterBus (empresas de autobuses)",
+      "categoria": "otros",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Demócrata: «Autobuses entre Madrid y Andalucía tras el corte ferroviario: rutas, estaciones y refuerzos» (19:54)",
+        "url": "https://www.democrata.es/actualidad/autobuses-madrid-andalucia-socibus-interbus-corte-ferroviario/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T19:54:00+01:00",
+      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "publicadoEn": "2026-10-28T20:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
       "id": "2026-10-28-madrid-sangre-manana",
       "titulo": "Madrid pide a quien quiera donar sangre que espere a mañana",
       "resumen": "La Comunidad de Madrid agradece la respuesta y pide que las nuevas donaciones se hagan mañana y los días siguientes. Consulta los horarios del centro de transfusión de tu comunidad antes de ir.",
