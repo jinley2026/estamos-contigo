@@ -159,7 +159,7 @@
         "titulo": "Comunidad de Madrid: nota sobre los recursos de ASEM 112 (actualizada 15:27)",
         "url": "https://www.comunidad.madrid/noticias/2026/10/28/comunidad-madrid-moviliza-recursos-asem-112-colaborar-respuesta-accidente-ferroviario-provincia-toledo"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -249,7 +249,7 @@
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -278,7 +278,7 @@
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -315,7 +315,7 @@
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -348,7 +348,7 @@
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -402,7 +402,7 @@
         "titulo": "Córdoba Hoy (15:21): «Una veintena de voluntarios de Cruz Roja con una UVI móvil atiende en la estación de Córdoba»",
         "url": "https://www.cordobahoy.es/la-ciudad/cruz-roja/20261028152130204799.html"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -422,7 +422,7 @@
         "titulo": "Castilla-La Mancha Media, última hora (14:49)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/ultima-hora-accidente-tren-urda-toledo-fallecidos.html"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -436,6 +436,24 @@
           "titulo": "Libertad Digital: comunicado del TSJCM con el teléfono del centro de atención (14:37)",
           "url": "https://www.libertaddigital.com/espana/2026-10-28/el-tsjcm-activa-el-protocolo-de-victimas-multiples-por-el-accidente-de-urda-hay-ya-creados-cinco-equipos-7483474/"
         }
+      ]
+    },
+    {
+      "id": "toledo-poligono-reserva",
+      "nombre": "Ayuntamiento de Toledo — Centro Social del Polígono (Sala Thalía) y pabellón deportivo del Polígono (en reserva)",
+      "direccion": "Barrio del Polígono, Toledo, cerca del hospital (dirección exacta no comunicada)",
+      "funcion": "Espacios preparados para atender a familiares si lo piden los responsables de la emergencia y los servicios sanitarios: Sala Thalía para unas 300 personas con siete salas y espacios de atención individual; pabellón con cuatro salas y pista. No consta que estén ya en uso.",
+      "organismo": "Ayuntamiento de Toledo",
+      "horario": "Disponibles las 24 horas si se activan (Ayuntamiento de Toledo, según La Cerca, 19:59)",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "La Cerca: «Toledo pone a disposición de las víctimas de Urda sus instalaciones y recursos» (19:59)",
+        "url": "https://www.lacerca.com/noticias/toledo/toledo-pone-disposicion-victimas-urda-instalaciones-recursos-834781-1.html"
+      },
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
       ]
     }
   ]

@@ -2,6 +2,102 @@
   "_comentario": "Cronología y centro de comunicados. Solo niveles 1 y 2. Nunca identidades. categoria: gobierno | ministerio | junta | adif | renfe | iryo | emergencias | sanidad | ayuntamientos | otros. tipoFuente: comunicado-oficial (publicado por el propio organismo) | medio-citando (un medio o agencia recoge lo que dijo el organismo). estado: vigente | pendiente | corregido | retirado. alerta: true para mostrarlo como aviso destacado durante 60 minutos.",
   "entradas": [
     {
+      "id": "2026-10-28-toledo-espacios-familias",
+      "titulo": "Toledo prepara dos espacios cerca del hospital por si hay que atender a familias",
+      "resumen": "El Ayuntamiento de Toledo tiene listos, las 24 horas, el Centro Social del Polígono (Sala Thalía, para unas 300 personas, con siete salas y espacios para atención individual) y el pabellón deportivo del Polígono, ambos cerca del hospital. Se abrirán si lo piden los responsables de la emergencia; no consta que estén ya en uso. Hosteleros y hoteles ofrecen comida y camas para familiares. Lo comunicó el alcalde, Carlos Velázquez, en una nota municipal (La Cerca, 19:59).",
+      "organismo": "Ayuntamiento de Toledo",
+      "categoria": "ayuntamientos",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "La Cerca: «Toledo pone a disposición de las víctimas de Urda sus instalaciones y recursos» (19:59)",
+        "url": "https://www.lacerca.com/noticias/toledo/toledo-pone-disposicion-victimas-urda-instalaciones-recursos-834781-1.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T19:59:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
+      "publicadoEn": "2026-10-28T21:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cgpj-refuerzos-orgaz",
+      "titulo": "El CGPJ garantiza los refuerzos que necesite el juzgado de Orgaz",
+      "resumen": "El Pleno del Consejo General del Poder Judicial aprobó poner a disposición del Tribunal de Instancia de Orgaz, que investiga el accidente, los refuerzos que se precisen. Su presidenta habló con la presidenta del TSJ de Castilla-La Mancha para conocer las necesidades. No se han concretado aún qué medios. Según una nota del CGPJ publicada por Torrijos Today (18:00).",
+      "organismo": "Consejo General del Poder Judicial",
+      "categoria": "justicia",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Torrijos Today: «El CGPJ muestra su pésame por las víctimas y garantiza refuerzos para la investigación judicial» (18:00)",
+        "url": "https://torrijostoday.com/castilla-la-mancha/toledo/el-cgpj-muestra-su-pesame-por-las-victimas-y-garantiza-refuerzos-para-la-investigacion-judicial/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T18:00:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
+      "publicadoEn": "2026-10-28T21:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cruzroja-150",
+      "titulo": "Cruz Roja moviliza a unas 150 personas en Urda, Madrid, Ciudad Real, Córdoba y Sevilla",
+      "resumen": "Cruz Roja presta apoyo psicosocial y avituallamiento a pasajeros y familiares: en Urda, a los evacuados al polideportivo; en Atocha, sobre todo a los viajeros llegados en autobús; también en Ciudad Real, Puertollano, Córdoba y Sevilla. Su director de Emergencias indicó que el dispositivo podría trasladarse a Toledo más adelante. Declaraciones a Europa Press, publicadas por Torrijos Today (18:46, actualizado 20:50).",
+      "organismo": "Cruz Roja Española",
+      "categoria": "cruzroja",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Torrijos Today (Europa Press): «Cruz Roja moviliza a 150 personas para prestar apoyo psicosocial y ayudar a pasajeros por el choque en Urda» (18:46)",
+        "url": "https://torrijostoday.com/castilla-la-mancha/toledo/cruz-roja-moviliza-a-150-personas-para-prestar-apoyo-psicosocial-y-ayudar-a-pasajeros-por-el-choque-en-urda/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T18:46:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
+      "publicadoEn": "2026-10-28T21:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cordoba-agenda-luto",
+      "titulo": "Córdoba: el Ayuntamiento y la Diputación suspenden su agenda; la Universidad, minuto de silencio el jueves a las 12:00",
+      "resumen": "El alcalde de Córdoba suspendió la agenda municipal y ofreció a la Junta los bomberos y Protección Civil de la ciudad. La Diputación suspende todos sus actos mientras dure el luto oficial. La Universidad de Córdoba izó las banderas a media asta y pide un minuto de silencio el jueves 29 a las 12:00. Según El Debate (17:30).",
+      "organismo": "Ayuntamiento y Diputación de Córdoba, Universidad de Córdoba",
+      "categoria": "ayuntamientos",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "El Debate: «Luto en Córdoba por la tragedia de Urda» (17:30)",
+        "url": "https://www.eldebate.com/espana/la-voz-de-cordoba/actualidad/20261028/luto-cordoba-tragedia-urda-ciudad-paraliza-actividad-oficial-lamenta-muertes_474921.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T17:30:00+01:00",
+      "comprobadoEn": "2026-10-28T21:15:00+01:00",
+      "publicadoEn": "2026-10-28T21:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
       "id": "2026-10-28-jueza-autoriza-gruas",
       "titulo": "La jueza autoriza retomar los trabajos y las grúas levantan los vagones",
       "resumen": "Según García-Page, tras recoger las pruebas para la investigación judicial, la jueza ha permitido volver a intervenir: bomberos y UME, con grúas, mueven los vagones para comprobar si quedan víctimas. Pide «prudencia» con el balance porque no descarta que aparezca alguna más, y remite a Renfe y Adif para las causas. Los trabajos seguirán durante la noche. Publicado por El Pespunte (19:50) y Objetivo Castilla-La Mancha (20:21).",
