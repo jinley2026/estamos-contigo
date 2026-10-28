@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-28T13:12:13",
+  "fecha": "2026-10-28T14:46:12",
   "resultados": [
     {
       "prueba": "Accesibilidad automática axe (WCAG 2.2 A/AA) sin violaciones en 31 páginas",
@@ -8,13 +8,13 @@
     },
     {
       "prueba": "Sin errores de consola ni bloqueos de CSP",
-      "ok": true,
-      "detalle": ""
+      "ok": false,
+      "detalle": "actualizaciones.html: Failed to load resource: the server responded with a status of 404 (Not Found) | admin.html: Failed to load resource: the server responded with a status of 404 (Not Found) | alertas-estafas.html: Failed to load resource: the server responded with a status of 404 (Not Found) | apoyo-emocional.html: Failed to load resource: the server responded with a status of 404 (Not Found) | aviso-legal.html: Failed to load resource: the server responded with a status of 404 (Not Found) | buscar.html: Failed to load resource: the server responded with a status of 404 (Not Found) | busco-a-un-familiar.html: Failed to load resource: the server responded with a status of 404 (Not Found) | comunicados.html: Failed to load resource: the server responded with a status of 404 (Not Found)"
     },
     {
       "prueba": "Ninguna petición de red a terceros al cargar las páginas",
-      "ok": true,
-      "detalle": ""
+      "ok": false,
+      "detalle": "https://accidentetrentoledo.goatcounter.com/counter//.json?nc=1793195149495, https://accidentetrentoledo.goatcounter.com/counter//.json?nc=1793195149947, https://accidentetrentoledo.goatcounter.com/counter//.json?nc=1793195150478, https://accidentetrentoledo.goatcounter.com/counter//.json?nc=1793195151063, https://accidentetrentoledo.goatcounter.com/counter//.json?nc=1793195151517, https://accidentetrentoledo.goatcounter.com/counter//.json?nc=1793195151901, https://accidentetrentoledo.goatcounter.com/counter//.json?nc=1793195152272, https://accidentetrentoledo.goatcounter.com/counter//.json?nc=1793195152713"
     },
     {
       "prueba": "Plantilla seleccionada se carga en el editor",
@@ -44,7 +44,7 @@
     {
       "prueba": "Dato caducado (2 h > 60 min): se marca pendiente y se oculta el botón de llamada",
       "ok": true,
-      "detalle": "tarjeta-tel temporal caducado / Revisado por última vez: 28/10, 12:00. Puede haber cambios: confirma en la fuente."
+      "detalle": "tarjeta-tel temporal caducado / Revisado por última vez: 28/10, 14:05. Puede haber cambios: confirma en la fuente."
     },
     {
       "prueba": "Modo seguro automático tras 4 h sin revisión: aviso visible y se oculta «Última hora»",
@@ -78,8 +78,8 @@
     },
     {
       "prueba": "Contador del pie visible en móvil con «Datos no disponibles» (9 páginas)",
-      "ok": true,
-      "detalle": ""
+      "ok": false,
+      "detalle": "index.html, aviso-legal.html, privacidad.html, cookies.html, condiciones-de-uso.html, fuentes-y-verificacion.html, rectificaciones.html, quienes-somos.html, comunicados.html"
     },
     {
       "prueba": "Páginas legales V3 sin desbordamiento a 320 px",
@@ -113,8 +113,8 @@
     },
     {
       "prueba": "Buscador: ninguna petición de red al buscar",
-      "ok": true,
-      "detalle": ""
+      "ok": false,
+      "detalle": "https://accidentetrentoledo.goatcounter.com/counter//.json?nc=1793195167036, https://accidentetrentoledo.goatcounter.com/counter//index.json?nc=1793195167036"
     },
     {
       "prueba": "Comunicados: el filtro por organismo muestra solo los de Adif",

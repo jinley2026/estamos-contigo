@@ -368,5 +368,54 @@
     .teletipo-ventana { overflow-x: auto; mask-image: none; }
     .teletipo-cinta li[aria-hidden="true"] { display: none; }
   }
+
+  /* ===== Pase de color (v0.7, petición de Lin 14:44): jerarquía y acentos visibles ===== */
+  body { color: #1f2a37; }
+  main h2 { color: var(--senal-hondo); border-left: 6px solid #e3342f; padding-left: .65rem; }
+  main h1 { color: var(--senal-hondo); }
+  .balance h2 { color: #fff; border-left-color: #ffd54a; }
+  .directo-cabecera h2 { border-left: 0; padding-left: 0; }
+  .aviso-independencia h2 { border-left-color: var(--senal); }
+  .tarjeta-tel .numero { color: #b3261e; }
+  .otros-tel a { color: #ffd54a; }
+
+  .situacion { background: #fff8e1; border-left: 6px solid #f2b705; border-radius: 12px; padding: .2rem 1rem 1rem; }
+  .situacion h2 { border-left: 0; padding-left: 0; }
+  .sit-resumen { color: var(--senal-hondo); }
+
+  .que-hacer li { border-top-width: 6px; }
+  .que-hacer li:nth-child(1) { background: #fdeceb; border-top-color: #c4221c; }
+  .que-hacer li:nth-child(1) h2 { color: #9b1c17; }
+  .que-hacer li:nth-child(2) { background: #e6edf5; border-top-color: var(--senal); }
+  .que-hacer li:nth-child(3) { background: #e6f2ea; border-top-color: #2f7a45; }
+  .que-hacer li:nth-child(3) h2 { color: #1c5a33; }
+  .que-hacer h2 { border-left: 0; padding-left: 0; font-size: 1.15rem; }
+  .que-hacer .tel-linea a { color: #b3261e; font-size: 1.3rem; }
+  .que-hacer a { font-weight: 700; }
+
+  .rutas li:nth-child(1) .pictograma { background: #c4221c; }
+  .rutas li:nth-child(2) .pictograma { background: #2f7a45; }
+  .rutas li:nth-child(3) .pictograma { background: var(--senal); }
+  .rutas li:nth-child(4) .pictograma { background: #b45309; }
+  .rutas a { background: #fff; border: 2px solid var(--linea); box-shadow: 0 2px 0 var(--linea); }
+  .ruta-titulo { color: var(--senal-hondo); }
+  .flecha { color: #e3342f; }
+
+  .bloques a { border-left: 5px solid var(--senal); color: var(--senal-hondo); background: #f7f9fc; }
+  .bloques li:nth-child(odd) a { border-left-color: #e3342f; }
+
+  .ultima-hora { background: #fffdf5; }
+  .uh-bloque h3 { color: #9b1c17; font-size: 1.08rem; }
+  .uh-lista strong { color: var(--senal-hondo); }
+
+  .ficha h3 { color: var(--senal-hondo); }
+  .ficha:nth-child(2) .ficha-servicio { background: #0f766e; }
+  .ficha:nth-child(2) { border-color: #0f766e; }
+  .ficha dd.destacado { color: #b3261e; }
+
+  .aviso h3 { color: var(--senal-hondo); }
+  .aviso-primero .aviso-cuerpo h3 { color: #9b1c17; }
+  .avisos-rapidos li { color: #7a1414; }
+  .boton-buscar { background: var(--senal); color: #fff; border-color: var(--senal); }
   @media print { .teletipo, .banda-aviso, .cabecera nav, .ajustes, .saltar { display: none; } }
 </style>
