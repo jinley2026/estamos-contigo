@@ -1431,6 +1431,150 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "2026-10-28-moreno-revision-vias",
+      "titulo": "Juanma Moreno pide al Gobierno revisar de inmediato las vías férreas andaluzas",
+      "resumen": "En una declaración institucional desde el Palacio de San Telmo, el presidente de la Junta de Andalucía pidió al Gobierno de España una «inmediata revisión» de las vías férreas de Andalucía, en especial de la línea de alta velocidad con Madrid. Publicado por Libertad Digital (18:56).",
+      "organismo": "Junta de Andalucía",
+      "categoria": "comunidades",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (18:56)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T18:56:00+01:00",
+      "comprobadoEn": "2026-10-28T19:12:00+01:00",
+      "publicadoEn": "2026-10-28T19:12:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cataluna-luto",
+      "titulo": "Cataluña decretará tres días de luto oficial",
+      "resumen": "El presidente de la Generalitat, Salvador Illa, anunció en X que decretará tres días de luto oficial en Cataluña, del jueves 29 al sábado 31 de octubre. El decreto se publicará en el Diari Oficial de la Generalitat de Catalunya (DOGC). Recogido por Europa Press y publicado por La Cerca (18:14).",
+      "organismo": "Generalitat de Catalunya",
+      "categoria": "comunidades",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "La Cerca (con Europa Press): «Cataluña decreta tres días de luto oficial por el accidente ferroviario» (18:14)",
+        "url": "https://www.lacerca.com/noticias/toledo/cataluna-decreta-tres-dias-luto-oficial-accidente-ferroviario-834745-1.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T18:14:00+01:00",
+      "comprobadoEn": "2026-10-28T19:12:00+01:00",
+      "publicadoEn": "2026-10-28T19:12:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-page-extraccion-cuerpos",
+      "titulo": "García-Page: el balance no cambia y siguen los trabajos en los vagones",
+      "resumen": "Según el presidente de Castilla-La Mancha, desde el CECOPI, el balance no cambia: incluye a las víctimas que aún se están sacando de los vagones. No descarta que aparezca alguna más al mover los vagones con grúas. No valoró las causas. Hora de la declaración no concretada; publicado por La Cerca a las 18:41. Las cifras están en el apartado de datos.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "La Cerca: «García-Page mantiene en 68 los muertos por el accidente de Urda…» (18:41)",
+        "url": "https://www.lacerca.com/noticias/toledo/garcia-page-68-accidente-cuatro-todavia-pendientes-extraccion-834586-1.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T18:41:00+01:00",
+      "comprobadoEn": "2026-10-28T19:12:00+01:00",
+      "publicadoEn": "2026-10-28T19:12:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-renfe-huelga-jueves",
+      "titulo": "Mañana jueves sigue convocada la huelga de maquinistas de Renfe",
+      "resumen": "El sindicato de maquinistas SEMAF mantiene la huelga de 24 horas del jueves 29 de octubre en todo Grupo Renfe. Servicios mínimos publicados por Renfe: 75 % de Cercanías en hora punta y 50 % el resto del día, 65 % de Media Distancia y una media del 73 % en Alta Velocidad y Larga Distancia. La línea Madrid–Andalucía sigue cortada por el accidente. Consulta tu tren antes de ir a la estación. Publicado por Cuadernos Manchegos (17:25, con las páginas de Renfe y SEMAF).",
+      "organismo": "Renfe y SEMAF",
+      "categoria": "renfe",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Cuadernos Manchegos: «Viajar en Renfe mañana 29 de octubre: la huelga sigue publicada…» (17:25)",
+        "url": "https://www.cuadernosmanchegos.com/castilla-la-mancha/toledo/viajar-en-renfe-manana-29-de-octubre-la-huelga-sigue-publicada-mientras-continua-la-crisis-de-urda/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T17:25:00+01:00",
+      "comprobadoEn": "2026-10-28T19:12:00+01:00",
+      "publicadoEn": "2026-10-28T19:12:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-urda-albergue-vacio",
+      "titulo": "El albergue del pabellón polideportivo de Urda ya no tiene personas alojadas",
+      "resumen": "La nota oficial del Gobierno de Castilla-La Mancha indica que en el albergue habilitado para los viajeros en el pabellón polideportivo de Urda «ya no hay personas». La atención a familias sigue por el 900 122 112 y en los puntos de esta web.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "Junta de Castilla-La Mancha: nota de prensa sobre el operativo (CECOPI)",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-de-castilla-la-mancha-despliega-todos-los-medios-y-recursos-su-alcance-para-hacer-frente"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T18:15:00+01:00",
+      "comprobadoEn": "2026-10-28T19:12:00+01:00",
+      "publicadoEn": "2026-10-28T19:12:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-gc-sevilla-horario-exacto",
+      "titulo": "Sevilla: horario de la oficina de la Guardia Civil para familiares el jueves y el viernes",
+      "resumen": "El punto de la avenida de la Borbolla, 8, para que los familiares de primer grado aporten muestras de ADN abre el jueves 29 y el viernes 30 de 9:00 a 15:00 y de 16:00 a 21:00 (hoy, hasta las 21:00). La Guardia Civil pide que los familiares de primer grado acudan cuanto antes a las oficinas de sus comandancias. Publicado por CatalunyaPress (17:23).",
+      "organismo": "Guardia Civil",
+      "categoria": "guardiacivil",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "CatalunyaPress: «La angustia de las familias de las víctimas de Urda…» (17:23)",
+        "url": "https://www.catalunyapress.es/articulo/sociedad/2026-10-28/6069849-angustia-familias-victimas-urda-listado-oficial-muertos-respuestas"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T17:23:00+01:00",
+      "comprobadoEn": "2026-10-28T19:12:00+01:00",
+      "publicadoEn": "2026-10-28T19:12:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
