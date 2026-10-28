@@ -1,10 +1,10 @@
 ---
 // Marca visible en documentos legales no revisados por un profesional.
-import { SITE } from '../lib/datos';
+import { SITE, ES_PREVIA } from '../lib/datos';
 interface Props { clave: keyof typeof SITE.revisionJuridica }
 const revisado = SITE.revisionJuridica[Astro.props.clave];
 ---
-{!revisado && (
+{!revisado && ES_PREVIA && (
   <p class="borrador-legal" role="note">
     BORRADOR PRELIMINAR redactado con ayuda de IA. No es asesoramiento jurídico validado: requiere revisión de un
     profesional competente antes del lanzamiento.

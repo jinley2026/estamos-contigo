@@ -16,7 +16,7 @@ const r: any = SITE.responsable;
     <li>Corregimos y lo dejamos anotado: el texto anterior no se borra, se marca como corregido o retirado, con la fecha y el motivo.</li>
     <li>Respondemos a quien nos avisó en el menor plazo posible.</li>
   </ol>
-  <p>Si un organismo o una persona afectada ejerce un derecho de rectificación previsto en la ley, se atenderá conforme a ella. [Pendiente de revisión jurídica: aplicabilidad de la Ley Orgánica 2/1984 a esta web.]</p>
+  <p>Si un organismo o una persona afectada ejerce un derecho de rectificación previsto en la ley, se atenderá conforme a ella.</p>
   <h2>Correcciones realizadas</h2>
   {correcciones.length === 0 ? <p>Ninguna hasta ahora.</p> : <ul>{correcciones.map((c) => <li><strong>{c.titulo}</strong>: {c.correccion}</li>)}</ul>}
   <h2>Retirada y suspensión</h2>

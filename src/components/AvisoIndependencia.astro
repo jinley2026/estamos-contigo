@@ -1,11 +1,11 @@
 ---
 // Texto literal de la sección 6 de la orden V3.0, como BORRADOR sujeto a revisión jurídica.
-import { SITE } from '../lib/datos';
+import { SITE, ES_PREVIA } from '../lib/datos';
 const revisado = SITE.revisionJuridica.independencia === true;
 ---
 <aside class="aviso-independencia" aria-labelledby="indep-titulo" id="independencia">
   <h2 id="indep-titulo">Qué es esta web</h2>
-  {!revisado && <p class="borrador-legal" role="note">Borrador pendiente de revisión jurídica.</p>}
+  {!revisado && ES_PREVIA && <p class="borrador-legal" role="note">Borrador pendiente de revisión jurídica.</p>}
   <p>Estamos Contigo es una iniciativa privada, independiente y gratuita cuya finalidad consiste exclusivamente en recopilar, organizar y facilitar el acceso a información pública emitida por organismos y operadores oficiales en relación con el accidente ferroviario de Toledo.</p>
   <p>Esta plataforma no pertenece a ninguna administración pública, operador ferroviario, organismo de emergencias o centro sanitario, ni actúa en representación de ellos.</p>
   <p>La información se presenta con indicación de su fuente y fecha de comprobación. Debido a la evolución de los acontecimientos, puede resultar provisional, incompleta o quedar desactualizada.</p>

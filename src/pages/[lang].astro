@@ -3,7 +3,7 @@
 import Layout from '../components/Layout.astro';
 import TarjetaTelefono from '../components/TarjetaTelefono.astro';
 import MensajeFamilia from '../components/MensajeFamilia.astro';
-import { i18n, operadores, SITE } from '../lib/datos';
+import { i18n, operadores, SITE , ES_PREVIA } from '../lib/datos';
 export function getStaticPaths() {
   return ['en', 'fr', 'pt', 'it', 'de'].map((lang) => ({ params: { lang } }));
 }
@@ -13,7 +13,7 @@ const revisado = (i18n.idiomas as Record<string, any>)[lang].revisado;
 ---
 <Layout titulo={t.titulo} descripcion={t.subtitulo} lang={lang}>
   <p class="banda-aviso-local caja" role="note"><strong>{t.aviso}</strong></p>
-  {!revisado && <p class="borrador-legal" role="note">{t.pendienteRevision}</p>}
+  {!revisado && ES_PREVIA && <p class="borrador-legal" role="note">{t.pendienteRevision}</p>}
   <h1>{t.titulo}</h1>
   <p class="subtitulo">{t.subtitulo}</p>
   <TarjetaTelefono etiqueta={t.telefonoTitulo} textoPendiente={t.telefonoPendiente} textoFuente={t.fuente} textoComprobado={t.comprobado} textoLlamar={t.llamar} />
