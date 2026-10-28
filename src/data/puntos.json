@@ -14,7 +14,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T15:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -39,7 +39,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T15:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -64,7 +64,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T15:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -89,7 +89,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T15:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -137,23 +137,33 @@
     },
     {
       "id": "atocha-psicosocial",
-      "nombre": "Punto de atención psicosocial — Estación de Madrid-Puerta de Atocha",
+      "nombre": "Centro de Atención a Familiares de la Comunidad de Madrid — Estación de Madrid-Puerta de Atocha",
       "direccion": "Estación de Madrid-Puerta de Atocha, Madrid",
-      "funcion": "Atención psicosocial a víctimas y familiares.",
-      "organismo": "Agencia de Seguridad y Emergencias Madrid 112 (ASEM112), Comunidad de Madrid",
-      "horario": "No comunicado",
+      "funcion": "Atención a familiares y apoyo psicosocial (Protección Civil y SUMMA 112). Teléfono para familiares: 900 10 10 20.",
+      "organismo": "Comunidad de Madrid (Protección Civil y ASEM 112)",
+      "horario": "24 horas, según Protección Civil de la Comunidad de Madrid (El Diario de Madrid, 14:27)",
       "telefono": "",
-      "nivelFuente": 2,
+      "nivelFuente": 1,
       "fuente": {
-        "titulo": "Madrid Actual, recoge la información de Emergencias 112 Comunidad de Madrid",
-        "url": "https://www.madridactual.es/noticias-regionales/sucesos/accidente-comunidad-envia-8-dotaciones-bomberos-recursos-20261028-8125923.html"
+        "titulo": "Comunidad de Madrid: nota sobre los recursos de ASEM 112 (actualizada 15:27)",
+        "url": "https://www.comunidad.madrid/noticias/2026/10/28/comunidad-madrid-moviliza-recursos-asem-112-colaborar-respuesta-accidente-ferroviario-provincia-toledo"
       },
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
-      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05).",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Madrid Actual, recoge la información de Emergencias 112 Comunidad de Madrid",
+          "url": "https://www.madridactual.es/noticias-regionales/sucesos/accidente-comunidad-envia-8-dotaciones-bomberos-recursos-20261028-8125923.html"
+        },
+        {
+          "titulo": "El Diario de Madrid (14:27): horario 24 horas",
+          "url": "https://www.eldiariodemadrid.es/articulo/politica/accidente-trenes-urda-toledo-muertos-heridos-atencion-familiares/20261028142720145538.html"
+        }
+      ]
     },
     {
       "id": "yebenes-pabellon",
@@ -174,6 +184,46 @@
         "AUTO-CLAUDE"
       ],
       "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
+    },
+    {
+      "id": "andalucia-pma-0",
+      "nombre": "Puesto de la Junta de Andalucía — Estación de Sevilla Santa Justa",
+      "direccion": "Estación de Sevilla Santa Justa, Sevilla",
+      "funcion": "Puesto de mando avanzado con Protección Civil, 061 y atención psicológica (GIPED).",
+      "organismo": "Junta de Andalucía",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 1,
+      "fuente": {
+        "titulo": "Junta de Andalucía: «La Junta moviliza recursos del 061 y atención psicológica…»",
+        "url": "https://www.juntadeandalucia.es/presidencia/portavoz/gobiernoaldia/220023/recursos/JuntadeAndalucia/accidenteferroviarioUrdaToledo/AgenciadeEmergenciasdeAndalucia/EMA/ConsejeriadePresidenciaSanidadyEmergencias"
+      },
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": []
+    },
+    {
+      "id": "andalucia-pma-1",
+      "nombre": "Puesto de la Junta de Andalucía — Estación de Córdoba Julio Anguita",
+      "direccion": "Estación de Córdoba Julio Anguita, Córdoba",
+      "funcion": "Puesto de mando avanzado con Protección Civil, 061 y atención psicológica (GIPED).",
+      "organismo": "Junta de Andalucía",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 1,
+      "fuente": {
+        "titulo": "Junta de Andalucía: «La Junta moviliza recursos del 061 y atención psicológica…»",
+        "url": "https://www.juntadeandalucia.es/presidencia/portavoz/gobiernoaldia/220023/recursos/JuntadeAndalucia/accidenteferroviarioUrdaToledo/AgenciadeEmergenciasdeAndalucia/EMA/ConsejeriadePresidenciaSanidadyEmergencias"
+      },
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": []
     }
   ]
 }

@@ -605,6 +605,198 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "2026-10-28-cam-atocha-familias",
+      "titulo": "La Comunidad de Madrid abre un Centro de Atención a Familiares en Atocha",
+      "resumen": "Protección Civil de la Comunidad de Madrid ha activado el servicio PECO (Persona de Contacto con Familiares) y un Centro de Atención a Familiares en la estación de Atocha, con un equipo psicosocial de SUMMA 112 que incluye psicólogos. Teléfono para familiares: 900 10 10 20. Según Protección Civil de la Comunidad (recogido por El Diario de Madrid, 14:27), el dispositivo funciona las 24 horas.",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "emergencias",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "Comunidad de Madrid: nota sobre los recursos de ASEM 112 (13:04, actualizada 15:27)",
+        "url": "https://www.comunidad.madrid/noticias/2026/10/28/comunidad-madrid-moviliza-recursos-asem-112-colaborar-respuesta-accidente-ferroviario-provincia-toledo"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T15:27:00+01:00",
+      "publicadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cam-sangre",
+      "titulo": "El Centro de Transfusión de la Comunidad de Madrid pide donar sangre",
+      "resumen": "La Comunidad de Madrid hace un llamamiento urgente a donar sangre ante posibles necesidades asistenciales. Los puntos de donación más cercanos están enlazados en la página oficial de ASEM 112.",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "sanidad",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "ASEM 112 Comunidad de Madrid: página «Accidente ferroviario en Urda (Toledo)» (actualizada 13:45)",
+        "url": "https://www.comunidad.madrid/seguridad-emergencias-asem-112/accidente-ferroviario-urda-toledo"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T13:45:00+01:00",
+      "publicadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-andalucia-061-giped",
+      "titulo": "Andalucía moviliza el 061 y equipos de atención psicológica en Santa Justa y Córdoba",
+      "resumen": "La Junta de Andalucía ha enviado tres UVI móviles del 061 y un vehículo de apoyo logístico, y ha montado puestos de mando avanzado en las estaciones de Sevilla Santa Justa y Córdoba Julio Anguita con Protección Civil y el Grupo de Intervención Psicológica en Emergencias y Desastres (GIPED). Teléfonos para familiares que recuerda la Junta: Renfe 900 10 10 20, Iryo 900 001 403 y Emergencias de Castilla-La Mancha 900 122 112.",
+      "organismo": "Junta de Andalucía",
+      "categoria": "gobierno",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "Junta de Andalucía, Portavoz del Gobierno: «La Junta moviliza recursos del 061 y atención psicológica…»",
+        "url": "https://www.juntadeandalucia.es/presidencia/portavoz/gobiernoaldia/220023/recursos/JuntadeAndalucia/accidenteferroviarioUrdaToledo/AgenciadeEmergenciasdeAndalucia/EMA/ConsejeriadePresidenciaSanidadyEmergencias"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T15:55:00+01:00",
+      "publicadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-andalucia-iml-sava",
+      "titulo": "Andalucía activa sus Institutos de Medicina Legal y la asistencia a víctimas (SAVA)",
+      "resumen": "Con la aceptación del Gobierno de España, la Junta de Andalucía activa los Institutos de Medicina Legal de Córdoba y Sevilla para colaborar con la Guardia Civil en la recogida de muestras de ADN de familiares y en la identificación. El Servicio de Asistencia a Víctimas en Andalucía (SAVA), en las ocho provincias, ofrece atención psicológica, social y jurídica a afectados y familiares.",
+      "organismo": "Junta de Andalucía",
+      "categoria": "gobierno",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "Junta de Andalucía, Portavoz del Gobierno: «La Junta activa los IML en Córdoba y Sevilla…»",
+        "url": "https://www.juntadeandalucia.es/presidencia/portavoz/gobiernoaldia/220026/junta/activa/iml/cordoba/sevilla/aceptar/gobierno/espana/ofrecimiento/ayuda/accidente/ferroviario/toledo"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T15:55:00+01:00",
+      "publicadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-moncloa-sanchez",
+      "titulo": "El presidente del Gobierno visita la zona del accidente y hace una declaración institucional",
+      "resumen": "La Moncloa informa de que Pedro Sánchez se ha desplazado a Urda para apoyar a los equipos de emergencia y a las personas afectadas, y ha emitido en directo (15:00) su declaración institucional. La página oficial no recoge todavía el texto de la declaración.",
+      "organismo": "Gobierno de España",
+      "categoria": "gobierno",
+      "tipoFuente": "comunicado-oficial",
+      "fuente": {
+        "titulo": "La Moncloa: «Declaración institucional del presidente del Gobierno tras visitar la zona del accidente ferroviario de Toledo»",
+        "url": "https://www.lamoncloa.gob.es/presidente/actividades/Paginas/2026/281026-sanchez-visita-accidente-tren.aspx"
+      },
+      "nivelFuente": 1,
+      "fechaComunicado": "2026-10-28T15:00:00+01:00",
+      "publicadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-madrid-luto",
+      "titulo": "La Comunidad de Madrid declara tres días de luto oficial",
+      "resumen": "La presidenta de la Comunidad de Madrid ha anunciado en X tres días de luto oficial. No se ha indicado todavía la hora de inicio ni de fin.",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "gobierno",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital: recoge el anuncio de la presidenta de la Comunidad de Madrid en X (15:21)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T15:21:00+01:00",
+      "publicadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-sevilla-luto",
+      "titulo": "El Ayuntamiento de Sevilla decreta tres días de luto",
+      "resumen": "El alcalde de Sevilla ha decretado tres días de luto por el accidente.",
+      "organismo": "Ayuntamiento de Sevilla",
+      "categoria": "ayuntamientos",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "COPE Sevilla: «Sanz decreta tres días de luto…»",
+        "url": "https://www.cope.es/emisoras/andalucia/sevilla-provincia/sevilla/noticias/sanz-decreta-tres-dias-luto-afirma-momento-no-constancia-victimas-sevillanas-20261028_3464382.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T15:30:00+01:00",
+      "publicadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-puente-comparece",
+      "titulo": "El ministro de Transportes comparece en Atocha",
+      "resumen": "Óscar Puente compareció en Atocha hacia las 14:51, con unos 50 minutos de retraso sobre lo anunciado, y ofreció una primera explicación técnica de lo ocurrido. No la reproducimos: las causas solo las establecerán la investigación judicial y la de la Comisión de Investigación de Accidentes Ferroviarios.",
+      "organismo": "Ministerio de Transportes",
+      "categoria": "ministerio",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (14:51–15:13)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:51:00+01:00",
+      "publicadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
