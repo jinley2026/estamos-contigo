@@ -500,6 +500,29 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "fallecidos-page-1913",
+      "tipo": "fallecidos",
+      "valor": 68,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (19:13): García-Page desde el PMA de Urda",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T19:13:00+01:00",
+      "fechaVerificacion": "2026-10-28T19:45:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-jccm-nota-1815",
+      "observaciones": "García-Page mantiene la cifra. Según el mismo directo, 64 cuerpos ya extraídos y 4 por extraer; 15 heridos graves. No descarta que la cifra aumente al levantar los vagones.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

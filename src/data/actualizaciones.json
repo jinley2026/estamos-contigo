@@ -1575,6 +1575,60 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "comprobadoEn": "2026-10-28T19:45:00+01:00",
+      "publicadoEn": "2026-10-28T19:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "id": "2026-10-28-page-1913-todos-vagones",
+      "titulo": "García-Page: los equipos ya han accedido a todos los vagones",
+      "resumen": "Desde el Puesto de Mando de Urda, el presidente de Castilla-La Mancha mantuvo el balance, aún con víctimas por extraer, y no descarta que cambie al mover los vagones. Todos los ingresados en hospitales están identificados; algunos pasajeros que se fueron por su cuenta no están localizados. Libertad Digital (19:13).",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "fuente": {
+        "titulo": "Libertad Digital, directo (19:13)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+      },
+      "fechaComunicado": "2026-10-28T19:13:00+01:00"
+    },
+    {
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "comprobadoEn": "2026-10-28T19:45:00+01:00",
+      "publicadoEn": "2026-10-28T19:45:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "id": "2026-10-28-gc-cordoba-horario-hoy",
+      "titulo": "Córdoba: la oficina de la Guardia Civil para familiares abre hoy hasta las 22:00",
+      "resumen": "La oficina de la Comandancia (entrada por la avenida de los Mozárabes) recoge ADN de familiares de primer grado hoy de 12:00 a 22:00. Próximos días: no comunicado. Córdoba Hoy (18:10).",
+      "organismo": "Guardia Civil",
+      "categoria": "guardiacivil",
+      "fuente": {
+        "titulo": "Córdoba Hoy: «La Guardia Civil de Córdoba está abierta hasta las 22.00 horas…» (18:10)",
+        "url": "https://www.cordobahoy.es/la-ciudad/guardia-civil-cordoba-abierta-2200-horas-recoger-muestras-identificacion/20261028181031204813.html"
+      },
+      "fuentesAdicionales": [
+        {
+          "titulo": "Cordópolis (elDiario.es): «La Guardia Civil abre una oficina en Córdoba…» (act. 17:37)",
+          "url": "https://cordopolis.eldiario.es/cordoba-hoy/sociedad/guardia-civil-abre-oficina-cordoba-ayudar-identificar-victimas-accidente-ferroviario-toledo_1_13621598.html"
+        }
+      ],
+      "fechaComunicado": "2026-10-28T18:10:00+01:00"
     }
   ]
 }
