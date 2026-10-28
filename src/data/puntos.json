@@ -139,7 +139,7 @@
       "id": "atocha-psicosocial",
       "nombre": "Centro de Atención a Familiares de la Comunidad de Madrid — Estación de Madrid-Puerta de Atocha",
       "direccion": "Estación de Madrid-Puerta de Atocha, Madrid",
-      "funcion": "Atención a familiares y apoyo psicosocial (Protección Civil y SUMMA 112). Teléfono para familiares: 900 10 10 20.",
+      "funcion": "Atención psicológica y psicosocial a familiares, información y ayuda con traslados y alojamiento. Participan SUMMA 112, SAMUR-Protección Civil, SAMUR Social, Cruz Roja y Policía Nacional, con personal de Renfe y Adif. Teléfono para familiares: 900 10 10 20.",
       "organismo": "Comunidad de Madrid (Protección Civil y ASEM 112)",
       "horario": "24 horas, según Protección Civil de la Comunidad de Madrid (El Diario de Madrid, 14:27)",
       "telefono": "",
@@ -148,7 +148,7 @@
         "titulo": "Comunidad de Madrid: nota sobre los recursos de ASEM 112 (actualizada 15:27)",
         "url": "https://www.comunidad.madrid/noticias/2026/10/28/comunidad-madrid-moviliza-recursos-asem-112-colaborar-respuesta-accidente-ferroviario-provincia-toledo"
       },
-      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -218,12 +218,198 @@
         "titulo": "Junta de Andalucía: «La Junta moviliza recursos del 061 y atención psicológica…»",
         "url": "https://www.juntadeandalucia.es/presidencia/portavoz/gobiernoaldia/220023/recursos/JuntadeAndalucia/accidenteferroviarioUrdaToledo/AgenciadeEmergenciasdeAndalucia/EMA/ConsejeriadePresidenciaSanidadyEmergencias"
       },
-      "comprobadoEn": "2026-10-28T15:55:00+01:00",
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
       "fuentesAdicionales": []
+    },
+    {
+      "id": "gc-adn-madrid",
+      "nombre": "Guardia Civil — oficina para familiares (muestras de ADN), Madrid",
+      "direccion": "Calle Batalla del Salado, 32, Madrid",
+      "funcion": "Solo para familiares de primer grado (padres, hijos, hermanos, cónyuge) de las víctimas: la Guardia Civil toma muestras de ADN para agilizar la identificación. Acude lo antes posible. Antes de ir, llama al teléfono para familiares (Renfe 900 10 10 20, Iryo 900 00 14 03).",
+      "organismo": "Guardia Civil",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
+      },
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "encastillalamancha.es: la Guardia Civil habilita 4 puntos de recogida de ADN (13:36, cita a la Delegación del Gobierno)",
+          "url": "https://www.encastillalamancha.es/castilla-la-mancha-cat/toledo/habilitan-4-puntos-de-recogida-de-adn-para-familias-de-victimas-de-urda-madrid-toledo-sevilla-y-cordoba/"
+        },
+        {
+          "titulo": "El Diario de Madrid (14:27): direcciones de las oficinas de la Guardia Civil",
+          "url": "https://www.eldiariodemadrid.es/articulo/politica/accidente-trenes-urda-toledo-muertos-heridos-atencion-familiares/20261028142720145538.html"
+        }
+      ]
+    },
+    {
+      "id": "gc-adn-sevilla",
+      "nombre": "Guardia Civil — oficina para familiares (muestras de ADN), Sevilla",
+      "direccion": "Avenida de la Borbolla, 8, Sevilla",
+      "funcion": "Solo para familiares de primer grado (padres, hijos, hermanos, cónyuge) de las víctimas: la Guardia Civil toma muestras de ADN para agilizar la identificación. Acude lo antes posible. Antes de ir, llama al teléfono para familiares (Renfe 900 10 10 20, Iryo 900 00 14 03).",
+      "organismo": "Guardia Civil",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
+      },
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "encastillalamancha.es: la Guardia Civil habilita 4 puntos de recogida de ADN (13:36, cita a la Delegación del Gobierno)",
+          "url": "https://www.encastillalamancha.es/castilla-la-mancha-cat/toledo/habilitan-4-puntos-de-recogida-de-adn-para-familias-de-victimas-de-urda-madrid-toledo-sevilla-y-cordoba/"
+        },
+        {
+          "titulo": "El Diario de Madrid (14:27): direcciones de las oficinas de la Guardia Civil",
+          "url": "https://www.eldiariodemadrid.es/articulo/politica/accidente-trenes-urda-toledo-muertos-heridos-atencion-familiares/20261028142720145538.html"
+        }
+      ]
+    },
+    {
+      "id": "gc-adn-cordoba",
+      "nombre": "Guardia Civil — oficina para familiares (muestras de ADN), Córdoba",
+      "direccion": "Comandancia de la Guardia Civil de Córdoba, entrada por la Avenida de los Mozárabes, Córdoba",
+      "funcion": "Solo para familiares de primer grado (padres, hijos, hermanos, cónyuge) de las víctimas: la Guardia Civil toma muestras de ADN para agilizar la identificación. Acude lo antes posible. Antes de ir, llama al teléfono para familiares (Renfe 900 10 10 20, Iryo 900 00 14 03).",
+      "organismo": "Guardia Civil",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
+      },
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "encastillalamancha.es: la Guardia Civil habilita 4 puntos de recogida de ADN (13:36, cita a la Delegación del Gobierno)",
+          "url": "https://www.encastillalamancha.es/castilla-la-mancha-cat/toledo/habilitan-4-puntos-de-recogida-de-adn-para-familias-de-victimas-de-urda-madrid-toledo-sevilla-y-cordoba/"
+        },
+        {
+          "titulo": "El Diario de Madrid (14:27): direcciones de las oficinas de la Guardia Civil",
+          "url": "https://www.eldiariodemadrid.es/articulo/politica/accidente-trenes-urda-toledo-muertos-heridos-atencion-familiares/20261028142720145538.html"
+        }
+      ]
+    },
+    {
+      "id": "gc-adn-toledo",
+      "nombre": "Guardia Civil — oficina para familiares (muestras de ADN), Toledo",
+      "direccion": "Comandancia de la Guardia Civil de Toledo, Avenida Barber, 42, Toledo",
+      "funcion": "Solo para familiares de primer grado (padres, hijos, hermanos, cónyuge) de las víctimas: la Guardia Civil toma muestras de ADN para agilizar la identificación. Acude lo antes posible. Antes de ir, llama al teléfono para familiares (Renfe 900 10 10 20, Iryo 900 00 14 03).",
+      "organismo": "Guardia Civil",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
+      },
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "encastillalamancha.es: la Guardia Civil habilita 4 puntos de recogida de ADN (13:36, cita a la Delegación del Gobierno)",
+          "url": "https://www.encastillalamancha.es/castilla-la-mancha-cat/toledo/habilitan-4-puntos-de-recogida-de-adn-para-familias-de-victimas-de-urda-madrid-toledo-sevilla-y-cordoba/"
+        },
+        {
+          "titulo": "El Diario de Madrid (14:27): direcciones de las oficinas de la Guardia Civil",
+          "url": "https://www.eldiariodemadrid.es/articulo/politica/accidente-trenes-urda-toledo-muertos-heridos-atencion-familiares/20261028142720145538.html"
+        }
+      ]
+    },
+    {
+      "id": "sevilla-carpa-ayto",
+      "nombre": "Ayuntamiento de Sevilla — carpa de atención a familiares, Santa Justa",
+      "direccion": "Junto a la estación de Sevilla-Santa Justa, en los laterales que dan salida al aparcamiento",
+      "funcion": "Atención psicológica a afectados y familiares, con profesionales de la Unidad Municipal de Emergencias Sociales, en coordinación con la Junta de Andalucía.",
+      "organismo": "Ayuntamiento de Sevilla",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Infobae/EFE: «Una carpa junto a la estación de trenes de Sevilla atenderá a familiares de las víctimas»",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/una-carpa-junto-a-la-estacion-de-trenes-de-sevilla-atendera-a-familiares-de-las-victimas/"
+      },
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "Telemadrid (15:19): atención psicológica a familiares en Sevilla y Córdoba",
+          "url": "https://www.telemadrid.es/noticias/sociedad/activada-atencion-psicologica-familiares-estaciones_1_2779153.html"
+        }
+      ]
+    },
+    {
+      "id": "cordoba-cruzroja",
+      "nombre": "Cruz Roja — atención a familiares y viajeros, estación de Córdoba-Julio Anguita",
+      "direccion": "Estación de Córdoba-Julio Anguita, Córdoba",
+      "funcion": "Equipo de apoyo psicosocial para familiares que lleguen a la estación, agua y alimentos para viajeros en tránsito y UVI móvil en coordinación con el 061 (unas veinte personas de Cruz Roja).",
+      "organismo": "Cruz Roja (Unidad de Emergencia de Córdoba)",
+      "horario": "Relevo de voluntarios a las 17:00; sin horario de cierre comunicado",
+      "telefono": "",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Córdoba Hoy (15:21): «Una veintena de voluntarios de Cruz Roja con una UVI móvil atiende en la estación de Córdoba»",
+        "url": "https://www.cordobahoy.es/la-ciudad/cruz-roja/20261028152130204799.html"
+      },
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": []
+    },
+    {
+      "id": "orgaz-atencion-victimas",
+      "nombre": "Centro de atención a víctimas y familiares — Tribunal de Instancia de Orgaz (Toledo)",
+      "direccion": "Tribunal de Instancia de Orgaz, Orgaz (Toledo)",
+      "funcion": "Atención a víctimas, familiares y profesionales, vinculada al juzgado que investiga el accidente.",
+      "organismo": "Administración de Justicia (TSJ de Castilla-La Mancha)",
+      "horario": "No comunicado",
+      "telefono": "",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Castilla-La Mancha Media, última hora (14:49)",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/ultima-hora-accidente-tren-urda-toledo-fallecidos.html"
+      },
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "fuentesAdicionales": [
+        {
+          "titulo": "Poder Judicial (TSJ de Castilla-La Mancha): información sobre las actuaciones judiciales del accidente de Urda",
+          "url": "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunales-Superiores-de-Justicia/TSJ-Castilla-La-Mancha/Oficina-de-Comunicacion/Notas-de-prensa/Informacion-sobre-las-actuaciones-judiciales-relacionadas-con-el-accidente-ferroviario-ocurrido-en-Urda--Toledo-"
+        }
+      ]
     }
   ]
 }

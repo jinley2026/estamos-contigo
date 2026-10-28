@@ -43,7 +43,7 @@ const cabeceras = `/*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
-  Referrer-Policy: no-referrer
+  Referrer-Policy: same-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
   Cross-Origin-Opener-Policy: same-origin
 ${mode === 'preview' ? '  X-Robots-Tag: noindex, nofollow, noarchive\n' : ''}`;

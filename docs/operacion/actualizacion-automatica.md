@@ -7,6 +7,7 @@ Anula la regla de «solo canales oficiales» de las 15:05.
 - Si existe el comunicado oficial, se enlaza el oficial en primer lugar.
 - `site.json → reglaFuentes.soloCanalesOficiales` debe seguir en `false`. No lo actives sin una nueva decisión de Lin.
 - Revisar TODAS las fuentes (oficiales y directos de medios) y publicar TODAS las novedades, no solo una (decisión de Lin, 14:55).
+- Puntos de reunión y atención a familiares (Lin, 17:06): revisar SIEMPRE Guardia Civil, Policía Nacional, Cruz Roja, Protección Civil, SAMUR/SUMMA 112, 061/Junta de Andalucía, Ayuntamientos de Sevilla, Córdoba, Madrid y Toledo, y Justicia (Orgaz). Cada lugar va en `src/data/puntos.json` con dirección exacta, función, organismo, horario y fuente.
 
 Decisión de Lin (28/10/2026, 13:08): no hay segunda persona. Claude actualiza y publica cada hora sin revisión previa.
 Lin revisa cuando puede y puede pararlo todo poniendo `automatizacion.suspendida = true` o pidiéndoselo a Claude.

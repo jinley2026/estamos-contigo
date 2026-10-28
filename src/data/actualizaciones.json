@@ -2,6 +2,102 @@
   "_comentario": "Cronología y centro de comunicados. Solo niveles 1 y 2. Nunca identidades. categoria: gobierno | ministerio | junta | adif | renfe | iryo | emergencias | sanidad | ayuntamientos | otros. tipoFuente: comunicado-oficial (publicado por el propio organismo) | medio-citando (un medio o agencia recoge lo que dijo el organismo). estado: vigente | pendiente | corregido | retirado. alerta: true para mostrarlo como aviso destacado durante 60 minutos.",
   "entradas": [
     {
+      "id": "2026-10-28-sevilla-carpa",
+      "titulo": "Sevilla instala una carpa de atención psicológica a familiares junto a Santa Justa",
+      "resumen": "En los laterales de la estación que dan al aparcamiento, con profesionales de la Unidad Municipal de Emergencias Sociales y en coordinación con la Junta de Andalucía.",
+      "organismo": "Ayuntamiento de Sevilla",
+      "categoria": "ayuntamientos",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Infobae/EFE: «Una carpa junto a la estación de trenes de Sevilla atenderá a familiares de las víctimas»",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/una-carpa-junto-a-la-estacion-de-trenes-de-sevilla-atendera-a-familiares-de-las-victimas/"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T13:28:00+01:00",
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "publicadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-cordoba-cruzroja",
+      "titulo": "Cruz Roja atiende a familiares y viajeros en la estación de Córdoba",
+      "resumen": "Equipo psicosocial para familiares, agua y alimentos para viajeros en tránsito y una UVI móvil en coordinación con el 061.",
+      "organismo": "Cruz Roja",
+      "categoria": "cruzroja",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Córdoba Hoy (15:21): «Una veintena de voluntarios de Cruz Roja con una UVI móvil atiende en la estación de Córdoba»",
+        "url": "https://www.cordobahoy.es/la-ciudad/cruz-roja/20261028152130204799.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T15:21:00+01:00",
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "publicadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-atocha-dispositivo",
+      "titulo": "Atocha: atención a familiares 24 horas con SAMUR, Cruz Roja y Policía Nacional",
+      "resumen": "Protección Civil de la Comunidad de Madrid informa de que el centro de Atocha funciona las 24 horas: apoyo psicológico, información y ayuda con traslados y alojamiento.",
+      "organismo": "Comunidad de Madrid (Protección Civil)",
+      "categoria": "comunidades",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "El Diario de Madrid (14:27), declaraciones del subdirector general de Protección Civil",
+        "url": "https://www.eldiariodemadrid.es/articulo/politica/accidente-trenes-urda-toledo-muertos-heridos-atencion-familiares/20261028142720145538.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:27:00+01:00",
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "publicadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "2026-10-28-orgaz-victimas",
+      "titulo": "Centro de atención a víctimas y familiares en el Tribunal de Instancia de Orgaz",
+      "resumen": "Vinculado al juzgado que investiga el accidente; atiende a víctimas, familiares y profesionales.",
+      "organismo": "Administración de Justicia",
+      "categoria": "justicia",
+      "tipoFuente": "medio-citando",
+      "fuente": {
+        "titulo": "Castilla-La Mancha Media, última hora (14:49)",
+        "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/ultima-hora-accidente-tren-urda-toledo-fallecidos.html"
+      },
+      "nivelFuente": 2,
+      "fechaComunicado": "2026-10-28T14:49:00+01:00",
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
+      "publicadoEn": "2026-10-28T17:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
       "id": "2026-10-28-page-balance-1352",
       "titulo": "García-Page eleva el balance de víctimas y avisa de que puede subir",
       "resumen": "La cifra actualizada está en el apartado Balance, con su fuente y hora.",
@@ -104,7 +200,7 @@
     {
       "id": "2026-10-28-gc-adn",
       "titulo": "La Guardia Civil pide a los familiares directos que aporten muestras de ADN",
-      "resumen": "Sirve para agilizar la identificación. Hay oficinas en Madrid, Sevilla, Córdoba y Toledo; llama antes al teléfono para familiares para saber dónde acudir.",
+      "resumen": "Solo familiares de primer grado, lo antes posible. Oficinas: Madrid, calle Batalla del Salado 32; Sevilla, avenida de la Borbolla 8; Córdoba, Comandancia (entrada por avenida de los Mozárabes); Toledo, Comandancia, avenida Barber 42.",
       "organismo": "Guardia Civil",
       "categoria": "guardiacivil",
       "tipoFuente": "medio-citando",
@@ -114,7 +210,7 @@
       },
       "nivelFuente": 2,
       "fechaComunicado": "2026-10-28T12:50:00+01:00",
-      "comprobadoEn": "2026-10-28T14:05:00+01:00",
+      "comprobadoEn": "2026-10-28T17:15:00+01:00",
       "publicadoEn": "2026-10-28T14:05:00+01:00",
       "revisarCadaMinutos": 60,
       "estado": "vigente",
@@ -124,7 +220,17 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
-      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05).",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
+          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
+        },
+        {
+          "titulo": "encastillalamancha.es: la Guardia Civil habilita 4 puntos de recogida de ADN (13:36, cita a la Delegación del Gobierno)",
+          "url": "https://www.encastillalamancha.es/castilla-la-mancha-cat/toledo/habilitan-4-puntos-de-recogida-de-adn-para-familias-de-victimas-de-urda-madrid-toledo-sevilla-y-cordoba/"
+        }
+      ]
     },
     {
       "id": "2026-10-28-112clm-balance-1243",

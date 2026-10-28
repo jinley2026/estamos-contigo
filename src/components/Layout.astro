@@ -27,7 +27,7 @@ const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suces
     <title>{tituloCompleto}</title>
     <meta name="description" content={descripcion} />
     {ES_PREVIA && <meta name="robots" content="noindex, nofollow, noarchive" />}
-    <meta name="referrer" content="no-referrer" />
+    <meta name="referrer" content="same-origin" />
     <meta name="theme-color" content="#1f3a5f" />
     <meta property="og:title" content={titulo === SITE.nombre ? '🚆 Accidente de tren en Urda (Toledo) · Información útil cada 30 minutos' : tituloCompleto} />
     <meta property="og:description" content={titulo === SITE.nombre ? 'Teléfonos para familiares, billetes, donación de sangre y novedades en directo, con su fuente. Compártelo: puede ayudar a alguien.' : descripcion} />
