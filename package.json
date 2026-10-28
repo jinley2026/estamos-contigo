@@ -13,6 +13,7 @@
     "test": "npm run build:preview"
   },
   "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "5.3.0",
     "astro": "7.4.2"
   },
   "devDependencies": {

@@ -75,6 +75,9 @@ Ningún `<form>`; sin campos de entrada salvo casillas; sin scripts ni estilos e
 - El primer logotipo (dos círculos y una forma inferior dentro de un círculo) podía leerse como una cara triste. Se rediseñó como dos figuras sobre un cuadrado redondeado.
 - Un atributo `style=""` en la página de viajes habría quedado bloqueado por la CSP. Se sustituyó por una clase.
 
+### Rediseño visual (28/10/2026, ~11:40)
+Tras la revisión de Lin («muy básica, muchas letras, no se resalta lo importante») se rediseñó con estilo de señalética de orientación: panel azul con el teléfono en grande, filas con pictogramas, pasos numerados, avisos en rojo y detalles plegados. Tipografía Atkinson Hyperlegible servida desde el propio sitio (licencia OFL, `public/fuentes/`). Las pruebas detectaron y se corrigieron tres fallos del rediseño: la CSP bloqueaba la tipografía (faltaba `font-src 'self'`), la etiqueta accesible del botón 112 no coincidía con su texto y el botón 112 desbordaba la pantalla a 320 px con texto grande. Resultado tras corregir: 14/14 pruebas estáticas y 15/15 de navegador.
+
 ## 5. Elementos pendientes de verificación (bloquean la publicación)
 
 1. Titular: nombre, naturaleza, NIF, domicilio, correos y responsable editorial (`src/config/site.json`).

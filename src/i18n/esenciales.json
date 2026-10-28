@@ -1,12 +1,30 @@
 {
   "_comentario": "Textos esenciales por idioma. TRADUCCIONES PRELIMINARES hechas por IA: deben revisarlas hablantes competentes antes de publicar (campo 'revisado'). Teléfonos, nombres oficiales y horarios NO se traducen: se insertan desde los datos.",
   "idiomas": {
-    "es": { "nombre": "Español", "revisado": true },
-    "en": { "nombre": "English", "revisado": false },
-    "fr": { "nombre": "Français", "revisado": false },
-    "pt": { "nombre": "Português", "revisado": false },
-    "it": { "nombre": "Italiano", "revisado": false },
-    "de": { "nombre": "Deutsch", "revisado": false }
+    "es": {
+      "nombre": "Español",
+      "revisado": true
+    },
+    "en": {
+      "nombre": "English",
+      "revisado": false
+    },
+    "fr": {
+      "nombre": "Français",
+      "revisado": false
+    },
+    "pt": {
+      "nombre": "Português",
+      "revisado": false
+    },
+    "it": {
+      "nombre": "Italiano",
+      "revisado": false
+    },
+    "de": {
+      "nombre": "Deutsch",
+      "revisado": false
+    }
   },
   "textos": {
     "en": {
@@ -35,7 +53,8 @@
       "estafasTitulo": "Beware of scams",
       "estafasTexto": "We will never ask you for money, documents or bank details. Distrust anyone who offers to locate a person or manage compensation in exchange for payment.",
       "consulados": "If you are a foreign national, your embassy or consulate in Spain can assist you.",
-      "versionCompleta": "Full version in Spanish"
+      "versionCompleta": "Full version in Spanish",
+      "llamar": "Call now"
     },
     "fr": {
       "aviso": "Initiative solidaire indépendante. Nous ne sommes pas un service officiel d'urgence. En cas d'urgence, appelez le 112.",
@@ -63,7 +82,8 @@
       "estafasTitulo": "Attention aux arnaques",
       "estafasTexto": "Nous ne vous demanderons jamais d'argent, de documents ni de coordonnées bancaires. Méfiez-vous de quiconque propose de localiser une personne ou de gérer une indemnisation contre paiement.",
       "consulados": "Si vous êtes de nationalité étrangère, votre ambassade ou consulat en Espagne peut vous aider.",
-      "versionCompleta": "Version complète en espagnol"
+      "versionCompleta": "Version complète en espagnol",
+      "llamar": "Appeler maintenant"
     },
     "pt": {
       "aviso": "Iniciativa solidária independente. Não somos um serviço oficial de emergência. Em caso de emergência, ligue 112.",
@@ -91,7 +111,8 @@
       "estafasTitulo": "Cuidado com burlas",
       "estafasTexto": "Nunca lhe pediremos dinheiro, documentos nem dados bancários. Desconfie de quem se ofereça para localizar uma pessoa ou gerir uma indemnização a troco de pagamento.",
       "consulados": "Se for cidadão estrangeiro, a sua embaixada ou consulado em Espanha pode ajudá-lo.",
-      "versionCompleta": "Versão completa em espanhol"
+      "versionCompleta": "Versão completa em espanhol",
+      "llamar": "Ligar agora"
     },
     "it": {
       "aviso": "Iniziativa solidale indipendente. Non siamo un servizio ufficiale di emergenza. In caso di emergenza, chiama il 112.",
@@ -119,7 +140,8 @@
       "estafasTitulo": "Attenzione alle truffe",
       "estafasTexto": "Non ti chiederemo mai denaro, documenti o dati bancari. Diffida di chi si offre di localizzare una persona o gestire un risarcimento in cambio di un pagamento.",
       "consulados": "Se sei cittadino straniero, la tua ambasciata o il tuo consolato in Spagna può aiutarti.",
-      "versionCompleta": "Versione completa in spagnolo"
+      "versionCompleta": "Versione completa in spagnolo",
+      "llamar": "Chiama ora"
     },
     "de": {
       "aviso": "Unabhängige Solidaritätsinitiative. Wir sind kein offizieller Notdienst. Im Notfall rufen Sie die 112 an.",
@@ -147,7 +169,8 @@
       "estafasTitulo": "Vorsicht vor Betrug",
       "estafasTexto": "Wir werden Sie niemals um Geld, Dokumente oder Bankdaten bitten. Misstrauen Sie allen, die gegen Bezahlung anbieten, eine Person zu finden oder eine Entschädigung zu regeln.",
       "consulados": "Wenn Sie ausländische Staatsangehörige sind, kann Ihnen Ihre Botschaft oder Ihr Konsulat in Spanien helfen.",
-      "versionCompleta": "Vollständige Version auf Spanisch"
+      "versionCompleta": "Vollständige Version auf Spanisch",
+      "llamar": "Jetzt anrufen"
     }
   }
 }

@@ -30,7 +30,7 @@ for (const f of paginas) {
     if (!existsSync(new URL(href, dist))) enlacesRotos.push(`${f} → ${href}`);
   }
   if (statSync(new URL(f, dist)).size > 50 * 1024) pesados.push(f);
-  if (/VISTA PREVIA PRIVADA|BORRADOR DE CARTEL/.test(html)) marcasPrevia.push(f);
+  if (/VISTA PREVIA PRIVADA|BORRADOR DE CARTEL/i.test(html)) marcasPrevia.push(f);
   if (/Pendiente de verificación|PENDIENTE DE VERIFICACIÓN|\[PENDIENTE/.test(html)) pendientes.push(f);
 }
 

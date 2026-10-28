@@ -79,6 +79,7 @@
     for (var k = 0; k < opciones.length; k++) opciones[k].addEventListener('click', function (e) {
       e.preventDefault();
       area.value = this.getAttribute('data-plantilla');
+      for (var q = 0; q < opciones.length; q++) opciones[q].setAttribute('aria-pressed', opciones[q] === this ? 'true' : 'false');
       if (mencion.checked) aplicarMencion();
       area.focus();
     });

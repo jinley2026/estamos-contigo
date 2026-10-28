@@ -15,16 +15,11 @@ const wa = (s: string) => `https://wa.me/?text=${encodeURIComponent(s)}`;
 const sms = (s: string) => `sms:?&body=${encodeURIComponent(s)}`;
 ---
 <div class="mensaje-familia">
-  <p class="caja">
-    {lang === 'es'
-      ? 'El mensaje se escribe en tu teléfono y lo envías tú desde tu propia aplicación. Esta web no recibe, no guarda y no ve lo que escribes. No es una confirmación oficial del estado de nadie.'
-      : t.mensajeTexto}
-  </p>
 
   <div class="editor" data-editor-mensaje data-mencion={mencion}>
     {lang === 'es' && <p><strong>{t.elegir}</strong></p>}
-    <div class="acciones" role="group" aria-label={lang === 'es' ? 'Mensajes predefinidos' : 'Templates'}>
-      {plantillas.map((p) => <button type="button" data-plantilla={p}>{p}</button>)}
+    <div class="acciones chips" role="group" aria-label={lang === 'es' ? 'Mensajes predefinidos' : 'Templates'}>
+      {plantillas.map((p, i) => <button type="button" data-plantilla={p} aria-pressed={i === 0 ? "true" : "false"}>{p}</button>)}
     </div>
     <label for={`texto-${lang}`}>{lang === 'es' ? t.editar : t.mensajeTitulo}</label>
     <textarea id={`texto-${lang}`} maxlength="500" autocomplete="off" spellcheck="true">{plantillas[0]}</textarea>
@@ -40,6 +35,11 @@ const sms = (s: string) => `sms:?&body=${encodeURIComponent(s)}`;
     </div>
     <p class="estado-copia" role="status" aria-live="polite"></p>
   </div>
+  <p class="nota-privacidad">
+    {lang === 'es'
+      ? 'Lo envías tú desde tu propio WhatsApp o SMS. Esta web no recibe ni guarda lo que escribes.'
+      : t.mensajeTexto}
+  </p>
 
   <ul class="plantillas sin-js">
     {plantillas.map((p) => (

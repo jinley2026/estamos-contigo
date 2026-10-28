@@ -18,6 +18,7 @@ const csp = (scripts, estilos) =>
     `script-src ${scripts.size ? [...scripts].join(' ') : "'none'"}`,
     `style-src ${estilos.size ? [...estilos].join(' ') : "'none'"}`,
     "img-src 'self' data:",
+    "font-src 'self'",
     "base-uri 'none'",
     "form-action 'none'",
     "connect-src 'none'",

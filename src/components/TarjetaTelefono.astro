@@ -1,18 +1,20 @@
 ---
 // Tarjeta del teléfono oficial. Solo muestra el número como confirmado si está verificado;
-// en la vista previa lo muestra en ámbar con sello «pendiente»; en la publicación no aparece.
+// en la vista previa lo muestra con sello amarillo «pendiente»; en la publicación no aparece.
 import { canalDestacado, verificado, visible, fechaHora } from '../lib/datos';
 interface Props {
   etiqueta?: string;
   textoPendiente?: string;
   textoFuente?: string;
   textoComprobado?: string;
+  textoLlamar?: string;
 }
 const {
-  etiqueta = 'Teléfono oficial para familiares',
-  textoPendiente = 'Pendiente de verificación por el equipo editorial — no difundir',
+  etiqueta = 'Teléfono para familiares',
+  textoPendiente = 'Pendiente de verificar: no difundir',
   textoFuente = 'Fuente',
-  textoComprobado = 'Comprobado'
+  textoComprobado = 'Comprobado',
+  textoLlamar = 'Llamar ahora'
 } = Astro.props;
 const c = canalDestacado;
 const mostrar = c && visible(c);
@@ -26,29 +28,33 @@ const ok = c && verificado(c);
     data-revisar={c.revisarCadaMinutos}
     data-sensible={c.sensible ? '' : undefined}
   >
+    {!ok && <span class="sello-pendiente">{textoPendiente}</span>}
     <p class="etiqueta" id="tel-titulo">{etiqueta}</p>
-    {!ok && <p><span class="sello-pendiente">{textoPendiente}</span></p>}
-    <p class="organismo">{c.organismo}</p>
     <p class="numero" translate="no">{c.telefonoVisible}</p>
-    <p>{c.finalidad}</p>
-    <a class="boton-llamar accion-llamar" href={`tel:${c.telefono}`}>Llamar al {c.telefonoVisible}</a>
+    <p class="organismo">{c.organismoCorto ?? c.organismo}</p>
+    <a class="boton-llamar accion-llamar" href={`tel:${c.telefono}`}>
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+      {textoLlamar}
+    </a>
     <p class="aviso-caducado" role="status"></p>
-    <p class="meta">
-      <span class="estado-fresco">{textoComprobado}: {fechaHora(c.comprobadoEn)}. </span>
-      {textoFuente}:{' '}
-      {c.fuentes.map((f, i) => (
-        <span>{i > 0 && ' · '}<a href={f.url} rel="noopener noreferrer">{f.titulo}</a></span>
-      ))}
-    </p>
+    <details class="meta-fuentes">
+      <summary><span class="estado-fresco">{textoComprobado}: {fechaHora(c.comprobadoEn)}. </span>{textoFuente}</summary>
+      <p class="meta">{c.organismo}. {c.finalidad}</p>
+      <p class="meta">
+        {c.fuentes.map((f, i) => (
+          <span>{i > 0 && ' · '}<a href={f.url} rel="noopener noreferrer">{f.titulo}</a></span>
+        ))}
+      </p>
+    </details>
   </section>
 ) : (
   <section class="tarjeta-tel">
     <p class="etiqueta">{etiqueta}</p>
     <p>
-      Aún no hemos podido verificar el teléfono oficial para familiares. Consúltalo directamente en
+      Aún no hemos podido verificar el teléfono oficial. Consúltalo en
       <a href="https://www.renfe.com" rel="noopener noreferrer">renfe.com</a>,
       <a href="https://iryo.eu" rel="noopener noreferrer">iryo.eu</a> o
-      <a href="https://www.adif.es" rel="noopener noreferrer">adif.es</a>. En una emergencia, llama al <a href="tel:112">112</a>.
+      <a href="https://www.adif.es" rel="noopener noreferrer">adif.es</a>.
     </p>
   </section>
 )}

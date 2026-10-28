@@ -26,7 +26,8 @@
       "comprobadoEn": "2026-10-28T10:50:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [],
-      "notaInterna": "Aparece escrito también como 900 101 020 (mismos dígitos). Pendiente: confirmar en el canal oficial de Renfe y prueba de llamada por dos personas."
+      "notaInterna": "Aparece escrito también como 900 101 020 (mismos dígitos). Pendiente: confirmar en el canal oficial de Renfe y prueba de llamada por dos personas.",
+      "organismoCorto": "Renfe, plan de asistencia a víctimas y familiares"
     },
     {
       "id": "iryo-familiares",
@@ -42,7 +43,8 @@
       "comprobadoEn": "2026-10-28T10:50:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [],
-      "notaInterna": "En el accidente de Adamuz (enero de 2026) Iryo habilitó el 900 001 402. NO publicarlo como vigente para este suceso sin comunicado de Iryo."
+      "notaInterna": "En el accidente de Adamuz (enero de 2026) Iryo habilitó el 900 001 402. NO publicarlo como vigente para este suceso sin comunicado de Iryo.",
+      "organismoCorto": "Iryo"
     }
   ]
 }
