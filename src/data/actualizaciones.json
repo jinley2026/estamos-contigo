@@ -924,18 +924,18 @@
     {
       "id": "2026-10-28-andalucia-luto",
       "titulo": "Andalucía declara tres días de luto oficial",
-      "resumen": "El presidente de la Junta de Andalucía, Juanma Moreno, ha anunciado tres días de luto oficial, desde las 14:00 de hoy hasta las 14:00 del sábado 31 de octubre.",
+      "resumen": "El Decreto del Presidente 12/2026, publicado en el BOJA, declara luto oficial en Andalucía desde las 14:00 del miércoles 28 hasta las 14:00 del sábado 31 de octubre, con las banderas a media asta en los edificios de la Junta, e invita a otras instituciones y entidades a sumarse.",
       "organismo": "Junta de Andalucía",
       "categoria": "otros",
-      "tipoFuente": "medio-citando",
+      "tipoFuente": "comunicado-oficial",
       "fuente": {
-        "titulo": "Libertad Digital: recoge el anuncio de Juanma Moreno en X (14:44)",
-        "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+        "titulo": "BOJA extraordinario n.º 18 (28/10/2026): Decreto del Presidente 12/2026, de luto oficial en Andalucía",
+        "url": "https://www.juntadeandalucia.es/boja/2026/518/1.html"
       },
-      "nivelFuente": 2,
+      "nivelFuente": 1,
       "fechaComunicado": "2026-10-28T14:44:00+01:00",
       "publicadoEn": "2026-10-28T14:55:00+01:00",
-      "comprobadoEn": "2026-10-28T14:55:00+01:00",
+      "comprobadoEn": "2026-10-28T22:15:00+01:00",
       "revisarCadaMinutos": 240,
       "estado": "vigente",
       "operativa": false,
@@ -944,7 +944,14 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
-      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05)."
+      "_repuesto": "Repuesto el 28/10 a las 15:40 por decisión de Lin: se vuelven a publicar los datos de organismos recogidos por medios, citando organismo y medio (anula la regla de solo canales oficiales de las 15:05).",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Libertad Digital: recoge el anuncio de Juanma Moreno en X (14:44)",
+          "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
+        }
+      ],
+      "_actualizado": "22:15: se añade el decreto publicado en el BOJA como fuente oficial; la versión anterior citaba el anuncio en X recogido por Libertad Digital (14:44), que se conserva como fuente adicional."
     },
     {
       "id": "2026-10-28-adif-malaga",
@@ -2067,6 +2074,132 @@
         "url": "https://www.eldigitaldealbacete.com/2026/10/28/muere-uno-de-los-heridos-trasladados-al-hospital-tras-el-accidente-de-tren-de-toledo-21-personas-estan-en-la-uci/"
       },
       "fechaComunicado": "2026-10-28T19:30:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T22:15:00+01:00",
+      "comprobadoEn": "2026-10-28T22:15:00+01:00",
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-renfe-actualizacion-2100",
+      "titulo": "Renfe: centros de atención a familiares compartidos con Iryo y horarios de los trenes especiales",
+      "resumen": "Según la actualización de Renfe de las 21:00, hay tres centros de atención a familiares, compartidos con Iryo y con psicólogos: en Madrid, en la Sala Club de Puerta de Atocha; en Córdoba, en la sala de autoridades de la estación; y en Sevilla, en la Sala Club de Renfe (Iryo usa la sala de autoridades). Las estaciones de Atocha, Sevilla, Córdoba y Málaga abren las 24 horas. Teléfono para víctimas y familiares: 900 10 10 20. Trenes especiales por vía convencional (hora y media más de viaje): salidas de Madrid-Atocha hacia Ciudad Real y Puertollano a las 8:00, 10:30, 12:00, 14:00, 16:30, 18:00, 20:00 y 22:30; de Ciudad Real a Madrid a las 7:15, 9:00, 11:00, 13:30, 15:00, 17:00, 19:30 y 21:00; de Puertollano a Madrid a las 4:45, 6:45, 8:15, 10:00, 12:00, 15:30, 18:15 y 20:15. Cambios y anulaciones sin coste. El plan alternativo Madrid–Andalucía empieza el viernes 30; sus horarios aún no se han publicado. Por la huelga del jueves, Renfe pide viajar solo si es imprescindible. Publicado por Railin (21:42) y El Digital de Albacete (21:29).",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "fuente": {
+        "titulo": "Railin: «Renfe actualiza la situación del accidente ferroviario de Toledo» (21:42, cita la actualización de Renfe de las 21:00)",
+        "url": "https://www.railin.net/es/noticias/renfe-actualiza-situacion-accidente-ferroviario-toledo/"
+      },
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Digital de Albacete: trenes especiales y alternativas de Renfe (21:29)",
+          "url": "https://www.eldigitaldealbacete.com/2026/10/28/renfe-anuncia-trenes-especiales-entre-madrid-castilla-la-mancha-y-andalucia-tras-el-tragico-accidente-de-urda-estos-son-los-horarios-y-las-alternativas-para-viajar/"
+        }
+      ],
+      "fechaComunicado": "2026-10-28T21:00:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 240,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T22:15:00+01:00",
+      "comprobadoEn": "2026-10-28T22:15:00+01:00",
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-clm-luto",
+      "titulo": "Castilla-La Mancha decreta tres días de luto oficial",
+      "resumen": "El Gobierno de Castilla-La Mancha ha decretado luto oficial desde las 00:00 del jueves 29 hasta las 24:00 del sábado 31 de octubre, con las banderas a media asta en los edificios públicos, entre ellos el Palacio de Fuensalida. Se mantienen la representación institucional y los servicios públicos esenciales. Lo anunció en sus redes sociales. Publicado por infoCLM (19:53).",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "fuente": {
+        "titulo": "infoCLM: «Castilla-La Mancha decreta tres días de luto oficial por el accidente de Urda» (19:53)",
+        "url": "https://www.infoclm.es/castilla-la-mancha/2026/10/28/castilla-la-mancha-decreta-tres-dias-de-luto-oficial-por-el-accidente-de-urda/"
+      },
+      "fechaComunicado": "2026-10-28T19:53:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 240,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T22:15:00+01:00",
+      "comprobadoEn": "2026-10-28T22:15:00+01:00",
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-extremadura-luto",
+      "titulo": "Extremadura declara tres días de luto oficial",
+      "resumen": "La presidenta de la Junta de Extremadura ha decretado tres días de luto oficial, desde las 15:00 del miércoles 28 hasta las 15:00 del sábado 31 de octubre, con las banderas a media asta en los edificios públicos. El decreto se publica en el Diario Oficial de Extremadura. Publicado por Infobae (agencias), el 28/10 por la tarde (la hora exacta de la noticia no se puede precisar).",
+      "organismo": "Junta de Extremadura",
+      "categoria": "comunidades",
+      "fuente": {
+        "titulo": "Infobae (agencias): «Extremadura declara tres días de luto oficial por el accidente de tren en Urda (Toledo)»",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/extremadura-declara-tres-dias-de-luto-oficial-por-el-accidente-de-tren-en-urda-toledo/"
+      },
+      "fechaComunicado": "2026-10-28T15:00:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": true,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T22:15:00+01:00",
+      "comprobadoEn": "2026-10-28T22:15:00+01:00",
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-samur-atocha-balance",
+      "titulo": "SAMUR-Protección Civil mantiene 24 horas su dispositivo para familiares en Atocha",
+      "resumen": "Según SAMUR-Protección Civil (Ayuntamiento de Madrid), que informó a la prensa en la estación, en Atocha han atendido a 83 familiares que esperaban noticias y a 36 pasajeros de los trenes llegados en tres autobuses. Ahora trabajan allí 18 profesionales, entre ellos psicólogos y una unidad de soporte vital avanzado; dan apoyo psicológico e informan periódicamente a las familias. El dispositivo sigue las 24 horas mientras haga falta, porque se espera la llegada de más familiares. Durante el día enviaron a la zona del accidente 96 profesionales y 24 ambulancias. Publicado por Diario en Positivo (20:11).",
+      "organismo": "Ayuntamiento de Madrid (SAMUR-Protección Civil)",
+      "categoria": "emergencias",
+      "fuente": {
+        "titulo": "Diario en Positivo: SAMUR-PC atiende a familiares y pasajeros en Atocha (20:11)",
+        "url": "https://www.diarioenpositivo.com/espana/accidente-total-83-familiares-36-pasajeros-trenes-reciben-atencion-atocha-samur-pc/20261028201110095935.html"
+      },
+      "fechaComunicado": "2026-10-28T20:11:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "operativa": false,
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-28T22:15:00+01:00",
+      "comprobadoEn": "2026-10-28T22:15:00+01:00",
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-28-galicia-ados-sangre",
+      "titulo": "Galicia ofrece sangre a Castilla-La Mancha y pide seguir donando en los próximos días",
+      "resumen": "La Axencia de Doazón de Órganos e Sangue (ADOS) de Galicia ha ofrecido sus servicios al Centro de Transfusión de Castilla-La Mancha, que coordina la recogida, y pide seguir donando en los próximos días, semanas e incluso meses para reponer las reservas. La unidad móvil de Pontevedra amplió su horario el miércoles. Publicado por Diario de Pontevedra (21:11).",
+      "organismo": "Xunta de Galicia (ADOS)",
+      "categoria": "comunidades",
+      "fuente": {
+        "titulo": "Diario de Pontevedra: «Pontevedra acude a donar sangre en solidaridad con la tragedia de Urda» (21:11)",
+        "url": "https://www.diariodepontevedra.es/articulo/pontevedra/colas-donar-sangre-pontevedra-respuesta-llamada-solidaridad-urda/202610282111201474408.html"
+      },
+      "fechaComunicado": "2026-10-28T21:11:00+01:00"
     }
   ]
 }

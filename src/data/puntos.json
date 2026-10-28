@@ -455,6 +455,81 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "renfe-caf-atocha",
+      "nombre": "Renfe e Iryo — Centro de atención a familiares, Sala Club de Madrid-Puerta de Atocha",
+      "direccion": "Sala Club de Renfe, estación de Madrid-Puerta de Atocha Almudena Grandes, Madrid",
+      "funcion": "Centro de atención a familiares de Renfe, compartido con Iryo, con personal de atención psicológica.",
+      "organismo": "Renfe e Iryo",
+      "horario": "Estación abierta las 24 horas (Renfe, 21:00); horario del centro no comunicado",
+      "telefono": "900101020",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Railin: actualización de Renfe de las 21:00 (publicado 21:42)",
+        "url": "https://www.railin.net/es/noticias/renfe-actualiza-situacion-accidente-ferroviario-toledo/"
+      },
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Digital de Albacete (21:29)",
+          "url": "https://www.eldigitaldealbacete.com/2026/10/28/renfe-anuncia-trenes-especiales-entre-madrid-castilla-la-mancha-y-andalucia-tras-el-tragico-accidente-de-urda-estos-son-los-horarios-y-las-alternativas-para-viajar/"
+        }
+      ],
+      "comprobadoEn": "2026-10-28T22:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "renfe-caf-cordoba",
+      "nombre": "Renfe e Iryo — Centro de atención a familiares, sala de autoridades de la estación de Córdoba",
+      "direccion": "Sala de autoridades, estación de Córdoba-Julio Anguita, Córdoba",
+      "funcion": "Centro de atención a familiares de Renfe, compartido con Iryo, con personal de atención psicológica.",
+      "organismo": "Renfe e Iryo",
+      "horario": "Estación abierta las 24 horas (Renfe, 21:00); horario del centro no comunicado",
+      "telefono": "900101020",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Railin: actualización de Renfe de las 21:00 (publicado 21:42)",
+        "url": "https://www.railin.net/es/noticias/renfe-actualiza-situacion-accidente-ferroviario-toledo/"
+      },
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Digital de Albacete (21:29)",
+          "url": "https://www.eldigitaldealbacete.com/2026/10/28/renfe-anuncia-trenes-especiales-entre-madrid-castilla-la-mancha-y-andalucia-tras-el-tragico-accidente-de-urda-estos-son-los-horarios-y-las-alternativas-para-viajar/"
+        }
+      ],
+      "comprobadoEn": "2026-10-28T22:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "renfe-caf-sevilla",
+      "nombre": "Renfe e Iryo — Centro de atención a familiares, Sala Club de Sevilla-Santa Justa",
+      "direccion": "Sala Club de Renfe (Iryo: sala de autoridades), estación de Sevilla-Santa Justa, Sevilla",
+      "funcion": "Centro de atención a familiares de Renfe, compartido con Iryo, con personal de atención psicológica. En Sevilla, Iryo atiende en la sala de autoridades de la estación.",
+      "organismo": "Renfe e Iryo",
+      "horario": "Estación abierta las 24 horas (Renfe, 21:00); horario del centro no comunicado",
+      "telefono": "900101020",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "Railin: actualización de Renfe de las 21:00 (publicado 21:42)",
+        "url": "https://www.railin.net/es/noticias/renfe-actualiza-situacion-accidente-ferroviario-toledo/"
+      },
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Digital de Albacete (21:29)",
+          "url": "https://www.eldigitaldealbacete.com/2026/10/28/renfe-anuncia-trenes-especiales-entre-madrid-castilla-la-mancha-y-andalucia-tras-el-tragico-accidente-de-urda-estos-son-los-horarios-y-las-alternativas-para-viajar/"
+        }
+      ],
+      "comprobadoEn": "2026-10-28T22:15:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
