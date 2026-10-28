@@ -9,10 +9,12 @@ const gc = cfg?.activo && cfg?.proveedor === 'goatcounter' && cfg?.codigo ? `htt
 // Todas las páginas cuentan en la misma ruta «/» para poder leer al momento el total de la web
 // (el «TOTAL» de GoatCounter se recalcula con horas de retraso; el recuento por ruta es inmediato).
 const ruta = '/';
+const { inicio = false } = Astro.props as { inicio?: boolean };
 ---
 <p class="barra-visitas" lang="es" data-contador-visitas data-gc={gc || undefined}>
+  {inicio && <a class="barra-inicio" href="index.html">&#8592; Inicio</a>}
   <span class="visitas-icono" aria-hidden="true">&#9679;</span>
-  <span><strong class="visitas-total" data-visitas-total>{gc ? '…' : 'Datos no disponibles'}</strong> personas han consultado esta web</span>
-  <a href="privacidad.html#estadisticas">Cómo se cuentan</a>
+  <span><strong class="visitas-total" data-visitas-total>{gc ? '…' : 'Datos no disponibles'}</strong><span class="txt-largo"> personas han consultado esta web</span><span class="txt-corto"> personas la han consultado</span></span>
+  <a class="barra-como" href="privacidad.html#estadisticas">Cómo se cuentan</a>
   {gc && !ES_PREVIA && <img class="visitas-pixel" src={`${gc}/count?p=${encodeURIComponent(ruta)}`} alt="" width="1" height="1" referrerpolicy="no-referrer-when-downgrade" />}
 </p>

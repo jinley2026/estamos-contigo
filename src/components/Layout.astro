@@ -16,6 +16,7 @@ interface Props {
 }
 const { titulo, descripcion = SITE.subtitulo, lang = 'es', ligera = false, autorecarga = false } = Astro.props;
 const eo = SITE.estadoOperativo;
+const esPortada = /^\/?(index(\.html)?)?$/.test(Astro.url.pathname.replace(/^\/estamos-contigo/, '').replace(/\/$/, ''));
 const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suceso.titulo}` : `${titulo} · ${SITE.nombre}`;
 ---
 <!doctype html>
@@ -42,7 +43,7 @@ const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suces
     data-autorecarga={autorecarga ? '600' : undefined}
   >
     <a class="saltar" href="#contenido">Saltar al contenido</a>
-    <ContadorVisitas />
+    <ContadorVisitas inicio={!esPortada} />
     {ES_PREVIA && (
       <div class="banda-previa" role="note">
         Vista previa privada: no difundir.
@@ -84,9 +85,18 @@ const tituloCompleto = titulo === SITE.nombre ? `${SITE.nombre} — ${SITE.suces
       </div>
     </header>
     <slot name="teletipo" />
+    {!esPortada && (
+      <nav class="navegacion" aria-label="Navegación">
+        <div class="contenedor navegacion-fila">
+          <a class="boton-nav" href="index.html" data-volver>&#8592; Volver</a>
+          <a class="boton-nav boton-nav-inicio" href="index.html">Inicio</a>
+        </div>
+      </nav>
+    )}
     <main id="contenido" class="contenedor">
       <NotaGeneral />
       <slot />
+      {!esPortada && <p class="volver-portada"><a class="boton-sec" href="index.html">&#8592; Volver a la portada</a></p>}
     </main>
     <footer class="pie">
       <div class="contenedor">

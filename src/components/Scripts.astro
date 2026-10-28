@@ -89,6 +89,13 @@
     });
   }
 
+  /* Botón «Volver»: vuelve a la página anterior de esta web; si se llegó desde fuera, va a la portada. */
+  var vol = document.querySelectorAll('[data-volver]');
+  for (var vi = 0; vi < vol.length; vi++) vol[vi].addEventListener('click', function (ev) {
+    var mismaWeb = document.referrer && document.referrer.indexOf(location.host) !== -1;
+    if (mismaWeb && history.length > 1) { ev.preventDefault(); history.back(); }
+  });
+
   /* Directo: «hace X min» y marca «Nuevo» en avisos de menos de 30 minutos. */
   var pintarHace = function () {
     var hs = document.querySelectorAll('.hace[data-desde]');

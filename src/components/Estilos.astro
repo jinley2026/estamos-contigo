@@ -89,11 +89,25 @@
   .que-hacer .tel-linea { font-weight: 700; font-size: 1.15rem; }
   .que-hacer .tel-linea a { font-variant-numeric: tabular-nums; }
   @media (min-width: 620px) { .que-hacer { grid-template-columns: repeat(3, 1fr); } }
+  .navegacion { background: var(--papel); border-bottom: 1px solid var(--linea); }
+  .navegacion-fila { display: flex; gap: .5rem; padding-top: .45rem; padding-bottom: .45rem; }
+  .boton-nav { display: inline-flex; align-items: center; min-height: 44px; padding: .4rem .95rem; border-radius: 10px; background: var(--senal); color: #fff; font-weight: 700; text-decoration: none; }
+  .boton-nav-inicio { background: var(--papel); color: var(--senal-hondo); border: 2px solid var(--senal); }
+  .volver-portada { margin-top: 2rem; }
   .aviso-independencia { border: 2px solid #14365c; border-radius: 10px; padding: .9rem 1rem; margin: 1.2rem 0; background: #f3f6fa; }
   .aviso-independencia p { margin: .35rem 0; }
   .barra-visitas { position: sticky; top: 0; z-index: 20; margin: 0; padding: .45rem 16px; background: var(--senal); color: #fff; font-size: .95rem; text-align: center; max-width: none; display: flex; justify-content: center; align-items: center; gap: .6rem; flex-wrap: wrap; }
   .barra-visitas .visitas-total { font-size: 1.15rem; color: #ffd54a; font-variant-numeric: tabular-nums; }
   .barra-visitas .visitas-icono { color: #e3342f; font-size: .7rem; }
+  .barra-visitas .txt-corto { display: none; }
+  @media (max-width: 520px) { .barra-visitas .txt-corto { display: inline; } }
+  .barra-visitas .barra-inicio { margin-right: auto; color: #fff; font-weight: 700; text-decoration: none; white-space: nowrap; }
+  @media (max-width: 520px) {
+    .barra-visitas { flex-wrap: nowrap; font-size: .8rem; gap: .4rem; padding: .4rem 12px; }
+    .barra-visitas .visitas-total { font-size: 1rem; }
+    .barra-visitas .barra-como, .barra-visitas .visitas-icono, .barra-visitas .txt-largo { display: none; }
+    .barra-visitas > span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  }
   .barra-visitas .visitas-pixel { position: absolute; width: 1px; height: 1px; opacity: 0; }
   .barra-visitas a { color: #fff; margin-left: .4rem; }
   .barra-visitas .prueba { background: var(--aviso); color: #000; font-weight: 700; padding: 0 .35rem; border-radius: 4px; }
