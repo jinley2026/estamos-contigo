@@ -4,6 +4,165 @@
     {
       "revisarCadaMinutos": 60,
       "estado": "vigente",
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T16:30:00+01:00",
+      "comprobadoEn": "2026-10-29T16:30:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-gc-familiares-oficinas-tarde",
+      "titulo": "Guardia Civil: los familiares de primer grado de personas no localizadas que aún no lo hayan hecho deben acudir a sus oficinas",
+      "resumen": "La Guardia Civil insiste en que los familiares de primer grado (padres, hijos, hermanos) de personas que siguen sin localizar acudan, si todavía no lo han hecho, a una de sus cuatro oficinas para presentar la denuncia y dar una muestra de ADN: Toledo (Comandancia, avenida Barber, 42), Córdoba (Comandancia, avenida Medina Azahara, 2), Sevilla (Zona de la Guardia Civil, avenida de la Borbolla, 8) y Madrid (Zona de la Guardia Civil, calle Batalla del Salado, 32). La Guardia Civil será la única que informe a los familiares cuando haya novedades, y siempre en persona: no hagas caso de SMS ni llamadas. Lo explicó desde el puesto de mando de Urda una portavoz de la Guardia Civil (14:43) y lo recogió Libertad Digital (14:43, 14:59 y 15:00).",
+      "organismo": "Guardia Civil",
+      "categoria": "guardiacivil",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (14:59)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T14:59:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T16:30:00+01:00",
+      "comprobadoEn": "2026-10-29T16:30:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-sermas-uci-sangre-tarde",
+      "titulo": "Madrid: tres pacientes del accidente siguen en la UCI; más de 6.000 personas han donado sangre",
+      "resumen": "La Comunidad de Madrid actualiza la atención en la red pública (SERMAS): los viajeros del accidente han sido atendidos en 18 centros, entre ellos La Paz, 12 de Octubre, Getafe y Gregorio Marañón. Siguen en la UCI un paciente en el 12 de Octubre, otro en Getafe y otro en La Paz. Más de 6.000 personas han donado sangre y se pide seguir donando de forma escalonada en los próximos días. Dato «hasta las 15:00 del jueves», publicado por Libertad Digital (14:54). La cifra de atendidos está en el apartado de cifras.",
+      "organismo": "Comunidad de Madrid (SERMAS)",
+      "categoria": "comunidades",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (14:54)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T14:54:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T16:30:00+01:00",
+      "comprobadoEn": "2026-10-29T16:30:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-reyes-llegan-hospital",
+      "titulo": "Los Reyes llegan al Hospital Universitario de Toledo para visitar a los pacientes del accidente",
+      "resumen": "Los Reyes están desde media tarde en el Hospital Universitario de Toledo para interesarse por los pacientes ingresados y sus familias, como había anunciado la Casa Real. La Casa Real ha cancelado además su asistencia del viernes a la presentación del Diccionario de la Lengua Española en la Real Academia Española. Publicado por Libertad Digital (15:39) y El Español (El Digital Castilla-La Mancha); anuncio de la Casa Real recogido por Europa Press.",
+      "organismo": "Casa Real",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (15:39)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T15:39:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Español – El Digital Castilla-La Mancha: «Los Reyes Felipe VI y Letizia llegan al Hospital de Toledo»",
+          "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261029/ultima-hora-accidente-tren-urda-instituto-medicina-legal-toledo-recibido-cadaveres/1003744439061_10.html"
+        },
+        {
+          "titulo": "Infobae (Europa Press): «Los Reyes se desplazan al Hospital de Toledo…»",
+          "url": "https://www.infobae.com/espana/agencias/2026/10/29/los-reyes-se-desplazan-al-hospital-de-toledo-para-visitar-a-los-heridos-del-accidente-ferroviario-de-urda/"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T16:30:00+01:00",
+      "comprobadoEn": "2026-10-29T16:30:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-gc-dron-no-autorizado",
+      "titulo": "La Guardia Civil detecta a una persona grabando con un dron en la zona del accidente: está prohibido",
+      "resumen": "El grupo de drones de la Guardia Civil ha localizado a una persona que grababa con un dron la zona del accidente. La Guardia Civil recuerda que está prohibido volar drones sin autorización en la zona; además, la jueza de Orgaz prohibió acceder en un radio de 2 km de la vía y tomar o difundir imágenes. Publicado por Libertad Digital (14:58).",
+      "organismo": "Guardia Civil",
+      "categoria": "guardiacivil",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (14:58)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T14:58:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T16:30:00+01:00",
+      "comprobadoEn": "2026-10-29T16:30:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-ume-morgue-campana",
+      "titulo": "La UME explica el trabajo de la morgue de campaña instalada en Urda",
+      "resumen": "Un teniente coronel de la Unidad Militar de Emergencias explicó el trabajo en la morgue de campaña que la UME ha puesto a disposición de la dirección de la emergencia en Urda. Publicado por Libertad Digital (14:25).",
+      "organismo": "Unidad Militar de Emergencias (Ministerio de Defensa)",
+      "categoria": "emergencias",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (14:25)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T14:25:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T16:30:00+01:00",
+      "comprobadoEn": "2026-10-29T16:30:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-fiscalia-minuto-silencio",
+      "titulo": "La Fiscalía General del Estado guarda un minuto de silencio con más de 40 fiscales jefes",
+      "resumen": "La Fiscalía General del Estado guardó a las 12:00 un minuto de silencio en su sede, con la fiscal general y más de 40 fiscales jefes provinciales. Publicado por Libertad Digital (13:51).",
+      "organismo": "Fiscalía General del Estado",
+      "categoria": "justicia",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (13:51)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T13:51:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
       "alerta": false,
       "correccion": null,
       "verificadoPor": [

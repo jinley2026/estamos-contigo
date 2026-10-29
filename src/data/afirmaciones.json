@@ -799,6 +799,29 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "atendidos-cam-sermas-1454",
+      "tipo": "atendidos",
+      "valor": 104,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "comunidad:madrid",
+      "organismo": "Comunidad de Madrid",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (14:54): Comunidad de Madrid (SERMAS)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T14:54:00+01:00",
+      "fechaVerificacion": "2026-10-29T16:30:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "atendidos-cam-ayuso-1022",
+      "observaciones": "Viajeros del accidente atendidos en 18 hospitales de la red pública madrileña (SERMAS) hasta las 15:00 del jueves, según la Comunidad de Madrid. Tres siguen en la UCI (12 de Octubre, Getafe y La Paz). Más de 6.000 donaciones de sangre. Sustituye a la cifra de las 10:22 (98).",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
