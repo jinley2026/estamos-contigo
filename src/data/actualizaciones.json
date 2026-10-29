@@ -3634,14 +3634,14 @@
     },
     {
       "revisarCadaMinutos": 60,
-      "estado": "vigente",
-      "alerta": true,
-      "correccion": null,
+      "estado": "corregido",
+      "alerta": false,
+      "correccion": "Rectificado por la propia CIAF entre las 18:19 y las 18:27: su cifra de víctimas mortales vuelve a ser la misma que la de la Junta de Castilla-La Mancha (ver el aviso «La CIAF rectifica su balance»). Se conserva este aviso tal como se publicó a las 18:10.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
       "publicadoEn": "2026-10-29T18:10:00+01:00",
-      "comprobadoEn": "2026-10-29T18:10:00+01:00",
+      "comprobadoEn": "2026-10-29T20:15:00+01:00",
       "operativa": true,
       "nivelFuente": 2,
       "tipoFuente": "medio-citando",
@@ -3775,6 +3775,100 @@
         "url": "https://www.telecinco.es/noticias/sociedad/20261029/ultima-hora-accidente-trenes-urda-renfe-iryo-ave-toledo_18_020567286.html"
       },
       "fechaComunicado": "2026-10-29T17:16:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T20:15:00+01:00",
+      "comprobadoEn": "2026-10-29T20:15:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Libertad Digital, directo (18:27)",
+          "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        },
+        {
+          "titulo": "CMM: «la Comisión rectifica y mantiene los fallecidos»",
+          "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/ultima-hora-accidente-tren-urda-toledo-luto.html"
+        }
+      ],
+      "id": "2026-10-29-ciaf-rectifica-balance",
+      "titulo": "La CIAF rectifica su balance: la cifra de víctimas mortales vuelve a coincidir con la de la Junta",
+      "resumen": "La Comisión de Investigación de Accidentes Ferroviarios (CIAF) ha rectificado el balance que difundió a primera hora de la tarde: la cifra de víctimas mortales es la misma que da el Gobierno de Castilla-La Mancha (la cifra, en el apartado de datos). Corregimos nuestro aviso de las 18:10. Publicado por elDiario.es (18:19) y Libertad Digital (18:27). No hemos encontrado el comunicado oficial de la CIAF.",
+      "organismo": "Ministerio de Transportes (CIAF)",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "elDiario.es, directo (18:19)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+      },
+      "fechaComunicado": "2026-10-29T18:19:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T20:15:00+01:00",
+      "comprobadoEn": "2026-10-29T20:15:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Progreso (EFE), directo (17:27)",
+          "url": "https://elprogreso.es/articulo/espana/accidente-ferroviario-toledo-directo/202610290830152010123.html"
+        }
+      ],
+      "id": "2026-10-29-puente-rueda-prensa-viernes",
+      "titulo": "El ministro de Transportes dará una rueda de prensa el viernes por la mañana",
+      "resumen": "Además de comparecer a petición propia el martes 3 de noviembre a las 17:00 en la Diputación Permanente del Congreso, Óscar Puente ofrecerá una rueda de prensa este viernes 30 por la mañana. Hora exacta no comunicada. Publicado por El Progreso (EFE, 17:27, fuentes de Moncloa) y elDiario.es (18:16).",
+      "organismo": "Ministerio de Transportes",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "elDiario.es, directo (18:16)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+      },
+      "fechaComunicado": "2026-10-29T18:16:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T20:15:00+01:00",
+      "comprobadoEn": "2026-10-29T20:15:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "elDiario.es, directo (18:30)",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+        }
+      ],
+      "id": "2026-10-29-ouigo-cancela-viernes-lunes",
+      "titulo": "Ouigo cancela todos sus trenes del viernes 30 y del lunes 2 por la huelga de maquinistas",
+      "resumen": "Ouigo cancela toda su programación (en todas sus rutas) del viernes 30 de octubre y del lunes 2 de noviembre por la huelga convocada por Semaf, tras conocer un auto de la Audiencia Nacional que suspende cautelarmente los servicios mínimos fijados por Transportes. Puedes cambiar el billete gratis o pedir la devolución; la compañía avisa por correo a los afectados. Los trenes del sábado 31 y del domingo 1 se mantienen. En el corredor Madrid–Andalucía sigue sin haber trenes por el accidente. Publicado por elDiario.es (18:30) y Aragón Digital (18:58).",
+      "organismo": "Ouigo",
+      "categoria": "ouigo",
+      "fuente": {
+        "titulo": "Aragón Digital: «OUIGO cancela todos sus trenes del viernes y el lunes por la huelga» (18:58)",
+        "url": "https://www.aragondigital.es/articulo/sociedad/ouigo-cancela-todos-trenes-viernes-lunes-huelga/202610291858281018822.html"
+      },
+      "fechaComunicado": "2026-10-29T18:30:00+01:00"
     }
   ]
 }

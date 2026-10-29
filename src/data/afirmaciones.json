@@ -841,7 +841,7 @@
       "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": null,
-      "observaciones": "Según la Comisión de Investigación de Accidentes Ferroviarios (CIAF), adscrita al Ministerio de Transportes, en su último balance. Lo publican Libertad Digital (17:28), Telecinco (17:31, https://www.telecinco.es/noticias/sociedad/20261029/ultima-hora-accidente-trenes-urda-renfe-iryo-ave-toledo_18_020567286.html) e infoCLM (17:43, https://www.infoclm.es/castilla-la-mancha/2026/10/29/ascienden-a-74-los-fallecidos-en-el-tragico-accidente-ferroviario-de-urda/). La última cifra de la Junta de Castilla-La Mancha (10:47) era 69; la Junta no ha actualizado todavía su cifra en un comunicado propio que hayamos podido comprobar. No hemos encontrado aún el comunicado oficial de la CIAF. Los medios no explican la diferencia.",
+      "observaciones": "Según la Comisión de Investigación de Accidentes Ferroviarios (CIAF), adscrita al Ministerio de Transportes, en su último balance. Lo publican Libertad Digital (17:28), Telecinco (17:31, https://www.telecinco.es/noticias/sociedad/20261029/ultima-hora-accidente-trenes-urda-renfe-iryo-ave-toledo_18_020567286.html) e infoCLM (17:43, https://www.infoclm.es/castilla-la-mancha/2026/10/29/ascienden-a-74-los-fallecidos-en-el-tragico-accidente-ferroviario-de-urda/). La última cifra de la Junta de Castilla-La Mancha (10:47) era 69; la Junta no ha actualizado todavía su cifra en un comunicado propio que hayamos podido comprobar. No hemos encontrado aún el comunicado oficial de la CIAF. Los medios no explican la diferencia. RECTIFICADA por la propia CIAF a las 18:19–18:27 (elDiario.es, Libertad Digital): la cifra vuelve a ser 69. Ver fallecidos-ciaf-1819.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -865,6 +865,29 @@
       "estadoDato": "provisional",
       "versionAnterior": "hospitalizados-page-cecopi-1047",
       "observaciones": "Personas que SIGUEN ingresadas en hospitales de Castilla-La Mancha, según los servicios de emergencia (PLATECAM) tras la última reunión del CECOPI, publicado por El Español a las 15:13. Sustituye a la cifra de las 10:47 (50). En el mismo directo (15:52), el Hospital Universitario de Toledo indica que más de 20 personas siguen ingresadas allí, 15 en estado crítico.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "fallecidos-ciaf-1819",
+      "tipo": "fallecidos",
+      "valor": 69,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Ministerio de Transportes (Comisión de Investigación de Accidentes Ferroviarios, CIAF)",
+      "fuente": {
+        "titulo": "elDiario.es, directo (18:19): la CIAF rectifica la cifra de fallecidos",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T18:19:00+01:00",
+      "fechaVerificacion": "2026-10-29T20:15:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-ciaf-1728",
+      "observaciones": "La CIAF rectifica el balance de las 17:28 (74) y fija 69 fallecidos, la misma cifra que el Gobierno de Castilla-La Mancha. elDiario.es 18:19; Libertad Digital 18:27; titular de CMM.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
