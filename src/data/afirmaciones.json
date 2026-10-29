@@ -822,6 +822,52 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "fallecidos-ciaf-1728",
+      "tipo": "fallecidos",
+      "valor": 74,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Ministerio de Transportes (Comisión de Investigación de Accidentes Ferroviarios, CIAF)",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (17:28): CIAF",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T17:28:00+01:00",
+      "fechaVerificacion": "2026-10-29T18:10:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "Según la Comisión de Investigación de Accidentes Ferroviarios (CIAF), adscrita al Ministerio de Transportes, en su último balance. Lo publican Libertad Digital (17:28), Telecinco (17:31, https://www.telecinco.es/noticias/sociedad/20261029/ultima-hora-accidente-trenes-urda-renfe-iryo-ave-toledo_18_020567286.html) e infoCLM (17:43, https://www.infoclm.es/castilla-la-mancha/2026/10/29/ascienden-a-74-los-fallecidos-en-el-tragico-accidente-ferroviario-de-urda/). La última cifra de la Junta de Castilla-La Mancha (10:47) era 69; la Junta no ha actualizado todavía su cifra en un comunicado propio que hayamos podido comprobar. No hemos encontrado aún el comunicado oficial de la CIAF. Los medios no explican la diferencia.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "hospitalizados-cecopi-1513",
+      "tipo": "hospitalizados",
+      "valor": 42,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "El Español (El Digital Castilla-La Mancha), directo (15:13): servicios de emergencia tras el CECOPI",
+        "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261029/ultima-hora-accidente-tren-urda-instituto-medicina-legal-toledo-recibido-cadaveres/1003744439061_10.html",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T15:13:00+01:00",
+      "fechaVerificacion": "2026-10-29T18:10:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "hospitalizados-page-cecopi-1047",
+      "observaciones": "Personas que SIGUEN ingresadas en hospitales de Castilla-La Mancha, según los servicios de emergencia (PLATECAM) tras la última reunión del CECOPI, publicado por El Español a las 15:13. Sustituye a la cifra de las 10:47 (50). En el mismo directo (15:52), el Hospital Universitario de Toledo indica que más de 20 personas siguen ingresadas allí, 15 en estado crítico.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

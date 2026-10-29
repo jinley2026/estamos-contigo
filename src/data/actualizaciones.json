@@ -3631,6 +3631,150 @@
         "url": "https://www.democrata.es/andalucia/el-parlamento-andaluz-cancela-el-pleno-del-miercoles-y-jueves-y-guardara-un-minuto-de-silencio-al-mediodia/"
       },
       "fechaComunicado": "2026-10-28T11:52:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T18:10:00+01:00",
+      "comprobadoEn": "2026-10-29T18:10:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Telecinco, directo (17:31)",
+          "url": "https://www.telecinco.es/noticias/sociedad/20261029/ultima-hora-accidente-trenes-urda-renfe-iryo-ave-toledo_18_020567286.html"
+        },
+        {
+          "titulo": "infoCLM (17:43)",
+          "url": "https://www.infoclm.es/castilla-la-mancha/2026/10/29/ascienden-a-74-los-fallecidos-en-el-tragico-accidente-ferroviario-de-urda/"
+        }
+      ],
+      "id": "2026-10-29-ciaf-balance-tarde",
+      "titulo": "La Comisión de Investigación de Accidentes Ferroviarios eleva el balance de víctimas mortales",
+      "resumen": "La Comisión de Investigación de Accidentes Ferroviarios (CIAF), del Ministerio de Transportes, ha elevado el número de víctimas mortales en su último balance (la cifra, en el apartado de datos). Es mayor que la última dada por la Junta de Castilla-La Mancha por la mañana; los medios no explican la diferencia y no hemos encontrado aún el comunicado oficial de la CIAF. Publicado por Libertad Digital (17:28), Telecinco (17:31) e infoCLM (17:43).",
+      "organismo": "Ministerio de Transportes (CIAF)",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (17:28)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T17:28:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T18:10:00+01:00",
+      "comprobadoEn": "2026-10-29T18:10:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [],
+      "id": "2026-10-29-cecopi-ingresados-tarde",
+      "titulo": "Baja el número de pacientes del accidente que siguen ingresados en Castilla-La Mancha",
+      "resumen": "Tras la última reunión del CECOPI, los servicios de emergencia de Castilla-La Mancha actualizan el número de personas que siguen hospitalizadas en la región (la cifra, en el apartado de datos). El Hospital Universitario de Toledo mantiene a pacientes en estado crítico. Publicado por El Español (El Digital Castilla-La Mancha) a las 15:13 y 15:52.",
+      "organismo": "Junta de Castilla-La Mancha (servicios de emergencia, CECOPI)",
+      "categoria": "sanidad",
+      "fuente": {
+        "titulo": "El Español (El Digital Castilla-La Mancha), directo (15:13)",
+        "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261029/ultima-hora-accidente-tren-urda-instituto-medicina-legal-toledo-recibido-cadaveres/1003744439061_10.html"
+      },
+      "fechaComunicado": "2026-10-29T15:13:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T18:10:00+01:00",
+      "comprobadoEn": "2026-10-29T18:10:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Telecinco, directo (17:02)",
+          "url": "https://www.telecinco.es/noticias/sociedad/20261029/ultima-hora-accidente-trenes-urda-renfe-iryo-ave-toledo_18_020567286.html"
+        }
+      ],
+      "id": "2026-10-29-puente-comparecencia-3nov",
+      "titulo": "El ministro de Transportes comparecerá el martes 3 de noviembre a las 17:00 en la Diputación Permanente",
+      "resumen": "Óscar Puente pidió comparecer a petición propia para explicar el accidente. La Diputación Permanente del Congreso ha fijado la comparecencia para el martes 3 de noviembre a las 17:00, como único punto del orden del día. Publicado por Telecinco (17:02, Ministerio de Transportes) y Libertad Digital (17:56).",
+      "organismo": "Ministerio de Transportes / Congreso de los Diputados",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (17:56)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T17:56:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T18:10:00+01:00",
+      "comprobadoEn": "2026-10-29T18:10:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Telecinco, directo (17:22)",
+          "url": "https://www.telecinco.es/noticias/sociedad/20261029/ultima-hora-accidente-trenes-urda-renfe-iryo-ave-toledo_18_020567286.html"
+        }
+      ],
+      "id": "2026-10-29-reyes-salen-hospital",
+      "titulo": "Los Reyes terminan su visita al Hospital de Toledo: «Habrá que tomar medidas para que esto no vuelva a suceder»",
+      "resumen": "Tras visitar a los pacientes del accidente en el Hospital Universitario de Toledo, el Rey expresó su pesar a las víctimas y sus familias, dio las gracias a los servidores públicos y dijo que habrá que tomar medidas para que no vuelva a ocurrir. Publicado por Libertad Digital (17:13) y Telecinco (17:11 y 17:22).",
+      "organismo": "Casa Real",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (17:13)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T17:13:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T18:10:00+01:00",
+      "comprobadoEn": "2026-10-29T18:10:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [],
+      "id": "2026-10-29-pma-silencio-tarde",
+      "titulo": "Minutos de silencio en el puesto de mando de Urda y en instituciones de toda España",
+      "resumen": "El Puesto de Mando Avanzado de Urda e instituciones de todo el país guardaron minutos de silencio por las víctimas en la tarde del jueves, en el segundo día de luto oficial. Publicado por Telecinco (17:16 y 17:23).",
+      "organismo": "Puesto de Mando Avanzado de Urda",
+      "categoria": "emergencias",
+      "fuente": {
+        "titulo": "Telecinco, directo (17:16)",
+        "url": "https://www.telecinco.es/noticias/sociedad/20261029/ultima-hora-accidente-trenes-urda-renfe-iryo-ave-toledo_18_020567286.html"
+      },
+      "fechaComunicado": "2026-10-29T17:16:00+01:00"
     }
   ]
 }
