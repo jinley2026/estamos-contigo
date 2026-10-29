@@ -9,22 +9,254 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
-      "publicadoEn": "2026-10-29T12:12:00+01:00",
-      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "publicadoEn": "2026-10-29T14:40:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
       "operativa": true,
       "nivelFuente": 2,
       "tipoFuente": "medio-citando",
+      "id": "2026-10-29-exteriores-extranjeros-afectados",
+      "titulo": "Exteriores, en contacto con las embajadas de los extranjeros afectados: siete nacionalidades",
+      "resumen": "El Ministerio de Asuntos Exteriores informa de que entre los afectados hay 42 ciudadanos extranjeros de siete nacionalidades y está en contacto permanente con sus embajadas. Según el ministerio, uno de ellos ha perdido la vida, siete han resultado lesionados, diez están ilesos y de 24 aún se desconoce la situación. Los familiares de ciudadanos extranjeros pueden dirigirse a su embajada o consulado. Publicado por The Objective (11:00), Libertad Digital (12:12) e Infobae/EFE.",
+      "organismo": "Ministerio de Asuntos Exteriores, Unión Europea y Cooperación",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (12:12)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T11:00:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Infobae (agencias): «Muere un ciudadano argentino y otros 41 extranjeros están afectados…»",
+          "url": "https://www.infobae.com/america/agencias/2026/10/29/muere-un-ciudadano-argentino-y-otros-41-extranjeros-estan-afectados-por-el-accidente-ferroviario-de-toledo/"
+        },
+        {
+          "titulo": "The Objective, directo (11:00)",
+          "url": "https://theobjective.com/economia/transporte/2026-10-29/ultima-hora-accidente-ferroviario-urda-toledo/directo/"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T14:40:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-pma-urda-minuto-silencio",
+      "titulo": "Minuto de silencio en el puesto de mando de Urda con el ministro del Interior y García-Page",
+      "resumen": "A las 12:00, el ministro del Interior, Fernando Grande-Marlaska, el presidente de Castilla-La Mancha, Emiliano García-Page, y el delegado del Gobierno, José Pablo Sabrido, guardaron un minuto de silencio en el Puesto de Mando Avanzado de Urda, junto a los equipos de emergencia, en el primero de los tres días de luto oficial. También hubo minutos de silencio en la Delegación del Gobierno, ante el TSJ de Castilla-La Mancha en Albacete, en la UCLM, en la Universidad de Alcalá, en el Congreso, en el Ministerio de Defensa y en la Fiscalía General del Estado. Publicado por Libertad Digital (12:21, 12:47 y 13:51), CMM (12:38 y 12:47) y La Cerca.",
+      "organismo": "Ministerio del Interior y Junta de Castilla-La Mancha",
+      "categoria": "gobierno",
+      "fuente": {
+        "titulo": "CMM, directo del jueves (12:38)",
+        "url": "https://cmmedia.es/noticias/castilla-la-mancha/toledo/ultima-hora-accidente-tren-urda-toledo-luto.html"
+      },
+      "fechaComunicado": "2026-10-29T12:21:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "La Cerca: «El PMA de Urda guarda un minuto de silencio…»",
+          "url": "https://www.lacerca.com/noticias/toledo/pma-urda-minuto-silencio-memoria-69-accidente-ferroviario-834886-1.html"
+        },
+        {
+          "titulo": "Libertad Digital, directo del jueves (12:21)",
+          "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T14:40:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-cortes-clm-declaracion",
+      "titulo": "Las Cortes de Castilla-La Mancha aprueban por unanimidad una declaración institucional de «unidad en el dolor»",
+      "resumen": "PSOE, PP y Vox han acordado en la Junta de Portavoces, a propuesta del presidente de las Cortes, Pablo Bellido, una declaración institucional que traslada las condolencias a las familias, el apoyo a las personas lesionadas y el reconocimiento a los servicios de emergencia, sociales y sanitarios, y agradece la ayuda de otras comunidades y países. Publicado por CMM (12:52).",
+      "organismo": "Cortes de Castilla-La Mancha",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "CMM, directo del jueves (12:52)",
+        "url": "https://cmmedia.es/noticias/castilla-la-mancha/toledo/ultima-hora-accidente-tren-urda-toledo-luto.html"
+      },
+      "fechaComunicado": "2026-10-29T12:52:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T14:40:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-renfe-plantilla-silencio",
+      "titulo": "Renfe guarda cinco minutos de silencio en sus centros de trabajo y estaciones",
+      "resumen": "La plantilla de Renfe ha guardado cinco minutos de silencio en los centros de trabajo de toda España; el acto principal fue en el vestíbulo de Atocha con el comité de empresa, y en Barcelona-Sants se reunieron trabajadores de Renfe e Iryo. Renfe convocó también un minuto de silencio en las estaciones de Castilla-La Mancha. Publicado por CMM (12:09) y Libertad Digital (12:47 y 13:38).",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (13:38)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T13:38:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "CMM, directo del jueves (12:09)",
+          "url": "https://cmmedia.es/noticias/castilla-la-mancha/toledo/ultima-hora-accidente-tren-urda-toledo-luto.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T14:40:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-av-andalucia-sin-fecha",
+      "titulo": "Alta velocidad Madrid–Andalucía: Adif aún no da fecha de reapertura",
+      "resumen": "Según fuentes de Adif citadas por El Español (10:29), todavía no hay fecha estimada para reabrir la línea: primero hay que retirar los trenes y evaluar los daños en la vía, y la circulación se restablecerá cuando Adif lo autorice. Renfe Andalucía recuerda que la reapertura la decide Adif; su venta bloqueada hasta el 13 de diciembre no significa que la línea vaya a estar cerrada hasta entonces. Según la consulta de ese medio a sus webs, Iryo no ofrece plazas Málaga–Madrid hasta el 1 de diciembre y Ouigo no vende ese trayecto hasta el 9 de noviembre. Antes de viajar, consulta a tu operadora.",
+      "organismo": "Adif",
+      "categoria": "adif",
+      "fuente": {
+        "titulo": "El Español Málaga (10:29): «La alta velocidad entre Málaga y Madrid, en el aire»",
+        "url": "https://www.elespanol.com/malaga/20261029/alta-velocidad-malaga-madrid-aire-adif-no-pone-fecha-operadoras-bloquean-venta-billetes/1003744439238_0.html"
+      },
+      "fechaComunicado": "2026-10-29T10:29:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T14:40:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-ouigo-incidencias-levante",
+      "titulo": "Incidencias en la línea Madrid–Levante y cambios de Ouigo hacia Valladolid",
+      "resumen": "Adif trabaja en una avería de pantógrafo y catenaria entre Valdemoro y Villarrubia de Santiago (línea de alta velocidad Madrid–Levante), que provoca retrasos; Renfe la atribuye a un tren de Ouigo. Ouigo informa de que su tren 6775 (Murcia–Valladolid) quedó detenido en un túnel en Aranjuez por un enganche con la catenaria, sin daños personales, y que otro tren evacuó a los viajeros a Madrid-Chamartín; devolverá o cambiará gratis el billete y compensará con el 200 % de su importe. Además, el servicio Madrid-Chamartín–Valladolid queda cancelado y los viajeros a Segovia o Valladolid completarán el viaje en autobús. No tiene relación con el accidente de Urda. Publicado por Libertad Digital (11:54, 12:34 y 12:52).",
+      "organismo": "Ouigo, Adif y Renfe",
+      "categoria": "ouigo",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (12:34)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T12:34:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T14:40:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-museos-cancelan-actividades",
+      "titulo": "Museos de Madrid cancelan actividades por el luto: el Prado, hasta el lunes 2",
+      "resumen": "El Museo del Prado cancela sus actividades hasta el lunes 2 de noviembre y el Thyssen-Bornemisza, los actos públicos hasta el sábado 31. Los museos del Traje, del Romanticismo y de América suspendieron las presentaciones del jueves. Todos mantienen su horario de visita. Publicado por Libertad Digital (13:31).",
+      "organismo": "Museo del Prado, Museo Thyssen-Bornemisza y Ministerio de Cultura",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (13:31)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T13:31:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T14:40:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-cruzroja-cordoba-cerrado",
+      "titulo": "Córdoba: el punto de Cruz Roja en la estación ya ha cerrado; el de Adif sigue abierto",
+      "resumen": "El punto de atención de Cruz Roja en la estación de Córdoba-Julio Anguita cerró la noche del miércoles, según explicó la responsable de su Unidad de Emergencias. El punto de Adif para familiares sigue abierto. Renfe e Iryo coordinan con la Guardia Civil la atención a los familiares. Publicado por Córdoba Hoy (14:03) y Teleprensa (10:47).",
+      "organismo": "Cruz Roja (Córdoba) y Adif",
+      "categoria": "cruzroja",
+      "fuente": {
+        "titulo": "Córdoba Hoy (14:03): «Tranquilidad en la estación con el punto de atención de ADIF abierto y el de Cruz Roja ya cerrado»",
+        "url": "https://www.cordobahoy.es/la-ciudad/tranquilidad-estacion-punto-atencion-adif-abierto-cruz-roja-cerrado/20261029140350204835.html"
+      },
+      "fechaComunicado": "2026-10-29T14:03:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Teleprensa (10:47)",
+          "url": "https://www.teleprensa.com/andalucia/cordoba/tranquilidad-estacion-punto-atencion-adif-abierto-cruz-roja-cerrado/202610291047402544617.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
+      "operativa": true,
+      "nivelFuente": 1,
+      "tipoFuente": "comunicado-oficial",
       "id": "2026-10-29-page-balance-cecopi",
       "titulo": "García-Page actualiza el balance tras el CECOPI: la mayoría de los pacientes de la región ya tienen el alta",
-      "resumen": "Tras la reunión del CECOPI en Urda, el presidente de Castilla-La Mancha, Emiliano García-Page, ha elevado el número de víctimas mortales (la nueva cifra figura en el apartado de cifras); según la misma información, el aumento corresponde a una persona que ha perdido la vida en el hospital. De las personas que llegaron a hospitales de la región, la mayoría ya tienen el alta; siguen ingresados los demás, entre ellos los pacientes en código rojo, de los que los cuatro más graves «evolucionan positivamente». Queda por retirar un vagón volcado y Page confía, «con la prudencia lógica del momento», en que no haya más víctimas debajo. Publicado por elDiario.es (10:43), Libertad Digital (10:43, 10:47 y 11:06) y Córdoba BN (11:14).",
+      "resumen": "Tras la reunión del CECOPI en Urda, el presidente de Castilla-La Mancha, Emiliano García-Page, ha elevado el número de víctimas mortales (la nueva cifra figura en el apartado de cifras); según la misma información, el aumento corresponde a una persona que ha perdido la vida en el hospital. De las personas que llegaron a hospitales de la región, la mayoría ya tienen el alta; siguen ingresados los demás, entre ellos los pacientes en código rojo, de los que los cuatro más graves «evolucionan positivamente». Queda por retirar un vagón volcado y Page confía, «con la prudencia lógica del momento», en que no haya más víctimas debajo. Publicado por elDiario.es (10:43), Libertad Digital (10:43, 10:47 y 11:06) y Córdoba BN (11:14). Comunicado oficial de la Junta (añadido a las 14:40): 1.300 efectivos movilizados y más de 2.000 donantes de sangre en el área de Toledo; se pide seguir donando en los próximos días.",
       "organismo": "Junta de Castilla-La Mancha",
       "categoria": "junta",
       "fuente": {
-        "titulo": "Libertad Digital, directo del jueves (10:47)",
-        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        "titulo": "Junta de Castilla-La Mancha, nota de prensa (29/10): «García-Page destaca la labor de los 1.300 efectivos movilizados…»",
+        "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/garcia-page-destaca-la-labor-de-los-1300-efectivos-movilizados-en-la-catastrofe-ferroviaria-de-urda"
       },
       "fechaComunicado": "2026-10-29T10:47:00+01:00",
       "fuentesAdicionales": [
+        {
+          "titulo": "Libertad Digital, directo del jueves (10:47)",
+          "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        },
         {
           "titulo": "elDiario.es, directo (10:43)",
           "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
@@ -44,21 +276,25 @@
         "AUTO-CLAUDE"
       ],
       "publicadoEn": "2026-10-29T12:12:00+01:00",
-      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
       "operativa": true,
-      "nivelFuente": 2,
-      "tipoFuente": "medio-citando",
+      "nivelFuente": 1,
+      "tipoFuente": "comunicado-oficial",
       "id": "2026-10-29-sanchez-declaracion-cecopi",
       "titulo": "Sánchez, tras el CECOPI: esclarecer «hasta el último detalle», reforzar la seguridad y resarcir a las familias",
-      "resumen": "El presidente del Gobierno, Pedro Sánchez, ha asegurado tras la reunión del CECOPI que se esclarecerá «hasta el último detalle» lo ocurrido, que se reforzará la seguridad «para que esto no vuelva a suceder» y que «todo el Estado está volcado». Según El Mira, anunció que la Administración General del Estado ofrecerá a los familiares de las víctimas un resarcimiento, «al menos desde el punto de vista material»; no se han concretado cuantías, plazos ni cómo solicitarlo. Lo añadiremos en cuanto se publique. Publicado por Libertad Digital (10:52), elDiario.es (10:57) y El Mira (11:31).",
+      "resumen": "El presidente del Gobierno, Pedro Sánchez, ha asegurado tras la reunión del CECOPI que se esclarecerá «hasta el último detalle» lo ocurrido, que se reforzará la seguridad «para que esto no vuelva a suceder» y que «todo el Estado está volcado». Según El Mira, anunció que la Administración General del Estado ofrecerá a los familiares de las víctimas un resarcimiento, «al menos desde el punto de vista material»; no se han concretado cuantías, plazos ni cómo solicitarlo. Lo añadiremos en cuanto se publique. Publicado por Libertad Digital (10:52), elDiario.es (10:57) y El Mira (11:31). La Moncloa ha publicado la declaración (añadido a las 14:40): se ha activado el Plan General Estatal de Emergencia de Protección Civil, y la compensación material a las familias será una fase posterior.",
       "organismo": "Presidencia del Gobierno",
       "categoria": "gobierno",
       "fuente": {
-        "titulo": "El Mira (11:31)",
-        "url": "https://www.elmira.es/articulo/nacional/pedro-sanchez-anuncia-indemnizacion-familiares-victimas-urda-mientras-cifra-fallecidos-sube-69/20261029113139625496.html"
+        "titulo": "La Moncloa (29/10): declaración del presidente tras el CECOPI",
+        "url": "https://www.lamoncloa.gob.es/presidente/actividades/Paginas/2026/291026-sanchez-declaracion-cecopi.aspx"
       },
       "fechaComunicado": "2026-10-29T10:52:00+01:00",
       "fuentesAdicionales": [
+        {
+          "titulo": "El Mira (11:31)",
+          "url": "https://www.elmira.es/articulo/nacional/pedro-sanchez-anuncia-indemnizacion-familiares-victimas-urda-mientras-cifra-fallecidos-sube-69/20261029113139625496.html"
+        },
         {
           "titulo": "Libertad Digital, directo del jueves (10:52)",
           "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"

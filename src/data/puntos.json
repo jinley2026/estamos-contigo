@@ -80,7 +80,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -474,23 +474,28 @@
     },
     {
       "id": "cordoba-cruzroja",
-      "nombre": "Cruz Roja — atención a familiares y viajeros, estación de Córdoba-Julio Anguita",
+      "nombre": "Cruz Roja — atención a familiares y viajeros, estación de Córdoba-Julio Anguita (CERRADO)",
       "direccion": "Estación de Córdoba-Julio Anguita, Córdoba",
       "funcion": "Equipo de apoyo psicosocial para familiares que lleguen a la estación, agua y alimentos para viajeros en tránsito y UVI móvil en coordinación con el 061 (unas veinte personas de Cruz Roja).",
       "organismo": "Cruz Roja (Unidad de Emergencia de Córdoba)",
-      "horario": "Relevo de voluntarios a las 17:00; sin horario de cierre comunicado",
+      "horario": "CERRADO desde la noche del miércoles 28 (Córdoba Hoy, 29/10 14:03). El punto de Adif en la estación sigue abierto.",
       "telefono": "",
       "nivelFuente": 2,
       "fuente": {
         "titulo": "Córdoba Hoy (15:21): «Una veintena de voluntarios de Cruz Roja con una UVI móvil atiende en la estación de Córdoba»",
         "url": "https://www.cordobahoy.es/la-ciudad/cruz-roja/20261028152130204799.html"
       },
-      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T14:40:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
-      "fuentesAdicionales": []
+      "fuentesAdicionales": [
+        {
+          "titulo": "Córdoba Hoy (29/10, 14:03): «…el de Cruz Roja ya cerrado»",
+          "url": "https://www.cordobahoy.es/la-ciudad/tranquilidad-estacion-punto-atencion-adif-abierto-cruz-roja-cerrado/20261029140350204835.html"
+        }
+      ]
     },
     {
       "id": "orgaz-atencion-victimas",
