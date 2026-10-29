@@ -2272,6 +2272,102 @@
         "url": "https://www.eldigitaldealbacete.com/2026/10/28/la-guardia-civil-recibe-29-denuncias-por-desaparicion-tras-la-tragedia-ferroviaria-de-urda-toledo/"
       },
       "fechaComunicado": "2026-10-28T22:21:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T02:25:00+01:00",
+      "comprobadoEn": "2026-10-29T02:25:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-clm-hospitalizados-altas",
+      "titulo": "Castilla-La Mancha actualiza cuántos pacientes del accidente siguen ingresados y cuántos tienen ya el alta",
+      "resumen": "Según fuentes del Gobierno de Castilla-La Mancha recogidas por EFE, buena parte de las personas atendidas en la región ya han recibido el alta y el resto sigue ingresado, sobre todo en el Hospital Universitario de Toledo y en el Mancha Centro de Alcázar de San Juan. Los pacientes trasladados a Valdepeñas ya tienen el alta. La cifra de ingresados figura en el balance, junto a las anteriores, que eran más altas porque contaban a todos los atendidos. Publicado por Infobae (EFE) a las 21:48.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "sanidad",
+      "fuente": {
+        "titulo": "Infobae (EFE): «Medio centenar de heridos en Urda siguen atendidos en hospitales de Castilla-La Mancha» (21:48; cita a fuentes del Gobierno regional)",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/medio-centenar-de-heridos-en-urda-siguen-atendidos-en-hospitales-de-castilla-la-mancha/"
+      },
+      "fechaComunicado": "2026-10-28T21:48:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T02:25:00+01:00",
+      "comprobadoEn": "2026-10-29T02:25:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-iml-autopsias-ciudad-real",
+      "titulo": "Comienzan las autopsias; los institutos de medicina legal de Toledo y de Ciudad Real reciben los cuerpos de las víctimas",
+      "resumen": "Según el Centro Integrado de Datos, a través del Tribunal Superior de Justicia de Castilla-La Mancha, el Instituto de Medicina Legal de Toledo ha recibido la mayoría de los cuerpos y ya ha realizado las primeras autopsias. El Instituto de Medicina Legal de Ciudad Real ha recibido a personas que fallecieron tras ser ingresadas en hospitales de Ciudad Real y Alcázar de San Juan. La identificación de las víctimas está prevista a partir del jueves 29. Las cifras de cuerpos recibidos no coinciden con el balance oficial y ningún organismo lo ha explicado. Publicado por elDiario.es a las 22:19.",
+      "organismo": "Centro Integrado de Datos (TSJ de Castilla-La Mancha)",
+      "categoria": "justicia",
+      "fuente": {
+        "titulo": "elDiario.es: «Los servicios de medicina legal de Castilla-La Mancha ya han recibido los cuerpos de 54 fallecidos en Urda» (22:19; cita al Centro Integrado de Datos vía TSJ de Castilla-La Mancha)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/provincias/toledo/servicios-medicina-legal-castilla-mancha-han-recibido-cuerpos-54-fallecidos-urda_1_13623198.html"
+      },
+      "fechaComunicado": "2026-10-28T22:19:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T02:25:00+01:00",
+      "comprobadoEn": "2026-10-29T02:25:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-orgaz-cajas-negras-coordinador",
+      "titulo": "La jueza ordena incautar las cajas negras; un magistrado de Alcázar de San Juan coordina las actuaciones",
+      "resumen": "La providencia de la plaza 2 del Tribunal de Instancia de Orgaz (21:10), que decretó el secreto de sumario y prohibió el acceso a la zona, ordena también la incautación de las cajas negras de los trenes, según Europa Press. Un magistrado de Alcázar de San Juan coordina las actuaciones judiciales, con el apoyo de la plaza 1 de Orgaz y cinco equipos judiciales; el TSJ de Castilla-La Mancha activó el protocolo para sucesos con víctimas múltiples. No hay causas oficiales del accidente. Publicado por Alcázar de San Juan (digital) a las 00:07.",
+      "organismo": "Administración de Justicia (Tribunal de Instancia de Orgaz y TSJ de Castilla-La Mancha)",
+      "categoria": "justicia",
+      "fuente": {
+        "titulo": "alcazardesanjuan.com: «Urda: un magistrado de Alcázar coordina la investigación judicial» (29/10, 00:07; cita a Europa Press y al TSJ de Castilla-La Mancha)",
+        "url": "https://alcazardesanjuan.com/urda-magistrado-alcazar-coordina-investigacion-judicial/"
+      },
+      "fechaComunicado": "2026-10-29T00:07:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T02:25:00+01:00",
+      "comprobadoEn": "2026-10-29T02:25:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-adif-salas-toda-noche",
+      "titulo": "Adif: las salas para familiares de Atocha, Santa Justa, Córdoba y Málaga siguen abiertas toda la noche",
+      "resumen": "Según Adif en su cuenta de X, las salas de atención a familiares de las estaciones de Madrid-Puerta de Atocha, Sevilla-Santa Justa, Córdoba-Julio Anguita y Málaga-María Zambrano permanecen abiertas durante toda la noche del miércoles al jueves. Adif no da hora del mensaje. Publicado por herencia.net a las 23:08.",
+      "organismo": "Adif",
+      "categoria": "adif",
+      "fuente": {
+        "titulo": "herencia.net: «Urda: 53 siguen hospitalizados y empieza el luto oficial» (23:08; cita a Adif en X)",
+        "url": "https://herencia.net/2026-10-28-urda-53-hospitalizados-luto-oficial/"
+      },
+      "fechaComunicado": "2026-10-28T23:08:00+01:00"
     }
   ]
 }

@@ -7,14 +7,14 @@
       "direccion": "Estación de Madrid-Puerta de Atocha Almudena Grandes, Madrid",
       "funcion": "Atención a los afectados.",
       "organismo": "Adif",
-      "horario": "No comunicado",
+      "horario": "Noche del miércoles 28 al jueves 29: sala para familiares abierta toda la noche (Adif en X, según herencia.net, 23:08).",
       "telefono": "",
       "nivelFuente": 1,
       "fuente": {
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-29T02:25:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -23,6 +23,10 @@
         {
           "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
           "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
+        },
+        {
+          "titulo": "herencia.net: salas de familiares abiertas toda la noche, según Adif (23:08)",
+          "url": "https://herencia.net/2026-10-28-urda-53-hospitalizados-luto-oficial/"
         }
       ]
     },
@@ -32,14 +36,14 @@
       "direccion": "Estación de Sevilla-Santa Justa, Sevilla",
       "funcion": "Atención a los afectados.",
       "organismo": "Adif",
-      "horario": "No comunicado",
+      "horario": "Noche del miércoles 28 al jueves 29: sala para familiares abierta toda la noche (Adif en X, según herencia.net, 23:08).",
       "telefono": "",
       "nivelFuente": 1,
       "fuente": {
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-29T02:25:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -48,6 +52,10 @@
         {
           "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
           "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
+        },
+        {
+          "titulo": "herencia.net: salas de familiares abiertas toda la noche, según Adif (23:08)",
+          "url": "https://herencia.net/2026-10-28-urda-53-hospitalizados-luto-oficial/"
         }
       ]
     },
@@ -57,14 +65,14 @@
       "direccion": "Estación de Córdoba-Julio Anguita, Córdoba",
       "funcion": "Atención a los afectados.",
       "organismo": "Adif",
-      "horario": "No comunicado",
+      "horario": "Noche del miércoles 28 al jueves 29: sala para familiares abierta toda la noche (Adif en X, según herencia.net, 23:08).",
       "telefono": "",
       "nivelFuente": 1,
       "fuente": {
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-29T02:25:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -73,6 +81,10 @@
         {
           "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
           "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
+        },
+        {
+          "titulo": "herencia.net: salas de familiares abiertas toda la noche, según Adif (23:08)",
+          "url": "https://herencia.net/2026-10-28-urda-53-hospitalizados-luto-oficial/"
         }
       ]
     },
@@ -82,19 +94,24 @@
       "direccion": "Estación de Málaga María Zambrano, Málaga",
       "funcion": "Atención a los afectados.",
       "organismo": "Adif",
-      "horario": "No comunicado",
+      "horario": "Noche del miércoles 28 al jueves 29: sala para familiares abierta toda la noche (Adif en X, según herencia.net, 23:08).",
       "telefono": "",
       "nivelFuente": 1,
       "fuente": {
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-29T02:25:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
-      "fuentesAdicionales": []
+      "fuentesAdicionales": [
+        {
+          "titulo": "herencia.net: salas de familiares abiertas toda la noche, según Adif (23:08)",
+          "url": "https://herencia.net/2026-10-28-urda-53-hospitalizados-luto-oficial/"
+        }
+      ]
     },
     {
       "id": "urda-santo-cristo",

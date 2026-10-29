@@ -615,6 +615,29 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "hospitalizados-jccm-efe-2148",
+      "tipo": "hospitalizados",
+      "valor": 53,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Infobae (EFE): «Medio centenar de heridos en Urda siguen atendidos en hospitales de Castilla-La Mancha» — según fuentes del Gobierno regional",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/medio-centenar-de-heridos-en-urda-siguen-atendidos-en-hospitales-de-castilla-la-mancha/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-28T21:48:00+01:00",
+      "fechaVerificacion": "2026-10-29T02:25:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "hospitalizados-emergencias-clm-2013",
+      "observaciones": "Heridos que SIGUEN ingresados en hospitales de Castilla-La Mancha, según fuentes del Gobierno regional (EFE, 21:48). La misma nota dice que 56 ya han recibido el alta y que en total fueron atendidos 110 en la región; herencia.net y Diario de La Mancha atribuyen los 53 al 112 de Castilla-La Mancha a las 21:56. La cifra anterior (107, 20:13) contaba hospitalizados en el día, no los que siguen ingresados. Moncloa.com (29/10, 00:07) todavía repite 107 con desglose por hospital, sin hora del dato. No incluye a los atendidos en Madrid.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
