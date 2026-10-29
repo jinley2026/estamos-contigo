@@ -638,6 +638,75 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "hospitalizados-jccm-0833",
+      "tipo": "hospitalizados",
+      "valor": 53,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "El Español – El Digital Castilla-La Mancha, directo (08:33): datos del Sescam según la consejera portavoz, Esther Padilla",
+        "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261029/ultima-hora-accidente-tren-urda-instituto-medicina-legal-toledo-recibido-cadaveres/1003744439061_10.html",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T08:33:00+01:00",
+      "fechaVerificacion": "2026-10-29T10:05:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "hospitalizados-jccm-efe-2148",
+      "observaciones": "Personas que SIGUEN ingresadas en hospitales de Castilla-La Mancha el jueves por la mañana. Reparto: Universitario de Toledo 41, Mancha Centro 36, Ciudad Real 15, Manzanares 13, Valdepeñas 4, Albacete 1 (los del reparto se refieren a los llegados el miércoles, no a los que siguen ingresados). elDiario.es (08:37) cita a Padilla: 15 en estado crítico y 3 trasladados a Madrid. No incluye a los atendidos en Madrid.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "altas-jccm-0833",
+      "tipo": "altas",
+      "valor": 56,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "El Español – El Digital Castilla-La Mancha, directo (08:33): datos del Sescam según la consejera portavoz, Esther Padilla",
+        "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261029/ultima-hora-accidente-tren-urda-instituto-medicina-legal-toledo-recibido-cadaveres/1003744439061_10.html",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T08:33:00+01:00",
+      "fechaVerificacion": "2026-10-29T10:05:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": null,
+      "observaciones": "Altas en hospitales de Castilla-La Mancha. Ya figuraba como dato de la misma nota de EFE de las 21:48 del miércoles; confirmado el jueves por Padilla (El Español 08:33, elDiario.es 08:37).",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "heridos-jccm-0833",
+      "tipo": "heridos",
+      "valor": 110,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "El Español – El Digital Castilla-La Mancha, directo (08:33): datos del Sescam según la consejera portavoz, Esther Padilla",
+        "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261029/ultima-hora-accidente-tren-urda-instituto-medicina-legal-toledo-recibido-cadaveres/1003744439061_10.html",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T08:33:00+01:00",
+      "fechaVerificacion": "2026-10-29T10:05:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "heridos-jccm-nota-1815",
+      "observaciones": "Heridos que llegaron el miércoles a hospitales de Castilla-La Mancha, según Padilla con datos del Sescam (El Español 08:33; elDiario.es 08:37 dice 110 atendidos). No incluye a los atendidos por la Comunidad de Madrid (al menos 86, 18:46). No se suman.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

@@ -2,6 +2,310 @@
   "_comentario": "Cronología y centro de comunicados. Solo niveles 1 y 2. Nunca identidades. categoria: gobierno | ministerio | junta | adif | renfe | iryo | emergencias | sanidad | ayuntamientos | otros. tipoFuente: comunicado-oficial (publicado por el propio organismo) | medio-citando (un medio o agencia recoge lo que dijo el organismo). estado: vigente | pendiente | corregido | retirado. alerta: true para mostrarlo como aviso destacado durante 60 minutos.",
   "entradas": [
     {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-sescam-balance-jueves-0833",
+      "titulo": "Castilla-La Mancha da el balance sanitario del jueves: la mayoría de los atendidos ya tienen el alta",
+      "resumen": "Según la consejera portavoz del Gobierno de Castilla-La Mancha, Esther Padilla, con datos del Sescam, de las personas que llegaron el miércoles a los hospitales de la región algo más de la mitad ya han recibido el alta y el resto sigue ingresado; una parte está en estado crítico en los hospitales de Toledo, Ciudad Real y Alcázar de San Juan, y tres pacientes fueron trasladados a Madrid. Los pacientes se reparten entre el Universitario de Toledo, el Mancha Centro (Alcázar de San Juan), el General de Ciudad Real, Manzanares, Valdepeñas y Albacete. Las cifras están en el balance. Publicado por El Español (El Digital Castilla-La Mancha) a las 08:33 y por elDiario.es a las 08:37.",
+      "organismo": "Gobierno de Castilla-La Mancha (Sescam)",
+      "categoria": "sanidad",
+      "fuente": {
+        "titulo": "El Español – El Digital Castilla-La Mancha, directo del jueves (08:33)",
+        "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261029/ultima-hora-accidente-tren-urda-instituto-medicina-legal-toledo-recibido-cadaveres/1003744439061_10.html"
+      },
+      "fechaComunicado": "2026-10-29T08:33:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "elDiario.es, directo del jueves (08:37)",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-gc-denuncias-adn-jueves",
+      "titulo": "La Guardia Civil sigue recibiendo denuncias de familiares y pide a los de primer grado que acudan cuanto antes",
+      "resumen": "Según fuentes de la Guardia Civil citadas por EFE, las oficinas de Madrid, Sevilla, Córdoba y Toledo han seguido recibiendo durante la noche denuncias de personas que no localizan a familiares que viajaban en los trenes. La Guardia Civil aclara que ese número de denuncias no equivale a víctimas adicionales. Pide a los familiares de primer grado (padres, hijos, hermanos) que acudan cuanto antes para aportar datos y muestras de ADN: Madrid, calle Batalla del Salado, 32; Sevilla, avenida de la Borbolla, 8; Córdoba, Comandancia (entrada por la avenida de los Mozárabes); Toledo, avenida Barber, 42. Teléfono de apoyo del Tribunal de Instancia de Orgaz: 925 317 020. Publicado por La Noción (EFE) a las 09:12 y por El Español a las 09:45.",
+      "organismo": "Guardia Civil",
+      "categoria": "guardiacivil",
+      "fuente": {
+        "titulo": "La Noción (EFE): «La Guardia Civil recibe denuncias por familiares sin localizar tras el accidente de Urda» (09:12)",
+        "url": "https://www.lanocion.es/castillala-mancha/20261029/la-guardia-civil-recibe-64-denuncias-por-familiare-cab81.html"
+      },
+      "fechaComunicado": "2026-10-29T09:12:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Español – El Digital Castilla-La Mancha, directo (09:45; Guardia Civil y Ministerio del Interior)",
+          "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261029/ultima-hora-accidente-tren-urda-instituto-medicina-legal-toledo-recibido-cadaveres/1003744439061_10.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-casa-sacerdotal-familias",
+      "titulo": "Familiares de las víctimas pasan la noche en la Casa Sacerdotal de Toledo a la espera de información",
+      "resumen": "Según la Delegación del Gobierno en Castilla-La Mancha y la Guardia Civil, 59 familiares y 13 personas del dispositivo de atención pasaron la noche del miércoles al jueves en la Casa Sacerdotal de Toledo, donde esperan información. Si eres familiar y necesitas alojamiento o apoyo en Toledo, llama al 925 317 020 (Tribunal de Instancia de Orgaz) o a los teléfonos de Renfe (900 10 10 20) e Iryo (900 001 403). Publicado por Libertad Digital a las 08:50 y por El Español a las 08:27.",
+      "organismo": "Delegación del Gobierno en Castilla-La Mancha y Guardia Civil",
+      "categoria": "gobierno",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (08:50)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T08:50:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Español – El Digital Castilla-La Mancha, directo (08:27)",
+          "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261029/ultima-hora-accidente-tren-urda-instituto-medicina-legal-toledo-recibido-cadaveres/1003744439061_10.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-busqueda-continua-jueves",
+      "titulo": "La búsqueda en los vagones sigue «con mucho cuidado»; vuelven los perros y se usan drones térmicos",
+      "resumen": "Según la portavoz del Gobierno de Castilla-La Mancha, Esther Padilla, los trabajos en Urda continúan «con mucho cuidado» hasta confirmar que no queda nadie atrapado; las unidades caninas vuelven a actuar este jueves y se usan drones con cámaras térmicas (Libertad Digital, 09:57). La Guardia Civil mantiene más de 200 agentes en la zona con grúas de gran tonelaje; durante la noche se movió un vagón que había caído por el terraplén (EFE, recogido por elDiario.es a las 09:14). El Servicio de Criminalística de la Guardia Civil usa drones para hacer un modelo en 3D del lugar (elDiario.es, 08:20). La UME relevó a su personal con dos perros de búsqueda y una retroexcavadora (Libertad Digital, 06:40).",
+      "organismo": "Gobierno de Castilla-La Mancha, Guardia Civil y UME",
+      "categoria": "guardiacivil",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (09:57)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T09:57:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "elDiario.es, directo del jueves (08:20 y 09:14)",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+        },
+        {
+          "titulo": "Lanza Digital: «Los medios siguen trabajando \"con mucho cuidado\" en Urda…»",
+          "url": "https://www.lanzadigital.com/castilla-la-mancha/los-medios-siguen-trabajando-con-mucho-cuidado-en-urda-hasta-comprobar-que-no-haya-mas-fallecidos/"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-sanchez-llega-cecopi",
+      "titulo": "Sánchez llega a la reunión del CECOPI; no hay comparecencia prevista",
+      "resumen": "Según Presidencia del Gobierno, el presidente Pedro Sánchez se dirigía hacia las 09:40 a la reunión de coordinación de la emergencia (CECOPI), sin comparecencia ante los medios prevista. El ministro de Transportes, Óscar Puente, ya estaba allí. Publicado por Libertad Digital a las 09:42. Añadiremos lo que se comunique al terminar la reunión.",
+      "organismo": "Presidencia del Gobierno",
+      "categoria": "gobierno",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (09:42)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T09:42:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-reyes-hospital-toledo",
+      "titulo": "Los Reyes visitarán a las 15:00 a los pacientes del Hospital Universitario de Toledo",
+      "resumen": "Según la Casa Real, los Reyes visitarán este jueves a las 15:00 a las personas ingresadas por el accidente en el Hospital Universitario de Toledo y han cancelado su agenda de la mañana. Publicado por Libertad Digital a las 09:47.",
+      "organismo": "Casa de S. M. el Rey",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (09:47)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T09:47:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-sescam-medios-donaciones",
+      "titulo": "El Sescam movilizó 120 vehículos y 4 helicópteros; más de 2.000 donaciones de sangre",
+      "resumen": "Según el Sescam, el servicio de salud de Castilla-La Mancha movilizó 120 vehículos terrestres y 4 helicópteros sanitarios, a los que se sumaron 3 helicópteros de otras comunidades (2 de Castilla y León y 1 de Madrid) y 25 vehículos de otras regiones. Se han recogido unas 2.000 donaciones de sangre; solo en el Hospital Universitario de Toledo donaron más de 1.000 personas el miércoles. Publicado por Libertad Digital a las 09:45 y a las 07:54.",
+      "organismo": "Sescam",
+      "categoria": "sanidad",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (09:45)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T09:45:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-renfe-especiales-autobuses-toledo",
+      "titulo": "Renfe: trenes especiales por vía convencional a Ciudad Real y Puertollano y autobuses Toledo–Madrid por la huelga",
+      "resumen": "Según Renfe, mantiene servicios especiales por la vía convencional entre Madrid, Ciudad Real y Puertollano, con alrededor de una hora y media más de viaje; los cambios y anulaciones de billetes son sin coste, y el plan alternativo completo para Andalucía se anunciará para el viernes (Libertad Digital, 07:42). Las salas de Atocha, Sevilla, Córdoba y Málaga siguen abiertas las 24 horas con atención psicológica. Por la huelga de maquinistas, en Toledo hay trenes retrasados o que no han salido, y Renfe ha puesto autobuses entre Toledo y Madrid (El Español, 08:50).",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (07:42)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T07:42:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Español – El Digital Castilla-La Mancha, directo (08:50)",
+          "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261029/ultima-hora-accidente-tren-urda-instituto-medicina-legal-toledo-recibido-cadaveres/1003744439061_10.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-ouigo-huelga-viernes",
+      "titulo": "Huelga en Ouigo desde el viernes 30: comprueba tu tren",
+      "resumen": "Según el sindicato de maquinistas Semaf, citado por Libertad Digital (07:44), se mantienen las jornadas de huelga convocadas en Ouigo, que empiezan este viernes. The Local (27/10) detalla los paros: 24 horas el viernes 30 de octubre y el lunes 2 de noviembre, y paros parciales el 6 y el 9 de noviembre (de 06:00 a 12:00 y de 18:00 a 23:59) y el 4 y el 8 de diciembre; ese medio los atribuye a la plantilla de Ouigo, no expresamente a Semaf. Ouigo ya tenía suspendidos sus trenes entre Madrid y Andalucía hasta, al menos, el lunes 2. No hemos encontrado servicios mínimos publicados.",
+      "organismo": "Semaf (sindicato) y Ouigo",
+      "categoria": "ouigo",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (07:44)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T07:44:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "The Local: «What to know about Spain's upcoming train strikes this autumn» (27/10)",
+          "url": "https://www.thelocal.es/20261027/what-to-know-about-spains-upcoming-train-strikes-this-autumn"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-campanas-archidiocesis",
+      "titulo": "Las campanas de la Archidiócesis de Toledo tocarán a difunto a las 12:00",
+      "resumen": "Según el arzobispo de Toledo, Francisco Cerro Chaves, las campanas de las iglesias de la archidiócesis tocarán a difunto este jueves a las 12:00 en señal de duelo. Publicado por Libertad Digital a las 09:54.",
+      "organismo": "Archidiócesis de Toledo",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (09:54)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T09:54:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-urda-minuto-silencio",
+      "titulo": "Urda guarda un minuto de silencio por las víctimas",
+      "resumen": "Los vecinos de Urda guardaron este jueves por la mañana un minuto de silencio por las víctimas del accidente; en Logroño, unas 250 personas lo hicieron ante el Ayuntamiento. Publicado por elDiario.es (EFE) a las 09:35.",
+      "organismo": "Urda y Ayuntamiento de Logroño",
+      "categoria": "ayuntamientos",
+      "fuente": {
+        "titulo": "elDiario.es, directo del jueves (09:35, EFE)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+      },
+      "fechaComunicado": "2026-10-29T09:35:00+01:00"
+    },
+    {
       "id": "2026-10-28-toledo-espacios-familias",
       "titulo": "Toledo prepara dos espacios cerca del hospital por si hay que atender a familias",
       "resumen": "El Ayuntamiento de Toledo tiene listos, las 24 horas, el Centro Social del Polígono (Sala Thalía, para unas 300 personas, con siete salas y espacios para atención individual) y el pabellón deportivo del Polígono, ambos cerca del hospital. Se abrirán si lo piden los responsables de la emergencia; no consta que estén ya en uso. Hosteleros y hoteles ofrecen comida y camas para familiares. Lo comunicó el alcalde, Carlos Velázquez, en una nota municipal (La Cerca, 19:59).",
