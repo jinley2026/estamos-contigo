@@ -2422,6 +2422,90 @@
         "url": "https://www.vozpopuli.com/espana/accidente-de-tren-en-directo-afectados-heridos-y-ultima-hora-del-choque-entre-un-ave-e-iryo-en-toledo-hoy.html"
       },
       "fechaComunicado": "2026-10-28T11:33:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T08:25:00+01:00",
+      "comprobadoEn": "2026-10-29T08:25:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-huelga-semaf-minimos-jueves",
+      "titulo": "Huelga de maquinistas en Renfe hoy jueves: servicios mínimos y recomendación de no viajar",
+      "resumen": "Según EFE (06:32), la huelga de 24 horas convocada por el sindicato Semaf en Renfe empezó a las 00:01 de este jueves. Los servicios mínimos fijados por el Ministerio de Transportes son del 73 % en alta velocidad y larga distancia, del 65 % en media distancia y, en Cercanías, del 75 % en horas punta y del 50 % el resto del día. Renfe advierte de que incluso los trenes de servicios mínimos pueden verse afectados tras el accidente y recomienda no viajar salvo que sea imprescindible; Cercanías Madrid aconseja buscar alternativas. La alta velocidad entre Madrid y Andalucía sigue suspendida y, según Adif, todavía no hay fecha para restablecerla (Estrella Digital, 06:00). Renfe avisará de cancelaciones por SMS o correo electrónico; los cambios y anulaciones de los trenes afectados son sin coste.",
+      "organismo": "Renfe, Ministerio de Transportes y Adif",
+      "categoria": "renfe",
+      "fuente": {
+        "titulo": "Infobae (EFE): «Huelga de los maquinistas de Renfe un día después del accidente de Urda (Toledo)» (29/10, 06:32)",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/29/huelga-de-los-maquinistas-de-renfe-un-dia-despues-del-accidente-de-urda-toledo/"
+      },
+      "fechaComunicado": "2026-10-29T06:32:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Estrella Digital: «Renfe mantiene suspendida la alta velocidad con Andalucía este jueves 29: alternativas y huelga de maquinistas» (29/10, 06:00)",
+          "url": "https://www.estrelladigital.es/sociedad/renfe-suspende-ave-entre-madrid-andalucia-jueves-29-trenes-afectados-huelga-alternativas/20261029060000452633.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T08:25:00+01:00",
+      "comprobadoEn": "2026-10-29T08:25:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-aragon-cantabria-navarra-luto",
+      "titulo": "Aragón, Cantabria y Navarra se suman a los tres días de luto oficial",
+      "resumen": "Según Demócrata (miércoles, 19:59), Aragón, Cantabria y Navarra se suman al luto oficial hasta el sábado 31. Aragón suspende su agenda institucional y aplaza la presentación de sus presupuestos de 2027. El Gobierno de Cantabria, en un comunicado recogido por La Cerca, mantiene las banderas a media asta en sus edificios del jueves 29 al sábado 31 y suspende la actividad institucional salvo la obligada por ley.",
+      "organismo": "Gobierno de Aragón, Gobierno de Cantabria y Gobierno de Navarra",
+      "categoria": "comunidades",
+      "fuente": {
+        "titulo": "Demócrata: «España decreta tres días de luto por el accidente de Urda y las comunidades autónomas se suman al duelo» (28/10, 19:59)",
+        "url": "https://www.democrata.es/actualidad/espana-decreta-tres-dias-luto-por-accidente-urda-comunidades-autonomas-se-suman-duelo/"
+      },
+      "fechaComunicado": "2026-10-28T19:59:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "La Cerca: «El Gobierno de Cantabria se suma al luto oficial por el accidente ferroviario en Urda»",
+          "url": "https://www.lacerca.com/noticias/toledo/gobierno-cantabria-suma-luto-oficial-accidente-ferroviario-urda-834753-1.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T08:25:00+01:00",
+      "comprobadoEn": "2026-10-29T08:25:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-parlamento-andalucia-suspende",
+      "titulo": "El Parlamento de Andalucía suspende toda su actividad el miércoles y el jueves",
+      "resumen": "Según Demócrata (miércoles, 11:52), la Junta de Portavoces del Parlamento de Andalucía, a propuesta de su presidenta, acordó suspender el pleno y toda la actividad prevista el miércoles 28 y el jueves 29, y guardó un minuto de silencio el miércoles a las 12:00 ante la fachada del edificio.",
+      "organismo": "Parlamento de Andalucía",
+      "categoria": "comunidades",
+      "fuente": {
+        "titulo": "Demócrata: «El Parlamento andaluz suspende el Pleno por el accidente de Urda» (28/10, 11:52)",
+        "url": "https://www.democrata.es/andalucia/el-parlamento-andaluz-cancela-el-pleno-del-miercoles-y-jueves-y-guardara-un-minuto-de-silencio-al-mediodia/"
+      },
+      "fechaComunicado": "2026-10-28T11:52:00+01:00"
     }
   ]
 }
