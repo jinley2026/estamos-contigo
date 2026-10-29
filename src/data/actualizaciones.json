@@ -3869,6 +3869,200 @@
         "url": "https://www.aragondigital.es/articulo/sociedad/ouigo-cancela-todos-trenes-viernes-lunes-huelga/202610291858281018822.html"
       },
       "fechaComunicado": "2026-10-29T18:30:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T22:20:00+01:00",
+      "comprobadoEn": "2026-10-29T22:20:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Pespunte: «Renfe aplaza el transporte alternativo entre Madrid y Andalucía…» (21:11)",
+          "url": "https://www.elpespunte.es/andalucia/renfe-podra-activar-transporte-alternativo-entre-madrid-andalucia-antes-3-noviembre-accidente-trenes-toledo/20261029211121159258.html"
+        },
+        {
+          "titulo": "Teleprensa: «Renfe aplaza su plan alternativo de transporte… por petición del sindicato Semaf» (20:02)",
+          "url": "https://www.teleprensa.com/andalucia/sevilla/renfe-aplaza-plan-alternativo-transporte-linea-madrid-andalucia-peticion-sindicato-semaf/202610292002252545098.html"
+        }
+      ],
+      "id": "2026-10-29-renfe-aplaza-plan-alternativo",
+      "titulo": "Renfe aplaza el transporte alternativo Madrid–Andalucía: no empezará el viernes 30",
+      "resumen": "Renfe comunica en una nota de prensa que el Plan Alternativo de Transporte para el corredor Madrid–Andalucía, previsto para el viernes 30 de octubre, no podrá ponerse en marcha ese día: el sindicato Semaf exige cumplir el plazo reglamentario de 96 horas para modificar los servicios, lo que sitúa el martes 3 de noviembre como fecha más temprana posible. Renfe informará antes del 3 de noviembre del diseño definitivo (horarios, recorridos, servicios) y de la fecha de inicio. La alta velocidad sigue interrumpida. Según Renfe, 20:00 aprox. Publicado por Andalucía Información (21:02) y El Pespunte (21:11). No hemos encontrado aún la nota en la web de Renfe.",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "fuente": {
+        "titulo": "Andalucía Información: «El plan alternativo de Renfe para la línea Madrid-Andalucía no se pondrá en marcha antes del 3 de noviembre» (21:02)",
+        "url": "https://www.andaluciainformacion.es/articulo/andalucia/plan-alternativo-renfe-linea-madrid-andalucia/202610292102223522129.html"
+      },
+      "fechaComunicado": "2026-10-29T20:00:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T22:20:00+01:00",
+      "comprobadoEn": "2026-10-29T22:20:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": null,
+      "id": "2026-10-29-renfe-seguimiento-huelga",
+      "titulo": "Renfe: la huelga de maquinistas obligó a cancelar 21 de sus 124 trenes comerciales este jueves",
+      "resumen": "Según Renfe, el seguimiento medio de la huelga de Semaf fue del 26,6 % y se cancelaron 21 de los 124 trenes comerciales programados (AVE, Avlo, Alvia, Euromed e Intercity): 9 de 24 en el corredor de Levante y 2 de 28 en el Madrid–Cataluña. Antes de viajar en los próximos días de huelga, comprueba tu tren con la compañía. Según Renfe, 19:23. Publicado por elDiario.es.",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "fuente": {
+        "titulo": "elDiario.es, directo (19:23)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+      },
+      "fechaComunicado": "2026-10-29T19:23:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T22:20:00+01:00",
+      "comprobadoEn": "2026-10-29T22:20:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": null,
+      "id": "2026-10-29-moreno-no-viajaria-ave",
+      "titulo": "Juanma Moreno: «Ahora mismo yo no viajaría en el AVE» Madrid–Andalucía hasta que se revise toda la línea",
+      "resumen": "El presidente de la Junta de Andalucía dijo en Antena 3 que ahora mismo no viajaría en el AVE del corredor Madrid–Andalucía y que no lo hará hasta que se revise toda la línea. Es una opinión política, no un aviso de seguridad de ningún organismo ferroviario. Según la Junta de Andalucía (Juanma Moreno), 18:36. Publicado por elDiario.es, con Europa Press.",
+      "organismo": "Junta de Andalucía",
+      "categoria": "comunidades",
+      "fuente": {
+        "titulo": "elDiario.es, directo (18:36)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+      },
+      "fechaComunicado": "2026-10-29T18:36:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T22:20:00+01:00",
+      "comprobadoEn": "2026-10-29T22:20:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": null,
+      "id": "2026-10-29-pp-pide-comparecencia-sanchez",
+      "titulo": "El PP pide que Pedro Sánchez comparezca en la Diputación Permanente por el accidente de Urda",
+      "resumen": "El Partido Popular ha registrado la petición de que el presidente del Gobierno comparezca ante la Diputación Permanente del Congreso para dar «explicaciones urgentes» sobre el accidente de Urda; considera insuficiente la comparecencia voluntaria del ministro de Transportes (martes 3, 17:00). Según el Partido Popular, 18:42. Publicado por elDiario.es.",
+      "organismo": "Partido Popular (Congreso de los Diputados)",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "elDiario.es, directo (18:42)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+      },
+      "fechaComunicado": "2026-10-29T18:42:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T22:20:00+01:00",
+      "comprobadoEn": "2026-10-29T22:20:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": null,
+      "id": "2026-10-29-ayto-madrid-atocha-relevo",
+      "titulo": "Atocha: desde el jueves Renfe e Iryo asumen la atención psicológica; el Ayuntamiento de Madrid mantiene personal en la sala de familias",
+      "resumen": "La vicealcaldesa de Madrid informa de que el Ayuntamiento movilizó más de 200 efectivos de Bomberos, SAMUR-Protección Civil y SAMUR Social, y que muchos de ellos están recibiendo a su vez atención psicológica. Desde el jueves, la atención psicológica a familiares en Atocha la asumen Renfe e Iryo; el Ayuntamiento mantiene en la sala de familiares a dos auxiliares de servicios sociales, un psicólogo y un mando de SAMUR. Según el Ayuntamiento de Madrid. Publicado por Madridiario (13:30, actualizado a las 17:34).",
+      "organismo": "Ayuntamiento de Madrid (SAMUR-Protección Civil y SAMUR Social)",
+      "categoria": "ayuntamientos",
+      "fuente": {
+        "titulo": "Madridiario: «Madrid despliega más de 200 efectivos en la tragedia de Urda» (actualizado 17:34)",
+        "url": "https://www.madridiario.es/madrid-despliega-200-efectivos-accidente-ferroviario-urda"
+      },
+      "fechaComunicado": "2026-10-29T17:34:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T22:20:00+01:00",
+      "comprobadoEn": "2026-10-29T22:20:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "COPE Granada",
+          "url": "https://www.cope.es/emisoras/andalucia/granada-provincia/granada/noticias/granada-acoge-funeral-69-victimas-accidente-tren-urda-20261029_3465113.html"
+        }
+      ],
+      "id": "2026-10-29-funeral-granada",
+      "titulo": "Funeral por las víctimas en la catedral de Granada el miércoles 4 de noviembre a las 19:30",
+      "resumen": "La catedral de Granada acogerá el miércoles 4 de noviembre, a las 19:30, un funeral por las víctimas del accidente de Urda, presidido por el arzobispo de Granada. Según la Archidiócesis de Granada. Publicado por Religión Digital (15:41) y COPE.",
+      "organismo": "Archidiócesis de Granada",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Religión Digital: «La catedral de Granada acogerá el 4 de noviembre un funeral por las víctimas del accidente de Urda» (15:41)",
+        "url": "https://www.religiondigital.org/diocesis/catedral-granada-acogera-4-noviembre_1_1471358.html"
+      },
+      "fechaComunicado": "2026-10-29T15:41:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T22:20:00+01:00",
+      "comprobadoEn": "2026-10-29T22:20:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Diócesis de Coria-Cáceres, nota en su web (29/10)",
+          "url": "https://diocesiscoriacaceres.es/la-diocesis-de-coria-caceres-celebrara-una-misa-funeral-por-las-victimas-del-accidente-ferroviario-de-urda/"
+        }
+      ],
+      "id": "2026-10-29-funeral-caceres",
+      "titulo": "Misa funeral por las víctimas en la concatedral de Santa María de Cáceres el miércoles 4 de noviembre a las 19:30",
+      "resumen": "La Diócesis de Coria-Cáceres celebrará una misa funeral por las víctimas del accidente de Urda el miércoles 4 de noviembre a las 19:30 en la concatedral de Santa María de Cáceres, presidida por el obispo. Según la Diócesis de Coria-Cáceres (nota en su web, 29/10). Publicado por COPE.",
+      "organismo": "Diócesis de Coria-Cáceres",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "COPE Cáceres: «Coria-Cáceres convoca una misa funeral por las víctimas del accidente de tren de Urda»",
+        "url": "https://www.cope.es/emisoras/extremadura/caceres-provincia/caceres/noticias/coria-caceres-convoca-misa-funeral-victimas-accidente-tren-urda-20261029_3465084.html"
+      },
+      "fechaComunicado": "2026-10-29T12:00:00+01:00"
     }
   ]
 }

@@ -183,7 +183,7 @@
       "id": "atocha-psicosocial",
       "nombre": "Centro de Atención a Familiares de la Comunidad de Madrid — Estación de Madrid-Puerta de Atocha",
       "direccion": "Estación de Madrid-Puerta de Atocha, Madrid",
-      "funcion": "Atención psicológica y psicosocial a familiares, información y ayuda con traslados y alojamiento. Participan SUMMA 112, SAMUR-Protección Civil, SAMUR Social, Cruz Roja y Policía Nacional, con personal de Renfe y Adif. Teléfono para familiares: 900 10 10 20.",
+      "funcion": "Atención psicológica y psicosocial a familiares, información y ayuda con traslados y alojamiento. Participan SUMMA 112, SAMUR-Protección Civil, SAMUR Social, Cruz Roja y Policía Nacional, con personal de Renfe y Adif. Teléfono para familiares: 900 10 10 20. Desde el jueves 29, la atención psicológica a familiares la asumen Renfe e Iryo; el Ayuntamiento de Madrid mantiene en la sala de familiares a dos auxiliares de servicios sociales, un psicólogo y un mando de SAMUR (Ayuntamiento de Madrid, vía Madridiario, 17:34).",
       "organismo": "Comunidad de Madrid (Protección Civil y ASEM 112)",
       "horario": "24 horas, según Protección Civil de la Comunidad de Madrid (El Diario de Madrid, 14:27)",
       "telefono": "",
@@ -192,7 +192,7 @@
         "titulo": "Comunidad de Madrid: nota sobre los recursos de ASEM 112 (actualizada 15:27)",
         "url": "https://www.comunidad.madrid/noticias/2026/10/28/comunidad-madrid-moviliza-recursos-asem-112-colaborar-respuesta-accidente-ferroviario-provincia-toledo"
       },
-      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T22:20:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -214,6 +214,10 @@
         {
           "titulo": "Libertad Digital, directo del jueves (10:58): SUMMA 112 mantiene el punto de Atocha con 15 profesionales, cinco de ellos psicólogos",
           "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        },
+        {
+          "titulo": "Madridiario (actualizado 17:34): relevo de la atención psicológica en Atocha, según el Ayuntamiento de Madrid",
+          "url": "https://www.madridiario.es/madrid-despliega-200-efectivos-accidente-ferroviario-urda"
         }
       ]
     },
@@ -390,7 +394,7 @@
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-29T16:30:00+01:00",
+      "comprobadoEn": "2026-10-29T22:20:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"

@@ -1,6 +1,6 @@
 {
   "_comentario": "Bloques operativos de portada: centros de traslado, avisos de las autoridades y estado de la línea. Las cifras están en afirmaciones.json y los trenes en trenes.json.",
-  "actualizadoEn": "2026-10-29T20:15:00+01:00",
+  "actualizadoEn": "2026-10-29T22:20:00+01:00",
   "hospitales": {
     "revisarCadaMinutos": 30,
     "comprobadoEn": "2026-10-28T18:15:00+01:00",
@@ -157,9 +157,9 @@
   },
   "linea": {
     "revisarCadaMinutos": 60,
-    "comprobadoEn": "2026-10-29T20:15:00+01:00",
+    "comprobadoEn": "2026-10-29T22:20:00+01:00",
     "estado": "Interrumpida la alta velocidad Madrid – Andalucía",
-    "detalle": "Los trenes de la línea están detenidos en estaciones del trayecto: si tienes billete, contacta con tu compañía. Madrid–Toledo y Málaga–Sevilla funcionan con normalidad. Ouigo no circulará en el corredor hasta, al menos, el lunes 2 de noviembre (EFE, 17:47).",
+    "detalle": "Los trenes de la línea están detenidos en estaciones del trayecto: si tienes billete, contacta con tu compañía. Madrid–Toledo y Málaga–Sevilla funcionan con normalidad. Ouigo no circulará en el corredor hasta, al menos, el lunes 2 de noviembre (EFE, 17:47). Renfe aplaza su plan de transporte alternativo Madrid–Andalucía: no empezará el viernes 30 y, como pronto, el martes 3 de noviembre; informará antes de esa fecha de horarios y recorridos (Renfe, vía Andalucía Información, 21:02).",
     "nivelFuente": 1,
     "fuente": {
       "titulo": "Adif: estado de la red (aviso actualizado a las 20:03 del 29/10)",
