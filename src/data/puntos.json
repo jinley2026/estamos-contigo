@@ -14,7 +14,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -47,7 +47,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -80,7 +80,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -113,7 +113,7 @@
         "titulo": "Adif, nota «Accidente en Urda (Toledo)» en su sala de prensa",
         "url": "https://www.adif.es/comunicacion/notas-prensa"
       },
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -142,7 +142,7 @@
         "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
         "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -167,7 +167,7 @@
         "titulo": "Junta de Castilla-La Mancha: nota de elevación del PLATECAM a Situación Operativa 2",
         "url": "https://www.castillalamancha.es/actualidad/notasdeprensa/el-gobierno-regional-eleva-el-platecam-fase-de-emergencia-situacion-operativa-2-para-la-provincia-de"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -192,7 +192,7 @@
         "titulo": "Comunidad de Madrid: nota sobre los recursos de ASEM 112 (actualizada 15:27)",
         "url": "https://www.comunidad.madrid/noticias/2026/10/28/comunidad-madrid-moviliza-recursos-asem-112-colaborar-respuesta-accidente-ferroviario-provincia-toledo"
       },
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -210,6 +210,10 @@
         {
           "titulo": "Libertad Digital, directo del jueves (09:16): punto de atención a familiares (apoyo psicológico y logístico) junto a la entrada de Méndez Álvaro de Atocha",
           "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        },
+        {
+          "titulo": "Libertad Digital, directo del jueves (10:58): SUMMA 112 mantiene el punto de Atocha con 15 profesionales, cinco de ellos psicólogos",
+          "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
         }
       ]
     },
@@ -226,7 +230,7 @@
         "titulo": "Libertad Digital: aviso del Ayuntamiento de Los Yébenes (14:10)",
         "url": "https://www.libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067/"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -246,12 +250,17 @@
         "titulo": "Junta de Andalucía: «La Junta moviliza recursos del 061 y atención psicológica…»",
         "url": "https://www.juntadeandalucia.es/presidencia/portavoz/gobiernoaldia/220023/recursos/JuntadeAndalucia/accidenteferroviarioUrdaToledo/AgenciadeEmergenciasdeAndalucia/EMA/ConsejeriadePresidenciaSanidadyEmergencias"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
-      "fuentesAdicionales": []
+      "fuentesAdicionales": [
+        {
+          "titulo": "Libertad Digital, directo del jueves (11:12): Antonio Sanz confirma que siguen los Puestos de Mando Avanzado",
+          "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        }
+      ]
     },
     {
       "id": "andalucia-pma-1",
@@ -266,12 +275,17 @@
         "titulo": "Junta de Andalucía: «La Junta moviliza recursos del 061 y atención psicológica…»",
         "url": "https://www.juntadeandalucia.es/presidencia/portavoz/gobiernoaldia/220023/recursos/JuntadeAndalucia/accidenteferroviarioUrdaToledo/AgenciadeEmergenciasdeAndalucia/EMA/ConsejeriadePresidenciaSanidadyEmergencias"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
-      "fuentesAdicionales": []
+      "fuentesAdicionales": [
+        {
+          "titulo": "Libertad Digital, directo del jueves (11:12): Antonio Sanz confirma que siguen los Puestos de Mando Avanzado",
+          "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        }
+      ]
     },
     {
       "id": "gc-adn-madrid",
@@ -286,7 +300,7 @@
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -323,7 +337,7 @@
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -368,7 +382,7 @@
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -409,7 +423,7 @@
         "titulo": "Castilla-La Mancha Media: «La Guardia Civil habilita oficinas para que acudan familiares directos de las víctimas» (13:07)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/guardia-civil-habilita-oficinas-acudan-familiares-directos-victimas-accidente-tren-urda-toledo.html"
       },
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -446,7 +460,7 @@
         "titulo": "Infobae/EFE: «Una carpa junto a la estación de trenes de Sevilla atenderá a familiares de las víctimas»",
         "url": "https://www.infobae.com/espana/agencias/2026/10/28/una-carpa-junto-a-la-estacion-de-trenes-de-sevilla-atendera-a-familiares-de-las-victimas/"
       },
-      "comprobadoEn": "2026-10-28T20:45:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -471,7 +485,7 @@
         "titulo": "Córdoba Hoy (15:21): «Una veintena de voluntarios de Cruz Roja con una UVI móvil atiende en la estación de Córdoba»",
         "url": "https://www.cordobahoy.es/la-ciudad/cruz-roja/20261028152130204799.html"
       },
-      "comprobadoEn": "2026-10-28T21:06:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -491,7 +505,7 @@
         "titulo": "Castilla-La Mancha Media, última hora (14:49)",
         "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/ultima-hora-accidente-tren-urda-toledo-fallecidos.html"
       },
-      "comprobadoEn": "2026-10-28T21:06:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -519,7 +533,7 @@
         "titulo": "La Cerca: «Toledo pone a disposición de las víctimas de Urda sus instalaciones y recursos» (19:59)",
         "url": "https://www.lacerca.com/noticias/toledo/toledo-pone-disposicion-victimas-urda-instalaciones-recursos-834781-1.html"
       },
-      "comprobadoEn": "2026-10-28T21:06:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -548,7 +562,7 @@
           "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
         }
       ],
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -577,7 +591,7 @@
           "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
         }
       ],
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"
@@ -606,7 +620,26 @@
           "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
         }
       ],
-      "comprobadoEn": "2026-10-29T10:05:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "iml-toledo",
+      "nombre": "Instituto de Medicina Legal de Toledo — identificación (solo familiares)",
+      "direccion": "Instituto de Medicina Legal de Toledo; la calle Dinamarca está cortada. Número exacto no comunicado",
+      "funcion": "Identificación de las víctimas por el equipo judicial y forense. Solo pueden acceder familiares. La Guardia Civil comunica las identificaciones en persona, nunca por SMS ni por teléfono.",
+      "organismo": "Administración de Justicia (TSJ de Castilla-La Mancha)",
+      "horario": "No comunicado",
+      "telefono": "925317020",
+      "nivelFuente": 2,
+      "fuente": {
+        "titulo": "elDiario.es, directo (11:03)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+      },
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
       "revisarCadaMinutos": 60,
       "verificadoPor": [
         "AUTO-CLAUDE"

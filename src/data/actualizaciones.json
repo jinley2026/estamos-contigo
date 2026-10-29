@@ -9,6 +9,432 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-page-balance-cecopi",
+      "titulo": "García-Page actualiza el balance tras el CECOPI: la mayoría de los pacientes de la región ya tienen el alta",
+      "resumen": "Tras la reunión del CECOPI en Urda, el presidente de Castilla-La Mancha, Emiliano García-Page, ha elevado el número de víctimas mortales (la nueva cifra figura en el apartado de cifras); según la misma información, el aumento corresponde a una persona que ha perdido la vida en el hospital. De las personas que llegaron a hospitales de la región, la mayoría ya tienen el alta; siguen ingresados los demás, entre ellos los pacientes en código rojo, de los que los cuatro más graves «evolucionan positivamente». Queda por retirar un vagón volcado y Page confía, «con la prudencia lógica del momento», en que no haya más víctimas debajo. Publicado por elDiario.es (10:43), Libertad Digital (10:43, 10:47 y 11:06) y Córdoba BN (11:14).",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (10:47)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T10:47:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "elDiario.es, directo (10:43)",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+        },
+        {
+          "titulo": "Córdoba BN (11:14)",
+          "url": "https://www.cordobabn.com/nacional/accidente-elevan-69-fallecidos-60-110-heridos-ingresados-c-lm-han-sido-dados-alta/20261029111401272783.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-sanchez-declaracion-cecopi",
+      "titulo": "Sánchez, tras el CECOPI: esclarecer «hasta el último detalle», reforzar la seguridad y resarcir a las familias",
+      "resumen": "El presidente del Gobierno, Pedro Sánchez, ha asegurado tras la reunión del CECOPI que se esclarecerá «hasta el último detalle» lo ocurrido, que se reforzará la seguridad «para que esto no vuelva a suceder» y que «todo el Estado está volcado». Según El Mira, anunció que la Administración General del Estado ofrecerá a los familiares de las víctimas un resarcimiento, «al menos desde el punto de vista material»; no se han concretado cuantías, plazos ni cómo solicitarlo. Lo añadiremos en cuanto se publique. Publicado por Libertad Digital (10:52), elDiario.es (10:57) y El Mira (11:31).",
+      "organismo": "Presidencia del Gobierno",
+      "categoria": "gobierno",
+      "fuente": {
+        "titulo": "El Mira (11:31)",
+        "url": "https://www.elmira.es/articulo/nacional/pedro-sanchez-anuncia-indemnizacion-familiares-victimas-urda-mientras-cifra-fallecidos-sube-69/20261029113139625496.html"
+      },
+      "fechaComunicado": "2026-10-29T10:52:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Libertad Digital, directo del jueves (10:52)",
+          "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        },
+        {
+          "titulo": "elDiario.es, directo (10:57)",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-sanchez-adif-h24",
+      "titulo": "Sánchez visita a las 12:00 el centro de control H24 de Adif en Atocha",
+      "resumen": "Según Presidencia del Gobierno, Pedro Sánchez visitará a las 12:00 el centro de control H24 de Adif en la estación de Madrid-Puerta de Atocha. Publicado por Libertad Digital a las 11:31.",
+      "organismo": "Presidencia del Gobierno",
+      "categoria": "gobierno",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (11:31)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T11:31:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": true,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-cid-sms-falsos",
+      "titulo": "Alerta: SMS falsos que dicen comunicar la identificación de víctimas. La Guardia Civil lo comunica siempre en persona",
+      "resumen": "El Centro de Integración de Datos (CID), a través del Tribunal Superior de Justicia de Castilla-La Mancha, alerta de mensajes SMS falsos dirigidos a familiares que, haciéndose pasar por la Guardia Civil, dicen que se ha identificado a su familiar. No hagas caso de esos mensajes ni de llamadas con ese contenido: la identificación de las víctimas se comunica «de manera presencial y personal» por la Guardia Civil, nunca por SMS ni por teléfono. Publicado por elDiario.es (11:16), El Digital de Albacete (11:19) y Libertad Digital (11:45).",
+      "organismo": "Centro de Integración de Datos (TSJ de Castilla-La Mancha)",
+      "categoria": "justicia",
+      "fuente": {
+        "titulo": "El Digital de Albacete (11:19)",
+        "url": "https://www.eldigitaldealbacete.com/2026/10/29/alerta-por-estos-sms-tras-el-accidente-ferroviario-de-urda-suplantan-a-la-guardia-civil/"
+      },
+      "fechaComunicado": "2026-10-29T11:16:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "elDiario.es, directo (11:16)",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+        },
+        {
+          "titulo": "Libertad Digital, directo del jueves (11:45)",
+          "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-iml-toledo-acceso-familiares",
+      "titulo": "Instituto de Medicina Legal de Toledo: sigue la identificación; solo pueden acceder los familiares",
+      "resumen": "En el Instituto de Medicina Legal de Toledo continúan los trabajos de identificación. Solo acceden los familiares y la calle Dinamarca está cortada. Publicado por elDiario.es a las 11:03. Recuerda: la Guardia Civil comunica las identificaciones en persona, nunca por mensaje ni por teléfono.",
+      "organismo": "Administración de Justicia (IML de Toledo)",
+      "categoria": "justicia",
+      "fuente": {
+        "titulo": "elDiario.es, directo (11:03)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+      },
+      "fechaComunicado": "2026-10-29T11:03:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-cam-sermas-uci-sangre",
+      "titulo": "Madrid: pacientes del accidente atendidos en hospitales del SERMAS, algunos aún en UCI, y miles de donaciones de sangre",
+      "resumen": "La presidenta de la Comunidad de Madrid, Isabel Díaz Ayuso, ha dado el balance de pacientes del accidente atendidos en la red de hospitales públicos madrileños (SERMAS), de los que algunos siguen en la UCI, y de las donaciones de sangre recibidas (cifras en el apartado de cifras y en la fuente). Publicado por Libertad Digital (10:22) y elDiario.es (10:16).",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "sanidad",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (10:22)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T10:22:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "elDiario.es, directo (10:16)",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-summa-atocha-balance",
+      "titulo": "SUMMA 112 mantiene su punto de atención en Atocha, con psicólogos, para familiares y pasajeros",
+      "resumen": "Según el SUMMA 112, su punto en la estación de Atocha ha atendido hasta las 08:30 a 155 familiares y 41 pasajeros; trabajan allí 15 profesionales, cinco de ellos psicólogos. Los Bomberos de Madrid terminaron su trabajo de rescate de madrugada. Publicado por Libertad Digital a las 10:58 y 11:31.",
+      "organismo": "Comunidad de Madrid (SUMMA 112)",
+      "categoria": "emergencias",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (10:58)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T10:58:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-interior-medios-jueves",
+      "titulo": "Interior actualiza los medios desplegados en Urda: UME, Guardia Civil, Policía Nacional y Protección Civil",
+      "resumen": "Según el Ministerio del Interior (11:59): Protección Civil, 102 personas; UME, 250 efectivos y 85 medios; Policía Nacional, 143 efectivos y 26 medios; Guardia Civil, 422 efectivos y 123 medios, con 3 helicópteros y drones. Defensa prioriza «la localización urgente y el rescate de personas atrapadas». A las 10:21-10:31 la Delegación del Gobierno daba 53 policías nacionales y 21 medios; prevalece el dato más reciente. Publicado por Libertad Digital (10:31 y 11:59) y elDiario.es (10:21).",
+      "organismo": "Ministerio del Interior y Delegación del Gobierno",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (11:59)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T11:59:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "elDiario.es, directo (10:21)",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-gc-busqueda-perros-drones",
+      "titulo": "Guardia Civil: la búsqueda se centra en posibles desaparecidos y vigila el espacio aéreo frente a drones no autorizados",
+      "resumen": "La portavoz de la Guardia Civil explica que las labores se centran en buscar a posibles desaparecidos, con perros del Servicio Cinológico. La Guardia Civil ha desplegado además un operativo aéreo contra drones no autorizados que sobrevolaban los restos de los trenes. Publicado por elDiario.es (09:43 y 09:52) y Libertad Digital (11:30).",
+      "organismo": "Guardia Civil",
+      "categoria": "guardiacivil",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (11:30)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T11:30:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "elDiario.es, directo (09:52)",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-andalucia-sanz-jueves",
+      "titulo": "Junta de Andalucía: hospitales andaluces atienden a pacientes leves y siguen los puestos en Santa Justa y Córdoba",
+      "resumen": "El consejero de la Presidencia y Emergencias de la Junta de Andalucía, Antonio Sanz, informa de que hospitales andaluces han atendido a pacientes leves del accidente y esperan a más. Se mantienen los Puestos de Mando Avanzado en las estaciones de Sevilla-Santa Justa y Córdoba, y el luto oficial hasta el sábado 31. Recuerda las líneas gratuitas de Renfe, Iryo y el 112 de Castilla-La Mancha. Publicado por Libertad Digital a las 11:12.",
+      "organismo": "Junta de Andalucía",
+      "categoria": "comunidades",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (11:12)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T11:12:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-renfe-horarios-ciudad-real",
+      "titulo": "Renfe: horarios de los trenes especiales Madrid–Ciudad Real–Puertollano, desde Cercanías de Atocha",
+      "resumen": "Según Renfe, los trenes especiales salen desde la zona de Cercanías de Madrid-Puerta de Atocha; el viaje Madrid–Ciudad Real dura unas 2 h 30 min. Salidas desde Madrid: 8:00, 10:30, 12:00, 14:00, 16:30, 18:00, 20:00 y 22:30. Salidas desde Ciudad Real: 5:10, 7:00, 8:30, 10:15, 12:15, 15:45, 18:30 y 20:30 (Libertad Digital, 11:08). Ojo: otro medio publicó a primera hora horarios distintos desde Ciudad Real (7:15, 9:00, 11:00…); comprueba tu tren en renfe.com antes de ir a la estación. El plan alternativo para Andalucía desde el viernes aún no tiene horarios publicados.",
+      "organismo": "Renfe",
+      "categoria": "renfe",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (11:08)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T11:08:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Noticias para Municipios (06:57): horarios anteriores",
+          "url": "https://noticiasparamunicipios.com/comunidad-madrid/renfe-prepara-una-alternativa-madrid-andalucia-desde-el-viernes/"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-vuelos-iberia-aireuropa",
+      "titulo": "Iberia añade vuelos a Málaga y Sevilla y Air Europa ofrece más frecuencias a Sevilla",
+      "resumen": "Iberia programa tres vuelos extra este jueves (dos a Málaga y uno a Sevilla) y mantiene hasta el 8 de noviembre el precio máximo de 99 € en turista y 149 € en business, con cambios flexibles. Air Europa ofrece hasta cuatro frecuencias diarias a Sevilla los martes, jueves y viernes. Publicado por Libertad Digital a las 11:59.",
+      "organismo": "Iberia y Air Europa",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (11:59)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T11:59:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-ugt-apoyo-psicologico",
+      "titulo": "UGT y Psicología Sin Fronteras ofrecen apoyo psicológico gratuito: 697 705 436",
+      "resumen": "UGT ha activado, con la Fundación Psicología Sin Fronteras, atención psicológica gratuita, presencial y telefónica, para personas afectadas por el accidente. Teléfono: 697 705 436. Publicado por elDiario.es a las 10:50.",
+      "organismo": "UGT y Fundación Psicología Sin Fronteras",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "elDiario.es, directo (10:50)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+      },
+      "fechaComunicado": "2026-10-29T10:50:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-minutos-silencio-12h",
+      "titulo": "Minutos de silencio a las 12:00 en el Senado y ante las sedes judiciales",
+      "resumen": "El Senado ha convocado un minuto de silencio a las 12:00 en la plaza de la Marina Española; el CGPJ, el Tribunal Supremo, la Audiencia Nacional y los tribunales superiores de justicia, ante sus sedes. Los diputados de la Asamblea de Madrid también han guardado un minuto de silencio. El papa León XIV ha enviado un telegrama de pésame al arzobispo de Toledo. Publicado por elDiario.es (10:57, 11:13 y 11:20) y Libertad Digital (11:23 y 11:48).",
+      "organismo": "Senado, CGPJ y otras instituciones",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "elDiario.es, directo (11:13)",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+      },
+      "fechaComunicado": "2026-10-29T11:13:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Libertad Digital, directo del jueves (11:23)",
+          "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T12:12:00+01:00",
+      "comprobadoEn": "2026-10-29T12:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-comparecencia-puente-peticion",
+      "titulo": "Varios grupos parlamentarios piden que el ministro de Transportes comparezca en la Diputación Permanente",
+      "resumen": "Los grupos Republicano y Mixto (Podemos) han registrado la petición de comparecencia urgente del ministro de Transportes, Óscar Puente, ante la Diputación Permanente del Congreso; Sumar anuncia que hará lo mismo. No hay fecha. Publicado por elDiario.es (10:21) y Libertad Digital (11:04).",
+      "organismo": "Congreso de los Diputados (grupos parlamentarios)",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (11:04)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/"
+      },
+      "fechaComunicado": "2026-10-29T11:04:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "elDiario.es, directo (10:21)",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-servicios-emergencia-siguen-zona-accidente-53-heridos-hospitalizados_133_13623403.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
       "publicadoEn": "2026-10-29T10:05:00+01:00",
       "comprobadoEn": "2026-10-29T10:05:00+01:00",
       "operativa": true,

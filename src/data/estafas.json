@@ -9,5 +9,13 @@
     "No compartas imágenes de víctimas ni información privada de otras personas.",
     "Si recibes un enlace que dice ser de esta web por mensaje privado, no lo abras: nosotros no enviamos mensajes."
   ],
-  "alertasConcretas": []
+  "alertasConcretas": [
+    {
+      "texto": "29/10, 11:16 — El Centro de Integración de Datos (TSJ de Castilla-La Mancha) alerta de SMS falsos que, suplantando a la Guardia Civil, dicen comunicar la identificación de un familiar fallecido. La Guardia Civil comunica las identificaciones solo en persona, nunca por SMS ni por teléfono.",
+      "fuente": {
+        "titulo": "El Digital de Albacete (11:19)",
+        "url": "https://www.eldigitaldealbacete.com/2026/10/29/alerta-por-estos-sms-tras-el-accidente-ferroviario-de-urda-suplantan-a-la-guardia-civil/"
+      }
+    }
+  ]
 }

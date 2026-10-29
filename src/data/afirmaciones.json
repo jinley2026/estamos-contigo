@@ -707,6 +707,98 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "fallecidos-page-cecopi-1047",
+      "tipo": "fallecidos",
+      "valor": 69,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (10:47): García-Page tras el CECOPI",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T10:47:00+01:00",
+      "fechaVerificacion": "2026-10-29T12:12:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-page-1913",
+      "observaciones": "García-Page tras la reunión del CECOPI en Urda (también elDiario.es 10:43 y Córdoba BN 11:14). Según la misma información, el aumento respecto a la cifra del miércoles corresponde a una persona fallecida en el hospital. Queda un vagón volcado por retirar; Page no descarta del todo más víctimas.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "hospitalizados-page-cecopi-1047",
+      "tipo": "hospitalizados",
+      "valor": 50,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (10:47): García-Page tras el CECOPI",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T10:47:00+01:00",
+      "fechaVerificacion": "2026-10-29T12:12:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "hospitalizados-jccm-0833",
+      "observaciones": "Heridos que SIGUEN ingresados en hospitales de Castilla-La Mancha. 15 en código rojo, de los que los cuatro más graves evolucionan positivamente (Page, 10:43). A las 08:33 la Junta daba 53.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "altas-page-cecopi-1047",
+      "tipo": "altas",
+      "valor": 60,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (10:47): García-Page tras el CECOPI",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T10:47:00+01:00",
+      "fechaVerificacion": "2026-10-29T12:12:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "altas-jccm-0833",
+      "observaciones": "Altas en hospitales de Castilla-La Mancha, de 110 heridos que llegaron a ellos (Page; también Córdoba BN 11:14). A las 08:33 la Junta daba 56.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "atendidos-cam-ayuso-1022",
+      "tipo": "atendidos",
+      "valor": 98,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "comunidad:madrid",
+      "organismo": "Comunidad de Madrid",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del jueves (10:22): Isabel Díaz Ayuso",
+        "url": "https://www.libertaddigital.com/espana/2026-10-29/segundo-dia-accidente-tren-urda-toledo-ultima-hora-investigacion-7483738/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-29T10:22:00+01:00",
+      "fechaVerificacion": "2026-10-29T12:12:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "atendidos-cam-1846",
+      "observaciones": "Heridos atendidos en hospitales de la red pública madrileña (SERMAS), según la presidenta Isabel Díaz Ayuso; cuatro siguen en la UCI (también elDiario.es 10:16). 4.100 donaciones de sangre. No es comparable directamente con la cifra anterior (86, que incluía 10 atendidos en el puesto sanitario avanzado).",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }
