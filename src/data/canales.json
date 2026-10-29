@@ -127,6 +127,31 @@
         "AUTO-CLAUDE"
       ],
       "notaInterna": "Confirmar en la nota oficial del TSJCM en poderjudicial.es."
+    },
+    {
+      "id": "copclm-apoyo-psicologico",
+      "organismo": "Colegio Oficial de la Psicología de Castilla-La Mancha",
+      "organismoCorto": "Colegio de Psicología de Castilla-La Mancha, apoyo psicológico",
+      "telefono": "665658472",
+      "telefonoVisible": "665 65 84 72",
+      "finalidad": "Atención psicológica para personas afectadas por el accidente, de 10:00 a 20:00 todos los días (según Vozpópuli, 11:33). No sustituye al 112 en una urgencia.",
+      "destacado": false,
+      "temporal": true,
+      "sensible": true,
+      "nivelFuente": 2,
+      "fuentes": [
+        {
+          "titulo": "Vozpópuli, directo del accidente (28/10, 11:33)",
+          "url": "https://www.vozpopuli.com/espana/accidente-de-tren-en-directo-afectados-heridos-y-ultima-hora-del-choque-entre-un-ave-e-iryo-en-toledo-hoy.html",
+          "fechaPublicacion": "2026-10-28T11:33:00+01:00"
+        }
+      ],
+      "comprobadoEn": "2026-10-29T06:10:00+01:00",
+      "revisarCadaMinutos": 60,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "notaInterna": "Confirmar en la web o redes del COP Castilla-La Mancha."
     }
   ]
 }

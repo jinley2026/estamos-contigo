@@ -2368,6 +2368,60 @@
         "url": "https://herencia.net/2026-10-28-urda-53-hospitalizados-luto-oficial/"
       },
       "fechaComunicado": "2026-10-28T23:08:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T06:10:00+01:00",
+      "comprobadoEn": "2026-10-29T06:10:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-sanchez-cecopi-jueves",
+      "titulo": "Sánchez participa este jueves a las 10:00 en la reunión del CECOPI con García-Page",
+      "resumen": "Según Presidencia del Gobierno, el presidente Pedro Sánchez participa este jueves 29 a las 10:00 en la reunión de seguimiento y coordinación de la emergencia del Centro de Coordinación Operativa Integrado (CECOPI), junto al presidente de Castilla-La Mancha, Emiliano García-Page, y el delegado del Gobierno en la región, José Pablo Sabrido. El titular de EFE sitúa la reunión en Urda y la agenda del día de EFE, en Toledo. Publicado por Infobae (EFE) el miércoles hacia las 21:48.",
+      "organismo": "Presidencia del Gobierno",
+      "categoria": "gobierno",
+      "fuente": {
+        "titulo": "Infobae (EFE): «Sánchez participa este jueves en la reunión del CECOPI en Urda (Toledo)» (28/10, 21:48)",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/28/sanchez-participa-este-jueves-en-la-reunion-del-cecopi-en-urda-toledo/"
+      },
+      "fuentesAdicionales": [
+        {
+          "titulo": "Infobae (EFE): «Hoy será noticia. Jueves, 29 de octubre»",
+          "url": "https://www.infobae.com/espana/agencias/2026/10/28/hoy-sera-noticia-jueves-29-de-octubre/"
+        }
+      ],
+      "fechaComunicado": "2026-10-28T21:48:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-29T06:10:00+01:00",
+      "comprobadoEn": "2026-10-29T06:10:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-29-copclm-telefono-psicologico",
+      "titulo": "El Colegio de Psicología de Castilla-La Mancha habilita un teléfono de apoyo psicológico: 665 65 84 72",
+      "resumen": "Según el Colegio Oficial de la Psicología de Castilla-La Mancha, citado por Vozpópuli en su directo (miércoles, 11:33), hay un teléfono de atención psicológica para afectados por el accidente, el 665 65 84 72, de 10:00 a 20:00 todos los días. No hemos encontrado todavía el anuncio en los canales del propio Colegio. Para urgencias, el 112.",
+      "organismo": "Colegio Oficial de la Psicología de Castilla-La Mancha",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Vozpópuli, directo del accidente (28/10, 11:33)",
+        "url": "https://www.vozpopuli.com/espana/accidente-de-tren-en-directo-afectados-heridos-y-ultima-hora-del-choque-entre-un-ave-e-iryo-en-toledo-hoy.html"
+      },
+      "fechaComunicado": "2026-10-28T11:33:00+01:00"
     }
   ]
 }
