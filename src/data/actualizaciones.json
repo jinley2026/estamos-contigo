@@ -4097,6 +4097,36 @@
         "url": "https://www.infobae.com/america/agencias/2026/10/29/los-institutos-forenses-de-c-lm-han-recibido-ya-los-69-cuerpos-y-han-practicado-48-autopsias/"
       },
       "fechaComunicado": "2026-10-30T00:02:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T06:12:00+01:00",
+      "comprobadoEn": "2026-10-30T06:12:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Telemadrid: «Iryo reembolsará los billetes a los afectados por el accidente y facilitará transporte»",
+          "url": "https://www.telemadrid.es/noticias/sociedad/iryo-reembolsara-billetes-afectados-accidente_1_2782588.html"
+        }
+      ],
+      "id": "2026-10-29-iryo-reembolsos-sov",
+      "titulo": "Iryo explica cómo pedir el reembolso de billetes y gastos y cómo tramitar el Seguro Obligatorio de Viajeros",
+      "resumen": "Según un comunicado de Iryo difundido en su cuenta oficial de X, la compañía reembolsará íntegramente el billete a todos sus clientes afectados por el accidente de Urda; para pedirlo hay que enviar el certificado de titularidad de la cuenta bancaria a buzonafectados6076@iryo.eu. Ofrece transporte alternativo a Sevilla, Córdoba o de vuelta a Madrid y, si por razones justificadas no se pudo usar, reembolsará transporte y, si hace falta, alojamiento y manutención (enviando facturas o justificantes al mismo correo). A las familias de las víctimas mortales y de quienes sufrieron lesiones graves les reembolsará el viaje de ida y vuelta, alojamiento y manutención, con límites de tiempo, aportando datos bancarios, acreditación del parentesco y justificantes. El Seguro Obligatorio de Viajeros se tramita en el 900 001 403 (atención a víctimas y familiares de Iryo) o en el formulario de iryo-sov.com. Iryo recuerda además el anticipo económico que prevé el Reglamento (UE) 2021/782 (art. 15) para las personas lesionadas y las familias de las víctimas mortales. Publicado por EFE (Infobae), 29/10, 19:18.",
+      "organismo": "Iryo",
+      "categoria": "iryo",
+      "fuente": {
+        "titulo": "Infobae (EFE): «Iryo reembolsará los billetes a los afectados por el accidente y facilitará transporte»",
+        "url": "https://www.infobae.com/espana/agencias/2026/10/29/iryo-reembolsara-los-billetes-a-los-afectados-por-el-accidente-y-facilitara-transporte/"
+      },
+      "fechaComunicado": "2026-10-29T19:18:00+01:00"
     }
   ]
 }
