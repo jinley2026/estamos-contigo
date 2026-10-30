@@ -4297,6 +4297,155 @@
         "url": "https://www.architoledo.org/noticias/urda-acoge-este-sabado-un-funeral-por-los-fallecidos-en-el-accidente-ferroviario/"
       },
       "fechaComunicado": "2026-10-30T09:33:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T12:05:00+01:00",
+      "comprobadoEn": "2026-10-30T12:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Español – El Digital Castilla-La Mancha: «Page señala que la cifra de víctimas mortales sigue en 69 fallecidos, pero \"no descartamos que pueda sobrepasar los 70\"» (30/10, 10:49)",
+          "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261030/page-no-descarta-suba-cifra-fallecidos-recogerse-bolsas-restos-parciales-junto-trenes-urda/1003744440795_0.html"
+        },
+        {
+          "titulo": "La Cerca: «Sánchez llega al CECOPI de Toledo junto a Marlaska pero sin Puente, que comparece en Madrid a las 11.30» (30/10)",
+          "url": "https://www.lacerca.com/noticias/toledo/sanchez-cecopi-toledo-marlaska-puente-madrid-11-30-835023-1.html"
+        }
+      ],
+      "id": "2026-10-30-cecopi-nivel-1",
+      "titulo": "El CECOPI rebaja la emergencia a nivel 1: la UME se retirará cuando termine de retirar los vagones",
+      "resumen": "García-Page anunció al término de la reunión del CECOPI de este viernes en Toledo, con el presidente del Gobierno y el ministro del Interior, que la emergencia baja a nivel 1 y que la UME se retirará cuando acabe de retirar los vagones. La comprobación de los cuerpos y los avisos a las familias quedan bajo control judicial, con protocolos estrictos. Según la Junta de Castilla-La Mancha, 10:34. Publicado por Libertad Digital y El Español.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del viernes 30 (10:34–12:02)",
+        "url": "https://www.libertaddigital.com/espana/politica/2026-10-30/oscar-puente-en-directo-accidente-tren-urda-renfe-iryo-7484469/"
+      },
+      "fechaComunicado": "2026-10-30T10:34:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T12:05:00+01:00",
+      "comprobadoEn": "2026-10-30T12:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Libertad Digital, directo del viernes 30 (10:34–12:02)",
+          "url": "https://www.libertaddigital.com/espana/politica/2026-10-30/oscar-puente-en-directo-accidente-tren-urda-renfe-iryo-7484469/"
+        }
+      ],
+      "id": "2026-10-30-page-balance-puede-subir",
+      "titulo": "García-Page mantiene el balance oficial de víctimas mortales, pero no descarta que aumente",
+      "resumen": "El presidente de Castilla-La Mancha explicó tras el CECOPI que el balance comprobado no cambia, pero que podría superarse porque las denuncias por desaparición superan esa cifra y la identificación es «de alta complejidad»; en algunos casos no será posible recuperar los cuerpos completos. Pidió a las familias acogerse al protocolo oficial y recordó que hay apoyo psicológico y social a través de la autoridad judicial y la Consejería. Las cifras, en el apartado de datos. Según la Junta de Castilla-La Mancha, 10:36. Publicado por El Español y Libertad Digital.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "fuente": {
+        "titulo": "El Español – El Digital Castilla-La Mancha: «Page señala que la cifra de víctimas mortales sigue en 69 fallecidos, pero \"no descartamos que pueda sobrepasar los 70\"» (30/10, 10:49)",
+        "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261030/page-no-descarta-suba-cifra-fallecidos-recogerse-bolsas-restos-parciales-junto-trenes-urda/1003744440795_0.html"
+      },
+      "fechaComunicado": "2026-10-30T10:36:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T12:05:00+01:00",
+      "comprobadoEn": "2026-10-30T12:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [],
+      "id": "2026-10-30-page-hospitales-desglose",
+      "titulo": "García-Page detalla en qué hospitales de Castilla-La Mancha siguen los pacientes del accidente",
+      "resumen": "Según el presidente regional, los pacientes que siguen ingresados están en el Hospital Universitario de Toledo, el Mancha Centro de Alcázar de San Juan, el General Universitario de Ciudad Real y el de Albacete, con parte de ellos en UCI; su evolución es «razonablemente positiva». Otros fueron atendidos en hospitales de Madrid. El desglose por hospital, en el apartado de datos. Según la Junta de Castilla-La Mancha, 10:36. Publicado por El Español.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "sanidad",
+      "fuente": {
+        "titulo": "El Español – El Digital Castilla-La Mancha: «Page señala que la cifra de víctimas mortales sigue en 69 fallecidos, pero \"no descartamos que pueda sobrepasar los 70\"» (30/10, 10:49)",
+        "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261030/page-no-descarta-suba-cifra-fallecidos-recogerse-bolsas-restos-parciales-junto-trenes-urda/1003744440795_0.html"
+      },
+      "fechaComunicado": "2026-10-30T10:36:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T12:05:00+01:00",
+      "comprobadoEn": "2026-10-30T12:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "La Cerca: «Sánchez llega al CECOPI de Toledo junto a Marlaska pero sin Puente, que comparece en Madrid a las 11.30» (30/10)",
+          "url": "https://www.lacerca.com/noticias/toledo/sanchez-cecopi-toledo-marlaska-puente-madrid-11-30-835023-1.html"
+        }
+      ],
+      "id": "2026-10-30-sanchez-cecopi-viernes",
+      "titulo": "Sánchez, en el CECOPI: la investigación sigue para determinar las causas y el Gobierno «aportará soluciones» a la seguridad",
+      "resumen": "El presidente del Gobierno volvió a la reunión del CECOPI en Toledo junto al ministro del Interior. Agradeció el trabajo de los vecinos y profesionales de Castilla-La Mancha, dijo que la investigación está en marcha para determinar las causas, que el Gobierno aportará soluciones para mejorar la seguridad y trabajará para recuperar la confianza en la alta velocidad. Señaló que puede haber víctimas de hasta 27 nacionalidades. Según el Gobierno de España, 10:42–10:46. Publicado por Libertad Digital.",
+      "organismo": "Gobierno de España",
+      "categoria": "gobierno",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del viernes 30 (10:34–12:02)",
+        "url": "https://www.libertaddigital.com/espana/politica/2026-10-30/oscar-puente-en-directo-accidente-tren-urda-renfe-iryo-7484469/"
+      },
+      "fechaComunicado": "2026-10-30T10:42:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T12:05:00+01:00",
+      "comprobadoEn": "2026-10-30T12:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Ministerio de Transportes: convocatoria de la rueda de prensa del ministro",
+          "url": "https://www.transportes.gob.es/ministerio/comunicacion/sala-prensa/convocatorias/rueda-prensa-ministro-oscar-puente"
+        }
+      ],
+      "id": "2026-10-30-puente-rueda-prensa-inicio",
+      "titulo": "Óscar Puente comienza su rueda de prensa: «Es lógico que se pidan responsabilidades»",
+      "resumen": "La rueda de prensa del ministro de Transportes empezó hacia las 11:59, con media hora de retraso. Recordó a las víctimas, reconoció la preocupación de la ciudadanía y dijo que es lógico que se pidan responsabilidades. Según el ministro, todo indica que lo ocurrido se debió a un error en el Centro de Control; la investigación oficial no ha concluido y determinará las causas. Ministerio de Transportes, 12:01–12:02. Publicado por Libertad Digital. Ampliaremos con el resto de la comparecencia.",
+      "organismo": "Ministerio de Transportes",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "Libertad Digital, directo del viernes 30 (10:34–12:02)",
+        "url": "https://www.libertaddigital.com/espana/politica/2026-10-30/oscar-puente-en-directo-accidente-tren-urda-renfe-iryo-7484469/"
+      },
+      "fechaComunicado": "2026-10-30T12:01:00+01:00"
     }
   ]
 }

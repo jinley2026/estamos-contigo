@@ -910,7 +910,7 @@
       "estadoEditorial": "aprobado",
       "estadoDato": "provisional",
       "versionAnterior": "hospitalizados-cecopi-1513",
-      "observaciones": "Ingresados en hospitales de Castilla-La Mancha según fuentes del Gobierno regional (Europa Press, 09:30; hora del dato no indicada): 17 en UCI y 22 en planta. Toledo 21, Alcázar de San Juan 9, Ciudad Real 8, Albacete 1. No incluye a los heridos ingresados en Madrid. La portavoz Esther Padilla habló en TVE de «unas cincuenta» personas ingresadas y quince en UCI (La Cerca, 08:47), con datos anteriores; se registra la cifra más reciente y desglosada.",
+      "observaciones": "Ingresados en hospitales de Castilla-La Mancha según fuentes del Gobierno regional (Europa Press, 09:30; hora del dato no indicada): 17 en UCI y 22 en planta. Toledo 21, Alcázar de San Juan 9, Ciudad Real 8, Albacete 1. No incluye a los heridos ingresados en Madrid. La portavoz Esther Padilla habló en TVE de «unas cincuenta» personas ingresadas y quince en UCI (La Cerca, 08:47), con datos anteriores; se registra la cifra más reciente y desglosada. Desglose dado por García-Page el 30/10 a las 10:36 (El Español): 21 en el Hospital Universitario de Toledo (8 en UCI), 9 en Mancha Centro de Alcázar de San Juan (3 en UCI), 8 en Ciudad Real (5 en UCI) y 1 en Albacete.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
@@ -957,6 +957,29 @@
       "estadoDato": "provisional",
       "versionAnterior": "atendidos-cam-sermas-1454",
       "observaciones": "Atenciones en urgencias de hospitales de la Comunidad de Madrid; 4 personas siguen en UCI (12 de Octubre, La Paz, Ramón y Cajal y Getafe).",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "fallecidos-page-cecopi-viernes-1036",
+      "tipo": "fallecidos",
+      "valor": 69,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "El Español – El Digital Castilla-La Mancha: «Page señala que la cifra de víctimas mortales sigue en 69 fallecidos, pero \"no descartamos que pueda sobrepasar los 70\"» (30/10, 10:49)",
+        "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20261030/page-no-descarta-suba-cifra-fallecidos-recogerse-bolsas-restos-parciales-junto-trenes-urda/1003744440795_0.html",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-30T10:36:00+01:00",
+      "fechaVerificacion": "2026-10-30T12:05:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "fallecidos-page-cecopi-1047",
+      "observaciones": "García-Page, tras el CECOPI del viernes 30: la cifra comprobada sigue en 69 y no descarta que supere 70; hay 70 denuncias por desaparición, que no equivalen a fallecidos confirmados.",
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
