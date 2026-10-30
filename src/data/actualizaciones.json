@@ -4,6 +4,183 @@
     {
       "revisarCadaMinutos": 60,
       "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T14:35:00+01:00",
+      "comprobadoEn": "2026-10-30T14:35:00+01:00",
+      "operativa": false,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-30-puente-cronologia-investigacion",
+      "titulo": "Óscar Puente expone la cronología oficial del accidente; la investigación técnica la lleva la AITAT y el caso está judicializado",
+      "resumen": "En su rueda de prensa, el ministro de Transportes detalló la secuencia que constata el Ministerio: hacia las 8:30 del miércoles cayó el sistema de seguridad LZB en un tramo de 63 km y se detuvieron los trenes; después el centro de control de Adif en Atocha autorizó a reanudar la marcha al AVE 2080 y al Iryo 6076, que no logró arrancar, y la colisión por alcance se produjo hacia las 8:53 en el punto kilométrico 118, entre Mora y Urda. Según el ministro, el AVE superó los 160 km/h. La investigación técnica corresponde a la autoridad independiente AITAT (expediente 146/2026), que también analiza el fallo del LZB, y el caso está en manos del juzgado. Puente dijo que la investigación abarca «sistemas y personas», que no prejuzgará responsabilidades individuales y que no ha hablado de «error humano». Las causas no son definitivas hasta que concluyan la investigación oficial y la judicial. Ministerio de Transportes, 12:02–13:03. Publicado por La Cerca y Libertad Digital.",
+      "organismo": "Ministerio de Transportes",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "La Cerca: «Puente sitúa el foco del accidente de Urda en el centro de control de Adif y revela que el AVE superó los 160 km/h antes de la colisión» (30/10, 12:57)",
+        "url": "https://www.lacerca.com/noticias/castilla_la_mancha/puente-accidente-urda-centro-control-adif-ave-colision-835062-1.html"
+      },
+      "fechaComunicado": "2026-10-30T12:06:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Libertad Digital, directo de la comparecencia de Óscar Puente (12:02–13:54)",
+          "url": "https://www.libertaddigital.com/espana/politica/2026-10-30/oscar-puente-en-directo-accidente-tren-urda-renfe-iryo-7484469/"
+        },
+        {
+          "titulo": "Telecinco, directo del viernes 30 (12:06–12:45)",
+          "url": "https://telecinco.es/noticias/sociedad/20261030/ultima-hora-accidente-trenes-urda-toledo-familiares-investigacion-en-directo_18_020577516.html"
+        },
+        {
+          "titulo": "Ministerio de Transportes: convocatoria de la rueda de prensa del ministro",
+          "url": "https://www.transportes.gob.es/ministerio/comunicacion/sala-prensa/convocatorias/rueda-prensa-ministro-oscar-puente"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T14:35:00+01:00",
+      "comprobadoEn": "2026-10-30T14:35:00+01:00",
+      "operativa": false,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-30-puente-no-dimite-medidas",
+      "titulo": "Puente descarta dimitir y anuncia revisión de protocolos, plantilla y formación; el ERTMS de la línea, a principios de 2027",
+      "resumen": "El ministro de Transportes descartó dimitir («voy a seguir adelante tratando de cumplir con mi deber») y anunció una revisión de protocolos, plantilla y formación y el refuerzo de los elementos tecnológicos. Explicó que el sistema ERTMS de la línea Madrid–Sevilla está instalado pero no operativo por no haber superado dos fases de pruebas, y que prevé que funcione a principios de 2027. También dijo que el Ministerio valora cortar el tráfico en líneas durante obras de renovación, como la Madrid–Barcelona, aunque no ha decidido nada. La rueda de prensa terminó a las 13:54. Ministerio de Transportes, 12:13–13:54. Publicado por Libertad Digital, Telecinco y elDiario.es.",
+      "organismo": "Ministerio de Transportes",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "Libertad Digital, directo de la comparecencia de Óscar Puente (12:02–13:54)",
+        "url": "https://www.libertaddigital.com/espana/politica/2026-10-30/oscar-puente-en-directo-accidente-tren-urda-renfe-iryo-7484469/"
+      },
+      "fechaComunicado": "2026-10-30T12:42:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Telecinco, directo del viernes 30 (12:06–12:45)",
+          "url": "https://telecinco.es/noticias/sociedad/20261030/ultima-hora-accidente-trenes-urda-toledo-familiares-investigacion-en-directo_18_020577516.html"
+        },
+        {
+          "titulo": "elDiario.es, directo del viernes 30",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-autoridades-identifican-cinco-personas-urda-hay-70-denuncias-desaparicion_133_13626103.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T14:35:00+01:00",
+      "comprobadoEn": "2026-10-30T14:35:00+01:00",
+      "operativa": false,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-30-aitat-primer-informe",
+      "titulo": "Primer informe de la AITAT: una «cadena de averías, instrucciones y acciones» sin que actuaran las barreras de seguridad",
+      "resumen": "El primer informe de la Autoridad Administrativa Independiente para la Investigación Técnica de Accidentes (AITAT) apunta, según Infobae, que ha tenido acceso al documento, a una «cadena de averías, instrucciones y acciones» que llevó a la colisión sin que actuaran las «barreras mitigadoras». Estima que el AVE alcanzó al Iryo detenido a entre 160 y 200 km/h. El propio informe advierte de que todavía es pronto para sacar conclusiones: no es el informe final. No hemos encontrado el documento publicado en un canal oficial. Según la AITAT; publicado por Infobae (08:32) y recogido por Telecinco (12:45).",
+      "organismo": "AITAT (Autoridad Independiente para la Investigación Técnica de Accidentes)",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Infobae: «El primer informe apunta a que una “cadena de averías, instrucciones y acciones” provocó el choque de trenes en Urda» (30/10, 08:32)",
+        "url": "https://www.infobae.com/espana/2026/10/30/el-primer-informe-apunta-a-que-una-cadena-de-averias-instrucciones-y-acciones-provoco-el-choque-de-trenes-en-urda-sin-que-actuaran-las-barreras-mitigadoras/"
+      },
+      "fechaComunicado": "2026-10-30T08:32:00+01:00",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Telecinco, directo del viernes 30 (12:06–12:45)",
+          "url": "https://telecinco.es/noticias/sociedad/20261030/ultima-hora-accidente-trenes-urda-toledo-familiares-investigacion-en-directo_18_020577516.html"
+        }
+      ]
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T14:35:00+01:00",
+      "comprobadoEn": "2026-10-30T14:35:00+01:00",
+      "operativa": false,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-30-ugt-movilizaciones",
+      "titulo": "UGT anuncia movilizaciones y jornadas de huelga en todo el sector ferroviario",
+      "resumen": "El sindicato UGT anunció movilizaciones y jornadas de huelga en el sector ferroviario, sin fechas concretas por ahora, y reclama medidas extraordinarias de seguridad, más recursos humanos y materiales y que se depuren responsabilidades. Si viajas en tren en los próximos días, consulta antes el estado de tu servicio con tu operador. Según UGT, 12:23. Publicado por elDiario.es.",
+      "organismo": "UGT",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "elDiario.es, directo del viernes 30",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-autoridades-identifican-cinco-personas-urda-hay-70-denuncias-desaparicion_133_13626103.html"
+      },
+      "fechaComunicado": "2026-10-30T12:23:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T14:35:00+01:00",
+      "comprobadoEn": "2026-10-30T14:35:00+01:00",
+      "operativa": false,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-30-plenos-toledo-talavera-ciudadreal",
+      "titulo": "Los ayuntamientos de Toledo, Talavera de la Reina y Ciudad Real guardan minutos de silencio en sus plenos",
+      "resumen": "Los plenos municipales de Toledo, Talavera de la Reina y Ciudad Real guardaron minutos de silencio por las víctimas, desearon una pronta recuperación a las personas hospitalizadas y agradecieron el trabajo de los servicios de emergencia y de las fuerzas de seguridad. Según los ayuntamientos, 11:43. Publicado por elDiario.es.",
+      "organismo": "Ayuntamientos de Toledo, Talavera de la Reina y Ciudad Real",
+      "categoria": "ayuntamientos",
+      "fuente": {
+        "titulo": "elDiario.es, directo del viernes 30",
+        "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-autoridades-identifican-cinco-personas-urda-hay-70-denuncias-desaparicion_133_13626103.html"
+      },
+      "fechaComunicado": "2026-10-30T11:43:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T14:35:00+01:00",
+      "comprobadoEn": "2026-10-30T14:35:00+01:00",
+      "operativa": false,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "id": "2026-10-30-andalucia-donaciones-triplican",
+      "titulo": "Andalucía: las donaciones de sangre se triplicaron en un solo día tras el accidente",
+      "resumen": "El presidente de la Junta de Andalucía informó de que las donaciones de sangre se triplicaron en un solo día. Si quieres donar, consulta los puntos y horarios del centro de transfusión de tu comunidad. Según la Junta de Andalucía, 12:21. Publicado por Telecinco.",
+      "organismo": "Junta de Andalucía",
+      "categoria": "comunidades",
+      "fuente": {
+        "titulo": "Telecinco, directo del viernes 30 (12:06–12:45)",
+        "url": "https://telecinco.es/noticias/sociedad/20261030/ultima-hora-accidente-trenes-urda-toledo-familiares-investigacion-en-directo_18_020577516.html"
+      },
+      "fechaComunicado": "2026-10-30T12:21:00+01:00",
+      "fuentesAdicionales": []
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
       "alerta": true,
       "correccion": null,
       "verificadoPor": [
