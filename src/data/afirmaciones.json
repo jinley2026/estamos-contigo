@@ -891,6 +891,75 @@
       "verificadoPor": [
         "AUTO-CLAUDE"
       ]
+    },
+    {
+      "id": "hospitalizados-jccm-ep-0930",
+      "tipo": "hospitalizados",
+      "valor": 39,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Torrijos Today (Europa Press), 30/10 09:30: fuentes del Gobierno de Castilla-La Mancha",
+        "url": "https://torrijostoday.com/castilla-la-mancha/toledo/hasta-39-personas-permanecen-ingresadas-en-los-hospitales-castellanomanchegos/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-30T09:30:00+01:00",
+      "fechaVerificacion": "2026-10-30T10:05:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "hospitalizados-cecopi-1513",
+      "observaciones": "Ingresados en hospitales de Castilla-La Mancha según fuentes del Gobierno regional (Europa Press, 09:30; hora del dato no indicada): 17 en UCI y 22 en planta. Toledo 21, Alcázar de San Juan 9, Ciudad Real 8, Albacete 1. No incluye a los heridos ingresados en Madrid. La portavoz Esther Padilla habló en TVE de «unas cincuenta» personas ingresadas y quince en UCI (La Cerca, 08:47), con datos anteriores; se registra la cifra más reciente y desglosada.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "altas-jccm-ep-0930",
+      "tipo": "altas",
+      "valor": 71,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "global",
+      "organismo": "Junta de Castilla-La Mancha",
+      "fuente": {
+        "titulo": "Torrijos Today (Europa Press), 30/10 09:30: fuentes del Gobierno de Castilla-La Mancha",
+        "url": "https://torrijostoday.com/castilla-la-mancha/toledo/hasta-39-personas-permanecen-ingresadas-en-los-hospitales-castellanomanchegos/",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-30T09:30:00+01:00",
+      "fechaVerificacion": "2026-10-30T10:05:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "altas-page-cecopi-1047",
+      "observaciones": "Altas en hospitales de Castilla-La Mancha según fuentes del Gobierno regional (Europa Press, 09:30). Padilla habló en TVE de sesenta altas (La Cerca, 08:47), con datos anteriores.",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
+    },
+    {
+      "id": "atendidos-cam-0916",
+      "tipo": "atendidos",
+      "valor": 107,
+      "calificador": "exacto",
+      "unidad": "personas",
+      "ambito": "comunidad:madrid",
+      "organismo": "Comunidad de Madrid",
+      "fuente": {
+        "titulo": "El Español, directo del viernes 30 (09:16): Comunidad de Madrid",
+        "url": "https://www.elespanol.com/invertia/observatorios/movilidad/20261030/accidente-tren-toledo-directo-ultima-hora-muertos-heridos-causas-choque-ave-iryo-urda-victimas-pedro-sanchez-oscar-puente/1003744440561_10.html",
+        "tipoFuente": "medio-citando"
+      },
+      "fechaComunicado": "2026-10-30T09:16:00+01:00",
+      "fechaVerificacion": "2026-10-30T10:05:00+01:00",
+      "estadoEditorial": "aprobado",
+      "estadoDato": "provisional",
+      "versionAnterior": "atendidos-cam-sermas-1454",
+      "observaciones": "Atenciones en urgencias de hospitales de la Comunidad de Madrid; 4 personas siguen en UCI (12 de Octubre, La Paz, Ramón y Cajal y Getafe).",
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ]
     }
   ]
 }

@@ -4157,6 +4157,146 @@
         "url": "https://www.libertaddigital.com/espana/2026-10-30/tragedia-en-urda-se-han-realizado-48-autopsias-y-hay-cinco-identificaciones-7484424/"
       },
       "fechaComunicado": "2026-10-30T07:29:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T10:05:00+01:00",
+      "comprobadoEn": "2026-10-30T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "El Español, directo del viernes 30 (09:26): segunda rueda de prensa de Puente a las 11:30 en el Ministerio",
+          "url": "https://www.elespanol.com/invertia/observatorios/movilidad/20261030/accidente-tren-toledo-directo-ultima-hora-muertos-heridos-causas-choque-ave-iryo-urda-victimas-pedro-sanchez-oscar-puente/1003744440561_10.html"
+        }
+      ],
+      "id": "2026-10-30-puente-rueda-prensa-1130",
+      "titulo": "Óscar Puente da hoy a las 11:30 una rueda de prensa sobre el accidente en la sede del Ministerio",
+      "resumen": "El ministro de Transportes y Movilidad Sostenible, Óscar Puente, comparece ante los medios este viernes a las 11:30 en la sede del Ministerio para hablar del accidente de Urda. La comparecencia no figuraba en la agenda prevista del Gobierno. Es distinta de su comparecencia del martes 3 de noviembre a las 17:00 en la Diputación Permanente del Congreso. Publicado por Europa Press (Torrijos Today, 30/10, 09:35) y El Español (directo, 09:26).",
+      "organismo": "Ministerio de Transportes y Movilidad Sostenible",
+      "categoria": "ministerio",
+      "fuente": {
+        "titulo": "Torrijos Today (Europa Press): «Puente comparecerá este viernes a las 11.30 horas para hablar del accidente en Urda» (30/10, 09:35)",
+        "url": "https://torrijostoday.com/castilla-la-mancha/puente-comparecera-este-viernes-a-las-11-30-horas-para-hablar-del-accidente-en-urda-toledo/"
+      },
+      "fechaComunicado": "2026-10-30T09:26:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T10:05:00+01:00",
+      "comprobadoEn": "2026-10-30T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "encastillalamancha.es (30/10, 09:32): ingresados en Castilla-La Mancha y evolución de los pacientes críticos",
+          "url": "https://www.encastillalamancha.es/sanidad-cat/accidente-de-urda-39-personas-siguen-hospitalizadas-en-castilla-la-mancha-y-los-cuatro-criticos-siguen-mejorando/"
+        }
+      ],
+      "id": "2026-10-30-clm-ingresados-viernes",
+      "titulo": "Castilla-La Mancha: baja otra vez el número de pacientes del accidente que siguen ingresados",
+      "resumen": "Según fuentes del Gobierno de Castilla-La Mancha, este viernes siguen ingresados en hospitales de la región menos pacientes que el jueves: dos han sido trasladados a Madrid y uno ha recibido el alta en el Hospital de Manzanares. Siguen pacientes en los hospitales de Toledo, Alcázar de San Juan, Ciudad Real y Albacete (unidad de críticos). Las cifras actualizadas de ingresados, UCI y altas figuran en el balance de esta web. Publicado por Europa Press (Torrijos Today, 30/10, 09:30) y encastillalamancha.es (09:32); hora del dato no indicada.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "sanidad",
+      "fuente": {
+        "titulo": "Torrijos Today (Europa Press): «Hasta 39 personas permanecen ingresadas en los hospitales castellanomanchegos» (30/10, 09:30)",
+        "url": "https://torrijostoday.com/castilla-la-mancha/toledo/hasta-39-personas-permanecen-ingresadas-en-los-hospitales-castellanomanchegos/"
+      },
+      "fechaComunicado": "2026-10-30T09:30:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T10:05:00+01:00",
+      "comprobadoEn": "2026-10-30T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [],
+      "id": "2026-10-30-padilla-criticos-mejoran",
+      "titulo": "La portavoz de Castilla-La Mancha: los pacientes más graves mejoran y hoy se llamará a más familias para comunicar resultados",
+      "resumen": "La consejera portavoz del Gobierno de Castilla-La Mancha, dijo en TVE que los pacientes más graves evolucionan positivamente y que hay «cierta esperanza», aunque la situación sigue siendo delicada. Explicó que las pruebas de identificación avanzan despacio y que a lo largo del día se llamará a más familias para comunicarles resultados. Pidió prudencia con las informaciones que se difundan. Recordatorio de la Guardia Civil: las identificaciones solo se comunican en persona, nunca por SMS ni por teléfono. Publicado por La Cerca (Europa Press), 30/10, 08:47.",
+      "organismo": "Junta de Castilla-La Mancha",
+      "categoria": "junta",
+      "fuente": {
+        "titulo": "La Cerca (Europa Press): «Los cuatro heridos más críticos tras el siniestro de Urda mejoran, según portavoz del Gobierno C-LM» (30/10, 08:47)",
+        "url": "https://www.lacerca.com/noticias/castilla_la_mancha/cuatro-heridos-siniestro-urda-segun-portavoz-gobierno-lm-835002-1.html"
+      },
+      "fechaComunicado": "2026-10-30T08:47:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T10:05:00+01:00",
+      "comprobadoEn": "2026-10-30T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [],
+      "id": "2026-10-30-cam-urgencias-uci-sangre",
+      "titulo": "Comunidad de Madrid: actualiza las atenciones en urgencias, los pacientes en UCI y las donaciones de sangre",
+      "resumen": "La Comunidad de Madrid ha actualizado el número de personas atendidas en urgencias hospitalarias por el accidente (cifra en el balance de esta web). Siguen pacientes en UCI en los hospitales 12 de Octubre, La Paz, Ramón y Cajal y Getafe. Se han recibido 8.300 donaciones de sangre. Publicado por El Español (directo), 30/10, 09:16.",
+      "organismo": "Comunidad de Madrid",
+      "categoria": "comunidades",
+      "fuente": {
+        "titulo": "El Español, directo del viernes 30 (09:16): Comunidad de Madrid",
+        "url": "https://www.elespanol.com/invertia/observatorios/movilidad/20261030/accidente-tren-toledo-directo-ultima-hora-muertos-heridos-causas-choque-ave-iryo-urda-victimas-pedro-sanchez-oscar-puente/1003744440561_10.html"
+      },
+      "fechaComunicado": "2026-10-30T09:16:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T10:05:00+01:00",
+      "comprobadoEn": "2026-10-30T10:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "La Cerca: «El arzobispo de Toledo oficiará este sábado una misa funeral en Urda por las personas fallecidas» (30/10)",
+          "url": "https://www.lacerca.com/noticias/toledo/arzobispo-toledo-sabado-misa-funeral-urda-personas-fallecidas-835016-1.html"
+        }
+      ],
+      "id": "2026-10-30-funeral-urda-sabado",
+      "titulo": "Funeral por las víctimas en la parroquia de San Juan Bautista de Urda el sábado 31 a las 12:00",
+      "resumen": "La Archidiócesis de Toledo informa de que el arzobispo de Toledo presidirá el sábado 31 de octubre a las 12:00 una misa funeral por las víctimas del accidente, en la iglesia parroquial de San Juan Bautista de Urda, acompañado por el obispo auxiliar. Participan las parroquias de Urda y Los Yébenes. Publicado por la Archidiócesis de Toledo (30/10, 09:33) y por La Cerca y COPE.",
+      "organismo": "Archidiócesis de Toledo",
+      "categoria": "otros",
+      "fuente": {
+        "titulo": "Archidiócesis de Toledo: «Urda acoge este sábado un funeral por los fallecidos en el accidente ferroviario» (30/10)",
+        "url": "https://www.architoledo.org/noticias/urda-acoge-este-sabado-un-funeral-por-los-fallecidos-en-el-accidente-ferroviario/"
+      },
+      "fechaComunicado": "2026-10-30T09:33:00+01:00"
     }
   ]
 }
