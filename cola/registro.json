@@ -1,6 +1,18 @@
 {
   "ciclos": [
     {
+      "inicio": "2026-10-30T08:31:17.465Z",
+      "fuentesOk": 6,
+      "fuentesError": 1,
+      "nuevas": 0,
+      "duplicadas": 1,
+      "cifras": 0,
+      "contradicciones": 0,
+      "rechazadas": 0,
+      "automaticas": 0,
+      "fin": "2026-10-30T08:31:32.298Z"
+    },
+    {
       "inicio": "2026-10-28T10:51:49.967Z",
       "fuentesOk": 6,
       "fuentesError": 1,
