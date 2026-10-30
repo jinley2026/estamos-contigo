@@ -4127,6 +4127,36 @@
         "url": "https://www.infobae.com/espana/agencias/2026/10/29/iryo-reembolsara-los-billetes-a-los-afectados-por-el-accidente-y-facilitara-transporte/"
       },
       "fechaComunicado": "2026-10-29T19:18:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T08:05:00+01:00",
+      "comprobadoEn": "2026-10-30T08:05:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "elDiario.es, directo del viernes 30 (07:35): «las autoridades identifican a cinco fallecidos en Toledo y hay 70 denuncias por desaparición»",
+          "url": "https://www.eldiario.es/castilla-la-mancha/accidente-tren-urda-ultima-hora-directo-autoridades-identifican-cinco-personas-urda-hay-70-denuncias-desaparicion_133_13626103.html"
+        }
+      ],
+      "id": "2026-10-30-cid-identificaciones-denuncias",
+      "titulo": "Centro Integrado de Datos: cinco identificaciones notificadas a las familias y 70 denuncias por desaparición",
+      "resumen": "Según el último comunicado del Centro Integrado de Datos (CID), los institutos de medicina legal de Toledo y Ciudad Real han recibido 69 cuerpos y los médicos forenses han practicado 48 autopsias. Se han notificado cinco identificaciones a las familias (tres mujeres y dos hombres), todas por huella dactilar, a cargo del Servicio de Criminalística de la Guardia Civil; seis técnicos del Instituto Nacional de Toxicología hacen las pruebas de ADN post mortem. Las comandancias de la Guardia Civil han recogido 70 denuncias de familiares y allegados por desaparición (Toledo 38, Madrid 23, Sevilla 7, Ciudad Real 1 y Logroño 1); dos de las personas denunciadas han sido localizadas con vida. Las familias cuentan con apoyo de psicólogas del Instituto de Medicina Legal de Toledo y de la Oficina de Asistencia a las Víctimas. La Guardia Civil recuerda que solo comunica las identificaciones en persona, nunca por SMS ni por teléfono. Publicado por Libertad Digital, 30/10, 07:29 (hora del comunicado no indicada).",
+      "organismo": "Centro Integrado de Datos (Guardia Civil y Administración de Justicia)",
+      "categoria": "justicia",
+      "fuente": {
+        "titulo": "Libertad Digital: «Tragedia en Urda: se han realizado 48 autopsias y hay cinco identificaciones» (30/10, 07:29)",
+        "url": "https://www.libertaddigital.com/espana/2026-10-30/tragedia-en-urda-se-han-realizado-48-autopsias-y-hay-cinco-identificaciones-7484424/"
+      },
+      "fechaComunicado": "2026-10-30T07:29:00+01:00"
     }
   ]
 }
