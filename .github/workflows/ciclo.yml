@@ -5,9 +5,9 @@
 # que la web muestra para no aparentar estar al día si el ciclo falla.
 # GitHub no garantiza la puntualidad de las ejecuciones programadas: pueden retrasarse en momentos de carga.
 name: Ciclo de informacion
+# Programación PARADA por decisión de Lin (30/10/2026, ~15:50): solo se actualiza cuando Lin lo pida expresamente.
+# Para reactivarla, volver a poner:  schedule: - cron: '7,37 * * * *'
 on:
-  schedule:
-    - cron: '7,37 * * * *'
   workflow_dispatch: {}
 permissions:
   contents: write
