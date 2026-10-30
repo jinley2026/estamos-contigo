@@ -4063,6 +4063,40 @@
         "url": "https://www.cope.es/emisoras/extremadura/caceres-provincia/caceres/noticias/coria-caceres-convoca-misa-funeral-victimas-accidente-tren-urda-20261029_3465084.html"
       },
       "fechaComunicado": "2026-10-29T12:00:00+01:00"
+    },
+    {
+      "revisarCadaMinutos": 60,
+      "estado": "vigente",
+      "alerta": false,
+      "correccion": null,
+      "verificadoPor": [
+        "AUTO-CLAUDE"
+      ],
+      "publicadoEn": "2026-10-30T02:10:00+01:00",
+      "comprobadoEn": "2026-10-30T02:10:00+01:00",
+      "operativa": true,
+      "nivelFuente": 2,
+      "tipoFuente": "medio-citando",
+      "fuentesAdicionales": [
+        {
+          "titulo": "Torrijos Today (Europa Press), 30/10 00:02",
+          "url": "https://torrijostoday.com/castilla-la-mancha/toledo/los-institutos-forenses-de-c-lm-han-recibido-ya-los-69-cuerpos-y-han-practicado-48-autopsias/"
+        },
+        {
+          "titulo": "Diario Siglo XXI (Europa Press), 30/10 00:02",
+          "url": "https://www.diariosigloxxi.com/texto-ep/mostrar/20261030000226/institutos-forenses-c-lm-recibido-69-cuerpos-practicado-48-autopsias"
+        }
+      ],
+      "id": "2026-10-30-tsjcm-balance-identificacion",
+      "titulo": "El TSJ de Castilla-La Mancha informa del avance de las autopsias y de las primeras identificaciones comunicadas a las familias",
+      "resumen": "Según el Tribunal Superior de Justicia de Castilla-La Mancha, con datos del Centro Integrado de Datos (CID), el Instituto de Medicina Legal de Toledo ya ha recibido todos los cuerpos y los forenses han practicado la mayoría de las autopsias. Ya se han notificado en persona las primeras identificaciones a las familias, hechas por huella dactilar (Servicio de Criminalística de la Guardia Civil) y por ADN de los familiares que denunciaron la desaparición; el Instituto Nacional de Toxicología hace las pruebas de ADN post mortem. Hay apoyo psicológico a las familias con psicólogas del Instituto de Medicina Legal de Toledo y de la Oficina de Asistencia a las Víctimas. Informado el jueves 29 por la tarde (hora exacta no indicada). Publicado por Europa Press (Infobae), 30/10, 00:02.",
+      "organismo": "Tribunal Superior de Justicia de Castilla-La Mancha (Centro Integrado de Datos)",
+      "categoria": "justicia",
+      "fuente": {
+        "titulo": "Infobae (Europa Press): «Los institutos forenses de C-LM han recibido ya los 69 cuerpos y han practicado 48 autopsias»",
+        "url": "https://www.infobae.com/america/agencias/2026/10/29/los-institutos-forenses-de-c-lm-han-recibido-ya-los-69-cuerpos-y-han-practicado-48-autopsias/"
+      },
+      "fechaComunicado": "2026-10-30T00:02:00+01:00"
     }
   ]
 }
