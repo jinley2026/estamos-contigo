@@ -1,100 +1,112 @@
 {
   "_comentario": "Lo escribe scripts/ciclo.mjs en cada ejecución. No editar a mano.",
-  "ultimaConsulta": "2026-10-30T01:52:22.217Z",
+  "ultimaConsulta": "2026-10-30T08:31:17.465Z",
   "ultimoCicloOk": true,
   "ultimaFuenteOk": {
     "id": "moncloa-transportes",
     "nombre": "La Moncloa — notas de prensa de Transportes",
-    "hora": "2026-10-30T01:52:22.217Z"
+    "hora": "2026-10-30T08:31:17.465Z"
   },
   "fuentes": {
     "adif": {
       "nombre": "Adif — notas de prensa",
       "ok": true,
       "motivo": "",
-      "hora": "2026-10-30T01:52:22.217Z",
-      "ultimaOk": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z",
+      "ultimaOk": "2026-10-30T08:31:17.465Z"
     },
     "adif-av": {
       "nombre": "Adif Alta Velocidad — notas de prensa",
       "ok": false,
       "motivo": "fetch failed",
-      "hora": "2026-10-30T01:52:22.217Z",
+      "hora": "2026-10-30T08:31:17.465Z",
       "ultimaOk": null
     },
     "renfe": {
       "nombre": "Grupo Renfe — sala de prensa",
       "ok": true,
       "motivo": "",
-      "hora": "2026-10-30T01:52:22.217Z",
-      "ultimaOk": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z",
+      "ultimaOk": "2026-10-30T08:31:17.465Z"
     },
     "jccm": {
       "nombre": "Junta de Castilla-La Mancha — notas de prensa",
       "ok": true,
       "motivo": "",
-      "hora": "2026-10-30T01:52:22.217Z",
-      "ultimaOk": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z",
+      "ultimaOk": "2026-10-30T08:31:17.465Z"
     },
     "jccm-rss": {
       "nombre": "Junta de Castilla-La Mancha — RSS de noticias",
       "ok": true,
       "motivo": "",
-      "hora": "2026-10-30T01:52:22.217Z",
-      "ultimaOk": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z",
+      "ultimaOk": "2026-10-30T08:31:17.465Z"
     },
     "112clm": {
       "nombre": "112 Castilla-La Mancha — comunicación",
       "ok": true,
       "motivo": "",
-      "hora": "2026-10-30T01:52:22.217Z",
-      "ultimaOk": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z",
+      "ultimaOk": "2026-10-30T08:31:17.465Z"
     },
     "moncloa-transportes": {
       "nombre": "La Moncloa — notas de prensa de Transportes",
       "ok": true,
       "motivo": "",
-      "hora": "2026-10-30T01:52:22.217Z",
-      "ultimaOk": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z",
+      "ultimaOk": "2026-10-30T08:31:17.465Z"
     },
     "iryo": {
       "nombre": "Iryo",
       "ok": null,
       "motivo": "bloquea el acceso automatizado: entrada manual",
-      "hora": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z"
     },
     "transportes": {
       "nombre": "Ministerio de Transportes",
       "ok": null,
       "motivo": "bloquea el acceso automatizado: entrada manual",
-      "hora": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z"
     },
     "sescam": {
       "nombre": "SESCAM",
       "ok": null,
       "motivo": "sin dirección verificada: entrada manual",
-      "hora": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z"
     },
     "delegacion": {
       "nombre": "Delegación del Gobierno en Castilla-La Mancha",
       "ok": null,
       "motivo": "sin dirección verificada: entrada manual",
-      "hora": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z"
     },
     "ayuntamientos": {
       "nombre": "Ayuntamientos de Urda, Los Yébenes, Mora y Orgaz",
       "ok": null,
       "motivo": "sin dirección verificada: entrada manual",
-      "hora": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z"
     },
     "x-oficiales": {
       "nombre": "Cuentas oficiales en X (InfoRenfe, Adif, 112 CLM, Iryo)",
       "ok": null,
       "motivo": "sin dirección verificada: entrada manual",
-      "hora": "2026-10-30T01:52:22.217Z"
+      "hora": "2026-10-30T08:31:17.465Z"
     }
   },
   "ciclos": [
+    {
+      "inicio": "2026-10-30T08:31:17.465Z",
+      "fuentesOk": 6,
+      "fuentesError": 1,
+      "nuevas": 0,
+      "duplicadas": 1,
+      "cifras": 0,
+      "contradicciones": 0,
+      "rechazadas": 0,
+      "automaticas": 0,
+      "fin": "2026-10-30T08:31:32.298Z"
+    },
     {
       "inicio": "2026-10-30T01:52:22.217Z",
       "fuentesOk": 6,
